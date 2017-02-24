@@ -27,9 +27,9 @@ class XMLUtil:
             for child in member.iter():
                 if child.tag != 'class':
                     if child.tag == 'cc':
-                        if not "avg_cc" in names:
+                        if "avg_cc" not in names:
                             names.append("avg_cc")
-                        if not "max_cc" in names:
+                        if "max_cc" not in names:
                             names.append("max_cc")
                         cc = [float(child0.text) for child0 in child.iter() if
                               not child0.tag == 'cc']
@@ -38,7 +38,7 @@ class XMLUtil:
                         except ValueError:
                             values.extend([0, 0])
                     elif child.tag != "method":
-                        if not child.tag in names:
+                        if child.tag not in names:
                             names.append(child.tag)
                         try:
                             values.append(float(child.text))
@@ -48,24 +48,26 @@ class XMLUtil:
         metrics.insert(0, names)
         return metrics
 
-    def as_DataFrame(self):
+    def as_dataframe(self):
         metrics = self.as_list()
         return pd.DataFrame(metrics[1:], columns=metrics[0])
 
 
 class MetricUtil:
-    def __init__(self, jar_file, class_path=None, save_path="Metrics",
+    def __init__(self, jar_file, class_path=None, save_path="metrics",
                  file_name="metrics"):
-        self.file_name = file_name
-        self.jar_file = jar_file
-        self.save_path = save_path
-        self.class_path = class_path
+        self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
+        self.jar_file = os.path.abspath(jar_file)
+        self.save_path = os.path.abspath(save_path)
+        self.class_path = os.path.abspath(class_path)
 
     def run_ckjm(self):
-        cmd = ["java", "-jar", os.path.join(root, "jar/ckjm_ext.jar"), "-x",
+        cmd = ["java", "-jar", os.path.join(root, "jar/ckjm_ext.jar"),
+               "-x",
                "-s",
-               os.path.abspath(self.jar_path), ">",
-               os.path.join(self.save_path, self.file_name + ".xml")]
+               self.jar_path,
+               ">",
+               os.path.join(self.save_path, self.file_name)]
         return subprocess.Popen(cmd)
 
     @staticmethod
@@ -76,9 +78,14 @@ class MetricUtil:
         return
 
     def get_metrics(self):
+        metrics = self.run_ckjm()
+        set_trace()
         return
 
 
 if __name__ == "__main__":
-    xml = XMLUtil(xml_name="ant.xml")
+    # xml = XMLUtil(xml_name="ant.xml")
+    m = MetricUtil(jar_file="data/ant-1.8.2/build/lib/ant.jar",
+                   file_name="ant.xml")
+    m.get_metrics()
     set_trace()
