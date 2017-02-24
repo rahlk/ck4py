@@ -133,3 +133,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+.idea/
+data/ant-1.8.2/bin/tests/antunit/taskdefs/cvs/repository/CVSROOT/Emptydir/
+data/ant-1.8.2/src/tests/antunit/taskdefs/cvs/repository/CVSROOT/Emptydir/
