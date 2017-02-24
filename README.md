@@ -1,3 +1,1 @@
-# Qualitas
-
-Compiled code smells dataset.
+# Compute CK Metrics in Python
