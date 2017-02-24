@@ -1,4 +1,5 @@
-	<class>
+<metric>
+    <class>
 		<name>org.apache.tools.ant.types.FilterSet$Filter</name>
 		<wmc>6</wmc>
 		<dit>1</dit>
@@ -34947,3 +34948,4 @@
 			<method name="private static boolean isValidName(String name)">4</method>
 		</cc>
 	</class>
+</metric>
