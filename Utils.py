@@ -55,7 +55,8 @@ class XMLUtil:
 
     def as_csv(self):
         metrics_df = self.as_dataframe()
-        metrics_df.to_csv(os.path.join(self.xml_path, self.xml_name + ".csv"))
+        metrics_df.to_csv(os.path.join(self.xml_path, self.xml_name + ".csv"),
+                          index=False)
 
 
 class MetricUtil:
@@ -85,10 +86,18 @@ class MetricUtil:
               file=open(os.path.join(self.save_path, self.file_name), "w+"))
 
 
-if __name__ == "__main__":
+def __test_util():
+    """
+    Run a test case
+    :return:
+    """
     m = MetricUtil(jar_file="data/ant-1.8.2/build/lib/ant.jar",
                    file_name="ant.xml")
     m.save_metrics()
     xml = XMLUtil(xml_name="ant.xml")
     xml.as_csv()
+
+
+if __name__ == "__main__":
+    __test_util()
     set_trace()
