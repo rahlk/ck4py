@@ -90,5 +90,5 @@ if __name__ == "__main__":
                    file_name="ant.xml")
     m.save_metrics()
     xml = XMLUtil(xml_name="ant.xml")
-    xml.as
+    xml.as_csv()
     set_trace()
