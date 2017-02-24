@@ -1128,7 +1128,7 @@ public class PropertyHelper implements GetProperty {
     /**
      * Get all Delegate interfaces (excluding Delegate itself) from the specified Delegate.
      * @param d the Delegate to inspect.
-     * @return Set<metric>
+     * @return Set<Class>
      * @since Ant 1.8.0
      */
     protected static Set getDelegateInterfaces(Delegate d) {

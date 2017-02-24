@@ -960,7 +960,7 @@ public class Main implements AntMain {
         msg.append("                         on failed target(s)" + lSep);
         msg.append("  -propertyfile <name>   load all properties from file with -D" + lSep);
         msg.append("                         properties taking precedence" + lSep);
-        msg.append("  -inputhandler <metric>  the class which will handle input requests" + lSep);
+        msg.append("  -inputhandler <class>  the class which will handle input requests" + lSep);
         msg.append("  -find <file>           (s)earch for buildfile towards the root of" + lSep);
         msg.append("    -s  <file>           the filesystem and use it" + lSep);
         msg.append("  -nice  number          A niceness value for the main thread:" + lSep
@@ -971,7 +971,7 @@ public class Main implements AntMain {
         msg.append("  -noclasspath           Run ant without using CLASSPATH" + lSep);
         msg.append("  -autoproxy             Java1.5+: use the OS proxy settings"
                 + lSep);
-        msg.append("  -main <metric>          override Ant's normal entry point");
+        msg.append("  -main <class>          override Ant's normal entry point");
         System.out.println(msg.toString());
     }
 

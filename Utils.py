@@ -59,13 +59,13 @@ class MetricUtil:
         self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
         self.jar_file = os.path.abspath(jar_file)
         self.save_path = os.path.abspath(save_path)
-        self.class_path = os.path.abspath(class_path)
+        self.class_path = os.path.abspath(class_path) if class_path else None
 
     def run_ckjm(self):
         cmd = ["java", "-jar", os.path.join(root, "jar/ckjm_ext.jar"),
                "-x",
                "-s",
-               self.jar_path,
+               self.jar_file,
                ">",
                os.path.join(self.save_path, self.file_name)]
         return subprocess.Popen(cmd)
