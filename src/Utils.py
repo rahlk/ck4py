@@ -51,7 +51,7 @@ class XMLUtil:
         metrics = self.as_list()
         return pd.DataFrame(metrics[1:], columns=metrics[0])
 
-    def as_csv(self):
+    def save_as_csv(self):
         metrics_df = self.as_dataframe()
         metrics_df.to_csv(os.path.join(self.xml_path, self.xml_name + ".csv"),
                           index=False)

@@ -9,7 +9,7 @@ def sample_case():
                    file_name="ant.xml")
     m.save_metrics()
     xml = XMLUtil(xml_name="ant.xml")
-    xml.as_csv()
+    xml.save_as_csv()
 
 if __name__ == "__main__":
     sample_case()
