@@ -1,7 +1,7 @@
 from __future__ import print_function
 from __future__ import division
 
-from Utils.MetricsUtils import JavaMetricsUtil, JSMetricsUtil
+from Utils.MetricsUtils import JavaUtil, JSUtil
 from Utils.FileUtils import JSONUtil, XMLUtil
 
 

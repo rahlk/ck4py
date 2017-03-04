@@ -43,7 +43,6 @@ class JavaUtil:
 class JSUtil:
 
     def __init__(self, js_path, save_path="metrics", file_name="metrics"):
-        self.arg = arg
         self.file_name = file_name if ".json" in file_name else file_name + ".json"
         self.js_path = os.path.abspath(js_path)
         self.save_path = os.path.abspath(os.path.join(root, save_path))
