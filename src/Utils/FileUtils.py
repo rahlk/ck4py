@@ -60,40 +60,13 @@ class XMLUtil:
 
 
 class JSONUtil:
-    def __init__(self, xml_path="metrics", xml_name="metrics.xml"):
-        self.xml_path = os.path.abspath(xml_path)
-        self.xml_name = xml_name.split(".xml")[
-          0] if ".xml" in xml_name else xml_name
+    def __init__(self, json_path="metrics", json_name="metrics.json"):
+        self.json_path = os.path.abspath(json_path)
+        self.json_name = xml_name.split(".json")[
+        0] if ".json" in xml_name else xml_name
 
     def as_list(self):
-        tree = ET.parse(os.path.join(self.xml_path, self.xml_name + ".xml"))
-        root = tree.getroot()
-        names = []
-        metrics = []
-        for member in root.iter("class"):
-          values = []
-          for child in member.iter():
-              if child.tag != 'class':
-                  if child.tag == 'cc':
-                      if "avg_cc" not in names:
-                          names.append("avg_cc")
-                      if "max_cc" not in names:
-                          names.append("max_cc")
-                      cc = [float(child0.text) for child0 in child.iter() if
-                            not child0.tag == 'cc']
-                      try:
-                          values.extend([np.mean(cc), np.max(cc)])
-                      except ValueError:
-                          values.extend([0, 0])
-                  elif child.tag != "method":
-                      if child.tag not in names:
-                          names.append(child.tag)
-                      try:
-                          values.append(float(child.text))
-                      except ValueError:
-                          values.append(child.text)
-          metrics.append(values)
-        metrics.insert(0, names)
+
         return metrics
 
     def as_dataframe(self):
