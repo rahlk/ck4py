@@ -48,6 +48,7 @@ class JSUtil:
         self.save_path = os.path.abspath(os.path.join(root, save_path))
 
     def run_escomplex(self):
+        set_trace()
         cmd = ["cr", "--ignoreerrors", "--output"
                 , os.path.join(self.save_path, self.file_name),
                 "--format json",
