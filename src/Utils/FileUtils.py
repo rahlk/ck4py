@@ -12,6 +12,26 @@ import json
 root = os.getcwd()
 
 
+class JSONUtil:
+    def __init__(self, json_path="metrics", json_name="metrics.json"):
+        self.json_path = os.path.abspath(json_path)
+        self.json_name = xml_name.split(".json")[
+        0] if ".json" in xml_name else xml_name
+
+    def as_list(self):
+        set_trace()
+        return metrics
+
+    def as_dataframe(self):
+        metrics = self.as_list()
+        return pd.DataFrame(metrics[1:], columns=metrics[0])
+
+    def save_as_csv(self):
+        metrics_df = self.as_dataframe()
+        metrics_df.to_csv(os.path.join(self.xml_path, self.xml_name + ".csv"),
+                        index=False)
+
+
 class XMLUtil:
     def __init__(self, xml_path="metrics", xml_name="metrics.xml"):
         self.xml_path = os.path.abspath(xml_path)
@@ -57,23 +77,3 @@ class XMLUtil:
         metrics_df = self.as_dataframe()
         metrics_df.to_csv(os.path.join(self.xml_path, self.xml_name + ".csv"),
                           index=False)
-
-
-class JSONUtil:
-    def __init__(self, json_path="metrics", json_name="metrics.json"):
-        self.json_path = os.path.abspath(json_path)
-        self.json_name = xml_name.split(".json")[
-        0] if ".json" in xml_name else xml_name
-
-    def as_list(self):
-
-        return metrics
-
-    def as_dataframe(self):
-        metrics = self.as_list()
-        return pd.DataFrame(metrics[1:], columns=metrics[0])
-
-    def save_as_csv(self):
-        metrics_df = self.as_dataframe()
-        metrics_df.to_csv(os.path.join(self.xml_path, self.xml_name + ".csv"),
-                        index=False)

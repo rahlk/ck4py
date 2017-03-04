@@ -12,7 +12,7 @@ import json
 root = os.getcwd()
 
 
-class JavaMetricsUtil:
+class JavaUtil:
 
     def __init__(self, jar_file, class_path=None, save_path="metrics",
                  file_name="metrics"):
@@ -40,7 +40,7 @@ class JavaMetricsUtil:
               file=open(os.path.join(self.save_path, self.file_name), "w+"))
 
 
-class JSMetricsUtil:
+class JSUtil:
 
     def __init__(self, js_path, save_path="metrics", file_name="metrics"):
         self.arg = arg
@@ -59,7 +59,7 @@ class JSMetricsUtil:
 
     def save_metrics(self):
         metrics = run_escomplex()
-        
+
 
 def __test_util():
     """
