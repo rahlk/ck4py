@@ -19,6 +19,9 @@ class JSONUtil:
         0] if ".json" in json_name else json_name
 
     def as_list(self):
+        with open(os.path.join(self.json_path, self.json_name)) as data_file:
+            data = json.load(data_file)
+
         set_trace()
         return metrics
 

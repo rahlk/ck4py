@@ -48,16 +48,15 @@ class JSUtil:
         self.save_path = os.path.abspath(os.path.join(root, save_path))
 
     def run_escomplex(self):
-        set_trace()
         cmd = ["cr", "--ignoreerrors", "--output"
                 , os.path.join(self.save_path, self.file_name),
-                "--format json",
+                "--format", "json",
                 self.js_path]
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                    , stderr=open(os.devnull, "w"))
 
     def save_metrics(self):
-        metrics = self.run_escomplex()
+        metrics = self.run_escomplex().communicate()[0]
         return
 
 
