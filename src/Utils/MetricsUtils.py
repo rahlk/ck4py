@@ -46,7 +46,6 @@ class JSUtil:
         self.file_name = file_name if ".json" in file_name else file_name + ".json"
         self.js_path = os.path.abspath(js_path)
         self.save_path = os.path.abspath(os.path.join(root, save_path))
-        self.class_path = os.path.abspath(class_path) if class_path else None
 
     def run_escomplex(self):
         cmd = ["cr", "--ignoreerrors", "--output"
