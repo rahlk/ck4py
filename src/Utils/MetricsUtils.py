@@ -54,11 +54,12 @@ class JSUtil:
                 , os.path.join(self.save_path, self.file_name),
                 "--format json",
                 self.js_path]
-        return subprocess.Popen(cmd, stdout=subprocess.PIPE,
+        return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                    , stderr=open(os.devnull, "w"))
 
     def save_metrics(self):
         metrics = run_escomplex()
+        return
 
 
 def __test_util():
