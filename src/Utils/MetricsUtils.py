@@ -56,7 +56,7 @@ class JSUtil:
                                    , stderr=open(os.devnull, "w"))
 
     def save_metrics(self):
-        metrics = run_escomplex()
+        metrics = self.run_escomplex()
         return
 
 

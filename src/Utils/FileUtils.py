@@ -15,8 +15,8 @@ root = os.getcwd()
 class JSONUtil:
     def __init__(self, json_path="metrics", json_name="metrics.json"):
         self.json_path = os.path.abspath(json_path)
-        self.json_name = xml_name.split(".json")[
-        0] if ".json" in xml_name else xml_name
+        self.json_name = json_name.split(".json")[
+        0] if ".json" in json_name else json_name
 
     def as_list(self):
         set_trace()
@@ -28,7 +28,7 @@ class JSONUtil:
 
     def save_as_csv(self):
         metrics_df = self.as_dataframe()
-        metrics_df.to_csv(os.path.join(self.xml_path, self.xml_name + ".csv"),
+        metrics_df.to_csv(os.path.join(self.json_path, self.json_name + ".csv"),
                         index=False)
 
 
