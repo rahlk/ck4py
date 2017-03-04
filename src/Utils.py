@@ -57,7 +57,7 @@ class XMLUtil:
                           index=False)
 
 
-class MetricUtil:
+class JavaMetricsUtil:
     def __init__(self, jar_file, class_path=None, save_path="metrics",
                  file_name="metrics"):
         self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
@@ -82,6 +82,17 @@ class MetricUtil:
         metrics = self.run_ckjm().communicate()[0]
         print("<metrics>", metrics, "</metrics>", sep="\n",
               file=open(os.path.join(self.save_path, self.file_name), "w+"))
+
+
+class JSMetricsUtil(object)
+    def __init__(self, js_path, save_path="metrics", file_name="metrics"):
+        super(JSMetricsUtil,self).__init__()
+        self.arg = arg
+        self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
+        self.js_path = os.path.abspath(js_path)
+        self.save_path = os.path.abspath(save_path)
+        self.class_path = os.path.abspath(class_path) if class_path else None
+
 
 
 def __test_util():
