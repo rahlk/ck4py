@@ -54,14 +54,21 @@ class JSONUtil:
             if key == "dependencies":
                 data_dict.update({key: len(value)})
             if key == "path":
-                data_dict.update({"name": "/".join(data["reports"][0]["path"].split("/")[-2:])})
-            if 
+                data_dict.update({"name": "/".join(
+                    data["reports"][0]["path"].split("/")[-2:])})
+            if key == "aggregate":
+                data_dict.update(self.unpack_aggregate(value))
+            if key == "loc":
+                data_dict.update({"avg_func_loc": value})
+            if key in ["functions", "cyclomatic"]:
+                pass
 
-
+        return data_dict
 
     def as_dataframe(self):
-        metrics = self.as_list()
-        return pd.DataFrame(metrics[1:], columns=metrics[0])
+        metrics = self.module_metrics()
+        set_trace()
+        return pd.DataFrame(metrics, columns=metrics[0])
 
     def save_as_csv(self):
         metrics_df = self.as_dataframe()
