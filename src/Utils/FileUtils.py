@@ -50,14 +50,14 @@ class JSONUtil:
             data = json.load(data_file)
 
         metrics = list()
+        set_trace()
         for reports in data["reports"]:
             data_dict = dict()
             for key, value in reports.iteritems():
                 if key == "dependencies":
                     data_dict.update({key: len(value)})
                 if key == "path":
-                    data_dict.update({"name": "/".join(
-                        data["reports"][0]["path"].split("/")[-2:])})
+                    data_dict.update({"name": "/".join(value.split("/")[-2:])})
                 if key == "aggregate":
                     data_dict.update(self.unpack_aggregate(value))
                 if key == "loc":
@@ -71,8 +71,9 @@ class JSONUtil:
 
     def as_dataframe(self):
         metrics = self.module_metrics()
+        df = pd.DataFrame(metrics)
         set_trace()
-        return pd.DataFrame(metrics, index='name')
+        return
 
     def save_as_csv(self):
         metrics_df = self.as_dataframe()
