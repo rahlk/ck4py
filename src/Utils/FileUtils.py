@@ -7,7 +7,7 @@ import pandas as pd
 from pdb import set_trace
 import xml.etree.ElementTree as ET
 import json
-
+from pprint import pprint
 
 root = os.getcwd()
 

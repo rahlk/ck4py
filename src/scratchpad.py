@@ -42,5 +42,8 @@ def xml2list():
 
 
 
+def json2list():
+
+
 if __name__ == "__main__":
     xml2list()

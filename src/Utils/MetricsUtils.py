@@ -22,7 +22,7 @@ class JavaUtil:
         self.class_path = os.path.abspath(class_path) if class_path else None
 
     def run_ckjm(self):
-        cmd = ["java", "-jar", os.path.join(root, "jar/ckjm_ext.jar"),
+        cmd = ["java", "-jar", os.path.join(root, "tools/ckjm_ext.jar"),
                "-x",
                "-s",
                self.jar_file]
