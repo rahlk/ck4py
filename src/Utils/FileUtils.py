@@ -70,14 +70,14 @@ class JSONUtil:
 
     def as_dataframe(self):
         metrics = self.module_metrics()
-        df = pd.DataFrame(metrics)
-        set_trace()
-        return
+        df = pd.DataFrame(metrics).set_index("name")
+        return df
 
     def save_as_csv(self):
         metrics_df = self.as_dataframe()
         metrics_df.to_csv(os.path.join(self.json_path, self.json_name + ".csv"),
                           index=False)
+        set_trace()
 
 
 class XMLUtil:
