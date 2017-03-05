@@ -49,21 +49,24 @@ class JSONUtil:
                                self.json_name + ".json")) as data_file:
             data = json.load(data_file)
 
-        data_dict = dict()
-        for key, value in data.iteritems():
-            if key == "dependencies":
-                data_dict.update({key: len(value)})
-            if key == "path":
-                data_dict.update({"name": "/".join(
-                    data["reports"][0]["path"].split("/")[-2:])})
-            if key == "aggregate":
-                data_dict.update(self.unpack_aggregate(value))
-            if key == "loc":
-                data_dict.update({"avg_func_loc": value})
-            if key in ["functions", "cyclomatic"]:
-                pass
+        data = list()
+        for reports in data["reports"]:
+            data_dict = dict()
+            for key, value in reports.iteritems():
+                if key == "dependencies":
+                    data_dict.update({key: len(value)})
+                if key == "path":
+                    data_dict.update({"name": "/".join(
+                        data["reports"][0]["path"].split("/")[-2:])})
+                if key == "aggregate":
+                    data_dict.update(self.unpack_aggregate(value))
+                if key == "loc":
+                    data_dict.update({"avg_func_loc": value})
+                if key in ["functions", "cyclomatic"]:
+                    pass
+            data.append(data_dict)
 
-        return data_dict
+        return data
 
     def as_dataframe(self):
         metrics = self.module_metrics()
