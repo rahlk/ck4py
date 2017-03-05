@@ -76,7 +76,7 @@ class JSONUtil:
     def save_as_csv(self):
         metrics_df = self.as_dataframe()
         metrics_df.to_csv(os.path.join(self.json_path, self.json_name + ".csv"),
-                          index=False)
+                          index=True)
         set_trace()
 
 
