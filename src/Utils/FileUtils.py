@@ -20,15 +20,38 @@ class JSONUtil:
 
     @staticmethod
     def unpack_aggregate(aggregate_dict):
+        output_dict = dict()
         for key, value in aggregate_dict.iteritems():
-            
+            if key == "sloc":
+                output_dict.update({
+                    "logical_loc": value["logical"],
+                    "physical_loc": value["physical"]})
+            if key == "halstead":
+                output_dict.update({
+                    "hal_bugs": value["bugs"],
+                    "hal_difficulty": value["difficulty"],
+                    "hal_effort": value["effort"],
+                    "hal_length": value["lenght"],
+                    "hal_time": value["time"],
+                    "hal_vocabulary": value["vocabulary"],
+                    "hal_volume": value["volume"],
+                    "hal_distinct_operands": value["operands"]["distinct"],
+                    "hal_total_operands": value["operands"]["total"],
+                    "hal_distinct_operators": value["operators"]["distinct"],
+                    "hal_total_operators": value["operators"]["total"]
+                })
+            else:
+                output_dict.update({key, value})
+        return output_dict
 
     def module_metrics(self):
         with open(os.path.join(self.json_path,
                                self.json_name + ".json")) as data_file:
             data = json.load(data_file)
 
-        names = ["path", "dependencies", ""]
+        data_dict = dict()
+        for key, value in data.iteritems():
+
 
         return metrics
 
