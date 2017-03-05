@@ -6,12 +6,19 @@ from __future__ import division
 import os
 import sys
 import csv
+
 import subprocess
 from pdb import set_trace
 import numpy as np
 import pandas as pd
-
+import json
 import xml.etree.ElementTree as ET
+
+
+def json_sample():
+    with open("metrics/react.json") as data_file:
+        data = json.load(data_file)
+        set_trace()
 
 
 def xml2list():
@@ -22,13 +29,14 @@ def xml2list():
     for member in root.iter("class"):
         values = []
         for child in member.iter():
-            if child.tag!='class':
+            if child.tag != 'class':
                 if child.tag == 'cc':
                     if not "avg_cc" in names:
                         names.append("avg_cc")
                     if not "max_cc" in names:
                         names.append("max_cc")
-                    cc = [float(child0.text) for child0 in child.iter() if not child0.tag == 'cc']
+                    cc = [float(child0.text) for child0 in child.iter() if
+                          not child0.tag == 'cc']
                     try:
                         values.extend([np.mean(cc), np.max(cc)])
                     except ValueError:
@@ -41,9 +49,5 @@ def xml2list():
     set_trace()
 
 
-
-def json2list():
-
-
 if __name__ == "__main__":
-    xml2list()
+    json_sample()
