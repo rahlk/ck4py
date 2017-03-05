@@ -64,6 +64,7 @@ class JSONUtil:
                     data_dict.update({"avg_func_loc": value})
                 if key in ["functions", "cyclomatic"]:
                     pass
+            data_dict.pop('sloc', None)
             metrics.append(data_dict)
 
         return metrics
@@ -71,7 +72,7 @@ class JSONUtil:
     def as_dataframe(self):
         metrics = self.module_metrics()
         set_trace()
-        return pd.DataFrame(metrics, columns=metrics[0])
+        return pd.DataFrame(metrics, index='name')
 
     def save_as_csv(self):
         metrics_df = self.as_dataframe()
