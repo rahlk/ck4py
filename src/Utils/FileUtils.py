@@ -4,7 +4,6 @@ from __future__ import print_function
 import json
 import os
 import xml.etree.ElementTree as ET
-from pdb import set_trace
 
 import numpy as np
 import pandas as pd
@@ -77,7 +76,6 @@ class JSONUtil:
         metrics_df = self.as_dataframe()
         metrics_df.to_csv(os.path.join(self.json_path, self.json_name + ".csv"),
                           index=True)
-        set_trace()
 
 
 class XMLUtil:
