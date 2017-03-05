@@ -19,8 +19,6 @@ def json_sample(granularity="module"):
     with open("metrics/react.json") as data_file:
         data = json.load(data_file)
 
-    if "module" in granularity:
-
     set_trace()
 
 

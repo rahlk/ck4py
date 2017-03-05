@@ -41,7 +41,7 @@ class JSONUtil:
                     "hal_total_operators": value["operators"]["total"]
                 })
             else:
-                output_dict.update({key, value})
+                output_dict.update({key: value})
         return output_dict
 
     def module_metrics(self):
@@ -51,9 +51,13 @@ class JSONUtil:
 
         data_dict = dict()
         for key, value in data.iteritems():
+            if key == "dependencies":
+                data_dict.update({key: len(value)})
+            if key == "path":
+                data_dict.update({"name": "/".join(data["reports"][0]["path"].split("/")[-2:])})
+            if 
 
 
-        return metrics
 
     def as_dataframe(self):
         metrics = self.as_list()
