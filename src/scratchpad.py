@@ -15,10 +15,13 @@ import json
 import xml.etree.ElementTree as ET
 
 
-def json_sample():
+def json_sample(granularity="module"):
     with open("metrics/react.json") as data_file:
         data = json.load(data_file)
-        set_trace()
+
+    if "module" in granularity:
+
+    set_trace()
 
 
 def xml2list():

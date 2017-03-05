@@ -16,13 +16,20 @@ class JSONUtil:
     def __init__(self, json_path="metrics", json_name="metrics.json"):
         self.json_path = os.path.abspath(json_path)
         self.json_name = json_name.split(".json")[
-        0] if ".json" in json_name else json_name
+            0] if ".json" in json_name else json_name
 
-    def as_list(self):
-        with open(os.path.join(self.json_path, self.json_name+".json")) as data_file:
+    @staticmethod
+    def unpack_aggregate(aggregate_dict):
+        for key, value in aggregate_dict.iteritems():
+            
+
+    def module_metrics(self):
+        with open(os.path.join(self.json_path,
+                               self.json_name + ".json")) as data_file:
             data = json.load(data_file)
 
-        set_trace()
+        names = ["path", "dependencies", ""]
+
         return metrics
 
     def as_dataframe(self):
@@ -32,7 +39,7 @@ class JSONUtil:
     def save_as_csv(self):
         metrics_df = self.as_dataframe()
         metrics_df.to_csv(os.path.join(self.json_path, self.json_name + ".csv"),
-                        index=False)
+                          index=False)
 
 
 class XMLUtil:
