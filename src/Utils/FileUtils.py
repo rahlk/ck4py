@@ -50,7 +50,6 @@ class JSONUtil:
             data = json.load(data_file)
 
         metrics = list()
-        set_trace()
         for reports in data["reports"]:
             data_dict = dict()
             for key, value in reports.iteritems():
