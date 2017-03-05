@@ -31,7 +31,7 @@ class JSONUtil:
                     "hal_bugs": value["bugs"],
                     "hal_difficulty": value["difficulty"],
                     "hal_effort": value["effort"],
-                    "hal_length": value["lenght"],
+                    "hal_length": value["length"],
                     "hal_time": value["time"],
                     "hal_vocabulary": value["vocabulary"],
                     "hal_volume": value["volume"],
