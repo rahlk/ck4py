@@ -1,18 +1,14 @@
 """
 Test code snippets for integration
 """
-from __future__ import print_function
 from __future__ import division
-import os
-import sys
-import csv
+from __future__ import print_function
 
-import subprocess
-from pdb import set_trace
-import numpy as np
-import pandas as pd
 import json
 import xml.etree.ElementTree as ET
+from pdb import set_trace
+
+import numpy as np
 
 
 def json_sample(granularity="module"):

@@ -1,19 +1,16 @@
-from __future__ import print_function
 from __future__ import division
+from __future__ import print_function
+
 import os
 import subprocess
-import numpy as np
-import pandas as pd
 from pdb import set_trace
-import xml.etree.ElementTree as ET
-import json
 
+from FileUtils import XMLUtil
 
 root = os.getcwd()
 
 
 class JavaUtil:
-
     def __init__(self, jar_file, class_path=None, save_path="metrics",
                  file_name="metrics"):
         self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
@@ -41,7 +38,6 @@ class JavaUtil:
 
 
 class JSUtil:
-
     def __init__(self, js_path, save_path="metrics", file_name="metrics"):
         self.file_name = file_name if ".json" in file_name else file_name + ".json"
         self.js_path = os.path.abspath(js_path)
@@ -49,11 +45,11 @@ class JSUtil:
 
     def run_escomplex(self):
         cmd = ["cr", "--ignoreerrors", "--output"
-                , os.path.join(self.save_path, self.file_name),
-                "--format", "json",
-                self.js_path]
+            , os.path.join(self.save_path, self.file_name),
+               "--format", "json",
+               self.js_path]
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
-                                   , stderr=open(os.devnull, "w"))
+                                , stderr=open(os.devnull, "w"))
 
     def save_metrics(self):
         metrics = self.run_escomplex().communicate()[0]
@@ -65,11 +61,11 @@ def __test_util():
     Run a test case
     :return:
     """
-    m = MetricUtil(jar_file="data/ant-1.8.2/build/lib/ant.jar",
-                   file_name="ant.xml")
+    m = JavaUtil(jar_file="data/ant-1.8.2/build/lib/ant.jar",
+                 file_name="ant.xml")
     m.save_metrics()
     xml = XMLUtil(xml_name="ant.xml")
-    xml.as_csv()
+    xml.save_as_csv()
 
 
 if __name__ == "__main__":

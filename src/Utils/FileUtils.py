@@ -1,13 +1,13 @@
-from __future__ import print_function
 from __future__ import division
+from __future__ import print_function
+
+import json
 import os
-import subprocess
+import xml.etree.ElementTree as ET
+from pdb import set_trace
+
 import numpy as np
 import pandas as pd
-from pdb import set_trace
-import xml.etree.ElementTree as ET
-import json
-from pprint import pprint
 
 root = os.getcwd()
 
