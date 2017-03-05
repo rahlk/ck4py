@@ -49,7 +49,7 @@ class JSONUtil:
                                self.json_name + ".json")) as data_file:
             data = json.load(data_file)
 
-        data = list()
+        metrics = list()
         for reports in data["reports"]:
             data_dict = dict()
             for key, value in reports.iteritems():
@@ -64,9 +64,9 @@ class JSONUtil:
                     data_dict.update({"avg_func_loc": value})
                 if key in ["functions", "cyclomatic"]:
                     pass
-            data.append(data_dict)
+            metrics.append(data_dict)
 
-        return data
+        return metrics
 
     def as_dataframe(self):
         metrics = self.module_metrics()
