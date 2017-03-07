@@ -80,14 +80,17 @@ class JSONUtil:
 
 
 class XMLUtil:
-    def __init__(self, xml_path="metrics", xml_name="metrics.xml"):
+    def __init__(self, xml_path=""
+                     , xml_name=""
+                     , findbugs_output_path = ""):
         self.xml_path = os.path.abspath(xml_path)
+        self.findbugs_output_path = os.path.abspath(findbugs_output_path)
         self.xml_name = xml_name.split(".xml")[
             0] if ".xml" in xml_name else xml_name
 
     def list_bugs(self):
         pass
-        
+
     def metrics_as_list(self):
         tree = ET.parse(os.path.join(self.xml_path, self.xml_name + ".xml"))
         root = tree.getroot()

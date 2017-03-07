@@ -27,6 +27,10 @@ class JavaUtil:
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w"))
 
+    def run_findbugs(self):
+        cmd = [os.path.join(root, "tools/findbugs-3.0.1/bin/findbugs",
+        ]
+
     @staticmethod
     def qmood():
         return
