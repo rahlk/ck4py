@@ -92,8 +92,15 @@ class XMLUtil:
     def stitch_bugs(self, metrics):
         tree = ET.parse(os.path.join(self.xml_path, self.bugfile_name + ".xml"))
         root = tree.getroot()
-        for member in root.iter("FindBugsSummary"):
-            set_trace()
+        bug_list = list()
+        for member in root.iter():
+            if member.tag == "ClassStats":
+                    bug_list.append({
+                        "name": member.attrib["class"],
+                        "bugs": member.attrib["bugs"]
+                    })
+        bug_df = pd.DataFrame(bug_list).set_index("name")
+        set_trace()
 
         return
 
@@ -130,7 +137,7 @@ class XMLUtil:
 
     def as_dataframe(self):
         metrics = self.metrics_as_list()
-        return pd.DataFrame(metrics[1:], columns=metrics[0])
+        return pd.DataFrame(metrics[1:], columns=metrics[0]).set_index("name")
 
     def save_as_csv(self):
         metrics_df = self.stitch_bugs(metrics=self.as_dataframe())
