@@ -6,7 +6,7 @@ from Utils.MetricsUtils import JavaUtil, JSUtil
 
 
 def jar_sample_case():
-    m = JavaUtil(jar_file="data/java/ant-1.8.2/build/lib/ant.jar",
+    m = JavaUtil(jar_file="data/java/ant/ant-1.1/bin/jakarta-ant/lib/ant.jar",
                  file_name="ant.xml")
     m.save_metrics()
     xml = XMLUtil(xml_name="ant.xml")
@@ -25,4 +25,5 @@ def js_sample_case():
 
 
 if __name__ == "__main__":
-    js_sample_case()
+    jar_sample_case()
+    # js_sample_case()
