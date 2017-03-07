@@ -80,8 +80,7 @@ class JSONUtil:
 
 
 class XMLUtil:
-    def __init__(self, xml_path=""
-                     , xml_name=""
+    def __init__(self, xml_name, xml_path="metrics"
                      , findbugs_output_path = ""):
         self.xml_path = os.path.abspath(xml_path)
         self.findbugs_output_path = os.path.abspath(findbugs_output_path)
