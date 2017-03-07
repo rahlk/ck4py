@@ -32,7 +32,8 @@ class JavaUtil:
         cmd = [os.path.join(root, "tools/findbugs-3.0.1/bin/findbugs"),
                "-textui",
                "-project", self.fbp_file,
-               "-xml"]
+               "-xml", "-outputFile",
+               os.path.join(self.save_path, "bugs-" + self.file_name)]
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w"))
 
@@ -42,11 +43,9 @@ class JavaUtil:
 
     def save_metrics(self, as_xml=False):
         metrics = self.run_ckjm().communicate()[0]
-        findbugs = self.run_findbugs().communicate()[0]
+        foundbugs = self.run_findbugs().communicate()[0]
         print("<metrics>", metrics, "</metrics>", sep="\n",
               file=open(os.path.join(self.save_path, self.file_name), "w+"))
-        print(findbugs, file=open(os.path.join(self.save_path
-                                               , "bugs-"+self.file_name), "w+"))
 
 
 class JSUtil:
