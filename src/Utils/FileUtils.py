@@ -85,7 +85,10 @@ class XMLUtil:
         self.xml_name = xml_name.split(".xml")[
             0] if ".xml" in xml_name else xml_name
 
-    def as_list(self):
+    def list_bugs(self):
+        pass
+        
+    def metrics_as_list(self):
         tree = ET.parse(os.path.join(self.xml_path, self.xml_name + ".xml"))
         root = tree.getroot()
         names = []
@@ -117,7 +120,7 @@ class XMLUtil:
         return metrics
 
     def as_dataframe(self):
-        metrics = self.as_list()
+        metrics = self.metrics_as_list()
         return pd.DataFrame(metrics[1:], columns=metrics[0])
 
     def save_as_csv(self):
