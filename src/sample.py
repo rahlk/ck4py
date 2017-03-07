@@ -2,7 +2,7 @@ from __future__ import division
 from __future__ import print_function
 
 from Utils.FileUtils import JSONUtil, XMLUtil
-from Utils.MetricsUtils import JavaUtil, JSUtil
+from Utils.MetricsUtil import JavaUtil, JSUtil
 
 
 def jar_sample_case():
