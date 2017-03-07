@@ -1,0 +1,255 @@
+#2013-09-05T09:59:44NZST
+#System Version : ant-1.1
+#Source Packages: org.apache.tools.,com.oreilly.
+#Ignore Packages: 
+#Distributed    : jakarta-ant/src/main
+#Source Roots   : jakarta-ant/src/main,jakarta-ant/src/testcases
+#1. Fully-qualified type name
+#2. location in bin
+#3. location in src
+#4. 0=in src pkg (user-defined), 1=not in src pkg. See 'Source Packages' above
+#5. 0=both bin and src, 1=bin only, 2=src only
+#6. 0=distributed, 1 = not distributed. Source code in 'Distributed' above
+#7. 0=top-level public, 4=top-level non-public, 1=top-level different name, 2=nested, 3=probably haven't seen source, -1 no source, or not parsed
+#8. LOC - physical lines in file (for public type only)
+#9. NCLOC - non-commented lines of code in file (for public type only)
+#
+com.sun.xml.util.MessageCatalog	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.util.XmlChars	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.util.XmlNames	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+javax.xml.parsers.DocumentBuilder	jakarta-ant/lib/jaxp.jar		1	1	1	-1	0	0
+javax.xml.parsers.DocumentBuilderFactory	jakarta-ant/lib/jaxp.jar		1	1	1	-1	0	0
+javax.xml.parsers.FactoryConfigurationError	jakarta-ant/lib/jaxp.jar		1	1	1	-1	0	0
+javax.xml.parsers.ParserConfigurationException	jakarta-ant/lib/jaxp.jar		1	1	1	-1	0	0
+javax.xml.parsers.SAXParser	jakarta-ant/lib/jaxp.jar		1	1	1	-1	0	0
+javax.xml.parsers.SAXParserFactory	jakarta-ant/lib/jaxp.jar		1	1	1	-1	0	0
+org.apache.tools.ant.taskdefs.optional.NetRexxC		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/NetRexxC.java	0	2	0	0	657	299
+org.apache.tools.ant.taskdefs.optional.RenameExtensions		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/RenameExtensions.java	0	2	0	0	163	61
+org.apache.tools.ant.taskdefs.optional.Script		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/Script.java	0	2	0	0	160	61
+org.apache.tools.ant.taskdefs.optional.XalanLiaison		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/XalanLiaison.java	0	2	0	0	87	20
+org.apache.tools.ant.taskdefs.optional.XslpLiaison		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/XslpLiaison.java	0	2	0	0	88	20
+org.xml.sax.helpers.AttributeListImpl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.helpers.LocatorImpl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.helpers.ParserFactory	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.AttributeNode	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.AttributeSet	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.CDataNode	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.CommentNode	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.DataNode	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.DataNode$NodeListImpl	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.Doctype	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.Doctype$EntityNode	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.Doctype$Nodemap	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.Doctype$NotationNode	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.DocumentEx	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.DomEx	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.ElementEx	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.ElementFactory	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.ElementNode	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.NamespaceScoped	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.NodeBase	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.NodeEx	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.PINode	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.ParentNode	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.ParentNode$TagList	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.ParseContext	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.SimpleElementFactory	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.TextNode	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.TreeWalker	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.XmlDocument	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.XmlDocument$Catalog	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.XmlDocument$DocFragNode	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.XmlDocument$EntityRefNode	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.XmlDocument$ExtWriteContext	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.XmlDocumentBuilder	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.XmlDocumentBuilder$DtdListener	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.XmlDocumentBuilder$ParseContextImpl	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.tree.XmlReadable	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.XmlWritable	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.tree.XmlWriteContext	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.apache.tools.ant.taskdefs.optional.ejb.DDCreator		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/ejb/DDCreator.java	0	2	0	0	162	44
+org.apache.tools.ant.taskdefs.optional.ejb.DDCreatorHelper		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/ejb/DDCreatorHelper.java	0	2	0	0	149	50
+org.apache.tools.ant.taskdefs.optional.ejb.EjbJar		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/ejb/EjbJar.java	0	2	0	0	645	290
+org.apache.tools.ant.taskdefs.optional.ejb.Ejbc		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/ejb/Ejbc.java	0	2	0	0	200	61
+org.apache.tools.ant.taskdefs.optional.ejb.EjbcHelper		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/ejb/EjbcHelper.java	0	2	0	0	278	125
+org.apache.tools.ant.taskdefs.optional.ejb.WLRun		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/ejb/WLRun.java	0	2	0	0	224	73
+org.apache.tools.ant.taskdefs.optional.ejb.WLStop		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/ejb/WLStop.java	0	2	0	0	168	42
+org.xml.sax.AttributeList	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.DTDHandler	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.DocumentHandler	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.EntityResolver	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.ErrorHandler	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.HandlerBase	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.InputSource	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.Locator	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.Parser	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.SAXException	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.xml.sax.SAXParseException	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.apache.tools.ant.taskdefs.Ant	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Ant.java	0	0	0	0	179	78
+org.apache.tools.ant.taskdefs.AntStructure	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/AntStructure.java	0	0	0	0	261	160
+org.apache.tools.ant.taskdefs.Available	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Available.java	0	0	0	0	128	55
+org.apache.tools.ant.taskdefs.Chmod	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Chmod.java	0	0	0	0	125	48
+org.apache.tools.ant.taskdefs.CompileTask	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/CompileTask.java	0	0	0	0	112	27
+org.apache.tools.ant.taskdefs.Copydir	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Copydir.java	0	0	0	0	138	65
+org.apache.tools.ant.taskdefs.Copyfile	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Copyfile.java	0	0	0	0	97	29
+org.apache.tools.ant.taskdefs.Cvs	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Cvs.java	0	0	0	0	154	64
+org.apache.tools.ant.taskdefs.Delete	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Delete.java	0	0	0	0	156	58
+org.apache.tools.ant.taskdefs.Deltree	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Deltree.java	0	0	0	0	122	43
+org.apache.tools.ant.taskdefs.Echo	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Echo.java	0	0	0	0	85	13
+org.apache.tools.ant.taskdefs.Exec	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Exec.java	0	0	0	0	240	136
+org.apache.tools.ant.taskdefs.Exec$StreamPumper	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Exec.java	0	0	0	2	0	0
+org.apache.tools.ant.taskdefs.Expand	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Expand.java	0	0	0	0	159	65
+org.apache.tools.ant.taskdefs.Filter	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Filter.java	0	0	0	0	81	15
+org.apache.tools.ant.taskdefs.FixCRLF	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/FixCRLF.java	0	0	0	0	382	186
+org.apache.tools.ant.taskdefs.FixCRLF$AddAsisRemove	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/FixCRLF.java	0	0	0	2	0	0
+org.apache.tools.ant.taskdefs.GUnzip	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/GUnzip.java	0	0	0	0	143	68
+org.apache.tools.ant.taskdefs.GZip	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/GZip.java	0	0	0	0	130	56
+org.apache.tools.ant.taskdefs.Get	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Get.java	0	0	0	0	157	62
+org.apache.tools.ant.taskdefs.Jar	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Jar.java	0	0	0	0	123	42
+org.apache.tools.ant.taskdefs.Java	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Java.java	0	0	0	0	241	115
+org.apache.tools.ant.taskdefs.Javac	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Javac.java	0	0	0	0	797	437
+org.apache.tools.ant.taskdefs.Javac$JarFilenameFilter	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Javac.java	0	0	0	2	0	0
+org.apache.tools.ant.taskdefs.JavacOutputStream	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/JavacOutputStream.java	0	0	0	4	125	33
+org.apache.tools.ant.taskdefs.Javadoc	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Javadoc.java	0	0	0	0	989	759
+org.apache.tools.ant.taskdefs.Javadoc$DocletInfo	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Javadoc.java	0	0	0	2	0	0
+org.apache.tools.ant.taskdefs.Javadoc$DocletParam	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Javadoc.java	0	0	0	2	0	0
+org.apache.tools.ant.taskdefs.Javadoc$GroupArgument	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Javadoc.java	0	0	0	2	0	0
+org.apache.tools.ant.taskdefs.Javadoc$JavaReader	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Javadoc.java	0	0	0	2	0	0
+org.apache.tools.ant.taskdefs.Javadoc$LinkArgument	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Javadoc.java	0	0	0	2	0	0
+org.apache.tools.ant.taskdefs.Jikes	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Jikes.java	0	0	0	0	47	24
+org.apache.tools.ant.taskdefs.JikesOutputParser	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/JikesOutputParser.java	0	0	0	0	103	56
+org.apache.tools.ant.taskdefs.KeySubst	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/KeySubst.java	0	0	0	0	203	101
+org.apache.tools.ant.taskdefs.MatchingTask	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/MatchingTask.java	0	0	0	0	310	144
+org.apache.tools.ant.taskdefs.MatchingTask$NameEntry	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/MatchingTask.java	0	0	0	2	0	0
+org.apache.tools.ant.taskdefs.Mkdir	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Mkdir.java	0	0	0	0	87	21
+org.apache.tools.ant.taskdefs.Patch	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Patch.java	0	0	0	0	174	70
+org.apache.tools.ant.taskdefs.Property	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Property.java	0	0	0	0	242	150
+org.apache.tools.ant.taskdefs.Rename	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Rename.java	0	0	0	0	116	30
+org.apache.tools.ant.taskdefs.Replace	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Replace.java	0	0	0	0	190	78
+org.apache.tools.ant.taskdefs.Rmic	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Rmic.java	0	0	0	0	417	245
+org.apache.tools.ant.taskdefs.SignJar	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/SignJar.java	0	0	0	0	218	116
+org.apache.tools.ant.taskdefs.Tar	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Tar.java	0	0	0	0	148	66
+org.apache.tools.ant.taskdefs.TaskOutputStream	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/TaskOutputStream.java	0	0	0	0	118	28
+org.apache.tools.ant.taskdefs.Taskdef	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Taskdef.java	0	0	0	0	111	40
+org.apache.tools.ant.taskdefs.Touch	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Touch.java	0	0	0	0	197	98
+org.apache.tools.ant.taskdefs.Tstamp	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Tstamp.java	0	0	0	0	86	20
+org.apache.tools.ant.taskdefs.Untar	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Untar.java	0	0	0	0	167	73
+org.apache.tools.ant.taskdefs.XSLTLiaison	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/XSLTLiaison.java	0	0	0	0	70	6
+org.apache.tools.ant.taskdefs.XSLTProcess	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/XSLTProcess.java	0	0	0	0	314	102
+org.apache.tools.ant.taskdefs.Zip	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/taskdefs/Zip.java	0	0	0	0	239	130
+org.apache.tools.tar.TarBuffer	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/tar/TarBuffer.java	0	0	0	0	440	223
+org.apache.tools.tar.TarConstants	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/tar/TarConstants.java	0	0	0	0	182	25
+org.apache.tools.tar.TarEntry	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/tar/TarEntry.java	0	0	0	0	572	244
+org.apache.tools.tar.TarInputStream	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/tar/TarInputStream.java	0	0	0	0	419	197
+org.apache.tools.tar.TarOutputStream	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/tar/TarOutputStream.java	0	0	0	0	314	121
+org.apache.tools.tar.TarUtils	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/tar/TarUtils.java	0	0	0	0	234	85
+org.apache.tools.ant.AllJUnitTests		jakarta-ant/src/testcases/org/apache/tools/ant/AllJUnitTests.java	0	2	1	0	78	15
+org.apache.tools.ant.BuildEvent	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/BuildEvent.java	0	0	0	0	166	53
+org.apache.tools.ant.BuildException	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/BuildException.java	0	0	0	0	162	39
+org.apache.tools.ant.BuildListener	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/BuildListener.java	0	0	0	0	119	11
+org.apache.tools.ant.DefaultLogger	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/DefaultLogger.java	0	0	0	0	162	67
+org.apache.tools.ant.DesirableFilter	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/DesirableFilter.java	0	0	0	0	118	24
+org.apache.tools.ant.DirectoryScanner	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/DirectoryScanner.java	0	0	0	0	827	393
+org.apache.tools.ant.EnumeratedAttribute	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/EnumeratedAttribute.java	0	0	0	0	112	27
+org.apache.tools.ant.EnumeratedAttributeTest		jakarta-ant/src/testcases/org/apache/tools/ant/EnumeratedAttributeTest.java	0	2	1	0	122	54
+org.apache.tools.ant.IntrospectionHelper	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	0	510	320
+org.apache.tools.ant.IntrospectionHelper$1	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$10	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$11	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$12	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$13	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$14	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$15	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$2	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$3	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$4	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$5	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$6	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$7	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$8	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$9	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$AttributeSetter	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelper$NestedCreator	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/IntrospectionHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.IntrospectionHelperTest		jakarta-ant/src/testcases/org/apache/tools/ant/IntrospectionHelperTest.java	0	2	1	0	434	330
+org.apache.tools.ant.Location	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/Location.java	0	0	0	0	111	30
+org.apache.tools.ant.Main	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/Main.java	0	0	0	0	361	202
+org.apache.tools.ant.Map	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/Map.java	0	0	0	0	62	5
+org.apache.tools.ant.Path	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/Path.java	0	0	0	0	224	91
+org.apache.tools.ant.PathTest		jakarta-ant/src/testcases/org/apache/tools/ant/PathTest.java	0	2	1	0	205	128
+org.apache.tools.ant.PathTokenizer	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/PathTokenizer.java	0	0	0	0	129	40
+org.apache.tools.ant.Project	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/Project.java	0	0	0	0	922	575
+org.apache.tools.ant.ProjectHelper	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/ProjectHelper.java	0	0	0	0	503	322
+org.apache.tools.ant.ProjectHelper$AbstractHandler	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/ProjectHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.ProjectHelper$NestedElementHandler	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/ProjectHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.ProjectHelper$ProjectHandler	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/ProjectHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.ProjectHelper$RootHandler	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/ProjectHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.ProjectHelper$TargetHandler	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/ProjectHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.ProjectHelper$TaskHandler	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/ProjectHelper.java	0	0	0	2	0	0
+org.apache.tools.ant.Target	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/Target.java	0	0	0	0	161	83
+org.apache.tools.ant.Task	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/Task.java	0	0	0	0	197	50
+org.apache.tools.ant.TaskAdapter	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/TaskAdapter.java	0	0	0	0	102	28
+org.apache.tools.ant.XmlLogger	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/org/apache/tools/ant/XmlLogger.java	0	0	0	0	269	155
+org.w3c.dom.Attr	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.CDATASection	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.CharacterData	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.Comment	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.DOMException	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.DOMImplementation	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.Document	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.DocumentFragment	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.DocumentType	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.Element	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.Entity	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.EntityReference	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.NamedNodeMap	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.Node	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.NodeList	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.Notation	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.ProcessingInstruction	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+org.w3c.dom.Text	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.AttributeDecl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.AttributeListEx	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.AttributeListImpl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.ContentModel	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.ContentModelState	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.DocumentBuilderFactoryImpl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.DocumentBuilderImpl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.DtdEventListener	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.ElementDecl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.ElementValidator	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.EndOfInputException	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.EntityDecl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.ExternalEntity	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.InputEntity	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.InternalEntity	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.LexicalEventListener	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.Parser	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.Parser$Catalog	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.Parser$DocLocator	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.Parser$ListenerBase	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.Parser$NameCache	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.Parser$NameCacheEntry	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.Resolver	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.SAXParserFactoryImpl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.SAXParserImpl	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.SimpleHashtable	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.SimpleHashtable$Entry	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.ValidatingParser	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.ValidatingParser$1	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.ValidatingParser$ChildrenValidator	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.ValidatingParser$EmptyValidator	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.ValidatingParser$MixedValidator	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.XmlReader	jakarta-ant/lib/parser.jar		1	1	1	-1	0	0
+com.sun.xml.parser.XmlReader$AsciiReader	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.XmlReader$BaseReader	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.XmlReader$Iso8859_1Reader	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.sun.xml.parser.XmlReader$Utf8Reader	jakarta-ant/lib/parser.jar		1	1	1	2	0	0
+com.oreilly.servlet.MailMessage	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/com/oreilly/servlet/MailMessage.java	0	0	0	0	448	215
+com.oreilly.servlet.MailPrintStream	jakarta-ant/lib/ant.jar	jakarta-ant/src/main/com/oreilly/servlet/MailMessage.java	0	0	0	1	0	0
+org.apache.tools.ant.taskdefs.optional.vss.MSVSS		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/vss/MSVSS.java	0	2	0	0	196	56
+org.apache.tools.ant.taskdefs.optional.vss.MSVSSGET		jakarta-ant/src/main/org/apache/tools/ant/taskdefs/optional/vss/MSVSSGET.java	0	2	0	0	309	105
+#Issues
+#======
+#SRC IGNORED: /opt/qualitas/working/QualitasCorpus-20130904-COPY/Systems/ant/ant-1.1/src/jakarta-ant/lib/jaxp.jar in <src> ignored.
+#SRC IGNORED: /opt/qualitas/working/QualitasCorpus-20130904-COPY/Systems/ant/ant-1.1/src/jakarta-ant/lib/parser.jar in <src> ignored.
+#SRC NO PUBLIC TYPE for jakarta-ant/src/main/org/apache/tools/ant/taskdefs/JavacOutputStream.java.

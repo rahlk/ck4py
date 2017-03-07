@@ -55,6 +55,7 @@ class JSONUtil:
                 if key == "dependencies":
                     data_dict.update({key: len(value)})
                 if key == "path":
+
                     data_dict.update({"name": "/".join(value.split("/")[-2:])})
                 if key == "aggregate":
                     data_dict.update(self.unpack_aggregate(value))
