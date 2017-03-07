@@ -4,6 +4,7 @@ from __future__ import print_function
 import json
 import os
 import xml.etree.ElementTree as ET
+from pdb import set_trace
 
 import numpy as np
 import pandas as pd
@@ -55,7 +56,6 @@ class JSONUtil:
                 if key == "dependencies":
                     data_dict.update({key: len(value)})
                 if key == "path":
-
                     data_dict.update({"name": "/".join(value.split("/")[-2:])})
                 if key == "aggregate":
                     data_dict.update(self.unpack_aggregate(value))
@@ -80,18 +80,22 @@ class JSONUtil:
 
 
 class XMLUtil:
-    def __init__(self, xml_name, xml_path="metrics"
-                     , findbugs_output_path = ""):
+    def __init__(self, metrics_name, bugfile_name, xml_path="metrics"
+                 , findbugs_output_path=""):
         self.xml_path = os.path.abspath(xml_path)
         self.findbugs_output_path = os.path.abspath(findbugs_output_path)
-        self.xml_name = xml_name.split(".xml")[
-            0] if ".xml" in xml_name else xml_name
+        self.bugfile_name = bugfile_name.split(".xml")[
+            0] if ".xml" in bugfile_name else bugfile_name
+        self.metrics_name = metrics_name.split(".xml")[
+            0] if ".xml" in metrics_name else metrics_name
 
-    def list_bugs(self):
-        pass
+    def stitch_bugs(self, metrics):
+        tree = ET.parse(os.path.join(self.xml_path, self.bugfile_name + ".xml"))
+        set_trace()
+        return
 
     def metrics_as_list(self):
-        tree = ET.parse(os.path.join(self.xml_path, self.xml_name + ".xml"))
+        tree = ET.parse(os.path.join(self.xml_path, self.metrics_name + ".xml"))
         root = tree.getroot()
         names = []
         metrics = []
@@ -126,6 +130,7 @@ class XMLUtil:
         return pd.DataFrame(metrics[1:], columns=metrics[0])
 
     def save_as_csv(self):
-        metrics_df = self.as_dataframe()
-        metrics_df.to_csv(os.path.join(self.xml_path, self.xml_name + ".csv"),
-                          index=False)
+        metrics_df = self.stitch_bugs(metrics=self.as_dataframe())
+        metrics_df.to_csv(
+            os.path.join(self.xml_path, self.metrics_name + ".csv"),
+            index=False)

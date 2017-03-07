@@ -10,7 +10,7 @@ def jar_sample_case():
                  fbp_file="data/java/fbp/ant/ant-1.1.fbp",
                  file_name="ant.xml")
     m.save_metrics()
-    xml = XMLUtil(xml_name="ant.xml")
+    xml = XMLUtil(metrics_name="ant.xml")
     xml.save_as_csv()
 
 

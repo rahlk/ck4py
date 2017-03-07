@@ -75,7 +75,7 @@ def __test_util():
     m = JavaUtil(jar_file="data/ant-1.8.2/build/lib/ant.jar",
                  file_name="ant.xml")
     m.save_metrics()
-    xml = XMLUtil(xml_name="ant.xml")
+    xml = XMLUtil(metrics_name="ant.xml")
     xml.save_as_csv()
 
 
