@@ -11,10 +11,11 @@ root = os.getcwd()
 
 
 class JavaUtil:
-    def __init__(self, jar_file, class_path=None, save_path="metrics",
+    def __init__(self, jar_file, fbp_file, class_path=None, save_path="metrics",
                  file_name="metrics"):
         self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
         self.jar_file = os.path.abspath(jar_file)
+        self.fbp_file = os.path.abspath(fbp_file)
         self.save_path = os.path.abspath(save_path)
         self.class_path = os.path.abspath(class_path) if class_path else None
 
@@ -28,8 +29,12 @@ class JavaUtil:
                                 , stderr=open(os.devnull, "w"))
 
     def run_findbugs(self):
-        cmd = [os.path.join(root, "tools/findbugs-3.0.1/bin/findbugs",
-        ]
+        cmd = [os.path.join(root, "tools/findbugs-3.0.1/bin/findbugs"),
+               "-textui",
+               "-project", self.fbp_file,
+               "-xml"]
+        return subprocess.Popen(cmd, stdout=subprocess.PIPE
+                                , stderr=open(os.devnull, "w"))
 
     @staticmethod
     def qmood():
@@ -37,8 +42,11 @@ class JavaUtil:
 
     def save_metrics(self, as_xml=False):
         metrics = self.run_ckjm().communicate()[0]
+        findbugs = self.run_findbugs().communicate()[0]
         print("<metrics>", metrics, "</metrics>", sep="\n",
               file=open(os.path.join(self.save_path, self.file_name), "w+"))
+        print(findbugs, file=open(os.path.join(self.save_path
+                                               , "bugs-"+self.file_name), "w+"))
 
 
 class JSUtil:

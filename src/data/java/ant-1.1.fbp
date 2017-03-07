@@ -1,4 +1,0 @@
-<Project projectName="">
-  <Jar>./ant/ant-1.1/bin/jakarta-ant/lib/ant.jar</Jar>
-  <SrcDir>./ant/ant-1.1/bin/jakarta-ant/src</SrcDir>
-</Project>
