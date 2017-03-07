@@ -80,18 +80,21 @@ class JSONUtil:
 
 
 class XMLUtil:
-    def __init__(self, metrics_name, bugfile_name, xml_path="metrics"
+    def __init__(self, metrics_name, xml_path="metrics"
                  , findbugs_output_path=""):
         self.xml_path = os.path.abspath(xml_path)
         self.findbugs_output_path = os.path.abspath(findbugs_output_path)
-        self.bugfile_name = bugfile_name.split(".xml")[
-            0] if ".xml" in bugfile_name else bugfile_name
+        self.bugfile_name = "bugs-{}".format(metrics_name.split(".xml")[
+            0] if ".xml" in metrics_name else metrics_name)
         self.metrics_name = metrics_name.split(".xml")[
             0] if ".xml" in metrics_name else metrics_name
 
     def stitch_bugs(self, metrics):
         tree = ET.parse(os.path.join(self.xml_path, self.bugfile_name + ".xml"))
-        set_trace()
+        root = tree.getroot()
+        for member in root.iter("FindBugsSummary"):
+            set_trace()
+
         return
 
     def metrics_as_list(self):
