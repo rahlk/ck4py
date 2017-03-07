@@ -7,7 +7,7 @@ from Utils.MetricsUtil import JavaUtil, JSUtil
 
 def jar_sample_case():
     m = JavaUtil(jar_file="data/java/raw/ant/ant-1.1/bin/jakarta-ant/lib/ant.jar",
-                 fba_file="data/java/fbp/ant/ant-1.1.fbp",
+                 fbp_file="data/java/fbp/ant/ant-1.1.fbp",
                  file_name="ant.xml")
     m.save_metrics()
     xml = XMLUtil(xml_name="ant.xml")
