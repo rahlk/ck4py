@@ -89,7 +89,7 @@ class XMLUtil:
         self.metrics_name = metrics_name.split(".xml")[
             0] if ".xml" in metrics_name else metrics_name
 
-    def get_bugs(self, metrics):
+    def get_bugs(self):
         tree = ET.parse(os.path.join(self.xml_path, self.bugfile_name + ".xml"))
         root = tree.getroot()
         bug_list = list()
