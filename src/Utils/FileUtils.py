@@ -85,24 +85,27 @@ class XMLUtil:
         self.xml_path = os.path.abspath(xml_path)
         self.findbugs_output_path = os.path.abspath(findbugs_output_path)
         self.bugfile_name = "bugs-{}".format(metrics_name.split(".xml")[
-            0] if ".xml" in metrics_name else metrics_name)
+                                                 0] if ".xml" in metrics_name else metrics_name)
         self.metrics_name = metrics_name.split(".xml")[
             0] if ".xml" in metrics_name else metrics_name
 
-    def stitch_bugs(self, metrics):
+    def get_bugs(self, metrics):
         tree = ET.parse(os.path.join(self.xml_path, self.bugfile_name + ".xml"))
         root = tree.getroot()
         bug_list = list()
         for member in root.iter():
             if member.tag == "ClassStats":
-                    bug_list.append({
-                        "name": member.attrib["class"],
-                        "bugs": member.attrib["bugs"]
-                    })
-        bug_df = pd.DataFrame(bug_list).set_index("name")
-        set_trace()
+                bug_list.append({
+                    "name": member.attrib["class"],
+                    "bugs": member.attrib["bugs"]
+                })
 
-        return
+        return pd.DataFrame(bug_list).set_index("name")
+
+    @staticmethod
+    def stitch_bugs(metrics, bugs):
+        return pd.merge(metrics, bugs, left_index=True, right_index=True,
+                        how='outer')
 
     def metrics_as_list(self):
         tree = ET.parse(os.path.join(self.xml_path, self.metrics_name + ".xml"))
@@ -135,12 +138,13 @@ class XMLUtil:
         metrics.insert(0, names)
         return metrics
 
-    def as_dataframe(self):
+    def get_metrics(self):
         metrics = self.metrics_as_list()
         return pd.DataFrame(metrics[1:], columns=metrics[0]).set_index("name")
 
     def save_as_csv(self):
-        metrics_df = self.stitch_bugs(metrics=self.as_dataframe())
+        metrics = self.get_metrics()
+        bugs = self.get_bugs()
+        metrics_df = self.stitch_bugs(metrics, bugs)
         metrics_df.to_csv(
-            os.path.join(self.xml_path, self.metrics_name + ".csv"),
-            index=False)
+            os.path.join(self.xml_path, self.metrics_name + ".csv"))
