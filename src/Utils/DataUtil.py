@@ -20,5 +20,5 @@ def get_jar_paths():
     pass
 
 
-if __namane__ == "__main__":
+if __name__ == "__main__":
     get_jar_paths()
