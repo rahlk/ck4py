@@ -14,9 +14,12 @@ if root not in sys.path:
 def get_jar_paths():
     project_dir = os.path.join(root, "data/java/raw/")
     projects = glob(os.path.join(project_dir,"*"))
+    path_dict = dict()
     for project in projects:
         files = glob(os.path.join(project, "**/*.jar"))
-        set_trace()
+        for f in files:
+            name = f.split("raw")[0]
+            set_trace()
     pass
 
 
