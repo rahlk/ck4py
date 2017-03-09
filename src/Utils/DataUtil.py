@@ -29,7 +29,7 @@ def get_jar_paths():
                             chunks[1]: [f]
                         }})
                 else:
-                    set_trace()
+                    path_dict[chunks[0]].update({chunks[1]: [f]})
 
         set_trace()
     pass
