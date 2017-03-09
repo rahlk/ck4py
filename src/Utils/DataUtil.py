@@ -6,6 +6,7 @@ import sys
 from pdb import set_trace
 from glob2 import glob
 from pprint import pprint
+import json
 
 root = os.path.join(os.getcwd().split("src")[0], "src")
 if root not in sys.path:
@@ -31,7 +32,10 @@ def get_jar_paths():
                         }})
                 elif chunks[1] in e:
                     path_dict[chunks[0]].update({chunks[1]: [f]})
-        set_trace()
+
+    with open('jar_paths.json', 'w') as fp:
+        json.dump(path_dict, fp, sort_keys=True, indent=2)
+
     pass
 
 
