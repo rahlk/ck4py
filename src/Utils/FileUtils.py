@@ -9,7 +9,9 @@ from pdb import set_trace
 import numpy as np
 import pandas as pd
 
-root = os.getcwd()
+root = os.path.join(os.getcwd().split("src")[0], "src")
+if root not in sys.path:
+    sys.path.append(root)
 
 
 class JSONUtil:
