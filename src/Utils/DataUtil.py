@@ -23,7 +23,8 @@ def get_jar_paths():
             try:
                 path_dict[chunks[0]][chunks[1]].append(f)
             except Exception as e:
-                if e == chunks[0]:
+                print(str(e), chunks[0])
+                if e in chunks[0]:
                     path_dict.update({
                         chunks[0]: {
                             chunks[1]: [f]
