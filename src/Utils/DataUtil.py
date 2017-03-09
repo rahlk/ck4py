@@ -13,13 +13,22 @@ if root not in sys.path:
 
 def get_jar_paths():
     project_dir = os.path.join(root, "data/java/raw/")
-    projects = glob(os.path.join(project_dir,"*"))
+    projects = glob(os.path.join(project_dir, "*"))
     path_dict = dict()
     for project in projects:
         files = glob(os.path.join(project, "**/*.jar"))
         for f in files:
-            name = f.split("raw")[0]
-            set_trace()
+            chunks = f.split("raw")[1].split("/")[1:]
+            print(chunks[:2])
+            try:
+                path_dict[chunks[0]][chunks[1]].append(f)
+            except KeyError as e:
+                path_dict.update({
+                    chunks[0]: {
+                        chunks[1]: [f]
+                    }})
+
+        set_trace()
     pass
 
 
