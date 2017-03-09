@@ -5,3 +5,5 @@ import os
 import sys
 from glob2 import glob
 
+def get_jar_paths():
+    pass
