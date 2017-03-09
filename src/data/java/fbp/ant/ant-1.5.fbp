@@ -1,0 +1,4 @@
+<Project projectName="ant-1.5">
+  <Jar>../../raw/ant/ant-1.5/bin/jakarta-ant-1.5/lib/ant.jar</Jar>
+  <SrcDir>../../raw/ant/ant-1.5/src</SrcDir>
+</Project>
