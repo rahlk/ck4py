@@ -22,7 +22,8 @@ def get_jar_paths():
             print(chunks[:2])
             try:
                 path_dict[chunks[0]][chunks[1]].append(f)
-            except KeyError as e:
+            except Exception as e:
+                print(e)
                 path_dict.update({
                     chunks[0]: {
                         chunks[1]: [f]
