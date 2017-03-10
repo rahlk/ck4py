@@ -14,7 +14,8 @@ def jar_sample_case():
 
     files = json.load(open(os.path.abspath(os.path.join(os.getcwd(), "data/java/paths.json"))))
 
-    def par_deploy(project, versions):
+    def par_deploy(dict_elem):
+        project, versions = dict_elem
         print("Project: {}".format(project))
         fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/{}".format(project)))
         save_path = "metrics/{}".format(project)
@@ -27,8 +28,14 @@ def jar_sample_case():
             os.mkdir(save_path)
 
         m.save_metrics()
-    
+
     par_args = [(p,v) for p,v in files.iteritems()]
+
+    "Set up Parallel Environment"
+    N = len(par_args)  # Number of parallel processes to run
+    pool = mp.Pool(processes=N)  # Pool of processes
+    deployed = pool.map(par_deploy, par_args)
+    
     set_trace()
 
 
