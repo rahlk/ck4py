@@ -41,16 +41,16 @@ def get_jar_paths():
 
 def create_find_bugs_project(jar_path):
     jars = json.load(open(jar_path))
+
     def warp_fbp(version, jarfiles):
         wrapped_paths = "\n\t".join(["<Jar>{}</Jar>".format(path) for path in jarfiles])
-        out = '<Project projectName="{}">\n\t{}\n</Project>'.format(version,wrapped_paths)
-        set_trace()
-
-
+        return '<Project projectName="{}">\n\t{}\n</Project>'.format(version,wrapped_paths)
 
 
     for version, jarfiles in jars["ant"].iteritems():
-        warp_fbp(version, jarfiles)
+        fbp_text = warp_fbp(version, jarfiles)
+        print(fbp_text, file=open(version+".fbp", "w+"))
+        set_trace()
 
 
 if __name__ == "__main__":
