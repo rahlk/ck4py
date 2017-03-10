@@ -43,7 +43,7 @@ class JavaUtil:
             metrics = []
             fbp_file = os.path.join(self.fbp_path, version+".fbp")
 
-            for a_jar in jarfiles:
+            for jar in jarfiles:
                 metrics.append(self._run_ckjm(jar).communicate()[0])
 
             foundbugs = self._run_findbugs(fbp_file).communicate()[0]
