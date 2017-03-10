@@ -4,6 +4,7 @@ from __future__ import print_function
 import os
 import subprocess
 from pdb import set_trace
+import json
 
 from FileUtils import XMLUtil
 
@@ -11,11 +12,11 @@ root = os.getcwd()
 
 
 class JavaUtil:
-    def __init__(self, jar_path, save_path="metrics", file_name="metrics"):
+    def __init__(self, jar_path_json, save_path="metrics", file_name="metrics"):
 
+        self.jar_path = jar_path_json
         self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
-        self.jar_path = os.path.abspath(jar_path)
-        self.fbp_file = os.path.abspath(fbp_file) if fbp_file else self.generate_fbp()
+
         self.save_path = os.path.abspath(save_path)
 
     def _run_ckjm(self):
@@ -36,7 +37,9 @@ class JavaUtil:
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w"))
 
-    def save_metrics(self, as_xml=False):
+    def save_metrics(self):
+
+
         metrics = self._run_ckjm().communicate()[0]
         foundbugs = self._run_findbugs().communicate()[0]
 
