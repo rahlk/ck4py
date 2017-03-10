@@ -1,13 +1,18 @@
 from __future__ import division
 from __future__ import print_function
 
+import os
 from Utils.FileUtils import JSONUtil, XMLUtil
 from Utils.MetricsUtil import JavaUtil, JSUtil
+import json
 
 
 def jar_sample_case():
-    m = JavaUtil(jar_file="data/java/raw/ant/ant-1.1/bin/jakarta-ant/lib/ant.jar",
-                 fbp_file="data/java/fbp/ant/ant-1.1.fbp",
+
+    files = json.load(os.path.abspath(os.path.join(os.getcwd(), "data/java/paths.json")))
+    fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/ant"))
+    m = JavaUtil(jar_path_json=files["ant"],
+                 fbp_path=fbp_path,
                  file_name="ant.xml")
     m.save_metrics()
     xml = XMLUtil(metrics_name="ant.xml")

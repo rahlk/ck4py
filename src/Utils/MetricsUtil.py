@@ -4,7 +4,6 @@ from __future__ import print_function
 import os
 import subprocess
 from pdb import set_trace
-import json
 
 from FileUtils import XMLUtil
 
@@ -12,39 +11,47 @@ root = os.getcwd()
 
 
 class JavaUtil:
-    def __init__(self, jar_path_json, save_path="metrics", file_name="metrics"):
+    def __init__(self, jar_path_json, fbp_path, save_path="metrics", file_name="metrics"):
 
         self.jar_path = jar_path_json
+        self.fbp_path = fbp_path
         self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
 
         self.save_path = os.path.abspath(save_path)
 
-    def _run_ckjm(self):
+    @staticmethod
+    def _run_ckjm(jar):
         cmd = ["java", "-jar", os.path.join(root, "tools/ckjm_ext.jar"),
                "-x",
                "-s",
-               self.jar_file]
+               jar]
 
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w"))
 
-    def _run_findbugs(self):
+    @staticmethod
+    def _run_findbugs(fbp_file):
         cmd = [os.path.join(root, "tools/findbugs-3.0.1/bin/findbugs"),
-               "-textui",
-               "-project", self.fbp_file,
-               "-xml", "-outputFile",
-               os.path.join(self.save_path, "bugs-" + self.file_name)]
+               "-textui", "-project", fbp_file, "-xml"]
+
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w"))
 
     def save_metrics(self):
 
+        for version, jarfiles in self.jar_path:
+            metrics = []
+            foundbugs = []
+            fbp_file = os.path.join(self.fbp_path, version+".fbp")
+            for a_jar in jarfiles:
+                metrics.append(self._run_ckjm(jar).communicate()[0])
 
-        metrics = self._run_ckjm().communicate()[0]
-        foundbugs = self._run_findbugs().communicate()[0]
+            foundbugs = self._run_findbugs(fbp_file).communicate()[0]
 
-        print("<metrics>", metrics, "</metrics>", sep="\n",
-              file=open(os.path.join(self.save_path, self.file_name), "w+"))
+            print(foundbugs,
+                file=open(os.path.join(self.save_path, "bug-"+version), "w+"))
+            print("<metrics>", "\n\t".join(metrics), "</metrics>", sep="\n",
+                file=open(os.path.join(self.save_path, version), "w+"))
 
 
 class JSUtil:
