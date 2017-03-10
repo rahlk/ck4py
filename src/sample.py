@@ -27,4 +27,3 @@ def js_sample_case():
 
 if __name__ == "__main__":
     jar_sample_case()
-    # js_sample_case()

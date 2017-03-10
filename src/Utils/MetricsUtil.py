@@ -11,15 +11,14 @@ root = os.getcwd()
 
 
 class JavaUtil:
-    def __init__(self, jar_file, fbp_file=None, class_path=None, save_path="metrics",
-                 file_name="metrics"):
+    def __init__(self, jar_path, save_path="metrics", file_name="metrics"):
+
         self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
-        self.jar_file = os.path.abspath(jar_file)
+        self.jar_path = os.path.abspath(jar_path)
         self.fbp_file = os.path.abspath(fbp_file) if fbp_file else self.generate_fbp()
         self.save_path = os.path.abspath(save_path)
-        self.class_path = os.path.abspath(class_path) if class_path else None
 
-    def run_ckjm(self):
+    def _run_ckjm(self):
         cmd = ["java", "-jar", os.path.join(root, "tools/ckjm_ext.jar"),
                "-x",
                "-s",
@@ -28,7 +27,7 @@ class JavaUtil:
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w"))
 
-    def run_findbugs(self):
+    def _run_findbugs(self):
         cmd = [os.path.join(root, "tools/findbugs-3.0.1/bin/findbugs"),
                "-textui",
                "-project", self.fbp_file,
@@ -37,13 +36,10 @@ class JavaUtil:
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w"))
 
-    @staticmethod
-    def qmood():
-        return
-
     def save_metrics(self, as_xml=False):
-        metrics = self.run_ckjm().communicate()[0]
-        foundbugs = self.run_findbugs().communicate()[0]
+        metrics = self._run_ckjm().communicate()[0]
+        foundbugs = self._run_findbugs().communicate()[0]
+
         print("<metrics>", metrics, "</metrics>", sep="\n",
               file=open(os.path.join(self.save_path, self.file_name), "w+"))
 
