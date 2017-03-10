@@ -40,17 +40,26 @@ def get_jar_paths():
 
 
 def create_find_bugs_project(jar_path):
-    jars = json.load(open(jar_path))
+
+    all_jars = json.load(open(jar_path))
+    project_dir = os.path.join(root, "data/java/fbp/")
 
     def warp_fbp(version, jarfiles):
         wrapped_paths = "\n\t".join(["<Jar>{}</Jar>".format(path) for path in jarfiles])
         return '<Project projectName="{}">\n\t{}\n</Project>'.format(version,wrapped_paths)
 
 
-    for version, jarfiles in jars["ant"].iteritems():
-        fbp_text = warp_fbp(version, jarfiles)
-        print(fbp_text, file=open(version+".fbp", "w+"))
-        set_trace()
+    for project, jar in all_jars:
+
+        fbp_dir = os.path.abspath(os.path.join(project_dir,project))
+
+        if not os.path.isdir(fbp_dir):
+            os.mkdir(fbp_dir)
+
+        for version, jarfiles in jars["ant"].iteritems():
+            fbp_file = os.path.join(fbp_dir, version+".fbp")
+            fbp_text = warp_fbp(version, jarfiles)
+            print(fbp_text, file=open(fbp_file, "w+"))
 
 
 if __name__ == "__main__":
