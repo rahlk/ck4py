@@ -46,7 +46,7 @@ def create_find_bugs_project(jar_path):
         set_trace()
 
     for version, jarfiles in jars["ant"].iteritems():
-        warp_fbp
+        warp_fbp(jarfiles)
 
 
 if __name__ == "__main__":
