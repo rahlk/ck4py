@@ -26,7 +26,8 @@ def jar_sample_case():
         if not os.path.isdir(save_path):
             os.mkdir(save_path)
 
-    m.save_metrics()
+        m.save_metrics()
+    
     par_args = [(p,v) for p,v in files.iteritems()]
     set_trace()
 
