@@ -49,9 +49,9 @@ class JavaUtil:
             foundbugs = self._run_findbugs(fbp_file).communicate()[0]
 
             print(foundbugs,
-                file=open(os.path.join(self.save_path, "bug-"+version), "w+"))
+                file=open(os.path.join(self.save_path, "bug-"+version+".xml"), "w+"))
             print("<metrics>", "\n".join(metrics), "</metrics>", sep="\n",
-                file=open(os.path.join(self.save_path, version), "w+"))
+                file=open(os.path.join(self.save_path, version+".xml"), "w+"))
 
 
 class JSUtil:

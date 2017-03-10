@@ -5,18 +5,33 @@ import os
 from Utils.FileUtils import JSONUtil, XMLUtil
 from Utils.MetricsUtil import JavaUtil, JSUtil
 import json
+from glob2 import glob
+import multiprocessing as mp
 
 
 def jar_sample_case():
 
     files = json.load(open(os.path.abspath(os.path.join(os.getcwd(), "data/java/paths.json"))))
-    fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/ant"))
-    m = JavaUtil(jar_path_json=files["ant"],
-                 fbp_path=fbp_path,
-                 save_path="metrics")
-    m.save_metrics()
-    # xml = XMLUtil(metrics_name="ant.xml")
-    # xml.save_as_csv()
+
+    for project, versions in files.iteritems():
+
+        fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/{}".format(projects)))
+        save_path = "metrics/{}".format(project)
+
+        m = JavaUtil(jar_path_json=version,
+                     fbp_path=fbp_path,
+                     save_path=save_path)
+
+        if not os.path.isdir(save_path):
+            os.mkdir(save_path)
+
+        m.save_metrics()
+
+        for metric_file in glob("mertics/*ant-*.xml")
+            xml = XMLUtil(metrics_name=metric_file)
+            xml.save_as_csv()
+
+        set_trace()
 
 
 def js_sample_case():
