@@ -2,18 +2,19 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-from Utils.FileUtils import JSONUtil, XMLUtil
-from Utils.MetricsUtil import JavaUtil, JSUtil
 import json
 from glob2 import glob
+from pdb import set_trace
 import multiprocessing as mp
+from Utils.FileUtils import JSONUtil, XMLUtil
+from Utils.MetricsUtil import JavaUtil, JSUtil
 
 
 def jar_sample_case():
 
     files = json.load(open(os.path.abspath(os.path.join(os.getcwd(), "data/java/paths.json"))))
 
-    for project, versions in files.iteritems():
+    def par_deploy(project, versions):
         print("Project: {}".format(project))
         fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/{}".format(project)))
         save_path = "metrics/{}".format(project)
@@ -25,13 +26,16 @@ def jar_sample_case():
         if not os.path.isdir(save_path):
             os.mkdir(save_path)
 
-        m.save_metrics()
+    m.save_metrics()
+    par_args = [(p,v) for p,v in files.iteritems()]
+    set_trace()
 
-        for metric_file in glob("mertics/{0}/*{0}-*.xml".format(project)):
-            xml = XMLUtil(metrics_name=metric_file)
-            xml.save_as_csv()
 
-        set_trace()
+
+def convert_xml_to_csv():
+    for metric_file in glob("mertics/{0}/*{0}-*.xml".format(project)):
+        xml = XMLUtil(metrics_name=metric_file)
+        xml.save_as_csv()
 
 
 def js_sample_case():
