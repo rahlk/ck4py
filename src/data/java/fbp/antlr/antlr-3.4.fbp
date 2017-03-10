@@ -1,0 +1,6 @@
+<Project projectName="antlr-3.4">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/antlr/antlr-3.4/bin/antlr-3.4/lib/antlr-3.4-complete.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/antlr/antlr-3.4/src/antlr-3.4/lib/antlr-3.4-complete.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/antlr/antlr-3.4/src/antlr-3.4/antlr-ant/main/antlr3-task/antlr3.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/antlr/antlr-3.4/src/antlr-3.4/runtime/ActionScript/project/lib/FlexAntTasks.jar</Jar>
+</Project>

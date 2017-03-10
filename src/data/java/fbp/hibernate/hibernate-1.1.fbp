@@ -1,0 +1,17 @@
+<Project projectName="hibernate-1.1">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/bin/hibernate-1.1/hibernate.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/hibernate.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/c3p0.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/commons-lang.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/commons-pool.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/xml-apis.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/commons-dbcp.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/xalan.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/commons-collections.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/commons-logging.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/xerces.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/jdom.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/jcs.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/trove.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.1/src/hibernate-1.1/lib/odmg.jar</Jar>
+</Project>

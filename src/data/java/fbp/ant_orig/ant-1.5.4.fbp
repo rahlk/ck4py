@@ -1,6 +1,0 @@
-<Project projectName="ant-1.5.4">
-  <Jar>../../raw/ant/ant-1.5.4/bin/apache-ant-1.5.4/lib/ant.jar</Jar>
-  <Jar>../../raw/ant/ant-1.5.4/bin/apache-ant-1.5.4/lib/optional.jar</Jar>
-  <Jar>../../raw/ant/ant-1.5.4/bin/apache-ant-1.5.4/lib/xercesImpl.jar</Jar>
-  <Jar>../../raw/ant/ant-1.5.4/bin/apache-ant-1.5.4/lib/xml-apis.jar</Jar>
-</Project>

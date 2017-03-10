@@ -1,0 +1,5 @@
+<Project projectName="freecol-0.4.0">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freecol/freecol-0.4.0/bin/freecol/FreeCol.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freecol/freecol-0.4.0/bin/freecol/jars/higlayout.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freecol/freecol-0.4.0/src/freecol/jars/higlayout.jar</Jar>
+</Project>

@@ -1,0 +1,7 @@
+<Project projectName="weka-3.6.8">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/weka/weka-3.6.8/bin/weka-3-6-8/remoteExperimentServer.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/weka/weka-3.6.8/bin/weka-3-6-8/weka.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/weka/weka-3.6.8/src/lib/JFlex.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/weka/weka-3.6.8/src/lib/java-cup.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/weka/weka-3.6.8/src/lib/junit.jar</Jar>
+</Project>

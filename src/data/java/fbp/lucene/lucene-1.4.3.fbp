@@ -1,0 +1,5 @@
+<Project projectName="lucene-1.4.3">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.4.3/bin/lucene-1.4.3/lucene-1.4.3.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.4.3/bin/lucene-1.4.3/lucene-demos-1.4.3.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.4.3/src/lucene-1.4.3/lib/junit-3.8.1.jar</Jar>
+</Project>

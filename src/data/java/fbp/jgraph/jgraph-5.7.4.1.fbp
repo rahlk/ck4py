@@ -1,0 +1,4 @@
+<Project projectName="jgraph-5.7.4.1">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jgraph/jgraph-5.7.4.1/bin/jgraph.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jgraph/jgraph-5.7.4.1/compressed/jgraph-5.7.4.1-lgpl-src.jar</Jar>
+</Project>

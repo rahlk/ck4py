@@ -1,5 +1,0 @@
-<Project projectName="ant-1.1">
-  <Jar>../../../../../../../../QualitasCorpus_e/QualitasCorpus-20130901e/Systems/ant/ant-1.1/bin/jakarta-ant/lib/ant.jar</Jar>
-  <Jar>../../../../../../../../QualitasCorpus_e/QualitasCorpus-20130901e/Systems/ant/ant-1.1/bin/jakarta-ant/lib/jaxp.jar</Jar>
-  <Jar>../../../../../../../../QualitasCorpus_e/QualitasCorpus-20130901e/Systems/ant/ant-1.1/bin/jakarta-ant/lib/parser.jar</Jar>
-</Project>

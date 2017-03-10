@@ -1,0 +1,7 @@
+<Project projectName="ant-1.2">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.2/bin/lib/parser.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.2/bin/lib/jaxp.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.2/bin/lib/ant.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.2/src/lib/parser.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.2/src/lib/jaxp.jar</Jar>
+</Project>

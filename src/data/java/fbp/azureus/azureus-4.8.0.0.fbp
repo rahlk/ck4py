@@ -1,0 +1,4 @@
+<Project projectName="azureus-4.8.0.0">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/azureus/azureus-4.8.0.0/bin/Vuze_4800.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/azureus/azureus-4.8.0.0/compressed/Vuze_4800.jar</Jar>
+</Project>

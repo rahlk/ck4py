@@ -1,0 +1,4 @@
+<Project projectName="junit-3.4">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-3.4/bin/junit.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-3.4/src/junit3.4/junit/tests/test.jar</Jar>
+</Project>

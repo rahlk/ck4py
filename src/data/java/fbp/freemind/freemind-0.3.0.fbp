@@ -1,0 +1,5 @@
+<Project projectName="freemind-0.3.0">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freemind/freemind-0.3.0/src/silk.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freemind/freemind-0.3.0/src/nanoxml.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freemind/freemind-0.3.0/bin/lib/freemind.jar</Jar>
+</Project>

@@ -1,0 +1,7 @@
+<Project projectName="ant-1.4.1">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.4.1/bin/jakarta-ant-1.4.1/lib/crimson.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.4.1/bin/jakarta-ant-1.4.1/lib/jaxp.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.4.1/bin/jakarta-ant-1.4.1/lib/ant.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.4.1/src/jakarta-ant-1.4.1/lib/crimson.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.4.1/src/jakarta-ant-1.4.1/lib/jaxp.jar</Jar>
+</Project>

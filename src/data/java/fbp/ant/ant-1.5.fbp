@@ -1,0 +1,8 @@
+<Project projectName="ant-1.5">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.5/bin/jakarta-ant-1.5/lib/optional.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.5/bin/jakarta-ant-1.5/lib/xercesImpl.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.5/bin/jakarta-ant-1.5/lib/xml-apis.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.5/bin/jakarta-ant-1.5/lib/ant.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.5/src/jakarta-ant-1.5/lib/xercesImpl.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/ant/ant-1.5/src/jakarta-ant-1.5/lib/xml-apis.jar</Jar>
+</Project>

@@ -1,0 +1,23 @@
+<Project projectName="hibernate-2.0-beta-3">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/bin/hibernate-2.0/hibernate2.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/hibernate2.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/optional.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/c3p0.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/commons-lang.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/commons-pool.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/dom4j.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/xml-apis.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/commons-dbcp.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/xalan.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/commons-collections.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/commons-logging.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/j2ee.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/ant.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/xerces.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/jdom.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/cglib.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/jcs.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/commons-beanutils.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/junit.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0-beta-3/src/hibernate-2.0/lib/odmg.jar</Jar>
+</Project>

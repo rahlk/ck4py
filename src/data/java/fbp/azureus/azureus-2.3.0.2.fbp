@@ -1,0 +1,4 @@
+<Project projectName="azureus-2.3.0.2">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/azureus/azureus-2.3.0.2/bin/Azureus_2.3.0.2.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/azureus/azureus-2.3.0.2/compressed/Azureus_2.3.0.2.jar</Jar>
+</Project>

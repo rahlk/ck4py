@@ -1,0 +1,4 @@
+<Project projectName="jung-1.5.4">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jung/jung-1.5.4/bin/jung-1.5.4.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jung/jung-1.5.4/compressed/jung-1.5.4.jar</Jar>
+</Project>

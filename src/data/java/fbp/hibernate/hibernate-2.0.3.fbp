@@ -1,0 +1,26 @@
+<Project projectName="hibernate-2.0.3">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/bin/hibernate-2.0.3/hibernate2.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/hibernate2.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/optional.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/c3p0.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/jaas.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/commons-lang.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/jdbc2_0-stdext.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/commons-pool.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/dom4j.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/xml-apis.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/commons-dbcp.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/jta.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/xalan.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/commons-collections.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/commons-logging.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/proxool.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/ant.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/xerces.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/connector.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/jcs.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/commons-beanutils.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/junit.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/cglib-asm.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-2.0.3/src/hibernate-2.0.3/lib/odmg.jar</Jar>
+</Project>

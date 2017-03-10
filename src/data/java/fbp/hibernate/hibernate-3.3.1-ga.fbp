@@ -1,0 +1,20 @@
+<Project projectName="hibernate-3.3.1-ga">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/bin/hibernate-distribution-3.3.1.GA/hibernate3.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/hibernate-testing.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/hibernate3.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/required/antlr-2.7.6.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/required/javassist-3.4.GA.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/required/jta-1.1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/required/commons-collections-3.1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/required/dom4j-1.6.1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/required/slf4j-api-1.5.2.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/bytecode/cglib/hibernate-cglib-repack-2.1_3.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/bytecode/javassist/javassist-3.4.GA.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/optional/c3p0/c3p0-0.9.1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/optional/proxool/proxool-0.8.3.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/optional/jbosscache/jboss-cache-1.4.1.GA.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/optional/ehcache/ehcache-1.2.3.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/optional/oscache/oscache-2.1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/optional/jbosscache2/jbosscache-core-2.1.1.GA.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-3.3.1-ga/src/hibernate-distribution-3.3.1.GA/lib/optional/swarmcache/swarmcache-1.0RC2.jar</Jar>
+</Project>

@@ -1,0 +1,19 @@
+<Project projectName="lucene-1.9-rc1">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/lucene-demos-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/lucene-core-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/snowball/lucene-snowball-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/memory/lucene-memory-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/highlighter/lucene-highlighter-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/lucli/lucene-lucli-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/wordnet/lucene-wordnet-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/regex/lucene-regex-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/surround/lucene-surround-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/analyzers/lucene-analyzers-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/similarity/lucene-similarity-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/ant/lucene-ant-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/spellchecker/lucene-spellchecker-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/misc/lucene-misc-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/bin/lucene-1.9-rc1/contrib/swing/lucene-swing-1.9-rc1.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/src/lucene-1.9-rc1/contrib/db/bdb-je/lib/je-2.0.90/lib/je.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.9-rc1/src/lucene-1.9-rc1/contrib/db/bdb/lib/db-4.3.29.jar</Jar>
+</Project>

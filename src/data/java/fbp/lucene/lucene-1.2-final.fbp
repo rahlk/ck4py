@@ -1,0 +1,7 @@
+<Project projectName="lucene-1.2-final">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.2-final/bin/lucene-1.2/lucene-demos-1.2.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.2-final/bin/lucene-1.2/lucene-1.2.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.2-final/bin/lucene-1.2/lib/junit_37.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.2-final/src/lucene-1.2-src/lucene-1.2-src.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/lucene/lucene-1.2-final/src/lucene-1.2-src/lib/junit_37.jar</Jar>
+</Project>

@@ -1,0 +1,17 @@
+<Project projectName="argouml-0.18.1">
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/antlrall.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/xercesImpl.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/xml-apis.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/xalan.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/ocl-argo.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/commons-logging.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/argouml-model.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/i18n.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/toolbar.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/swidgets.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/nsuml.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/jmi.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/gef.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/argouml.jar</Jar>
+	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/argouml/argouml-0.18.1/bin/log4j.jar</Jar>
+</Project>
