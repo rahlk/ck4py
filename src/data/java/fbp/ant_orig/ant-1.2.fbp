@@ -1,0 +1,5 @@
+<Project projectName="ant-1.2">
+  <Jar>../../raw/ant/ant-1.2/bin/lib/ant.jar</Jar>
+  <Jar>../../raw/ant/ant-1.2/bin/lib/jaxp.jar</Jar>
+  <Jar>../../raw/ant/ant-1.2/bin/lib/parser.jar</Jar>
+</Project>

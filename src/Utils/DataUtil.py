@@ -33,11 +33,20 @@ def get_jar_paths():
                 elif chunks[1] in e:
                     path_dict[chunks[0]].update({chunks[1]: [f]})
 
-    with open('jar_paths.json', 'w') as fp:
+    with open(os.path.join(project_dir, 'jar_paths.json'), 'w') as fp:
         json.dump(path_dict, fp, sort_keys=True, indent=2)
 
     pass
 
 
+def create_find_bugs_project(jar_path):
+    jars = json.load(open(jar_path))
+    for version, jarfiles in jars["ant"].iteritems():
+        set_trace()
+
+
 if __name__ == "__main__":
-    get_jar_paths()
+    create_find_bugs_project(
+        jar_path=os.path.join(root, "data/java/raw/", 'jar_paths.json'))
+
+    # get_jar_paths()

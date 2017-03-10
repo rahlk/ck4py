@@ -1,0 +1,24 @@
+<Project projectName="">
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-antlr.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-apache-bcel.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-apache-bsf.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-apache-log4j.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-apache-oro.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-apache-regexp.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-apache-resolver.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-apache-xalan2.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-commons-logging.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-commons-net.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-jai.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-javamail.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-jdepend.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-jmf.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-jsch.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-junit.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-launcher.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-netrexx.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-nodeps.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-swing.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant-testutil.jar</Jar>
+  <Jar>../../raw/ant/ant-1.8.1/bin/apache-ant-1.8.1/lib/ant.jar</Jar>
+</Project>

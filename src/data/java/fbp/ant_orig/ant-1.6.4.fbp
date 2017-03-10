@@ -1,4 +1,4 @@
-<Project projectName="ant-1.6.4">
+<Project projectName="">
   <Jar>../../raw/ant/ant-1.6.4/bin/apache-ant-1.6.4/lib/ant-antlr.jar</Jar>
   <Jar>../../raw/ant/ant-1.6.4/bin/apache-ant-1.6.4/lib/ant-apache-bcel.jar</Jar>
   <Jar>../../raw/ant/ant-1.6.4/bin/apache-ant-1.6.4/lib/ant-apache-bsf.jar</Jar>
