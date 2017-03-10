@@ -15,7 +15,7 @@ def jar_sample_case():
 
     for project, versions in files.iteritems():
         print("Project: {}".format(project))
-        fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/{}".format(projects)))
+        fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/{}".format(project)))
         save_path = "metrics/{}".format(project)
 
         m = JavaUtil(jar_path_json=version,
