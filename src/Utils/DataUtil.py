@@ -14,7 +14,7 @@ if root not in sys.path:
 
 
 def get_jar_paths():
-    project_dir = os.path.join(root, "data/java/raw/")
+    project_dir = os.path.join(root, "data/java/")
     projects = glob(os.path.join(project_dir, "*"))
     path_dict = dict()
     for project in projects:
@@ -33,7 +33,7 @@ def get_jar_paths():
                 elif chunks[1] in e:
                     path_dict[chunks[0]].update({chunks[1]: [f]})
 
-    with open(os.path.join(project_dir, 'jar_paths.json'), 'w') as fp:
+    with open(os.path.join(project_dir, 'paths.json'), 'w') as fp:
         json.dump(path_dict, fp, sort_keys=True, indent=2)
 
     pass
@@ -64,6 +64,6 @@ def create_find_bugs_project(jar_path):
 
 if __name__ == "__main__":
     create_find_bugs_project(
-        jar_path=os.path.join(root, "data/java/raw/", 'jar_paths.json'))
+        jar_path=os.path.join(root, "data/java/", 'paths.json'))
 
     # get_jar_paths()

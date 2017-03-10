@@ -11,11 +11,11 @@ root = os.getcwd()
 
 
 class JavaUtil:
-    def __init__(self, jar_file, fbp_file, class_path=None, save_path="metrics",
+    def __init__(self, jar_file, fbp_file=None, class_path=None, save_path="metrics",
                  file_name="metrics"):
         self.file_name = file_name if ".xml" in file_name else file_name + ".xml"
         self.jar_file = os.path.abspath(jar_file)
-        self.fbp_file = os.path.abspath(fbp_file)
+        self.fbp_file = os.path.abspath(fbp_file) if fbp_file else self.generate_fbp()
         self.save_path = os.path.abspath(save_path)
         self.class_path = os.path.abspath(class_path) if class_path else None
 
