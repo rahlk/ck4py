@@ -49,14 +49,14 @@ def create_find_bugs_project(jar_path):
         return '<Project projectName="{}">\n\t{}\n</Project>'.format(version,wrapped_paths)
 
 
-    for project, jar in all_jars:
+    for project, jar in all_jars.iteritems():
 
         fbp_dir = os.path.abspath(os.path.join(project_dir,project))
 
         if not os.path.isdir(fbp_dir):
             os.mkdir(fbp_dir)
 
-        for version, jarfiles in jars["ant"].iteritems():
+        for version, jarfiles in jar.iteritems():
             fbp_file = os.path.join(fbp_dir, version+".fbp")
             fbp_text = warp_fbp(version, jarfiles)
             print(fbp_text, file=open(fbp_file, "w+"))
