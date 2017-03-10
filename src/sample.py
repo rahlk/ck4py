@@ -9,7 +9,7 @@ import json
 
 def jar_sample_case():
 
-    files = json.load(os.path.abspath(os.path.join(os.getcwd(), "data/java/paths.json")))
+    files = json.load(open(os.path.abspath(os.path.join(os.getcwd(), "data/java/paths.json"))))
     fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/ant"))
     m = JavaUtil(jar_path_json=files["ant"],
                  fbp_path=fbp_path,

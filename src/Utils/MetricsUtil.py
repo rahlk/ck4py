@@ -39,7 +39,7 @@ class JavaUtil:
 
     def save_metrics(self):
 
-        for version, jarfiles in self.jar_path:
+        for version, jarfiles in self.jar_path.iteritems():
             metrics = []
             fbp_file = os.path.join(self.fbp_path, version+".fbp")
 
