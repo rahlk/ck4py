@@ -43,9 +43,11 @@ class JavaUtil:
             metrics = []
             fbp_file = os.path.join(self.fbp_path, version+".fbp")
             print("\tVersion: {}".format(version))
+            print("\t\tComputing CK Metrics")
             for jar in jarfiles:
                 metrics.append(self._run_ckjm(jar).communicate()[0])
 
+            print("\t\tRunning FindBugs")
             foundbugs = self._run_findbugs(fbp_file).communicate()[0]
 
             print(foundbugs,
