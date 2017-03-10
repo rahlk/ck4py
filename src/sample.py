@@ -27,7 +27,7 @@ def jar_sample_case():
 
         m.save_metrics()
 
-        for metric_file in glob("mertics/{0}/*{0}-*.xml".format(project))
+        for metric_file in glob("mertics/{0}/*{0}-*.xml".format(project)):
             xml = XMLUtil(metrics_name=metric_file)
             xml.save_as_csv()
 
