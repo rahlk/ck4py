@@ -13,10 +13,10 @@ def jar_sample_case():
     fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/ant"))
     m = JavaUtil(jar_path_json=files["ant"],
                  fbp_path=fbp_path,
-                 file_name="ant.xml")
+                 save_path="metrics")
     m.save_metrics()
-    xml = XMLUtil(metrics_name="ant.xml")
-    xml.save_as_csv()
+    # xml = XMLUtil(metrics_name="ant.xml")
+    # xml.save_as_csv()
 
 
 def js_sample_case():

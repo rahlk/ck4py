@@ -41,8 +41,8 @@ class JavaUtil:
 
         for version, jarfiles in self.jar_path:
             metrics = []
-            foundbugs = []
             fbp_file = os.path.join(self.fbp_path, version+".fbp")
+
             for a_jar in jarfiles:
                 metrics.append(self._run_ckjm(jar).communicate()[0])
 
@@ -50,7 +50,7 @@ class JavaUtil:
 
             print(foundbugs,
                 file=open(os.path.join(self.save_path, "bug-"+version), "w+"))
-            print("<metrics>", "\n\t".join(metrics), "</metrics>", sep="\n",
+            print("<metrics>", "\n".join(metrics), "</metrics>", sep="\n",
                 file=open(os.path.join(self.save_path, version), "w+"))
 
 
