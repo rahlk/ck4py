@@ -18,7 +18,7 @@ def jar_sample_case():
         fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/{}".format(project)))
         save_path = "metrics/{}".format(project)
 
-        m = JavaUtil(jar_path_json=version,
+        m = JavaUtil(jar_path_json=versions,
                      fbp_path=fbp_path,
                      save_path=save_path)
 
