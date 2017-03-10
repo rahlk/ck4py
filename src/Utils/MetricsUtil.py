@@ -42,7 +42,7 @@ class JavaUtil:
         for version, jarfiles in self.jar_path.iteritems():
             metrics = []
             fbp_file = os.path.join(self.fbp_path, version+".fbp")
-
+            print("\tVersion: {}".format(version))
             for jar in jarfiles:
                 metrics.append(self._run_ckjm(jar).communicate()[0])
 

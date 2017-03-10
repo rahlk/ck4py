@@ -14,7 +14,7 @@ def jar_sample_case():
     files = json.load(open(os.path.abspath(os.path.join(os.getcwd(), "data/java/paths.json"))))
 
     for project, versions in files.iteritems():
-
+        print("Project: {}".format(project))
         fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/{}".format(projects)))
         save_path = "metrics/{}".format(project)
 
@@ -27,7 +27,7 @@ def jar_sample_case():
 
         m.save_metrics()
 
-        for metric_file in glob("mertics/*ant-*.xml")
+        for metric_file in glob("mertics/{0}/*{0}-*.xml".format(project))
             xml = XMLUtil(metrics_name=metric_file)
             xml.save_as_csv()
 
