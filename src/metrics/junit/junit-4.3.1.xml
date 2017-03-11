@@ -1,0 +1,2868 @@
+<metrics>
+	<class>
+		<name>org.junit.runners.Parameterized$1</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>3</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>1</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.Result</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>18</rfc>
+		<lcom>59</lcom>
+		<ca>6</ca>
+		<ce>7</ce>
+		<npm>8</npm>
+		<lcom3>0.8307692307692308</lcom3>
+		<loc>100</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.38095238095238093</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.785714285714286</amc>
+		<cc>
+			<method name="public long getRunTime()">1</method>
+			<method name="static long access$002(org.junit.runner.Result x0, long x1)">1</method>
+			<method name="public int getFailureCount()">1</method>
+			<method name="static long access$114(org.junit.runner.Result x0, long x1)">1</method>
+			<method name="static java.util.List access$300(org.junit.runner.Result x0)">1</method>
+			<method name="static long access$000(org.junit.runner.Result x0)">1</method>
+			<method name="static int access$408(org.junit.runner.Result x0)">1</method>
+			<method name="public int getRunCount()">1</method>
+			<method name="public int getIgnoreCount()">1</method>
+			<method name="public boolean wasSuccessful()">2</method>
+			<method name="public java.util.List getFailures()">1</method>
+			<method name="static int access$208(org.junit.runner.Result x0)">1</method>
+			<method name="public org.junit.runner.notification.RunListener createListener()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.JUnitCore</name>
+		<wmc>13</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>23</cbo>
+		<rfc>45</rfc>
+		<lcom>58</lcom>
+		<ca>0</ca>
+		<ce>23</ce>
+		<npm>11</npm>
+		<lcom3>0.25</lcom3>
+		<loc>212</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.20192307692307693</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.23076923076923</amc>
+		<cc>
+			<method name="public org.junit.runner.Result run(org.junit.runner.Request request)">1</method>
+			<method name="public void addListener(org.junit.runner.notification.RunListener listener)">1</method>
+			<method name="public static transient void main(String[] args)">1</method>
+			<method name="public void removeListener(org.junit.runner.notification.RunListener listener)">1</method>
+			<method name="public static transient org.junit.runner.Result runClasses(Class[] classes)">1</method>
+			<method name="public transient org.junit.runner.Result runMain(String[] args)">3</method>
+			<method name="public org.junit.runner.Result run(junit.framework.Test test)">1</method>
+			<method name="private void addFirstListener(org.junit.runner.notification.RunListener listener)">1</method>
+			<method name="private static void killAllThreads(org.junit.runner.Result result)">2</method>
+			<method name="public transient org.junit.runner.Result run(Class[] classes)">1</method>
+			<method name="public String getVersion()">1</method>
+			<method name="public org.junit.runner.Result run(org.junit.runner.Runner runner)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.Request</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>5</noc>
+		<cbo>18</cbo>
+		<rfc>19</rfc>
+		<lcom>45</lcom>
+		<ca>9</ca>
+		<ce>15</ce>
+		<npm>10</npm>
+		<lcom3>2.0</lcom3>
+		<loc>65</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.5</amc>
+		<cc>
+			<method name="public org.junit.runner.Request filterWith(org.junit.runner.Description desiredDescription)">1</method>
+			<method name="public static org.junit.runner.Request method(Class clazz, String methodName)">1</method>
+			<method name="public abstract org.junit.runner.Runner getRunner()">1</method>
+			<method name="public static org.junit.runner.Request aClass(Class clazz)">1</method>
+			<method name="public org.junit.runner.Request filterWith(org.junit.runner.manipulation.Filter filter)">1</method>
+			<method name="public static org.junit.runner.Request classWithoutSuiteMethod(Class newTestClass)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static org.junit.runner.Request errorReport(Class klass, Throwable cause)">1</method>
+			<method name="public static transient org.junit.runner.Request classes(String collectionName, Class[] classes)">1</method>
+			<method name="public org.junit.runner.Request sortWith(java.util.Comparator comparator)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.TestSetup$1</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>25</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.5</amc>
+		<cc>
+			<method name="void _init_(junit.extensions.TestSetup, junit.framework.TestResult)">1</method>
+			<method name="public void protect()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.textui.TestRunner</name>
+		<wmc>18</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>46</rfc>
+		<lcom>141</lcom>
+		<ca>0</ca>
+		<ce>17</ce>
+		<npm>14</npm>
+		<lcom3>0.9264705882352942</lcom3>
+		<loc>291</loc>
+		<dam>0.25</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.18888888888888888</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>14.944444444444445</amc>
+		<cc>
+			<method name="public void testEnded(String testName)">1</method>
+			<method name="public void setPrinter(junit.textui.ResultPrinter printer)">1</method>
+			<method name="public static void main(String[] args)">2</method>
+			<method name="public static void run(Class testClass)">1</method>
+			<method name="public junit.framework.TestResult doRun(junit.framework.Test test)">1</method>
+			<method name="protected void runFailed(String message)">1</method>
+			<method name="public void _init_(java.io.PrintStream writer)">1</method>
+			<method name="public void testFailed(int status, junit.framework.Test test, Throwable t)">1</method>
+			<method name="protected junit.framework.TestResult createTestResult()">1</method>
+			<method name="public junit.framework.TestResult start(String[] args)">1</method>
+			<method name="public static junit.framework.TestResult run(junit.framework.Test test)">1</method>
+			<method name="public static void runAndWait(junit.framework.Test suite)">1</method>
+			<method name="public junit.framework.TestResult doRun(junit.framework.Test suite, boolean wait)">1</method>
+			<method name="protected junit.framework.TestResult runSingleMethod(String testCase, String method, boolean wait)">1</method>
+			<method name="public void _init_(junit.textui.ResultPrinter printer)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="protected void pause(boolean wait)">2</method>
+			<method name="public void testStarted(String testName)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.requests.IgnoredClassRunner</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>6</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>3</npm>
+		<lcom3>0.0</lcom3>
+		<loc>19</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5555555555555556</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="public void _init_(Class testClass)">1</method>
+			<method name="public void run(org.junit.runner.notification.RunNotifier notifier)">1</method>
+			<method name="public org.junit.runner.Description getDescription()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestSuite</name>
+		<wmc>24</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>31</cbo>
+		<rfc>66</rfc>
+		<lcom>180</lcom>
+		<ca>5</ca>
+		<ce>26</ce>
+		<npm>20</npm>
+		<lcom3>0.5434782608695652</lcom3>
+		<loc>495</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.18333333333333332</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>19.541666666666668</amc>
+		<cc>
+			<method name="public static junit.framework.Test warning(String message)">1</method>
+			<method name="public void run(junit.framework.TestResult result)">3</method>
+			<method name="public void setName(String name)">1</method>
+			<method name="public void _init_(String name)">1</method>
+			<method name="public junit.framework.Test testAt(int index)">1</method>
+			<method name="public static junit.framework.Test createTest(Class theClass, String name)">2</method>
+			<method name="public static java.lang.reflect.Constructor getTestConstructor(Class theClass)">1</method>
+			<method name="public int testCount()">1</method>
+			<method name="private boolean isTestMethod(java.lang.reflect.Method m)">4</method>
+			<method name="public transient void _init_(Class[] classes)">2</method>
+			<method name="public String getName()">1</method>
+			<method name="public void addTest(junit.framework.Test test)">1</method>
+			<method name="public java.util.Enumeration tests()">1</method>
+			<method name="public void runTest(junit.framework.Test test, junit.framework.TestResult result)">1</method>
+			<method name="public String toString()">2</method>
+			<method name="public void _init_(Class theClass, String name)">1</method>
+			<method name="private void addTestMethod(java.lang.reflect.Method m, java.util.List names, Class theClass)">4</method>
+			<method name="private static String exceptionToString(Throwable t)">1</method>
+			<method name="public void _init_(Class[] classes, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void addTestSuite(Class testClass)">1</method>
+			<method name="public int countTestCases()">2</method>
+			<method name="public void _init_(Class theClass)">5</method>
+			<method name="private boolean isPublicTestMethod(java.lang.reflect.Method m)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.ComparisonFailure$ComparisonCompactor</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>19</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>2</npm>
+		<lcom3>0.6785714285714286</lcom3>
+		<loc>274</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>32.25</amc>
+		<cc>
+			<method name="private String compactString(String source)">3</method>
+			<method name="private void findCommonPrefix()">3</method>
+			<method name="public void _init_(int contextLength, String expected, String actual)">1</method>
+			<method name="private String computeCommonSuffix()">2</method>
+			<method name="private boolean areStringsEqual()">1</method>
+			<method name="public String compact(String message)">4</method>
+			<method name="private String computeCommonPrefix()">2</method>
+			<method name="private void findCommonSuffix()">4</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.Result$1</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>3</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>1</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.JUnit4TestAdapterCache$1</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>11</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>3</npm>
+		<lcom3>0.0</lcom3>
+		<loc>42</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.45</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="public void testFailure(org.junit.runner.notification.Failure failure)">1</method>
+			<method name="void _init_(junit.framework.JUnit4TestAdapterCache, junit.framework.TestResult)">1</method>
+			<method name="public void testStarted(org.junit.runner.Description description)">1</method>
+			<method name="public void testFinished(org.junit.runner.Description description)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.TestMethodRunner$1</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>14</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.5</amc>
+		<cc>
+			<method name="public Object call()">1</method>
+			<method name="void _init_(org.junit.internal.runners.TestMethodRunner)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.ComparisonFailure</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>8</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>4</npm>
+		<lcom3>0.8333333333333334</lcom3>
+		<loc>36</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.0</amc>
+		<cc>
+			<method name="public String getExpected()">1</method>
+			<method name="public String getActual()">1</method>
+			<method name="public String getMessage()">1</method>
+			<method name="public void _init_(String message, String expected, String actual)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.CompositeRunner</name>
+		<wmc>9</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>21</cbo>
+		<rfc>26</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>18</ce>
+		<npm>8</npm>
+		<lcom3>0.4375</lcom3>
+		<loc>126</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.23809523809523808</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.777777777777779</amc>
+		<cc>
+			<method name="public void add(org.junit.runner.Runner runner)">1</method>
+			<method name="public void sort(org.junit.runner.manipulation.Sorter sorter)">2</method>
+			<method name="public void _init_(String name)">1</method>
+			<method name="public void run(org.junit.runner.notification.RunNotifier notifier)">2</method>
+			<method name="public org.junit.runner.Description getDescription()">2</method>
+			<method name="public void addAll(java.util.List runners)">1</method>
+			<method name="protected String getName()">1</method>
+			<method name="public void filter(org.junit.runner.manipulation.Filter filter)">1</method>
+			<method name="public java.util.List getRunners()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.OldTestClassRunner$OldTestClassAdaptingListener</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>18</rfc>
+		<lcom>16</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>4</npm>
+		<lcom3>0.2857142857142857</lcom3>
+		<loc>77</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3958333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.5</amc>
+		<cc>
+			<method name="public void addFailure(junit.framework.Test test, junit.framework.AssertionFailedError t)">1</method>
+			<method name="private org.junit.runner.Description asDescription(junit.framework.Test test)">2</method>
+			<method name="public void startTest(junit.framework.Test test)">1</method>
+			<method name="private void _init_(org.junit.runner.notification.RunNotifier notifier)">1</method>
+			<method name="public void addError(junit.framework.Test test, Throwable t)">1</method>
+			<method name="public void endTest(junit.framework.Test test)">1</method>
+			<method name="private String getName(junit.framework.Test test)">2</method>
+			<method name="void _init_(org.junit.runner.notification.RunNotifier x0, org.junit.internal.runners.OldTestClassRunner$1 x1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runners.Parameterized$RunAllParameterMethods</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>18</cbo>
+		<rfc>23</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>17</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>129</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>41.666666666666664</amc>
+		<cc>
+			<method name="private java.lang.reflect.Method getParametersMethod()">1</method>
+			<method name="public void _init_(Class klass)">1</method>
+			<method name="private java.util.Collection getParametersList()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.AfterClass</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>2</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.requests.SortingRequest</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>26</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>11.0</amc>
+		<cc>
+			<method name="public void _init_(org.junit.runner.Request request, java.util.Comparator comparator)">1</method>
+			<method name="public org.junit.runner.Runner getRunner()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.TestSetup</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>7</rfc>
+		<lcom>6</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>21</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.25</amc>
+		<cc>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="protected void tearDown()">1</method>
+			<method name="public void _init_(junit.framework.Test test)">1</method>
+			<method name="protected void setUp()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.ArrayComparisonFailure</name>
+		<wmc>4</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>17</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>4</npm>
+		<lcom3>0.5</lcom3>
+		<loc>89</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.875</mfa>
+		<cam>0.5</cam>
+		<ic>1</ic>
+		<cbm>2</cbm>
+		<amc>20.25</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void _init_(String message, AssertionError cause, int index)">1</method>
+			<method name="public String getMessage()">3</method>
+			<method name="public void addDimension(int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.Request$1</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>12</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>2</npm>
+		<lcom3>0.5</lcom3>
+		<loc>53</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.0</amc>
+		<cc>
+			<method name="public String describe()">1</method>
+			<method name="void _init_(org.junit.runner.Request, org.junit.runner.Description)">1</method>
+			<method name="public boolean shouldRun(org.junit.runner.Description description)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.TextListener</name>
+		<wmc>14</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>35</rfc>
+		<lcom>71</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>6</npm>
+		<lcom3>0.23076923076923078</lcom3>
+		<loc>230</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2857142857142857</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.357142857142858</amc>
+		<cc>
+			<method name="public void testIgnored(org.junit.runner.Description description)">1</method>
+			<method name="protected void printFailureHeader(org.junit.runner.notification.Failure failure, int count)">1</method>
+			<method name="protected void printFailure(org.junit.runner.notification.Failure failure, int count)">1</method>
+			<method name="public void testRunFinished(org.junit.runner.Result result)">1</method>
+			<method name="protected void printFailureTrace(org.junit.runner.notification.Failure failure)">1</method>
+			<method name="public void _init_(java.io.PrintStream writer)">1</method>
+			<method name="protected void printFailures(org.junit.runner.Result result)">4</method>
+			<method name="public void testFailure(org.junit.runner.notification.Failure failure)">1</method>
+			<method name="protected void printFooter(org.junit.runner.Result result)">3</method>
+			<method name="protected String elapsedTimeAsString(long runTime)">1</method>
+			<method name="private java.io.PrintStream getWriter()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void testStarted(org.junit.runner.Description description)">1</method>
+			<method name="protected void printHeader(long runTime)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.InitializationError</name>
+		<wmc>4</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>7</rfc>
+		<lcom>4</lcom>
+		<ca>6</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>0.6666666666666666</lcom3>
+		<loc>32</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.9545454545454546</mfa>
+		<cam>0.4375</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.5</amc>
+		<cc>
+			<method name="public void _init_(String string)">1</method>
+			<method name="public void _init_(java.util.List errors)">1</method>
+			<method name="public transient void _init_(Throwable[] errors)">1</method>
+			<method name="public java.util.List getCauses()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.requests.ClassesRequest</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>47</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.5</amc>
+		<cc>
+			<method name="public org.junit.runner.Runner getRunner()">3</method>
+			<method name="public transient void _init_(String name, Class[] classes)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runners.Suite</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>14</cbo>
+		<rfc>19</rfc>
+		<lcom>9</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>1</npm>
+		<lcom3>0.4</lcom3>
+		<loc>79</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.45</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="private static Class addParent(Class parent)">1</method>
+			<method name="public void _init_(Class klass)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="protected void _init_(Class klass, Class[] annotatedClasses)">1</method>
+			<method name="protected void validate(org.junit.internal.runners.MethodValidator methodValidator)">1</method>
+			<method name="private static Class[] getAnnotatedClasses(Class klass)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.textui.ResultPrinter</name>
+		<wmc>17</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>39</rfc>
+		<lcom>132</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>0.65625</lcom3>
+		<loc>276</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.20855614973262032</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.117647058823529</amc>
+		<cc>
+			<method name="public java.io.PrintStream getWriter()">1</method>
+			<method name="protected void printDefects(java.util.Enumeration booBoos, int count, String type)">4</method>
+			<method name="void printWaitPrompt()">1</method>
+			<method name="public void addError(junit.framework.Test test, Throwable t)">1</method>
+			<method name="protected void printErrors(junit.framework.TestResult result)">1</method>
+			<method name="public void printDefect(junit.framework.TestFailure booBoo, int count)">1</method>
+			<method name="public void _init_(java.io.PrintStream writer)">1</method>
+			<method name="public void addFailure(junit.framework.Test test, junit.framework.AssertionFailedError t)">1</method>
+			<method name="protected void printFooter(junit.framework.TestResult result)">3</method>
+			<method name="public void startTest(junit.framework.Test test)">2</method>
+			<method name="protected void printFailures(junit.framework.TestResult result)">1</method>
+			<method name="protected void printDefectTrace(junit.framework.TestFailure booBoo)">1</method>
+			<method name="protected String elapsedTimeAsString(long runTime)">1</method>
+			<method name="public void endTest(junit.framework.Test test)">1</method>
+			<method name="synchronized void print(junit.framework.TestResult result, long runTime)">1</method>
+			<method name="protected void printHeader(long runTime)">1</method>
+			<method name="protected void printDefectHeader(junit.framework.TestFailure booBoo, int count)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.ActiveTestSuite$1</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>33</loc>
+		<dam>0.0</dam>
+		<moa>3</moa>
+		<mfa>0.9846153846153847</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>14.0</amc>
+		<cc>
+			<method name="void _init_(junit.extensions.ActiveTestSuite, junit.framework.Test, junit.framework.TestResult)">1</method>
+			<method name="public void run()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.RunWith</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract Class value()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.OldTestClassRunner$1</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>3</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>1</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runners.Parameterized$TestClassRunnerForParameters</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>14</rfc>
+		<lcom>7</lcom>
+		<ca>1</ca>
+		<ce>11</ce>
+		<npm>0</npm>
+		<lcom3>0.5333333333333333</lcom3>
+		<loc>76</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3888888888888889</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>11.166666666666666</amc>
+		<cc>
+			<method name="protected Object createTest()">1</method>
+			<method name="private void _init_(Class klass, Object[] parameters, int i)">1</method>
+			<method name="void _init_(Class x0, Object[] x1, int x2, org.junit.runners.Parameterized$1 x3)">1</method>
+			<method name="protected String getName()">1</method>
+			<method name="private java.lang.reflect.Constructor getOnlyConstructor()">1</method>
+			<method name="protected String testName(java.lang.reflect.Method method)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.ActiveTestSuite</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>18</rfc>
+		<lcom>22</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>7</npm>
+		<lcom3>0.7142857142857143</lcom3>
+		<loc>64</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.375</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.875</amc>
+		<cc>
+			<method name="public synchronized void runFinished()">1</method>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="public void _init_(String name)">1</method>
+			<method name="public void _init_(Class theClass, String name)">1</method>
+			<method name="synchronized void waitUntilFinished()">2</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void runTest(junit.framework.Test test, junit.framework.TestResult result)">1</method>
+			<method name="public void _init_(Class theClass)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.Runner</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>6</noc>
+		<cbo>25</cbo>
+		<rfc>6</rfc>
+		<lcom>6</lcom>
+		<ca>21</ca>
+		<ce>4</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>11</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>1.75</amc>
+		<cc>
+			<method name="public abstract void run(org.junit.runner.notification.RunNotifier)">1</method>
+			<method name="public int testCount()">1</method>
+			<method name="public abstract org.junit.runner.Description getDescription()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runners.Enclosed</name>
+		<wmc>1</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>3</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>7</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="public void _init_(Class klass)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.requests.ClassRequest</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>21</rfc>
+		<lcom>7</lcom>
+		<ca>1</ca>
+		<ce>15</ce>
+		<npm>5</npm>
+		<lcom3>0.611111111111111</lcom3>
+		<loc>135</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6190476190476191</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.857142857142858</amc>
+		<cc>
+			<method name="public void _init_(Class testClass)">1</method>
+			<method name="public org.junit.runner.Runner buildRunner(Class runnerClass)">1</method>
+			<method name="boolean isPre4Test(Class testClass)">1</method>
+			<method name="public void _init_(Class testClass, boolean canUseSuiteMethod)">1</method>
+			<method name="Class getRunnerClass(Class testClass)">6</method>
+			<method name="public boolean hasSuiteMethod()">1</method>
+			<method name="public org.junit.runner.Runner getRunner()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestCase</name>
+		<wmc>13</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>20</cbo>
+		<rfc>30</rfc>
+		<lcom>58</lcom>
+		<ca>6</ca>
+		<ce>15</ce>
+		<npm>9</npm>
+		<lcom3>0.5</lcom3>
+		<loc>177</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.41025641025641024</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.538461538461538</amc>
+		<cc>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="public void setName(String name)">1</method>
+			<method name="public void _init_(String name)">1</method>
+			<method name="protected void runTest()">1</method>
+			<method name="protected void tearDown()">1</method>
+			<method name="public String getName()">1</method>
+			<method name="protected void setUp()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public junit.framework.TestResult run()">1</method>
+			<method name="public void runBare()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public int countTestCases()">1</method>
+			<method name="protected junit.framework.TestResult createResult()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.Before</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>2</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.CompositeRunner$1</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>6</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>0.5</lcom3>
+		<loc>29</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4666666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="public volatile int compare(Object x0, Object x1)">1</method>
+			<method name="void _init_(org.junit.internal.runners.CompositeRunner, org.junit.runner.manipulation.Sorter)">1</method>
+			<method name="public int compare(org.junit.runner.Runner o1, org.junit.runner.Runner o2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.Test$None</name>
+		<wmc>1</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>3</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>5</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="private void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.manipulation.Filter</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>14</cbo>
+		<rfc>8</rfc>
+		<lcom>10</lcom>
+		<ca>8</ca>
+		<ce>8</ce>
+		<npm>4</npm>
+		<lcom3>1.0</lcom3>
+		<loc>24</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.6</amc>
+		<cc>
+			<method name="public void apply(org.junit.runner.Runner runner)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public abstract String describe()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public abstract boolean shouldRun(org.junit.runner.Description)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.RunNotifier$SafeNotifier</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>6</noc>
+		<cbo>16</cbo>
+		<rfc>12</rfc>
+		<lcom>4</lcom>
+		<ca>6</ca>
+		<ce>11</ce>
+		<npm>0</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>42</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.25</amc>
+		<cc>
+			<method name="void _init_(org.junit.runner.notification.RunNotifier x0, org.junit.runner.notification.RunNotifier$1 x1)">1</method>
+			<method name="private void _init_(org.junit.runner.notification.RunNotifier)">1</method>
+			<method name="void run()">2</method>
+			<method name="protected abstract void notifyListener(org.junit.runner.notification.RunListener)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runners.Parameterized$Parameters</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>2</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.AssertionFailedError</name>
+		<wmc>2</wmc>
+		<dit>4</dit>
+		<noc>1</noc>
+		<cbo>12</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>8</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>10</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String message)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.Test</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>2</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>2</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract long timeout()">1</method>
+			<method name="public abstract Class expected()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.JUnit4TestCaseFacade</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>8</rfc>
+		<lcom>8</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>0.5</lcom3>
+		<loc>26</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4666666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="void _init_(org.junit.runner.Description description)">1</method>
+			<method name="public org.junit.runner.Description getDescription()">1</method>
+			<method name="public int countTestCases()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.JUnit4TestAdapterCache</name>
+		<wmc>7</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>27</rfc>
+		<lcom>19</lcom>
+		<ca>2</ca>
+		<ce>17</ce>
+		<npm>5</npm>
+		<lcom3>1.0</lcom3>
+		<loc>125</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.9285714285714286</mfa>
+		<cam>0.4166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.571428571428573</amc>
+		<cc>
+			<method name="junit.framework.Test createTest(org.junit.runner.Description description)">3</method>
+			<method name="public junit.framework.Test asTest(org.junit.runner.Description description)">3</method>
+			<method name="public static junit.framework.JUnit4TestAdapterCache getDefault()">1</method>
+			<method name="public org.junit.runner.notification.RunNotifier getNotifier(junit.framework.TestResult result, junit.framework.JUnit4TestAdapter adapter)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java.util.List asTestList(org.junit.runner.Description description)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestSuite$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>0</npm>
+		<lcom3>0.0</lcom3>
+		<loc>14</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.5</amc>
+		<cc>
+			<method name="protected void runTest()">1</method>
+			<method name="void _init_(String x0, String)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestListener</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>4</rfc>
+		<lcom>6</lcom>
+		<ca>6</ca>
+		<ce>5</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>4</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void addError(junit.framework.Test, Throwable)">1</method>
+			<method name="public abstract void addFailure(junit.framework.Test, junit.framework.AssertionFailedError)">1</method>
+			<method name="public abstract void endTest(junit.framework.Test)">1</method>
+			<method name="public abstract void startTest(junit.framework.Test)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.requests.FilterRequest</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>10</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>47</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.5</amc>
+		<cc>
+			<method name="public void _init_(org.junit.runner.Request classRequest, org.junit.runner.manipulation.Filter filter)">1</method>
+			<method name="public org.junit.runner.Runner getRunner()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.Assert</name>
+		<wmc>40</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>62</rfc>
+		<lcom>780</lcom>
+		<ca>2</ca>
+		<ce>12</ce>
+		<npm>32</npm>
+		<lcom3>2.0</lcom3>
+		<loc>539</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.1318181818181818</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.475</amc>
+		<cc>
+			<method name="public static void assertFalse(String message, boolean condition)">2</method>
+			<method name="public static void assertNotSame(Object unexpected, Object actual)">1</method>
+			<method name="public static void assertNotSame(String message, Object unexpected, Object actual)">2</method>
+			<method name="private static boolean isArray(Object expected)">3</method>
+			<method name="public static void assertNotNull(Object object)">1</method>
+			<method name="public static void assertTrue(boolean condition)">1</method>
+			<method name="private static void internalArrayEquals(String message, Object expecteds, Object actuals)">1</method>
+			<method name="public static void assertEquals(String message, Object expected, Object actual)">8</method>
+			<method name="private static boolean isEquals(Object expected, Object actual)">4</method>
+			<method name="private static void failNotSame(String message, Object expected, Object actual)">2</method>
+			<method name="public static void assertArrayEquals(String message, short[] expecteds, short[] actuals)">1</method>
+			<method name="protected void _init_()">1</method>
+			<method name="public static void assertArrayEquals(char[] expecteds, char[] actuals)">1</method>
+			<method name="public static void fail(String message)">2</method>
+			<method name="public static void assertNotNull(String message, Object object)">2</method>
+			<method name="public static void assertFalse(boolean condition)">1</method>
+			<method name="public static void assertNull(Object object)">1</method>
+			<method name="public static void fail()">1</method>
+			<method name="public static void assertSame(Object expected, Object actual)">1</method>
+			<method name="public static void assertEquals(Object expected, Object actual)">1</method>
+			<method name="public static void assertTrue(String message, boolean condition)">2</method>
+			<method name="public static void assertArrayEquals(String message, char[] expecteds, char[] actuals)">1</method>
+			<method name="public static void assertEquals(Object[] expecteds, Object[] actuals)">1</method>
+			<method name="public static void assertSame(String message, Object expected, Object actual)">2</method>
+			<method name="public static void assertArrayEquals(String message, int[] expecteds, int[] actuals)">1</method>
+			<method name="public static void assertArrayEquals(String message, long[] expecteds, long[] actuals)">1</method>
+			<method name="public static void assertArrayEquals(int[] expecteds, int[] actuals)">1</method>
+			<method name="public static void assertNull(String message, Object object)">2</method>
+			<method name="static String format(String message, Object expected, Object actual)">4</method>
+			<method name="private static void failSame(String message)">2</method>
+			<method name="public static void assertArrayEquals(String message, byte[] expecteds, byte[] actuals)">1</method>
+			<method name="public static void assertArrayEquals(byte[] expecteds, byte[] actuals)">1</method>
+			<method name="public static void assertArrayEquals(long[] expecteds, long[] actuals)">1</method>
+			<method name="private static void failNotEquals(String message, Object expected, Object actual)">1</method>
+			<method name="public static void assertArrayEquals(Object[] expecteds, Object[] actuals)">1</method>
+			<method name="public static void assertArrayEquals(short[] expecteds, short[] actuals)">1</method>
+			<method name="public static void assertEquals(double expected, double actual, double delta)">1</method>
+			<method name="public static void assertArrayEquals(String message, Object[] expecteds, Object[] actuals)">1</method>
+			<method name="public static void assertEquals(String message, double expected, double actual, double delta)">3</method>
+			<method name="public static void assertEquals(String message, Object[] expecteds, Object[] actuals)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.OldTestClassRunner</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>18</cbo>
+		<rfc>24</rfc>
+		<lcom>9</lcom>
+		<ca>2</ca>
+		<ce>16</ce>
+		<npm>5</npm>
+		<lcom3>0.4</lcom3>
+		<loc>118</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>18.5</amc>
+		<cc>
+			<method name="private org.junit.runner.Description makeDescription(junit.framework.Test test)">7</method>
+			<method name="public void run(org.junit.runner.notification.RunNotifier notifier)">1</method>
+			<method name="public org.junit.runner.Description getDescription()">1</method>
+			<method name="public void _init_(Class klass)">1</method>
+			<method name="public void _init_(junit.framework.Test test)">1</method>
+			<method name="public static junit.framework.TestListener createAdaptingListener(org.junit.runner.notification.RunNotifier notifier)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.ComparisonFailure</name>
+		<wmc>4</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>8</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>4</npm>
+		<lcom3>0.8333333333333334</lcom3>
+		<loc>36</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.875</mfa>
+		<cam>0.625</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>7.0</amc>
+		<cc>
+			<method name="public String getExpected()">1</method>
+			<method name="public String getActual()">1</method>
+			<method name="public String getMessage()">1</method>
+			<method name="public void _init_(String message, String expected, String actual)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.Protectable</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void protect()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.ComparisonCompactor</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>19</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>2</npm>
+		<lcom3>0.6785714285714286</lcom3>
+		<loc>274</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>32.25</amc>
+		<cc>
+			<method name="private String compactString(String source)">3</method>
+			<method name="private void findCommonPrefix()">3</method>
+			<method name="public void _init_(int contextLength, String expected, String actual)">1</method>
+			<method name="private String computeCommonSuffix()">2</method>
+			<method name="private boolean areStringsEqual()">1</method>
+			<method name="public String compact(String message)">4</method>
+			<method name="private String computeCommonPrefix()">2</method>
+			<method name="private void findCommonSuffix()">4</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.manipulation.Filterable</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>4</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void filter(org.junit.runner.manipulation.Filter)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestResult$1</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.5</lcom3>
+		<loc>17</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.5</amc>
+		<cc>
+			<method name="void _init_(junit.framework.TestResult, junit.framework.TestCase)">1</method>
+			<method name="public void protect()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.manipulation.Sortable</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void sort(org.junit.runner.manipulation.Sorter)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestResult</name>
+		<wmc>18</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>31</cbo>
+		<rfc>36</rfc>
+		<lcom>105</lcom>
+		<ca>17</ca>
+		<ce>17</ce>
+		<npm>16</npm>
+		<lcom3>0.7176470588235294</lcom3>
+		<loc>246</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.23015873015873015</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.38888888888889</amc>
+		<cc>
+			<method name="public void runProtected(junit.framework.Test test, junit.framework.Protectable p)">1</method>
+			<method name="public synchronized boolean wasSuccessful()">3</method>
+			<method name="public synchronized void addError(junit.framework.Test test, Throwable t)">2</method>
+			<method name="public synchronized void addListener(junit.framework.TestListener listener)">1</method>
+			<method name="public synchronized int runCount()">1</method>
+			<method name="public synchronized void removeListener(junit.framework.TestListener listener)">1</method>
+			<method name="public synchronized java.util.Enumeration errors()">1</method>
+			<method name="public void startTest(junit.framework.Test test)">2</method>
+			<method name="public synchronized int failureCount()">1</method>
+			<method name="public synchronized java.util.Enumeration failures()">1</method>
+			<method name="protected void run(junit.framework.TestCase test)">1</method>
+			<method name="private synchronized java.util.List cloneListeners()">1</method>
+			<method name="public synchronized boolean shouldStop()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public synchronized void addFailure(junit.framework.Test test, junit.framework.AssertionFailedError t)">2</method>
+			<method name="public void endTest(junit.framework.Test test)">2</method>
+			<method name="public synchronized void stop()">1</method>
+			<method name="public synchronized int errorCount()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.After</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>2</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>junit.runner.BaseTestRunner</name>
+		<wmc>31</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>37</cbo>
+		<rfc>81</rfc>
+		<lcom>449</lcom>
+		<ca>2</ca>
+		<ce>35</ce>
+		<npm>19</npm>
+		<lcom3>0.9066666666666666</lcom3>
+		<loc>548</loc>
+		<dam>0.2</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.14666666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.516129032258064</amc>
+		<cc>
+			<method name="public abstract void testFailed(int, junit.framework.Test, Throwable)">1</method>
+			<method name="public synchronized void addError(junit.framework.Test test, Throwable t)">1</method>
+			<method name="protected boolean useReloadingTestSuiteLoader()">3</method>
+			<method name="static boolean filterLine(String line)">3</method>
+			<method name="public static void setPreference(String key, String value)">1</method>
+			<method name="private static java.io.File getPreferencesFile()">1</method>
+			<method name="public synchronized void startTest(junit.framework.Test test)">1</method>
+			<method name="protected static java.util.Properties getPreferences()">2</method>
+			<method name="public static String getFilteredTrace(String stack)">3</method>
+			<method name="public synchronized void endTest(junit.framework.Test test)">1</method>
+			<method name="protected Class loadSuiteClass(String suiteClassName)">1</method>
+			<method name="public String elapsedTimeAsString(long runTime)">1</method>
+			<method name="protected static void setPreferences(java.util.Properties preferences)">1</method>
+			<method name="public synchronized void addFailure(junit.framework.Test test, junit.framework.AssertionFailedError t)">1</method>
+			<method name="public static int getPreference(String key, int dflt)">2</method>
+			<method name="public static void savePreferences()">1</method>
+			<method name="public String extractClassName(String className)">2</method>
+			<method name="public static String getPreference(String key)">1</method>
+			<method name="protected void clearStatus()">1</method>
+			<method name="private static void readPreferences()">1</method>
+			<method name="public junit.framework.Test getTest(String suiteClassName)">4</method>
+			<method name="protected abstract void runFailed(String)">1</method>
+			<method name="public abstract void testStarted(String)">1</method>
+			<method name="protected String processArguments(String[] args)">6</method>
+			<method name="public void setLoading(boolean enable)">1</method>
+			<method name="protected static boolean showStackRaw()">3</method>
+			<method name="public static String truncate(String s)">3</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public abstract void testEnded(String)">1</method>
+			<method name="public static String getFilteredTrace(Throwable t)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.BeforeAndAfterRunner$1</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>3</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>1</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.TestClassMethodsRunner$1</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>6</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>33</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4666666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.333333333333334</amc>
+		<cc>
+			<method name="public volatile int compare(Object x0, Object x1)">1</method>
+			<method name="public int compare(java.lang.reflect.Method o1, java.lang.reflect.Method o2)">1</method>
+			<method name="void _init_(org.junit.internal.runners.TestClassMethodsRunner, org.junit.runner.manipulation.Sorter)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runners.Parameterized</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>9</rfc>
+		<lcom>3</lcom>
+		<ca>0</ca>
+		<ce>11</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>47</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>14.666666666666666</amc>
+		<cc>
+			<method name="public void _init_(Class klass)">1</method>
+			<method name="protected void validate(org.junit.internal.runners.MethodValidator methodValidator)">1</method>
+			<method name="public static transient java.util.Collection eachOne(Object[] params)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.manipulation.Sorter</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>7</rfc>
+		<lcom>4</lcom>
+		<ca>7</ca>
+		<ce>6</ce>
+		<npm>4</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>34</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.25</amc>
+		<cc>
+			<method name="public void apply(org.junit.runner.Runner runner)">2</method>
+			<method name="public void _init_(java.util.Comparator comparator)">1</method>
+			<method name="public volatile int compare(Object x0, Object x1)">1</method>
+			<method name="public int compare(org.junit.runner.Description o1, org.junit.runner.Description o2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.ErrorReportingRunner</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>3</npm>
+		<lcom3>0.25</lcom3>
+		<loc>24</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.333333333333333</amc>
+		<cc>
+			<method name="public void run(org.junit.runner.notification.RunNotifier notifier)">1</method>
+			<method name="public void _init_(org.junit.runner.Description description, Throwable cause)">1</method>
+			<method name="public org.junit.runner.Description getDescription()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.RunNotifier$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>7</ca>
+		<ce>7</ce>
+		<npm>0</npm>
+		<lcom3>0.5</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="void _init_(org.junit.runner.notification.RunNotifier, org.junit.runner.Description)">1</method>
+			<method name="protected void notifyListener(org.junit.runner.notification.RunListener each)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runners.AllTests</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>13</rfc>
+		<lcom>1</lcom>
+		<ca>0</ca>
+		<ce>12</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>23.0</amc>
+		<cc>
+			<method name="public void _init_(Class klass)">1</method>
+			<method name="public static junit.framework.Test testFromSuiteMethod(Class klass)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runners.Suite$SuiteClasses</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract Class[] value()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.RunListener</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>3</noc>
+		<cbo>19</cbo>
+		<rfc>8</rfc>
+		<lcom>21</lcom>
+		<ca>14</ca>
+		<ce>6</ce>
+		<npm>7</npm>
+		<lcom3>2.0</lcom3>
+		<loc>16</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4642857142857143</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>1.2857142857142858</amc>
+		<cc>
+			<method name="public void testFailure(org.junit.runner.notification.Failure failure)">1</method>
+			<method name="public void testIgnored(org.junit.runner.Description description)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void testRunFinished(org.junit.runner.Result result)">1</method>
+			<method name="public void testStarted(org.junit.runner.Description description)">1</method>
+			<method name="public void testFinished(org.junit.runner.Description description)">1</method>
+			<method name="public void testRunStarted(org.junit.runner.Description description)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestFailure</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>20</rfc>
+		<lcom>11</lcom>
+		<ca>2</ca>
+		<ce>11</ce>
+		<npm>7</npm>
+		<lcom3>0.4166666666666667</lcom3>
+		<loc>74</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.42857142857142855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.285714285714286</amc>
+		<cc>
+			<method name="public void _init_(junit.framework.Test failedTest, Throwable thrownException)">1</method>
+			<method name="public boolean isFailure()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public junit.framework.Test failedTest()">1</method>
+			<method name="public Throwable thrownException()">1</method>
+			<method name="public String trace()">1</method>
+			<method name="public String exceptionMessage()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.Description</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>39</cbo>
+		<rfc>26</rfc>
+		<lcom>87</lcom>
+		<ca>33</ca>
+		<ce>6</ce>
+		<npm>12</npm>
+		<lcom3>0.6730769230769231</lcom3>
+		<loc>148</loc>
+		<dam>0.5</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.26153846153846155</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>9.285714285714286</amc>
+		<cc>
+			<method name="public static org.junit.runner.Description createSuiteDescription(Class testClass)">1</method>
+			<method name="public boolean isSuite()">2</method>
+			<method name="public int testCount()">3</method>
+			<method name="public static org.junit.runner.Description createTestDescription(Class clazz, String name)">1</method>
+			<method name="public java.util.ArrayList getChildren()">1</method>
+			<method name="protected void _init_(String displayName)">1</method>
+			<method name="public static org.junit.runner.Description createSuiteDescription(String name)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public void addChild(org.junit.runner.Description description)">1</method>
+			<method name="public boolean isTest()">1</method>
+			<method name="public String getDisplayName()">1</method>
+			<method name="public boolean equals(Object obj)">4</method>
+			<method name="static void _clinit_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.TestClassMethodsRunner</name>
+		<wmc>12</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>26</cbo>
+		<rfc>36</rfc>
+		<lcom>44</lcom>
+		<ca>3</ca>
+		<ce>24</ce>
+		<npm>5</npm>
+		<lcom3>0.5454545454545454</lcom3>
+		<loc>185</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.27380952380952384</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>14.25</amc>
+		<cc>
+			<method name="protected Object createTest()">1</method>
+			<method name="protected void invokeTestMethod(java.lang.reflect.Method method, org.junit.runner.notification.RunNotifier notifier)">1</method>
+			<method name="public void sort(org.junit.runner.manipulation.Sorter sorter)">1</method>
+			<method name="public void run(org.junit.runner.notification.RunNotifier notifier)">3</method>
+			<method name="protected org.junit.internal.runners.TestMethodRunner createMethodRunner(Object test, java.lang.reflect.Method method, org.junit.runner.notification.RunNotifier notifier)">1</method>
+			<method name="public org.junit.runner.Description getDescription()">2</method>
+			<method name="protected org.junit.runner.Description methodDescription(java.lang.reflect.Method method)">1</method>
+			<method name="protected String getName()">1</method>
+			<method name="public void filter(org.junit.runner.manipulation.Filter filter)">1</method>
+			<method name="public void _init_(Class klass)">1</method>
+			<method name="protected Class getTestClass()">1</method>
+			<method name="protected String testName(java.lang.reflect.Method method)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.manipulation.NoTestsRemainException</name>
+		<wmc>1</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>6</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>5</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.Failure</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>21</cbo>
+		<rfc>20</rfc>
+		<lcom>9</lcom>
+		<ca>11</ca>
+		<ce>10</ce>
+		<npm>7</npm>
+		<lcom3>0.4166666666666667</lcom3>
+		<loc>74</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.42857142857142855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.285714285714286</amc>
+		<cc>
+			<method name="public String getTestHeader()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public org.junit.runner.Description getDescription()">1</method>
+			<method name="public String getMessage()">1</method>
+			<method name="public Throwable getException()">1</method>
+			<method name="public void _init_(org.junit.runner.Description description, Throwable thrownException)">1</method>
+			<method name="public String getTrace()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.StoppedByUserException</name>
+		<wmc>1</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>5</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.BeforeAndAfterRunner$FailedBefore</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="private void _init_()">1</method>
+			<method name="void _init_(org.junit.internal.runners.BeforeAndAfterRunner$1 x0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.RunNotifier$6</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>0</npm>
+		<lcom3>0.5</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="void _init_(org.junit.runner.notification.RunNotifier, org.junit.runner.Description)">1</method>
+			<method name="protected void notifyListener(org.junit.runner.notification.RunListener each)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.RunNotifier$2</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>0</npm>
+		<lcom3>0.5</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="void _init_(org.junit.runner.notification.RunNotifier, org.junit.runner.Result)">1</method>
+			<method name="protected void notifyListener(org.junit.runner.notification.RunListener each)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.runner.TestRunListener</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>3</cbo>
+		<rfc>6</rfc>
+		<lcom>15</lcom>
+		<ca>0</ca>
+		<ce>3</ce>
+		<npm>6</npm>
+		<lcom3>1.2</lcom3>
+		<loc>8</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void testRunStarted(String, int)">1</method>
+			<method name="public abstract void testStarted(String)">1</method>
+			<method name="public abstract void testRunEnded(long)">1</method>
+			<method name="public abstract void testRunStopped(long)">1</method>
+			<method name="public abstract void testEnded(String)">1</method>
+			<method name="public abstract void testFailed(int, String, String)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.RunNotifier$3</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>0</npm>
+		<lcom3>0.5</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="void _init_(org.junit.runner.notification.RunNotifier, org.junit.runner.Description)">1</method>
+			<method name="protected void notifyListener(org.junit.runner.notification.RunListener each)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.RunNotifier$4</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>0</npm>
+		<lcom3>0.5</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="protected void notifyListener(org.junit.runner.notification.RunListener each)">1</method>
+			<method name="void _init_(org.junit.runner.notification.RunNotifier, org.junit.runner.notification.Failure)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.BeforeAndAfterRunner</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>15</cbo>
+		<rfc>16</rfc>
+		<lcom>13</lcom>
+		<ca>3</ca>
+		<ce>12</ce>
+		<npm>2</npm>
+		<lcom3>0.5833333333333334</lcom3>
+		<loc>127</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3142857142857143</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.571428571428573</amc>
+		<cc>
+			<method name="public void runProtected()">1</method>
+			<method name="private void invokeMethod(java.lang.reflect.Method method)">1</method>
+			<method name="private void runBefores()">1</method>
+			<method name="public void _init_(Class testClass, Class beforeAnnotation, Class afterAnnotation, Object test)">1</method>
+			<method name="protected abstract void addFailure(Throwable)">1</method>
+			<method name="private void runAfters()">2</method>
+			<method name="protected abstract void runUnprotected()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.RunNotifier$5</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>0</npm>
+		<lcom3>0.5</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="void _init_(org.junit.runner.notification.RunNotifier, org.junit.runner.Description)">1</method>
+			<method name="protected void notifyListener(org.junit.runner.notification.RunListener each)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.Test</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>23</cbo>
+		<rfc>2</rfc>
+		<lcom>1</lcom>
+		<ca>21</ca>
+		<ce>3</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>2</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract int countTestCases()">1</method>
+			<method name="public abstract void run(junit.framework.TestResult)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.TestClassRunner$1</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>8</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>0</npm>
+		<lcom3>0.0</lcom3>
+		<loc>36</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.333333333333334</amc>
+		<cc>
+			<method name="void _init_(org.junit.internal.runners.TestClassRunner, Class x0, Class x1, Class x2, Object x3, org.junit.runner.notification.RunNotifier)">1</method>
+			<method name="protected void addFailure(Throwable targetException)">1</method>
+			<method name="protected void runUnprotected()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.BeforeClass</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>2</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.TestMethodRunner</name>
+		<wmc>11</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>26</cbo>
+		<rfc>42</rfc>
+		<lcom>39</lcom>
+		<ca>2</ca>
+		<ce>25</ce>
+		<npm>2</npm>
+		<lcom3>0.58</lcom3>
+		<loc>257</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.20454545454545456</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.90909090909091</amc>
+		<cc>
+			<method name="private boolean expectsException()">2</method>
+			<method name="protected void executeMethodBody()">1</method>
+			<method name="private void runWithTimeout(long timeout)">2</method>
+			<method name="private boolean isUnexpected(Throwable exception)">2</method>
+			<method name="private void runMethod()">1</method>
+			<method name="static void access$000(org.junit.internal.runners.TestMethodRunner x0)">1</method>
+			<method name="public void run()">3</method>
+			<method name="public void _init_(Object test, java.lang.reflect.Method method, org.junit.runner.notification.RunNotifier notifier, org.junit.runner.Description description)">1</method>
+			<method name="protected void addFailure(Throwable e)">1</method>
+			<method name="protected void runUnprotected()">2</method>
+			<method name="private Class expectedException()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.JUnit4TestAdapter</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>18</rfc>
+		<lcom>6</lcom>
+		<ca>2</ca>
+		<ce>12</ce>
+		<npm>8</npm>
+		<lcom3>0.47619047619047616</lcom3>
+		<loc>60</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.375</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.125</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="public Class getTestClass()">1</method>
+			<method name="public void _init_(Class newTestClass)">1</method>
+			<method name="public org.junit.runner.Description getDescription()">1</method>
+			<method name="public void _init_(Class newTestClass, junit.framework.JUnit4TestAdapterCache cache)">1</method>
+			<method name="public java.util.List getTests()">1</method>
+			<method name="public int countTestCases()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.manipulation.Filter$1</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>3</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>10</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>2.3333333333333335</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="public String describe()">1</method>
+			<method name="public boolean shouldRun(org.junit.runner.Description description)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.MethodValidator</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>19</cbo>
+		<rfc>32</rfc>
+		<lcom>1</lcom>
+		<ca>3</ca>
+		<ce>16</ce>
+		<npm>6</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>227</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.47619047619047616</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>31.0</amc>
+		<cc>
+			<method name="private void validateTestMethods(Class annotation, boolean isStatic)">7</method>
+			<method name="public void _init_(Class testClass)">1</method>
+			<method name="public void assertValid()">1</method>
+			<method name="public void validateInstanceMethods()">1</method>
+			<method name="public void validateStaticMethods()">1</method>
+			<method name="public java.util.List validateMethodsForDefaultRunner()">1</method>
+			<method name="public void validateNoArgConstructor()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.RepeatedTest</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>13</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>8</ce>
+		<npm>4</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>51</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4375</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>11.5</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void run(junit.framework.TestResult result)">3</method>
+			<method name="public void _init_(junit.framework.Test test, int repeat)">2</method>
+			<method name="public int countTestCases()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.Result$Listener</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>16</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>5</npm>
+		<lcom3>0.0</lcom3>
+		<loc>53</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.42857142857142855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.428571428571429</amc>
+		<cc>
+			<method name="public void testFailure(org.junit.runner.notification.Failure failure)">1</method>
+			<method name="private void _init_(org.junit.runner.Result)">1</method>
+			<method name="public void testIgnored(org.junit.runner.Description description)">1</method>
+			<method name="void _init_(org.junit.runner.Result x0, org.junit.runner.Result$1 x1)">1</method>
+			<method name="public void testRunFinished(org.junit.runner.Result result)">1</method>
+			<method name="public void testStarted(org.junit.runner.Description description)">1</method>
+			<method name="public void testRunStarted(org.junit.runner.Description description)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.TestClassRunner</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>2</noc>
+		<cbo>19</cbo>
+		<rfc>18</rfc>
+		<lcom>14</lcom>
+		<ca>3</ca>
+		<ce>17</ce>
+		<npm>6</npm>
+		<lcom3>0.5</lcom3>
+		<loc>72</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.26785714285714285</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.75</amc>
+		<cc>
+			<method name="public void _init_(Class klass, org.junit.runner.Runner runner)">1</method>
+			<method name="public void sort(org.junit.runner.manipulation.Sorter sorter)">1</method>
+			<method name="public void run(org.junit.runner.notification.RunNotifier notifier)">1</method>
+			<method name="public org.junit.runner.Description getDescription()">1</method>
+			<method name="public void filter(org.junit.runner.manipulation.Filter filter)">1</method>
+			<method name="public void _init_(Class klass)">1</method>
+			<method name="protected void validate(org.junit.internal.runners.MethodValidator methodValidator)">1</method>
+			<method name="protected Class getTestClass()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.requests.ErrorReportingRequest</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>18</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>15</ce>
+		<npm>2</npm>
+		<lcom3>0.5</lcom3>
+		<loc>83</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>26.0</amc>
+		<cc>
+			<method name="private java.util.List getCauses(Throwable cause)">3</method>
+			<method name="public org.junit.runner.Runner getRunner()">2</method>
+			<method name="public void _init_(Class klass, Throwable cause)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.runner.Version</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>3</lcom>
+		<ca>2</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>12</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="public static void main(String[] args)">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="public static String id()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.Ignore</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>3</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract String value()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.Assert</name>
+		<wmc>39</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>18</cbo>
+		<rfc>60</rfc>
+		<lcom>741</lcom>
+		<ca>3</ca>
+		<ce>15</ce>
+		<npm>38</npm>
+		<lcom3>2.0</lcom3>
+		<loc>406</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.13053613053613053</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.41025641025641</amc>
+		<cc>
+			<method name="public static void assertFalse(String message, boolean condition)">2</method>
+			<method name="public static void assertEquals(long expected, long actual)">1</method>
+			<method name="public static void assertEquals(String message, boolean expected, boolean actual)">1</method>
+			<method name="public static void assertNotNull(Object object)">1</method>
+			<method name="public static void assertTrue(boolean condition)">1</method>
+			<method name="public static void assertEquals(String message, byte expected, byte actual)">1</method>
+			<method name="public static void assertEquals(String message, Object expected, Object actual)">5</method>
+			<method name="public static void assertEquals(boolean expected, boolean actual)">1</method>
+			<method name="protected void _init_()">1</method>
+			<method name="public static void fail(String message)">1</method>
+			<method name="public static void assertEquals(int expected, int actual)">1</method>
+			<method name="public static String format(String message, Object expected, Object actual)">2</method>
+			<method name="public static void assertNotSame(Object expected, Object actual)">1</method>
+			<method name="public static void assertNotNull(String message, Object object)">2</method>
+			<method name="public static void assertFalse(boolean condition)">1</method>
+			<method name="public static void assertNull(Object object)">1</method>
+			<method name="public static void assertEquals(short expected, short actual)">1</method>
+			<method name="public static void fail()">1</method>
+			<method name="public static void assertSame(Object expected, Object actual)">1</method>
+			<method name="public static void failNotSame(String message, Object expected, Object actual)">2</method>
+			<method name="public static void assertEquals(Object expected, Object actual)">1</method>
+			<method name="public static void assertEquals(byte expected, byte actual)">1</method>
+			<method name="public static void assertEquals(float expected, float actual, float delta)">1</method>
+			<method name="public static void assertEquals(String message, long expected, long actual)">1</method>
+			<method name="public static void assertEquals(String message, short expected, short actual)">1</method>
+			<method name="public static void assertTrue(String message, boolean condition)">2</method>
+			<method name="public static void failNotEquals(String message, Object expected, Object actual)">1</method>
+			<method name="public static void assertEquals(String message, String expected, String actual)">5</method>
+			<method name="public static void assertSame(String message, Object expected, Object actual)">2</method>
+			<method name="public static void assertEquals(char expected, char actual)">1</method>
+			<method name="public static void assertNull(String message, Object object)">2</method>
+			<method name="public static void assertEquals(String expected, String actual)">1</method>
+			<method name="public static void assertEquals(String message, float expected, float actual, float delta)">3</method>
+			<method name="public static void failSame(String message)">2</method>
+			<method name="public static void assertNotSame(String message, Object expected, Object actual)">2</method>
+			<method name="public static void assertEquals(double expected, double actual, double delta)">1</method>
+			<method name="public static void assertEquals(String message, char expected, char actual)">1</method>
+			<method name="public static void assertEquals(String message, double expected, double actual, double delta)">3</method>
+			<method name="public static void assertEquals(String message, int expected, int actual)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.TestDecorator</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>2</noc>
+		<cbo>9</cbo>
+		<rfc>10</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>6</ce>
+		<npm>6</npm>
+		<lcom3>0.0</lcom3>
+		<loc>33</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.333333333333333</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void basicRun(junit.framework.TestResult result)">1</method>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="public junit.framework.Test getTest()">1</method>
+			<method name="public void _init_(junit.framework.Test test)">1</method>
+			<method name="public int countTestCases()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.runner.notification.RunNotifier</name>
+		<wmc>13</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>30</cbo>
+		<rfc>32</rfc>
+		<lcom>52</lcom>
+		<ca>20</ca>
+		<ce>16</ce>
+		<npm>12</npm>
+		<lcom3>0.7083333333333334</lcom3>
+		<loc>114</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.26373626373626374</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.615384615384615</amc>
+		<cc>
+			<method name="public void fireTestFailure(org.junit.runner.notification.Failure failure)">1</method>
+			<method name="public void addFirstListener(org.junit.runner.notification.RunListener listener)">1</method>
+			<method name="public void fireTestFinished(org.junit.runner.Description description)">1</method>
+			<method name="static java.util.List access$000(org.junit.runner.notification.RunNotifier x0)">1</method>
+			<method name="public void fireTestIgnored(org.junit.runner.Description description)">1</method>
+			<method name="public void addListener(org.junit.runner.notification.RunListener listener)">1</method>
+			<method name="public void fireTestRunFinished(org.junit.runner.Result result)">1</method>
+			<method name="public void fireTestRunStarted(org.junit.runner.Description description)">1</method>
+			<method name="public void removeListener(org.junit.runner.notification.RunListener listener)">1</method>
+			<method name="public void pleaseStop()">1</method>
+			<method name="public void fireTestStarted(org.junit.runner.Description description)">1</method>
+			<method name="public void testAborted(org.junit.runner.Description description, Throwable cause)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.junit.internal.runners.TestIntrospector</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>26</rfc>
+		<lcom>34</lcom>
+		<ca>4</ca>
+		<ce>11</ce>
+		<npm>3</npm>
+		<lcom3>0.875</lcom3>
+		<loc>198</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5277777777777778</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>20.88888888888889</amc>
+		<cc>
+			<method name="public void _init_(Class testClass)">1</method>
+			<method name="long getTimeout(java.lang.reflect.Method method)">1</method>
+			<method name="public boolean isIgnored(java.lang.reflect.Method eachMethod)">2</method>
+			<method name="private boolean isShadowed(java.lang.reflect.Method method, java.util.List results)">2</method>
+			<method name="public java.util.List getTestMethods(Class annotationClass)">5</method>
+			<method name="private java.util.List getSuperClasses(Class testClass)">2</method>
+			<method name="private boolean isShadowed(java.lang.reflect.Method current, java.lang.reflect.Method previous)">5</method>
+			<method name="Class expectedException(java.lang.reflect.Method method)">2</method>
+			<method name="private boolean runsTopToBottom(Class annotation)">3</method>
+		</cc>
+	</class>
+
+</metrics>

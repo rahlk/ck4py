@@ -1,0 +1,2276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1489085560000" analysisTimestamp="1489174007317" release="">
+  <Project projectName="jgraph-5.13.0.0">
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jgraph/jgraph-5.13.0.0/compressed/jgraph-latest-bsd.jar</Jar>
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jgraph/jgraph-5.13.0.0/compressed/jgraph-latest-bsd-src.jar</Jar>
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jgraph/jgraph-5.13.0.0/bin/lib/jgraph.jar</Jar>
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jgraph/jgraph-5.13.0.0/src/lib/jgraph.jar</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="Installer">
+      <SourceLine classname="Installer"/>
+    </Class>
+    <Method classname="Installer" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="Installer"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="Installer" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="Installer">
+      <SourceLine classname="Installer"/>
+    </Class>
+    <Method classname="Installer" name="cat" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Installer"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="Installer" startBytecode="12" endBytecode="12"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="Installer">
+      <SourceLine classname="Installer"/>
+    </Class>
+    <Method classname="Installer" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Installer"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="Installer" startBytecode="225" endBytecode="225"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="Installer">
+      <SourceLine classname="Installer"/>
+    </Class>
+    <Method classname="Installer" name="extractUI" signature="(Ljavax/swing/JFrame;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Installer"/>
+    </Method>
+    <SourceLine classname="Installer" startBytecode="95" endBytecode="95"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="Installer">
+      <SourceLine classname="Installer"/>
+    </Class>
+    <Method classname="Installer" name="extract" signature="(Ljavax/swing/JFrame;Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Installer" startBytecode="0" endBytecode="193"/>
+    </Method>
+    <Type descriptor="Ljava/util/zip/ZipFile;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.util.zip.ZipFile" start="60" end="795" sourcefile="ZipFile.java" sourcepath="java/util/zip/ZipFile.java"/>
+    </Type>
+    <SourceLine classname="Installer" startBytecode="56" endBytecode="56"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE">
+    <Class classname="Installer">
+      <SourceLine classname="Installer"/>
+    </Class>
+    <Method classname="Installer" name="extract" signature="(Ljavax/swing/JFrame;Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Installer"/>
+    </Method>
+    <Method classname="java.io.File" name="mkdirs" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1340" end="1354" startBytecode="0" endBytecode="182" sourcefile="File.java" sourcepath="java/io/File.java"/>
+    </Method>
+    <SourceLine classname="Installer" startBytecode="306" endBytecode="306"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE">
+    <Class classname="Installer">
+      <SourceLine classname="Installer"/>
+    </Class>
+    <Method classname="Installer" name="extract" signature="(Ljavax/swing/JFrame;Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Installer"/>
+    </Method>
+    <Method classname="java.io.File" name="setLastModified" signature="(J)Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1427" end="1435" startBytecode="0" endBytecode="113" sourcefile="File.java" sourcepath="java/io/File.java"/>
+    </Method>
+    <SourceLine classname="Installer" startBytecode="367" endBytecode="367"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="Installer$3">
+      <SourceLine classname="Installer$3"/>
+    </Class>
+    <Method classname="Installer$3" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="Installer$3"/>
+    </Method>
+    <SourceLine classname="Installer$3" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.algebra.JGraphAlgebra">
+      <SourceLine classname="com.jgraph.algebra.JGraphAlgebra"/>
+    </Class>
+    <Field classname="com.jgraph.algebra.JGraphAlgebra" name="sharedInstance" signature="Lcom/jgraph/algebra/JGraphAlgebra;" isStatic="true">
+      <SourceLine classname="com.jgraph.algebra.JGraphAlgebra"/>
+    </Field>
+    <SourceLine classname="com.jgraph.algebra.JGraphAlgebra" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="com.jgraph.algebra.JGraphAlgebra">
+      <SourceLine classname="com.jgraph.algebra.JGraphAlgebra"/>
+    </Class>
+    <Method classname="com.jgraph.algebra.JGraphAlgebra" name="getMinimumSpanningTree" signature="(Lorg/jgraph/graph/GraphModel;[Ljava/lang/Object;[Ljava/lang/Object;Lcom/jgraph/algebra/cost/JGraphCostFunction;)[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="com.jgraph.algebra.JGraphAlgebra"/>
+    </Method>
+    <Method classname="com.jgraph.algebra.JGraphUnionFind" name="union" signature="(Lcom/jgraph/algebra/JGraphUnionFind$Node;Lcom/jgraph/algebra/JGraphUnionFind$Node;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.jgraph.algebra.JGraphUnionFind"/>
+    </Method>
+    <Int value="1" role="INT_MAYBE_NULL_ARG"/>
+    <LocalVariable name="?" register="11" pc="116" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.jgraph.algebra.JGraphAlgebra" startBytecode="118" endBytecode="118" role="SOURCE_LINE_INVOKED"/>
+    <SourceLine classname="com.jgraph.algebra.JGraphAlgebra" startBytecode="97" endBytecode="97" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="com.jgraph.algebra.JGraphAlgebra">
+      <SourceLine classname="com.jgraph.algebra.JGraphAlgebra"/>
+    </Class>
+    <Method classname="com.jgraph.algebra.JGraphAlgebra" name="getMinimumSpanningTree" signature="(Lorg/jgraph/graph/GraphModel;[Ljava/lang/Object;[Ljava/lang/Object;Lcom/jgraph/algebra/cost/JGraphCostFunction;)[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="com.jgraph.algebra.JGraphAlgebra"/>
+    </Method>
+    <Method classname="com.jgraph.algebra.JGraphUnionFind" name="union" signature="(Lcom/jgraph/algebra/JGraphUnionFind$Node;Lcom/jgraph/algebra/JGraphUnionFind$Node;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.jgraph.algebra.JGraphUnionFind"/>
+    </Method>
+    <Int value="2" role="INT_MAYBE_NULL_ARG"/>
+    <LocalVariable name="?" register="12" pc="116" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.jgraph.algebra.JGraphAlgebra" startBytecode="118" endBytecode="118" role="SOURCE_LINE_INVOKED"/>
+    <SourceLine classname="com.jgraph.algebra.JGraphAlgebra" startBytecode="102" endBytecode="102" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.jgraph.algebra.JGraphUnionFind$Node">
+      <SourceLine classname="com.jgraph.algebra.JGraphUnionFind$Node"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexRenderer">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexRenderer" name="wrapperRenderer" signature="Ljavax/swing/JComponent;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexRenderer">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexRenderer" name="CLIENTPROPERTY_SHOWFOLDINGICONS" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexRenderer">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexRenderer" name="INSET" signature="I" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer" startBytecode="18" endBytecode="18"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexRenderer">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexRenderer" name="ZERO_DIMENSION" signature="Ljava/awt/Dimension;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer" startBytecode="14" endBytecode="14"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexRenderer">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexRenderer" name="handle" signature="Ljava/awt/Rectangle;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer" startBytecode="34" endBytecode="34"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexRenderer">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexRenderer" name="textPane" signature="Ljavax/swing/JTextPane;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer" startBytecode="44" endBytecode="44"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexRenderer">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexRenderer" name="cylinderArea" signature="Ljava/awt/geom/Area;" isStatic="false">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Field>
+    <Type descriptor="Ljava/awt/geom/Area;" role="TYPE_FOUND">
+      <SourceLine classname="java.awt.geom.Area" start="100" end="655" sourcefile="Area.java" sourcepath="java/awt/geom/Area.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexRenderer">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Class>
+    <Method classname="com.jgraph.components.labels.MultiLineVertexRenderer" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Method>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexRenderer" name="wrapperRenderer" signature="Ljavax/swing/JComponent;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.MultiLineVertexRenderer" startBytecode="109" endBytecode="109"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexView">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexView"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexView" name="editor" signature="Lcom/jgraph/components/labels/RichTextEditor;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexView"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.MultiLineVertexView" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexView">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexView"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexView" name="redirector" signature="Lcom/jgraph/components/labels/RedirectingEditor;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexView"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.MultiLineVertexView" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.MultiLineVertexView">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexView"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.MultiLineVertexView" name="renderer" signature="Lcom/jgraph/components/labels/MultiLineVertexRenderer;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.MultiLineVertexView"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.MultiLineVertexView" startBytecode="27" endBytecode="27"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.jgraph.components.labels.RedirectingEditor$RealCellEditor">
+      <SourceLine classname="com.jgraph.components.labels.RedirectingEditor$RealCellEditor"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.RichTextBusinessObject">
+      <SourceLine classname="com.jgraph.components.labels.RichTextBusinessObject"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.RichTextBusinessObject" name="valueKey" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.RichTextBusinessObject"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.RichTextBusinessObject" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="com.jgraph.components.labels.RichTextBusinessObject">
+      <SourceLine classname="com.jgraph.components.labels.RichTextBusinessObject"/>
+    </Class>
+    <Method classname="com.jgraph.components.labels.RichTextBusinessObject" name="getTooltip" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.jgraph.components.labels.RichTextBusinessObject"/>
+    </Method>
+    <SourceLine classname="com.jgraph.components.labels.RichTextBusinessObject" startBytecode="101" endBytecode="101"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE">
+    <Class classname="com.jgraph.components.labels.RichTextValue">
+      <SourceLine classname="com.jgraph.components.labels.RichTextValue"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.jgraph.components.labels.RichTextValue">
+      <SourceLine classname="com.jgraph.components.labels.RichTextValue"/>
+    </Class>
+    <Method classname="com.jgraph.components.labels.RichTextValue" name="getRichText" signature="(Ljavax/swing/text/Document;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.RichTextValue"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="566" end="567" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.jgraph.components.labels.RichTextValue" startBytecode="39" endBytecode="39"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.jgraph.components.labels.RichTextValue">
+      <SourceLine classname="com.jgraph.components.labels.RichTextValue"/>
+    </Class>
+    <Method classname="com.jgraph.components.labels.RichTextValue" name="insertInto" signature="(Ljavax/swing/text/Document;)V" isStatic="false">
+      <SourceLine classname="com.jgraph.components.labels.RichTextValue"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.jgraph.components.labels.RichTextValue" startBytecode="8" endBytecode="8"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.components.labels.RichTextValue">
+      <SourceLine classname="com.jgraph.components.labels.RichTextValue"/>
+    </Class>
+    <Field classname="com.jgraph.components.labels.RichTextValue" name="editorKit" signature="Ljavax/swing/text/rtf/RTFEditorKit;" isStatic="true">
+      <SourceLine classname="com.jgraph.components.labels.RichTextValue"/>
+    </Field>
+    <SourceLine classname="com.jgraph.components.labels.RichTextValue" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="com.jgraph.io.svg.SVGEdgeWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter"/>
+    </Class>
+    <Method classname="com.jgraph.io.svg.SVGEdgeWriter" name="createNode" signature="(Lcom/jgraph/io/svg/SVGGraphWriter;Lorg/w3c/dom/Document;Lorg/jgraph/graph/CellView;DD)Lorg/w3c/dom/Node;" isStatic="false">
+      <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter"/>
+    </Method>
+    <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter" startBytecode="412" endBytecode="412"/>
+  </BugInstance>
+  <BugInstance type="IM_BAD_CHECK_FOR_ODD" priority="2" rank="13" abbrev="IM" category="STYLE">
+    <Class classname="com.jgraph.io.svg.SVGEdgeWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter"/>
+    </Class>
+    <Method classname="com.jgraph.io.svg.SVGEdgeWriter" name="createNode" signature="(Lcom/jgraph/io/svg/SVGGraphWriter;Lorg/w3c/dom/Document;Lorg/jgraph/graph/CellView;DD)Lorg/w3c/dom/Node;" isStatic="false">
+      <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter"/>
+    </Method>
+    <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter" startBytecode="589" endBytecode="589"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGEdgeWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGEdgeWriter" name="DEFAULT_LINE_COLOR" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter" startBytecode="3" endBytecode="3"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="com.jgraph.io.svg.SVGEdgeWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter"/>
+    </Class>
+    <Method classname="com.jgraph.io.svg.SVGEdgeWriter" name="createNode" signature="(Lcom/jgraph/io/svg/SVGGraphWriter;Lorg/w3c/dom/Document;Lorg/jgraph/graph/CellView;DD)Lorg/w3c/dom/Node;" isStatic="false">
+      <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter"/>
+    </Method>
+    <SourceLine classname="com.jgraph.io.svg.SVGEdgeWriter" startBytecode="213" endBytecode="213"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGGraphWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGGraphWriter" name="FONT_PROPORTION_FACTOR" signature="D" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter" startBytecode="23" endBytecode="23"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGGraphWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGGraphWriter" name="TITLE_FONT" signature="Ljava/awt/Font;" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter" startBytecode="12" endBytecode="12"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGGraphWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGGraphWriter" name="TITLE_HEXCOLOR" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter" startBytecode="32" endBytecode="32"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGGraphWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGGraphWriter" name="TITLE_VSPACING" signature="I" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGGraphWriter" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGUtils">
+      <SourceLine classname="com.jgraph.io.svg.SVGUtils"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGUtils" name="HEXCOLOR_BLACK" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGUtils"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGUtils" startBytecode="10" endBytecode="10"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGUtils">
+      <SourceLine classname="com.jgraph.io.svg.SVGUtils"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGUtils" name="LINESPACING" signature="I" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGUtils"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGUtils" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="com.jgraph.io.svg.SVGUtils">
+      <SourceLine classname="com.jgraph.io.svg.SVGUtils"/>
+    </Class>
+    <Method classname="com.jgraph.io.svg.SVGUtils" name="getHexEncoding" signature="(Ljava/awt/Color;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGUtils"/>
+    </Method>
+    <SourceLine classname="com.jgraph.io.svg.SVGUtils" startBytecode="33" endBytecode="33"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGVertexWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGVertexWriter"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGVertexWriter" name="HEXCOLOR_SHADOW" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGVertexWriter"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGVertexWriter" startBytecode="6" endBytecode="6"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGVertexWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGVertexWriter"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGVertexWriter" name="SHADOW_DISTANCE" signature="I" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGVertexWriter"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGVertexWriter" startBytecode="16" endBytecode="16"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.io.svg.SVGVertexWriter">
+      <SourceLine classname="com.jgraph.io.svg.SVGVertexWriter"/>
+    </Class>
+    <Field classname="com.jgraph.io.svg.SVGVertexWriter" name="SHADOW_OPACITY" signature="D" isStatic="true">
+      <SourceLine classname="com.jgraph.io.svg.SVGVertexWriter"/>
+    </Field>
+    <SourceLine classname="com.jgraph.io.svg.SVGVertexWriter" startBytecode="12" endBytecode="12"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.layout.JGraphFacade">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Class>
+    <Method classname="com.jgraph.layout.JGraphFacade" name="getAttributes" signature="()Ljava/util/Hashtable;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Method>
+    <Field classname="com.jgraph.layout.JGraphFacade" name="attributes" signature="Ljava/util/Hashtable;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.JGraphFacade" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.layout.JGraphFacade">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Class>
+    <Method classname="com.jgraph.layout.JGraphFacade" name="setAttributes" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Method>
+    <Field classname="com.jgraph.layout.JGraphFacade" name="attributes" signature="Ljava/util/Hashtable;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.jgraph.layout.JGraphFacade" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.jgraph.layout.JGraphFacade">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Class>
+    <Method classname="com.jgraph.layout.JGraphFacade" name="IsIgnoresCellsInGroups" signature="()Z" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="com.jgraph.layout.JGraphFacade">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Class>
+    <Method classname="com.jgraph.layout.JGraphFacade" name="getIncomingEdges" signature="(Ljava/lang/Object;Ljava/util/Set;ZZ)Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Method>
+    <Field classname="com.jgraph.layout.JGraphFacade" name="graphLayoutCache" signature="Lorg/jgraph/graph/GraphLayoutCache;" isStatic="false" role="FIELD_CONTAINS_VALUE">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.JGraphFacade" startBytecode="254" endBytecode="254" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="com.jgraph.layout.JGraphFacade" startBytecode="13" endBytecode="13" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="com.jgraph.layout.JGraphFacade">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Class>
+    <Method classname="com.jgraph.layout.JGraphFacade" name="getNeighbours" signature="(Ljava/lang/Object;Ljava/util/Set;Z)Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Method>
+    <Field classname="com.jgraph.layout.JGraphFacade" name="graphLayoutCache" signature="Lorg/jgraph/graph/GraphLayoutCache;" isStatic="false" role="FIELD_CONTAINS_VALUE">
+      <SourceLine classname="com.jgraph.layout.JGraphFacade"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.JGraphFacade" startBytecode="226" endBytecode="226" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="com.jgraph.layout.JGraphFacade" startBytecode="13" endBytecode="13" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE">
+    <Class classname="com.jgraph.layout.graph.JGraphSpringLayout">
+      <SourceLine classname="com.jgraph.layout.graph.JGraphSpringLayout"/>
+    </Class>
+    <Field classname="com.jgraph.layout.graph.JGraphSpringLayout" name="displacement" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.graph.JGraphSpringLayout"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.graph.JGraphSpringLayout" startBytecode="12" endBytecode="12"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment"/>
+    </Class>
+    <Method classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment" name="minNode" signature="(Lcom/jgraph/layout/hierarchical/model/JGraphHierarchyModel;)V" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment"/>
+    </Method>
+    <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment" startBytecode="317" endBytecode="317"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment"/>
+    </Class>
+    <Field classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment" name="nextLayerConnectedCache" signature="[[Lcom/jgraph/layout/hierarchical/model/JGraphAbstractHierarchyCell;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment"/>
+    </Class>
+    <Field classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment" name="previousLayerConnectedCache" signature="[[Lcom/jgraph/layout/hierarchical/model/JGraphAbstractHierarchyCell;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" rank="16" abbrev="Eq" category="BAD_PRACTICE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment$WeightedCellSorter">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment$WeightedCellSorter"/>
+    </Class>
+    <Method classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment$WeightedCellSorter" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment$WeightedCellSorter"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment$WeightedCellSorter">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment$WeightedCellSorter"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphGreedyCycleRemover">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphGreedyCycleRemover"/>
+    </Class>
+    <Method classname="com.jgraph.layout.hierarchical.JGraphGreedyCycleRemover" name="&lt;init&gt;" signature="([Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphGreedyCycleRemover"/>
+    </Method>
+    <Field classname="com.jgraph.layout.hierarchical.JGraphGreedyCycleRemover" name="roots" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphGreedyCycleRemover"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="21" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.jgraph.layout.hierarchical.JGraphGreedyCycleRemover" startBytecode="21" endBytecode="21"/>
+  </BugInstance>
+  <BugInstance type="IM_BAD_CHECK_FOR_ODD" priority="2" rank="13" abbrev="IM" category="STYLE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction"/>
+    </Class>
+    <Method classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction" name="medianValue" signature="(Ljava/util/Collection;I)D" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction"/>
+    </Method>
+    <SourceLine classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction" startBytecode="64" endBytecode="64"/>
+  </BugInstance>
+  <BugInstance type="IM_BAD_CHECK_FOR_ODD" priority="2" rank="13" abbrev="IM" category="STYLE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction"/>
+    </Class>
+    <Method classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction" name="transpose" signature="(ILcom/jgraph/layout/hierarchical/model/JGraphHierarchyModel;)V" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction"/>
+    </Method>
+    <SourceLine classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction" startBytecode="30" endBytecode="30"/>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" rank="16" abbrev="Eq" category="BAD_PRACTICE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction$MedianCellSorter">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction$MedianCellSorter"/>
+    </Class>
+    <Method classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction$MedianCellSorter" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction$MedianCellSorter"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction$MedianCellSorter">
+      <SourceLine classname="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction$MedianCellSorter"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE">
+    <Class classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyModel">
+      <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyModel"/>
+    </Class>
+    <Field classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyModel" name="SOURCESCANSTARTRANK" signature="I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyModel"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyModel" startBytecode="42" endBytecode="42"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode">
+      <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode"/>
+    </Class>
+    <Field classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode" name="emptyConnectionMap" signature="Ljava/util/Collection;" isStatic="true">
+      <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode" startBytecode="8" endBytecode="8"/>
+  </BugInstance>
+  <BugInstance type="RpC_REPEATED_CONDITIONAL_TEST" priority="2" rank="8" abbrev="RpC" category="CORRECTNESS">
+    <Class classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode">
+      <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode"/>
+    </Class>
+    <Method classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode" name="isAncestor" signature="(Lcom/jgraph/layout/hierarchical/model/JGraphHierarchyNode;)Z" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode"/>
+    </Method>
+    <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode" startBytecode="44" endBytecode="47"/>
+    <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode" startBytecode="51" endBytecode="54"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE">
+    <Class classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode">
+      <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode"/>
+    </Class>
+    <Field classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode" name="cellType" signature="I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode" startBytecode="11" endBytecode="11"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Class>
+    <Method classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" name="getConnectedEdges" signature="()[I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Method>
+    <Field classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" name="connectedEdges" signature="[I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Class>
+    <Method classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" name="getRelevantEdges" signature="()[I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Method>
+    <Field classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" name="relevantEdges" signature="[I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Class>
+    <Method classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" name="setConnectedEdges" signature="([I)V" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Method>
+    <Field classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" name="connectedEdges" signature="[I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Class>
+    <Method classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" name="setRelevantEdges" signature="([I)V" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Method>
+    <Field classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" name="relevantEdges" signature="[I" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper">
+      <SourceLine classname="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE">
+    <Class classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout"/>
+    </Class>
+    <Field classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout" name="oldOrigin" signature="Ljava/awt/geom/Point2D;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout" startBytecode="19" endBytecode="19"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout"/>
+    </Class>
+    <Field classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout" name="lowerLevelValues" signature="[D" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout"/>
+    </Class>
+    <Field classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout" name="upperLevelValues" signature="[D" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphAbstractTreeLayout"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_VOID_METHOD" priority="2" rank="17" abbrev="UC" category="STYLE">
+    <Class classname="com.jgraph.layout.tree.JGraphCompactTreeLayout">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphCompactTreeLayout"/>
+    </Class>
+    <Method classname="com.jgraph.layout.tree.JGraphCompactTreeLayout" name="unzip" signature="(Lcom/jgraph/layout/tree/JGraphCompactTreeLayout$CompactTreeNode;)V" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphCompactTreeLayout"/>
+    </Method>
+    <SourceLine classname="com.jgraph.layout.tree.JGraphCompactTreeLayout" startBytecode="22" endBytecode="22"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="com.jgraph.layout.tree.JGraphTreeLayout">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphTreeLayout"/>
+    </Class>
+    <Method classname="com.jgraph.layout.tree.JGraphTreeLayout" name="merge" signature="(Lcom/jgraph/layout/tree/JGraphTreeLayout$PolyLine;Lcom/jgraph/layout/tree/JGraphTreeLayout$PolyLine;D)V" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphTreeLayout"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="64" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.jgraph.layout.tree.JGraphTreeLayout" startBytecode="65" endBytecode="65" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="com.jgraph.layout.tree.JGraphTreeLayout" startBytecode="1" endBytecode="1" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.jgraph.layout.tree.JGraphTreeLayout$PolyLine">
+      <SourceLine classname="com.jgraph.layout.tree.JGraphTreeLayout$PolyLine"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="com.jgraph.layout.tree.OrganizationalChart">
+      <SourceLine classname="com.jgraph.layout.tree.OrganizationalChart"/>
+    </Class>
+    <Field classname="com.jgraph.layout.tree.OrganizationalChart" name="horizontalParentsSet" signature="Ljava/util/Set;" isStatic="false">
+      <SourceLine classname="com.jgraph.layout.tree.OrganizationalChart"/>
+    </Field>
+    <SourceLine classname="com.jgraph.layout.tree.OrganizationalChart$OrganizationalTreeNode" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.jgraph.navigation.GraphNavigator">
+      <SourceLine classname="com.jgraph.navigation.GraphNavigator"/>
+    </Class>
+    <Field classname="com.jgraph.navigation.GraphNavigator" name="componentListener" signature="Ljava/awt/event/ComponentListener;" isStatic="false">
+      <SourceLine classname="com.jgraph.navigation.GraphNavigator"/>
+    </Field>
+    <Type descriptor="Lcom/jgraph/navigation/GraphNavigator$1;" role="TYPE_FOUND">
+      <SourceLine classname="com.jgraph.navigation.GraphNavigator$1"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.jgraph.navigation.GraphNavigator">
+      <SourceLine classname="com.jgraph.navigation.GraphNavigator"/>
+    </Class>
+    <Field classname="com.jgraph.navigation.GraphNavigator" name="currentGraph" signature="Ljava/lang/ref/WeakReference;" isStatic="false">
+      <SourceLine classname="com.jgraph.navigation.GraphNavigator"/>
+    </Field>
+    <Type descriptor="Ljava/lang/ref/WeakReference;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.ref.WeakReference" start="57" end="70" sourcefile="WeakReference.java" sourcepath="java/lang/ref/WeakReference.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="1" rank="14" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.jgraph.navigation.GraphNavigator">
+      <SourceLine classname="com.jgraph.navigation.GraphNavigator"/>
+    </Class>
+    <Field classname="com.jgraph.navigation.GraphNavigator" name="componentListener" signature="Ljava/awt/event/ComponentListener;" isStatic="false">
+      <SourceLine classname="com.jgraph.navigation.GraphNavigator"/>
+    </Field>
+    <Type descriptor="Lcom/jgraph/navigation/GraphNavigator$1;" role="TYPE_FOUND">
+      <SourceLine classname="com.jgraph.navigation.GraphNavigator$1"/>
+    </Type>
+    <SourceLine classname="com.jgraph.navigation.GraphNavigator" startBytecode="20" endBytecode="20"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.util.JGraphPrintingScrollPane">
+      <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane"/>
+    </Class>
+    <Field classname="com.jgraph.util.JGraphPrintingScrollPane" name="PROPERTY_PAGEFORMAT" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane"/>
+    </Field>
+    <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane" startBytecode="22" endBytecode="22"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.util.JGraphPrintingScrollPane">
+      <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane"/>
+    </Class>
+    <Field classname="com.jgraph.util.JGraphPrintingScrollPane" name="PROPERTY_PAGESCALE" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane"/>
+    </Field>
+    <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane" startBytecode="32" endBytecode="32"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.jgraph.util.JGraphPrintingScrollPane">
+      <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane"/>
+    </Class>
+    <Field classname="com.jgraph.util.JGraphPrintingScrollPane" name="PROPERTY_PAGEVISIBLE" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane"/>
+    </Field>
+    <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UwF" category="STYLE">
+    <Class classname="com.jgraph.util.JGraphPrintingScrollPane">
+      <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane"/>
+    </Class>
+    <Field classname="com.jgraph.util.JGraphPrintingScrollPane" name="graph" signature="Lorg/jgraph/JGraph;" isStatic="false">
+      <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane"/>
+    </Field>
+    <SourceLine classname="com.jgraph.util.JGraphPrintingScrollPane" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="DM_GC" priority="1" rank="16" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="org.jgraph.JGraph">
+      <SourceLine classname="org.jgraph.JGraph"/>
+    </Class>
+    <Method classname="org.jgraph.JGraph" name="getOffgraphics" signature="()Ljava/awt/Graphics;" isStatic="false">
+      <SourceLine classname="org.jgraph.JGraph"/>
+    </Method>
+    <SourceLine classname="org.jgraph.JGraph" startBytecode="267" endBytecode="267"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.JGraph">
+      <SourceLine classname="org.jgraph.JGraph"/>
+    </Class>
+    <Field classname="org.jgraph.JGraph" name="IS_MAC" signature="Z" isStatic="true">
+      <SourceLine classname="org.jgraph.JGraph"/>
+    </Field>
+    <SourceLine classname="org.jgraph.JGraph" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="org.jgraph.JGraph">
+      <SourceLine classname="org.jgraph.JGraph"/>
+    </Class>
+    <Method classname="org.jgraph.JGraph" name="setGraphLayoutCache" signature="(Lorg/jgraph/graph/GraphLayoutCache;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.JGraph"/>
+    </Method>
+    <Field classname="org.jgraph.JGraph" name="graphLayoutCache" signature="Lorg/jgraph/graph/GraphLayoutCache;" isStatic="false" role="FIELD_CONTAINS_VALUE">
+      <SourceLine classname="org.jgraph.JGraph"/>
+    </Field>
+    <SourceLine classname="org.jgraph.JGraph" startBytecode="76" endBytecode="76" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.jgraph.JGraph" startBytecode="41" endBytecode="41" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.event.GraphSelectionEvent">
+      <SourceLine classname="org.jgraph.event.GraphSelectionEvent"/>
+    </Class>
+    <Method classname="org.jgraph.event.GraphSelectionEvent" name="&lt;init&gt;" signature="(Ljava/lang/Object;[Ljava/lang/Object;[Z)V" isStatic="false">
+      <SourceLine classname="org.jgraph.event.GraphSelectionEvent"/>
+    </Method>
+    <Field classname="org.jgraph.event.GraphSelectionEvent" name="areNew" signature="[Z" isStatic="false">
+      <SourceLine classname="org.jgraph.event.GraphSelectionEvent"/>
+    </Field>
+    <LocalVariable name="?" register="3" pc="12" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.event.GraphSelectionEvent" startBytecode="12" endBytecode="12"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.event.GraphSelectionEvent">
+      <SourceLine classname="org.jgraph.event.GraphSelectionEvent"/>
+    </Class>
+    <Method classname="org.jgraph.event.GraphSelectionEvent" name="&lt;init&gt;" signature="(Ljava/lang/Object;[Ljava/lang/Object;[Z)V" isStatic="false">
+      <SourceLine classname="org.jgraph.event.GraphSelectionEvent"/>
+    </Method>
+    <Field classname="org.jgraph.event.GraphSelectionEvent" name="cells" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.event.GraphSelectionEvent"/>
+    </Field>
+    <LocalVariable name="?" register="2" pc="7" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.event.GraphSelectionEvent" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.AbstractCellView">
+      <SourceLine classname="org.jgraph.graph.AbstractCellView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.AbstractCellView" name="cellEditor" signature="Lorg/jgraph/graph/GraphCellEditor;" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.AbstractCellView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.AbstractCellView" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.AttributeMap">
+      <SourceLine classname="org.jgraph.graph.AttributeMap"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="org.jgraph.graph.DefaultGraphCellEditor$DefaultTextField">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphCellEditor$DefaultTextField"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="MF_CLASS_MASKS_FIELD" priority="2" rank="8" abbrev="MF" category="CORRECTNESS">
+    <Class classname="org.jgraph.graph.DefaultGraphModel">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel"/>
+    </Class>
+    <Field classname="org.jgraph.graph.DefaultGraphModel" name="updateLevel" signature="I" isStatic="false" role="FIELD_MASKING">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel"/>
+    </Field>
+    <Field classname="javax.swing.undo.UndoableEditSupport" name="updateLevel" signature="I" isStatic="false" role="FIELD_MASKED">
+      <SourceLine classname="javax.swing.undo.UndoableEditSupport" sourcefile="UndoableEditSupport.java" sourcepath="javax/swing/undo/UndoableEditSupport.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="IT_NO_SUCH_ELEMENT" priority="2" rank="16" abbrev="It" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$EmptyIterator">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$EmptyIterator"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$EmptyIterator" name="next" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$EmptyIterator"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="getChanged" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="changed" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="getContext" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="context" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="getInserted" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="inserted" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="getRemoved" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="removed" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="&lt;init&gt;" signature="(Lorg/jgraph/graph/DefaultGraphModel;[Ljava/lang/Object;[Ljava/lang/Object;Ljava/util/Map;Lorg/jgraph/graph/ConnectionSet;Lorg/jgraph/graph/ParentMap;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="insert" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Field>
+    <LocalVariable name="?" register="2" pc="27" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" startBytecode="27" endBytecode="27"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="&lt;init&gt;" signature="(Lorg/jgraph/graph/DefaultGraphModel;[Ljava/lang/Object;[Ljava/lang/Object;Ljava/util/Map;Lorg/jgraph/graph/ConnectionSet;Lorg/jgraph/graph/ParentMap;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="remove" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Field>
+    <LocalVariable name="?" register="3" pc="32" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" startBytecode="32" endBytecode="32"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" startBytecode="46" endBytecode="46"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit" name="getChanged" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit" name="changed" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit" name="&lt;init&gt;" signature="(Lorg/jgraph/graph/DefaultGraphModel;[Ljava/lang/Object;I)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit" name="cells" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit"/>
+    </Field>
+    <LocalVariable name="?" register="2" pc="11" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit" startBytecode="11" endBytecode="11"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="org.jgraph.graph.DefaultGraphSelectionModel">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel"/>
+    </Class>
+    <Field classname="org.jgraph.graph.DefaultGraphSelectionModel" name="changeSupport" signature="Ljavax/swing/event/SwingPropertyChangeSupport;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel"/>
+    </Field>
+    <Int value="62" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel" startBytecode="40" endBytecode="40" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel" startBytecode="47" endBytecode="47" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel" startBytecode="1" endBytecode="1" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel" startBytecode="9" endBytecode="9" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel" startBytecode="1" endBytecode="1" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel" startBytecode="20" endBytecode="20" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel" startBytecode="16" endBytecode="16" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.DefaultGraphSelectionModel">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="org.jgraph.graph.DefaultGraphSelectionModel$CellPlaceHolder">
+      <SourceLine classname="org.jgraph.graph.DefaultGraphSelectionModel$CellPlaceHolder"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="1" rank="14" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.EdgeRenderer" name="firePropertyChange" signature="(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="0" endBytecode="8"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="text" role="STRING_CONSTANT"/>
+    <LocalVariable name="?" register="1" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="3" endBytecode="3"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugInstance type="FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER" priority="1" rank="6" abbrev="FE" category="CORRECTNESS">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.EdgeRenderer" name="getLabelAngle" signature="(Ljava/lang/String;)D" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="121" endBytecode="121"/>
+  </BugInstance>
+  <BugInstance type="FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER" priority="1" rank="6" abbrev="FE" category="CORRECTNESS">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.EdgeRenderer" name="isLabelTransform" signature="(Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="127" endBytecode="127"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.EdgeRenderer" name="createLineEnd" signature="(IILjava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/Shape;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="109" endBytecode="109"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.EdgeRenderer" name="getLabelBounds" signature="(Ljava/awt/geom/Point2D;Ljava/awt/Dimension;Ljava/lang/String;)Ljava/awt/geom/Rectangle2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="178" endBytecode="178"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.EdgeRenderer" name="intersects" signature="(Lorg/jgraph/JGraph;Lorg/jgraph/graph/CellView;Ljava/awt/Rectangle;)Z" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="246" endBytecode="246"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Field classname="org.jgraph.graph.EdgeRenderer" name="HIT_LABEL_EXACT" signature="Z" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Field classname="org.jgraph.graph.EdgeRenderer" name="LABELWIDTHBUFFER" signature="D" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="31" endBytecode="31"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Field classname="org.jgraph.graph.EdgeRenderer" name="fontGraphics" signature="Ljava/awt/Graphics;" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.EdgeRenderer" name="paintLabels" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Method>
+    <LocalVariable name="?" register="4" pc="118" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="120" endBytecode="120" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="54" endBytecode="54" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="1" rank="14" abbrev="UC" category="STYLE">
+    <Class classname="org.jgraph.graph.EdgeRenderer">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.EdgeRenderer" name="createLineEnd" signature="(IILjava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/Shape;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeRenderer"/>
+    </Method>
+    <String value="arg1 != 9"/>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="382" endBytecode="382" role="SOURCE_UNREACHABLE_CODE"/>
+    <SourceLine classname="org.jgraph.graph.EdgeRenderer" startBytecode="379" endBytecode="379"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.EdgeView">
+      <SourceLine classname="org.jgraph.graph.EdgeView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.EdgeView" name="LEGACY_DISCONNECTABLE" signature="Z" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.EdgeView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.EdgeView" startBytecode="11" endBytecode="11"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.EdgeView">
+      <SourceLine classname="org.jgraph.graph.EdgeView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.EdgeView" name="renderer" signature="Lorg/jgraph/graph/EdgeRenderer;" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.EdgeView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.EdgeView" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="org.jgraph.graph.EdgeView">
+      <SourceLine classname="org.jgraph.graph.EdgeView"/>
+    </Class>
+    <Method classname="org.jgraph.graph.EdgeView" name="removeExtraLabel" signature="(I)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeView"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="26" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.jgraph.graph.EdgeView" startBytecode="27" endBytecode="27" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.jgraph.graph.EdgeView" startBytecode="17" endBytecode="17" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.EdgeView">
+      <SourceLine classname="org.jgraph.graph.EdgeView"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.EdgeView$EdgeHandle">
+      <SourceLine classname="org.jgraph.graph.EdgeView$EdgeHandle"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.EdgeView$EdgeHandle">
+      <SourceLine classname="org.jgraph.graph.EdgeView$EdgeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.EdgeView$EdgeHandle" name="extraLabelLocations" signature="[Ljava/awt/geom/Rectangle2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeView$EdgeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.EdgeView$EdgeHandle">
+      <SourceLine classname="org.jgraph.graph.EdgeView$EdgeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.EdgeView$EdgeHandle" name="loc" signature="Ljava/awt/geom/Rectangle2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.EdgeView$EdgeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphConstants">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Class>
+    <Field classname="org.jgraph.graph.GraphConstants" name="dash" signature="[F" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphConstants" startBytecode="41" endBytecode="41"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphConstants">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Class>
+    <Field classname="org.jgraph.graph.GraphConstants" name="DEFAULTDECORATIONSIZE" signature="I" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphConstants" startBytecode="21" endBytecode="21"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphConstants">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Class>
+    <Field classname="org.jgraph.graph.GraphConstants" name="DEFAULTINSET" signature="I" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphConstants" startBytecode="25" endBytecode="25"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphConstants">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Class>
+    <Field classname="org.jgraph.graph.GraphConstants" name="ROUTING_DEFAULT" signature="Lorg/jgraph/graph/Edge$Routing;" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphConstants" startBytecode="70" endBytecode="70"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphConstants">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Class>
+    <Field classname="org.jgraph.graph.GraphConstants" name="SELECTION_STROKE" signature="Ljava/awt/Stroke;" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphConstants" startBytecode="60" endBytecode="60"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphConstants">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Class>
+    <Field classname="org.jgraph.graph.GraphConstants" name="DEFAULTFONT" signature="Ljava/awt/Font;" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.GraphConstants"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphConstants" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphContext">
+      <SourceLine classname="org.jgraph.graph.GraphContext"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphContext" name="getCells" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphContext"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphContext" name="cells" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphContext"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphContext" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphContext">
+      <SourceLine classname="org.jgraph.graph.GraphContext"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphContext" name="&lt;init&gt;" signature="(Lorg/jgraph/JGraph;[Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphContext"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphContext" name="cells" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphContext"/>
+    </Field>
+    <LocalVariable name="?" register="2" pc="51" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.graph.GraphContext" startBytecode="51" endBytecode="51"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphContext">
+      <SourceLine classname="org.jgraph.graph.GraphContext"/>
+    </Class>
+    <Field classname="org.jgraph.graph.GraphContext" name="PREVIEW_EDGE_GROUPS" signature="Z" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.GraphContext"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphContext" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphLayoutCache">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphLayoutCache" name="getPorts" signature="()[Lorg/jgraph/graph/PortView;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphLayoutCache" name="ports" signature="[Lorg/jgraph/graph/PortView;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="org.jgraph.graph.GraphLayoutCache">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphLayoutCache" name="valueForCellChanged" signature="(Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache"/>
+    </Method>
+    <Method classname="org.jgraph.graph.GraphLayoutCache" name="augmentNestedMapForValueChange" signature="(Ljava/util/Map;Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache"/>
+    </Method>
+    <Int value="1" role="INT_MAYBE_NULL_ARG"/>
+    <LocalVariable name="?" register="3" pc="17" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache" startBytecode="150" endBytecode="150" role="SOURCE_LINE_INVOKED"/>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache" startBytecode="19" endBytecode="19" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="1" rank="14" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.GraphLayoutCache">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="org.jgraph.graph.GraphLayoutCache">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphLayoutCache" name="reload" signature="()V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache" startBytecode="74" endBytecode="74"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="getContext" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="context" signature="[Lorg/jgraph/graph/CellView;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="getInserted" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="invisible" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="getRemoved" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="visible" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="&lt;init&gt;" signature="(Lorg/jgraph/graph/GraphLayoutCache;[Ljava/lang/Object;Ljava/util/Map;[Ljava/lang/Object;[Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="cells" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Field>
+    <LocalVariable name="?" register="2" pc="42" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" startBytecode="42" endBytecode="42"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="&lt;init&gt;" signature="(Lorg/jgraph/graph/GraphLayoutCache;[Ljava/lang/Object;Ljava/util/Map;[Ljava/lang/Object;[Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="invisible" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Field>
+    <LocalVariable name="?" register="5" pc="54" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" startBytecode="54" endBytecode="54"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="&lt;init&gt;" signature="(Lorg/jgraph/graph/GraphLayoutCache;[Ljava/lang/Object;Ljava/util/Map;[Ljava/lang/Object;[Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" name="visible" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit"/>
+    </Field>
+    <LocalVariable name="?" register="4" pc="48" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" startBytecode="48" endBytecode="48"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphTransferable">
+      <SourceLine classname="org.jgraph.graph.GraphTransferable"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphTransferable" name="getCells" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphTransferable"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphTransferable" name="cells" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphTransferable"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphTransferable" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphTransferable">
+      <SourceLine classname="org.jgraph.graph.GraphTransferable"/>
+    </Class>
+    <Method classname="org.jgraph.graph.GraphTransferable" name="&lt;init&gt;" signature="([Ljava/lang/Object;Ljava/util/Map;Ljava/awt/geom/Rectangle2D;Lorg/jgraph/graph/ConnectionSet;Lorg/jgraph/graph/ParentMap;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphTransferable"/>
+    </Method>
+    <Field classname="org.jgraph.graph.GraphTransferable" name="cells" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.GraphTransferable"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="16" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.graph.GraphTransferable" startBytecode="16" endBytecode="16"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.GraphTransferable">
+      <SourceLine classname="org.jgraph.graph.GraphTransferable"/>
+    </Class>
+    <Field classname="org.jgraph.graph.GraphTransferable" name="dataFlavor" signature="Ljava/awt/datatransfer/DataFlavor;" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.GraphTransferable"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.GraphTransferable" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="org.jgraph.graph.ParentMap">
+      <SourceLine classname="org.jgraph.graph.ParentMap"/>
+    </Class>
+    <Method classname="org.jgraph.graph.ParentMap" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.ParentMap"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.ParentMap" startBytecode="47" endBytecode="47"/>
+  </BugInstance>
+  <BugInstance type="SE_INNER_CLASS" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.ParentMap$Entry">
+      <SourceLine classname="org.jgraph.graph.ParentMap$Entry"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="org.jgraph.graph.ParentMap$Entry">
+      <SourceLine classname="org.jgraph.graph.ParentMap$Entry"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="1" rank="14" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.PortRenderer">
+      <SourceLine classname="org.jgraph.graph.PortRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.PortRenderer" name="firePropertyChange" signature="(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.PortRenderer" startBytecode="0" endBytecode="8"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="text" role="STRING_CONSTANT"/>
+    <LocalVariable name="?" register="1" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.jgraph.graph.PortRenderer" startBytecode="3" endBytecode="3"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="org.jgraph.graph.PortView">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Class>
+    <Method classname="org.jgraph.graph.PortView" name="getBounds" signature="()Ljava/awt/geom/Rectangle2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Method>
+    <SourceLine classname="org.jgraph.graph.PortView" startBytecode="52" endBytecode="52"/>
+  </BugInstance>
+  <BugInstance type="MS_CANNOT_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.PortView">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.PortView" name="SIZE" signature="I" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.PortView" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.PortView">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.PortView" name="renderer" signature="Lorg/jgraph/graph/PortRenderer;" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.PortView" startBytecode="12" endBytecode="12"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.PortView">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.PortView" name="allowPortMagic" signature="Z" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.PortView" startBytecode="16" endBytecode="16"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.PortView">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="org.jgraph.graph.PortView">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Class>
+    <Method classname="org.jgraph.graph.PortView" name="setPortSize" signature="(I)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Method>
+    <Field classname="org.jgraph.graph.PortView" name="SIZE" signature="I" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.PortView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.PortView" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="1" rank="14" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexRenderer">
+      <SourceLine classname="org.jgraph.graph.VertexRenderer"/>
+    </Class>
+    <Method classname="org.jgraph.graph.VertexRenderer" name="firePropertyChange" signature="(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.VertexRenderer" startBytecode="0" endBytecode="8"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="text" role="STRING_CONSTANT"/>
+    <LocalVariable name="?" register="1" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.jgraph.graph.VertexRenderer" startBytecode="3" endBytecode="3"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.VertexView">
+      <SourceLine classname="org.jgraph.graph.VertexView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView" name="defaultCursors" signature="[I" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.VertexView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.VertexView" startBytecode="80" endBytecode="80"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.VertexView">
+      <SourceLine classname="org.jgraph.graph.VertexView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView" name="xCursors" signature="[I" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.VertexView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.VertexView" startBytecode="127" endBytecode="127"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.VertexView">
+      <SourceLine classname="org.jgraph.graph.VertexView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView" name="yCursors" signature="[I" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.VertexView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.VertexView" startBytecode="174" endBytecode="174"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.graph.VertexView">
+      <SourceLine classname="org.jgraph.graph.VertexView"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView" name="renderer" signature="Lorg/jgraph/graph/VertexRenderer;" isStatic="true">
+      <SourceLine classname="org.jgraph.graph.VertexView"/>
+    </Field>
+    <SourceLine classname="org.jgraph.graph.VertexView" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView">
+      <SourceLine classname="org.jgraph.graph.VertexView"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView$SizeHandle">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView$SizeHandle">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView$SizeHandle" name="cachedBounds" signature="Ljava/awt/geom/Rectangle2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView$SizeHandle">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView$SizeHandle" name="firstDrag" signature="Z" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView$SizeHandle">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView$SizeHandle" name="graph" signature="Lorg/jgraph/JGraph;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView$SizeHandle">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView$SizeHandle" name="index" signature="I" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView$SizeHandle">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView$SizeHandle" name="initialBounds" signature="Ljava/awt/geom/Rectangle2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView$SizeHandle">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView$SizeHandle" name="portViews" signature="[Lorg/jgraph/graph/CellView;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView$SizeHandle">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView$SizeHandle" name="r" signature="[Ljava/awt/geom/Rectangle2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.graph.VertexView$SizeHandle">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Class>
+    <Field classname="org.jgraph.graph.VertexView$SizeHandle" name="vertex" signature="Lorg/jgraph/graph/VertexView;" isStatic="false">
+      <SourceLine classname="org.jgraph.graph.VertexView$SizeHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" name="hysteresis" signature="I" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener"/>
+    </Field>
+    <Int value="66" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="109" endBytecode="109" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="41" endBytecode="41" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="63" endBytecode="63" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" name="lastPosition" signature="Ljava/awt/Point;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener"/>
+    </Field>
+    <Int value="75" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="21" endBytecode="21" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="52" endBytecode="52" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="30" endBytecode="30" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="52" endBytecode="52" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="108" endBytecode="108" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="13" endBytecode="13" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="27" endBytecode="27" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphDropTargetListener" startBytecode="42" endBytecode="42" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphTransferable">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphTransferable"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" abbrev="BC" category="STYLE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Method classname="org.jgraph.plaf.basic.BasicGraphUI" name="startEditing" signature="(Ljava/lang/Object;Ljava/awt/event/MouseEvent;)Z" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="0" endBytecode="203"/>
+    </Method>
+    <Type descriptor="Ljava/awt/event/MouseEvent;" role="TYPE_FOUND">
+      <SourceLine classname="java.awt.event.MouseEvent" start="376" end="1172" sourcefile="MouseEvent.java" sourcepath="java/awt/event/MouseEvent.java"/>
+    </Type>
+    <Type descriptor="Ljava/awt/event/MouseEvent;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.awt.event.MouseEvent" start="376" end="1172" sourcefile="MouseEvent.java" sourcepath="java/awt/event/MouseEvent.java"/>
+    </Type>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="354" endBytecode="354"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="2" rank="16" abbrev="DE" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Method classname="org.jgraph.plaf.basic.BasicGraphUI" name="paintBackgroundComponent" signature="(Ljava/awt/Graphics;Ljava/awt/Component;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" start="54" end="123" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="38" endBytecode="38"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="38" endBytecode="38"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="2" rank="16" abbrev="DE" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Method classname="org.jgraph.plaf.basic.BasicGraphUI" name="paintBackgroundComponent" signature="(Ljava/awt/Graphics;Ljava/awt/Component;Ljava/awt/Rectangle;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" start="54" end="123" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="41" endBytecode="41"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="41" endBytecode="41"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="MAXCELLS" signature="I" isStatic="true">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="51" endBytecode="51"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="MAXCLIPCELLS" signature="I" isStatic="true">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="61" endBytecode="61"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="MAXHANDLES" signature="I" isStatic="true">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="56" endBytecode="56"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="SCROLLBORDER" signature="I" isStatic="true">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="40" endBytecode="40"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="SCROLLSTEP" signature="F" isStatic="true">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="46" endBytecode="46"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Method classname="org.jgraph.plaf.basic.BasicGraphUI" name="completeEditing" signature="(ZZZ)V" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Method>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="graph" signature="Lorg/jgraph/JGraph;" isStatic="false" role="FIELD_CONTAINS_VALUE">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="108" endBytecode="108" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="36" endBytecode="36" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Method classname="org.jgraph.plaf.basic.BasicGraphUI" name="paintCell" signature="(Ljava/awt/Graphics;Lorg/jgraph/graph/CellView;Ljava/awt/geom/Rectangle2D;Z)V" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="91" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="92" endBytecode="92" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="1" endBytecode="1" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Method classname="org.jgraph.plaf.basic.BasicGraphUI" name="startEditing" signature="(Ljava/lang/Object;Ljava/awt/event/MouseEvent;)Z" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Method>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="cellEditor" signature="Lorg/jgraph/graph/GraphCellEditor;" isStatic="false" role="FIELD_CONTAINS_VALUE">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="285" endBytecode="285" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI" startBytecode="205" endBytecode="205" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="keyListener" signature="Ljava/awt/event/KeyListener;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <Type descriptor="Ljava/awt/event/KeyListener;" role="TYPE_FOUND">
+      <SourceLine classname="java.awt.event.KeyListener" sourcefile="KeyListener.java" sourcepath="java/awt/event/KeyListener.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="marquee" signature="Lorg/jgraph/graph/BasicMarqueeHandler;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <Type descriptor="Lorg/jgraph/graph/BasicMarqueeHandler;" role="TYPE_FOUND">
+      <SourceLine classname="org.jgraph.graph.BasicMarqueeHandler"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" abbrev="BC" category="STYLE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$ComponentHandler">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$ComponentHandler"/>
+    </Class>
+    <Method classname="org.jgraph.plaf.basic.BasicGraphUI$ComponentHandler" name="getScrollPane" signature="()Ljavax/swing/JScrollPane;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$ComponentHandler" startBytecode="0" endBytecode="21"/>
+    </Method>
+    <Type descriptor="Ljavax/swing/JScrollPane;" role="TYPE_FOUND">
+      <SourceLine classname="javax.swing.JScrollPane" start="187" end="1426" sourcefile="JScrollPane.java" sourcepath="javax/swing/JScrollPane.java"/>
+    </Type>
+    <Type descriptor="Ljavax/swing/JScrollPane;" role="TYPE_EXPECTED">
+      <SourceLine classname="javax.swing.JScrollPane" start="187" end="1426" sourcefile="JScrollPane.java" sourcepath="javax/swing/JScrollPane.java"/>
+    </Type>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$ComponentHandler" startBytecode="31" endBytecode="31"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$GraphModelHandler">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$GraphModelHandler"/>
+    </Class>
+    <Method classname="org.jgraph.plaf.basic.BasicGraphUI$GraphModelHandler" name="graphChanged" signature="(Lorg/jgraph/event/GraphModelEvent;)V" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$GraphModelHandler"/>
+    </Method>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI" name="graphLayoutCache" signature="Lorg/jgraph/graph/GraphLayoutCache;" isStatic="false" role="FIELD_CONTAINS_VALUE">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI"/>
+    </Field>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$GraphModelHandler" startBytecode="358" endBytecode="358" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$GraphModelHandler" startBytecode="147" endBytecode="147" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$MouseHandler">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$MouseHandler"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI$MouseHandler" name="handler" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$MouseHandler"/>
+    </Field>
+    <Type descriptor="Lorg/jgraph/graph/BasicMarqueeHandler;" role="TYPE_FOUND">
+      <SourceLine classname="org.jgraph.graph.BasicMarqueeHandler"/>
+    </Type>
+    <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$MouseHandler" startBytecode="585" endBytecode="585"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$MouseInputHandler">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$MouseInputHandler"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_INNER_CLASS" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle" name="cachedBounds" signature="Ljava/awt/geom/Rectangle2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle" name="contextViews" signature="[Lorg/jgraph/graph/CellView;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle" name="firstDrag" signature="Z" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle" name="handles" signature="[Lorg/jgraph/graph/CellHandle;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle" name="initialLocation" signature="Ljava/awt/geom/Point2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle" name="portViews" signature="[Lorg/jgraph/graph/CellView;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Class>
+    <Field classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle" name="views" signature="[Lorg/jgraph/graph/CellView;" isStatic="false">
+      <SourceLine classname="org.jgraph.plaf.basic.BasicGraphUI$RootHandle"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.util.Bezier">
+      <SourceLine classname="org.jgraph.util.Bezier"/>
+    </Class>
+    <Method classname="org.jgraph.util.Bezier" name="getPoints" signature="()[Ljava/awt/geom/Point2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.util.Bezier"/>
+    </Method>
+    <Field classname="org.jgraph.util.Bezier" name="bPoints" signature="[Ljava/awt/geom/Point2D;" isStatic="false">
+      <SourceLine classname="org.jgraph.util.Bezier"/>
+    </Field>
+    <SourceLine classname="org.jgraph.util.Bezier" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="org.jgraph.util.ParallelEdgeRouter">
+      <SourceLine classname="org.jgraph.util.ParallelEdgeRouter"/>
+    </Class>
+    <Method classname="org.jgraph.util.ParallelEdgeRouter" name="routeEdge" signature="(Lorg/jgraph/graph/GraphLayoutCache;Lorg/jgraph/graph/EdgeView;)Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.jgraph.util.ParallelEdgeRouter"/>
+    </Method>
+    <SourceLine classname="org.jgraph.util.ParallelEdgeRouter" startBytecode="635" endBytecode="635"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.util.Spline">
+      <SourceLine classname="org.jgraph.util.Spline"/>
+    </Class>
+    <Method classname="org.jgraph.util.Spline" name="setValues" signature="([D[D)V" isStatic="false">
+      <SourceLine classname="org.jgraph.util.Spline"/>
+    </Method>
+    <Field classname="org.jgraph.util.Spline" name="xx" signature="[D" isStatic="false">
+      <SourceLine classname="org.jgraph.util.Spline"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.util.Spline" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.jgraph.util.Spline">
+      <SourceLine classname="org.jgraph.util.Spline"/>
+    </Class>
+    <Method classname="org.jgraph.util.Spline" name="setValues" signature="([D[D)V" isStatic="false">
+      <SourceLine classname="org.jgraph.util.Spline"/>
+    </Method>
+    <Field classname="org.jgraph.util.Spline" name="yy" signature="[D" isStatic="false">
+      <SourceLine classname="org.jgraph.util.Spline"/>
+    </Field>
+    <LocalVariable name="?" register="2" pc="7" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="org.jgraph.util.Spline" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 9 Mar 2017 13:52:40 -0500" total_classes="191" referenced_classes="742" total_bugs="204" total_size="16736" num_packages="21" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="66.57" clock_seconds="192.19" peak_mbytes="414.73" alloc_mbytes="683.00" gc_seconds="6.95" priority_2="144" priority_1="60">
+    <PackageStats package="" total_bugs="8" total_types="4" total_size="258" priority_2="5" priority_1="3">
+      <ClassStats class="Installer" sourceFile="&lt;Unknown&gt;" interface="false" size="235" bugs="7" priority_2="4" priority_1="3"/>
+      <ClassStats class="Installer$1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="Installer$2" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Installer$3" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.algebra" total_bugs="4" total_types="6" total_size="303" priority_2="4">
+      <ClassStats class="com.jgraph.algebra.JGraphAlgebra" sourceFile="&lt;Unknown&gt;" interface="false" size="102" bugs="3" priority_2="3"/>
+      <ClassStats class="com.jgraph.algebra.JGraphAlgebra$1" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.jgraph.algebra.JGraphFibonacciHeap" sourceFile="&lt;Unknown&gt;" interface="false" size="133" bugs="0"/>
+      <ClassStats class="com.jgraph.algebra.JGraphFibonacciHeap$Node" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.jgraph.algebra.JGraphUnionFind" sourceFile="&lt;Unknown&gt;" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.jgraph.algebra.JGraphUnionFind$Node" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.algebra.cost" total_bugs="0" total_types="3" total_size="23">
+      <ClassStats class="com.jgraph.algebra.cost.JGraphConstantCostFunction" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.jgraph.algebra.cost.JGraphCostFunction" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.jgraph.algebra.cost.JGraphDistanceCostFunction" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.components.labels" total_bugs="18" total_types="17" total_size="765" priority_2="6" priority_1="12">
+      <ClassStats class="com.jgraph.components.labels.CellConstants" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.MultiLineVertexRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="408" bugs="8" priority_2="3" priority_1="5"/>
+      <ClassStats class="com.jgraph.components.labels.MultiLineVertexRenderer$1" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.MultiLineVertexView" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="3" priority_1="3"/>
+      <ClassStats class="com.jgraph.components.labels.RedirectingEditor" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RedirectingEditor$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RedirectingEditor$RealCellEditor" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="1" priority_2="1"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextBusinessObject" sourceFile="&lt;Unknown&gt;" interface="false" size="55" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextEditor" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextEditor$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextEditor$2" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextEditor$3" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextEditor$4" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextEditor$ModifiedEditorContainer" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextEditor$RealCellEditor" sourceFile="&lt;Unknown&gt;" interface="false" size="51" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextGraphModel" sourceFile="&lt;Unknown&gt;" interface="false" size="51" bugs="0"/>
+      <ClassStats class="com.jgraph.components.labels.RichTextValue" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="4" priority_2="1" priority_1="3"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.io.svg" total_bugs="14" total_types="6" total_size="488" priority_2="4" priority_1="10">
+      <ClassStats class="com.jgraph.io.svg.SVGEdgeWriter" sourceFile="&lt;Unknown&gt;" interface="false" size="91" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="com.jgraph.io.svg.SVGGraphConstants" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.jgraph.io.svg.SVGGraphWriter" sourceFile="&lt;Unknown&gt;" interface="false" size="249" bugs="4" priority_1="4"/>
+      <ClassStats class="com.jgraph.io.svg.SVGUtils" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="com.jgraph.io.svg.SVGVertexRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="0"/>
+      <ClassStats class="com.jgraph.io.svg.SVGVertexWriter" sourceFile="&lt;Unknown&gt;" interface="false" size="57" bugs="3" priority_1="3"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.layout" total_bugs="5" total_types="8" total_size="912" priority_2="5">
+      <ClassStats class="com.jgraph.layout.JGraphCompoundLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.JGraphFacade" sourceFile="&lt;Unknown&gt;" interface="false" size="765" bugs="5" priority_2="5"/>
+      <ClassStats class="com.jgraph.layout.JGraphFacade$CellVisitor" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.JGraphFacade$DefaultComparator" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.JGraphLayout" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.JGraphLayout$Stoppable" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.JGraphLayoutProgress" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.JGraphModelFacade" sourceFile="&lt;Unknown&gt;" interface="false" size="65" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.layout.graph" total_bugs="1" total_types="5" total_size="194" priority_2="1">
+      <ClassStats class="com.jgraph.layout.graph.JGraphAnnealingLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.graph.JGraphFRLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.graph.JGraphISOMLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.graph.JGraphSimpleLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.graph.JGraphSpringLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="150" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.layout.hierarchical" total_bugs="10" total_types="13" total_size="1011" priority_2="10">
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment" sourceFile="&lt;Unknown&gt;" interface="false" size="430" bugs="3" priority_2="3"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment$AreaSpatialCache" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphCoordinateAssignment$WeightedCellSorter" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="2" priority_2="2"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphGreedyCycleRemover" sourceFile="&lt;Unknown&gt;" interface="false" size="57" bugs="1" priority_2="1"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphHierarchicalLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="176" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphHierarchicalLayoutStep" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphLongestPathLayering" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction" sourceFile="&lt;Unknown&gt;" interface="false" size="224" bugs="2" priority_2="2"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphMedianHybridCrossingReduction$MedianCellSorter" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="2" priority_2="2"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphMinimumCycleRemover" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphMinimumCycleRemover$1" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphMinimumCycleRemover$2" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.JGraphNetworkSimplexLayering" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.layout.hierarchical.model" total_bugs="4" total_types="6" total_size="458" priority_2="3" priority_1="1">
+      <ClassStats class="com.jgraph.layout.hierarchical.model.JGraphAbstractHierarchyCell" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.model.JGraphHierarchyEdge" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.model.JGraphHierarchyModel" sourceFile="&lt;Unknown&gt;" interface="false" size="277" bugs="1" priority_2="1"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.model.JGraphHierarchyModel$1" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.model.JGraphHierarchyNode" sourceFile="&lt;Unknown&gt;" interface="false" size="66" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="com.jgraph.layout.hierarchical.model.JGraphHierarchyRank" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.layout.organic" total_bugs="5" total_types="4" total_size="896" priority_2="5">
+      <ClassStats class="com.jgraph.layout.organic.JGraphFastOrganicLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="173" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.organic.JGraphOrganicLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="525" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.organic.JGraphOrganicLayout$CellWrapper" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="5" priority_2="5"/>
+      <ClassStats class="com.jgraph.layout.organic.JGraphSelfOrganizingOrganicLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="158" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.layout.routing" total_bugs="0" total_types="1" total_size="2">
+      <ClassStats class="com.jgraph.layout.routing.JGraphParallelRouter" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.layout.simple" total_bugs="0" total_types="1" total_size="63">
+      <ClassStats class="com.jgraph.layout.simple.SimpleGridLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="63" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.layout.tree" total_bugs="7" total_types="17" total_size="1035" priority_2="7">
+      <ClassStats class="com.jgraph.layout.tree.JGraphAbstractTreeLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="3" priority_2="3"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphAbstractTreeLayout$TreeNode" sourceFile="&lt;Unknown&gt;" interface="false" size="51" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphCompactTreeLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="194" bugs="1" priority_2="1"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphCompactTreeLayout$1" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphCompactTreeLayout$CompactTreeNode" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphCompactTreeLayout$PolyLine" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphCompactTreeLayout$Polygon" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphMoenLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphRadialTreeLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="142" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphRadialTreeLayout$1" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphRadialTreeLayout$TreeNode" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphTreeLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="190" bugs="1" priority_2="1"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphTreeLayout$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphTreeLayout$PolyLine" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.jgraph.layout.tree.JGraphTreeLayout$StandardTreeNode" sourceFile="&lt;Unknown&gt;" interface="false" size="128" bugs="0"/>
+      <ClassStats class="com.jgraph.layout.tree.OrganizationalChart" sourceFile="&lt;Unknown&gt;" interface="false" size="62" bugs="1" priority_2="1"/>
+      <ClassStats class="com.jgraph.layout.tree.OrganizationalChart$OrganizationalTreeNode" sourceFile="&lt;Unknown&gt;" interface="false" size="121" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.navigation" total_bugs="3" total_types="5" total_size="214" priority_2="2" priority_1="1">
+      <ClassStats class="com.jgraph.navigation.GraphNavigator" sourceFile="&lt;Unknown&gt;" interface="false" size="76" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="com.jgraph.navigation.GraphNavigator$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.jgraph.navigation.GraphNavigator$2" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.jgraph.navigation.GraphNavigator$NavigatorPane" sourceFile="&lt;Unknown&gt;" interface="false" size="67" bugs="0"/>
+      <ClassStats class="com.jgraph.navigation.PanningTool" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.jgraph.util" total_bugs="4" total_types="2" total_size="172" priority_2="1" priority_1="3">
+      <ClassStats class="com.jgraph.util.JGraphPrintingScrollPane" sourceFile="&lt;Unknown&gt;" interface="false" size="101" bugs="4" priority_2="1" priority_1="3"/>
+      <ClassStats class="com.jgraph.util.JGraphPrintingScrollPane$Viewport" sourceFile="&lt;Unknown&gt;" interface="false" size="71" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.jgraph" total_bugs="3" total_types="3" total_size="1060" priority_2="1" priority_1="2">
+      <ClassStats class="org.jgraph.JGraph" sourceFile="&lt;Unknown&gt;" interface="false" size="1043" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="org.jgraph.JGraph$EmptySelectionModel" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.jgraph.JGraph$GraphSelectionRedirector" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.jgraph.event" total_bugs="2" total_types="8" total_size="58" priority_2="2">
+      <ClassStats class="org.jgraph.event.GraphLayoutCacheEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.jgraph.event.GraphLayoutCacheEvent$GraphLayoutCacheChange" sourceFile="&lt;Unknown&gt;" interface="true" size="10" bugs="0"/>
+      <ClassStats class="org.jgraph.event.GraphLayoutCacheListener" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.jgraph.event.GraphModelEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.jgraph.event.GraphModelEvent$GraphModelChange" sourceFile="&lt;Unknown&gt;" interface="true" size="7" bugs="0"/>
+      <ClassStats class="org.jgraph.event.GraphModelListener" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.jgraph.event.GraphSelectionEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="2" priority_2="2"/>
+      <ClassStats class="org.jgraph.event.GraphSelectionListener" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.jgraph.graph" total_bugs="83" total_types="57" total_size="6477" priority_2="60" priority_1="23">
+      <ClassStats class="org.jgraph.graph.AbstractCellView" sourceFile="&lt;Unknown&gt;" interface="false" size="206" bugs="1" priority_1="1"/>
+      <ClassStats class="org.jgraph.graph.AttributeMap" sourceFile="&lt;Unknown&gt;" interface="false" size="165" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.graph.AttributeMap$1" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.AttributeMap$SerializablePoint2D" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.AttributeMap$SerializableRectangle2D" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.BasicMarqueeHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="107" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.CellHandle" sourceFile="&lt;Unknown&gt;" interface="true" size="7" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.CellMapper" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.CellView" sourceFile="&lt;Unknown&gt;" interface="true" size="18" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.CellViewFactory" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.CellViewRenderer" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.ConnectionSet" sourceFile="&lt;Unknown&gt;" interface="false" size="103" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.ConnectionSet$Connection" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultCellViewFactory" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultEdge" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultEdge$DefaultRouting" sourceFile="&lt;Unknown&gt;" interface="false" size="72" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultEdge$LoopRouting" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphCell" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphCellEditor" sourceFile="&lt;Unknown&gt;" interface="false" size="108" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphCellEditor$1" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphCellEditor$DefaultTextField" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphCellEditor$EditorContainer" sourceFile="&lt;Unknown&gt;" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphModel" sourceFile="&lt;Unknown&gt;" interface="false" size="544" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphModel$1" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphModel$EmptyIterator" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphModel$GraphModelEdit" sourceFile="&lt;Unknown&gt;" interface="false" size="161" bugs="8" priority_2="8"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphModel$GraphModelLayerEdit" sourceFile="&lt;Unknown&gt;" interface="false" size="71" bugs="2" priority_2="2"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphSelectionModel" sourceFile="&lt;Unknown&gt;" interface="false" size="239" bugs="2" priority_2="2"/>
+      <ClassStats class="org.jgraph.graph.DefaultGraphSelectionModel$CellPlaceHolder" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.graph.DefaultPort" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.DefaultRealEditor" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.Edge" sourceFile="&lt;Unknown&gt;" interface="true" size="5" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.Edge$Routing" sourceFile="&lt;Unknown&gt;" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.EdgeRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="604" bugs="11" priority_2="4" priority_1="7"/>
+      <ClassStats class="org.jgraph.graph.EdgeView" sourceFile="&lt;Unknown&gt;" interface="false" size="355" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="org.jgraph.graph.EdgeView$EdgeHandle" sourceFile="&lt;Unknown&gt;" interface="false" size="669" bugs="3" priority_2="3"/>
+      <ClassStats class="org.jgraph.graph.ExecutableChange" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.GraphCell" sourceFile="&lt;Unknown&gt;" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.GraphCellEditor" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.GraphConstants" sourceFile="&lt;Unknown&gt;" interface="false" size="458" bugs="6" priority_2="1" priority_1="5"/>
+      <ClassStats class="org.jgraph.graph.GraphContext" sourceFile="&lt;Unknown&gt;" interface="false" size="120" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="org.jgraph.graph.GraphLayoutCache" sourceFile="&lt;Unknown&gt;" interface="false" size="1038" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="org.jgraph.graph.GraphLayoutCache$1" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.GraphLayoutCache$GraphLayoutCacheEdit" sourceFile="&lt;Unknown&gt;" interface="false" size="104" bugs="6" priority_2="6"/>
+      <ClassStats class="org.jgraph.graph.GraphModel" sourceFile="&lt;Unknown&gt;" interface="true" size="33" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.GraphSelectionModel" sourceFile="&lt;Unknown&gt;" interface="true" size="25" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.GraphTransferHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="158" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.GraphTransferable" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="org.jgraph.graph.GraphUndoManager" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.ParentMap" sourceFile="&lt;Unknown&gt;" interface="false" size="73" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.graph.ParentMap$Entry" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="2" priority_2="2"/>
+      <ClassStats class="org.jgraph.graph.Port" sourceFile="&lt;Unknown&gt;" interface="true" size="6" bugs="0"/>
+      <ClassStats class="org.jgraph.graph.PortRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="1" priority_1="1"/>
+      <ClassStats class="org.jgraph.graph.PortView" sourceFile="&lt;Unknown&gt;" interface="false" size="86" bugs="6" priority_2="4" priority_1="2"/>
+      <ClassStats class="org.jgraph.graph.VertexRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="134" bugs="1" priority_1="1"/>
+      <ClassStats class="org.jgraph.graph.VertexView" sourceFile="&lt;Unknown&gt;" interface="false" size="54" bugs="5" priority_2="4" priority_1="1"/>
+      <ClassStats class="org.jgraph.graph.VertexView$SizeHandle" sourceFile="&lt;Unknown&gt;" interface="false" size="246" bugs="9" priority_2="9"/>
+    </PackageStats>
+    <PackageStats package="org.jgraph.plaf" total_bugs="0" total_types="1" total_size="16">
+      <ClassStats class="org.jgraph.plaf.GraphUI" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.jgraph.plaf.basic" total_bugs="29" total_types="19" total_size="1906" priority_2="24" priority_1="5">
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphDropTargetListener" sourceFile="&lt;Unknown&gt;" interface="false" size="89" bugs="2" priority_2="2"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphTransferable" sourceFile="&lt;Unknown&gt;" interface="false" size="108" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI" sourceFile="&lt;Unknown&gt;" interface="false" size="668" bugs="13" priority_2="8" priority_1="5"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$1" sourceFile="&lt;Unknown&gt;" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$CellEditorHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$ComponentHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$GraphCancelEditingAction" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$GraphDropTargetListener" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$GraphEditAction" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$GraphIncrementAction" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$GraphLayoutCacheHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$GraphModelHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$GraphSelectAllAction" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$GraphSelectionHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$KeyHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$MouseHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="155" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$MouseInputHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$PropertyChangeHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="0"/>
+      <ClassStats class="org.jgraph.plaf.basic.BasicGraphUI$RootHandle" sourceFile="&lt;Unknown&gt;" interface="false" size="529" bugs="9" priority_2="9"/>
+    </PackageStats>
+    <PackageStats package="org.jgraph.util" total_bugs="4" total_types="5" total_size="425" priority_2="4">
+      <ClassStats class="org.jgraph.util.Bezier" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.util.ParallelEdgeRouter" sourceFile="&lt;Unknown&gt;" interface="false" size="168" bugs="1" priority_2="1"/>
+      <ClassStats class="org.jgraph.util.RectUtils" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.jgraph.util.Spline" sourceFile="&lt;Unknown&gt;" interface="false" size="133" bugs="2" priority_2="2"/>
+      <ClassStats class="org.jgraph.util.Spline2D" sourceFile="&lt;Unknown&gt;" interface="false" size="57" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="11997" invocations="2188" avgMicrosecondsPerInvocation="5483" maxMicrosecondsPerInvocation="313185" standardDeviationMircosecondsPerInvocation="18830"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="11825" invocations="2188" avgMicrosecondsPerInvocation="5404" maxMicrosecondsPerInvocation="222654" standardDeviationMircosecondsPerInvocation="16911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="11606" invocations="2188" avgMicrosecondsPerInvocation="5304" maxMicrosecondsPerInvocation="471505" standardDeviationMircosecondsPerInvocation="22301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="10224" invocations="2384" avgMicrosecondsPerInvocation="4288" maxMicrosecondsPerInvocation="383121" standardDeviationMircosecondsPerInvocation="15789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="9308" invocations="2221" avgMicrosecondsPerInvocation="4191" maxMicrosecondsPerInvocation="254744" standardDeviationMircosecondsPerInvocation="16370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="7985" invocations="742" avgMicrosecondsPerInvocation="10762" maxMicrosecondsPerInvocation="464231" standardDeviationMircosecondsPerInvocation="35276"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="7808" invocations="742" avgMicrosecondsPerInvocation="10523" maxMicrosecondsPerInvocation="231087" standardDeviationMircosecondsPerInvocation="25277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="7433" invocations="3484" avgMicrosecondsPerInvocation="2133" maxMicrosecondsPerInvocation="149919" standardDeviationMircosecondsPerInvocation="10066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="7023" invocations="2200" avgMicrosecondsPerInvocation="3192" maxMicrosecondsPerInvocation="390334" standardDeviationMircosecondsPerInvocation="14517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="6041" invocations="2188" avgMicrosecondsPerInvocation="2761" maxMicrosecondsPerInvocation="145122" standardDeviationMircosecondsPerInvocation="11332"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="5703" invocations="1477" avgMicrosecondsPerInvocation="3861" maxMicrosecondsPerInvocation="113726" standardDeviationMircosecondsPerInvocation="12748"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="2833" invocations="2188" avgMicrosecondsPerInvocation="1295" maxMicrosecondsPerInvocation="338694" standardDeviationMircosecondsPerInvocation="10006"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UsagesRequiringNonNullValuesFactory" totalMilliseconds="2637" invocations="12" avgMicrosecondsPerInvocation="219779" maxMicrosecondsPerInvocation="2528395" standardDeviationMircosecondsPerInvocation="696254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="2017" invocations="191" avgMicrosecondsPerInvocation="10561" maxMicrosecondsPerInvocation="221882" standardDeviationMircosecondsPerInvocation="28922"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1885" invocations="62174" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="104180" standardDeviationMircosecondsPerInvocation="1141"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1882" invocations="895" avgMicrosecondsPerInvocation="2103" maxMicrosecondsPerInvocation="228954" standardDeviationMircosecondsPerInvocation="11883"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="1859" invocations="191" avgMicrosecondsPerInvocation="9735" maxMicrosecondsPerInvocation="170110" standardDeviationMircosecondsPerInvocation="25255"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="1804" invocations="742" avgMicrosecondsPerInvocation="2432" maxMicrosecondsPerInvocation="113921" standardDeviationMircosecondsPerInvocation="10828"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="1802" invocations="2188" avgMicrosecondsPerInvocation="823" maxMicrosecondsPerInvocation="100123" standardDeviationMircosecondsPerInvocation="5957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="1749" invocations="2324" avgMicrosecondsPerInvocation="752" maxMicrosecondsPerInvocation="76908" standardDeviationMircosecondsPerInvocation="5648"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="1730" invocations="2180" avgMicrosecondsPerInvocation="793" maxMicrosecondsPerInvocation="92139" standardDeviationMircosecondsPerInvocation="5913"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1718" invocations="191" avgMicrosecondsPerInvocation="8998" maxMicrosecondsPerInvocation="89715" standardDeviationMircosecondsPerInvocation="19120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="1624" invocations="2330" avgMicrosecondsPerInvocation="697" maxMicrosecondsPerInvocation="454172" standardDeviationMircosecondsPerInvocation="10962"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1494" invocations="191" avgMicrosecondsPerInvocation="7824" maxMicrosecondsPerInvocation="294312" standardDeviationMircosecondsPerInvocation="28221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="1441" invocations="742" avgMicrosecondsPerInvocation="1942" maxMicrosecondsPerInvocation="431671" standardDeviationMircosecondsPerInvocation="17629"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="1380" invocations="742" avgMicrosecondsPerInvocation="1861" maxMicrosecondsPerInvocation="142433" standardDeviationMircosecondsPerInvocation="9896"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="1380" invocations="742" avgMicrosecondsPerInvocation="1860" maxMicrosecondsPerInvocation="95196" standardDeviationMircosecondsPerInvocation="8869"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="1360" invocations="191" avgMicrosecondsPerInvocation="7123" maxMicrosecondsPerInvocation="86213" standardDeviationMircosecondsPerInvocation="17835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="1276" invocations="2330" avgMicrosecondsPerInvocation="547" maxMicrosecondsPerInvocation="68622" standardDeviationMircosecondsPerInvocation="4594"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="1224" invocations="191" avgMicrosecondsPerInvocation="6413" maxMicrosecondsPerInvocation="126831" standardDeviationMircosecondsPerInvocation="18034"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="1194" invocations="742" avgMicrosecondsPerInvocation="1609" maxMicrosecondsPerInvocation="126865" standardDeviationMircosecondsPerInvocation="9081"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="1179" invocations="191" avgMicrosecondsPerInvocation="6173" maxMicrosecondsPerInvocation="102789" standardDeviationMircosecondsPerInvocation="17014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="1155" invocations="742" avgMicrosecondsPerInvocation="1557" maxMicrosecondsPerInvocation="177872" standardDeviationMircosecondsPerInvocation="10859"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="1135" invocations="191" avgMicrosecondsPerInvocation="5945" maxMicrosecondsPerInvocation="88841" standardDeviationMircosecondsPerInvocation="17170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="1099" invocations="191" avgMicrosecondsPerInvocation="5754" maxMicrosecondsPerInvocation="150331" standardDeviationMircosecondsPerInvocation="18702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="1086" invocations="191" avgMicrosecondsPerInvocation="5690" maxMicrosecondsPerInvocation="153285" standardDeviationMircosecondsPerInvocation="23031"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="1071" invocations="742" avgMicrosecondsPerInvocation="1443" maxMicrosecondsPerInvocation="56863" standardDeviationMircosecondsPerInvocation="7143"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+

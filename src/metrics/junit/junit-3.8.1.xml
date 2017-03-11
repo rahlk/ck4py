@@ -1,0 +1,32 @@
+<metrics>
+
+	<class>
+		<name>junit.tests.runner.LoadedFromJar</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>14</rfc>
+		<lcom>10</lcom>
+		<ca>0</ca>
+		<ce>9</ce>
+		<npm>2</npm>
+		<lcom3>0.75</lcom3>
+		<loc>49</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.6</amc>
+		<cc>
+			<method name="public void verify()">1</method>
+			<method name="private boolean isTestCaseClassLoader(ClassLoader cl)">4</method>
+			<method name="static Class class$(String class$)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="private void verifyApplicationClassLoadedByTestLoader()">1</method>
+		</cc>
+	</class>
+
+</metrics>

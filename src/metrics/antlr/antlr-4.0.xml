@@ -1,0 +1,562 @@
+<metrics>
+
+
+	<class>
+		<name>org.abego.treelayout.internal.util.java.util.IteratorUtil</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>10</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+			<method name="public static java.util.Iterator createReverseIterator(java.util.List list)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.TreeForTreeLayout</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>7</rfc>
+		<lcom>21</lcom>
+		<ca>2</ca>
+		<ce>3</ce>
+		<npm>7</npm>
+		<lcom3>2.0</lcom3>
+		<loc>7</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.9285714285714286</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract Object getFirstChild(Object)">1</method>
+			<method name="public abstract boolean isLeaf(Object)">1</method>
+			<method name="public abstract Object getRoot()">1</method>
+			<method name="public abstract boolean isChildOfParent(Object, Object)">1</method>
+			<method name="public abstract Object getLastChild(Object)">1</method>
+			<method name="public abstract Iterable getChildren(Object)">1</method>
+			<method name="public abstract Iterable getChildrenReverse(Object)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.Configuration$AlignmentInLevel</name>
+		<wmc>4</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>7</rfc>
+		<lcom>4</lcom>
+		<ca>3</ca>
+		<ce>6</ce>
+		<npm>2</npm>
+		<lcom3>0.9166666666666666</lcom3>
+		<loc>56</loc>
+		<dam>0.25</dam>
+		<moa>4</moa>
+		<mfa>0.8666666666666667</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="public static org.abego.treelayout.Configuration$AlignmentInLevel valueOf(String name)">1</method>
+			<method name="public static org.abego.treelayout.Configuration$AlignmentInLevel[] values()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void _init_(String, int)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.TreeLayout</name>
+		<wmc>47</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>31</cbo>
+		<rfc>101</rfc>
+		<lcom>761</lcom>
+		<ca>1</ca>
+		<ce>31</ce>
+		<npm>12</npm>
+		<lcom3>0.8526570048309179</lcom3>
+		<loc>1475</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.18262411347517732</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>30.0</amc>
+		<cc>
+			<method name="private Object apportion(Object v, Object defaultAncestor, Object leftSibling, Object parentOfV)">9</method>
+			<method name="private int getLevelChangeSign()">3</method>
+			<method name="public java.util.Map getNodeBounds()">4</method>
+			<method name="private Object getThread(Object node)">2</method>
+			<method name="private void setChange(Object node, double d)">1</method>
+			<method name="private Object getAncestor(Object node)">2</method>
+			<method name="private void moveSubtree(Object wMinus, Object wPlus, Object parent, double shift)">1</method>
+			<method name="private double getNodeThickness(Object treeNode)">2</method>
+			<method name="public int getLevelCount()">1</method>
+			<method name="private double getShift(Object node)">2</method>
+			<method name="public org.abego.treelayout.Configuration getConfiguration()">1</method>
+			<method name="public org.abego.treelayout.NodeExtentProvider getNodeExtentProvider()">1</method>
+			<method name="private double getNodeWidth(Object node)">1</method>
+			<method name="public double getSizeOfLevel(int level)">3</method>
+			<method name="private void addUniqueNodes(java.util.Map nodes, Object newNode)">3</method>
+			<method name="public void checkTree()">2</method>
+			<method name="private void dumpTree(java.io.PrintStream output, Object node, int indent, org.abego.treelayout.TreeLayout$DumpConfiguration dumpConfiguration)">7</method>
+			<method name="private void calcSizeOfLevels(Object node, int level)">5</method>
+			<method name="private void firstWalk(Object v, Object leftSibling)">4</method>
+			<method name="static double access$000(org.abego.treelayout.TreeLayout x0)">1</method>
+			<method name="static double access$100(org.abego.treelayout.TreeLayout x0)">1</method>
+			<method name="public org.abego.treelayout.TreeForTreeLayout getTree()">1</method>
+			<method name="private void setMod(Object node, double d)">1</method>
+			<method name="private double getNodeSize(Object treeNode)">1</method>
+			<method name="private Object nextRight(Object v)">2</method>
+			<method name="private double getPrelim(Object node)">2</method>
+			<method name="private double getWidthOrHeightOfNode(Object treeNode, boolean returnWidth)">2</method>
+			<method name="private double getChange(Object node)">2</method>
+			<method name="private boolean isLevelChangeInYAxis()">3</method>
+			<method name="private void setAncestor(Object node, Object ancestor)">1</method>
+			<method name="private void setThread(Object node, Object thread)">1</method>
+			<method name="public void _init_(org.abego.treelayout.TreeForTreeLayout tree, org.abego.treelayout.NodeExtentProvider nodeExtentProvider, org.abego.treelayout.Configuration configuration, boolean useIdentity)">2</method>
+			<method name="public void _init_(org.abego.treelayout.TreeForTreeLayout tree, org.abego.treelayout.NodeExtentProvider nodeExtentProvider, org.abego.treelayout.Configuration configuration)">1</method>
+			<method name="private void setShift(Object node, double d)">1</method>
+			<method name="public void dumpTree(java.io.PrintStream printStream)">1</method>
+			<method name="private double getDistance(Object v, Object w)">1</method>
+			<method name="private Object nextLeft(Object v)">2</method>
+			<method name="private Object ancestor(Object vIMinus, Object v, Object parentOfV, Object defaultAncestor)">2</method>
+			<method name="public java.awt.geom.Rectangle2D getBounds()">1</method>
+			<method name="private void secondWalk(Object v, double m, int level, double levelStart)">6</method>
+			<method name="private int getNumber(Object node, Object parentNode)">3</method>
+			<method name="private double getNodeHeight(Object node)">1</method>
+			<method name="private void setPrelim(Object node, double d)">1</method>
+			<method name="private double getMod(Object node)">2</method>
+			<method name="public void dumpTree(java.io.PrintStream printStream, org.abego.treelayout.TreeLayout$DumpConfiguration dumpConfiguration)">1</method>
+			<method name="private void updateBounds(Object node, double centerX, double centerY)">5</method>
+			<method name="private void executeShifts(Object v)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.util.AbstractTreeForTreeLayout</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>8</cbo>
+		<rfc>15</rfc>
+		<lcom>43</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>10</npm>
+		<lcom3>0.8888888888888888</lcom3>
+		<loc>54</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.95</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.3</amc>
+		<cc>
+			<method name="public abstract Object getParent(Object)">1</method>
+			<method name="public Iterable getChildren(Object node)">1</method>
+			<method name="public Object getFirstChild(Object parentNode)">1</method>
+			<method name="public abstract java.util.List getChildrenList(Object)">1</method>
+			<method name="public Iterable getChildrenReverse(Object node)">1</method>
+			<method name="public Object getRoot()">1</method>
+			<method name="public Object getLastChild(Object parentNode)">1</method>
+			<method name="public boolean isChildOfParent(Object node, Object parentNode)">2</method>
+			<method name="public void _init_(Object root)">1</method>
+			<method name="public boolean isLeaf(Object node)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.Configuration$Location</name>
+		<wmc>4</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>7</rfc>
+		<lcom>4</lcom>
+		<ca>3</ca>
+		<ce>6</ce>
+		<npm>2</npm>
+		<lcom3>0.9333333333333332</lcom3>
+		<loc>67</loc>
+		<dam>0.2</dam>
+		<moa>5</moa>
+		<mfa>0.8666666666666667</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>14.5</amc>
+		<cc>
+			<method name="public static org.abego.treelayout.Configuration$Location[] values()">1</method>
+			<method name="public static org.abego.treelayout.Configuration$Location valueOf(String name)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void _init_(String, int)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.util.DefaultConfiguration</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>9</rfc>
+		<lcom>13</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>7</npm>
+		<lcom3>0.5</lcom3>
+		<loc>70</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35714285714285715</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.428571428571429</amc>
+		<cc>
+			<method name="public org.abego.treelayout.Configuration$AlignmentInLevel getAlignmentInLevel()">1</method>
+			<method name="public double getGapBetweenLevels(int nextLevel)">1</method>
+			<method name="public void _init_(double gapBetweenLevels, double gapBetweenNodes, org.abego.treelayout.Configuration$Location location, org.abego.treelayout.Configuration$AlignmentInLevel alignmentInLevel)">3</method>
+			<method name="public void _init_(double gapBetweenLevels, double gapBetweenNodes)">1</method>
+			<method name="public org.abego.treelayout.Configuration$Location getRootLocation()">1</method>
+			<method name="public double getGapBetweenNodes(Object node1, Object node2)">1</method>
+			<method name="public void _init_(double gapBetweenLevels, double gapBetweenNodes, org.abego.treelayout.Configuration$Location location)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.internal.util.Contract</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>6</rfc>
+		<lcom>3</lcom>
+		<ca>4</ca>
+		<ce>5</ce>
+		<npm>3</npm>
+		<lcom3>2.0</lcom3>
+		<loc>22</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5555555555555556</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.333333333333333</amc>
+		<cc>
+			<method name="public static void checkArg(boolean isOK, String s)">2</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static void checkState(boolean isOK, String s)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.internal.util.java.lang.IterableUtil$ReverseIterable</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="public void _init_(java.util.List list)">1</method>
+			<method name="public java.util.Iterator iterator()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.util.FixedNodeExtentProvider</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>6</rfc>
+		<lcom>2</lcom>
+		<ca>0</ca>
+		<ce>5</ce>
+		<npm>4</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>44</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.5</amc>
+		<cc>
+			<method name="public double getWidth(Object treeNode)">1</method>
+			<method name="public double getHeight(Object treeNode)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void _init_(double width, double height)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.internal.util.java.util.ListUtil</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>5</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>12</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+			<method name="public static Object getLast(java.util.List list)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.internal.util.java.lang.string.StringUtil</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>12</rfc>
+		<lcom>3</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>3</npm>
+		<lcom3>2.0</lcom3>
+		<loc>109</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>35.333333333333336</amc>
+		<cc>
+			<method name="public static String quote(String s, String nullResult)">13</method>
+			<method name="public static String quote(String s)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.Configuration</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>6</lcom>
+		<ca>2</ca>
+		<ce>4</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>4</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract org.abego.treelayout.Configuration$AlignmentInLevel getAlignmentInLevel()">1</method>
+			<method name="public abstract org.abego.treelayout.Configuration$Location getRootLocation()">1</method>
+			<method name="public abstract double getGapBetweenLevels(int)">1</method>
+			<method name="public abstract double getGapBetweenNodes(Object, Object)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.TreeLayout$DumpConfiguration</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>23</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="public void _init_(String indent, boolean includeNodeSize, boolean includePointer)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.internal.util.java.util.IteratorUtil$ReverseIterator</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>10</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>4</npm>
+		<lcom3>0.0</lcom3>
+		<loc>26</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.25</amc>
+		<cc>
+			<method name="public boolean hasNext()">1</method>
+			<method name="public void remove()">1</method>
+			<method name="public void _init_(java.util.List list)">1</method>
+			<method name="public Object next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.util.DefaultTreeForTreeLayout</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>16</rfc>
+		<lcom>5</lcom>
+		<ca>0</ca>
+		<ce>9</ce>
+		<npm>6</npm>
+		<lcom3>0.5555555555555556</lcom3>
+		<loc>130</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.142857142857142</amc>
+		<cc>
+			<method name="public Object getParent(Object node)">1</method>
+			<method name="public void addChild(Object parentNode, Object node)">3</method>
+			<method name="public transient void addChildren(Object parentNode, Object[] nodes)">2</method>
+			<method name="public void _init_(Object root)">1</method>
+			<method name="public java.util.List getChildrenList(Object node)">2</method>
+			<method name="private java.util.List getEmptyList()">2</method>
+			<method name="public boolean hasNode(Object node)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.NodeExtentProvider</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>1</lcom>
+		<ca>2</ca>
+		<ce>2</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>2</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract double getHeight(Object)">1</method>
+			<method name="public abstract double getWidth(Object)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.internal.util.java.lang.IterableUtil</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>5</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>15</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.5</amc>
+		<cc>
+			<method name="public static Iterable createReverseIterable(java.util.List list)">2</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.abego.treelayout.TreeLayout$NormalizedPosition</name>
+		<wmc>4</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>4</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>38</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>1</moa>
+		<mfa>0.8125</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>1</ic>
+		<cbm>5</cbm>
+		<amc>7.75</amc>
+		<cc>
+			<method name="public void setLocation(double x_relativeToRoot, double y_relativeToRoot)">1</method>
+			<method name="public double getX()">1</method>
+			<method name="public void _init_(org.abego.treelayout.TreeLayout, double x_relativeToRoot, double y_relativeToRoot)">1</method>
+			<method name="public double getY()">1</method>
+		</cc>
+	</class>
+
+</metrics>

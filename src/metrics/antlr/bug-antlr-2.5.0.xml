@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1489081509000" analysisTimestamp="1489175176858" release="">
+  <Project projectName="antlr-2.5.0">
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/antlr/antlr-2.5.0/bin/antlr.jar</Jar>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="antlr.ANTLRHashString">
+      <SourceLine classname="antlr.ANTLRHashString" start="46" end="118" sourcefile="ANTLRHashString.java" sourcepath="antlr/ANTLRHashString.java"/>
+    </Class>
+    <Method classname="antlr.ANTLRHashString" name="setBuffer" signature="([CI)V" isStatic="false">
+      <SourceLine classname="antlr.ANTLRHashString" start="112" end="111" startBytecode="0" endBytecode="51" sourcefile="ANTLRHashString.java" sourcepath="antlr/ANTLRHashString.java"/>
+    </Method>
+    <Field classname="antlr.ANTLRHashString" name="buf" signature="[C" isStatic="false">
+      <SourceLine classname="antlr.ANTLRHashString" sourcefile="ANTLRHashString.java" sourcepath="antlr/ANTLRHashString.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="antlr.ANTLRHashString" start="112" end="112" startBytecode="2" endBytecode="2" sourcefile="ANTLRHashString.java" sourcepath="antlr/ANTLRHashString.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" rank="14" abbrev="Eq" category="BAD_PRACTICE">
+    <Class classname="antlr.ANTLRHashString">
+      <SourceLine classname="antlr.ANTLRHashString" start="46" end="118" sourcefile="ANTLRHashString.java" sourcepath="antlr/ANTLRHashString.java"/>
+    </Class>
+    <Method classname="antlr.ANTLRHashString" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="antlr.ANTLRHashString" start="63" end="91" startBytecode="0" endBytecode="254" sourcefile="ANTLRHashString.java" sourcepath="antlr/ANTLRHashString.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <SourceLine classname="antlr.ANTLRHashString" start="63" end="63" startBytecode="8" endBytecode="8" sourcefile="ANTLRHashString.java" sourcepath="antlr/ANTLRHashString.java"/>
+    <SourceLine classname="antlr.ANTLRHashString" start="68" end="68" startBytecode="17" endBytecode="17" sourcefile="ANTLRHashString.java" sourcepath="antlr/ANTLRHashString.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="antlr.ANTLRHashString" start="69" end="69" startBytecode="28" endBytecode="28" sourcefile="ANTLRHashString.java" sourcepath="antlr/ANTLRHashString.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="antlr.ANTLRStringBuffer">
+      <SourceLine classname="antlr.ANTLRStringBuffer" start="37" end="80" sourcefile="ANTLRStringBuffer.java" sourcepath="antlr/ANTLRStringBuffer.java"/>
+    </Class>
+    <Method classname="antlr.ANTLRStringBuffer" name="getBuffer" signature="()[C" isStatic="false">
+      <SourceLine classname="antlr.ANTLRStringBuffer" start="67" end="67" startBytecode="0" endBytecode="28" sourcefile="ANTLRStringBuffer.java" sourcepath="antlr/ANTLRStringBuffer.java"/>
+    </Method>
+    <Field classname="antlr.ANTLRStringBuffer" name="buffer" signature="[C" isStatic="false">
+      <SourceLine classname="antlr.ANTLRStringBuffer" sourcefile="ANTLRStringBuffer.java" sourcepath="antlr/ANTLRStringBuffer.java"/>
+    </Field>
+    <SourceLine classname="antlr.ANTLRStringBuffer" start="67" end="67" startBytecode="4" endBytecode="4" sourcefile="ANTLRStringBuffer.java" sourcepath="antlr/ANTLRStringBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_STATIC_REP2" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="antlr.BaseAST">
+      <SourceLine classname="antlr.BaseAST" start="33" end="292" sourcefile="BaseAST.java" sourcepath="antlr/BaseAST.java"/>
+    </Class>
+    <Method classname="antlr.BaseAST" name="setVerboseStringConversion" signature="(Z[Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="antlr.BaseAST" start="250" end="249" startBytecode="0" endBytecode="40" sourcefile="BaseAST.java" sourcepath="antlr/BaseAST.java"/>
+    </Method>
+    <Field classname="antlr.BaseAST" name="tokenNames" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="antlr.BaseAST" sourcefile="BaseAST.java" sourcepath="antlr/BaseAST.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="5" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="antlr.BaseAST" start="251" end="251" startBytecode="5" endBytecode="5" sourcefile="BaseAST.java" sourcepath="antlr/BaseAST.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="antlr.CharScanner">
+      <SourceLine classname="antlr.CharScanner" start="40" end="238" sourcefile="CharScanner.java" sourcepath="antlr/CharScanner.java"/>
+    </Class>
+    <Method classname="antlr.CharScanner" name="panic" signature="()V" isStatic="false">
+      <SourceLine classname="antlr.CharScanner" start="180" end="179" startBytecode="0" endBytecode="44" sourcefile="CharScanner.java" sourcepath="antlr/CharScanner.java"/>
+    </Method>
+    <SourceLine classname="antlr.CharScanner" start="181" end="181" startBytecode="9" endBytecode="9" sourcefile="CharScanner.java" sourcepath="antlr/CharScanner.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="antlr.CharScanner">
+      <SourceLine classname="antlr.CharScanner" start="40" end="238" sourcefile="CharScanner.java" sourcepath="antlr/CharScanner.java"/>
+    </Class>
+    <Method classname="antlr.CharScanner" name="panic" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="antlr.CharScanner" start="184" end="183" startBytecode="0" endBytecode="58" sourcefile="CharScanner.java" sourcepath="antlr/CharScanner.java"/>
+    </Method>
+    <SourceLine classname="antlr.CharScanner" start="185" end="185" startBytecode="23" endBytecode="23" sourcefile="CharScanner.java" sourcepath="antlr/CharScanner.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UwF" category="STYLE">
+    <Class classname="antlr.CharScanner">
+      <SourceLine classname="antlr.CharScanner" start="40" end="238" sourcefile="CharScanner.java" sourcepath="antlr/CharScanner.java"/>
+    </Class>
+    <Field classname="antlr.CharScanner" name="literals" signature="Ljava/util/Hashtable;" isStatic="false">
+      <SourceLine classname="antlr.CharScanner" sourcefile="CharScanner.java" sourcepath="antlr/CharScanner.java"/>
+    </Field>
+    <SourceLine classname="antlr.CharScanner" start="224" end="224" startBytecode="22" endBytecode="22" sourcefile="CharScanner.java" sourcepath="antlr/CharScanner.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="antlr.MismatchedTokenException">
+      <SourceLine classname="antlr.MismatchedTokenException" start="66" end="181" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Class>
+    <Method classname="antlr.MismatchedTokenException" name="&lt;init&gt;" signature="([Ljava/lang/String;Lantlr/Token;IIZ)V" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" start="114" end="113" startBytecode="0" endBytecode="104" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Method>
+    <Field classname="antlr.MismatchedTokenException" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="antlr.MismatchedTokenException" start="115" end="115" startBytecode="8" endBytecode="8" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="antlr.MismatchedTokenException">
+      <SourceLine classname="antlr.MismatchedTokenException" start="66" end="181" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Class>
+    <Method classname="antlr.MismatchedTokenException" name="&lt;init&gt;" signature="([Ljava/lang/String;Lantlr/Token;IZ)V" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" start="124" end="123" startBytecode="0" endBytecode="94" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Method>
+    <Field classname="antlr.MismatchedTokenException" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="antlr.MismatchedTokenException" start="125" end="125" startBytecode="8" endBytecode="8" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="antlr.MismatchedTokenException">
+      <SourceLine classname="antlr.MismatchedTokenException" start="66" end="181" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Class>
+    <Method classname="antlr.MismatchedTokenException" name="&lt;init&gt;" signature="([Ljava/lang/String;Lantlr/Token;Lantlr/collections/impl/BitSet;Z)V" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" start="133" end="132" startBytecode="0" endBytecode="95" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Method>
+    <Field classname="antlr.MismatchedTokenException" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="antlr.MismatchedTokenException" start="134" end="134" startBytecode="8" endBytecode="8" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="antlr.MismatchedTokenException">
+      <SourceLine classname="antlr.MismatchedTokenException" start="66" end="181" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Class>
+    <Method classname="antlr.MismatchedTokenException" name="&lt;init&gt;" signature="([Ljava/lang/String;Lantlr/collections/AST;IIZ)V" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" start="71" end="70" startBytecode="0" endBytecode="128" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Method>
+    <Field classname="antlr.MismatchedTokenException" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="antlr.MismatchedTokenException" start="72" end="72" startBytecode="8" endBytecode="8" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="antlr.MismatchedTokenException">
+      <SourceLine classname="antlr.MismatchedTokenException" start="66" end="181" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Class>
+    <Method classname="antlr.MismatchedTokenException" name="&lt;init&gt;" signature="([Ljava/lang/String;Lantlr/collections/AST;IZ)V" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" start="86" end="85" startBytecode="0" endBytecode="118" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Method>
+    <Field classname="antlr.MismatchedTokenException" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="antlr.MismatchedTokenException" start="87" end="87" startBytecode="8" endBytecode="8" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="antlr.MismatchedTokenException">
+      <SourceLine classname="antlr.MismatchedTokenException" start="66" end="181" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Class>
+    <Method classname="antlr.MismatchedTokenException" name="&lt;init&gt;" signature="([Ljava/lang/String;Lantlr/collections/AST;Lantlr/collections/impl/BitSet;Z)V" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" start="100" end="99" startBytecode="0" endBytecode="119" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Method>
+    <Field classname="antlr.MismatchedTokenException" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="antlr.MismatchedTokenException" start="101" end="101" startBytecode="8" endBytecode="8" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="antlr.MismatchedTokenException">
+      <SourceLine classname="antlr.MismatchedTokenException" start="66" end="181" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Class>
+    <Method classname="antlr.MismatchedTokenException" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.MismatchedTokenException" start="153" end="181" startBytecode="0" endBytecode="560" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+    </Method>
+    <SourceLine classname="antlr.MismatchedTokenException" start="173" end="173" startBytecode="385" endBytecode="385" sourcefile="MismatchedTokenException.java" sourcepath="antlr/MismatchedTokenException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="antlr.Parser">
+      <SourceLine classname="antlr.Parser" start="81" end="278" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+    </Class>
+    <Method classname="antlr.Parser" name="getTokenNames" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.Parser" start="154" end="154" startBytecode="0" endBytecode="28" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+    </Method>
+    <Field classname="antlr.Parser" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.Parser" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+    </Field>
+    <SourceLine classname="antlr.Parser" start="154" end="154" startBytecode="4" endBytecode="4" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="antlr.Parser">
+      <SourceLine classname="antlr.Parser" start="81" end="278" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+    </Class>
+    <Field classname="antlr.Parser" name="exceptionLevel" signature="I" isStatic="false">
+      <SourceLine classname="antlr.Parser" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UwF" category="STYLE">
+    <Class classname="antlr.Parser">
+      <SourceLine classname="antlr.Parser" start="81" end="278" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+    </Class>
+    <Field classname="antlr.Parser" name="returnAST" signature="Lantlr/collections/AST;" isStatic="false">
+      <SourceLine classname="antlr.Parser" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+    </Field>
+    <SourceLine classname="antlr.Parser" start="145" end="145" startBytecode="1" endBytecode="1" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UwF" category="STYLE">
+    <Class classname="antlr.Parser">
+      <SourceLine classname="antlr.Parser" start="81" end="278" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+    </Class>
+    <Field classname="antlr.Parser" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.Parser" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+    </Field>
+    <SourceLine classname="antlr.Parser" start="151" end="151" startBytecode="1" endBytecode="1" sourcefile="Parser.java" sourcepath="antlr/Parser.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="antlr.Token">
+      <SourceLine classname="antlr.Token" start="35" end="62" sourcefile="Token.java" sourcepath="antlr/Token.java"/>
+    </Class>
+    <Field classname="antlr.Token" name="badToken" signature="Lantlr/Token;" isStatic="true">
+      <SourceLine classname="antlr.Token" sourcefile="Token.java" sourcepath="antlr/Token.java"/>
+    </Field>
+    <SourceLine classname="antlr.Token" start="47" end="47" startBytecode="10" endBytecode="10" sourcefile="Token.java" sourcepath="antlr/Token.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="antlr.Tool">
+      <SourceLine classname="antlr.Tool" start="37" end="536" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Class>
+    <Method classname="antlr.Tool" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="antlr.Tool" start="66" end="66" startBytecode="0" endBytecode="92" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="antlr.Tool" start="55" end="55" startBytecode="27" endBytecode="27" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="antlr.Tool">
+      <SourceLine classname="antlr.Tool" start="37" end="536" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Class>
+    <Method classname="antlr.Tool" name="copyFile" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="antlr.Tool" start="86" end="93" startBytecode="0" endBytecode="573" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="antlr.Tool" start="140" end="140" startBytecode="246" endBytecode="246" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="antlr.Tool">
+      <SourceLine classname="antlr.Tool" start="37" end="536" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Class>
+    <Method classname="antlr.Tool" name="copyFile" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="antlr.Tool" start="86" end="93" startBytecode="0" endBytecode="573" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="antlr.Tool" start="141" end="141" startBytecode="256" endBytecode="256" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="antlr.Tool">
+      <SourceLine classname="antlr.Tool" start="37" end="536" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Class>
+    <Method classname="antlr.Tool" name="doEverything" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="antlr.Tool" start="164" end="160" startBytecode="0" endBytecode="772" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="antlr.Tool" start="175" end="175" startBytecode="47" endBytecode="47" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="antlr.Tool">
+      <SourceLine classname="antlr.Tool" start="37" end="536" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Class>
+    <Method classname="antlr.Tool" name="openOutputFile" signature="(Ljava/lang/String;)Ljava/io/PrintWriter;" isStatic="true">
+      <SourceLine classname="antlr.Tool" start="342" end="342" startBytecode="0" endBytecode="66" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="antlr.Tool" start="342" end="342" startBytecode="36" endBytecode="36" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="antlr.Tool">
+      <SourceLine classname="antlr.Tool" start="37" end="536" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Class>
+    <Method classname="antlr.Tool" name="doEverything" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="antlr.Tool" start="164" end="160" startBytecode="0" endBytecode="772" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Method>
+    <SourceLine classname="antlr.Tool" start="166" end="166" startBytecode="18" endBytecode="18" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    <SourceLine classname="antlr.Tool" start="181" end="181" startBytecode="86" endBytecode="86" sourcefile="Tool.java" sourcepath="antlr/Tool.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="antlr.Tool" start="193" end="193" startBytecode="167" endBytecode="167" sourcefile="Tool.java" sourcepath="antlr/Tool.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="antlr.Tool">
+      <SourceLine classname="antlr.Tool" start="37" end="536" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Class>
+    <Field classname="antlr.Tool" name="outputDir" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="antlr.Tool" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Field>
+    <SourceLine classname="antlr.Tool" start="51" end="51" startBytecode="2" endBytecode="2" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="antlr.Tool">
+      <SourceLine classname="antlr.Tool" start="37" end="536" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Class>
+    <Field classname="antlr.Tool" name="errorHandler" signature="Lantlr/ToolErrorHandler;" isStatic="false">
+      <SourceLine classname="antlr.Tool" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Field>
+    <SourceLine classname="antlr.Tool" start="68" end="68" startBytecode="41" endBytecode="41" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="antlr.Tool">
+      <SourceLine classname="antlr.Tool" start="37" end="536" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Class>
+    <Field classname="antlr.Tool" name="upperCaseMangledLiterals" signature="Z" isStatic="true">
+      <SourceLine classname="antlr.Tool" sourcefile="Tool.java" sourcepath="antlr/Tool.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="antlr.TreeParser">
+      <SourceLine classname="antlr.TreeParser" start="37" end="132" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Class>
+    <Method classname="antlr.TreeParser" name="getTokenNames" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.TreeParser" start="74" end="74" startBytecode="0" endBytecode="28" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Method>
+    <Field classname="antlr.TreeParser" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.TreeParser" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Field>
+    <SourceLine classname="antlr.TreeParser" start="74" end="74" startBytecode="4" endBytecode="4" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="antlr.TreeParser">
+      <SourceLine classname="antlr.TreeParser" start="37" end="132" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Class>
+    <Field classname="antlr.TreeParser" name="ASTNULL" signature="Lantlr/ASTNULLType;" isStatic="true">
+      <SourceLine classname="antlr.TreeParser" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Field>
+    <SourceLine classname="antlr.TreeParser" start="43" end="43" startBytecode="7" endBytecode="7" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="14" abbrev="NP" category="STYLE">
+    <Class classname="antlr.TreeParser">
+      <SourceLine classname="antlr.TreeParser" start="37" end="132" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Class>
+    <Method classname="antlr.TreeParser" name="getTokenName" signature="(I)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.TreeParser" start="71" end="71" startBytecode="0" endBytecode="30" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Method>
+    <Field classname="antlr.TreeParser" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.TreeParser" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Field>
+    <SourceLine classname="antlr.TreeParser" start="71" end="71" startBytecode="5" endBytecode="5" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="antlr.TreeParser">
+      <SourceLine classname="antlr.TreeParser" start="37" end="132" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Class>
+    <Field classname="antlr.TreeParser" name="exceptionLevel" signature="I" isStatic="false">
+      <SourceLine classname="antlr.TreeParser" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UwF" category="STYLE">
+    <Class classname="antlr.TreeParser">
+      <SourceLine classname="antlr.TreeParser" start="37" end="132" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Class>
+    <Field classname="antlr.TreeParser" name="returnAST" signature="Lantlr/collections/AST;" isStatic="false">
+      <SourceLine classname="antlr.TreeParser" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Field>
+    <SourceLine classname="antlr.TreeParser" start="65" end="65" startBytecode="1" endBytecode="1" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UwF" category="STYLE">
+    <Class classname="antlr.TreeParser">
+      <SourceLine classname="antlr.TreeParser" start="37" end="132" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Class>
+    <Field classname="antlr.TreeParser" name="tokenNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.TreeParser" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+    </Field>
+    <SourceLine classname="antlr.TreeParser" start="71" end="71" startBytecode="1" endBytecode="1" sourcefile="TreeParser.java" sourcepath="antlr/TreeParser.java"/>
+  </BugInstance>
+  <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" abbrev="BC" category="STYLE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="subset" signature="(Lantlr/collections/impl/BitSet;)Z" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="268" end="269" startBytecode="0" endBytecode="12" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <Type descriptor="Lantlr/collections/impl/BitSet;" role="TYPE_FOUND">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Type>
+    <Type descriptor="Lantlr/collections/impl/BitSet;" role="TYPE_EXPECTED">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Type>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="268" end="268" startBytecode="5" endBytecode="5" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="toStringOfHalfWords" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="364" end="376" startBytecode="0" endBytecode="215" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="364" end="364" startBytecode="4" endBytecode="4" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="toStringOfWords" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="384" end="390" startBytecode="0" endBytecode="123" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="384" end="384" startBytecode="4" endBytecode="4" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="&lt;init&gt;" signature="([J)V" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="37" end="37" startBytecode="0" endBytecode="41" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <Field classname="antlr.collections.impl.BitSet" name="bits" signature="[J" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="39" end="39" startBytecode="6" endBytecode="6" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="117" end="141" startBytecode="0" endBytecode="254" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="toString" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="299" end="308" startBytecode="0" endBytecode="129" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="305" end="305" startBytecode="42" endBytecode="42" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="toString" signature="(Ljava/lang/String;Lantlr/CharFormatter;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="316" end="326" startBytecode="0" endBytecode="139" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="323" end="323" startBytecode="44" endBytecode="44" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="toString" signature="(Ljava/lang/String;Lantlr/collections/impl/Vector;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="335" end="355" startBytecode="0" endBytecode="266" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="351" end="351" startBytecode="138" endBytecode="138" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="toStringOfHalfWords" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="364" end="376" startBytecode="0" endBytecode="215" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="374" end="374" startBytecode="110" endBytecode="110" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="toStringOfWords" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="384" end="390" startBytecode="0" endBytecode="123" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="388" end="388" startBytecode="37" endBytecode="37" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="antlr.collections.impl.BitSet">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="33" end="429" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Class>
+    <Method classname="antlr.collections.impl.BitSet" name="toStringWithRanges" signature="(Ljava/lang/String;Lantlr/CharFormatter;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="antlr.collections.impl.BitSet" start="395" end="426" startBytecode="0" endBytecode="341" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+    </Method>
+    <SourceLine classname="antlr.collections.impl.BitSet" start="422" end="422" startBytecode="188" endBytecode="188" sourcefile="BitSet.java" sourcepath="antlr/collections/impl/BitSet.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="antlr.debug.MessageEvent">
+      <SourceLine classname="antlr.debug.MessageEvent" start="3" end="30" sourcefile="MessageEvent.java" sourcepath="antlr/debug/MessageEvent.java"/>
+    </Class>
+    <Field classname="antlr.debug.MessageEvent" name="WARNING" signature="I" isStatic="true">
+      <SourceLine classname="antlr.debug.MessageEvent" sourcefile="MessageEvent.java" sourcepath="antlr/debug/MessageEvent.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="antlr.debug.ParserMatchEvent">
+      <SourceLine classname="antlr.debug.ParserMatchEvent" start="3" end="72" sourcefile="ParserMatchEvent.java" sourcepath="antlr/debug/ParserMatchEvent.java"/>
+    </Class>
+    <Field classname="antlr.debug.ParserMatchEvent" name="TOKEN" signature="I" isStatic="true">
+      <SourceLine classname="antlr.debug.ParserMatchEvent" sourcefile="ParserMatchEvent.java" sourcepath="antlr/debug/ParserMatchEvent.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="antlr.debug.ParserTokenEvent">
+      <SourceLine classname="antlr.debug.ParserTokenEvent" start="3" end="42" sourcefile="ParserTokenEvent.java" sourcepath="antlr/debug/ParserTokenEvent.java"/>
+    </Class>
+    <Field classname="antlr.debug.ParserTokenEvent" name="LA" signature="I" isStatic="true">
+      <SourceLine classname="antlr.debug.ParserTokenEvent" sourcefile="ParserTokenEvent.java" sourcepath="antlr/debug/ParserTokenEvent.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="antlr.debug.TraceEvent">
+      <SourceLine classname="antlr.debug.TraceEvent" start="3" end="39" sourcefile="TraceEvent.java" sourcepath="antlr/debug/TraceEvent.java"/>
+    </Class>
+    <Field classname="antlr.debug.TraceEvent" name="ENTER" signature="I" isStatic="true">
+      <SourceLine classname="antlr.debug.TraceEvent" sourcefile="TraceEvent.java" sourcepath="antlr/debug/TraceEvent.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="antlr.debug.misc.ASTFrame">
+      <SourceLine classname="antlr.debug.misc.ASTFrame" start="29" end="56" sourcefile="ASTFrame.java" sourcepath="antlr/debug/misc/ASTFrame.java"/>
+    </Class>
+    <Method classname="antlr.debug.misc.ASTFrame" name="&lt;init&gt;" signature="(Ljava/lang/String;Lantlr/collections/AST;)V" isStatic="false">
+      <SourceLine classname="antlr.debug.misc.ASTFrame" start="30" end="29" startBytecode="0" endBytecode="116" sourcefile="ASTFrame.java" sourcepath="antlr/debug/misc/ASTFrame.java"/>
+    </Method>
+    <Method classname="antlr.debug.misc.ASTFrame$MyTreeSelectionListener" name="&lt;init&gt;" signature="(Lantlr/debug/misc/ASTFrame;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="antlr.debug.misc.ASTFrame$MyTreeSelectionListener" start="16" end="16" startBytecode="0" endBytecode="54" sourcefile="ASTFrame.java" sourcepath="antlr/debug/misc/ASTFrame.java"/>
+    </Method>
+    <SourceLine classname="antlr.debug.misc.ASTFrame" start="33" end="33" startBytecode="9" endBytecode="9" sourcefile="ASTFrame.java" sourcepath="antlr/debug/misc/ASTFrame.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="22">
+    <MissingClass>antlr.ANTLRLexer</MissingClass>
+    <MissingClass>antlr.ANTLRParser</MissingClass>
+    <MissingClass>antlr.CharFormatter</MissingClass>
+    <MissingClass>antlr.CodeGenerator</MissingClass>
+    <MissingClass>antlr.DefaultToolErrorHandler</MissingClass>
+    <MissingClass>antlr.DefineGrammarSymbols</MissingClass>
+    <MissingClass>antlr.FileCopyException</MissingClass>
+    <MissingClass>antlr.LLkAnalyzer</MissingClass>
+    <MissingClass>antlr.MakeGrammar</MissingClass>
+    <MissingClass>antlr.collections.impl.ASTEnumerator</MissingClass>
+    <MissingClass>antlr.collections.impl.IntRange</MissingClass>
+    <MissingClass>antlr.collections.impl.Vector</MissingClass>
+    <MissingClass>antlr.preprocessor.Tool</MissingClass>
+    <MissingClass>com.sun.java.swing.JComponent</MissingClass>
+    <MissingClass>com.sun.java.swing.JFrame</MissingClass>
+    <MissingClass>com.sun.java.swing.JPanel</MissingClass>
+    <MissingClass>com.sun.java.swing.JScrollPane</MissingClass>
+    <MissingClass>com.sun.java.swing.JTree</MissingClass>
+    <MissingClass>com.sun.java.swing.event.TreeSelectionEvent</MissingClass>
+    <MissingClass>com.sun.java.swing.event.TreeSelectionListener</MissingClass>
+    <MissingClass>com.sun.java.swing.tree.TreeModel</MissingClass>
+    <MissingClass>com.sun.java.swing.tree.TreePath</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 9 Mar 2017 12:45:09 -0500" total_classes="52" referenced_classes="119" total_bugs="50" total_size="2156" num_packages="5" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="18.04" clock_seconds="46.32" peak_mbytes="195.07" alloc_mbytes="683.00" gc_seconds="0.81" priority_2="37" priority_1="13">
+    <PackageStats package="antlr" total_bugs="34" total_types="27" total_size="1502" priority_2="26" priority_1="8">
+      <ClassStats class="antlr.ANTLRException" sourceFile="ANTLRException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="antlr.ANTLRHashString" sourceFile="ANTLRHashString.java" interface="false" size="56" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="antlr.ANTLRStringBuffer" sourceFile="ANTLRStringBuffer.java" interface="false" size="38" bugs="1" priority_2="1"/>
+      <ClassStats class="antlr.ASTFactory" sourceFile="ASTFactory.java" interface="false" size="91" bugs="0"/>
+      <ClassStats class="antlr.ASTNULLType" sourceFile="ASTNULLType.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="antlr.ASTPair" sourceFile="ASTPair.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="antlr.BaseAST" sourceFile="BaseAST.java" interface="false" size="144" bugs="1" priority_2="1"/>
+      <ClassStats class="antlr.ByteBuffer" sourceFile="ByteBuffer.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="antlr.CharBuffer" sourceFile="CharBuffer.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="antlr.CharQueue" sourceFile="CharQueue.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="antlr.CharScanner" sourceFile="CharScanner.java" interface="false" size="165" bugs="3" priority_2="3"/>
+      <ClassStats class="antlr.CommonAST" sourceFile="CommonAST.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="antlr.CommonToken" sourceFile="CommonToken.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="antlr.InputBuffer" sourceFile="InputBuffer.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="antlr.LLkParser" sourceFile="LLkParser.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="antlr.MismatchedTokenException" sourceFile="MismatchedTokenException.java" interface="false" size="100" bugs="7" priority_2="7"/>
+      <ClassStats class="antlr.NoViableAltException" sourceFile="NoViableAltException.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="antlr.Parser" sourceFile="Parser.java" interface="false" size="152" bugs="4" priority_2="4"/>
+      <ClassStats class="antlr.ParserException" sourceFile="ParserException.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="antlr.ScannerException" sourceFile="ScannerException.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="antlr.SemanticException" sourceFile="SemanticException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="antlr.Token" sourceFile="Token.java" interface="false" size="36" bugs="1" priority_1="1"/>
+      <ClassStats class="antlr.TokenBuffer" sourceFile="TokenBuffer.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="antlr.TokenQueue" sourceFile="TokenQueue.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="antlr.Tokenizer" sourceFile="Tokenizer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="antlr.Tool" sourceFile="Tool.java" interface="false" size="277" bugs="9" priority_2="4" priority_1="5"/>
+      <ClassStats class="antlr.TreeParser" sourceFile="TreeParser.java" interface="false" size="62" bugs="6" priority_2="5" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="antlr.collections" total_bugs="0" total_types="2" total_size="26">
+      <ClassStats class="antlr.collections.AST" sourceFile="AST.java" interface="true" size="23" bugs="0"/>
+      <ClassStats class="antlr.collections.ASTEnumeration" sourceFile="ASTEnumeration.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="antlr.collections.impl" total_bugs="11" total_types="2" total_size="253" priority_2="10" priority_1="1">
+      <ClassStats class="antlr.collections.impl.ASTArray" sourceFile="ASTArray.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="antlr.collections.impl.BitSet" sourceFile="BitSet.java" interface="false" size="244" bugs="11" priority_2="10" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="antlr.debug" total_bugs="4" total_types="16" total_size="263" priority_1="4">
+      <ClassStats class="antlr.debug.Event" sourceFile="Event.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="antlr.debug.GuessingEvent" sourceFile="GuessingEvent.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="antlr.debug.ListenerBase" sourceFile="ListenerBase.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="antlr.debug.MessageEvent" sourceFile="MessageEvent.java" interface="false" size="27" bugs="1" priority_1="1"/>
+      <ClassStats class="antlr.debug.MessageListener" sourceFile="MessageListener.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="antlr.debug.ParserListener" sourceFile="ParserListener.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="antlr.debug.ParserMatchEvent" sourceFile="ParserMatchEvent.java" interface="false" size="65" bugs="1" priority_1="1"/>
+      <ClassStats class="antlr.debug.ParserMatchListener" sourceFile="ParserMatchListener.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="antlr.debug.ParserTokenEvent" sourceFile="ParserTokenEvent.java" interface="false" size="36" bugs="1" priority_1="1"/>
+      <ClassStats class="antlr.debug.ParserTokenListener" sourceFile="ParserTokenListener.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="antlr.debug.SemanticPredicateEvent" sourceFile="SemanticPredicateEvent.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="antlr.debug.SemanticPredicateListener" sourceFile="SemanticPredicateListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="antlr.debug.SyntacticPredicateEvent" sourceFile="SyntacticPredicateEvent.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="antlr.debug.SyntacticPredicateListener" sourceFile="SyntacticPredicateListener.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="antlr.debug.TraceEvent" sourceFile="TraceEvent.java" interface="false" size="36" bugs="1" priority_1="1"/>
+      <ClassStats class="antlr.debug.TraceListener" sourceFile="TraceListener.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="antlr.debug.misc" total_bugs="1" total_types="5" total_size="112" priority_2="1">
+      <ClassStats class="antlr.debug.misc.ASTFrame" sourceFile="ASTFrame.java" interface="false" size="21" bugs="1" priority_2="1"/>
+      <ClassStats class="antlr.debug.misc.ASTFrame$1" sourceFile="ASTFrame.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="antlr.debug.misc.ASTFrame$MyTreeSelectionListener" sourceFile="ASTFrame.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="antlr.debug.misc.JTreeASTModel" sourceFile="JTreeASTModel.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="antlr.debug.misc.JTreeASTPanel" sourceFile="JTreeASTPanel.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="4580" invocations="810" avgMicrosecondsPerInvocation="5654" maxMicrosecondsPerInvocation="179853" standardDeviationMircosecondsPerInvocation="18022"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="2511" invocations="119" avgMicrosecondsPerInvocation="21104" maxMicrosecondsPerInvocation="358242" standardDeviationMircosecondsPerInvocation="54354"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1961" invocations="119" avgMicrosecondsPerInvocation="16481" maxMicrosecondsPerInvocation="315239" standardDeviationMircosecondsPerInvocation="41386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="1728" invocations="420" avgMicrosecondsPerInvocation="4116" maxMicrosecondsPerInvocation="149176" standardDeviationMircosecondsPerInvocation="13840"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="1603" invocations="423" avgMicrosecondsPerInvocation="3790" maxMicrosecondsPerInvocation="195200" standardDeviationMircosecondsPerInvocation="15527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="1527" invocations="420" avgMicrosecondsPerInvocation="3637" maxMicrosecondsPerInvocation="88849" standardDeviationMircosecondsPerInvocation="12603"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1490" invocations="420" avgMicrosecondsPerInvocation="3548" maxMicrosecondsPerInvocation="143206" standardDeviationMircosecondsPerInvocation="12598"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="1428" invocations="420" avgMicrosecondsPerInvocation="3401" maxMicrosecondsPerInvocation="79732" standardDeviationMircosecondsPerInvocation="12041"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="1396" invocations="423" avgMicrosecondsPerInvocation="3302" maxMicrosecondsPerInvocation="160771" standardDeviationMircosecondsPerInvocation="13539"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1321" invocations="725" avgMicrosecondsPerInvocation="1822" maxMicrosecondsPerInvocation="87796" standardDeviationMircosecondsPerInvocation="8607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="1296" invocations="744" avgMicrosecondsPerInvocation="1742" maxMicrosecondsPerInvocation="184098" standardDeviationMircosecondsPerInvocation="10362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="891" invocations="170" avgMicrosecondsPerInvocation="5244" maxMicrosecondsPerInvocation="162303" standardDeviationMircosecondsPerInvocation="17624"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="795" invocations="469" avgMicrosecondsPerInvocation="1696" maxMicrosecondsPerInvocation="407908" standardDeviationMircosecondsPerInvocation="19381"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="683" invocations="283" avgMicrosecondsPerInvocation="2416" maxMicrosecondsPerInvocation="88770" standardDeviationMircosecondsPerInvocation="9767"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="640" invocations="119" avgMicrosecondsPerInvocation="5385" maxMicrosecondsPerInvocation="259967" standardDeviationMircosecondsPerInvocation="28286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="586" invocations="119" avgMicrosecondsPerInvocation="4926" maxMicrosecondsPerInvocation="115798" standardDeviationMircosecondsPerInvocation="16883"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="575" invocations="119" avgMicrosecondsPerInvocation="4832" maxMicrosecondsPerInvocation="65497" standardDeviationMircosecondsPerInvocation="13934"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="543" invocations="52" avgMicrosecondsPerInvocation="10454" maxMicrosecondsPerInvocation="108785" standardDeviationMircosecondsPerInvocation="22042"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="543" invocations="66" avgMicrosecondsPerInvocation="8234" maxMicrosecondsPerInvocation="79104" standardDeviationMircosecondsPerInvocation="18733"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="540" invocations="119" avgMicrosecondsPerInvocation="4542" maxMicrosecondsPerInvocation="334413" standardDeviationMircosecondsPerInvocation="31076"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="501" invocations="420" avgMicrosecondsPerInvocation="1193" maxMicrosecondsPerInvocation="59547" standardDeviationMircosecondsPerInvocation="6719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="478" invocations="119" avgMicrosecondsPerInvocation="4017" maxMicrosecondsPerInvocation="54537" standardDeviationMircosecondsPerInvocation="11801"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="453" invocations="52" avgMicrosecondsPerInvocation="8719" maxMicrosecondsPerInvocation="81957" standardDeviationMircosecondsPerInvocation="18403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="418" invocations="3996" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="68148" standardDeviationMircosecondsPerInvocation="1985"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="407" invocations="119" avgMicrosecondsPerInvocation="3426" maxMicrosecondsPerInvocation="74589" standardDeviationMircosecondsPerInvocation="13092"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="406" invocations="119" avgMicrosecondsPerInvocation="3419" maxMicrosecondsPerInvocation="159954" standardDeviationMircosecondsPerInvocation="17461"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="404" invocations="119" avgMicrosecondsPerInvocation="3401" maxMicrosecondsPerInvocation="69580" standardDeviationMircosecondsPerInvocation="12077"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="384" invocations="52" avgMicrosecondsPerInvocation="7402" maxMicrosecondsPerInvocation="129455" standardDeviationMircosecondsPerInvocation="22926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="360" invocations="52" avgMicrosecondsPerInvocation="6938" maxMicrosecondsPerInvocation="48914" standardDeviationMircosecondsPerInvocation="14245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="344" invocations="52" avgMicrosecondsPerInvocation="6628" maxMicrosecondsPerInvocation="46247" standardDeviationMircosecondsPerInvocation="13733"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="329" invocations="52" avgMicrosecondsPerInvocation="6341" maxMicrosecondsPerInvocation="56994" standardDeviationMircosecondsPerInvocation="14309"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+

@@ -10,24 +10,25 @@ from Utils.FileUtils import JSONUtil, XMLUtil
 from Utils.MetricsUtil import JavaUtil, JSUtil
 
 
+def par_deploy(dict_elem):
+    project, versions = dict_elem
+    print("Project: {}".format(project))
+    fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/{}".format(project)))
+    save_path = "metrics/{}".format(project)
+
+    m = JavaUtil(jar_path_json=versions,
+    fbp_path=fbp_path,
+    save_path=save_path)
+
+    if not os.path.isdir(save_path):
+        os.mkdir(save_path)
+
+        m.save_metrics()
+
+
 def jar_sample_case():
 
     files = json.load(open(os.path.abspath(os.path.join(os.getcwd(), "data/java/paths.json"))))
-
-    def par_deploy(dict_elem):
-        project, versions = dict_elem
-        print("Project: {}".format(project))
-        fbp_path = os.path.abspath(os.path.join(os.getcwd(), "data/java/fbp/{}".format(project)))
-        save_path = "metrics/{}".format(project)
-
-        m = JavaUtil(jar_path_json=versions,
-                     fbp_path=fbp_path,
-                     save_path=save_path)
-
-        if not os.path.isdir(save_path):
-            os.mkdir(save_path)
-
-        m.save_metrics()
 
     par_args = [(p,v) for p,v in files.iteritems()]
 
@@ -35,13 +36,8 @@ def jar_sample_case():
     N = len(par_args)  # Number of parallel processes to run
     pool = mp.Pool(processes=N)  # Pool of processes
     deployed = pool.map(par_deploy, par_args)
-    
     set_trace()
-
-
-
-def convert_xml_to_csv():
-    for metric_file in glob("mertics/{0}/*{0}-*.xml".format(project)):
+    for metric_file in glob("mertics/**/*.xml".format(project)):
         xml = XMLUtil(metrics_name=metric_file)
         xml.save_as_csv()
 

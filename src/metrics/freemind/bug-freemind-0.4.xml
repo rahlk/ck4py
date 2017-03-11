@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1489084238000" analysisTimestamp="1489170378844" release="">
+  <Project projectName="freemind-0.4">
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freemind/freemind-0.4/bin/lib/freemind.jar</Jar>
+  </Project>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="freemind.controller.Controller">
+      <SourceLine classname="freemind.controller.Controller" start="67" end="416" sourcefile="Controller.java" sourcepath="freemind/controller/Controller.java"/>
+    </Class>
+    <Method classname="freemind.controller.Controller" name="quit" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.controller.Controller" start="402" end="416" startBytecode="0" endBytecode="157" sourcefile="Controller.java" sourcepath="freemind/controller/Controller.java"/>
+    </Method>
+    <SourceLine classname="freemind.controller.Controller" start="415" end="415" startBytecode="52" endBytecode="52" sourcefile="Controller.java" sourcepath="freemind/controller/Controller.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="freemind.controller.LastOpenedList">
+      <SourceLine classname="freemind.controller.LastOpenedList" start="37" end="96" sourcefile="LastOpenedList.java" sourcepath="freemind/controller/LastOpenedList.java"/>
+    </Class>
+    <Method classname="freemind.controller.LastOpenedList" name="save" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemind.controller.LastOpenedList" start="67" end="71" startBytecode="0" endBytecode="136" sourcefile="LastOpenedList.java" sourcepath="freemind/controller/LastOpenedList.java"/>
+    </Method>
+    <SourceLine classname="freemind.controller.LastOpenedList" start="67" end="67" startBytecode="4" endBytecode="4" sourcefile="LastOpenedList.java" sourcepath="freemind/controller/LastOpenedList.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.controller.MenuBar">
+      <SourceLine classname="freemind.controller.MenuBar" start="45" end="191" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Class>
+    <Method classname="freemind.controller.MenuBar" name="updateEditMenu" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.controller.MenuBar" start="148" end="180" startBytecode="0" endBytecode="106" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Method>
+    <LocalVariable name="historyNextMap" register="5" pc="199" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.controller.MenuBar" start="166" end="166" startBytecode="197" endBytecode="197" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="historyNextMap"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.controller.MenuBar">
+      <SourceLine classname="freemind.controller.MenuBar" start="45" end="191" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Class>
+    <Method classname="freemind.controller.MenuBar" name="updateEditMenu" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.controller.MenuBar" start="148" end="180" startBytecode="0" endBytecode="106" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Method>
+    <LocalVariable name="historyPreviousMap" register="4" pc="183" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.controller.MenuBar" start="165" end="165" startBytecode="181" endBytecode="181" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="historyPreviousMap"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.controller.MenuBar">
+      <SourceLine classname="freemind.controller.MenuBar" start="45" end="191" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Class>
+    <Method classname="freemind.controller.MenuBar" name="updateFileMenu" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.controller.MenuBar" start="113" end="131" startBytecode="0" endBytecode="75" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Method>
+    <LocalVariable name="page" register="1" pc="74" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.controller.MenuBar" start="119" end="119" startBytecode="73" endBytecode="73" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="page"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.controller.MenuBar">
+      <SourceLine classname="freemind.controller.MenuBar" start="45" end="191" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Class>
+    <Method classname="freemind.controller.MenuBar" name="updateFileMenu" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.controller.MenuBar" start="113" end="131" startBytecode="0" endBytecode="75" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Method>
+    <LocalVariable name="print" register="2" pc="89" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.controller.MenuBar" start="120" end="120" startBytecode="88" endBytecode="88" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="print"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="freemind.controller.MenuBar">
+      <SourceLine classname="freemind.controller.MenuBar" start="45" end="191" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Class>
+    <Field classname="freemind.controller.MenuBar" name="lastOpenedActionListener" signature="Ljava/awt/event/ActionListener;" isStatic="false">
+      <SourceLine classname="freemind.controller.MenuBar" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Field>
+    <Type descriptor="Lfreemind/controller/MenuBar$LastOpenedActionListener;" role="TYPE_FOUND">
+      <SourceLine classname="freemind.controller.MenuBar$LastOpenedActionListener" start="199" end="202" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Type>
+    <SourceLine classname="freemind.controller.MenuBar" start="47" end="47" startBytecode="38" endBytecode="38" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="freemind.controller.MenuBar">
+      <SourceLine classname="freemind.controller.MenuBar" start="45" end="191" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Class>
+    <Field classname="freemind.controller.MenuBar" name="mapsMenuActionListener" signature="Ljava/awt/event/ActionListener;" isStatic="false">
+      <SourceLine classname="freemind.controller.MenuBar" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Field>
+    <Type descriptor="Lfreemind/controller/MenuBar$MapsMenuActionListener;" role="TYPE_FOUND">
+      <SourceLine classname="freemind.controller.MenuBar$MapsMenuActionListener" start="193" end="196" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+    </Type>
+    <SourceLine classname="freemind.controller.MenuBar" start="46" end="46" startBytecode="25" endBytecode="25" sourcefile="MenuBar.java" sourcepath="freemind/controller/MenuBar.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="freemind.controller.NodeMouseListener">
+      <SourceLine classname="freemind.controller.NodeMouseListener" start="40" end="132" sourcefile="NodeMouseListener.java" sourcepath="freemind/controller/NodeMouseListener.java"/>
+    </Class>
+    <Field classname="freemind.controller.NodeMouseListener" name="timer" signature="Ljavax/swing/Timer;" isStatic="false">
+      <SourceLine classname="freemind.controller.NodeMouseListener" sourcefile="NodeMouseListener.java" sourcepath="freemind/controller/NodeMouseListener.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="freemind.main.FreeMind">
+      <SourceLine classname="freemind.main.FreeMind" start="58" end="302" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    </Class>
+    <Field classname="freemind.main.FreeMind" name="props" signature="Ljava/util/Properties;" isStatic="true">
+      <SourceLine classname="freemind.main.FreeMind" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="freemind.main.FreeMind">
+      <SourceLine classname="freemind.main.FreeMind" start="58" end="302" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    </Class>
+    <Method classname="freemind.main.FreeMind" name="saveProperties" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.main.FreeMind" start="185" end="191" startBytecode="0" endBytecode="119" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    </Method>
+    <Class classname="java.io.OutputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="freemind.main.FreeMind" start="185" end="185" startBytecode="13" endBytecode="13" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="freemind.main.FreeMind" start="187" end="187" startBytecode="17" endBytecode="17" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="freemind.main.FreeMind" start="189" end="189" startBytecode="32" endBytecode="32" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="freemind.main.FreeMind" start="191" end="191" startBytecode="33" endBytecode="33" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{OutputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE">
+    <Class classname="freemind.main.FreeMind">
+      <SourceLine classname="freemind.main.FreeMind" start="58" end="302" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    </Class>
+    <Method classname="freemind.main.FreeMind" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.main.FreeMind" start="66" end="165" startBytecode="0" endBytecode="826" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    </Method>
+    <SourceLine classname="freemind.main.FreeMind" start="109" end="109" startBytecode="231" endBytecode="231" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    <SourceLine classname="freemind.main.FreeMind" start="128" end="128" startBytecode="300" endBytecode="300" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="freemind.main.FreeMind">
+      <SourceLine classname="freemind.main.FreeMind" start="58" end="302" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    </Class>
+    <Method classname="freemind.main.FreeMind" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.main.FreeMind" start="66" end="165" startBytecode="0" endBytecode="826" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    </Method>
+    <Field classname="freemind.main.FreeMind" name="props" signature="Ljava/util/Properties;" isStatic="true">
+      <SourceLine classname="freemind.main.FreeMind" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+    </Field>
+    <SourceLine classname="freemind.main.FreeMind" start="107" end="107" startBytecode="225" endBytecode="225" sourcefile="FreeMind.java" sourcepath="freemind/main/FreeMind.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.main.FreeMindApplet">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="58" end="202" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Class>
+    <Method classname="freemind.main.FreeMindApplet" name="init" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="142" end="202" startBytecode="0" endBytecode="127" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Method>
+    <LocalVariable name="rootPane" register="1" pc="5" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.main.FreeMindApplet" start="142" end="142" startBytecode="4" endBytecode="4" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="rootPane"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="freemind.main.FreeMindApplet">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="58" end="202" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Class>
+    <Field classname="freemind.main.FreeMindApplet" name="defaultProps" signature="Ljava/util/Properties;" isStatic="true">
+      <SourceLine classname="freemind.main.FreeMindApplet" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="freemind.main.FreeMindApplet">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="58" end="202" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Class>
+    <Field classname="freemind.main.FreeMindApplet" name="userProps" signature="Ljava/util/Properties;" isStatic="true">
+      <SourceLine classname="freemind.main.FreeMindApplet" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE">
+    <Class classname="freemind.main.FreeMindApplet">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="58" end="202" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Class>
+    <Method classname="freemind.main.FreeMindApplet" name="init" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="142" end="202" startBytecode="0" endBytecode="548" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Method>
+    <SourceLine classname="freemind.main.FreeMindApplet" start="183" end="183" startBytecode="188" endBytecode="188" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="freemind.main.FreeMindApplet">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="58" end="202" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Class>
+    <Method classname="freemind.main.FreeMindApplet" name="init" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="142" end="202" startBytecode="0" endBytecode="548" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Method>
+    <Field classname="freemind.main.FreeMindApplet" name="defaultProps" signature="Ljava/util/Properties;" isStatic="true">
+      <SourceLine classname="freemind.main.FreeMindApplet" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Field>
+    <SourceLine classname="freemind.main.FreeMindApplet" start="147" end="147" startBytecode="22" endBytecode="22" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="freemind.main.FreeMindApplet">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="58" end="202" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Class>
+    <Method classname="freemind.main.FreeMindApplet" name="init" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.main.FreeMindApplet" start="142" end="202" startBytecode="0" endBytecode="548" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Method>
+    <Field classname="freemind.main.FreeMindApplet" name="userProps" signature="Ljava/util/Properties;" isStatic="true">
+      <SourceLine classname="freemind.main.FreeMindApplet" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+    </Field>
+    <SourceLine classname="freemind.main.FreeMindApplet" start="151" end="151" startBytecode="47" endBytecode="47" sourcefile="FreeMindApplet.java" sourcepath="freemind/main/FreeMindApplet.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="freemind.main.Tools">
+      <SourceLine classname="freemind.main.Tools" start="35" end="183" sourcefile="Tools.java" sourcepath="freemind/main/Tools.java"/>
+    </Class>
+    <Method classname="freemind.main.Tools" name="listToString" signature="(Ljava/util/List;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="freemind.main.Tools" start="69" end="74" startBytecode="0" endBytecode="143" sourcefile="Tools.java" sourcepath="freemind/main/Tools.java"/>
+    </Method>
+    <SourceLine classname="freemind.main.Tools" start="70" end="70" startBytecode="12" endBytecode="12" sourcefile="Tools.java" sourcepath="freemind/main/Tools.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" rank="3" abbrev="RV" category="CORRECTNESS">
+    <Class classname="freemind.main.Tools">
+      <SourceLine classname="freemind.main.Tools" start="35" end="183" sourcefile="Tools.java" sourcepath="freemind/main/Tools.java"/>
+    </Class>
+    <Method classname="freemind.main.Tools" name="listToString" signature="(Ljava/util/List;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="freemind.main.Tools" start="69" end="74" startBytecode="0" endBytecode="143" sourcefile="Tools.java" sourcepath="freemind/main/Tools.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="concat" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="2027" end="2034" startBytecode="0" endBytecode="106" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="freemind.main.Tools" start="72" end="72" startBytecode="47" endBytecode="47" sourcefile="Tools.java" sourcepath="freemind/main/Tools.java"/>
+  </BugInstance>
+  <BugInstance type="NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="freemind.main.XMLElement">
+      <SourceLine classname="freemind.main.XMLElement" start="163" end="1998" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+    </Class>
+    <Method classname="freemind.main.XMLElement" name="write" signature="(Ljava/io/Writer;I)V" isStatic="false">
+      <SourceLine classname="freemind.main.XMLElement" start="1795" end="1878" startBytecode="0" endBytecode="737" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+    </Method>
+    <LocalVariable name="enum" register="5" pc="80" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.main.XMLElement" start="1815" end="1815" startBytecode="80" endBytecode="80" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+  </BugInstance>
+  <BugInstance type="NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="freemind.main.XMLElement">
+      <SourceLine classname="freemind.main.XMLElement" start="163" end="1998" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+    </Class>
+    <Method classname="freemind.main.XMLElement" name="write" signature="(Ljava/io/Writer;I)V" isStatic="false">
+      <SourceLine classname="freemind.main.XMLElement" start="1795" end="1878" startBytecode="0" endBytecode="737" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+    </Method>
+    <LocalVariable name="enum" register="5" pc="304" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.main.XMLElement" start="1863" end="1863" startBytecode="304" endBytecode="304" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="freemind.main.XMLElement">
+      <SourceLine classname="freemind.main.XMLElement" start="163" end="1998" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+    </Class>
+    <Method classname="freemind.main.XMLElement" name="skipPreamble" signature="([CII[I)I" isStatic="false">
+      <SourceLine classname="freemind.main.XMLElement" start="1608" end="1630" startBytecode="0" endBytecode="217" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+    </Method>
+    <Method classname="freemind.main.XMLElement" name="expectedInput" signature="(Ljava/lang/String;I)Lfreemind/main/XMLParseException;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="freemind.main.XMLElement" start="1986" end="1987" startBytecode="0" endBytecode="109" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+    </Method>
+    <SourceLine classname="freemind.main.XMLElement" start="1612" end="1612" startBytecode="25" endBytecode="25" sourcefile="XMLElement.java" sourcepath="freemind/main/XMLElement.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.ControllerAdapter">
+      <SourceLine classname="freemind.modes.ControllerAdapter" start="76" end="584" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+    </Class>
+    <Method classname="freemind.modes.ControllerAdapter" name="&lt;init&gt;" signature="(Lfreemind/modes/Mode;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.ControllerAdapter" start="90" end="103" startBytecode="0" endBytecode="46" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+    </Method>
+    <LocalVariable name="dropTarget" register="2" pc="75" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.ControllerAdapter" start="96" end="96" startBytecode="74" endBytecode="74" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="dropTarget"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.ControllerAdapter">
+      <SourceLine classname="freemind.modes.ControllerAdapter" start="76" end="584" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+    </Class>
+    <Method classname="freemind.modes.ControllerAdapter" name="mapOpened" signature="(Z)V" isStatic="false">
+      <SourceLine classname="freemind.modes.ControllerAdapter" start="249" end="270" startBytecode="0" endBytecode="56" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+    </Method>
+    <LocalVariable name="dropTarget" register="2" pc="70" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.ControllerAdapter" start="256" end="256" startBytecode="69" endBytecode="69" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="dropTarget"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="freemind.modes.ControllerAdapter">
+      <SourceLine classname="freemind.modes.ControllerAdapter" start="76" end="584" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+    </Class>
+    <Method classname="freemind.modes.ControllerAdapter" name="edit" signature="(Lfreemind/view/mindmapview/NodeView;Lfreemind/view/mindmapview/NodeView;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.ControllerAdapter" start="306" end="319" startBytecode="0" endBytecode="195" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.ControllerAdapter" start="309" end="309" startBytecode="13" endBytecode="13" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="freemind.modes.ControllerAdapter$toggleChildrenFoldedAction">
+      <SourceLine classname="freemind.modes.ControllerAdapter$toggleChildrenFoldedAction" start="727" end="732" sourcefile="ControllerAdapter.java" sourcepath="freemind/modes/ControllerAdapter.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="freemind.modes.Pattern">
+      <SourceLine classname="freemind.modes.Pattern" start="57" end="293" sourcefile="Pattern.java" sourcepath="freemind/modes/Pattern.java"/>
+    </Class>
+    <Method classname="freemind.modes.Pattern" name="loadPatterns" signature="(Ljava/io/File;)Ljava/util/List;" isStatic="true">
+      <SourceLine classname="freemind.modes.Pattern" start="202" end="216" startBytecode="0" endBytecode="172" sourcefile="Pattern.java" sourcepath="freemind/modes/Pattern.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.Pattern" start="206" end="206" startBytecode="29" endBytecode="29" sourcefile="Pattern.java" sourcepath="freemind/modes/Pattern.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="freemind.modes.browsemode.BrowseController">
+      <SourceLine classname="freemind.modes.browsemode.BrowseController" start="62" end="205" sourcefile="BrowseController.java" sourcepath="freemind/modes/browsemode/BrowseController.java"/>
+    </Class>
+    <Field classname="freemind.modes.browsemode.BrowseController" name="nodeDown" signature="Ljavax/swing/Action;" isStatic="false">
+      <SourceLine classname="freemind.modes.browsemode.BrowseController" sourcefile="BrowseController.java" sourcepath="freemind/modes/browsemode/BrowseController.java"/>
+    </Field>
+    <SourceLine classname="freemind.modes.browsemode.BrowseController" start="68" end="68" startBytecode="66" endBytecode="66" sourcefile="BrowseController.java" sourcepath="freemind/modes/browsemode/BrowseController.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="freemind.modes.browsemode.BrowseController">
+      <SourceLine classname="freemind.modes.browsemode.BrowseController" start="62" end="205" sourcefile="BrowseController.java" sourcepath="freemind/modes/browsemode/BrowseController.java"/>
+    </Class>
+    <Field classname="freemind.modes.browsemode.BrowseController" name="nodeUp" signature="Ljavax/swing/Action;" isStatic="false">
+      <SourceLine classname="freemind.modes.browsemode.BrowseController" sourcefile="BrowseController.java" sourcepath="freemind/modes/browsemode/BrowseController.java"/>
+    </Field>
+    <SourceLine classname="freemind.modes.browsemode.BrowseController" start="67" end="67" startBytecode="54" endBytecode="54" sourcefile="BrowseController.java" sourcepath="freemind/modes/browsemode/BrowseController.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="freemind.modes.browsemode.BrowseMapModel">
+      <SourceLine classname="freemind.modes.browsemode.BrowseMapModel" start="58" end="158" sourcefile="BrowseMapModel.java" sourcepath="freemind/modes/browsemode/BrowseMapModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.browsemode.BrowseMapModel" name="loadTree" signature="(Ljava/net/URL;)Lfreemind/modes/browsemode/BrowseNodeModel;" isStatic="false">
+      <SourceLine classname="freemind.modes.browsemode.BrowseMapModel" start="118" end="158" startBytecode="0" endBytecode="203" sourcefile="BrowseMapModel.java" sourcepath="freemind/modes/browsemode/BrowseMapModel.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.browsemode.BrowseMapModel" start="146" end="146" startBytecode="19" endBytecode="19" sourcefile="BrowseMapModel.java" sourcepath="freemind/modes/browsemode/BrowseMapModel.java"/>
+  </BugInstance>
+  <BugInstance type="NP_TOSTRING_COULD_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="freemind.modes.browsemode.BrowseMapModel">
+      <SourceLine classname="freemind.modes.browsemode.BrowseMapModel" start="58" end="158" sourcefile="BrowseMapModel.java" sourcepath="freemind/modes/browsemode/BrowseMapModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.browsemode.BrowseMapModel" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemind.modes.browsemode.BrowseMapModel" start="71" end="74" startBytecode="0" endBytecode="66" sourcefile="BrowseMapModel.java" sourcepath="freemind/modes/browsemode/BrowseMapModel.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.browsemode.BrowseMapModel" start="72" end="72" startBytecode="8" endBytecode="8" sourcefile="BrowseMapModel.java" sourcepath="freemind/modes/browsemode/BrowseMapModel.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="freemind.modes.browsemode.BrowseMode">
+      <SourceLine classname="freemind.modes.browsemode.BrowseMode" start="36" end="96" sourcefile="BrowseMode.java" sourcepath="freemind/modes/browsemode/BrowseMode.java"/>
+    </Class>
+    <Method classname="freemind.modes.browsemode.BrowseMode" name="activate" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.modes.browsemode.BrowseMode" start="56" end="65" startBytecode="0" endBytecode="34" sourcefile="BrowseMode.java" sourcepath="freemind/modes/browsemode/BrowseMode.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="" role="STRING_CONSTANT"/>
+    <LocalVariable name="map" register="1" pc="61" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="freemind.modes.browsemode.BrowseMode" start="62" end="62" startBytecode="63" endBytecode="63" sourcefile="BrowseMode.java" sourcepath="freemind/modes/browsemode/BrowseMode.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.EMPTY_AND_UNKNOWN" value="true"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE">
+    <Class classname="freemind.modes.browsemode.BrowseMode">
+      <SourceLine classname="freemind.modes.browsemode.BrowseMode" start="36" end="96" sourcefile="BrowseMode.java" sourcepath="freemind/modes/browsemode/BrowseMode.java"/>
+    </Class>
+    <Field classname="freemind.modes.browsemode.BrowseMode" name="MODENAME" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemind.modes.browsemode.BrowseMode" sourcefile="BrowseMode.java" sourcepath="freemind/modes/browsemode/BrowseMode.java"/>
+    </Field>
+    <SourceLine classname="freemind.modes.browsemode.BrowseMode" start="36" end="36" startBytecode="7" endBytecode="7" sourcefile="BrowseMode.java" sourcepath="freemind/modes/browsemode/BrowseMode.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE">
+    <Class classname="freemind.modes.filemode.FileController">
+      <SourceLine classname="freemind.modes.filemode.FileController" start="35" end="67" sourcefile="FileController.java" sourcepath="freemind/modes/filemode/FileController.java"/>
+    </Class>
+    <Method classname="freemind.modes.filemode.FileController" name="newNode" signature="()Lfreemind/modes/MindMapNode;" isStatic="false">
+      <SourceLine classname="freemind.modes.filemode.FileController" start="50" end="52" startBytecode="0" endBytecode="97" sourcefile="FileController.java" sourcepath="freemind/modes/filemode/FileController.java"/>
+    </Method>
+    <Method classname="java.io.File" name="mkdir" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1309" end="1316" startBytecode="0" endBytecode="91" sourcefile="File.java" sourcepath="java/io/File.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.filemode.FileController" start="51" end="51" startBytecode="21" endBytecode="21" sourcefile="FileController.java" sourcepath="freemind/modes/filemode/FileController.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="freemind.modes.filemode.FileMode">
+      <SourceLine classname="freemind.modes.filemode.FileMode" start="41" end="98" sourcefile="FileMode.java" sourcepath="freemind/modes/filemode/FileMode.java"/>
+    </Class>
+    <Method classname="freemind.modes.filemode.FileMode" name="activate" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.modes.filemode.FileMode" start="63" end="72" startBytecode="0" endBytecode="91" sourcefile="FileMode.java" sourcepath="freemind/modes/filemode/FileMode.java"/>
+    </Method>
+    <Field classname="freemind.modes.filemode.FileMode" name="isRunning" signature="Z" isStatic="true">
+      <SourceLine classname="freemind.modes.filemode.FileMode" sourcefile="FileMode.java" sourcepath="freemind/modes/filemode/FileMode.java"/>
+    </Field>
+    <SourceLine classname="freemind.modes.filemode.FileMode" start="65" end="65" startBytecode="16" endBytecode="16" sourcefile="FileMode.java" sourcepath="freemind/modes/filemode/FileMode.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="freemind.modes.filemode.FileNodeModel">
+      <SourceLine classname="freemind.modes.filemode.FileNodeModel" start="45" end="125" sourcefile="FileNodeModel.java" sourcepath="freemind/modes/filemode/FileNodeModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.filemode.FileNodeModel" name="childrenFolded" signature="()Ljava/util/ListIterator;" isStatic="false">
+      <SourceLine classname="freemind.modes.filemode.FileNodeModel" start="99" end="121" startBytecode="0" endBytecode="297" sourcefile="FileNodeModel.java" sourcepath="freemind/modes/filemode/FileNodeModel.java"/>
+    </Method>
+    <Field classname="freemind.modes.NodeAdapter" name="children" signature="Ljava/util/List;" isStatic="false" role="FIELD_CONTAINS_VALUE">
+      <SourceLine classname="freemind.modes.NodeAdapter" sourcefile="NodeAdapter.java" sourcepath="freemind/modes/NodeAdapter.java"/>
+    </Field>
+    <SourceLine classname="freemind.modes.filemode.FileNodeModel" start="121" end="121" startBytecode="132" endBytecode="132" sourcefile="FileNodeModel.java" sourcepath="freemind/modes/filemode/FileNodeModel.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="freemind.modes.filemode.FileNodeModel" start="108" end="108" startBytecode="44" endBytecode="44" sourcefile="FileNodeModel.java" sourcepath="freemind/modes/filemode/FileNodeModel.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.filemode.FileToolBar">
+      <SourceLine classname="freemind.modes.filemode.FileToolBar" start="30" end="38" sourcefile="FileToolBar.java" sourcepath="freemind/modes/filemode/FileToolBar.java"/>
+    </Class>
+    <Method classname="freemind.modes.filemode.FileToolBar" name="&lt;init&gt;" signature="(Lfreemind/modes/filemode/FileController;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.filemode.FileToolBar" start="30" end="38" startBytecode="0" endBytecode="20" sourcefile="FileToolBar.java" sourcepath="freemind/modes/filemode/FileToolBar.java"/>
+    </Method>
+    <LocalVariable name="button" register="2" pc="39" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.filemode.FileToolBar" start="37" end="37" startBytecode="38" endBytecode="38" sourcefile="FileToolBar.java" sourcepath="freemind/modes/filemode/FileToolBar.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="button"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="57" end="695" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController" name="getBranchMenu" signature="()Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="227" end="260" startBytecode="0" endBytecode="110" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="boldifyBranchItem" register="7" pc="121" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="242" end="242" startBytecode="119" endBytecode="119" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="boldifyBranchItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="57" end="695" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController" name="getBranchMenu" signature="()Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="227" end="260" startBytecode="0" endBytecode="110" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="importBranchItem" register="4" pc="87" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="234" end="234" startBytecode="85" endBytecode="85" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="importBranchItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="57" end="695" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController" name="getBranchMenu" signature="()Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="227" end="260" startBytecode="0" endBytecode="110" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="importLinkedBranchItem" register="5" pc="97" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="236" end="236" startBytecode="95" endBytecode="95" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="importLinkedBranchItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="57" end="695" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController" name="getBranchMenu" signature="()Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="227" end="260" startBytecode="0" endBytecode="110" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="importLinkedBranchWithoutRootItem" register="6" pc="107" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="238" end="238" startBytecode="105" endBytecode="105" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="importLinkedBranchWithoutRootItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="57" end="695" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController" name="getBranchMenu" signature="()Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="227" end="260" startBytecode="0" endBytecode="110" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="italiciseBranchItem" register="10" pc="155" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="248" end="248" startBytecode="153" endBytecode="153" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="italiciseBranchItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="57" end="695" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController" name="getBranchMenu" signature="()Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="227" end="260" startBytecode="0" endBytecode="110" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="nonBoldifyBranchItem" register="8" pc="131" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="243" end="243" startBytecode="129" endBytecode="129" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="nonBoldifyBranchItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="57" end="695" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController" name="getBranchMenu" signature="()Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="227" end="260" startBytecode="0" endBytecode="110" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="nonItaliciseBranchItem" register="11" pc="165" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="249" end="249" startBytecode="163" endBytecode="163" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="nonItaliciseBranchItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="57" end="695" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController" name="getBranchMenu" signature="()Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="227" end="260" startBytecode="0" endBytecode="110" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="toggleBoldBranchItem" register="9" pc="141" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="244" end="244" startBytecode="139" endBytecode="139" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="toggleBoldBranchItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="57" end="695" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController" name="getBranchMenu" signature="()Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="227" end="260" startBytecode="0" endBytecode="110" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="toggleItalicBranchItem" register="12" pc="175" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController" start="250" end="250" startBytecode="173" endBytecode="173" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="toggleItalicBranchItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController$ExportBranchAction">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController$ExportBranchAction" start="407" end="479" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController$ExportBranchAction" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController$ExportBranchAction" start="411" end="479" startBytecode="0" endBytecode="188" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="link" register="6" pc="235" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController$ExportBranchAction" start="446" end="446" startBytecode="233" endBytecode="233" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="link"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController$ImportLinkedBranchWithoutRootAction">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController$ImportLinkedBranchWithoutRootAction" start="528" end="547" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController$ImportLinkedBranchWithoutRootAction" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController$ImportLinkedBranchWithoutRootAction" start="532" end="547" startBytecode="0" endBytecode="294" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="enum" register="5" pc="94" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController$ImportLinkedBranchWithoutRootAction" start="542" end="542" startBytecode="94" endBytecode="94" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController$IncreaseBranchFontAction">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController$IncreaseBranchFontAction" start="743" end="757" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController$IncreaseBranchFontAction" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController$IncreaseBranchFontAction" start="747" end="757" startBytecode="0" endBytecode="12" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="n" register="2" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController$IncreaseBranchFontAction" start="747" end="747" startBytecode="7" endBytecode="7" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="n"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapController$MindMapFilter">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController$MindMapFilter" start="887" end="902" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapController$MindMapFilter" name="accept" signature="(Ljava/io/File;)Z" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapController$MindMapFilter" start="889" end="898" startBytecode="0" endBytecode="121" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java"/>
+    </Method>
+    <LocalVariable name="extension" register="2" pc="17" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="freemind.main.Tools" name="getExtension" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="true" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="freemind.main.Tools" start="103" end="110" startBytecode="0" endBytecode="127" sourcefile="Tools.java" sourcepath="freemind/main/Tools.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapController$MindMapFilter" start="891" end="891" startBytecode="18" endBytecode="18" sourcefile="MindMapController.java" sourcepath="freemind/modes/mindmapmode/MindMapController.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="freemind.modes.mindmapmode.MindMapMapModel">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapMapModel" start="61" end="434" sourcefile="MindMapMapModel.java" sourcepath="freemind/modes/mindmapmode/MindMapMapModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapMapModel" name="loadTree" signature="(Ljava/io/File;)Lfreemind/modes/mindmapmode/MindMapNodeModel;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapMapModel" start="364" end="404" startBytecode="0" endBytecode="225" sourcefile="MindMapMapModel.java" sourcepath="freemind/modes/mindmapmode/MindMapMapModel.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapMapModel" start="392" end="392" startBytecode="23" endBytecode="23" sourcefile="MindMapMapModel.java" sourcepath="freemind/modes/mindmapmode/MindMapMapModel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="freemind.modes.mindmapmode.MindMapMapModel">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapMapModel" start="61" end="434" sourcefile="MindMapMapModel.java" sourcepath="freemind/modes/mindmapmode/MindMapMapModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapMapModel" name="save" signature="(Ljava/io/File;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapMapModel" start="311" end="350" startBytecode="0" endBytecode="216" sourcefile="MindMapMapModel.java" sourcepath="freemind/modes/mindmapmode/MindMapMapModel.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapMapModel" start="338" end="338" startBytecode="54" endBytecode="54" sourcefile="MindMapMapModel.java" sourcepath="freemind/modes/mindmapmode/MindMapMapModel.java"/>
+  </BugInstance>
+  <BugInstance type="NP_TOSTRING_COULD_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="freemind.modes.mindmapmode.MindMapMapModel">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapMapModel" start="61" end="434" sourcefile="MindMapMapModel.java" sourcepath="freemind/modes/mindmapmode/MindMapMapModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapMapModel" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapMapModel" start="302" end="305" startBytecode="0" endBytecode="66" sourcefile="MindMapMapModel.java" sourcepath="freemind/modes/mindmapmode/MindMapMapModel.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapMapModel" start="303" end="303" startBytecode="8" endBytecode="8" sourcefile="MindMapMapModel.java" sourcepath="freemind/modes/mindmapmode/MindMapMapModel.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE">
+    <Class classname="freemind.modes.mindmapmode.MindMapMode">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapMode" start="38" end="93" sourcefile="MindMapMode.java" sourcepath="freemind/modes/mindmapmode/MindMapMode.java"/>
+    </Class>
+    <Field classname="freemind.modes.mindmapmode.MindMapMode" name="MODENAME" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapMode" sourcefile="MindMapMode.java" sourcepath="freemind/modes/mindmapmode/MindMapMode.java"/>
+    </Field>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapMode" start="38" end="38" startBytecode="7" endBytecode="7" sourcefile="MindMapMode.java" sourcepath="freemind/modes/mindmapmode/MindMapMode.java"/>
+  </BugInstance>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS">
+    <Class classname="freemind.modes.mindmapmode.MindMapNodeModel">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapNodeModel" start="51" end="356" sourcefile="MindMapNodeModel.java" sourcepath="freemind/modes/mindmapmode/MindMapNodeModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapNodeModel" name="save" signature="()Lfreemind/main/XMLElement;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapNodeModel" start="181" end="238" startBytecode="0" endBytecode="519" sourcefile="MindMapNodeModel.java" sourcepath="freemind/modes/mindmapmode/MindMapNodeModel.java"/>
+    </Method>
+    <Field classname="freemind.modes.NodeAdapter" name="font" signature="Ljava/awt/Font;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="freemind.modes.NodeAdapter" sourcefile="NodeAdapter.java" sourcepath="freemind/modes/NodeAdapter.java"/>
+    </Field>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapNodeModel" start="211" end="211" startBytecode="124" endBytecode="124" sourcefile="MindMapNodeModel.java" sourcepath="freemind/modes/mindmapmode/MindMapNodeModel.java" role="SOURCE_LINE_DEREF"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="freemind.modes.mindmapmode.MindMapNodeModel">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapNodeModel" start="51" end="356" sourcefile="MindMapNodeModel.java" sourcepath="freemind/modes/mindmapmode/MindMapNodeModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.mindmapmode.MindMapNodeModel" name="save" signature="()Lfreemind/main/XMLElement;" isStatic="false">
+      <SourceLine classname="freemind.modes.mindmapmode.MindMapNodeModel" start="181" end="238" startBytecode="0" endBytecode="519" sourcefile="MindMapNodeModel.java" sourcepath="freemind/modes/mindmapmode/MindMapNodeModel.java"/>
+    </Method>
+    <Field classname="freemind.modes.NodeAdapter" name="font" signature="Ljava/awt/Font;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="freemind.modes.NodeAdapter" sourcefile="NodeAdapter.java" sourcepath="freemind/modes/NodeAdapter.java"/>
+    </Field>
+    <SourceLine classname="freemind.modes.mindmapmode.MindMapNodeModel" start="215" end="215" startBytecode="169" endBytecode="169" sourcefile="MindMapNodeModel.java" sourcepath="freemind/modes/mindmapmode/MindMapNodeModel.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.modes.schememode.SchemeController$EvaluateAction">
+      <SourceLine classname="freemind.modes.schememode.SchemeController$EvaluateAction" start="107" end="119" sourcefile="SchemeController.java" sourcepath="freemind/modes/schememode/SchemeController.java"/>
+    </Class>
+    <Method classname="freemind.modes.schememode.SchemeController$EvaluateAction" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.schememode.SchemeController$EvaluateAction" start="111" end="119" startBytecode="0" endBytecode="23" sourcefile="SchemeController.java" sourcepath="freemind/modes/schememode/SchemeController.java"/>
+    </Method>
+    <LocalVariable name="code" register="3" pc="35" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.modes.schememode.SchemeController$EvaluateAction" start="113" end="113" startBytecode="34" endBytecode="34" sourcefile="SchemeController.java" sourcepath="freemind/modes/schememode/SchemeController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="code"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="freemind.modes.schememode.SchemeMapModel">
+      <SourceLine classname="freemind.modes.schememode.SchemeMapModel" start="46" end="147" sourcefile="SchemeMapModel.java" sourcepath="freemind/modes/schememode/SchemeMapModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.schememode.SchemeMapModel" name="load" signature="(Ljava/io/File;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.schememode.SchemeMapModel" start="72" end="81" startBytecode="0" endBytecode="138" sourcefile="SchemeMapModel.java" sourcepath="freemind/modes/schememode/SchemeMapModel.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.schememode.SchemeMapModel" start="78" end="78" startBytecode="38" endBytecode="38" sourcefile="SchemeMapModel.java" sourcepath="freemind/modes/schememode/SchemeMapModel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="freemind.modes.schememode.SchemeMapModel">
+      <SourceLine classname="freemind.modes.schememode.SchemeMapModel" start="46" end="147" sourcefile="SchemeMapModel.java" sourcepath="freemind/modes/schememode/SchemeMapModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.schememode.SchemeMapModel" name="save" signature="(Ljava/io/File;)V" isStatic="false">
+      <SourceLine classname="freemind.modes.schememode.SchemeMapModel" start="55" end="69" startBytecode="0" endBytecode="169" sourcefile="SchemeMapModel.java" sourcepath="freemind/modes/schememode/SchemeMapModel.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.schememode.SchemeMapModel" start="59" end="59" startBytecode="26" endBytecode="26" sourcefile="SchemeMapModel.java" sourcepath="freemind/modes/schememode/SchemeMapModel.java"/>
+  </BugInstance>
+  <BugInstance type="NP_TOSTRING_COULD_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="freemind.modes.schememode.SchemeMapModel">
+      <SourceLine classname="freemind.modes.schememode.SchemeMapModel" start="46" end="147" sourcefile="SchemeMapModel.java" sourcepath="freemind/modes/schememode/SchemeMapModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.schememode.SchemeMapModel" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemind.modes.schememode.SchemeMapModel" start="144" end="147" startBytecode="0" endBytecode="66" sourcefile="SchemeMapModel.java" sourcepath="freemind/modes/schememode/SchemeMapModel.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.schememode.SchemeMapModel" start="145" end="145" startBytecode="8" endBytecode="8" sourcefile="SchemeMapModel.java" sourcepath="freemind/modes/schememode/SchemeMapModel.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="freemind.modes.schememode.SchemeMode">
+      <SourceLine classname="freemind.modes.schememode.SchemeMode" start="43" end="116" sourcefile="SchemeMode.java" sourcepath="freemind/modes/schememode/SchemeMode.java"/>
+    </Class>
+    <Method classname="freemind.modes.schememode.SchemeMode" name="activate" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.modes.schememode.SchemeMode" start="64" end="70" startBytecode="0" endBytecode="91" sourcefile="SchemeMode.java" sourcepath="freemind/modes/schememode/SchemeMode.java"/>
+    </Method>
+    <Field classname="freemind.modes.schememode.SchemeMode" name="isRunning" signature="Z" isStatic="true">
+      <SourceLine classname="freemind.modes.schememode.SchemeMode" sourcefile="SchemeMode.java" sourcepath="freemind/modes/schememode/SchemeMode.java"/>
+    </Field>
+    <SourceLine classname="freemind.modes.schememode.SchemeMode" start="66" end="66" startBytecode="16" endBytecode="16" sourcefile="SchemeMode.java" sourcepath="freemind/modes/schememode/SchemeMode.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="1" rank="9" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="freemind.modes.schememode.SchemeNodeModel">
+      <SourceLine classname="freemind.modes.schememode.SchemeNodeModel" start="44" end="108" sourcefile="SchemeNodeModel.java" sourcepath="freemind/modes/schememode/SchemeNodeModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.schememode.SchemeNodeModel" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemind.modes.schememode.SchemeNodeModel" start="50" end="57" startBytecode="0" endBytecode="14" sourcefile="SchemeNodeModel.java" sourcepath="freemind/modes/schememode/SchemeNodeModel.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="no text" role="STRING_CONSTANT"/>
+    <LocalVariable name="ret" register="1" pc="16" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="freemind.modes.schememode.SchemeNodeModel" start="54" end="54" startBytecode="18" endBytecode="18" sourcefile="SchemeNodeModel.java" sourcepath="freemind/modes/schememode/SchemeNodeModel.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.DYNAMIC_AND_UNKNOWN" value="true"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="freemind.modes.schememode.SchemeNodeModel">
+      <SourceLine classname="freemind.modes.schememode.SchemeNodeModel" start="44" end="108" sourcefile="SchemeNodeModel.java" sourcepath="freemind/modes/schememode/SchemeNodeModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.schememode.SchemeNodeModel" name="getCodeClassicStyle" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemind.modes.schememode.SchemeNodeModel" start="87" end="108" startBytecode="0" endBytecode="302" sourcefile="SchemeNodeModel.java" sourcepath="freemind/modes/schememode/SchemeNodeModel.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.schememode.SchemeNodeModel" start="92" end="92" startBytecode="22" endBytecode="22" sourcefile="SchemeNodeModel.java" sourcepath="freemind/modes/schememode/SchemeNodeModel.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="freemind.modes.schememode.SchemeNodeModel">
+      <SourceLine classname="freemind.modes.schememode.SchemeNodeModel" start="44" end="108" sourcefile="SchemeNodeModel.java" sourcepath="freemind/modes/schememode/SchemeNodeModel.java"/>
+    </Class>
+    <Method classname="freemind.modes.schememode.SchemeNodeModel" name="getCodeMathStyle" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemind.modes.schememode.SchemeNodeModel" start="62" end="83" startBytecode="0" endBytecode="325" sourcefile="SchemeNodeModel.java" sourcepath="freemind/modes/schememode/SchemeNodeModel.java"/>
+    </Method>
+    <SourceLine classname="freemind.modes.schememode.SchemeNodeModel" start="67" end="67" startBytecode="22" endBytecode="22" sourcefile="SchemeNodeModel.java" sourcepath="freemind/modes/schememode/SchemeNodeModel.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="freemind.view.MapModule">
+      <SourceLine classname="freemind.view.MapModule" start="36" end="87" sourcefile="MapModule.java" sourcepath="freemind/view/MapModule.java"/>
+    </Class>
+    <Method classname="freemind.view.MapModule" name="rename" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.view.MapModule" start="57" end="63" startBytecode="0" endBytecode="129" sourcefile="MapModule.java" sourcepath="freemind/view/MapModule.java"/>
+    </Method>
+    <Method classname="java.lang.Object" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.Object" start="236" end="236" startBytecode="0" endBytecode="59" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <SourceLine classname="freemind.view.MapModule" start="57" end="57" startBytecode="7" endBytecode="7" sourcefile="MapModule.java" sourcepath="freemind/view/MapModule.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="freemind.view.MapModule">
+      <SourceLine classname="freemind.view.MapModule" start="36" end="87" sourcefile="MapModule.java" sourcepath="freemind/view/MapModule.java"/>
+    </Class>
+    <Method classname="freemind.view.MapModule" name="rename" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.view.MapModule" start="57" end="63" startBytecode="0" endBytecode="129" sourcefile="MapModule.java" sourcepath="freemind/view/MapModule.java"/>
+    </Method>
+    <Field classname="freemind.view.MapModule" name="unnamedMapsNumber" signature="I" isStatic="true">
+      <SourceLine classname="freemind.view.MapModule" sourcefile="MapModule.java" sourcepath="freemind/view/MapModule.java"/>
+    </Field>
+    <SourceLine classname="freemind.view.MapModule" start="60" end="60" startBytecode="63" endBytecode="63" sourcefile="MapModule.java" sourcepath="freemind/view/MapModule.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="freemind.view.mindmapview.EdgeView">
+      <SourceLine classname="freemind.view.mindmapview.EdgeView" start="37" end="112" sourcefile="EdgeView.java" sourcepath="freemind/view/mindmapview/EdgeView.java"/>
+    </Class>
+    <Field classname="freemind.view.mindmapview.EdgeView" name="i" signature="I" isStatic="true">
+      <SourceLine classname="freemind.view.mindmapview.EdgeView" sourcefile="EdgeView.java" sourcepath="freemind/view/mindmapview/EdgeView.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="freemind.view.mindmapview.NodeView">
+      <SourceLine classname="freemind.view.mindmapview.NodeView" start="50" end="361" sourcefile="NodeView.java" sourcepath="freemind/view/mindmapview/NodeView.java"/>
+    </Class>
+    <Method classname="freemind.view.mindmapview.NodeView" name="update" signature="()V" isStatic="false">
+      <SourceLine classname="freemind.view.mindmapview.NodeView" start="327" end="353" startBytecode="0" endBytecode="54" sourcefile="NodeView.java" sourcepath="freemind/view/mindmapview/NodeView.java"/>
+    </Method>
+    <LocalVariable name="style" register="1" pc="65" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemind.view.mindmapview.NodeView" start="332" end="332" startBytecode="64" endBytecode="64" sourcefile="NodeView.java" sourcepath="freemind/view/mindmapview/NodeView.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="style"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 9 Mar 2017 13:30:38 -0500" total_classes="146" referenced_classes="598" total_bugs="70" total_size="5602" num_packages="9" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="36.98" clock_seconds="108.55" peak_mbytes="316.48" alloc_mbytes="683.00" gc_seconds="3.97" priority_2="57" priority_1="13">
+    <PackageStats package="freemind.controller" total_bugs="9" total_types="32" total_size="930" priority_2="9">
+      <ClassStats class="freemind.controller.ColorSwatch" sourceFile="ColorSwatch.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller" sourceFile="Controller.java" interface="false" size="207" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.controller.Controller$1" sourceFile="Controller.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$AboutAction" sourceFile="Controller.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$BackgroundAction" sourceFile="Controller.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$BackgroundSwatch" sourceFile="Controller.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$CloseAction" sourceFile="Controller.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$DocumentationAction" sourceFile="Controller.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$HistoryManager" sourceFile="Controller.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$HistoryNextMapAction" sourceFile="Controller.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$HistoryPreviousMapAction" sourceFile="Controller.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$LicenseAction" sourceFile="Controller.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$MapModuleManager" sourceFile="Controller.java" interface="false" size="125" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$MoveToRootAction" sourceFile="Controller.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$NavigationNextMapAction" sourceFile="Controller.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$NavigationPreviousMapAction" sourceFile="Controller.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$PageAction" sourceFile="Controller.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$PrintAction" sourceFile="Controller.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="freemind.controller.Controller$QuitAction" sourceFile="Controller.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.controller.LastOpenedList" sourceFile="LastOpenedList.java" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.controller.MainToolBar" sourceFile="MainToolBar.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="freemind.controller.MainToolBar$1" sourceFile="MainToolBar.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.controller.MenuBar" sourceFile="MenuBar.java" interface="false" size="101" bugs="6" priority_2="6"/>
+      <ClassStats class="freemind.controller.MenuBar$1" sourceFile="MenuBar.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="freemind.controller.MenuBar$LastOpenedActionListener" sourceFile="MenuBar.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="freemind.controller.MenuBar$MapsMenuActionListener" sourceFile="MenuBar.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="freemind.controller.MenuBar$ModesMenuActionListener" sourceFile="MenuBar.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="freemind.controller.NodeDragListener" sourceFile="NodeDragListener.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="freemind.controller.NodeDragListener$1" sourceFile="NodeDragListener.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="freemind.controller.NodeDropListener" sourceFile="NodeDropListener.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="freemind.controller.NodeKeyListener" sourceFile="NodeKeyListener.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="freemind.controller.NodeMouseListener" sourceFile="NodeMouseListener.java" interface="false" size="51" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="freemind.main" total_bugs="15" total_types="7" total_size="911" priority_2="13" priority_1="2">
+      <ClassStats class="freemind.main.FreeMind" sourceFile="FreeMind.java" interface="false" size="132" bugs="4" priority_2="4"/>
+      <ClassStats class="freemind.main.FreeMind$1" sourceFile="FreeMind.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.main.FreeMindApplet" sourceFile="FreeMindApplet.java" interface="false" size="85" bugs="6" priority_2="5" priority_1="1"/>
+      <ClassStats class="freemind.main.FreeMindMain" sourceFile="FreeMindMain.java" interface="true" size="17" bugs="0"/>
+      <ClassStats class="freemind.main.Tools" sourceFile="Tools.java" interface="false" size="88" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="freemind.main.XMLElement" sourceFile="XMLElement.java" interface="false" size="566" bugs="3" priority_2="3"/>
+      <ClassStats class="freemind.main.XMLParseException" sourceFile="XMLParseException.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="freemind.modes" total_bugs="5" total_types="31" total_size="1154" priority_2="2" priority_1="3">
+      <ClassStats class="freemind.modes.ControllerAdapter" sourceFile="ControllerAdapter.java" interface="false" size="274" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$1" sourceFile="ControllerAdapter.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$2" sourceFile="ControllerAdapter.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$3" sourceFile="ControllerAdapter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$AddNewAction" sourceFile="ControllerAdapter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$CutAction" sourceFile="ControllerAdapter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$EditAction" sourceFile="ControllerAdapter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$FileOpener" sourceFile="ControllerAdapter.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$FollowLinkAction" sourceFile="ControllerAdapter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$NewMapAction" sourceFile="ControllerAdapter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$NodeDownAction" sourceFile="ControllerAdapter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$NodeUpAction" sourceFile="ControllerAdapter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$OpenAction" sourceFile="ControllerAdapter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$PasteAction" sourceFile="ControllerAdapter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$RemoveAction" sourceFile="ControllerAdapter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$SaveAction" sourceFile="ControllerAdapter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$SaveAsAction" sourceFile="ControllerAdapter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$SetLinkByFileChooserAction" sourceFile="ControllerAdapter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$SetLinkByTextFieldAction" sourceFile="ControllerAdapter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$ToggleFoldedAction" sourceFile="ControllerAdapter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.ControllerAdapter$toggleChildrenFoldedAction" sourceFile="ControllerAdapter.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.EdgeAdapter" sourceFile="EdgeAdapter.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="freemind.modes.MapAdapter" sourceFile="MapAdapter.java" interface="false" size="200" bugs="0"/>
+      <ClassStats class="freemind.modes.MindMap" sourceFile="MindMap.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.MindMapEdge" sourceFile="MindMapEdge.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="freemind.modes.MindMapNode" sourceFile="MindMapNode.java" interface="true" size="18" bugs="0"/>
+      <ClassStats class="freemind.modes.Mode" sourceFile="Mode.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.ModeController" sourceFile="ModeController.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.ModesCreator" sourceFile="ModesCreator.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="freemind.modes.NodeAdapter" sourceFile="NodeAdapter.java" interface="false" size="166" bugs="0"/>
+      <ClassStats class="freemind.modes.Pattern" sourceFile="Pattern.java" interface="false" size="114" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="freemind.modes.browsemode" total_bugs="6" total_types="9" total_size="276" priority_2="5" priority_1="1">
+      <ClassStats class="freemind.modes.browsemode.BrowseController" sourceFile="BrowseController.java" interface="false" size="88" bugs="2" priority_2="2"/>
+      <ClassStats class="freemind.modes.browsemode.BrowseController$FollowLinkAction" sourceFile="BrowseController.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.browsemode.BrowseEdgeModel" sourceFile="BrowseEdgeModel.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="freemind.modes.browsemode.BrowseMapModel" sourceFile="BrowseMapModel.java" interface="false" size="43" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="freemind.modes.browsemode.BrowseMode" sourceFile="BrowseMode.java" interface="false" size="37" bugs="2" priority_2="2"/>
+      <ClassStats class="freemind.modes.browsemode.BrowseNodeModel" sourceFile="BrowseNodeModel.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="freemind.modes.browsemode.BrowsePopupMenu" sourceFile="BrowsePopupMenu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="freemind.modes.browsemode.BrowseToolBar" sourceFile="BrowseToolBar.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="freemind.modes.browsemode.BrowseToolBar$1" sourceFile="BrowseToolBar.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="freemind.modes.filemode" total_bugs="4" total_types="8" total_size="155" priority_2="4">
+      <ClassStats class="freemind.modes.filemode.FileController" sourceFile="FileController.java" interface="false" size="23" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.filemode.FileController$CenterAction" sourceFile="FileController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.filemode.FileEdgeModel" sourceFile="FileEdgeModel.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="freemind.modes.filemode.FileMapModel" sourceFile="FileMapModel.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="freemind.modes.filemode.FileMode" sourceFile="FileMode.java" interface="false" size="40" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.filemode.FileNodeModel" sourceFile="FileNodeModel.java" interface="false" size="42" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.filemode.FilePopupMenu" sourceFile="FilePopupMenu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="freemind.modes.filemode.FileToolBar" sourceFile="FileToolBar.java" interface="false" size="9" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="freemind.modes.mindmapmode" total_bugs="19" total_types="37" total_size="1057" priority_2="16" priority_1="3">
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController" sourceFile="MindMapController.java" interface="false" size="277" bugs="9" priority_2="9"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$1" sourceFile="MindMapController.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ApplyPatternAction" sourceFile="MindMapController.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$BoldAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$BoldifyBranchAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$BubbleAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$DecreaseBranchFontAction" sourceFile="MindMapController.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$DecreaseNodeFontAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$EdgeColorAction" sourceFile="MindMapController.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$EdgeStyleAction" sourceFile="MindMapController.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$EdgeWidthAction" sourceFile="MindMapController.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ExportBranchAction" sourceFile="MindMapController.java" interface="false" size="43" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$FollowLinkAction" sourceFile="MindMapController.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ForkAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ImportBranchAction" sourceFile="MindMapController.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ImportLinkedBranchAction" sourceFile="MindMapController.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ImportLinkedBranchWithoutRootAction" sourceFile="MindMapController.java" interface="false" size="18" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$IncreaseBranchFontAction" sourceFile="MindMapController.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$IncreaseNodeFontAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ItalicAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ItaliciseBranchAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$MindMapFilter" sourceFile="MindMapController.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$NodeColorAction" sourceFile="MindMapController.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$NonBoldifyBranchAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$NonItaliciseBranchAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$NormalFontAction" sourceFile="MindMapController.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ToggleBoldBranchAction" sourceFile="MindMapController.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$ToggleItalicBranchAction" sourceFile="MindMapController.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapController$UnderlineAction" sourceFile="MindMapController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapEdgeModel" sourceFile="MindMapEdgeModel.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapMapModel" sourceFile="MindMapMapModel.java" interface="false" size="204" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapMode" sourceFile="MindMapMode.java" interface="false" size="35" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapNodeModel" sourceFile="MindMapNodeModel.java" interface="false" size="82" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapPopupMenu" sourceFile="MindMapPopupMenu.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapToolBar" sourceFile="MindMapToolBar.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapToolBar$1" sourceFile="MindMapToolBar.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="freemind.modes.mindmapmode.MindMapToolBar$2" sourceFile="MindMapToolBar.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="freemind.modes.schememode" total_bugs="8" total_types="8" total_size="232" priority_2="4" priority_1="4">
+      <ClassStats class="freemind.modes.schememode.SchemeController" sourceFile="SchemeController.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="freemind.modes.schememode.SchemeController$EvaluateAction" sourceFile="SchemeController.java" interface="false" size="13" bugs="1" priority_1="1"/>
+      <ClassStats class="freemind.modes.schememode.SchemeEdgeModel" sourceFile="SchemeEdgeModel.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="freemind.modes.schememode.SchemeMapModel" sourceFile="SchemeMapModel.java" interface="false" size="51" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="freemind.modes.schememode.SchemeMode" sourceFile="SchemeMode.java" interface="false" size="56" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.modes.schememode.SchemeNodeModel" sourceFile="SchemeNodeModel.java" interface="false" size="45" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="freemind.modes.schememode.SchemePopupMenu" sourceFile="SchemePopupMenu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="freemind.modes.schememode.SchemeToolBar" sourceFile="SchemeToolBar.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="freemind.view" total_bugs="2" total_types="1" total_size="38" priority_2="2">
+      <ClassStats class="freemind.view.MapModule" sourceFile="MapModule.java" interface="false" size="38" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="freemind.view.mindmapview" total_bugs="2" total_types="13" total_size="849" priority_2="2">
+      <ClassStats class="freemind.view.mindmapview.BezierEdgeView" sourceFile="BezierEdgeView.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.BubbleNodeView" sourceFile="BubbleNodeView.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.EdgeView" sourceFile="EdgeView.java" interface="false" size="51" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.view.mindmapview.ForkNodeView" sourceFile="ForkNodeView.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.LinearEdgeView" sourceFile="LinearEdgeView.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.MapView" sourceFile="MapView.java" interface="false" size="197" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.MapView$1" sourceFile="MapView.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.MapView$MapModelHandler" sourceFile="MapView.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.MindMapLayout" sourceFile="MindMapLayout.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.NodeView" sourceFile="NodeView.java" interface="false" size="175" bugs="1" priority_2="1"/>
+      <ClassStats class="freemind.view.mindmapview.RootNodeView" sourceFile="RootNodeView.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.SharpBezierEdgeView" sourceFile="SharpBezierEdgeView.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="freemind.view.mindmapview.SharpLinearEdgeView" sourceFile="SharpLinearEdgeView.java" interface="false" size="22" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="8778" invocations="2024" avgMicrosecondsPerInvocation="4337" maxMicrosecondsPerInvocation="300464" standardDeviationMircosecondsPerInvocation="15994"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="6746" invocations="598" avgMicrosecondsPerInvocation="11281" maxMicrosecondsPerInvocation="312148" standardDeviationMircosecondsPerInvocation="30096"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="5869" invocations="598" avgMicrosecondsPerInvocation="9814" maxMicrosecondsPerInvocation="287451" standardDeviationMircosecondsPerInvocation="27394"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="5281" invocations="1950" avgMicrosecondsPerInvocation="2708" maxMicrosecondsPerInvocation="410726" standardDeviationMircosecondsPerInvocation="15135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="4308" invocations="912" avgMicrosecondsPerInvocation="4723" maxMicrosecondsPerInvocation="138120" standardDeviationMircosecondsPerInvocation="14596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="4123" invocations="943" avgMicrosecondsPerInvocation="4372" maxMicrosecondsPerInvocation="298409" standardDeviationMircosecondsPerInvocation="16342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3693" invocations="924" avgMicrosecondsPerInvocation="3997" maxMicrosecondsPerInvocation="519274" standardDeviationMircosecondsPerInvocation="21581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3656" invocations="912" avgMicrosecondsPerInvocation="4009" maxMicrosecondsPerInvocation="104307" standardDeviationMircosecondsPerInvocation="13581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3592" invocations="912" avgMicrosecondsPerInvocation="3939" maxMicrosecondsPerInvocation="117493" standardDeviationMircosecondsPerInvocation="13651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="3529" invocations="984" avgMicrosecondsPerInvocation="3586" maxMicrosecondsPerInvocation="2093291" standardDeviationMircosecondsPerInvocation="68981"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2876" invocations="912" avgMicrosecondsPerInvocation="3154" maxMicrosecondsPerInvocation="174792" standardDeviationMircosecondsPerInvocation="12435"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1919" invocations="678" avgMicrosecondsPerInvocation="2831" maxMicrosecondsPerInvocation="248013" standardDeviationMircosecondsPerInvocation="14210"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1889" invocations="719" avgMicrosecondsPerInvocation="2628" maxMicrosecondsPerInvocation="80494" standardDeviationMircosecondsPerInvocation="10407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="1839" invocations="598" avgMicrosecondsPerInvocation="3076" maxMicrosecondsPerInvocation="98628" standardDeviationMircosecondsPerInvocation="11503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="1827" invocations="1975" avgMicrosecondsPerInvocation="925" maxMicrosecondsPerInvocation="333684" standardDeviationMircosecondsPerInvocation="9315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="1607" invocations="598" avgMicrosecondsPerInvocation="2688" maxMicrosecondsPerInvocation="94883" standardDeviationMircosecondsPerInvocation="10541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1272" invocations="912" avgMicrosecondsPerInvocation="1395" maxMicrosecondsPerInvocation="176721" standardDeviationMircosecondsPerInvocation="9674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="1214" invocations="598" avgMicrosecondsPerInvocation="2031" maxMicrosecondsPerInvocation="194625" standardDeviationMircosecondsPerInvocation="13764"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="1102" invocations="598" avgMicrosecondsPerInvocation="1843" maxMicrosecondsPerInvocation="76250" standardDeviationMircosecondsPerInvocation="8426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1072" invocations="146" avgMicrosecondsPerInvocation="7348" maxMicrosecondsPerInvocation="75795" standardDeviationMircosecondsPerInvocation="17467"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="1041" invocations="598" avgMicrosecondsPerInvocation="1740" maxMicrosecondsPerInvocation="75171" standardDeviationMircosecondsPerInvocation="8912"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="951" invocations="146" avgMicrosecondsPerInvocation="6517" maxMicrosecondsPerInvocation="127844" standardDeviationMircosecondsPerInvocation="20227"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="910" invocations="2028" avgMicrosecondsPerInvocation="449" maxMicrosecondsPerInvocation="60985" standardDeviationMircosecondsPerInvocation="4083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="887" invocations="146" avgMicrosecondsPerInvocation="6081" maxMicrosecondsPerInvocation="87884" standardDeviationMircosecondsPerInvocation="16220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="827" invocations="598" avgMicrosecondsPerInvocation="1383" maxMicrosecondsPerInvocation="72064" standardDeviationMircosecondsPerInvocation="7827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="820" invocations="146" avgMicrosecondsPerInvocation="5620" maxMicrosecondsPerInvocation="197964" standardDeviationMircosecondsPerInvocation="21110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="792" invocations="170" avgMicrosecondsPerInvocation="4659" maxMicrosecondsPerInvocation="88359" standardDeviationMircosecondsPerInvocation="15196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="765" invocations="598" avgMicrosecondsPerInvocation="1280" maxMicrosecondsPerInvocation="100966" standardDeviationMircosecondsPerInvocation="7655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="755" invocations="598" avgMicrosecondsPerInvocation="1262" maxMicrosecondsPerInvocation="101004" standardDeviationMircosecondsPerInvocation="7768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="732" invocations="598" avgMicrosecondsPerInvocation="1225" maxMicrosecondsPerInvocation="69515" standardDeviationMircosecondsPerInvocation="6952"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="720" invocations="878" avgMicrosecondsPerInvocation="821" maxMicrosecondsPerInvocation="76169" standardDeviationMircosecondsPerInvocation="5928"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="664" invocations="146" avgMicrosecondsPerInvocation="4548" maxMicrosecondsPerInvocation="165935" standardDeviationMircosecondsPerInvocation="16994"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+

@@ -1,0 +1,110 @@
+<metrics>
+
+	<class>
+		<name>Installer$1</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>20</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="public void stateChanged(javax.swing.event.ChangeEvent arg0)">1</method>
+			<method name="void _init_(javax.swing.JButton arg0, javax.swing.JRadioButton arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>Installer$3</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>18</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.5</amc>
+		<cc>
+			<method name="void _init_(javax.swing.JFrame arg0)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>Installer$2</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>25</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.0</amc>
+		<cc>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent arg0)">1</method>
+			<method name="void _init_(Installer arg0, javax.swing.JFrame arg1, String arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>Installer</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>54</cbo>
+		<rfc>125</rfc>
+		<lcom>16</lcom>
+		<ca>2</ca>
+		<ce>54</ce>
+		<npm>5</npm>
+		<lcom3>0.8258928571428571</lcom3>
+		<loc>914</loc>
+		<dam>0.09375</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.42857142857142855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>109.25</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="public static String oldReplace(String arg0, String arg1, String arg2)">3</method>
+			<method name="public void cat(String arg0)">1</method>
+			<method name="public void extract(javax.swing.JFrame arg0, String arg1, String arg2)">15</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static void main(String[] arg0)">16</method>
+			<method name="private String getJarFileName()">1</method>
+			<method name="public void extractUI(javax.swing.JFrame arg0, String arg1)">2</method>
+		</cc>
+	</class>
+
+</metrics>

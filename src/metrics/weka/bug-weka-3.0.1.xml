@@ -1,0 +1,1613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1489086087000" analysisTimestamp="1489171624211" release="">
+  <Project projectName="weka-3.0.1">
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/weka/weka-3.0.1/compressed/weka-3-0-1.jar</Jar>
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/weka/weka-3.0.1/bin/weka-3-0-1/weka.jar</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="SimpleCLI">
+      <SourceLine classname="SimpleCLI" start="191" end="428" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Class>
+    <Method classname="SimpleCLI" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="SimpleCLI" start="422" end="428" startBytecode="0" endBytecode="15" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="SimpleCLI" start="422" end="422" startBytecode="7" endBytecode="7" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="SimpleCLI">
+      <SourceLine classname="SimpleCLI" start="191" end="428" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Class>
+    <Method classname="SimpleCLI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="SimpleCLI" start="191" end="232" startBytecode="0" endBytecode="424" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="SimpleCLI" start="209" end="209" startBytecode="185" endBytecode="185" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    <SourceLine classname="SimpleCLI" start="217" end="217" startBytecode="250" endBytecode="250" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="SimpleCLI">
+      <SourceLine classname="SimpleCLI" start="191" end="428" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Class>
+    <Method classname="SimpleCLI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="SimpleCLI" start="191" end="232" startBytecode="0" endBytecode="424" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="SimpleCLI" start="208" end="208" startBytecode="174" endBytecode="174" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    <SourceLine classname="SimpleCLI" start="216" end="216" startBytecode="239" endBytecode="239" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="SimpleCLI">
+      <SourceLine classname="SimpleCLI" start="191" end="428" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Class>
+    <Method classname="SimpleCLI" name="runCommand" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SimpleCLI" start="242" end="332" startBytecode="0" endBytecode="890" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Method>
+    <SourceLine classname="SimpleCLI" start="292" end="292" startBytecode="325" endBytecode="325" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+  </BugInstance>
+  <BugInstance type="SC_START_IN_CTOR" priority="2" rank="14" abbrev="SC" category="MT_CORRECTNESS">
+    <Class classname="SimpleCLI">
+      <SourceLine classname="SimpleCLI" start="191" end="428" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Class>
+    <Method classname="SimpleCLI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="SimpleCLI" start="191" end="232" startBytecode="0" endBytecode="424" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Method>
+    <Method classname="java.lang.Thread" name="start" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Thread" start="704" end="726" startBytecode="0" endBytecode="222" sourcefile="Thread.java" sourcepath="java/lang/Thread.java"/>
+    </Method>
+    <SourceLine classname="SimpleCLI" start="211" end="211" startBytecode="216" endBytecode="216" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    <SourceLine classname="SimpleCLI" start="219" end="219" startBytecode="281" endBytecode="281" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="SimpleCLI">
+      <SourceLine classname="SimpleCLI" start="191" end="428" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Class>
+    <Field classname="SimpleCLI" name="m_ErrRedirector" signature="Ljava/lang/Thread;" isStatic="false">
+      <SourceLine classname="SimpleCLI" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Field>
+    <Type descriptor="LSimpleCLI$ReaderToTextArea;" role="TYPE_FOUND">
+      <SourceLine classname="SimpleCLI$ReaderToTextArea" start="103" end="120" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Type>
+    <SourceLine classname="SimpleCLI" start="218" end="218" startBytecode="274" endBytecode="274" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="SimpleCLI">
+      <SourceLine classname="SimpleCLI" start="191" end="428" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Class>
+    <Field classname="SimpleCLI" name="m_OutRedirector" signature="Ljava/lang/Thread;" isStatic="false">
+      <SourceLine classname="SimpleCLI" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Field>
+    <Type descriptor="LSimpleCLI$ReaderToTextArea;" role="TYPE_FOUND">
+      <SourceLine classname="SimpleCLI$ReaderToTextArea" start="103" end="120" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Type>
+    <SourceLine classname="SimpleCLI" start="210" end="210" startBytecode="209" endBytecode="209" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="SimpleCLI$ReaderToTextArea">
+      <SourceLine classname="SimpleCLI$ReaderToTextArea" start="103" end="120" sourcefile="SimpleCLI.java" sourcepath="SimpleCLI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.associations.Apriori">
+      <SourceLine classname="weka.associations.Apriori" start="102" end="582" sourcefile="Apriori.java" sourcepath="weka/associations/Apriori.java"/>
+    </Class>
+    <Method classname="weka.associations.Apriori" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.associations.Apriori" start="560" end="557" startBytecode="0" endBytecode="343" sourcefile="Apriori.java" sourcepath="weka/associations/Apriori.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.associations.Apriori" start="578" end="578" startBytecode="162" endBytecode="162" sourcefile="Apriori.java" sourcepath="weka/associations/Apriori.java"/>
+  </BugInstance>
+  <BugInstance type="BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS" priority="2" rank="16" abbrev="BC" category="BAD_PRACTICE">
+    <Class classname="weka.associations.ItemSet">
+      <SourceLine classname="weka.associations.ItemSet" start="34" end="550" sourcefile="ItemSet.java" sourcepath="weka/associations/ItemSet.java"/>
+    </Class>
+    <Method classname="weka.associations.ItemSet" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="weka.associations.ItemSet" start="99" end="104" startBytecode="0" endBytecode="104" sourcefile="ItemSet.java" sourcepath="weka/associations/ItemSet.java"/>
+    </Method>
+    <SourceLine classname="weka.associations.ItemSet" start="99" end="99" startBytecode="6" endBytecode="6" sourcefile="ItemSet.java" sourcepath="weka/associations/ItemSet.java"/>
+  </BugInstance>
+  <BugInstance type="IM_BAD_CHECK_FOR_ODD" priority="2" rank="13" abbrev="IM" category="STYLE">
+    <Class classname="weka.associations.ItemSet">
+      <SourceLine classname="weka.associations.ItemSet" start="34" end="550" sourcefile="ItemSet.java" sourcepath="weka/associations/ItemSet.java"/>
+    </Class>
+    <Method classname="weka.associations.ItemSet" name="generateRulesBruteForce" signature="(DLweka/core/FastVector;IID)[Lweka/core/FastVector;" isStatic="false">
+      <SourceLine classname="weka.associations.ItemSet" start="179" end="247" startBytecode="0" endBytecode="762" sourcefile="ItemSet.java" sourcepath="weka/associations/ItemSet.java"/>
+    </Method>
+    <SourceLine classname="weka.associations.ItemSet" start="195" end="195" startBytecode="74" endBytecode="74" sourcefile="ItemSet.java" sourcepath="weka/associations/ItemSet.java"/>
+    <SourceLine classname="weka.associations.ItemSet" start="212" end="212" startBytecode="204" endBytecode="204" sourcefile="ItemSet.java" sourcepath="weka/associations/ItemSet.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="1" rank="9" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="weka.associations.ItemSet">
+      <SourceLine classname="weka.associations.ItemSet" start="34" end="550" sourcefile="ItemSet.java" sourcepath="weka/associations/ItemSet.java"/>
+    </Class>
+    <Method classname="weka.associations.ItemSet" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="weka.associations.ItemSet" start="99" end="104" startBytecode="0" endBytecode="104" sourcefile="ItemSet.java" sourcepath="weka/associations/ItemSet.java"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.attributeSelection.AttributeSelection">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="80" end="748" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.AttributeSelection" name="SelectAttributes" signature="(Lweka/attributeSelection/ASEvaluation;[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="96" end="121" startBytecode="0" endBytecode="225" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.attributeSelection.AttributeSelection" start="120" end="120" startBytecode="117" endBytecode="117" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.attributeSelection.AttributeSelection">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="80" end="748" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.AttributeSelection" name="SelectAttributes" signature="(Lweka/attributeSelection/ASEvaluation;[Ljava/lang/String;[[ILweka/core/Instances;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="310" end="601" startBytecode="0" endBytecode="2170" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Method>
+    <SourceLine classname="weka.attributeSelection.AttributeSelection" start="401" end="401" startBytecode="347" endBytecode="347" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="weka.attributeSelection.AttributeSelection">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="80" end="748" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.AttributeSelection" name="CrossValidateAttributes" signature="(Lweka/attributeSelection/ASEvaluation;[ILweka/attributeSelection/ASSearch;ZLweka/core/Instances;IID)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="148" end="286" startBytecode="0" endBytecode="1341" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="weka.attributeSelection.AttributeSelection">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="80" end="748" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.AttributeSelection" name="SelectAttributes" signature="(Lweka/attributeSelection/ASEvaluation;[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="96" end="121" startBytecode="0" endBytecode="225" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="weka.attributeSelection.AttributeSelection">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="80" end="748" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.AttributeSelection" name="SelectAttributes" signature="(Lweka/attributeSelection/ASEvaluation;[Ljava/lang/String;[[ILweka/core/Instances;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.attributeSelection.AttributeSelection" start="310" end="601" startBytecode="0" endBytecode="2170" sourcefile="AttributeSelection.java" sourcepath="weka/attributeSelection/AttributeSelection.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="weka.attributeSelection.BestFirst">
+      <SourceLine classname="weka.attributeSelection.BestFirst" start="215" end="657" sourcefile="BestFirst.java" sourcepath="weka/attributeSelection/BestFirst.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.BestFirst" name="search" signature="([ILweka/attributeSelection/ASEvaluation;Lweka/core/Instances;)[I" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.BestFirst" start="431" end="616" startBytecode="0" endBytecode="1271" sourcefile="BestFirst.java" sourcepath="weka/attributeSelection/BestFirst.java"/>
+    </Method>
+    <Field classname="weka.attributeSelection.BestFirst" name="m_starting" signature="[I" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.BestFirst" sourcefile="BestFirst.java" sourcepath="weka/attributeSelection/BestFirst.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="51" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.attributeSelection.BestFirst" start="438" end="438" startBytecode="51" endBytecode="51" sourcefile="BestFirst.java" sourcepath="weka/attributeSelection/BestFirst.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="weka.attributeSelection.CfsSubsetEval">
+      <SourceLine classname="weka.attributeSelection.CfsSubsetEval" start="78" end="985" sourcefile="CfsSubsetEval.java" sourcepath="weka/attributeSelection/CfsSubsetEval.java"/>
+    </Class>
+    <Field classname="weka.attributeSelection.CfsSubsetEval" name="m_corr_matrix" signature="Lweka/core/Matrix;" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.CfsSubsetEval" sourcefile="CfsSubsetEval.java" sourcepath="weka/attributeSelection/CfsSubsetEval.java"/>
+    </Field>
+    <Type descriptor="Lweka/core/Matrix;" role="TYPE_FOUND">
+      <SourceLine classname="weka.core.Matrix" start="43" end="388" sourcefile="Matrix.java" sourcepath="weka/core/Matrix.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="weka.attributeSelection.ForwardSelection">
+      <SourceLine classname="weka.attributeSelection.ForwardSelection" start="60" end="280" sourcefile="ForwardSelection.java" sourcepath="weka/attributeSelection/ForwardSelection.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.ForwardSelection" name="search" signature="([ILweka/attributeSelection/ASEvaluation;Lweka/core/Instances;)[I" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.ForwardSelection" start="112" end="207" startBytecode="0" endBytecode="725" sourcefile="ForwardSelection.java" sourcepath="weka/attributeSelection/ForwardSelection.java"/>
+    </Method>
+    <Field classname="weka.attributeSelection.ForwardSelection" name="m_starting" signature="[I" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.ForwardSelection" sourcefile="ForwardSelection.java" sourcepath="weka/attributeSelection/ForwardSelection.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="122" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.attributeSelection.ForwardSelection" start="138" end="138" startBytecode="122" endBytecode="122" sourcefile="ForwardSelection.java" sourcepath="weka/attributeSelection/ForwardSelection.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="weka.attributeSelection.GainRatioAttributeEval">
+      <SourceLine classname="weka.attributeSelection.GainRatioAttributeEval" start="65" end="361" sourcefile="GainRatioAttributeEval.java" sourcepath="weka/attributeSelection/GainRatioAttributeEval.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.GainRatioAttributeEval" name="evaluateAttribute" signature="(I)D" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.GainRatioAttributeEval" start="192" end="318" startBytecode="0" endBytecode="507" sourcefile="GainRatioAttributeEval.java" sourcepath="weka/attributeSelection/GainRatioAttributeEval.java"/>
+    </Method>
+    <LocalVariable name="?" register="10" pc="35" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.attributeSelection.GainRatioAttributeEval" start="198" end="198" startBytecode="33" endBytecode="33" sourcefile="GainRatioAttributeEval.java" sourcepath="weka/attributeSelection/GainRatioAttributeEval.java"/>
+    <SourceLine classname="weka.attributeSelection.GainRatioAttributeEval" start="199" end="199" startBytecode="39" endBytecode="39" sourcefile="GainRatioAttributeEval.java" sourcepath="weka/attributeSelection/GainRatioAttributeEval.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="weka.attributeSelection.InfoGainAttributeEval">
+      <SourceLine classname="weka.attributeSelection.InfoGainAttributeEval" start="65" end="364" sourcefile="InfoGainAttributeEval.java" sourcepath="weka/attributeSelection/InfoGainAttributeEval.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.InfoGainAttributeEval" name="evaluateAttribute" signature="(I)D" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.InfoGainAttributeEval" start="196" end="322" startBytecode="0" endBytecode="510" sourcefile="InfoGainAttributeEval.java" sourcepath="weka/attributeSelection/InfoGainAttributeEval.java"/>
+    </Method>
+    <LocalVariable name="?" register="10" pc="35" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.attributeSelection.InfoGainAttributeEval" start="202" end="202" startBytecode="33" endBytecode="33" sourcefile="InfoGainAttributeEval.java" sourcepath="weka/attributeSelection/InfoGainAttributeEval.java"/>
+    <SourceLine classname="weka.attributeSelection.InfoGainAttributeEval" start="203" end="203" startBytecode="39" endBytecode="39" sourcefile="InfoGainAttributeEval.java" sourcepath="weka/attributeSelection/InfoGainAttributeEval.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+  </BugInstance>
+  <BugInstance type="BC_IMPOSSIBLE_INSTANCEOF" priority="2" rank="9" abbrev="BC" category="CORRECTNESS">
+    <Class classname="weka.attributeSelection.Ranker">
+      <SourceLine classname="weka.attributeSelection.Ranker" start="52" end="234" sourcefile="Ranker.java" sourcepath="weka/attributeSelection/Ranker.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.Ranker" name="search" signature="([ILweka/attributeSelection/ASEvaluation;Lweka/core/Instances;)[I" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.Ranker" start="75" end="144" startBytecode="0" endBytecode="169" sourcefile="Ranker.java" sourcepath="weka/attributeSelection/Ranker.java"/>
+    </Method>
+    <Type descriptor="Lweka/attributeSelection/AttributeEvaluator;" role="TYPE_FOUND">
+      <SourceLine classname="weka.attributeSelection.AttributeEvaluator" start="30" end="30" sourcefile="AttributeEvaluator.java" sourcepath="weka/attributeSelection/AttributeEvaluator.java"/>
+    </Type>
+    <Type descriptor="Lweka/attributeSelection/UnsupervisedSubsetEvaluator;" role="TYPE_EXPECTED">
+      <SourceLine classname="weka.attributeSelection.UnsupervisedSubsetEvaluator" start="31" end="31" sourcefile="UnsupervisedSubsetEvaluator.java" sourcepath="weka/attributeSelection/UnsupervisedSubsetEvaluator.java"/>
+    </Type>
+    <LocalVariable name="?" register="2" pc="62" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="weka.attributeSelection.Ranker" start="87" end="87" startBytecode="63" endBytecode="63" sourcefile="Ranker.java" sourcepath="weka/attributeSelection/Ranker.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="weka.attributeSelection.SymmetricalUncertAttributeEval">
+      <SourceLine classname="weka.attributeSelection.SymmetricalUncertAttributeEval" start="65" end="360" sourcefile="SymmetricalUncertAttributeEval.java" sourcepath="weka/attributeSelection/SymmetricalUncertAttributeEval.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.SymmetricalUncertAttributeEval" name="evaluateAttribute" signature="(I)D" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.SymmetricalUncertAttributeEval" start="190" end="317" startBytecode="0" endBytecode="507" sourcefile="SymmetricalUncertAttributeEval.java" sourcepath="weka/attributeSelection/SymmetricalUncertAttributeEval.java"/>
+    </Method>
+    <LocalVariable name="?" register="10" pc="35" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.attributeSelection.SymmetricalUncertAttributeEval" start="196" end="196" startBytecode="33" endBytecode="33" sourcefile="SymmetricalUncertAttributeEval.java" sourcepath="weka/attributeSelection/SymmetricalUncertAttributeEval.java"/>
+    <SourceLine classname="weka.attributeSelection.SymmetricalUncertAttributeEval" start="197" end="197" startBytecode="39" endBytecode="39" sourcefile="SymmetricalUncertAttributeEval.java" sourcepath="weka/attributeSelection/SymmetricalUncertAttributeEval.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="weka.attributeSelection.WrapperSubsetEval">
+      <SourceLine classname="weka.attributeSelection.WrapperSubsetEval" start="84" end="471" sourcefile="WrapperSubsetEval.java" sourcepath="weka/attributeSelection/WrapperSubsetEval.java"/>
+    </Class>
+    <Method classname="weka.attributeSelection.WrapperSubsetEval" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.WrapperSubsetEval" start="386" end="412" startBytecode="0" endBytecode="87" sourcefile="WrapperSubsetEval.java" sourcepath="weka/attributeSelection/WrapperSubsetEval.java"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="79" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.attributeSelection.WrapperSubsetEval" start="396" end="396" startBytecode="78" endBytecode="78" sourcefile="WrapperSubsetEval.java" sourcepath="weka/attributeSelection/WrapperSubsetEval.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="weka.attributeSelection.WrapperSubsetEval">
+      <SourceLine classname="weka.attributeSelection.WrapperSubsetEval" start="84" end="471" sourcefile="WrapperSubsetEval.java" sourcepath="weka/attributeSelection/WrapperSubsetEval.java"/>
+    </Class>
+    <Field classname="weka.attributeSelection.WrapperSubsetEval" name="m_Evaluation" signature="Lweka/classifiers/Evaluation;" isStatic="false">
+      <SourceLine classname="weka.attributeSelection.WrapperSubsetEval" sourcefile="WrapperSubsetEval.java" sourcepath="weka/attributeSelection/WrapperSubsetEval.java"/>
+    </Field>
+    <Type descriptor="Lweka/classifiers/Evaluation;" role="TYPE_FOUND">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.classifiers.BVDecompose">
+      <SourceLine classname="weka.classifiers.BVDecompose" start="64" end="598" sourcefile="BVDecompose.java" sourcepath="weka/classifiers/BVDecompose.java"/>
+    </Class>
+    <Method classname="weka.classifiers.BVDecompose" name="decompose" signature="()V" isStatic="false">
+      <SourceLine classname="weka.classifiers.BVDecompose" start="454" end="452" startBytecode="0" endBytecode="932" sourcefile="BVDecompose.java" sourcepath="weka/classifiers/BVDecompose.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.BVDecompose" start="454" end="454" startBytecode="12" endBytecode="12" sourcefile="BVDecompose.java" sourcepath="weka/classifiers/BVDecompose.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.classifiers.BVDecompose">
+      <SourceLine classname="weka.classifiers.BVDecompose" start="64" end="598" sourcefile="BVDecompose.java" sourcepath="weka/classifiers/BVDecompose.java"/>
+    </Class>
+    <Method classname="weka.classifiers.BVDecompose" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.classifiers.BVDecompose" start="579" end="577" startBytecode="0" endBytecode="267" sourcefile="BVDecompose.java" sourcepath="weka/classifiers/BVDecompose.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.BVDecompose" start="590" end="590" startBytecode="65" endBytecode="65" sourcefile="BVDecompose.java" sourcepath="weka/classifiers/BVDecompose.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="weka.classifiers.BVDecompose">
+      <SourceLine classname="weka.classifiers.BVDecompose" start="64" end="598" sourcefile="BVDecompose.java" sourcepath="weka/classifiers/BVDecompose.java"/>
+    </Class>
+    <Field classname="weka.classifiers.BVDecompose" name="m_ClassifierOptions" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.classifiers.BVDecompose" sourcefile="BVDecompose.java" sourcepath="weka/classifiers/BVDecompose.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.classifiers.CVParameterSelection">
+      <SourceLine classname="weka.classifiers.CVParameterSelection" start="62" end="692" sourcefile="CVParameterSelection.java" sourcepath="weka/classifiers/CVParameterSelection.java"/>
+    </Class>
+    <Method classname="weka.classifiers.CVParameterSelection" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.classifiers.CVParameterSelection" start="640" end="671" startBytecode="0" endBytecode="474" sourcefile="CVParameterSelection.java" sourcepath="weka/classifiers/CVParameterSelection.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.CVParameterSelection" start="663" end="663" startBytecode="216" endBytecode="216" sourcefile="CVParameterSelection.java" sourcepath="weka/classifiers/CVParameterSelection.java"/>
+  </BugInstance>
+  <BugInstance type="RV_ABSOLUTE_VALUE_OF_RANDOM_INT" priority="1" rank="7" abbrev="RV" category="CORRECTNESS">
+    <Class classname="weka.classifiers.CheckClassifier">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="88" end="1326" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Class>
+    <Method classname="weka.classifiers.CheckClassifier" name="addMissing" signature="(Lweka/core/Instances;IZZ)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="1196" end="1193" startBytecode="0" endBytecode="173" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.CheckClassifier" start="1203" end="1203" startBytecode="64" endBytecode="64" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+  </BugInstance>
+  <BugInstance type="RV_ABSOLUTE_VALUE_OF_RANDOM_INT" priority="1" rank="7" abbrev="RV" category="CORRECTNESS">
+    <Class classname="weka.classifiers.CheckClassifier">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="88" end="1326" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Class>
+    <Method classname="weka.classifiers.CheckClassifier" name="instanceWeights" signature="(ZZZ)Z" isStatic="false">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="836" end="932" startBytecode="0" endBytecode="1113" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.CheckClassifier" start="885" end="885" startBytecode="316" endBytecode="316" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    <SourceLine classname="weka.classifiers.CheckClassifier" start="886" end="886" startBytecode="332" endBytecode="332" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="RV_ABSOLUTE_VALUE_OF_RANDOM_INT" priority="1" rank="7" abbrev="RV" category="CORRECTNESS">
+    <Class classname="weka.classifiers.CheckClassifier">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="88" end="1326" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Class>
+    <Method classname="weka.classifiers.CheckClassifier" name="makeTestDataset" signature="(IIIIIZ)Lweka/core/Instances;" isStatic="false">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="1228" end="1298" startBytecode="0" endBytecode="819" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.CheckClassifier" start="1269" end="1269" startBytecode="349" endBytecode="349" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    <SourceLine classname="weka.classifiers.CheckClassifier" start="1272" end="1272" startBytecode="373" endBytecode="373" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.CheckClassifier" start="1284" end="1284" startBytecode="489" endBytecode="489" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.classifiers.CheckClassifier">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="88" end="1326" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Class>
+    <Method classname="weka.classifiers.CheckClassifier" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="261" end="259" startBytecode="0" endBytecode="253" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.CheckClassifier" start="272" end="272" startBytecode="65" endBytecode="65" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="weka.classifiers.CheckClassifier">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="88" end="1326" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Class>
+    <Field classname="weka.classifiers.CheckClassifier" name="m_AnalysisResults" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.classifiers.CheckClassifier" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE">
+    <Class classname="weka.classifiers.CheckClassifier">
+      <SourceLine classname="weka.classifiers.CheckClassifier" start="88" end="1326" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Class>
+    <Field classname="weka.classifiers.CheckClassifier" name="m_ClassifierOptions" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.classifiers.CheckClassifier" sourcefile="CheckClassifier.java" sourcepath="weka/classifiers/CheckClassifier.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE">
+    <Class classname="weka.classifiers.DecisionStump">
+      <SourceLine classname="weka.classifiers.DecisionStump" start="36" end="596" sourcefile="DecisionStump.java" sourcepath="weka/classifiers/DecisionStump.java"/>
+    </Class>
+    <Method classname="weka.classifiers.DecisionStump" name="whichSubset" signature="(Lweka/core/Instance;)I" isStatic="false">
+      <SourceLine classname="weka.classifiers.DecisionStump" start="566" end="578" startBytecode="0" endBytecode="126" sourcefile="DecisionStump.java" sourcepath="weka/classifiers/DecisionStump.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.DecisionStump" start="569" end="569" startBytecode="42" endBytecode="42" sourcefile="DecisionStump.java" sourcepath="weka/classifiers/DecisionStump.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.classifiers.DecisionTable">
+      <SourceLine classname="weka.classifiers.DecisionTable" start="396" end="1320" sourcefile="DecisionTable.java" sourcepath="weka/classifiers/DecisionTable.java"/>
+    </Class>
+    <Method classname="weka.classifiers.DecisionTable" name="printSub" signature="(Ljava/util/BitSet;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.classifiers.DecisionTable" start="709" end="715" startBytecode="0" endBytecode="98" sourcefile="DecisionTable.java" sourcepath="weka/classifiers/DecisionTable.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.DecisionTable" start="712" end="712" startBytecode="16" endBytecode="16" sourcefile="DecisionTable.java" sourcepath="weka/classifiers/DecisionTable.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.DecisionTable$hashKey">
+      <SourceLine classname="weka.classifiers.DecisionTable$hashKey" start="55" end="386" sourcefile="DecisionTable.java" sourcepath="weka/classifiers/DecisionTable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="weka.classifiers.DecisionTable$hashKey">
+      <SourceLine classname="weka.classifiers.DecisionTable$hashKey" start="55" end="386" sourcefile="DecisionTable.java" sourcepath="weka/classifiers/DecisionTable.java"/>
+    </Class>
+    <Field classname="weka.classifiers.DecisionTable$hashKey" name="values" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.classifiers.DecisionTable$hashKey" sourcefile="DecisionTable.java" sourcepath="weka/classifiers/DecisionTable.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.classifiers.Evaluation">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Evaluation" name="evaluateModel" signature="(Lweka/classifiers/Classifier;[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.classifiers.Evaluation" start="532" end="906" startBytecode="0" endBytecode="3284" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.Evaluation" start="583" end="583" startBytecode="219" endBytecode="219" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="586" end="586" startBytecode="245" endBytecode="245" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="644" end="644" startBytecode="619" endBytecode="619" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="799" end="799" startBytecode="1495" endBytecode="1495" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.classifiers.Evaluation">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Evaluation" name="printClassifications" signature="(Lweka/classifiers/Classifier;Lweka/core/Instances;Ljava/lang/String;I)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.classifiers.Evaluation" start="1748" end="1817" startBytecode="0" endBytecode="855" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1751" end="1751" startBytecode="28" endBytecode="28" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="weka.classifiers.Evaluation">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Evaluation" name="&lt;init&gt;" signature="(Lweka/core/Instances;[[DLjava/util/Random;)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.Evaluation" start="271" end="271" startBytecode="0" endBytecode="319" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Method>
+    <Field classname="weka.classifiers.Evaluation" name="m_CostMatrix" signature="[[D" isStatic="false">
+      <SourceLine classname="weka.classifiers.Evaluation" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Field>
+    <LocalVariable name="?" register="2" pc="108" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="287" end="287" startBytecode="108" endBytecode="108" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE">
+    <Class classname="weka.classifiers.Evaluation">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Evaluation" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="weka.classifiers.Evaluation" start="1707" end="1737" startBytecode="0" endBytecode="412" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1712" end="1712" startBytecode="53" endBytecode="53" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1713" end="1713" startBytecode="67" endBytecode="67" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1714" end="1714" startBytecode="81" endBytecode="81" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1715" end="1715" startBytecode="95" endBytecode="95" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1716" end="1716" startBytecode="109" endBytecode="109" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1718" end="1718" startBytecode="123" endBytecode="123" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1719" end="1719" startBytecode="137" endBytecode="137" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1720" end="1720" startBytecode="151" endBytecode="151" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1721" end="1721" startBytecode="165" endBytecode="165" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1722" end="1722" startBytecode="179" endBytecode="179" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1723" end="1723" startBytecode="193" endBytecode="193" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1724" end="1724" startBytecode="207" endBytecode="207" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="1725" end="1725" startBytecode="221" endBytecode="221" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.Evaluation">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Evaluation" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="weka.classifiers.Evaluation" start="1707" end="1737" startBytecode="0" endBytecode="412" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="weka.classifiers.Evaluation">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Evaluation" name="evaluateModel" signature="(Lweka/classifiers/Classifier;[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.classifiers.Evaluation" start="532" end="906" startBytecode="0" endBytecode="3284" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Method>
+    <Class classname="java.io.Reader" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="644" end="644" startBytecode="619" endBytecode="619" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="650" end="650" startBytecode="662" endBytecode="662" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="649" end="649" startBytecode="669" endBytecode="669" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="652" end="652" startBytecode="671" endBytecode="671" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="653" end="653" startBytecode="679" endBytecode="679" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="654" end="654" startBytecode="687" endBytecode="687" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="655" end="655" startBytecode="703" endBytecode="703" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="656" end="656" startBytecode="711" endBytecode="711" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="657" end="657" startBytecode="719" endBytecode="719" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="658" end="658" startBytecode="727" endBytecode="727" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="662" end="662" startBytecode="735" endBytecode="735" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="666" end="666" startBytecode="747" endBytecode="747" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="681" end="681" startBytecode="881" endBytecode="881" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="554" end="554" startBytecode="885" endBytecode="885" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="688" end="688" startBytecode="925" endBytecode="925" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="689" end="689" startBytecode="930" endBytecode="930" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="690" end="690" startBytecode="949" endBytecode="949" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="688" end="688" startBytecode="968" endBytecode="968" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="703" end="703" startBytecode="1042" endBytecode="1042" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="711" end="711" startBytecode="1064" endBytecode="1064" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="744" end="744" startBytecode="1244" endBytecode="1244" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="760" end="760" startBytecode="1299" endBytecode="1299" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="767" end="767" startBytecode="1323" endBytecode="1323" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="773" end="773" startBytecode="1345" endBytecode="1345" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="774" end="774" startBytecode="1350" endBytecode="1350" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="775" end="775" startBytecode="1361" endBytecode="1361" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="weka.classifiers.Evaluation" start="774" end="774" startBytecode="1365" endBytecode="1365" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Reader x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.Evaluation">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Evaluation" name="evaluateModel" signature="(Lweka/classifiers/Classifier;[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.classifiers.Evaluation" start="532" end="906" startBytecode="0" endBytecode="949" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream" start="45" end="364" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Type>
+    <SourceLine classname="weka.classifiers.Evaluation" start="590" end="590" startBytecode="261" endBytecode="261" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.Evaluation">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Evaluation" name="evaluateModel" signature="(Lweka/classifiers/Classifier;[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.classifiers.Evaluation" start="532" end="906" startBytecode="0" endBytecode="949" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Type>
+    <SourceLine classname="weka.classifiers.Evaluation" start="594" end="594" startBytecode="287" endBytecode="287" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="weka.classifiers.Evaluation">
+      <SourceLine classname="weka.classifiers.Evaluation" start="114" end="2192" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Class>
+    <Field classname="weka.classifiers.Evaluation" name="m_NumFolds" signature="I" isStatic="false">
+      <SourceLine classname="weka.classifiers.Evaluation" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+    </Field>
+    <SourceLine classname="weka.classifiers.Evaluation" start="246" end="246" startBytecode="14" endBytecode="14" sourcefile="Evaluation.java" sourcepath="weka/classifiers/Evaluation.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="weka.classifiers.Id3">
+      <SourceLine classname="weka.classifiers.Id3" start="35" end="280" sourcefile="Id3.java" sourcepath="weka/classifiers/Id3.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Id3" name="distributionForInstance" signature="(Lweka/core/Instance;)[D" isStatic="false">
+      <SourceLine classname="weka.classifiers.Id3" start="154" end="157" startBytecode="0" endBytecode="70" sourcefile="Id3.java" sourcepath="weka/classifiers/Id3.java"/>
+    </Method>
+    <Field classname="weka.classifiers.Id3" name="m_Distribution" signature="[D" isStatic="false">
+      <SourceLine classname="weka.classifiers.Id3" sourcefile="Id3.java" sourcepath="weka/classifiers/Id3.java"/>
+    </Field>
+    <SourceLine classname="weka.classifiers.Id3" start="155" end="155" startBytecode="11" endBytecode="11" sourcefile="Id3.java" sourcepath="weka/classifiers/Id3.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.Logistic">
+      <SourceLine classname="weka.classifiers.Logistic" start="46" end="480" sourcefile="Logistic.java" sourcepath="weka/classifiers/Logistic.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Logistic" name="Norm" signature="(D)D" isStatic="true">
+      <SourceLine classname="weka.classifiers.Logistic" start="80" end="80" startBytecode="0" endBytecode="31" sourcefile="Logistic.java" sourcepath="weka/classifiers/Logistic.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.classifiers.Logistic">
+      <SourceLine classname="weka.classifiers.Logistic" start="46" end="480" sourcefile="Logistic.java" sourcepath="weka/classifiers/Logistic.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Logistic" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.classifiers.Logistic" start="434" end="465" startBytecode="0" endBytecode="521" sourcefile="Logistic.java" sourcepath="weka/classifiers/Logistic.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.Logistic" start="450" end="450" startBytecode="140" endBytecode="140" sourcefile="Logistic.java" sourcepath="weka/classifiers/Logistic.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.LogitBoost">
+      <SourceLine classname="weka.classifiers.LogitBoost" start="57" end="560" sourcefile="LogitBoost.java" sourcepath="weka/classifiers/LogitBoost.java"/>
+    </Class>
+    <Method classname="weka.classifiers.LogitBoost" name="RtoP" signature="([DI)D" isStatic="false">
+      <SourceLine classname="weka.classifiers.LogitBoost" start="141" end="150" startBytecode="0" endBytecode="133" sourcefile="LogitBoost.java" sourcepath="weka/classifiers/LogitBoost.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="weka.classifiers.MultiScheme">
+      <SourceLine classname="weka.classifiers.MultiScheme" start="50" end="430" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+    </Class>
+    <Method classname="weka.classifiers.MultiScheme" name="getClassifiers" signature="()[Lweka/classifiers/Classifier;" isStatic="false">
+      <SourceLine classname="weka.classifiers.MultiScheme" start="220" end="220" startBytecode="0" endBytecode="28" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+    </Method>
+    <Field classname="weka.classifiers.MultiScheme" name="m_Classifiers" signature="[Lweka/classifiers/Classifier;" isStatic="false">
+      <SourceLine classname="weka.classifiers.MultiScheme" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+    </Field>
+    <SourceLine classname="weka.classifiers.MultiScheme" start="220" end="220" startBytecode="4" endBytecode="4" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="weka.classifiers.MultiScheme">
+      <SourceLine classname="weka.classifiers.MultiScheme" start="50" end="430" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+    </Class>
+    <Method classname="weka.classifiers.MultiScheme" name="setClassifiers" signature="([Lweka/classifiers/Classifier;)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.MultiScheme" start="210" end="208" startBytecode="0" endBytecode="33" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+    </Method>
+    <Field classname="weka.classifiers.MultiScheme" name="m_Classifiers" signature="[Lweka/classifiers/Classifier;" isStatic="false">
+      <SourceLine classname="weka.classifiers.MultiScheme" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.classifiers.MultiScheme" start="210" end="210" startBytecode="2" endBytecode="2" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.classifiers.MultiScheme">
+      <SourceLine classname="weka.classifiers.MultiScheme" start="50" end="430" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+    </Class>
+    <Method classname="weka.classifiers.MultiScheme" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.classifiers.MultiScheme" start="397" end="416" startBytecode="0" endBytecode="269" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.MultiScheme" start="409" end="409" startBytecode="89" endBytecode="89" sourcefile="MultiScheme.java" sourcepath="weka/classifiers/MultiScheme.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.OneR">
+      <SourceLine classname="weka.classifiers.OneR" start="40" end="438" sourcefile="OneR.java" sourcepath="weka/classifiers/OneR.java"/>
+    </Class>
+    <Field classname="weka.classifiers.OneR" name="m_rule" signature="Lweka/classifiers/OneR$OneRRule;" isStatic="false">
+      <SourceLine classname="weka.classifiers.OneR" sourcefile="OneR.java" sourcepath="weka/classifiers/OneR.java"/>
+    </Field>
+    <Type descriptor="Lweka/classifiers/OneR$OneRRule;" role="TYPE_FOUND">
+      <SourceLine classname="weka.classifiers.OneR$OneRRule" start="40" end="118" sourcefile="OneR.java" sourcepath="weka/classifiers/OneR.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.Prism">
+      <SourceLine classname="weka.classifiers.Prism" start="36" end="435" sourcefile="Prism.java" sourcepath="weka/classifiers/Prism.java"/>
+    </Class>
+    <Field classname="weka.classifiers.Prism" name="m_rules" signature="Lweka/classifiers/Prism$PrismRule;" isStatic="false">
+      <SourceLine classname="weka.classifiers.Prism" sourcefile="Prism.java" sourcepath="weka/classifiers/Prism.java"/>
+    </Field>
+    <Type descriptor="Lweka/classifiers/Prism$PrismRule;" role="TYPE_FOUND">
+      <SourceLine classname="weka.classifiers.Prism$PrismRule" start="36" end="182" sourcefile="Prism.java" sourcepath="weka/classifiers/Prism.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.classifiers.SMO">
+      <SourceLine classname="weka.classifiers.SMO" start="56" end="730" sourcefile="SMO.java" sourcepath="weka/classifiers/SMO.java"/>
+    </Class>
+    <Method classname="weka.classifiers.SMO" name="permute" signature="([I)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.SMO" start="447" end="443" startBytecode="0" endBytecode="94" sourcefile="SMO.java" sourcepath="weka/classifiers/SMO.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.SMO" start="448" end="448" startBytecode="20" endBytecode="20" sourcefile="SMO.java" sourcepath="weka/classifiers/SMO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="weka.classifiers.Stacking">
+      <SourceLine classname="weka.classifiers.Stacking" start="51" end="511" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Stacking" name="getBaseClassifiers" signature="()[Lweka/classifiers/Classifier;" isStatic="false">
+      <SourceLine classname="weka.classifiers.Stacking" start="265" end="265" startBytecode="0" endBytecode="28" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+    </Method>
+    <Field classname="weka.classifiers.Stacking" name="m_BaseClassifiers" signature="[Lweka/classifiers/Classifier;" isStatic="false">
+      <SourceLine classname="weka.classifiers.Stacking" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+    </Field>
+    <SourceLine classname="weka.classifiers.Stacking" start="265" end="265" startBytecode="4" endBytecode="4" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="weka.classifiers.Stacking">
+      <SourceLine classname="weka.classifiers.Stacking" start="51" end="511" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Stacking" name="setBaseClassifiers" signature="([Lweka/classifiers/Classifier;)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.Stacking" start="255" end="253" startBytecode="0" endBytecode="33" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+    </Method>
+    <Field classname="weka.classifiers.Stacking" name="m_BaseClassifiers" signature="[Lweka/classifiers/Classifier;" isStatic="false">
+      <SourceLine classname="weka.classifiers.Stacking" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.classifiers.Stacking" start="255" end="255" startBytecode="2" endBytecode="2" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.classifiers.Stacking">
+      <SourceLine classname="weka.classifiers.Stacking" start="51" end="511" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+    </Class>
+    <Method classname="weka.classifiers.Stacking" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.classifiers.Stacking" start="374" end="391" startBytecode="0" endBytecode="200" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.Stacking" start="385" end="385" startBytecode="39" endBytecode="39" sourcefile="Stacking.java" sourcepath="weka/classifiers/Stacking.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="weka.classifiers.j48.BinC45ModelSelection">
+      <SourceLine classname="weka.classifiers.j48.BinC45ModelSelection" start="46" end="170" sourcefile="BinC45ModelSelection.java" sourcepath="weka/classifiers/j48/BinC45ModelSelection.java"/>
+    </Class>
+    <Method classname="weka.classifiers.j48.BinC45ModelSelection" name="&lt;init&gt;" signature="(ILweka/core/Instances;)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.j48.BinC45ModelSelection" start="46" end="46" startBytecode="0" endBytecode="7" sourcefile="BinC45ModelSelection.java" sourcepath="weka/classifiers/j48/BinC45ModelSelection.java"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.classifiers.j48.BinC45ModelSelection" start="47" end="47" startBytecode="5" endBytecode="5" sourcefile="BinC45ModelSelection.java" sourcepath="weka/classifiers/j48/BinC45ModelSelection.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SA_LOCAL_SELF_ASSIGNMENT" priority="2" rank="17" abbrev="SA" category="STYLE">
+    <Class classname="weka.classifiers.j48.BinC45ModelSelection">
+      <SourceLine classname="weka.classifiers.j48.BinC45ModelSelection" start="46" end="170" sourcefile="BinC45ModelSelection.java" sourcepath="weka/classifiers/j48/BinC45ModelSelection.java"/>
+    </Class>
+    <Method classname="weka.classifiers.j48.BinC45ModelSelection" name="&lt;init&gt;" signature="(ILweka/core/Instances;)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.j48.BinC45ModelSelection" start="46" end="46" startBytecode="0" endBytecode="47" sourcefile="BinC45ModelSelection.java" sourcepath="weka/classifiers/j48/BinC45ModelSelection.java"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="5" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.classifiers.j48.BinC45ModelSelection" start="47" end="47" startBytecode="5" endBytecode="5" sourcefile="BinC45ModelSelection.java" sourcepath="weka/classifiers/j48/BinC45ModelSelection.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="weka.classifiers.j48.ClassifierTree">
+      <SourceLine classname="weka.classifiers.j48.ClassifierTree" start="58" end="459" sourcefile="ClassifierTree.java" sourcepath="weka/classifiers/j48/ClassifierTree.java"/>
+    </Class>
+    <Method classname="weka.classifiers.j48.ClassifierTree" name="buildTree" signature="(Lweka/core/Instances;Lweka/core/Instances;Z)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.j48.ClassifierTree" start="129" end="123" startBytecode="0" endBytecode="99" sourcefile="ClassifierTree.java" sourcepath="weka/classifiers/j48/ClassifierTree.java"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="87" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.classifiers.j48.ClassifierTree" start="140" end="140" startBytecode="87" endBytecode="87" sourcefile="ClassifierTree.java" sourcepath="weka/classifiers/j48/ClassifierTree.java"/>
+    <SourceLine classname="weka.classifiers.j48.ClassifierTree" start="151" end="151" startBytecode="179" endBytecode="179" sourcefile="ClassifierTree.java" sourcepath="weka/classifiers/j48/ClassifierTree.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DUP_THEN_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM_NO_SUPER_CALL" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.j48.Distribution">
+      <SourceLine classname="weka.classifiers.j48.Distribution" start="48" end="701" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+    </Class>
+    <Method classname="weka.classifiers.j48.Distribution" name="clone" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="weka.classifiers.j48.Distribution" start="383" end="394" startBytecode="0" endBytecode="194" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="weka.classifiers.j48.Distribution">
+      <SourceLine classname="weka.classifiers.j48.Distribution" start="48" end="701" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+    </Class>
+    <Method classname="weka.classifiers.j48.Distribution" name="matrix" signature="()[[D" isStatic="false">
+      <SourceLine classname="weka.classifiers.j48.Distribution" start="480" end="480" startBytecode="0" endBytecode="28" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+    </Method>
+    <Field classname="weka.classifiers.j48.Distribution" name="m_perClassPerBag" signature="[[D" isStatic="false">
+      <SourceLine classname="weka.classifiers.j48.Distribution" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+    </Field>
+    <SourceLine classname="weka.classifiers.j48.Distribution" start="480" end="480" startBytecode="4" endBytecode="4" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="weka.classifiers.j48.Distribution">
+      <SourceLine classname="weka.classifiers.j48.Distribution" start="48" end="701" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+    </Class>
+    <Method classname="weka.classifiers.j48.Distribution" name="&lt;init&gt;" signature="([[D)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.j48.Distribution" start="64" end="64" startBytecode="0" endBytecode="167" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+    </Method>
+    <Field classname="weka.classifiers.j48.Distribution" name="m_perClassPerBag" signature="[[D" isStatic="false">
+      <SourceLine classname="weka.classifiers.j48.Distribution" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+    </Field>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.classifiers.j48.Distribution" start="68" end="68" startBytecode="6" endBytecode="6" sourcefile="Distribution.java" sourcepath="weka/classifiers/j48/Distribution.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="weka.classifiers.j48.EntropyBasedSplitCrit">
+      <SourceLine classname="weka.classifiers.j48.EntropyBasedSplitCrit" start="28" end="85" sourcefile="EntropyBasedSplitCrit.java" sourcepath="weka/classifiers/j48/EntropyBasedSplitCrit.java"/>
+    </Class>
+    <Field classname="weka.classifiers.j48.EntropyBasedSplitCrit" name="log2" signature="D" isStatic="true">
+      <SourceLine classname="weka.classifiers.j48.EntropyBasedSplitCrit" sourcefile="EntropyBasedSplitCrit.java" sourcepath="weka/classifiers/j48/EntropyBasedSplitCrit.java"/>
+    </Field>
+    <SourceLine classname="weka.classifiers.j48.EntropyBasedSplitCrit" start="31" end="31" startBytecode="6" endBytecode="6" sourcefile="EntropyBasedSplitCrit.java" sourcepath="weka/classifiers/j48/EntropyBasedSplitCrit.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.j48.PART">
+      <SourceLine classname="weka.classifiers.j48.PART" start="56" end="378" sourcefile="PART.java" sourcepath="weka/classifiers/j48/PART.java"/>
+    </Class>
+    <Field classname="weka.classifiers.j48.PART" name="m_root" signature="Lweka/classifiers/j48/MakeDecList;" isStatic="false">
+      <SourceLine classname="weka.classifiers.j48.PART" sourcefile="PART.java" sourcepath="weka/classifiers/j48/PART.java"/>
+    </Field>
+    <Type descriptor="Lweka/classifiers/j48/MakeDecList;" role="TYPE_FOUND">
+      <SourceLine classname="weka.classifiers.j48.MakeDecList" start="37" end="232" sourcefile="MakeDecList.java" sourcepath="weka/classifiers/j48/MakeDecList.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE">
+    <Class classname="weka.classifiers.m5.Impurity">
+      <SourceLine classname="weka.classifiers.m5.Impurity" start="57" end="168" sourcefile="Impurity.java" sourcepath="weka/classifiers/m5/Impurity.java"/>
+    </Class>
+    <Method classname="weka.classifiers.m5.Impurity" name="incremental" signature="(DI)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.m5.Impurity" start="113" end="112" startBytecode="0" endBytecode="669" sourcefile="Impurity.java" sourcepath="weka/classifiers/m5/Impurity.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.m5.Impurity" start="134" end="137" startBytecode="172" endBytecode="175" sourcefile="Impurity.java" sourcepath="weka/classifiers/m5/Impurity.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.classifiers.m5.M5Utils">
+      <SourceLine classname="weka.classifiers.m5.M5Utils" start="32" end="435" sourcefile="M5Utils.java" sourcepath="weka/classifiers/m5/M5Utils.java"/>
+    </Class>
+    <Method classname="weka.classifiers.m5.M5Utils" name="doubleToStringF" signature="(DII)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.classifiers.m5.M5Utils" start="222" end="255" startBytecode="0" endBytecode="401" sourcefile="M5Utils.java" sourcepath="weka/classifiers/m5/M5Utils.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.m5.M5Utils" start="247" end="247" startBytecode="196" endBytecode="196" sourcefile="M5Utils.java" sourcepath="weka/classifiers/m5/M5Utils.java"/>
+  </BugInstance>
+  <BugInstance type="SA_FIELD_SELF_ASSIGNMENT" priority="1" rank="1" abbrev="SA" category="CORRECTNESS">
+    <Class classname="weka.classifiers.m5.Node">
+      <SourceLine classname="weka.classifiers.m5.Node" start="67" end="838" sourcefile="Node.java" sourcepath="weka/classifiers/m5/Node.java"/>
+    </Class>
+    <Method classname="weka.classifiers.m5.Node" name="copy" signature="(Lweka/classifiers/m5/Node;)Lweka/classifiers/m5/Node;" isStatic="false">
+      <SourceLine classname="weka.classifiers.m5.Node" start="774" end="801" startBytecode="0" endBytecode="365" sourcefile="Node.java" sourcepath="weka/classifiers/m5/Node.java"/>
+    </Method>
+    <Field classname="weka.classifiers.m5.Node" name="numParameters" signature="I" isStatic="false">
+      <SourceLine classname="weka.classifiers.m5.Node" sourcefile="Node.java" sourcepath="weka/classifiers/m5/Node.java"/>
+    </Field>
+    <SourceLine classname="weka.classifiers.m5.Node" start="785" end="785" startBytecode="106" endBytecode="106" sourcefile="Node.java" sourcepath="weka/classifiers/m5/Node.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_USELESS_SUBSTRING" priority="2" rank="17" abbrev="DMI" category="STYLE">
+    <Class classname="weka.classifiers.m5.Options">
+      <SourceLine classname="weka.classifiers.m5.Options" start="48" end="295" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Class>
+    <Method classname="weka.classifiers.m5.Options" name="&lt;init&gt;" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.m5.Options" start="67" end="67" startBytecode="0" endBytecode="324" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.m5.Options" start="153" end="153" startBytecode="622" endBytecode="622" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    <SourceLine classname="weka.classifiers.m5.Options" start="149" end="149" startBytecode="596" endBytecode="596" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.m5.Options">
+      <SourceLine classname="weka.classifiers.m5.Options" start="48" end="295" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Class>
+    <Method classname="weka.classifiers.m5.Options" name="&lt;init&gt;" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.m5.Options" start="67" end="67" startBytecode="0" endBytecode="1194" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.m5.Options" start="135" end="135" startBytecode="546" endBytecode="546" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    <SourceLine classname="weka.classifiers.m5.Options" start="176" end="176" startBytecode="781" endBytecode="781" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="weka.classifiers.m5.Options">
+      <SourceLine classname="weka.classifiers.m5.Options" start="48" end="295" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Class>
+    <Method classname="weka.classifiers.m5.Options" name="printValidOptions" signature="()V" isStatic="false">
+      <SourceLine classname="weka.classifiers.m5.Options" start="242" end="240" startBytecode="0" endBytecode="476" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.m5.Options" start="295" end="295" startBytecode="297" endBytecode="297" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.classifiers.m5.Options">
+      <SourceLine classname="weka.classifiers.m5.Options" start="48" end="295" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Class>
+    <Method classname="weka.classifiers.m5.Options" name="&lt;init&gt;" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.m5.Options" start="67" end="67" startBytecode="0" endBytecode="1194" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.m5.Options" start="71" end="71" startBytecode="8" endBytecode="8" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE">
+    <Class classname="weka.classifiers.m5.Options">
+      <SourceLine classname="weka.classifiers.m5.Options" start="48" end="295" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Class>
+    <Method classname="weka.classifiers.m5.Options" name="&lt;init&gt;" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="weka.classifiers.m5.Options" start="67" end="67" startBytecode="0" endBytecode="1194" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+    </Method>
+    <SourceLine classname="weka.classifiers.m5.Options" start="117" end="119" startBytecode="384" endBytecode="387" sourcefile="Options.java" sourcepath="weka/classifiers/m5/Options.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.clusterers.ClusterEvaluation">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="54" end="520" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Class>
+    <Method classname="weka.clusterers.ClusterEvaluation" name="evaluateClusterer" signature="(Lweka/clusterers/Clusterer;[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="78" end="217" startBytecode="0" endBytecode="1036" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.clusterers.ClusterEvaluation" start="140" end="140" startBytecode="267" endBytecode="267" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.clusterers.ClusterEvaluation">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="54" end="520" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Class>
+    <Method classname="weka.clusterers.ClusterEvaluation" name="printClusterStats" signature="(Lweka/clusterers/Clusterer;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="328" end="393" startBytecode="0" endBytecode="620" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.clusterers.ClusterEvaluation" start="341" end="341" startBytecode="40" endBytecode="40" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.clusterers.ClusterEvaluation">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="54" end="520" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Class>
+    <Method classname="weka.clusterers.ClusterEvaluation" name="printClusterings" signature="(Lweka/clusterers/Clusterer;Lweka/core/Instances;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="408" end="454" startBytecode="0" endBytecode="488" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.clusterers.ClusterEvaluation" start="416" end="416" startBytecode="26" endBytecode="26" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="weka.clusterers.ClusterEvaluation">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="54" end="520" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Class>
+    <Method classname="weka.clusterers.ClusterEvaluation" name="evaluateClusterer" signature="(Lweka/clusterers/Clusterer;[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="78" end="217" startBytecode="0" endBytecode="294" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream" start="45" end="364" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Type>
+    <SourceLine classname="weka.clusterers.ClusterEvaluation" start="144" end="144" startBytecode="283" endBytecode="283" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="weka.clusterers.ClusterEvaluation">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="54" end="520" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Class>
+    <Method classname="weka.clusterers.ClusterEvaluation" name="evaluateClusterer" signature="(Lweka/clusterers/Clusterer;[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.clusterers.ClusterEvaluation" start="78" end="217" startBytecode="0" endBytecode="294" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Type>
+    <SourceLine classname="weka.clusterers.ClusterEvaluation" start="148" end="148" startBytecode="309" endBytecode="309" sourcefile="ClusterEvaluation.java" sourcepath="weka/clusterers/ClusterEvaluation.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="weka.clusterers.Cobweb">
+      <SourceLine classname="weka.clusterers.Cobweb" start="40" end="619" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    </Class>
+    <Field classname="weka.clusterers.Cobweb" name="tree" signature="Lweka/clusterers/Cobweb$CTree;" isStatic="false">
+      <SourceLine classname="weka.clusterers.Cobweb" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    </Field>
+    <Type descriptor="Lweka/clusterers/Cobweb$CTree;" role="TYPE_FOUND">
+      <SourceLine classname="weka.clusterers.Cobweb$CTree" start="40" end="289" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="weka.clusterers.Cobweb">
+      <SourceLine classname="weka.clusterers.Cobweb" start="40" end="619" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    </Class>
+    <Method classname="weka.clusterers.Cobweb" name="setOptions" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="weka.clusterers.Cobweb" start="575" end="572" startBytecode="0" endBytecode="134" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    </Method>
+    <Field classname="weka.clusterers.Cobweb" name="acuity" signature="D" isStatic="true">
+      <SourceLine classname="weka.clusterers.Cobweb" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    </Field>
+    <SourceLine classname="weka.clusterers.Cobweb" start="577" end="577" startBytecode="23" endBytecode="23" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    <SourceLine classname="weka.clusterers.Cobweb" start="580" end="580" startBytecode="30" endBytecode="30" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="weka.clusterers.Cobweb">
+      <SourceLine classname="weka.clusterers.Cobweb" start="40" end="619" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    </Class>
+    <Method classname="weka.clusterers.Cobweb" name="setOptions" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="weka.clusterers.Cobweb" start="575" end="572" startBytecode="0" endBytecode="134" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    </Method>
+    <Field classname="weka.clusterers.Cobweb" name="cutoff" signature="D" isStatic="true">
+      <SourceLine classname="weka.clusterers.Cobweb" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    </Field>
+    <SourceLine classname="weka.clusterers.Cobweb" start="584" end="584" startBytecode="56" endBytecode="56" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java"/>
+    <SourceLine classname="weka.clusterers.Cobweb" start="587" end="587" startBytecode="67" endBytecode="67" sourcefile="Cobweb.java" sourcepath="weka/clusterers/Cobweb.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="weka.core.Attribute">
+      <SourceLine classname="weka.core.Attribute" start="95" end="528" sourcefile="Attribute.java" sourcepath="weka/core/Attribute.java"/>
+    </Class>
+    <Method classname="weka.core.Attribute" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="weka.core.Attribute" start="164" end="180" startBytecode="0" endBytecode="223" sourcefile="Attribute.java" sourcepath="weka/core/Attribute.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="weka.core.Attribute">
+      <SourceLine classname="weka.core.Attribute" start="95" end="528" sourcefile="Attribute.java" sourcepath="weka/core/Attribute.java"/>
+    </Class>
+    <Method classname="weka.core.Attribute" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.core.Attribute" start="455" end="453" startBytecode="0" endBytecode="681" sourcefile="Attribute.java" sourcepath="weka/core/Attribute.java"/>
+    </Method>
+    <Method classname="weka.core.Attribute" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="weka.core.Attribute" start="95" end="95" startBytecode="0" endBytecode="68" sourcefile="Attribute.java" sourcepath="weka/core/Attribute.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Attribute" start="458" end="458" startBytecode="5" endBytecode="5" sourcefile="Attribute.java" sourcepath="weka/core/Attribute.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="weka.core.ContingencyTables">
+      <SourceLine classname="weka.core.ContingencyTables" start="27" end="620" sourcefile="ContingencyTables.java" sourcepath="weka/core/ContingencyTables.java"/>
+    </Class>
+    <Method classname="weka.core.ContingencyTables" name="CramersV" signature="([[D)D" isStatic="true">
+      <SourceLine classname="weka.core.ContingencyTables" start="160" end="172" startBytecode="0" endBytecode="166" sourcefile="ContingencyTables.java" sourcepath="weka/core/ContingencyTables.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="weka.core.Instance">
+      <SourceLine classname="weka.core.Instance" start="89" end="935" sourcefile="Instance.java" sourcepath="weka/core/Instance.java"/>
+    </Class>
+    <Method classname="weka.core.Instance" name="&lt;init&gt;" signature="(D[D)V" isStatic="false">
+      <SourceLine classname="weka.core.Instance" start="104" end="104" startBytecode="0" endBytecode="59" sourcefile="Instance.java" sourcepath="weka/core/Instance.java"/>
+    </Method>
+    <Field classname="weka.core.Instance" name="m_AttValues" signature="[D" isStatic="false">
+      <SourceLine classname="weka.core.Instance" sourcefile="Instance.java" sourcepath="weka/core/Instance.java"/>
+    </Field>
+    <LocalVariable name="?" register="3" pc="6" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="weka.core.Instance" start="106" end="106" startBytecode="6" endBytecode="6" sourcefile="Instance.java" sourcepath="weka/core/Instance.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.core.Instances">
+      <SourceLine classname="weka.core.Instances" start="77" end="2073" sourcefile="Instances.java" sourcepath="weka/core/Instances.java"/>
+    </Class>
+    <Method classname="weka.core.Instances" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.core.Instances" start="2064" end="2062" startBytecode="0" endBytecode="141" sourcefile="Instances.java" sourcepath="weka/core/Instances.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Instances" start="2069" end="2069" startBytecode="27" endBytecode="27" sourcefile="Instances.java" sourcepath="weka/core/Instances.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.core.Instances">
+      <SourceLine classname="weka.core.Instances" start="77" end="2073" sourcefile="Instances.java" sourcepath="weka/core/Instances.java"/>
+    </Class>
+    <Method classname="weka.core.Instances" name="test" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.core.Instances" start="1854" end="1850" startBytecode="0" endBytecode="2139" sourcefile="Instances.java" sourcepath="weka/core/Instances.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Instances" start="1883" end="1883" startBytecode="188" endBytecode="188" sourcefile="Instances.java" sourcepath="weka/core/Instances.java"/>
+    <SourceLine classname="weka.core.Instances" start="1896" end="1896" startBytecode="259" endBytecode="259" sourcefile="Instances.java" sourcepath="weka/core/Instances.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.core.Instances">
+      <SourceLine classname="weka.core.Instances" start="77" end="2073" sourcefile="Instances.java" sourcepath="weka/core/Instances.java"/>
+    </Class>
+    <Method classname="weka.core.Instances" name="randomize" signature="(Ljava/util/Random;)V" isStatic="false">
+      <SourceLine classname="weka.core.Instances" start="762" end="760" startBytecode="0" endBytecode="66" sourcefile="Instances.java" sourcepath="weka/core/Instances.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Instances" start="763" end="763" startBytecode="19" endBytecode="19" sourcefile="Instances.java" sourcepath="weka/core/Instances.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.core.Queue">
+      <SourceLine classname="weka.core.Queue" start="29" end="211" sourcefile="Queue.java" sourcepath="weka/core/Queue.java"/>
+    </Class>
+    <Method classname="weka.core.Queue" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.core.Queue" start="179" end="189" startBytecode="0" endBytecode="146" sourcefile="Queue.java" sourcepath="weka/core/Queue.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Queue" start="185" end="185" startBytecode="54" endBytecode="54" sourcefile="Queue.java" sourcepath="weka/core/Queue.java"/>
+  </BugInstance>
+  <BugInstance type="SE_INNER_CLASS" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="weka.core.Queue$QueueNode">
+      <SourceLine classname="weka.core.Queue$QueueNode" start="29" end="80" sourcefile="Queue.java" sourcepath="weka/core/Queue.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.core.Range">
+      <SourceLine classname="weka.core.Range" start="40" end="382" sourcefile="Range.java" sourcepath="weka/core/Range.java"/>
+    </Class>
+    <Method classname="weka.core.Range" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.core.Range" start="173" end="205" startBytecode="0" endBytecode="408" sourcefile="Range.java" sourcepath="weka/core/Range.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Range" start="179" end="179" startBytecode="27" endBytecode="27" sourcefile="Range.java" sourcepath="weka/core/Range.java"/>
+  </BugInstance>
+  <BugInstance type="IM_BAD_CHECK_FOR_ODD" priority="2" rank="13" abbrev="IM" category="STYLE">
+    <Class classname="weka.core.Statistics">
+      <SourceLine classname="weka.core.Statistics" start="28" end="266" sourcefile="Statistics.java" sourcepath="weka/core/Statistics.java"/>
+    </Class>
+    <Method classname="weka.core.Statistics" name="FProbability" signature="(DII)D" isStatic="true">
+      <SourceLine classname="weka.core.Statistics" start="149" end="191" startBytecode="0" endBytecode="567" sourcefile="Statistics.java" sourcepath="weka/core/Statistics.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Statistics" start="152" end="152" startBytecode="39" endBytecode="39" sourcefile="Statistics.java" sourcepath="weka/core/Statistics.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.core.Utils">
+      <SourceLine classname="weka.core.Utils" start="32" end="1225" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Class>
+    <Method classname="weka.core.Utils" name="doubleToString" signature="(DI)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.core.Utils" start="142" end="181" startBytecode="0" endBytecode="443" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Utils" start="181" end="181" startBytecode="280" endBytecode="280" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.core.Utils">
+      <SourceLine classname="weka.core.Utils" start="32" end="1225" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Class>
+    <Method classname="weka.core.Utils" name="getOption" signature="(C[Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.core.Utils" start="336" end="363" startBytecode="0" endBytecode="293" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Utils" start="353" end="353" startBytecode="142" endBytecode="142" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+  </BugInstance>
+  <BugInstance type="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW" priority="2" rank="17" abbrev="IM" category="STYLE">
+    <Class classname="weka.core.Utils">
+      <SourceLine classname="weka.core.Utils" start="32" end="1225" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Class>
+    <Method classname="weka.core.Utils" name="quickSort" signature="([D[III)V" isStatic="true">
+      <SourceLine classname="weka.core.Utils" start="1018" end="1015" startBytecode="0" endBytecode="270" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Utils" start="1029" end="1029" startBytecode="17" endBytecode="17" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+  </BugInstance>
+  <BugInstance type="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW" priority="2" rank="17" abbrev="IM" category="STYLE">
+    <Class classname="weka.core.Utils">
+      <SourceLine classname="weka.core.Utils" start="32" end="1225" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Class>
+    <Method classname="weka.core.Utils" name="quickSort" signature="([I[III)V" isStatic="true">
+      <SourceLine classname="weka.core.Utils" start="1084" end="1081" startBytecode="0" endBytecode="244" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Utils" start="1093" end="1093" startBytecode="17" endBytecode="17" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="weka.core.Utils">
+      <SourceLine classname="weka.core.Utils" start="32" end="1225" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Class>
+    <Field classname="weka.core.Utils" name="SMALL" signature="D" isStatic="true">
+      <SourceLine classname="weka.core.Utils" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Field>
+    <SourceLine classname="weka.core.Utils" start="38" end="38" startBytecode="12" endBytecode="12" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="weka.core.Utils">
+      <SourceLine classname="weka.core.Utils" start="32" end="1225" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Class>
+    <Field classname="weka.core.Utils" name="log2" signature="D" isStatic="true">
+      <SourceLine classname="weka.core.Utils" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Field>
+    <SourceLine classname="weka.core.Utils" start="35" end="35" startBytecode="6" endBytecode="6" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.core.Utils">
+      <SourceLine classname="weka.core.Utils" start="32" end="1225" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Class>
+    <Method classname="weka.core.Utils" name="joinOptions" signature="([Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="weka.core.Utils" start="528" end="540" startBytecode="0" endBytecode="179" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+    </Method>
+    <SourceLine classname="weka.core.Utils" start="538" end="538" startBytecode="86" endBytecode="86" sourcefile="Utils.java" sourcepath="weka/core/Utils.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.estimators.DDConditionalEstimator">
+      <SourceLine classname="weka.estimators.DDConditionalEstimator" start="43" end="139" sourcefile="DDConditionalEstimator.java" sourcepath="weka/estimators/DDConditionalEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.DDConditionalEstimator" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.estimators.DDConditionalEstimator" start="91" end="96" startBytecode="0" endBytecode="130" sourcefile="DDConditionalEstimator.java" sourcepath="weka/estimators/DDConditionalEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.DDConditionalEstimator" start="94" end="94" startBytecode="31" endBytecode="31" sourcefile="DDConditionalEstimator.java" sourcepath="weka/estimators/DDConditionalEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.estimators.DKConditionalEstimator">
+      <SourceLine classname="weka.estimators.DKConditionalEstimator" start="47" end="156" sourcefile="DKConditionalEstimator.java" sourcepath="weka/estimators/DKConditionalEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.DKConditionalEstimator" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.estimators.DKConditionalEstimator" start="107" end="113" startBytecode="0" endBytecode="161" sourcefile="DKConditionalEstimator.java" sourcepath="weka/estimators/DKConditionalEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.DKConditionalEstimator" start="110" end="110" startBytecode="31" endBytecode="31" sourcefile="DKConditionalEstimator.java" sourcepath="weka/estimators/DKConditionalEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.estimators.DNConditionalEstimator">
+      <SourceLine classname="weka.estimators.DNConditionalEstimator" start="47" end="149" sourcefile="DNConditionalEstimator.java" sourcepath="weka/estimators/DNConditionalEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.DNConditionalEstimator" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.estimators.DNConditionalEstimator" start="101" end="107" startBytecode="0" endBytecode="161" sourcefile="DNConditionalEstimator.java" sourcepath="weka/estimators/DNConditionalEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.DNConditionalEstimator" start="104" end="104" startBytecode="31" endBytecode="31" sourcefile="DNConditionalEstimator.java" sourcepath="weka/estimators/DNConditionalEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.estimators.DiscreteEstimator">
+      <SourceLine classname="weka.estimators.DiscreteEstimator" start="45" end="144" sourcefile="DiscreteEstimator.java" sourcepath="weka/estimators/DiscreteEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.DiscreteEstimator" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.estimators.DiscreteEstimator" start="98" end="111" startBytecode="0" endBytecode="256" sourcefile="DiscreteEstimator.java" sourcepath="weka/estimators/DiscreteEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.DiscreteEstimator" start="101" end="101" startBytecode="17" endBytecode="17" sourcefile="DiscreteEstimator.java" sourcepath="weka/estimators/DiscreteEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.estimators.KDConditionalEstimator">
+      <SourceLine classname="weka.estimators.KDConditionalEstimator" start="45" end="139" sourcefile="KDConditionalEstimator.java" sourcepath="weka/estimators/KDConditionalEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.KDConditionalEstimator" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.estimators.KDConditionalEstimator" start="92" end="97" startBytecode="0" endBytecode="130" sourcefile="KDConditionalEstimator.java" sourcepath="weka/estimators/KDConditionalEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.KDConditionalEstimator" start="95" end="95" startBytecode="31" endBytecode="31" sourcefile="KDConditionalEstimator.java" sourcepath="weka/estimators/KDConditionalEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW" priority="2" rank="17" abbrev="IM" category="STYLE">
+    <Class classname="weka.estimators.KKConditionalEstimator">
+      <SourceLine classname="weka.estimators.KKConditionalEstimator" start="68" end="286" sourcefile="KKConditionalEstimator.java" sourcepath="weka/estimators/KKConditionalEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.KKConditionalEstimator" name="findNearestPair" signature="(DD)I" isStatic="false">
+      <SourceLine classname="weka.estimators.KKConditionalEstimator" start="68" end="91" startBytecode="0" endBytecode="230" sourcefile="KKConditionalEstimator.java" sourcepath="weka/estimators/KKConditionalEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.KKConditionalEstimator" start="72" end="72" startBytecode="21" endBytecode="21" sourcefile="KKConditionalEstimator.java" sourcepath="weka/estimators/KKConditionalEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.estimators.KKConditionalEstimator">
+      <SourceLine classname="weka.estimators.KKConditionalEstimator" start="68" end="286" sourcefile="KKConditionalEstimator.java" sourcepath="weka/estimators/KKConditionalEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.KKConditionalEstimator" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.estimators.KKConditionalEstimator" start="231" end="241" startBytecode="0" endBytecode="212" sourcefile="KKConditionalEstimator.java" sourcepath="weka/estimators/KKConditionalEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.KKConditionalEstimator" start="238" end="238" startBytecode="107" endBytecode="107" sourcefile="KKConditionalEstimator.java" sourcepath="weka/estimators/KKConditionalEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW" priority="2" rank="17" abbrev="IM" category="STYLE">
+    <Class classname="weka.estimators.KernelEstimator">
+      <SourceLine classname="weka.estimators.KernelEstimator" start="31" end="275" sourcefile="KernelEstimator.java" sourcepath="weka/estimators/KernelEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.KernelEstimator" name="findNearestValue" signature="(D)I" isStatic="false">
+      <SourceLine classname="weka.estimators.KernelEstimator" start="66" end="81" startBytecode="0" endBytecode="154" sourcefile="KernelEstimator.java" sourcepath="weka/estimators/KernelEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.KernelEstimator" start="70" end="70" startBytecode="19" endBytecode="19" sourcefile="KernelEstimator.java" sourcepath="weka/estimators/KernelEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.estimators.KernelEstimator">
+      <SourceLine classname="weka.estimators.KernelEstimator" start="31" end="275" sourcefile="KernelEstimator.java" sourcepath="weka/estimators/KernelEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.KernelEstimator" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.estimators.KernelEstimator" start="228" end="245" startBytecode="0" endBytecode="322" sourcefile="KernelEstimator.java" sourcepath="weka/estimators/KernelEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.KernelEstimator" start="236" end="236" startBytecode="103" endBytecode="103" sourcefile="KernelEstimator.java" sourcepath="weka/estimators/KernelEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="weka.estimators.MahalanobisEstimator">
+      <SourceLine classname="weka.estimators.MahalanobisEstimator" start="31" end="196" sourcefile="MahalanobisEstimator.java" sourcepath="weka/estimators/MahalanobisEstimator.java"/>
+    </Class>
+    <Field classname="weka.estimators.MahalanobisEstimator" name="m_CovarianceInverse" signature="Lweka/core/Matrix;" isStatic="false">
+      <SourceLine classname="weka.estimators.MahalanobisEstimator" sourcefile="MahalanobisEstimator.java" sourcepath="weka/estimators/MahalanobisEstimator.java"/>
+    </Field>
+    <Type descriptor="Lweka/core/Matrix;" role="TYPE_FOUND">
+      <SourceLine classname="weka.core.Matrix" start="43" end="388" sourcefile="Matrix.java" sourcepath="weka/core/Matrix.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.estimators.NDConditionalEstimator">
+      <SourceLine classname="weka.estimators.NDConditionalEstimator" start="45" end="141" sourcefile="NDConditionalEstimator.java" sourcepath="weka/estimators/NDConditionalEstimator.java"/>
+    </Class>
+    <Method classname="weka.estimators.NDConditionalEstimator" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="weka.estimators.NDConditionalEstimator" start="94" end="99" startBytecode="0" endBytecode="130" sourcefile="NDConditionalEstimator.java" sourcepath="weka/estimators/NDConditionalEstimator.java"/>
+    </Method>
+    <SourceLine classname="weka.estimators.NDConditionalEstimator" start="97" end="97" startBytecode="31" endBytecode="31" sourcefile="NDConditionalEstimator.java" sourcepath="weka/estimators/NDConditionalEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="weka.estimators.NNConditionalEstimator">
+      <SourceLine classname="weka.estimators.NNConditionalEstimator" start="31" end="259" sourcefile="NNConditionalEstimator.java" sourcepath="weka/estimators/NNConditionalEstimator.java"/>
+    </Class>
+    <Field classname="weka.estimators.NNConditionalEstimator" name="m_AllWeightsOne" signature="Z" isStatic="false">
+      <SourceLine classname="weka.estimators.NNConditionalEstimator" sourcefile="NNConditionalEstimator.java" sourcepath="weka/estimators/NNConditionalEstimator.java"/>
+    </Field>
+    <SourceLine classname="weka.estimators.NNConditionalEstimator" start="162" end="162" startBytecode="121" endBytecode="121" sourcefile="NNConditionalEstimator.java" sourcepath="weka/estimators/NNConditionalEstimator.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.filters.AttributeSelectionFilter">
+      <SourceLine classname="weka.filters.AttributeSelectionFilter" start="80" end="573" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+    </Class>
+    <Method classname="weka.filters.AttributeSelectionFilter" name="makeOptions" signature="()V" isStatic="false">
+      <SourceLine classname="weka.filters.AttributeSelectionFilter" start="198" end="195" startBytecode="0" endBytecode="836" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.AttributeSelectionFilter" start="221" end="221" startBytecode="119" endBytecode="119" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+    <SourceLine classname="weka.filters.AttributeSelectionFilter" start="265" end="265" startBytecode="305" endBytecode="305" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.filters.AttributeSelectionFilter">
+      <SourceLine classname="weka.filters.AttributeSelectionFilter" start="80" end="573" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+    </Class>
+    <Method classname="weka.filters.AttributeSelectionFilter" name="setEvaluator" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="weka.filters.AttributeSelectionFilter" start="364" end="362" startBytecode="0" endBytecode="51" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.AttributeSelectionFilter" start="365" end="365" startBytecode="13" endBytecode="13" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.filters.AttributeSelectionFilter">
+      <SourceLine classname="weka.filters.AttributeSelectionFilter" start="80" end="573" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+    </Class>
+    <Method classname="weka.filters.AttributeSelectionFilter" name="setSearch" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="weka.filters.AttributeSelectionFilter" start="374" end="372" startBytecode="0" endBytecode="51" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.AttributeSelectionFilter" start="375" end="375" startBytecode="13" endBytecode="13" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="weka.filters.AttributeSelectionFilter">
+      <SourceLine classname="weka.filters.AttributeSelectionFilter" start="80" end="573" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+    </Class>
+    <Method classname="weka.filters.AttributeSelectionFilter" name="setStartSet" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="weka.filters.AttributeSelectionFilter" start="346" end="344" startBytecode="0" endBytecode="51" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.AttributeSelectionFilter" start="347" end="347" startBytecode="13" endBytecode="13" sourcefile="AttributeSelectionFilter.java" sourcepath="weka/filters/AttributeSelectionFilter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.filters.Filter">
+      <SourceLine classname="weka.filters.Filter" start="56" end="636" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Class>
+    <Method classname="weka.filters.Filter" name="batchFilterFile" signature="(Lweka/filters/Filter;[Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.filters.Filter" start="482" end="479" startBytecode="0" endBytecode="1283" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.Filter" start="494" end="494" startBytecode="50" endBytecode="50" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    <SourceLine classname="weka.filters.Filter" start="501" end="501" startBytecode="97" endBytecode="97" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.filters.Filter">
+      <SourceLine classname="weka.filters.Filter" start="56" end="636" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Class>
+    <Method classname="weka.filters.Filter" name="batchFilterFile" signature="(Lweka/filters/Filter;[Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.filters.Filter" start="482" end="479" startBytecode="0" endBytecode="1283" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="131" end="132" startBytecode="0" endBytecode="34" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.Filter" start="508" end="508" startBytecode="147" endBytecode="147" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    <SourceLine classname="weka.filters.Filter" start="515" end="515" startBytecode="194" endBytecode="194" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.filters.Filter">
+      <SourceLine classname="weka.filters.Filter" start="56" end="636" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Class>
+    <Method classname="weka.filters.Filter" name="filterFile" signature="(Lweka/filters/Filter;[Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.filters.Filter" start="323" end="320" startBytecode="0" endBytecode="1085" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.Filter" start="348" end="348" startBytecode="107" endBytecode="107" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.filters.Filter">
+      <SourceLine classname="weka.filters.Filter" start="56" end="636" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Class>
+    <Method classname="weka.filters.Filter" name="filterFile" signature="(Lweka/filters/Filter;[Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.filters.Filter" start="323" end="320" startBytecode="0" endBytecode="1085" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.Filter" start="350" end="350" startBytecode="129" endBytecode="129" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="weka.filters.Filter">
+      <SourceLine classname="weka.filters.Filter" start="56" end="636" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Class>
+    <Method classname="weka.filters.Filter" name="filterFile" signature="(Lweka/filters/Filter;[Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.filters.Filter" start="323" end="320" startBytecode="0" endBytecode="1085" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="131" end="132" startBytecode="0" endBytecode="34" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.Filter" start="353" end="353" startBytecode="158" endBytecode="158" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    <SourceLine classname="weka.filters.Filter" start="355" end="355" startBytecode="173" endBytecode="173" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.filters.Filter">
+      <SourceLine classname="weka.filters.Filter" start="56" end="636" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Class>
+    <Method classname="weka.filters.Filter" name="batchFilterFile" signature="(Lweka/filters/Filter;[Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.filters.Filter" start="482" end="479" startBytecode="0" endBytecode="1283" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.Filter" start="554" end="554" startBytecode="446" endBytecode="446" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.filters.Filter">
+      <SourceLine classname="weka.filters.Filter" start="56" end="636" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Class>
+    <Method classname="weka.filters.Filter" name="filterFile" signature="(Lweka/filters/Filter;[Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="weka.filters.Filter" start="323" end="320" startBytecode="0" endBytecode="1085" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.Filter" start="376" end="376" startBytecode="313" endBytecode="313" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="weka.filters.Filter">
+      <SourceLine classname="weka.filters.Filter" start="56" end="636" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Class>
+    <Method classname="weka.filters.Filter" name="outputFormat" signature="()Lweka/core/Instances;" isStatic="false">
+      <SourceLine classname="weka.filters.Filter" start="152" end="165" startBytecode="0" endBytecode="199" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+    </Method>
+    <SourceLine classname="weka.filters.Filter" start="161" end="161" startBytecode="86" endBytecode="86" sourcefile="Filter.java" sourcepath="weka/filters/Filter.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="weka.filters.NumericTransformFilter">
+      <SourceLine classname="weka.filters.NumericTransformFilter" start="49" end="350" sourcefile="NumericTransformFilter.java" sourcepath="weka/filters/NumericTransformFilter.java"/>
+    </Class>
+    <Field classname="weka.filters.NumericTransformFilter" name="m_Method" signature="Ljava/lang/reflect/Method;" isStatic="false">
+      <SourceLine classname="weka.filters.NumericTransformFilter" sourcefile="NumericTransformFilter.java" sourcepath="weka/filters/NumericTransformFilter.java"/>
+    </Field>
+    <Type descriptor="Ljava/lang/reflect/Method;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.reflect.Method" start="61" end="653" sourcefile="Method.java" sourcepath="java/lang/reflect/Method.java"/>
+    </Type>
+  </BugInstance>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>simplecli.SimpleCLI</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 9 Mar 2017 14:01:27 -0500" total_classes="162" referenced_classes="457" total_bugs="129" total_size="21148" num_packages="11" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="75.41" clock_seconds="255.92" peak_mbytes="395.45" alloc_mbytes="683.00" gc_seconds="10.87" priority_2="98" priority_1="31">
+    <PackageStats package="" total_bugs="8" total_types="5" total_size="190" priority_2="5" priority_1="3">
+      <ClassStats class="SimpleCLI" sourceFile="SimpleCLI.java" interface="false" size="133" bugs="7" priority_2="4" priority_1="3"/>
+      <ClassStats class="SimpleCLI$1" sourceFile="SimpleCLI.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="SimpleCLI$2" sourceFile="SimpleCLI.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="SimpleCLI$ClassRunner" sourceFile="SimpleCLI.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="SimpleCLI$ReaderToTextArea" sourceFile="SimpleCLI.java" interface="false" size="15" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="simplecli" total_bugs="0" total_types="1" total_size="12">
+      <ClassStats class="simplecli.SimpleCLI$StreamRedirector" sourceFile="SimpleCLI.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="weka.associations" total_bugs="4" total_types="2" total_size="511" priority_2="2" priority_1="2">
+      <ClassStats class="weka.associations.Apriori" sourceFile="Apriori.java" interface="false" size="256" bugs="1" priority_1="1"/>
+      <ClassStats class="weka.associations.ItemSet" sourceFile="ItemSet.java" interface="false" size="255" bugs="3" priority_2="2" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="weka.attributeSelection" total_bugs="14" total_types="20" total_size="2282" priority_2="13" priority_1="1">
+      <ClassStats class="weka.attributeSelection.ASEvaluation" sourceFile="ASEvaluation.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.ASSearch" sourceFile="ASSearch.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.AttributeEvaluator" sourceFile="AttributeEvaluator.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.AttributeSelection" sourceFile="AttributeSelection.java" interface="false" size="339" bugs="5" priority_2="4" priority_1="1"/>
+      <ClassStats class="weka.attributeSelection.BestFirst" sourceFile="BestFirst.java" interface="false" size="198" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.attributeSelection.BestFirst$Link2" sourceFile="BestFirst.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.BestFirst$LinkedList2" sourceFile="BestFirst.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.CfsSubsetEval" sourceFile="CfsSubsetEval.java" interface="false" size="433" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.attributeSelection.ForwardSelection" sourceFile="ForwardSelection.java" interface="false" size="119" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.attributeSelection.GainRatioAttributeEval" sourceFile="GainRatioAttributeEval.java" interface="false" size="139" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.attributeSelection.InfoGainAttributeEval" sourceFile="InfoGainAttributeEval.java" interface="false" size="140" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.attributeSelection.OneRAttributeEval" sourceFile="OneRAttributeEval.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.RankedOutputSearch" sourceFile="RankedOutputSearch.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.Ranker" sourceFile="Ranker.java" interface="false" size="85" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.attributeSelection.ReliefFAttributeEval" sourceFile="ReliefFAttributeEval.java" interface="false" size="372" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.SubsetEvaluator" sourceFile="SubsetEvaluator.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.SymmetricalUncertAttributeEval" sourceFile="SymmetricalUncertAttributeEval.java" interface="false" size="141" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.attributeSelection.UnsupervisedAttributeEvaluator" sourceFile="UnsupervisedAttributeEvaluator.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.UnsupervisedSubsetEvaluator" sourceFile="UnsupervisedSubsetEvaluator.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="weka.attributeSelection.WrapperSubsetEval" sourceFile="WrapperSubsetEval.java" interface="false" size="172" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="weka.classifiers" total_bugs="36" total_types="40" total_size="7213" priority_2="27" priority_1="9">
+      <ClassStats class="weka.classifiers.AdaBoostM1" sourceFile="AdaBoostM1.java" interface="false" size="300" bugs="0"/>
+      <ClassStats class="weka.classifiers.BVDecompose" sourceFile="BVDecompose.java" interface="false" size="251" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="weka.classifiers.Bagging" sourceFile="Bagging.java" interface="false" size="123" bugs="0"/>
+      <ClassStats class="weka.classifiers.CVParameterSelection" sourceFile="CVParameterSelection.java" interface="false" size="244" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.CVParameterSelection$CVParameter" sourceFile="CVParameterSelection.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="weka.classifiers.CheckClassifier" sourceFile="CheckClassifier.java" interface="false" size="701" bugs="6" priority_2="3" priority_1="3"/>
+      <ClassStats class="weka.classifiers.ClassificationViaRegression" sourceFile="ClassificationViaRegression.java" interface="false" size="97" bugs="0"/>
+      <ClassStats class="weka.classifiers.Classifier" sourceFile="Classifier.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="weka.classifiers.DecisionStump" sourceFile="DecisionStump.java" interface="false" size="288" bugs="1" priority_1="1"/>
+      <ClassStats class="weka.classifiers.DecisionTable" sourceFile="DecisionTable.java" interface="false" size="435" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.DecisionTable$Link" sourceFile="DecisionTable.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="weka.classifiers.DecisionTable$LinkedList" sourceFile="DecisionTable.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="weka.classifiers.DecisionTable$hashKey" sourceFile="DecisionTable.java" interface="false" size="73" bugs="2" priority_2="2"/>
+      <ClassStats class="weka.classifiers.DistributionClassifier" sourceFile="DistributionClassifier.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="weka.classifiers.Evaluation" sourceFile="Evaluation.java" interface="false" size="980" bugs="9" priority_2="5" priority_1="4"/>
+      <ClassStats class="weka.classifiers.IB1" sourceFile="IB1.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="weka.classifiers.IBk" sourceFile="IBk.java" interface="false" size="343" bugs="0"/>
+      <ClassStats class="weka.classifiers.IBk$NeighborList" sourceFile="IBk.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="weka.classifiers.IBk$NeighborNode" sourceFile="IBk.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="weka.classifiers.Id3" sourceFile="Id3.java" interface="false" size="115" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.KernelDensity" sourceFile="KernelDensity.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="weka.classifiers.LWR" sourceFile="LWR.java" interface="false" size="216" bugs="0"/>
+      <ClassStats class="weka.classifiers.LinearRegression" sourceFile="LinearRegression.java" interface="false" size="258" bugs="0"/>
+      <ClassStats class="weka.classifiers.Logistic" sourceFile="Logistic.java" interface="false" size="214" bugs="2" priority_2="2"/>
+      <ClassStats class="weka.classifiers.LogitBoost" sourceFile="LogitBoost.java" interface="false" size="242" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.MultiClassClassifier" sourceFile="MultiClassClassifier.java" interface="false" size="110" bugs="0"/>
+      <ClassStats class="weka.classifiers.MultiScheme" sourceFile="MultiScheme.java" interface="false" size="166" bugs="3" priority_2="3"/>
+      <ClassStats class="weka.classifiers.NaiveBayes" sourceFile="NaiveBayes.java" interface="false" size="152" bugs="0"/>
+      <ClassStats class="weka.classifiers.NaiveBayesSimple" sourceFile="NaiveBayesSimple.java" interface="false" size="171" bugs="0"/>
+      <ClassStats class="weka.classifiers.OneR" sourceFile="OneR.java" interface="false" size="147" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.OneR$OneRRule" sourceFile="OneR.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="weka.classifiers.Prism" sourceFile="Prism.java" interface="false" size="104" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.Prism$PrismRule" sourceFile="Prism.java" interface="false" size="75" bugs="0"/>
+      <ClassStats class="weka.classifiers.Prism$Test" sourceFile="Prism.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="weka.classifiers.RegressionByDiscretization" sourceFile="RegressionByDiscretization.java" interface="false" size="160" bugs="0"/>
+      <ClassStats class="weka.classifiers.SMO" sourceFile="SMO.java" interface="false" size="326" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.Stacking" sourceFile="Stacking.java" interface="false" size="201" bugs="3" priority_2="3"/>
+      <ClassStats class="weka.classifiers.UpdateableClassifier" sourceFile="UpdateableClassifier.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="weka.classifiers.VotedPerceptron" sourceFile="VotedPerceptron.java" interface="false" size="160" bugs="0"/>
+      <ClassStats class="weka.classifiers.ZeroR" sourceFile="ZeroR.java" interface="false" size="51" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="weka.classifiers.j48" total_bugs="8" total_types="23" total_size="2134" priority_2="7" priority_1="1">
+      <ClassStats class="weka.classifiers.j48.BinC45ModelSelection" sourceFile="BinC45ModelSelection.java" interface="false" size="66" bugs="2" priority_2="2"/>
+      <ClassStats class="weka.classifiers.j48.BinC45Split" sourceFile="BinC45Split.java" interface="false" size="168" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.C45ModelSelection" sourceFile="C45ModelSelection.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.C45PruneableClassifierTree" sourceFile="C45PruneableClassifierTree.java" interface="false" size="113" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.C45PruneableDecList" sourceFile="C45PruneableDecList.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.C45Split" sourceFile="C45Split.java" interface="false" size="172" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.ClassifierDecList" sourceFile="ClassifierDecList.java" interface="false" size="203" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.ClassifierSplitModel" sourceFile="ClassifierSplitModel.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.ClassifierTree" sourceFile="ClassifierTree.java" interface="false" size="196" bugs="1" priority_1="1"/>
+      <ClassStats class="weka.classifiers.j48.Distribution" sourceFile="Distribution.java" interface="false" size="297" bugs="3" priority_2="3"/>
+      <ClassStats class="weka.classifiers.j48.EntropyBasedSplitCrit" sourceFile="EntropyBasedSplitCrit.java" interface="false" size="27" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.j48.EntropySplitCrit" sourceFile="EntropySplitCrit.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.GainRatioSplitCrit" sourceFile="GainRatioSplitCrit.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.InfoGainSplitCrit" sourceFile="InfoGainSplitCrit.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.J48" sourceFile="J48.java" interface="false" size="163" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.MakeDecList" sourceFile="MakeDecList.java" interface="false" size="107" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.ModelSelection" sourceFile="ModelSelection.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.NoSplit" sourceFile="NoSplit.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.PART" sourceFile="PART.java" interface="false" size="122" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.j48.PruneableClassifierTree" sourceFile="PruneableClassifierTree.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.PruneableDecList" sourceFile="PruneableDecList.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.SplitCriterion" sourceFile="SplitCriterion.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="weka.classifiers.j48.Stats" sourceFile="Stats.java" interface="false" size="32" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="weka.classifiers.m5" total_bugs="8" total_types="13" total_size="1465" priority_2="7" priority_1="1">
+      <ClassStats class="weka.classifiers.m5.Dvector" sourceFile="Dvector.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="weka.classifiers.m5.Errors" sourceFile="Errors.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="weka.classifiers.m5.Function" sourceFile="Function.java" interface="false" size="92" bugs="0"/>
+      <ClassStats class="weka.classifiers.m5.Impurity" sourceFile="Impurity.java" interface="false" size="93" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.m5.Ivector" sourceFile="Ivector.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="weka.classifiers.m5.M5Prime" sourceFile="M5Prime.java" interface="false" size="161" bugs="0"/>
+      <ClassStats class="weka.classifiers.m5.M5Utils" sourceFile="M5Utils.java" interface="false" size="175" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.classifiers.m5.Matrix" sourceFile="Matrix.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="weka.classifiers.m5.Measures" sourceFile="Measures.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="weka.classifiers.m5.Node" sourceFile="Node.java" interface="false" size="446" bugs="1" priority_1="1"/>
+      <ClassStats class="weka.classifiers.m5.Options" sourceFile="Options.java" interface="false" size="173" bugs="5" priority_2="5"/>
+      <ClassStats class="weka.classifiers.m5.SplitInfo" sourceFile="SplitInfo.java" interface="false" size="75" bugs="0"/>
+      <ClassStats class="weka.classifiers.m5.Values" sourceFile="Values.java" interface="false" size="43" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="weka.clusterers" total_bugs="8" total_types="6" total_size="948" priority_2="3" priority_1="5">
+      <ClassStats class="weka.clusterers.ClusterEvaluation" sourceFile="ClusterEvaluation.java" interface="false" size="236" bugs="5" priority_2="2" priority_1="3"/>
+      <ClassStats class="weka.clusterers.Clusterer" sourceFile="Clusterer.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="weka.clusterers.Cobweb" sourceFile="Cobweb.java" interface="false" size="165" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="weka.clusterers.Cobweb$CTree" sourceFile="Cobweb.java" interface="false" size="180" bugs="0"/>
+      <ClassStats class="weka.clusterers.DistributionClusterer" sourceFile="DistributionClusterer.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="weka.clusterers.EM" sourceFile="EM.java" interface="false" size="345" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="weka.core" total_bugs="18" total_types="21" total_size="2989" priority_2="14" priority_1="4">
+      <ClassStats class="weka.core.Attribute" sourceFile="Attribute.java" interface="false" size="171" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="weka.core.CheckOptionHandler" sourceFile="CheckOptionHandler.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="weka.core.ContingencyTables" sourceFile="ContingencyTables.java" interface="false" size="315" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.core.Copyable" sourceFile="Copyable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="weka.core.Drawable" sourceFile="Drawable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="weka.core.FastVector" sourceFile="FastVector.java" interface="false" size="114" bugs="0"/>
+      <ClassStats class="weka.core.FastVector$FastVectorEnumeration" sourceFile="FastVector.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="weka.core.Instance" sourceFile="Instance.java" interface="false" size="300" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.core.Instances" sourceFile="Instances.java" interface="false" size="871" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="weka.core.Matchable" sourceFile="Matchable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="weka.core.Matrix" sourceFile="Matrix.java" interface="false" size="179" bugs="0"/>
+      <ClassStats class="weka.core.Option" sourceFile="Option.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="weka.core.OptionHandler" sourceFile="OptionHandler.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="weka.core.Queue" sourceFile="Queue.java" interface="false" size="55" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.core.Queue$QueueNode" sourceFile="Queue.java" interface="false" size="17" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.core.Range" sourceFile="Range.java" interface="false" size="160" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.core.SpecialFunctions" sourceFile="SpecialFunctions.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="weka.core.Statistics" sourceFile="Statistics.java" interface="false" size="131" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.core.Summarizable" sourceFile="Summarizable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="weka.core.Utils" sourceFile="Utils.java" interface="false" size="502" bugs="7" priority_2="6" priority_1="1"/>
+      <ClassStats class="weka.core.WeightedInstancesHandler" sourceFile="WeightedInstancesHandler.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="weka.estimators" total_bugs="12" total_types="14" total_size="920" priority_2="12">
+      <ClassStats class="weka.estimators.ConditionalEstimator" sourceFile="ConditionalEstimator.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="weka.estimators.DDConditionalEstimator" sourceFile="DDConditionalEstimator.java" interface="false" size="50" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.estimators.DKConditionalEstimator" sourceFile="DKConditionalEstimator.java" interface="false" size="57" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.estimators.DNConditionalEstimator" sourceFile="DNConditionalEstimator.java" interface="false" size="57" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.estimators.DiscreteEstimator" sourceFile="DiscreteEstimator.java" interface="false" size="53" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.estimators.Estimator" sourceFile="Estimator.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="weka.estimators.KDConditionalEstimator" sourceFile="KDConditionalEstimator.java" interface="false" size="49" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.estimators.KKConditionalEstimator" sourceFile="KKConditionalEstimator.java" interface="false" size="139" bugs="2" priority_2="2"/>
+      <ClassStats class="weka.estimators.KernelEstimator" sourceFile="KernelEstimator.java" interface="false" size="140" bugs="2" priority_2="2"/>
+      <ClassStats class="weka.estimators.MahalanobisEstimator" sourceFile="MahalanobisEstimator.java" interface="false" size="95" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.estimators.NDConditionalEstimator" sourceFile="NDConditionalEstimator.java" interface="false" size="49" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.estimators.NNConditionalEstimator" sourceFile="NNConditionalEstimator.java" interface="false" size="130" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.estimators.NormalEstimator" sourceFile="NormalEstimator.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="weka.estimators.PoissonEstimator" sourceFile="PoissonEstimator.java" interface="false" size="38" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="weka.filters" total_bugs="13" total_types="17" total_size="2484" priority_2="8" priority_1="5">
+      <ClassStats class="weka.filters.AddFilter" sourceFile="AddFilter.java" interface="false" size="127" bugs="0"/>
+      <ClassStats class="weka.filters.AllFilter" sourceFile="AllFilter.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="weka.filters.AttributeFilter" sourceFile="AttributeFilter.java" interface="false" size="91" bugs="0"/>
+      <ClassStats class="weka.filters.AttributeSelectionFilter" sourceFile="AttributeSelectionFilter.java" interface="false" size="234" bugs="4" priority_2="4"/>
+      <ClassStats class="weka.filters.DiscretizeFilter" sourceFile="DiscretizeFilter.java" interface="false" size="460" bugs="0"/>
+      <ClassStats class="weka.filters.Filter" sourceFile="Filter.java" interface="false" size="262" bugs="8" priority_2="3" priority_1="5"/>
+      <ClassStats class="weka.filters.FirstOrderFilter" sourceFile="FirstOrderFilter.java" interface="false" size="94" bugs="0"/>
+      <ClassStats class="weka.filters.InstanceFilter" sourceFile="InstanceFilter.java" interface="false" size="174" bugs="0"/>
+      <ClassStats class="weka.filters.MakeIndicatorFilter" sourceFile="MakeIndicatorFilter.java" interface="false" size="123" bugs="0"/>
+      <ClassStats class="weka.filters.MergeTwoValuesFilter" sourceFile="MergeTwoValuesFilter.java" interface="false" size="160" bugs="0"/>
+      <ClassStats class="weka.filters.NominalToBinaryFilter" sourceFile="NominalToBinaryFilter.java" interface="false" size="217" bugs="0"/>
+      <ClassStats class="weka.filters.NormalizationFilter" sourceFile="NormalizationFilter.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="weka.filters.NullFilter" sourceFile="NullFilter.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="weka.filters.NumericTransformFilter" sourceFile="NumericTransformFilter.java" interface="false" size="115" bugs="1" priority_2="1"/>
+      <ClassStats class="weka.filters.ReplaceMissingValuesFilter" sourceFile="ReplaceMissingValuesFilter.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="weka.filters.SplitDatasetFilter" sourceFile="SplitDatasetFilter.java" interface="false" size="129" bugs="0"/>
+      <ClassStats class="weka.filters.SwapAttributeValuesFilter" sourceFile="SwapAttributeValuesFilter.java" interface="false" size="136" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="18260" invocations="1853" avgMicrosecondsPerInvocation="9854" maxMicrosecondsPerInvocation="2723029" standardDeviationMircosecondsPerInvocation="67455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="16098" invocations="1853" avgMicrosecondsPerInvocation="8687" maxMicrosecondsPerInvocation="409545" standardDeviationMircosecondsPerInvocation="26273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="15427" invocations="1894" avgMicrosecondsPerInvocation="8145" maxMicrosecondsPerInvocation="322647" standardDeviationMircosecondsPerInvocation="24499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="14935" invocations="1853" avgMicrosecondsPerInvocation="8060" maxMicrosecondsPerInvocation="350791" standardDeviationMircosecondsPerInvocation="21995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="13813" invocations="739" avgMicrosecondsPerInvocation="18692" maxMicrosecondsPerInvocation="1031877" standardDeviationMircosecondsPerInvocation="51741"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="12058" invocations="1886" avgMicrosecondsPerInvocation="6393" maxMicrosecondsPerInvocation="335664" standardDeviationMircosecondsPerInvocation="21312"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="9971" invocations="3141" avgMicrosecondsPerInvocation="3174" maxMicrosecondsPerInvocation="210221" standardDeviationMircosecondsPerInvocation="12341"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="9479" invocations="1541" avgMicrosecondsPerInvocation="6151" maxMicrosecondsPerInvocation="335177" standardDeviationMircosecondsPerInvocation="19883"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="8311" invocations="1853" avgMicrosecondsPerInvocation="4485" maxMicrosecondsPerInvocation="175065" standardDeviationMircosecondsPerInvocation="15571"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="8196" invocations="1362" avgMicrosecondsPerInvocation="6017" maxMicrosecondsPerInvocation="264173" standardDeviationMircosecondsPerInvocation="18757"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="6894" invocations="457" avgMicrosecondsPerInvocation="15086" maxMicrosecondsPerInvocation="279522" standardDeviationMircosecondsPerInvocation="32262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="6753" invocations="457" avgMicrosecondsPerInvocation="14777" maxMicrosecondsPerInvocation="427721" standardDeviationMircosecondsPerInvocation="36710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="5356" invocations="1853" avgMicrosecondsPerInvocation="2890" maxMicrosecondsPerInvocation="121590" standardDeviationMircosecondsPerInvocation="11668"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="4685" invocations="162" avgMicrosecondsPerInvocation="28921" maxMicrosecondsPerInvocation="487852" standardDeviationMircosecondsPerInvocation="66782"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue" totalMilliseconds="3225" invocations="162" avgMicrosecondsPerInvocation="19908" maxMicrosecondsPerInvocation="2560790" standardDeviationMircosecondsPerInvocation="200631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="2701" invocations="162" avgMicrosecondsPerInvocation="16676" maxMicrosecondsPerInvocation="185872" standardDeviationMircosecondsPerInvocation="33731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="2524" invocations="162" avgMicrosecondsPerInvocation="15583" maxMicrosecondsPerInvocation="102140" standardDeviationMircosecondsPerInvocation="26777"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="2495" invocations="1884" avgMicrosecondsPerInvocation="1324" maxMicrosecondsPerInvocation="642455" standardDeviationMircosecondsPerInvocation="16139"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="2485" invocations="1816" avgMicrosecondsPerInvocation="1368" maxMicrosecondsPerInvocation="98467" standardDeviationMircosecondsPerInvocation="7728"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="2406" invocations="162" avgMicrosecondsPerInvocation="14857" maxMicrosecondsPerInvocation="116041" standardDeviationMircosecondsPerInvocation="23312"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="2091" invocations="162" avgMicrosecondsPerInvocation="12911" maxMicrosecondsPerInvocation="471808" standardDeviationMircosecondsPerInvocation="42990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="1842" invocations="162" avgMicrosecondsPerInvocation="11375" maxMicrosecondsPerInvocation="286825" standardDeviationMircosecondsPerInvocation="29738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="1833" invocations="457" avgMicrosecondsPerInvocation="4011" maxMicrosecondsPerInvocation="111773" standardDeviationMircosecondsPerInvocation="13380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="1705" invocations="1853" avgMicrosecondsPerInvocation="920" maxMicrosecondsPerInvocation="168186" standardDeviationMircosecondsPerInvocation="6859"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="1650" invocations="457" avgMicrosecondsPerInvocation="3610" maxMicrosecondsPerInvocation="85433" standardDeviationMircosecondsPerInvocation="13412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="1640" invocations="457" avgMicrosecondsPerInvocation="3589" maxMicrosecondsPerInvocation="739254" standardDeviationMircosecondsPerInvocation="35700"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="1622" invocations="162" avgMicrosecondsPerInvocation="10016" maxMicrosecondsPerInvocation="101008" standardDeviationMircosecondsPerInvocation="20147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1617" invocations="521" avgMicrosecondsPerInvocation="3104" maxMicrosecondsPerInvocation="263722" standardDeviationMircosecondsPerInvocation="15082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="1616" invocations="162" avgMicrosecondsPerInvocation="9975" maxMicrosecondsPerInvocation="88796" standardDeviationMircosecondsPerInvocation="20330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1612" invocations="162" avgMicrosecondsPerInvocation="9951" maxMicrosecondsPerInvocation="110019" standardDeviationMircosecondsPerInvocation="20336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="1566" invocations="162" avgMicrosecondsPerInvocation="9670" maxMicrosecondsPerInvocation="135874" standardDeviationMircosecondsPerInvocation="22815"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+

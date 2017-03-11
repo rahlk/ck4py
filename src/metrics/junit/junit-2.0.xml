@@ -1,0 +1,1080 @@
+<metrics>
+	<class>
+		<name>junit.textui.TestRunner</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>25</rfc>
+		<lcom>21</lcom>
+		<ca>0</ca>
+		<ce>14</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>197</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35714285714285715</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>27.142857142857142</amc>
+		<cc>
+			<method name="public static void runAndWait(junit.framework.Test suite)">1</method>
+			<method name="protected void doRun(junit.framework.Test suite, boolean wait)">2</method>
+			<method name="protected junit.textui.TextTestResult createTestResult()">1</method>
+			<method name="public static void run(junit.framework.Test suite)">1</method>
+			<method name="public static void main(String[] args)">1</method>
+			<method name="protected void start(String[] args)">6</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestSuite</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>19</cbo>
+		<rfc>37</rfc>
+		<lcom>8</lcom>
+		<ca>2</ca>
+		<ce>17</ce>
+		<npm>5</npm>
+		<lcom3>0.6428571428571429</lcom3>
+		<loc>251</loc>
+		<dam>0.5</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2916666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>30.125</amc>
+		<cc>
+			<method name="public void run(junit.framework.TestResult result)">3</method>
+			<method name="private java.lang.reflect.Constructor getConstructor(Class theClass)">2</method>
+			<method name="private boolean isTestMethod(java.lang.reflect.Method m)">5</method>
+			<method name="public void addTest(junit.framework.Test test)">1</method>
+			<method name="private junit.framework.Test warning(String message)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public int countTestCases()">2</method>
+			<method name="public void _init_(Class theClass)">6</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.ActiveTest$1</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.9846153846153847</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="public void run()">1</method>
+			<method name="void _init_(junit.extensions.ActiveTest this$0, junit.framework.TestResult val$finalResult)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestCaseClassLoader</name>
+		<wmc>8</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>19</cbo>
+		<rfc>47</rfc>
+		<lcom>24</lcom>
+		<ca>1</ca>
+		<ce>18</ce>
+		<npm>4</npm>
+		<lcom3>0.8571428571428571</lcom3>
+		<loc>315</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>0</moa>
+		<mfa>0.9054054054054054</mfa>
+		<cam>0.46875</cam>
+		<ic>1</ic>
+		<cbm>8</cbm>
+		<amc>38.0</amc>
+		<cc>
+			<method name="private java.io.File locate(String fileName)">4</method>
+			<method name="public java.io.InputStream getResourceAsStream(String name)">1</method>
+			<method name="protected boolean isExcluded(String name)">7</method>
+			<method name="public java.net.URL getResource(String name)">1</method>
+			<method name="public synchronized Class loadClass(String name, boolean resolve)">1</method>
+			<method name="private byte[] loadClassData(java.io.File f)">1</method>
+			<method name="public void _init_()">4</method>
+			<method name="private String[] readExcludedPackages()">7</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.LoadingTestRunner</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>9</rfc>
+		<lcom>10</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>3</npm>
+		<lcom3>2.0</lcom3>
+		<loc>32</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4666666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.4</amc>
+		<cc>
+			<method name="public void _init_(String suiteName)">1</method>
+			<method name="protected Class loadSuiteClass(String suiteClassName)">1</method>
+			<method name="public static void main(String[] args)">1</method>
+			<method name="protected boolean canRerun()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.TestSetup</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>6</rfc>
+		<lcom>6</lcom>
+		<ca>0</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>18</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="protected void tearDown()">1</method>
+			<method name="public void _init_(junit.framework.Test test)">1</method>
+			<method name="protected void setUp()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestStatus</name>
+		<wmc>11</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>21</rfc>
+		<lcom>23</lcom>
+		<ca>2</ca>
+		<ce>9</ce>
+		<npm>9</npm>
+		<lcom3>0.5</lcom3>
+		<loc>256</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.9719887955182073</mfa>
+		<cam>0.4318181818181818</cam>
+		<ic>2</ic>
+		<cbm>5</cbm>
+		<amc>21.90909090909091</amc>
+		<cc>
+			<method name="public void paintBackground(java.awt.Graphics g)">1</method>
+			<method name="public void setBounds(int x, int y, int w, int h)">1</method>
+			<method name="private void paintStep(int startX, int endX)">1</method>
+			<method name="public void paintStatus(java.awt.Graphics g)">1</method>
+			<method name="public int scale(int value)">2</method>
+			<method name="public void reset()">1</method>
+			<method name="public void step(boolean successful)">3</method>
+			<method name="private java.awt.Color getStatusColor()">2</method>
+			<method name="public void paint(java.awt.Graphics g)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void start(int total)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.AboutDialog$2</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.9090909090909091</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="public void windowClosing(java.awt.event.WindowEvent e)">1</method>
+			<method name="void _init_(junit.ui.AboutDialog this$0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.AboutDialog$1</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+			<method name="void _init_(junit.ui.AboutDialog this$0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner</name>
+		<wmc>44</wmc>
+		<dit>5</dit>
+		<noc>1</noc>
+		<cbo>63</cbo>
+		<rfc>140</rfc>
+		<lcom>832</lcom>
+		<ca>13</ca>
+		<ce>61</ce>
+		<npm>11</npm>
+		<lcom3>0.8668076109936576</lcom3>
+		<loc>1186</loc>
+		<dam>1.0</dam>
+		<moa>4</moa>
+		<mfa>0.943758573388203</mfa>
+		<cam>0.12790697674418605</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>25.454545454545453</amc>
+		<cc>
+			<method name="private junit.framework.Test getTest(String suiteClassName)">2</method>
+			<method name="public void setSuiteName(String suite)">1</method>
+			<method name="static java.awt.Button access$fShowErrorButton(junit.ui.TestRunner arg0)">1</method>
+			<method name="private void about()">1</method>
+			<method name="private String truncateString(String s, int length)">2</method>
+			<method name="static void access$fRunner(junit.ui.TestRunner arg0, Thread arg1)">1</method>
+			<method name="public void addError(junit.framework.TestResult result, junit.framework.Test test, Throwable t)">1</method>
+			<method name="public void addFailure(junit.framework.TestResult result, junit.framework.Test test, Throwable t)">1</method>
+			<method name="protected boolean canRerun()">3</method>
+			<method name="static java.awt.TextField access$fStatusLine(junit.ui.TestRunner arg0)">1</method>
+			<method name="private void addGrid(java.awt.Panel p, java.awt.Component co, int x, int y, int w, int fill, double wx, int anchor)">5</method>
+			<method name="private void setLabelValue(java.awt.Label label, int value)">1</method>
+			<method name="public void startTest(junit.framework.TestResult result, junit.framework.Test test)">1</method>
+			<method name="protected Class loadSuiteClass(String suiteClassName)">1</method>
+			<method name="static java.awt.Button access$fRun(junit.ui.TestRunner arg0)">1</method>
+			<method name="static void access$about(junit.ui.TestRunner arg0)">1</method>
+			<method name="private void showErrorTrace()">3</method>
+			<method name="static void access$rerun(junit.ui.TestRunner arg0)">1</method>
+			<method name="static void access$showErrorTrace(junit.ui.TestRunner arg0)">1</method>
+			<method name="public void endTest(junit.framework.TestResult result, junit.framework.Test test)">1</method>
+			<method name="private boolean isErrorSelected()">2</method>
+			<method name="static void access$showInfo(junit.ui.TestRunner arg0, String arg1)">1</method>
+			<method name="static void access$showStatus(junit.ui.TestRunner arg0, String arg1)">1</method>
+			<method name="static void access$fTestResult(junit.ui.TestRunner arg0, junit.framework.TestResult arg1)">1</method>
+			<method name="static junit.ui.TestStatus access$fProgressIndicator(junit.ui.TestRunner arg0)">1</method>
+			<method name="public void _init_(String suiteName)">3</method>
+			<method name="private void rerun()">4</method>
+			<method name="protected void createMenus(java.awt.MenuBar mb)">1</method>
+			<method name="private void runFailed(String message)">1</method>
+			<method name="private void showStatus(String status)">1</method>
+			<method name="static java.awt.Button access$fRerunButton(junit.ui.TestRunner arg0)">1</method>
+			<method name="static junit.framework.TestResult access$fTestResult(junit.ui.TestRunner arg0)">1</method>
+			<method name="public static void main(String[] args)">1</method>
+			<method name="private void appendFailure(String kind, junit.framework.Test test, Throwable t)">2</method>
+			<method name="public void run()">1</method>
+			<method name="protected void reset()">1</method>
+			<method name="static java.awt.TextField access$fSuiteField(junit.ui.TestRunner arg0)">1</method>
+			<method name="protected java.awt.Menu createFileMenu()">1</method>
+			<method name="private void showInfo(String message)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void start(String[] args)">5</method>
+			<method name="public synchronized void runSuite()">3</method>
+			<method name="public void _init_()">1</method>
+			<method name="static boolean access$isErrorSelected(junit.ui.TestRunner arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestCase</name>
+		<wmc>25</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>18</cbo>
+		<rfc>46</rfc>
+		<lcom>292</lcom>
+		<ca>2</ca>
+		<ce>17</ce>
+		<npm>18</npm>
+		<lcom3>0.875</lcom3>
+		<loc>305</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.26857142857142857</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>11.12</amc>
+		<cc>
+			<method name="public void _init_(String name)">1</method>
+			<method name="public void assertEquals(double expected, double actual, double delta)">1</method>
+			<method name="protected junit.framework.TestResult getResult()">1</method>
+			<method name="protected void runTest()">1</method>
+			<method name="protected void tearDown()">1</method>
+			<method name="protected void setUp()">1</method>
+			<method name="private void failNotEquals(String message, Object expected, Object actual)">2</method>
+			<method name="public void assertEquals(Object expected, Object actual)">1</method>
+			<method name="public void assert(String message, boolean condition)">2</method>
+			<method name="public String toString()">1</method>
+			<method name="public void assertEquals(long expected, long actual)">1</method>
+			<method name="public void assertEquals(String message, Object expected, Object actual)">5</method>
+			<method name="public void assertNotNull(Object object)">1</method>
+			<method name="protected junit.framework.TestResult createResult()">1</method>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="public void assertEquals(String message, long expected, long actual)">1</method>
+			<method name="public void assertEquals(String message, double expected, double actual, double delta)">2</method>
+			<method name="public String name()">1</method>
+			<method name="protected String notEqualsMessage(String message, Object expected, Object actual)">1</method>
+			<method name="public void assert(boolean condition)">1</method>
+			<method name="public void fail(String message)">1</method>
+			<method name="public junit.framework.TestResult run()">1</method>
+			<method name="public void runBare()">1</method>
+			<method name="public void assertNotNull(String message, Object object)">2</method>
+			<method name="public int countTestCases()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.AboutDialog</name>
+		<wmc>1</wmc>
+		<dit>5</dit>
+		<noc>0</noc>
+		<cbo>21</cbo>
+		<rfc>19</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>20</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>192</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>191.0</amc>
+		<cc>
+			<method name="public void _init_(java.awt.Frame parent)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.AssertionFailedError</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>2</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String message)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TraceFrame$2</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.9090909090909091</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TraceFrame this$0)">1</method>
+			<method name="public void windowClosing(java.awt.event.WindowEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TraceFrame$1</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TraceFrame this$0)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestSuite$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>0</npm>
+		<lcom3>0.0</lcom3>
+		<loc>15</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="protected void runTest()">1</method>
+			<method name="void _init_(String val$message, String unnamedArg$1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$11</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent event)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$12</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>21</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>12</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>90</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.9846153846153847</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>43.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0, junit.framework.Test val$testSuite)">1</method>
+			<method name="public void run()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.Logo</name>
+		<wmc>4</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>19</cbo>
+		<rfc>20</rfc>
+		<lcom>4</lcom>
+		<ca>2</ca>
+		<ce>17</ce>
+		<npm>4</npm>
+		<lcom3>0.6666666666666666</lcom3>
+		<loc>106</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.9914285714285714</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>2</ic>
+		<cbm>4</cbm>
+		<amc>24.75</amc>
+		<cc>
+			<method name="public void paintBackground(java.awt.Graphics g)">1</method>
+			<method name="public void paint(java.awt.Graphics g)">2</method>
+			<method name="public void _init_()">2</method>
+			<method name="public java.awt.Image loadImage(String name)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$2</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$3</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>10</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>28</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.5</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+			<method name="public void textValueChanged(java.awt.event.TextEvent e)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$1</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>15</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.9090909090909091</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+			<method name="public void windowClosing(java.awt.event.WindowEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$6</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>24</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.5</amc>
+		<cc>
+			<method name="public void itemStateChanged(java.awt.event.ItemEvent e)">1</method>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$10</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.8888888888888888</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+			<method name="public void mouseClicked(java.awt.event.MouseEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$7</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$4</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$5</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>17</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.8888888888888888</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+			<method name="public void mouseClicked(java.awt.event.MouseEvent e)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$8</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner this$0)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TestRunner$9</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>8</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestResult</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>20</cbo>
+		<rfc>21</rfc>
+		<lcom>55</lcom>
+		<ca>13</ca>
+		<ce>9</ce>
+		<npm>13</npm>
+		<lcom3>0.7115384615384616</lcom3>
+		<loc>122</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.375</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.428571428571429</amc>
+		<cc>
+			<method name="public synchronized void addFailure(junit.framework.Test test, Throwable t)">1</method>
+			<method name="public synchronized boolean wasSuccessful()">3</method>
+			<method name="public synchronized void addError(junit.framework.Test test, Throwable t)">1</method>
+			<method name="public synchronized java.util.Enumeration errors()">1</method>
+			<method name="public synchronized int testFailures()">1</method>
+			<method name="public synchronized void startTest(junit.framework.Test test)">1</method>
+			<method name="public synchronized void endTest(junit.framework.Test test)">1</method>
+			<method name="public synchronized int runTests()">1</method>
+			<method name="public synchronized int testErrors()">1</method>
+			<method name="public synchronized java.util.Enumeration failures()">1</method>
+			<method name="protected void run(junit.framework.TestCase test)">1</method>
+			<method name="public synchronized boolean shouldStop()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public synchronized void stop()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.TraceFrame</name>
+		<wmc>3</wmc>
+		<dit>5</dit>
+		<noc>0</noc>
+		<cbo>26</cbo>
+		<rfc>31</rfc>
+		<lcom>1</lcom>
+		<ca>3</ca>
+		<ce>25</ce>
+		<npm>2</npm>
+		<lcom3>0.75</lcom3>
+		<loc>184</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.9971014492753624</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>59.666666666666664</amc>
+		<cc>
+			<method name="private String truncateString(String s, int length)">2</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void showTrace(Throwable t)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.TestFailure</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>10</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>6</ce>
+		<npm>4</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>44</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.5</amc>
+		<cc>
+			<method name="public void _init_(junit.framework.Test failedTest, Throwable thrownException)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public junit.framework.Test failedTest()">1</method>
+			<method name="public Throwable thrownException()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.ActiveTest</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>11</rfc>
+		<lcom>3</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>3</npm>
+		<lcom3>2.0</lcom3>
+		<loc>28</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5555555555555556</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.333333333333334</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="public void _init_(junit.framework.Test test)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.framework.Test</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>2</rfc>
+		<lcom>1</lcom>
+		<ca>14</ca>
+		<ce>3</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>2</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract int countTestCases()">1</method>
+			<method name="public abstract void run(junit.framework.TestResult)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.ui.UITestResult</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>14</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>4</npm>
+		<lcom3>0.0</lcom3>
+		<loc>52</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.2</amc>
+		<cc>
+			<method name="void _init_(junit.ui.TestRunner runner)">1</method>
+			<method name="public synchronized void endTest(junit.framework.Test test)">1</method>
+			<method name="public synchronized void addFailure(junit.framework.Test test, Throwable t)">1</method>
+			<method name="public synchronized void addError(junit.framework.Test test, Throwable t)">1</method>
+			<method name="public synchronized void startTest(junit.framework.Test test)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.RepeatedTest</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>13</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>44</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4375</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.75</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void run(junit.framework.TestResult result)">3</method>
+			<method name="public void _init_(junit.framework.Test test, int repeat)">1</method>
+			<method name="public int countTestCases()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.extensions.TestDecorator</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>3</noc>
+		<cbo>9</cbo>
+		<rfc>8</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>5</ce>
+		<npm>4</npm>
+		<lcom3>0.0</lcom3>
+		<loc>24</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.75</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void run(junit.framework.TestResult result)">1</method>
+			<method name="public void _init_(junit.framework.Test test)">1</method>
+			<method name="public int countTestCases()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>junit.textui.TextTestResult</name>
+		<wmc>9</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>37</rfc>
+		<lcom>36</lcom>
+		<ca>1</ca>
+		<ce>11</ce>
+		<npm>8</npm>
+		<lcom3>2.0</lcom3>
+		<loc>260</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35555555555555557</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>27.88888888888889</amc>
+		<cc>
+			<method name="public void printErrors()">4</method>
+			<method name="public synchronized void print()">1</method>
+			<method name="public synchronized void addFailure(junit.framework.Test test, Throwable t)">1</method>
+			<method name="public void printHeader()">2</method>
+			<method name="public synchronized void addError(junit.framework.Test test, Throwable t)">1</method>
+			<method name="public void printFailures()">5</method>
+			<method name="private String truncateString(String s, int length)">2</method>
+			<method name="public void _init_()">1</method>
+			<method name="public synchronized void startTest(junit.framework.Test test)">1</method>
+		</cc>
+	</class>
+
+</metrics>

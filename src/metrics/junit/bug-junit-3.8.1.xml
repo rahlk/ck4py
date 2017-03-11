@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1489085827000" analysisTimestamp="1489169321757" release="">
+  <Project projectName="junit-3.8.1">
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-3.8.1/bin/junit.jar</Jar>
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-3.8.1/src/junit3.8.1/junit/tests/runner/test.jar</Jar>
+  </Project>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE">
+    <Class classname="junit.awtui.Logo">
+      <SourceLine classname="junit.awtui.Logo" start="14" end="52" sourcefile="Logo.java" sourcepath="junit/awtui/Logo.java"/>
+    </Class>
+    <Method classname="junit.awtui.Logo" name="loadImage" signature="(Ljava/lang/String;)Ljava/awt/Image;" isStatic="false">
+      <SourceLine classname="junit.awtui.Logo" start="34" end="40" startBytecode="0" endBytecode="159" sourcefile="Logo.java" sourcepath="junit/awtui/Logo.java"/>
+    </Method>
+    <SourceLine classname="junit.awtui.Logo" start="38" end="38" startBytecode="53" endBytecode="53" sourcefile="Logo.java" sourcepath="junit/awtui/Logo.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="junit.awtui.TestRunner">
+      <SourceLine classname="junit.awtui.TestRunner" start="20" end="538" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Class>
+    <Field classname="junit.awtui.TestRunner" name="fRunner" signature="Ljava/lang/Thread;" isStatic="false">
+      <SourceLine classname="junit.awtui.TestRunner" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Field>
+    <Int value="60" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="junit.awtui.TestRunner" start="441" end="441" startBytecode="17" endBytecode="17" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="junit.awtui.TestRunner" start="378" end="378" startBytecode="1" endBytecode="1" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="junit.awtui.TestRunner" start="445" end="445" startBytecode="1" endBytecode="1" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="junit.awtui.TestRunner" start="457" end="457" startBytecode="86" endBytecode="86" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="junit.awtui.TestRunner" start="480" end="480" startBytecode="90" endBytecode="90" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE">
+    <Class classname="junit.awtui.TestRunner">
+      <SourceLine classname="junit.awtui.TestRunner" start="20" end="538" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Class>
+    <Method classname="junit.awtui.TestRunner" name="loadFrameIcon" signature="()Ljava/awt/Image;" isStatic="false">
+      <SourceLine classname="junit.awtui.TestRunner" start="368" end="374" startBytecode="0" endBytecode="152" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Method>
+    <SourceLine classname="junit.awtui.TestRunner" start="372" end="372" startBytecode="56" endBytecode="56" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="junit.awtui.TestRunner">
+      <SourceLine classname="junit.awtui.TestRunner" start="20" end="538" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Class>
+    <Method classname="junit.awtui.TestRunner" name="testFailed" signature="(ILjunit/framework/Test;Ljava/lang/Throwable;)V" isStatic="false">
+      <SourceLine classname="junit.awtui.TestRunner" start="66" end="76" startBytecode="0" endBytecode="173" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Method>
+    <SourceLine classname="junit.awtui.TestRunner" start="66" end="73" startBytecode="1" endBytecode="76" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="junit.awtui.TestRunner$2">
+      <SourceLine classname="junit.awtui.TestRunner$2" start="1" end="127" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Class>
+    <Method classname="junit.awtui.TestRunner$2" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="junit.awtui.TestRunner$2" start="126" end="127" startBytecode="0" endBytecode="60" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Method>
+    <SourceLine classname="junit.awtui.TestRunner$2" start="126" end="126" startBytecode="1" endBytecode="1" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="junit.awtui.TestRunner$9">
+      <SourceLine classname="junit.awtui.TestRunner$9" start="1" end="258" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Class>
+    <Method classname="junit.awtui.TestRunner$9" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="junit.awtui.TestRunner$9" start="257" end="258" startBytecode="0" endBytecode="60" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+    </Method>
+    <SourceLine classname="junit.awtui.TestRunner$9" start="257" end="257" startBytecode="1" endBytecode="1" sourcefile="TestRunner.java" sourcepath="junit/awtui/TestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS">
+    <Class classname="junit.extensions.ActiveTestSuite">
+      <SourceLine classname="junit.extensions.ActiveTestSuite" start="14" end="63" sourcefile="ActiveTestSuite.java" sourcepath="junit/extensions/ActiveTestSuite.java"/>
+    </Class>
+    <Method classname="junit.extensions.ActiveTestSuite" name="runFinished" signature="(Ljunit/framework/Test;)V" isStatic="false">
+      <SourceLine classname="junit.extensions.ActiveTestSuite" start="61" end="63" startBytecode="0" endBytecode="74" sourcefile="ActiveTestSuite.java" sourcepath="junit/extensions/ActiveTestSuite.java"/>
+    </Method>
+    <Field classname="junit.extensions.ActiveTestSuite" name="fActiveTestDeathCount" signature="I" isStatic="false">
+      <SourceLine classname="junit.extensions.ActiveTestSuite" sourcefile="ActiveTestSuite.java" sourcepath="junit/extensions/ActiveTestSuite.java"/>
+    </Field>
+    <SourceLine classname="junit.extensions.ActiveTestSuite" start="61" end="61" startBytecode="7" endBytecode="7" sourcefile="ActiveTestSuite.java" sourcepath="junit/extensions/ActiveTestSuite.java"/>
+  </BugInstance>
+  <BugInstance type="LI_LAZY_INIT_UPDATE_STATIC" priority="1" rank="6" abbrev="LI" category="MT_CORRECTNESS">
+    <Class classname="junit.runner.BaseTestRunner">
+      <SourceLine classname="junit.runner.BaseTestRunner" start="13" end="320" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Class>
+    <Method classname="junit.runner.BaseTestRunner" name="getPreferences" signature="()Ljava/util/Properties;" isStatic="true">
+      <SourceLine classname="junit.runner.BaseTestRunner" start="33" end="39" startBytecode="0" endBytecode="18" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Method>
+    <Field classname="junit.runner.BaseTestRunner" name="fPreferences" signature="Ljava/util/Properties;" isStatic="true" role="FIELD_ON">
+      <SourceLine classname="junit.runner.BaseTestRunner" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Field>
+    <SourceLine classname="junit.runner.BaseTestRunner" start="33" end="34" startBytecode="0" endBytecode="13" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="junit.runner.BaseTestRunner">
+      <SourceLine classname="junit.runner.BaseTestRunner" start="13" end="320" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Class>
+    <Method classname="junit.runner.BaseTestRunner" name="readPreferences" signature="()V" isStatic="true">
+      <SourceLine classname="junit.runner.BaseTestRunner" start="221" end="233" startBytecode="0" endBytecode="149" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" start="45" end="364" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="junit.runner.BaseTestRunner" start="223" end="223" startBytecode="9" endBytecode="9" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="junit.runner.BaseTestRunner" start="224" end="224" startBytecode="13" endBytecode="13" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="junit.runner.BaseTestRunner" start="225" end="225" startBytecode="26" endBytecode="26" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="junit.runner.BaseTestRunner" start="233" end="233" startBytecode="49" endBytecode="49" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="junit.runner.BaseTestRunner">
+      <SourceLine classname="junit.runner.BaseTestRunner" start="13" end="320" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Class>
+    <Method classname="junit.runner.BaseTestRunner" name="readPreferences" signature="()V" isStatic="true">
+      <SourceLine classname="junit.runner.BaseTestRunner" start="221" end="233" startBytecode="0" endBytecode="23" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream" start="45" end="364" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Type>
+    <SourceLine classname="junit.runner.BaseTestRunner" start="223" end="223" startBytecode="2" endBytecode="2" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="junit.runner.BaseTestRunner">
+      <SourceLine classname="junit.runner.BaseTestRunner" start="13" end="320" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Class>
+    <Method classname="junit.runner.BaseTestRunner" name="processArguments" signature="([Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="junit.runner.BaseTestRunner" start="140" end="156" startBytecode="0" endBytecode="229" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Method>
+    <Field classname="junit.runner.BaseTestRunner" name="fgFilterStack" signature="Z" isStatic="true">
+      <SourceLine classname="junit.runner.BaseTestRunner" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+    </Field>
+    <SourceLine classname="junit.runner.BaseTestRunner" start="145" end="145" startBytecode="38" endBytecode="38" sourcefile="BaseTestRunner.java" sourcepath="junit/runner/BaseTestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED" priority="2" rank="18" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="junit.runner.LoadingTestCollector">
+      <SourceLine classname="junit.runner.LoadingTestCollector" start="17" end="67" sourcefile="LoadingTestCollector.java" sourcepath="junit/runner/LoadingTestCollector.java"/>
+    </Class>
+    <Method classname="junit.runner.LoadingTestCollector" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="junit.runner.LoadingTestCollector" start="17" end="19" startBytecode="0" endBytecode="65" sourcefile="LoadingTestCollector.java" sourcepath="junit/runner/LoadingTestCollector.java"/>
+    </Method>
+    <Class classname="junit.runner.TestCaseClassLoader">
+      <SourceLine classname="junit.runner.TestCaseClassLoader" start="29" end="223" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+    </Class>
+    <SourceLine classname="junit.runner.LoadingTestCollector" start="18" end="18" startBytecode="5" endBytecode="5" sourcefile="LoadingTestCollector.java" sourcepath="junit/runner/LoadingTestCollector.java"/>
+  </BugInstance>
+  <BugInstance type="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED" priority="2" rank="18" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="junit.runner.ReloadingTestSuiteLoader">
+      <SourceLine classname="junit.runner.ReloadingTestSuiteLoader" start="6" end="17" sourcefile="ReloadingTestSuiteLoader.java" sourcepath="junit/runner/ReloadingTestSuiteLoader.java"/>
+    </Class>
+    <Method classname="junit.runner.ReloadingTestSuiteLoader" name="createLoader" signature="()Ljunit/runner/TestCaseClassLoader;" isStatic="false">
+      <SourceLine classname="junit.runner.ReloadingTestSuiteLoader" start="17" end="17" startBytecode="0" endBytecode="49" sourcefile="ReloadingTestSuiteLoader.java" sourcepath="junit/runner/ReloadingTestSuiteLoader.java"/>
+    </Method>
+    <Class classname="junit.runner.TestCaseClassLoader">
+      <SourceLine classname="junit.runner.TestCaseClassLoader" start="29" end="223" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+    </Class>
+    <SourceLine classname="junit.runner.ReloadingTestSuiteLoader" start="17" end="17" startBytecode="0" endBytecode="0" sourcefile="ReloadingTestSuiteLoader.java" sourcepath="junit/runner/ReloadingTestSuiteLoader.java"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="2" rank="16" abbrev="NP" category="STYLE">
+    <Class classname="junit.runner.TestCaseClassLoader">
+      <SourceLine classname="junit.runner.TestCaseClassLoader" start="29" end="223" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+    </Class>
+    <Method classname="junit.runner.TestCaseClassLoader" name="loadClass" signature="(Ljava/lang/String;Z)Ljava/lang/Class;" isStatic="false">
+      <SourceLine classname="junit.runner.TestCaseClassLoader" start="85" end="108" startBytecode="0" endBytecode="45" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+    </Method>
+    <LocalVariable name="c" register="3" pc="28" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="junit.runner.TestCaseClassLoader" start="100" end="100" startBytecode="30" endBytecode="30" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="junit.runner.TestCaseClassLoader">
+      <SourceLine classname="junit.runner.TestCaseClassLoader" start="29" end="223" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+    </Class>
+    <Method classname="junit.runner.TestCaseClassLoader" name="getClassData" signature="(Ljava/io/File;)[B" isStatic="false">
+      <SourceLine classname="junit.runner.TestCaseClassLoader" start="141" end="153" startBytecode="0" endBytecode="217" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" start="45" end="364" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="junit.runner.TestCaseClassLoader" start="141" end="141" startBytecode="5" endBytecode="5" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="junit.runner.TestCaseClassLoader" start="142" end="142" startBytecode="9" endBytecode="9" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="junit.runner.TestCaseClassLoader" start="143" end="143" startBytecode="20" endBytecode="20" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="junit.runner.TestCaseClassLoader" start="145" end="145" startBytecode="27" endBytecode="27" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="junit.runner.TestCaseClassLoader" start="151" end="151" startBytecode="65" endBytecode="65" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="junit.runner.TestCaseClassLoader" start="153" end="153" startBytecode="66" endBytecode="66" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="junit.runner.TestCaseClassLoader">
+      <SourceLine classname="junit.runner.TestCaseClassLoader" start="29" end="223" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+    </Class>
+    <Method classname="junit.runner.TestCaseClassLoader" name="loadJarData" signature="(Ljava/lang/String;Ljava/lang/String;)[B" isStatic="false">
+      <SourceLine classname="junit.runner.TestCaseClassLoader" start="157" end="189" startBytecode="0" endBytecode="85" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/zip/ZipFile;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.util.zip.ZipFile" start="60" end="795" sourcefile="ZipFile.java" sourcepath="java/util/zip/ZipFile.java"/>
+    </Type>
+    <SourceLine classname="junit.runner.TestCaseClassLoader" start="163" end="163" startBytecode="25" endBytecode="25" sourcefile="TestCaseClassLoader.java" sourcepath="junit/runner/TestCaseClassLoader.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="junit.swingui.TestRunner">
+      <SourceLine classname="junit.swingui.TestRunner" start="28" end="773" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Class>
+    <Method classname="junit.swingui.TestRunner" name="loadHistory" signature="(Ljavax/swing/JComboBox;)V" isStatic="false">
+      <SourceLine classname="junit.swingui.TestRunner" start="490" end="504" startBytecode="0" endBytecode="221" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="junit.swingui.TestRunner" start="490" end="490" startBytecode="12" endBytecode="12" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="junit.swingui.TestRunner">
+      <SourceLine classname="junit.swingui.TestRunner" start="28" end="773" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Class>
+    <Method classname="junit.swingui.TestRunner" name="saveHistory" signature="()V" isStatic="false">
+      <SourceLine classname="junit.swingui.TestRunner" start="648" end="658" startBytecode="0" endBytecode="205" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="junit.swingui.TestRunner" start="648" end="648" startBytecode="12" endBytecode="12" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="junit.swingui.TestRunner">
+      <SourceLine classname="junit.swingui.TestRunner" start="28" end="773" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Class>
+    <Method classname="junit.swingui.TestRunner" name="terminate" signature="()V" isStatic="false">
+      <SourceLine classname="junit.swingui.TestRunner" start="743" end="750" startBytecode="0" endBytecode="108" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Method>
+    <SourceLine classname="junit.swingui.TestRunner" start="749" end="749" startBytecode="25" endBytecode="25" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="junit.swingui.TestRunner">
+      <SourceLine classname="junit.swingui.TestRunner" start="28" end="773" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Class>
+    <Field classname="junit.swingui.TestRunner" name="fRunner" signature="Ljava/lang/Thread;" isStatic="false">
+      <SourceLine classname="junit.swingui.TestRunner" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Field>
+    <Int value="80" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="junit.swingui.TestRunner" start="580" end="580" startBytecode="17" endBytecode="17" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="junit.swingui.TestRunner" start="584" end="584" startBytecode="1" endBytecode="1" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="junit.swingui.TestRunner" start="605" end="605" startBytecode="1" endBytecode="1" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="junit.swingui.TestRunner" start="617" end="617" startBytecode="24" endBytecode="24" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="junit.swingui.TestRunner" start="644" end="644" startBytecode="49" endBytecode="49" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="junit.swingui.TestRunner$1">
+      <SourceLine classname="junit.swingui.TestRunner$1" start="1" end="74" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Class>
+    <Method classname="junit.swingui.TestRunner$1" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="junit.swingui.TestRunner$1" start="64" end="74" startBytecode="0" endBytecode="167" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+    </Method>
+    <SourceLine classname="junit.swingui.TestRunner$1" start="64" end="71" startBytecode="4" endBytecode="100" sourcefile="TestRunner.java" sourcepath="junit/swingui/TestRunner.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="junit.swingui.TestSelector$ParallelSwapper">
+      <SourceLine classname="junit.swingui.TestSelector$ParallelSwapper" start="246" end="256" sourcefile="TestSelector.java" sourcepath="junit/swingui/TestSelector.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="junit.textui.TestRunner">
+      <SourceLine classname="junit.textui.TestRunner" start="36" end="186" sourcefile="TestRunner.java" sourcepath="junit/textui/TestRunner.java"/>
+    </Class>
+    <Method classname="junit.textui.TestRunner" name="runFailed" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="junit.textui.TestRunner" start="180" end="182" startBytecode="0" endBytecode="71" sourcefile="TestRunner.java" sourcepath="junit/textui/TestRunner.java"/>
+    </Method>
+    <SourceLine classname="junit.textui.TestRunner" start="181" end="181" startBytecode="8" endBytecode="8" sourcefile="TestRunner.java" sourcepath="junit/textui/TestRunner.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 9 Mar 2017 13:57:07 -0500" total_classes="101" referenced_classes="660" total_bugs="23" total_size="3319" num_packages="7" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="32.07" clock_seconds="87.54" peak_mbytes="324.96" alloc_mbytes="683.00" gc_seconds="4.08" priority_2="20" priority_1="3">
+    <PackageStats package="junit.awtui" total_bugs="6" total_types="16" total_size="596" priority_2="6">
+      <ClassStats class="junit.awtui.AboutDialog" sourceFile="AboutDialog.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="junit.awtui.AboutDialog$1" sourceFile="AboutDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.awtui.AboutDialog$2" sourceFile="AboutDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.awtui.Logo" sourceFile="Logo.java" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="junit.awtui.ProgressBar" sourceFile="ProgressBar.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="junit.awtui.TestRunner" sourceFile="TestRunner.java" interface="false" size="345" bugs="3" priority_2="3"/>
+      <ClassStats class="junit.awtui.TestRunner$1" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.awtui.TestRunner$10" sourceFile="TestRunner.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="junit.awtui.TestRunner$2" sourceFile="TestRunner.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="junit.awtui.TestRunner$3" sourceFile="TestRunner.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="junit.awtui.TestRunner$4" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.awtui.TestRunner$5" sourceFile="TestRunner.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="junit.awtui.TestRunner$6" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.awtui.TestRunner$7" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.awtui.TestRunner$8" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.awtui.TestRunner$9" sourceFile="TestRunner.java" interface="false" size="7" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="junit.extensions" total_bugs="1" total_types="7" total_size="119" priority_2="1">
+      <ClassStats class="junit.extensions.ActiveTestSuite" sourceFile="ActiveTestSuite.java" interface="false" size="33" bugs="1" priority_2="1"/>
+      <ClassStats class="junit.extensions.ActiveTestSuite$1" sourceFile="ActiveTestSuite.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="junit.extensions.ExceptionTestCase" sourceFile="ExceptionTestCase.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="junit.extensions.RepeatedTest" sourceFile="RepeatedTest.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="junit.extensions.TestDecorator" sourceFile="TestDecorator.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="junit.extensions.TestSetup" sourceFile="TestSetup.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="junit.extensions.TestSetup$1" sourceFile="TestSetup.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="junit.framework" total_bugs="0" total_types="12" total_size="487">
+      <ClassStats class="junit.framework.Assert" sourceFile="Assert.java" interface="false" size="144" bugs="0"/>
+      <ClassStats class="junit.framework.AssertionFailedError" sourceFile="AssertionFailedError.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="junit.framework.ComparisonFailure" sourceFile="ComparisonFailure.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="junit.framework.Protectable" sourceFile="Protectable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="junit.framework.Test" sourceFile="Test.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="junit.framework.TestCase" sourceFile="TestCase.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="junit.framework.TestFailure" sourceFile="TestFailure.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="junit.framework.TestListener" sourceFile="TestListener.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="junit.framework.TestResult" sourceFile="TestResult.java" interface="false" size="75" bugs="0"/>
+      <ClassStats class="junit.framework.TestResult$1" sourceFile="TestResult.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.framework.TestSuite" sourceFile="TestSuite.java" interface="false" size="120" bugs="0"/>
+      <ClassStats class="junit.framework.TestSuite$1" sourceFile="TestSuite.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="junit.runner" total_bugs="9" total_types="14" total_size="475" priority_2="8" priority_1="1">
+      <ClassStats class="junit.runner.BaseTestRunner" sourceFile="BaseTestRunner.java" interface="false" size="185" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="junit.runner.ClassPathTestCollector" sourceFile="ClassPathTestCollector.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="junit.runner.FailureDetailView" sourceFile="FailureDetailView.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="junit.runner.LoadingTestCollector" sourceFile="LoadingTestCollector.java" interface="false" size="37" bugs="1" priority_2="1"/>
+      <ClassStats class="junit.runner.ReloadingTestSuiteLoader" sourceFile="ReloadingTestSuiteLoader.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="junit.runner.SimpleTestCollector" sourceFile="SimpleTestCollector.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="junit.runner.Sorter" sourceFile="Sorter.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="junit.runner.Sorter$Swapper" sourceFile="Sorter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="junit.runner.StandardTestSuiteLoader" sourceFile="StandardTestSuiteLoader.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="junit.runner.TestCaseClassLoader" sourceFile="TestCaseClassLoader.java" interface="false" size="131" bugs="3" priority_2="3"/>
+      <ClassStats class="junit.runner.TestCollector" sourceFile="TestCollector.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="junit.runner.TestRunListener" sourceFile="TestRunListener.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="junit.runner.TestSuiteLoader" sourceFile="TestSuiteLoader.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="junit.runner.Version" sourceFile="Version.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="junit.swingui" total_bugs="6" total_types="49" total_size="1466" priority_2="4" priority_1="2">
+      <ClassStats class="junit.swingui.AboutDialog" sourceFile="AboutDialog.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="junit.swingui.AboutDialog$1" sourceFile="AboutDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.AboutDialog$2" sourceFile="AboutDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.CounterPanel" sourceFile="CounterPanel.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="junit.swingui.DefaultFailureDetailView" sourceFile="DefaultFailureDetailView.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="junit.swingui.DefaultFailureDetailView$StackEntryRenderer" sourceFile="DefaultFailureDetailView.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="junit.swingui.DefaultFailureDetailView$StackTraceListModel" sourceFile="DefaultFailureDetailView.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="junit.swingui.FailureRunView" sourceFile="FailureRunView.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="junit.swingui.FailureRunView$1" sourceFile="FailureRunView.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.FailureRunView$FailureListCellRenderer" sourceFile="FailureRunView.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="junit.swingui.ProgressBar" sourceFile="ProgressBar.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="junit.swingui.StatusLine" sourceFile="StatusLine.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="junit.swingui.TestHierarchyRunView" sourceFile="TestHierarchyRunView.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="junit.swingui.TestHierarchyRunView$1" sourceFile="TestHierarchyRunView.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunContext" sourceFile="TestRunContext.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunView" sourceFile="TestRunView.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner" sourceFile="TestRunner.java" interface="false" size="477" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="junit.swingui.TestRunner$1" sourceFile="TestRunner.java" interface="false" size="16" bugs="1" priority_2="1"/>
+      <ClassStats class="junit.swingui.TestRunner$10" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$11" sourceFile="TestRunner.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$12" sourceFile="TestRunner.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$13" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$14" sourceFile="TestRunner.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$15" sourceFile="TestRunner.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$16" sourceFile="TestRunner.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$17" sourceFile="TestRunner.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$18" sourceFile="TestRunner.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$19" sourceFile="TestRunner.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$2" sourceFile="TestRunner.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$3" sourceFile="TestRunner.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$4" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$5" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$6" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$7" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$8" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestRunner$9" sourceFile="TestRunner.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSelector" sourceFile="TestSelector.java" interface="false" size="117" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSelector$1" sourceFile="TestSelector.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSelector$2" sourceFile="TestSelector.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSelector$3" sourceFile="TestSelector.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSelector$4" sourceFile="TestSelector.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSelector$DoubleClickListener" sourceFile="TestSelector.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSelector$KeySelectListener" sourceFile="TestSelector.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSelector$ParallelSwapper" sourceFile="TestSelector.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="junit.swingui.TestSelector$TestCellRenderer" sourceFile="TestSelector.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSuitePanel" sourceFile="TestSuitePanel.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSuitePanel$1" sourceFile="TestSuitePanel.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="junit.swingui.TestSuitePanel$TestTreeCellRenderer" sourceFile="TestSuitePanel.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="junit.swingui.TestTreeModel" sourceFile="TestTreeModel.java" interface="false" size="95" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="junit.tests.runner" total_bugs="0" total_types="1" total_size="13">
+      <ClassStats class="junit.tests.runner.LoadedFromJar" sourceFile="LoadedFromJar.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="junit.textui" total_bugs="1" total_types="2" total_size="163" priority_2="1">
+      <ClassStats class="junit.textui.ResultPrinter" sourceFile="ResultPrinter.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="junit.textui.TestRunner" sourceFile="TestRunner.java" interface="false" size="87" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="10586" invocations="2283" avgMicrosecondsPerInvocation="4636" maxMicrosecondsPerInvocation="223449" standardDeviationMircosecondsPerInvocation="15095"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="7101" invocations="660" avgMicrosecondsPerInvocation="10760" maxMicrosecondsPerInvocation="216171" standardDeviationMircosecondsPerInvocation="25588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="6824" invocations="660" avgMicrosecondsPerInvocation="10340" maxMicrosecondsPerInvocation="194961" standardDeviationMircosecondsPerInvocation="24724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="4619" invocations="1722" avgMicrosecondsPerInvocation="2682" maxMicrosecondsPerInvocation="121610" standardDeviationMircosecondsPerInvocation="9970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="2348" invocations="564" avgMicrosecondsPerInvocation="4164" maxMicrosecondsPerInvocation="194556" standardDeviationMircosecondsPerInvocation="15170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2323" invocations="564" avgMicrosecondsPerInvocation="4119" maxMicrosecondsPerInvocation="159732" standardDeviationMircosecondsPerInvocation="14650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="2276" invocations="564" avgMicrosecondsPerInvocation="4036" maxMicrosecondsPerInvocation="108570" standardDeviationMircosecondsPerInvocation="13965"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2184" invocations="580" avgMicrosecondsPerInvocation="3765" maxMicrosecondsPerInvocation="146912" standardDeviationMircosecondsPerInvocation="12929"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2167" invocations="564" avgMicrosecondsPerInvocation="3843" maxMicrosecondsPerInvocation="125624" standardDeviationMircosecondsPerInvocation="12756"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="2085" invocations="660" avgMicrosecondsPerInvocation="3159" maxMicrosecondsPerInvocation="336147" standardDeviationMircosecondsPerInvocation="16518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnnecessaryMath" totalMilliseconds="2043" invocations="101" avgMicrosecondsPerInvocation="20230" maxMicrosecondsPerInvocation="2038992" standardDeviationMircosecondsPerInvocation="201876"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="1600" invocations="660" avgMicrosecondsPerInvocation="2424" maxMicrosecondsPerInvocation="388596" standardDeviationMircosecondsPerInvocation="16876"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1366" invocations="753" avgMicrosecondsPerInvocation="1815" maxMicrosecondsPerInvocation="266605" standardDeviationMircosecondsPerInvocation="11687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="1352" invocations="587" avgMicrosecondsPerInvocation="2304" maxMicrosecondsPerInvocation="124644" standardDeviationMircosecondsPerInvocation="9594"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="1351" invocations="2227" avgMicrosecondsPerInvocation="606" maxMicrosecondsPerInvocation="64163" standardDeviationMircosecondsPerInvocation="4543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="1267" invocations="660" avgMicrosecondsPerInvocation="1920" maxMicrosecondsPerInvocation="93962" standardDeviationMircosecondsPerInvocation="8742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="1237" invocations="660" avgMicrosecondsPerInvocation="1874" maxMicrosecondsPerInvocation="92866" standardDeviationMircosecondsPerInvocation="9307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="1236" invocations="660" avgMicrosecondsPerInvocation="1872" maxMicrosecondsPerInvocation="120675" standardDeviationMircosecondsPerInvocation="11044"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1192" invocations="518" avgMicrosecondsPerInvocation="2302" maxMicrosecondsPerInvocation="107131" standardDeviationMircosecondsPerInvocation="10106"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="1163" invocations="596" avgMicrosecondsPerInvocation="1951" maxMicrosecondsPerInvocation="419982" standardDeviationMircosecondsPerInvocation="18412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="1015" invocations="660" avgMicrosecondsPerInvocation="1538" maxMicrosecondsPerInvocation="104445" standardDeviationMircosecondsPerInvocation="8300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="938" invocations="660" avgMicrosecondsPerInvocation="1421" maxMicrosecondsPerInvocation="76749" standardDeviationMircosecondsPerInvocation="7003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="931" invocations="101" avgMicrosecondsPerInvocation="9219" maxMicrosecondsPerInvocation="379207" standardDeviationMircosecondsPerInvocation="39927"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="913" invocations="2288" avgMicrosecondsPerInvocation="399" maxMicrosecondsPerInvocation="75781" standardDeviationMircosecondsPerInvocation="3792"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.WaitInLoop" totalMilliseconds="713" invocations="101" avgMicrosecondsPerInvocation="7063" maxMicrosecondsPerInvocation="625159" standardDeviationMircosecondsPerInvocation="62182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="709" invocations="564" avgMicrosecondsPerInvocation="1257" maxMicrosecondsPerInvocation="65633" standardDeviationMircosecondsPerInvocation="6320"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+

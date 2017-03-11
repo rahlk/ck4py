@@ -1,0 +1,4964 @@
+<metrics>
+
+
+
+	<class>
+		<name>JFlex.HiLowEmitter</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>13</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>140</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5555555555555556</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>45.333333333333336</amc>
+		<cc>
+			<method name="public void _init_(String name)">1</method>
+			<method name="public void emitUnpack()">2</method>
+			<method name="public void emit(int val)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.GeneratorThread</name>
+		<wmc>3</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>12</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>11</ce>
+		<npm>2</npm>
+		<lcom3>0.5</lcom3>
+		<loc>73</loc>
+		<dam>0.25</dam>
+		<moa>1</moa>
+		<mfa>0.9846153846153847</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>2</ic>
+		<cbm>2</cbm>
+		<amc>22.0</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_(JFlex.gui.MainFrame parent, String inputFile, String outputDir)">1</method>
+			<method name="public void run()">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.tests.AntTaskTests</name>
+		<wmc>17</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>50</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>11</ce>
+		<npm>16</npm>
+		<lcom3>0.0625</lcom3>
+		<loc>321</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5294117647058824</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.823529411764707</amc>
+		<cc>
+			<method name="public void testDefaultDir()">1</method>
+			<method name="public void testNomin()">2</method>
+			<method name="public void _init_(String name)">1</method>
+			<method name="public void testPackageAndClass()">1</method>
+			<method name="public void testDump()">2</method>
+			<method name="protected void setUp()">1</method>
+			<method name="public void testSkipMinimization()">2</method>
+			<method name="public void testJlex()">2</method>
+			<method name="public void testNobak()">2</method>
+			<method name="public void testTime()">3</method>
+			<method name="public void testDestdir()">1</method>
+			<method name="public void testOutdir()">1</method>
+			<method name="public void testCodeGen()">1</method>
+			<method name="public void testSkel()">2</method>
+			<method name="public void testPackageAndClassDefaults()">1</method>
+			<method name="public void testVerbose()">2</method>
+			<method name="public void testDot()">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.Skeleton</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>30</cbo>
+		<rfc>46</rfc>
+		<lcom>26</lcom>
+		<ca>6</ca>
+		<ce>24</ce>
+		<npm>7</npm>
+		<lcom3>0.8571428571428572</lcom3>
+		<loc>277</loc>
+		<dam>0.7142857142857143</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.175</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>29.0</amc>
+		<cc>
+			<method name="static Class class$(String x0)">1</method>
+			<method name="public static String replace(String a, String b, String c)">2</method>
+			<method name="public static void readDefault()">4</method>
+			<method name="public static void readSkelFile(java.io.File skeletonFile)">4</method>
+			<method name="public void emitNext()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static void makePrivate()">2</method>
+			<method name="public static void readSkel(java.io.BufferedReader reader)">1</method>
+			<method name="public void _init_(java.io.PrintWriter out)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.tests.PackEmitterTest</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>16</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>11</ce>
+		<npm>5</npm>
+		<lcom3>0.25</lcom3>
+		<loc>93</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.4</amc>
+		<cc>
+			<method name="public void setUp()">1</method>
+			<method name="public void testInit()">1</method>
+			<method name="public void testEmitUCplain()">1</method>
+			<method name="public void testLineBreak()">2</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.StateSet</name>
+		<wmc>22</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>34</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>19</npm>
+		<lcom3>0.7904761904761906</lcom3>
+		<loc>692</loc>
+		<dam>0.2</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.40476190476190477</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>30.227272727272727</amc>
+		<cc>
+			<method name="private void resize(int size)">1</method>
+			<method name="public void _init_(int size)">1</method>
+			<method name="public void _init_(int size, int state)">1</method>
+			<method name="public JFlex.StateSet complement(JFlex.StateSet set)">4</method>
+			<method name="public JFlex.StateSetEnumerator states()">1</method>
+			<method name="public void addState(int state)">2</method>
+			<method name="public int getAndRemoveElement()">3</method>
+			<method name="public boolean equals(Object b)">10</method>
+			<method name="public void add(JFlex.StateSet set)">4</method>
+			<method name="public void remove(int state)">2</method>
+			<method name="public void clear()">2</method>
+			<method name="public void _init_(JFlex.StateSet set)">1</method>
+			<method name="private int size2nbits(int size)">1</method>
+			<method name="public String toString()">3</method>
+			<method name="public int hashCode()">4</method>
+			<method name="public boolean containsElements()">3</method>
+			<method name="public boolean containsSet(JFlex.StateSet set)">5</method>
+			<method name="public void copy(JFlex.StateSet set)">5</method>
+			<method name="public boolean isElement(int state)">3</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public JFlex.StateSet copy()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.anttask.JFlexTask</name>
+		<wmc>24</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>18</cbo>
+		<rfc>50</rfc>
+		<lcom>238</lcom>
+		<ca>1</ca>
+		<ce>17</ce>
+		<npm>24</npm>
+		<lcom3>0.8695652173913043</lcom3>
+		<loc>344</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.6166666666666667</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>13.125</amc>
+		<cc>
+			<method name="public void setSkel(java.io.File skeleton)">1</method>
+			<method name="public void setDestdir(java.io.File destinationDir)">1</method>
+			<method name="public void findPackageAndClass()">1</method>
+			<method name="public String getClassName()">1</method>
+			<method name="public void setSkeleton(java.io.File skeleton)">1</method>
+			<method name="public void normalizeOutdir()">4</method>
+			<method name="public void setJLex(boolean b)">1</method>
+			<method name="public void execute()">1</method>
+			<method name="public void setNobak(boolean b)">1</method>
+			<method name="public void setTable(boolean b)">2</method>
+			<method name="public void setTimeStatistics(boolean displayTime)">1</method>
+			<method name="public void setSkipMinimization(boolean skipMin)">1</method>
+			<method name="public void setOutdir(java.io.File outDir)">1</method>
+			<method name="public void setDot(boolean b)">1</method>
+			<method name="public void setNomin(boolean b)">1</method>
+			<method name="public void setPack(boolean b)">2</method>
+			<method name="public void setTime(boolean displayTime)">1</method>
+			<method name="public void setVerbose(boolean verbose)">1</method>
+			<method name="public void setFile(java.io.File file)">1</method>
+			<method name="public void setGenerateDot(boolean genDot)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String getPackage()">1</method>
+			<method name="public void setDump(boolean b)">1</method>
+			<method name="public void setSwitch(boolean b)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.Action</name>
+		<wmc>16</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>25</rfc>
+		<lcom>12</lcom>
+		<ca>8</ca>
+		<ce>6</ce>
+		<npm>16</npm>
+		<lcom3>0.888888888888889</lcom3>
+		<loc>216</loc>
+		<dam>0.25</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3125</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>11.75</amc>
+		<cc>
+			<method name="public int getEntryState()">1</method>
+			<method name="public void _init_(String content, int priority)">1</method>
+			<method name="public void setEntryState(int entryState)">1</method>
+			<method name="public boolean equals(Object o)">2</method>
+			<method name="public int getLookLength()">1</method>
+			<method name="public boolean isEmittable()">3</method>
+			<method name="public JFlex.Action copyChoice(int length)">1</method>
+			<method name="public String lookString()">2</method>
+			<method name="public void _init_(int kind)">3</method>
+			<method name="public void setLookAction(int kind, int data)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public boolean isGenLookAction()">2</method>
+			<method name="public boolean isEquiv(JFlex.Action a)">6</method>
+			<method name="public int lookAhead()">1</method>
+			<method name="public JFlex.Action getHigherPriority(JFlex.Action other)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.lr_parser</name>
+		<wmc>42</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>18</cbo>
+		<rfc>72</rfc>
+		<lcom>735</lcom>
+		<ca>3</ca>
+		<ce>15</ce>
+		<npm>28</npm>
+		<lcom3>0.8638211382113821</lcom3>
+		<loc>1637</loc>
+		<dam>0.9166666666666666</dam>
+		<moa>4</moa>
+		<mfa>0.0</mfa>
+		<cam>0.13852813852813853</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>37.69047619047619</amc>
+		<cc>
+			<method name="protected void read_lookahead()">1</method>
+			<method name="public abstract int start_state()">1</method>
+			<method name="public void done_parsing()">1</method>
+			<method name="public void setScanner(java_cup.runtime.Scanner s)">1</method>
+			<method name="protected abstract void init_actions()">1</method>
+			<method name="public void debug_reduce(int prod_num, int nt_num, int rhs_size)">1</method>
+			<method name="protected static short[][] unpackFromStrings(String[] sa)">4</method>
+			<method name="public void _init_(java_cup.runtime.Scanner s)">1</method>
+			<method name="public java_cup.runtime.Scanner getScanner()">1</method>
+			<method name="protected final short get_action(int state, int sym)">8</method>
+			<method name="protected boolean shift_under_error()">2</method>
+			<method name="public java_cup.runtime.Symbol parse()">1</method>
+			<method name="public void debug_stack()">4</method>
+			<method name="protected boolean error_recovery(boolean debug)">1</method>
+			<method name="public abstract short[][] production_table()">1</method>
+			<method name="public abstract int EOF_sym()">1</method>
+			<method name="public java_cup.runtime.SymbolFactory getSymbolFactory()">1</method>
+			<method name="protected boolean advance_lookahead()">2</method>
+			<method name="public abstract int error_sym()">1</method>
+			<method name="public void report_fatal_error(String message, Object info)">1</method>
+			<method name="public void debug_shift(java_cup.runtime.Symbol shift_tkn)">1</method>
+			<method name="public abstract short[][] reduce_table()">1</method>
+			<method name="protected boolean find_recovery_config(boolean debug)">7</method>
+			<method name="public void user_init()">1</method>
+			<method name="public void unrecovered_syntax_error(java_cup.runtime.Symbol cur_token)">1</method>
+			<method name="protected void restart_lookahead()">1</method>
+			<method name="public void report_error(String message, Object info)">3</method>
+			<method name="public void debug_message(String mess)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol do_action(int, java_cup.runtime.lr_parser, java.util.Stack, int)">1</method>
+			<method name="protected int error_sync_size()">1</method>
+			<method name="public void dump_stack()">3</method>
+			<method name="public void _init_(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory symfac)">1</method>
+			<method name="public abstract short[][] action_table()">1</method>
+			<method name="public void syntax_error(java_cup.runtime.Symbol cur_token)">1</method>
+			<method name="protected boolean try_parse_ahead(boolean debug)">1</method>
+			<method name="public abstract int start_production()">1</method>
+			<method name="protected void parse_lookahead(boolean debug)">1</method>
+			<method name="protected final short get_reduce(int state, int sym)">5</method>
+			<method name="public java_cup.runtime.Symbol scan()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="protected java_cup.runtime.Symbol cur_err_token()">1</method>
+			<method name="public java_cup.runtime.Symbol debug_parse()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.StdOutWriter</name>
+		<wmc>7</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>17</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>7</npm>
+		<lcom3>0.6666666666666666</lcom3>
+		<loc>125</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.9206349206349206</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>1</ic>
+		<cbm>4</cbm>
+		<amc>16.428571428571427</amc>
+		<cc>
+			<method name="public void write(char[] buf, int off, int len)">3</method>
+			<method name="public void _init_(java.io.OutputStream out)">1</method>
+			<method name="public void setGUIMode(java.awt.TextArea text)">1</method>
+			<method name="public void write(int c)">3</method>
+			<method name="public void write(String s, int off, int len)">3</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void println()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.SilentExit</name>
+		<wmc>1</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>4</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.GridPanelConstraint</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>28</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.0</amc>
+		<cc>
+			<method name="public void _init_(int x, int y, int width, int height, int handle, java.awt.Component component)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.tests.AllTests</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>12</rfc>
+		<lcom>6</lcom>
+		<ca>0</ca>
+		<ce>10</ce>
+		<npm>3</npm>
+		<lcom3>1.0</lcom3>
+		<loc>119</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.25</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>27.0</amc>
+		<cc>
+			<method name="static Class class$(String x0)">1</method>
+			<method name="public static junit.framework.Test suite()">7</method>
+			<method name="public static void main(String[] args)">2</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.SemCheck</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>20</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>14</ce>
+		<npm>5</npm>
+		<lcom3>0.25</lcom3>
+		<loc>310</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.28</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>60.8</amc>
+		<cc>
+			<method name="public static int length(JFlex.RegExp re)">6</method>
+			<method name="public static boolean isFiniteChoice(JFlex.RegExp re)">6</method>
+			<method name="public static boolean maybeEmtpy(JFlex.RegExp re)">8</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static void check(JFlex.RegExps rs, JFlex.Macros m, java.io.File f)">6</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.CharSet</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>21</rfc>
+		<lcom>19</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>8</npm>
+		<lcom3>0.8611111111111112</lcom3>
+		<loc>203</loc>
+		<dam>0.25</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>18.9</amc>
+		<cc>
+			<method name="public void add(int character)">2</method>
+			<method name="public String toString()">3</method>
+			<method name="public JFlex.CharSetEnumerator characters()">1</method>
+			<method name="private int nbits2size(int nbits)">1</method>
+			<method name="public boolean containsElements()">2</method>
+			<method name="public void _init_(int initialSize, int character)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public int size()">1</method>
+			<method name="private void resize(int nbits)">2</method>
+			<method name="public boolean isElement(int character)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.CharSetEnumerator</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>3</ce>
+		<npm>3</npm>
+		<lcom3>0.16666666666666666</lcom3>
+		<loc>198</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>47.5</amc>
+		<cc>
+			<method name="public boolean hasMoreElements()">2</method>
+			<method name="private void advance()">9</method>
+			<method name="public int nextElement()">1</method>
+			<method name="public void _init_(JFlex.CharSet characters)">6</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.sym</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.tests.EmitterTest</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>7</rfc>
+		<lcom>1</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>37</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.5</amc>
+		<cc>
+			<method name="public void testJavadoc()">3</method>
+			<method name="public void _init_(String name)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.ComplexSymbolFactory$Location</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>11</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>4</ce>
+		<npm>6</npm>
+		<lcom3>0.4</lcom3>
+		<loc>63</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="public void _init_(int line, int column)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public int getColumn()">1</method>
+			<method name="public int getLine()">1</method>
+			<method name="public String getUnit()">1</method>
+			<method name="public void _init_(String unit, int line, int column)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.tests.PackEmitterTest$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>1.0</lcom3>
+		<loc>11</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public void emitUnpack()">1</method>
+			<method name="void _init_(JFlex.tests.PackEmitterTest, String x0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.Symbol</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>15</cbo>
+		<rfc>13</rfc>
+		<lcom>14</lcom>
+		<ca>11</ca>
+		<ce>4</ce>
+		<npm>7</npm>
+		<lcom3>0.5952380952380951</lcom3>
+		<loc>91</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.625</amc>
+		<cc>
+			<method name="void _init_(int sym_num, int state)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public void _init_(int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right)">1</method>
+			<method name="public void _init_(int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right, Object o)">1</method>
+			<method name="public void _init_(int sym_num)">1</method>
+			<method name="public void _init_(int id, Object o)">1</method>
+			<method name="public void _init_(int id, int l, int r, Object o)">1</method>
+			<method name="public void _init_(int id, int l, int r)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.ScannerException</name>
+		<wmc>6</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>8</rfc>
+		<lcom>15</lcom>
+		<ca>3</ca>
+		<ce>6</ce>
+		<npm>5</npm>
+		<lcom3>0.0</lcom3>
+		<loc>71</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>1.0</mfa>
+		<cam>0.7</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.166666666666666</amc>
+		<cc>
+			<method name="public void _init_(java.io.File file, JFlex.ErrorMessages message, int line)">1</method>
+			<method name="public void _init_(java.io.File file, JFlex.ErrorMessages message)">1</method>
+			<method name="public void _init_(JFlex.ErrorMessages message, int line)">1</method>
+			<method name="public void _init_(JFlex.ErrorMessages message)">1</method>
+			<method name="public void _init_(java.io.File file, JFlex.ErrorMessages message, int line, int column)">1</method>
+			<method name="private void _init_(java.io.File file, String text, JFlex.ErrorMessages message, int line, int column)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.ComplexSymbolFactory</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>16</rfc>
+		<lcom>28</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>8</npm>
+		<lcom3>2.0</lcom3>
+		<loc>65</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6041666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.125</amc>
+		<cc>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.ComplexSymbolFactory$Location left, java_cup.runtime.ComplexSymbolFactory$Location right, Object value)">1</method>
+			<method name="public java_cup.runtime.Symbol startSymbol(String name, int id, int state)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, Object value)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.ComplexSymbolFactory$Location left, java_cup.runtime.ComplexSymbolFactory$Location right)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right, Object value)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.LexicalStates</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>16</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>7</ce>
+		<npm>6</npm>
+		<lcom3>0.6</lcom3>
+		<loc>69</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.0</amc>
+		<cc>
+			<method name="public int number()">1</method>
+			<method name="public java.util.Enumeration getInclusiveStates()">1</method>
+			<method name="public void insert(String name, boolean is_inclusive)">3</method>
+			<method name="public Integer getNumber(String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java.util.Enumeration names()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$1</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.9090909090909091</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="public void windowClosing(java.awt.event.WindowEvent e)">1</method>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$4</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$5</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$2</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$3</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.Handles</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$8</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>21</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$11</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>18</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.5</amc>
+		<cc>
+			<method name="public void textValueChanged(java.awt.event.TextEvent e)">1</method>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$9</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>18</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.5</amc>
+		<cc>
+			<method name="public void textValueChanged(java.awt.event.TextEvent e)">1</method>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$10</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>21</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$6</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame$7</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.MainFrame)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.ComplexSymbolFactory$ComplexSymbol</name>
+		<wmc>10</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>18</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>10</npm>
+		<lcom3>0.37037037037037035</lcom3>
+		<loc>152</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>13.9</amc>
+		<cc>
+			<method name="public void _init_(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right, Object value)">3</method>
+			<method name="public void _init_(String name, int id)">1</method>
+			<method name="public String toString()">3</method>
+			<method name="public java_cup.runtime.ComplexSymbolFactory$Location getRight()">1</method>
+			<method name="public void _init_(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right)">3</method>
+			<method name="public java_cup.runtime.ComplexSymbolFactory$Location getLeft()">1</method>
+			<method name="public void _init_(String name, int id, int state)">1</method>
+			<method name="public void _init_(String name, int id, Object value)">1</method>
+			<method name="public void _init_(String name, int id, java_cup.runtime.ComplexSymbolFactory$Location left, java_cup.runtime.ComplexSymbolFactory$Location right)">1</method>
+			<method name="public void _init_(String name, int id, java_cup.runtime.ComplexSymbolFactory$Location left, java_cup.runtime.ComplexSymbolFactory$Location right, Object value)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.DFA</name>
+		<wmc>17</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>26</cbo>
+		<rfc>52</rfc>
+		<lcom>2</lcom>
+		<ca>3</ca>
+		<ce>23</ce>
+		<npm>16</npm>
+		<lcom3>0.7613636363636364</lcom3>
+		<loc>2391</loc>
+		<dam>0.09090909090909091</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.19786096256684493</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>139.0</amc>
+		<cc>
+			<method name="private void ensureStateCapacity(int newNumStates)">5</method>
+			<method name="public void printTable(boolean[][] equiv)">4</method>
+			<method name="public void writeDot(java.io.File file)">1</method>
+			<method name="public void _init_(int numEntryStates, int numInp, int numLexStates)">3</method>
+			<method name="public void setAction(int state, JFlex.Action stateAction)">2</method>
+			<method name="public void printBlocks(int[] b, int[] b_f, int[] b_b, int last)">5</method>
+			<method name="public void printInvDelta(int[][] inv_delta, int[] inv_delta_set)">6</method>
+			<method name="public String toString()">6</method>
+			<method name="public String dotFormat()">6</method>
+			<method name="public void setEntryState(int eState, int trueState)">1</method>
+			<method name="public void checkActions(JFlex.LexScan scanner, JFlex.LexParse parser)">2</method>
+			<method name="public String toString(int[] a)">2</method>
+			<method name="public boolean[][] old_minimize()">29</method>
+			<method name="public void printL(int[] l_f, int[] l_b, int anchor)">3</method>
+			<method name="public void minimize()">56</method>
+			<method name="public void addTransition(int start, char input, int dest)">2</method>
+			<method name="public void setFinal(int state, boolean isFinalState)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.LexScan</name>
+		<wmc>39</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>43</cbo>
+		<rfc>100</rfc>
+		<lcom>543</lcom>
+		<ca>6</ca>
+		<ce>37</ce>
+		<npm>20</npm>
+		<lcom3>0.9334049409237379</lcom3>
+		<loc>3100</loc>
+		<dam>0.32653061224489793</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.16666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>75.97435897435898</amc>
+		<cc>
+			<method name="private static int[] zzUnpackRowMap()">1</method>
+			<method name="public static void main(String[] argv)">3</method>
+			<method name="public java_cup.runtime.Symbol debug_next_token()">1</method>
+			<method name="public final void yybegin(int newState)">1</method>
+			<method name="private String getTokenName(int token)">3</method>
+			<method name="public final void yypushStream(java.io.Reader reader)">1</method>
+			<method name="private static int zzUnpackRowMap(String packed, int offset, int[] result)">2</method>
+			<method name="public final void yypopStream()">1</method>
+			<method name="public final int yylength()">1</method>
+			<method name="public void _init_(java.io.InputStream in)">1</method>
+			<method name="private static int zzUnpackAttribute(String packed, int offset, int[] result)">3</method>
+			<method name="static Class class$(String x0)">1</method>
+			<method name="private static int[] zzUnpackTrans()">1</method>
+			<method name="public java_cup.runtime.Symbol next_token()">1</method>
+			<method name="private static int[] zzUnpackAttribute()">1</method>
+			<method name="public final boolean yymoreStreams()">2</method>
+			<method name="public final void yyreset(java.io.Reader reader)">1</method>
+			<method name="private static int zzUnpackAction(String packed, int offset, int[] result)">3</method>
+			<method name="public final void yyclose()">1</method>
+			<method name="public final char yycharat(int pos)">1</method>
+			<method name="public void setFile(java.io.File file)">1</method>
+			<method name="private static char[] zzUnpackCMap(String packed)">3</method>
+			<method name="public int currentLine()">1</method>
+			<method name="private java_cup.runtime.Symbol symbol_countUpdate(int type, Object value)">7</method>
+			<method name="private void zzDoEOF()">1</method>
+			<method name="private String makeMacroIdent()">1</method>
+			<method name="private static int[] zzUnpackAction()">1</method>
+			<method name="public final int yystate()">1</method>
+			<method name="public void yypushback(int number)">2</method>
+			<method name="private java_cup.runtime.Symbol symbol(int type)">1</method>
+			<method name="private static int zzUnpackTrans(String packed, int offset, int[] result)">3</method>
+			<method name="public void _init_(java.io.Reader in)">4</method>
+			<method name="public static String conc(Object a, Object b)">5</method>
+			<method name="private java_cup.runtime.Symbol symbol(int type, Object value)">1</method>
+			<method name="public static String concExc(Object a, Object b)">5</method>
+			<method name="private boolean zzRefill()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void zzScanError(int errorCode)">1</method>
+			<method name="public final String yytext()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.LexScan$ZzFlexStreamInfo</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>40</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>30.0</amc>
+		<cc>
+			<method name="void _init_(java.io.Reader zzReader, int zzEndRead, int zzStartRead, int zzCurrentPos, int zzMarkedPos, char[] zzBuffer, boolean zzAtEOF, int yyline, int yycolumn)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.RegExp</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>15</cbo>
+		<rfc>25</rfc>
+		<lcom>6</lcom>
+		<ca>8</ca>
+		<ce>10</ce>
+		<npm>9</npm>
+		<lcom3>0.25</lcom3>
+		<loc>570</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>62.22222222222222</amc>
+		<cc>
+			<method name="public String print(String tab)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public boolean isCharClass(JFlex.Macros macros)">4</method>
+			<method name="public final JFlex.RegExp resolveTilde(JFlex.Macros macros)">2</method>
+			<method name="public JFlex.RegExp anyChar()">1</method>
+			<method name="public int size(JFlex.Macros macros)">2</method>
+			<method name="public static final String revString(String s)">2</method>
+			<method name="public final JFlex.RegExp rev(JFlex.Macros macros)">2</method>
+			<method name="public void _init_(int type)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.tests.CharClassesTest</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>18</rfc>
+		<lcom>28</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>8</npm>
+		<lcom3>2.0</lcom3>
+		<loc>239</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>28.875</amc>
+		<cc>
+			<method name="public void testAddChar()">1</method>
+			<method name="public void testCopy()">1</method>
+			<method name="public void _init_(String arg0)">1</method>
+			<method name="public void testAdd3()">1</method>
+			<method name="public void testCaseless()">1</method>
+			<method name="public void testAdd1()">1</method>
+			<method name="public void testAdd2()">1</method>
+			<method name="public void testMergeLast()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.Macros</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>18</cbo>
+		<rfc>27</rfc>
+		<lcom>0</lcom>
+		<ca>6</ca>
+		<ce>13</ce>
+		<npm>7</npm>
+		<lcom3>0.2857142857142857</lcom3>
+		<loc>212</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>25.25</amc>
+		<cc>
+			<method name="public boolean isUsed(String name)">1</method>
+			<method name="public void expand()">1</method>
+			<method name="private JFlex.RegExp expandMacro(String name, JFlex.RegExp definition)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public boolean markUsed(String name)">2</method>
+			<method name="public java.util.Enumeration unused()">2</method>
+			<method name="public JFlex.RegExp getDefinition(String name)">1</method>
+			<method name="public boolean insert(String name, JFlex.RegExp definition)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.tests.RegExpTests</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>14</rfc>
+		<lcom>3</lcom>
+		<ca>0</ca>
+		<ce>12</ce>
+		<npm>3</npm>
+		<lcom3>2.0</lcom3>
+		<loc>95</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>30.666666666666668</amc>
+		<cc>
+			<method name="public void testrevString()">1</method>
+			<method name="public void _init_(String name)">1</method>
+			<method name="public void testCharClass()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.CUP$LexParse$actions</name>
+		<wmc>11</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>36</cbo>
+		<rfc>88</rfc>
+		<lcom>23</lcom>
+		<ca>1</ca>
+		<ce>36</ce>
+		<npm>1</npm>
+		<lcom3>0.825</lcom3>
+		<loc>4452</loc>
+		<dam>0.125</dam>
+		<moa>7</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3181818181818182</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>403.0</amc>
+		<cc>
+			<method name="void fatalError(JFlex.ErrorMessages message)">1</method>
+			<method name="void syntaxError(JFlex.ErrorMessages message)">1</method>
+			<method name="public final java_cup.runtime.Symbol CUP$LexParse$do_action(int CUP$LexParse$act_num, java_cup.runtime.lr_parser CUP$LexParse$parser, java.util.Stack CUP$LexParse$stack, int CUP$LexParse$top)">1</method>
+			<method name="private JFlex.RegExp makeNL()">1</method>
+			<method name="private JFlex.RegExp makeRepeat(JFlex.RegExp r, int n1, int n2, int line, int col)">7</method>
+			<method name="void syntaxError(JFlex.ErrorMessages message, int line)">1</method>
+			<method name="private boolean check(int type, char c)">2</method>
+			<method name="void syntaxError(JFlex.ErrorMessages message, int line, int col)">1</method>
+			<method name="private java.util.Vector makePreClass(int type)">12</method>
+			<method name="void fatalError(JFlex.ErrorMessages message, int line, int col)">1</method>
+			<method name="void _init_(JFlex.LexParse parser)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.StateSetEnumerator</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>7</rfc>
+		<lcom>3</lcom>
+		<ca>2</ca>
+		<ce>3</ce>
+		<npm>5</npm>
+		<lcom3>0.48</lcom3>
+		<loc>195</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>30.666666666666668</amc>
+		<cc>
+			<method name="public void _init_(JFlex.StateSet states)">1</method>
+			<method name="public boolean hasMoreElements()">2</method>
+			<method name="public void reset(JFlex.StateSet states)">6</method>
+			<method name="private void advance()">8</method>
+			<method name="public int nextElement()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.Out</name>
+		<wmc>29</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>40</cbo>
+		<rfc>52</rfc>
+		<lcom>154</lcom>
+		<ca>21</ca>
+		<ce>21</ce>
+		<npm>26</npm>
+		<lcom3>0.625</lcom3>
+		<loc>662</loc>
+		<dam>0.75</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.14682539682539683</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.689655172413794</amc>
+		<cc>
+			<method name="public static void checkErrors()">2</method>
+			<method name="public static void setGUIMode(java.awt.TextArea text)">1</method>
+			<method name="public static void println(JFlex.ErrorMessages message, String data)">2</method>
+			<method name="private static void err(String message)">1</method>
+			<method name="public static void error(String message)">1</method>
+			<method name="private static String getLine(java.io.File file, int line)">1</method>
+			<method name="public static void error(JFlex.ErrorMessages message)">1</method>
+			<method name="public static void time(JFlex.ErrorMessages message, JFlex.Timer time)">2</method>
+			<method name="public static void statistics()">3</method>
+			<method name="public static void warning(java.io.File file, JFlex.ErrorMessages message, int line, int column)">5</method>
+			<method name="public static void error(JFlex.ErrorMessages message, java.io.File file)">1</method>
+			<method name="public static void println(String message)">2</method>
+			<method name="public static void requestBugReport(Error e)">1</method>
+			<method name="public static void showPosition(java.io.File file, int line, int column)">3</method>
+			<method name="public static void printSystemInfo()">1</method>
+			<method name="public static void time(String message)">2</method>
+			<method name="public static void warning(JFlex.ErrorMessages message, int line)">2</method>
+			<method name="public static void println(JFlex.ErrorMessages message, int data)">2</method>
+			<method name="public static void setOutputStream(java.io.OutputStream stream)">1</method>
+			<method name="public static void error(java.io.File file, JFlex.ErrorMessages message, int line, int column)">5</method>
+			<method name="public static void debug(String message)">1</method>
+			<method name="public static void dump(String message)">2</method>
+			<method name="public static void warning(String message)">1</method>
+			<method name="public static void showPosition(java.io.File file, int line)">1</method>
+			<method name="public static void resetCounters()">1</method>
+			<method name="public static void error(JFlex.ErrorMessages message, String data)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static void print(String message)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.CharClasses</name>
+		<wmc>18</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>50</rfc>
+		<lcom>75</lcom>
+		<ca>4</ca>
+		<ce>12</ce>
+		<npm>17</npm>
+		<lcom3>0.7794117647058824</lcom3>
+		<loc>492</loc>
+		<dam>0.75</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2857142857142857</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>26.11111111111111</amc>
+		<cc>
+			<method name="public void check()">6</method>
+			<method name="public void dump()">1</method>
+			<method name="public JFlex.CharClassInterval[] getIntervals()">3</method>
+			<method name="public char getMaxCharCode()">1</method>
+			<method name="public void makeClassNot(java.util.Vector v, boolean caseless)">1</method>
+			<method name="public int getNumClasses()">1</method>
+			<method name="public void makeClass(char singleChar, boolean caseless)">1</method>
+			<method name="public int[] getClassCodes(java.util.Vector intervallVec)">1</method>
+			<method name="public void makeClass(String str, boolean caseless)">2</method>
+			<method name="public void setMaxCharCode(int charCode)">3</method>
+			<method name="public String toString()">2</method>
+			<method name="public void makeClass(java.util.Vector v, boolean caseless)">1</method>
+			<method name="public void _init_(int maxCharCode)">3</method>
+			<method name="public String toString(int theClass)">1</method>
+			<method name="private int[] getClassCodes(JFlex.IntCharSet set, boolean negate)">5</method>
+			<method name="public int getClassCode(char letter)">1</method>
+			<method name="public int[] getNotClassCodes(java.util.Vector intervallVec)">1</method>
+			<method name="public void makeClass(JFlex.IntCharSet set, boolean caseless)">7</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.virtual_parse_stack</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>17</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>5</npm>
+		<lcom3>0.4</lcom3>
+		<loc>116</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.833333333333332</amc>
+		<cc>
+			<method name="public boolean empty()">1</method>
+			<method name="public void pop()">1</method>
+			<method name="public int top()">1</method>
+			<method name="protected void get_from_real()">2</method>
+			<method name="public void push(int state_num)">1</method>
+			<method name="public void _init_(java.util.Stack shadowing_stack)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.RegExps</name>
+		<wmc>17</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>35</rfc>
+		<lcom>26</lcom>
+		<ca>3</ca>
+		<ce>13</ce>
+		<npm>16</npm>
+		<lcom3>0.734375</lcom3>
+		<loc>357</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3025210084033613</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>19.529411764705884</amc>
+		<cc>
+			<method name="public void addStates(int regNum, java.util.Vector newStates)">2</method>
+			<method name="public int NFASize(JFlex.Macros macros)">3</method>
+			<method name="public int insert(int line, java.util.Vector stateList, JFlex.RegExp regExp, JFlex.Action action, Boolean isBOL, JFlex.RegExp lookAhead)">1</method>
+			<method name="public void checkActions()">2</method>
+			<method name="public void checkLookAheads()">2</method>
+			<method name="public int insert(java.util.Vector stateList, JFlex.Action action)">1</method>
+			<method name="private void lookAheadCase(int regExpNum)">5</method>
+			<method name="public boolean isEOF(int num)">2</method>
+			<method name="public java.util.Vector getStates(int num)">1</method>
+			<method name="public JFlex.RegExp getRegExp(int num)">1</method>
+			<method name="public JFlex.RegExp getLookAhead(int num)">1</method>
+			<method name="public int getLine(int num)">1</method>
+			<method name="public int getLookEntry(int num)">1</method>
+			<method name="public JFlex.Action getAction(int num)">3</method>
+			<method name="public void _init_()">1</method>
+			<method name="public int getNum()">1</method>
+			<method name="public boolean isBOL(int num)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.CharClassException</name>
+		<wmc>2</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String message)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.Main</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>32</cbo>
+		<rfc>60</rfc>
+		<lcom>15</lcom>
+		<ca>2</ca>
+		<ce>30</ce>
+		<npm>6</npm>
+		<lcom3>1.2</lcom3>
+		<loc>687</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2777777777777778</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>113.33333333333333</amc>
+		<cc>
+			<method name="public static void generate(java.io.File inputFile)">7</method>
+			<method name="public static void main(String[] argv)">1</method>
+			<method name="public static void printUsage()">1</method>
+			<method name="public static java.util.Vector parseOptions(String[] argv)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static void generate(String[] argv)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$10</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>15</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void itemStateChanged(java.awt.event.ItemEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$11</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>15</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void itemStateChanged(java.awt.event.ItemEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$12</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>15</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void itemStateChanged(java.awt.event.ItemEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.IntCharSet</name>
+		<wmc>20</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>41</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>17</npm>
+		<lcom3>0.7192982456140351</lcom3>
+		<loc>731</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.275</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>35.4</amc>
+		<cc>
+			<method name="public JFlex.IntCharSet add(JFlex.IntCharSet set)">2</method>
+			<method name="private char min(char a, char b)">2</method>
+			<method name="public void add(char c)">8</method>
+			<method name="private char max(char a, char b)">2</method>
+			<method name="public JFlex.Interval getNext()">2</method>
+			<method name="public void _init_(java.util.Vector chars)">2</method>
+			<method name="public boolean equals(Object o)">4</method>
+			<method name="public void _init_(JFlex.Interval intervall)">1</method>
+			<method name="public JFlex.IntCharSet getCaseless()">3</method>
+			<method name="public void add(JFlex.Interval intervall)">9</method>
+			<method name="public JFlex.IntCharSet and(JFlex.IntCharSet set)">6</method>
+			<method name="public JFlex.IntCharSet copy()">2</method>
+			<method name="public int numIntervalls()">1</method>
+			<method name="private int indexOf(char c)">6</method>
+			<method name="public String toString()">2</method>
+			<method name="public boolean containsElements()">2</method>
+			<method name="public void sub(JFlex.IntCharSet set)">9</method>
+			<method name="public boolean contains(char singleChar)">2</method>
+			<method name="public void _init_(char c)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.PackEmitter</name>
+		<wmc>12</wmc>
+		<dit>1</dit>
+		<noc>3</noc>
+		<cbo>12</cbo>
+		<rfc>21</rfc>
+		<lcom>2</lcom>
+		<ca>5</ca>
+		<ce>7</ce>
+		<npm>6</npm>
+		<lcom3>0.8181818181818182</lcom3>
+		<loc>272</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3541666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.0</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="private int UTF8Length(char value)">5</method>
+			<method name="public void emitUC(int i)">3</method>
+			<method name="public void breaks()">3</method>
+			<method name="private void printUC(char c)">3</method>
+			<method name="public void _init_(String name)">1</method>
+			<method name="protected void println(String s)">1</method>
+			<method name="protected String constName()">1</method>
+			<method name="public void emitInit()">1</method>
+			<method name="public abstract void emitUnpack()">1</method>
+			<method name="private void nextChunk()">1</method>
+			<method name="protected void nl()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.Emitter</name>
+		<wmc>51</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>37</cbo>
+		<rfc>141</rfc>
+		<lcom>601</lcom>
+		<ca>2</ca>
+		<ce>35</ce>
+		<npm>6</npm>
+		<lcom3>0.8761904761904762</lcom3>
+		<loc>4209</loc>
+		<dam>1.0</dam>
+		<moa>7</moa>
+		<mfa>0.0</mfa>
+		<cam>0.165</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>81.11764705882354</amc>
+		<cc>
+			<method name="private void print(String line)">1</method>
+			<method name="private boolean hasGenLookAhead()">1</method>
+			<method name="private void emitClassName()">8</method>
+			<method name="private void emitCharMapArrayUnPacked()">4</method>
+			<method name="private void println(String line)">1</method>
+			<method name="private void emitDefaultTransition(int state, int nextState)">5</method>
+			<method name="public static String getBaseName(String className)">2</method>
+			<method name="private void emitDoEOF()">3</method>
+			<method name="private void println(int i)">1</method>
+			<method name="private void reduceColumns()">7</method>
+			<method name="private void emitClassCode()">3</method>
+			<method name="private void print(int i)">1</method>
+			<method name="private void emitMain()">15</method>
+			<method name="private void emitState(int state)">6</method>
+			<method name="private void emitEOFVal()">14</method>
+			<method name="private void emitZZTrans()">8</method>
+			<method name="private void setupEOFCode()">2</method>
+			<method name="private void emitCharMapInitFunction()">2</method>
+			<method name="private void emitAttributes()">7</method>
+			<method name="private void emitGetRowMapNext()">1</method>
+			<method name="private void emitLexFunctHeader()">21</method>
+			<method name="private void emitConstructorDecl()">4</method>
+			<method name="private int getDefaultTransition(int state)">8</method>
+			<method name="public void emit()">7</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void emitScanError()">4</method>
+			<method name="private void emitNoMatch()">1</method>
+			<method name="private void printUC(int c)">3</method>
+			<method name="private void transformTransitionTable()">6</method>
+			<method name="public static java.io.File normalize(String name, java.io.File input)">8</method>
+			<method name="private void emitActions()">9</method>
+			<method name="private void emitTransitionTable()">3</method>
+			<method name="private void emitCharMapArray()">6</method>
+			<method name="private void reduceRows()">7</method>
+			<method name="private void emitCtorArgs()">2</method>
+			<method name="public static boolean endsWithJavadoc(StringBuffer usercode)">4</method>
+			<method name="private void emitLexicalStates()">4</method>
+			<method name="private void emitHeader()">1</method>
+			<method name="public void _init_(java.io.File inputFile, JFlex.LexParse parser, JFlex.DFA dfa)">1</method>
+			<method name="private void print(int i, int tab)">4</method>
+			<method name="private void emitTransition(int state, int nextState)">7</method>
+			<method name="private void findActionStates()">5</method>
+			<method name="public void emitActionTable()">8</method>
+			<method name="private String escapify(String s)">11</method>
+			<method name="private void emitLookBuffer()">2</method>
+			<method name="private void emitDynamicInit()">6</method>
+			<method name="private void emitRowMapArray()">2</method>
+			<method name="private void emitUserCode()">2</method>
+			<method name="private void println()">1</method>
+			<method name="private void emitConstructorDecl(boolean printCtorArgs)">15</method>
+			<method name="private void emitNextInput()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.Interval</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>17</rfc>
+		<lcom>0</lcom>
+		<ca>6</ca>
+		<ce>4</ce>
+		<npm>9</npm>
+		<lcom3>0.2222222222222222</lcom3>
+		<loc>180</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.425</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.8</amc>
+		<cc>
+			<method name="private static boolean isPrintable(char c)">3</method>
+			<method name="public String toString()">4</method>
+			<method name="public boolean contains(JFlex.Interval other)">3</method>
+			<method name="public boolean equals(Object o)">5</method>
+			<method name="public void setStart(char start)">1</method>
+			<method name="public void _init_(char start, char end)">1</method>
+			<method name="public void setEnd(char end)">1</method>
+			<method name="public boolean contains(char point)">3</method>
+			<method name="public void _init_(JFlex.Interval other)">1</method>
+			<method name="public JFlex.Interval copy()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.LexParse</name>
+		<wmc>19</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>20</cbo>
+		<rfc>28</rfc>
+		<lcom>139</lcom>
+		<ca>4</ca>
+		<ce>17</ce>
+		<npm>17</npm>
+		<lcom3>0.8999999999999999</lcom3>
+		<loc>140</loc>
+		<dam>0.8</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.17901234567901234</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.105263157894737</amc>
+		<cc>
+			<method name="public JFlex.EOFActions getEOFActions()">1</method>
+			<method name="public void _init_(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf)">1</method>
+			<method name="public java_cup.runtime.Symbol do_action(int act_num, java_cup.runtime.lr_parser parser, java.util.Stack stack, int top)">1</method>
+			<method name="public void _init_(java_cup.runtime.Scanner s)">1</method>
+			<method name="public int start_state()">1</method>
+			<method name="public short[][] reduce_table()">1</method>
+			<method name="public JFlex.CharClasses getCharClasses()">1</method>
+			<method name="public void _init_(JFlex.LexScan scanner)">1</method>
+			<method name="protected void init_actions()">1</method>
+			<method name="public int error_sym()">1</method>
+			<method name="public void report_fatal_error(String message, Object info)">1</method>
+			<method name="public int EOF_sym()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public short[][] production_table()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public int start_production()">1</method>
+			<method name="public short[][] action_table()">1</method>
+			<method name="public void user_init()">1</method>
+			<method name="public void report_error(String message, Object info)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.Options</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>25</cbo>
+		<rfc>20</rfc>
+		<lcom>15</lcom>
+		<ca>18</ca>
+		<ce>8</ce>
+		<npm>6</npm>
+		<lcom3>0.8928571428571429</lcom3>
+		<loc>101</loc>
+		<dam>0.07142857142857142</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2222222222222222</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>11.428571428571429</amc>
+		<cc>
+			<method name="public static void setSkeleton(java.io.File skel)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static java.io.File getDir()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static void setDefaults()">1</method>
+			<method name="public static void setDir(String dirName)">1</method>
+			<method name="public static void setDir(java.io.File d)">4</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.DefaultSymbolFactory</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>16</rfc>
+		<lcom>28</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>8</npm>
+		<lcom3>2.0</lcom3>
+		<loc>58</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.675</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.25</amc>
+		<cc>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, int left, int right, Object value)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, int left, int right)">1</method>
+			<method name="public java_cup.runtime.Symbol startSymbol(String name, int id, int state)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, Object value)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right, Object value)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.CountEmitter</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>14</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>3</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>173</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>41.75</amc>
+		<cc>
+			<method name="public void setValTranslation(int i)">1</method>
+			<method name="public void emit(int count, int value)">1</method>
+			<method name="public void emitUnpack()">4</method>
+			<method name="protected void _init_(String name)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.GeneratorException</name>
+		<wmc>1</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>13</ca>
+		<ce>4</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>5</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.MainFrame</name>
+		<wmc>20</wmc>
+		<dit>5</dit>
+		<noc>0</noc>
+		<cbo>46</cbo>
+		<rfc>80</rfc>
+		<lcom>138</lcom>
+		<ca>13</ca>
+		<ce>45</ce>
+		<npm>3</npm>
+		<lcom3>0.7030075187969925</lcom3>
+		<loc>593</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.9731258840169731</mfa>
+		<cam>0.3</cam>
+		<ic>2</ic>
+		<cbm>8</cbm>
+		<amc>27.95</amc>
+		<cc>
+			<method name="private void buildContent()">2</method>
+			<method name="private void stop()">2</method>
+			<method name="public void generationFinished(boolean success)">2</method>
+			<method name="private void quit()">1</method>
+			<method name="static void access$100(JFlex.gui.MainFrame x0)">1</method>
+			<method name="static void access$300(JFlex.gui.MainFrame x0)">1</method>
+			<method name="private void setEnabledAll(boolean generating)">7</method>
+			<method name="static java.awt.TextField access$600(JFlex.gui.MainFrame x0)">1</method>
+			<method name="static java.awt.TextField access$800(JFlex.gui.MainFrame x0)">1</method>
+			<method name="protected void showOptions()">2</method>
+			<method name="static String access$702(JFlex.gui.MainFrame x0, String x1)">1</method>
+			<method name="public java.awt.Dimension getPreferredSize()">1</method>
+			<method name="private void specChoose()">2</method>
+			<method name="static void access$000(JFlex.gui.MainFrame x0)">1</method>
+			<method name="static void access$200(JFlex.gui.MainFrame x0)">1</method>
+			<method name="static void access$400(JFlex.gui.MainFrame x0)">1</method>
+			<method name="static String access$502(JFlex.gui.MainFrame x0, String x1)">1</method>
+			<method name="private void generate()">2</method>
+			<method name="public void _init_()">1</method>
+			<method name="private void dirChoose()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.CharClassInterval</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>39</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.0</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void _init_(int start, int end, int charClass)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.Scanner</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract java_cup.runtime.Symbol next_token()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog</name>
+		<wmc>17</wmc>
+		<dit>5</dit>
+		<noc>0</noc>
+		<cbo>38</cbo>
+		<rfc>64</rfc>
+		<lcom>94</lcom>
+		<ca>13</ca>
+		<ce>37</ce>
+		<npm>3</npm>
+		<lcom3>0.7375</lcom3>
+		<loc>550</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.9773691654879774</mfa>
+		<cam>0.35294117647058826</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>30.470588235294116</amc>
+		<cc>
+			<method name="static java.awt.Checkbox access$800(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="private void skelBrowse()">2</method>
+			<method name="static void access$100(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="static java.awt.Checkbox access$400(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="static java.awt.Checkbox access$300(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="static java.awt.Checkbox access$700(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="static void access$000(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="static java.awt.Checkbox access$600(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="private void setGenMethod()">4</method>
+			<method name="static void access$200(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="static java.awt.Checkbox access$900(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="public void close()">1</method>
+			<method name="private void updateState()">4</method>
+			<method name="static java.awt.Checkbox access$500(JFlex.gui.OptionsDialog x0)">1</method>
+			<method name="public void _init_(java.awt.Frame owner)">1</method>
+			<method name="public void setup()">4</method>
+			<method name="private void setDefaults()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.EOFActions</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>20</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>7</ce>
+		<npm>8</npm>
+		<lcom3>0.6190476190476192</lcom3>
+		<loc>145</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3125</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.75</amc>
+		<cc>
+			<method name="public JFlex.Action getDefault()">1</method>
+			<method name="public void add(java.util.Vector stateList, JFlex.Action action)">5</method>
+			<method name="public JFlex.Action getAction(int state)">1</method>
+			<method name="public void setNumLexStates(int num)">1</method>
+			<method name="public void add(Integer state, JFlex.Action action)">2</method>
+			<method name="public void _init_()">1</method>
+			<method name="public int numActions()">1</method>
+			<method name="public boolean isEOFAction(Object a)">4</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.MacroException</name>
+		<wmc>2</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>2</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String message)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.GridPanel</name>
+		<wmc>9</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>23</rfc>
+		<lcom>18</lcom>
+		<ca>2</ca>
+		<ce>12</ce>
+		<npm>9</npm>
+		<lcom3>0.5208333333333334</lcom3>
+		<loc>429</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.986</mfa>
+		<cam>0.5555555555555556</cam>
+		<ic>2</ic>
+		<cbm>8</cbm>
+		<amc>46.0</amc>
+		<cc>
+			<method name="public java.awt.Dimension getPreferredSize()">2</method>
+			<method name="public void add(int x, int y, java.awt.Component c)">1</method>
+			<method name="public void add(int x, int y, int dx, int dy, int handle, java.awt.Component c)">1</method>
+			<method name="public void _init_(int cols, int rows, int hgap, int vgap)">1</method>
+			<method name="public void setInsets(java.awt.Insets insets)">1</method>
+			<method name="public void add(int x, int y, int handle, java.awt.Component c)">1</method>
+			<method name="public void add(int x, int y, int dx, int dy, java.awt.Component c)">1</method>
+			<method name="public void doLayout()">4</method>
+			<method name="public void _init_(int cols, int rows)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.SymbolFactory</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>5</rfc>
+		<lcom>10</lcom>
+		<ca>5</ca>
+		<ce>4</ce>
+		<npm>5</npm>
+		<lcom3>2.0</lcom3>
+		<loc>5</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.76</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract java_cup.runtime.Symbol newSymbol(String, int)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol newSymbol(String, int, java_cup.runtime.Symbol, java_cup.runtime.Symbol, Object)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol newSymbol(String, int, java_cup.runtime.Symbol, java_cup.runtime.Symbol)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol startSymbol(String, int, int)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol newSymbol(String, int, Object)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.tests.SkeletonTest</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>14</rfc>
+		<lcom>6</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>56</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>13.0</amc>
+		<cc>
+			<method name="public void testReplace()">1</method>
+			<method name="public void testDefault()">2</method>
+			<method name="public void _init_(String arg0)">1</method>
+			<method name="public void testMakePrivate()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.IntPair</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>9</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>3</npm>
+		<lcom3>0.0</lcom3>
+		<loc>62</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>14.0</amc>
+		<cc>
+			<method name="void _init_(int start, int end)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public boolean equals(Object o)">4</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.RegExp2</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>9</rfc>
+		<lcom>1</lcom>
+		<ca>6</ca>
+		<ce>6</ce>
+		<npm>3</npm>
+		<lcom3>0.0</lcom3>
+		<loc>71</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>22.0</amc>
+		<cc>
+			<method name="public String print(String tab)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public void _init_(int type, JFlex.RegExp r1, JFlex.RegExp r2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.RegExp1</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>10</rfc>
+		<lcom>1</lcom>
+		<ca>6</ca>
+		<ce>6</ce>
+		<npm>3</npm>
+		<lcom3>0.0</lcom3>
+		<loc>79</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>25.0</amc>
+		<cc>
+			<method name="public String print(String tab)">2</method>
+			<method name="public String toString()">1</method>
+			<method name="public void _init_(int type, Object content)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$9</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>15</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void itemStateChanged(java.awt.event.ItemEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$8</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>15</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void itemStateChanged(java.awt.event.ItemEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$7</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>15</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void itemStateChanged(java.awt.event.ItemEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$6</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>15</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void itemStateChanged(java.awt.event.ItemEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$5</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void itemStateChanged(java.awt.event.ItemEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.StatePairList</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>12</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>3</npm>
+		<lcom3>0.11111111111111116</lcom3>
+		<loc>166</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>39.75</amc>
+		<cc>
+			<method name="public void markAll(JFlex.StatePairList[][] list, boolean[][] equiv)">4</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void addPair(int i, int j)">5</method>
+			<method name="private void increaseSize(int length)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$4</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$3</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$2</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.ErrorMessages</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>22</cbo>
+		<rfc>15</rfc>
+		<lcom>11</lcom>
+		<ca>14</ca>
+		<ce>8</ce>
+		<npm>4</npm>
+		<lcom3>0.976</lcom3>
+		<loc>521</loc>
+		<dam>0.02666666666666667</dam>
+		<moa>73</moa>
+		<mfa>0.0</mfa>
+		<cam>0.45</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>73.33333333333333</amc>
+		<cc>
+			<method name="private void _init_(String key)">1</method>
+			<method name="public static String get(JFlex.ErrorMessages msg, String data)">1</method>
+			<method name="public static String get(JFlex.ErrorMessages msg, String data1, String data2)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static String get(JFlex.ErrorMessages msg, int data)">1</method>
+			<method name="public static String get(JFlex.ErrorMessages msg)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.gui.OptionsDialog$1</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>13</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.9090909090909091</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="void _init_(JFlex.gui.OptionsDialog)">1</method>
+			<method name="public void windowClosing(java.awt.event.WindowEvent e)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.Timer</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>11</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>5</ce>
+		<npm>5</npm>
+		<lcom3>0.25</lcom3>
+		<loc>175</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>33.4</amc>
+		<cc>
+			<method name="public String toString()">5</method>
+			<method name="public void stop()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void start()">1</method>
+			<method name="public long diff()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>JFlex.NFA</name>
+		<wmc>29</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>37</cbo>
+		<rfc>116</rfc>
+		<lcom>26</lcom>
+		<ca>2</ca>
+		<ce>35</ce>
+		<npm>13</npm>
+		<lcom3>0.6071428571428571</lcom3>
+		<loc>2217</loc>
+		<dam>0.25</dam>
+		<moa>9</moa>
+		<mfa>0.0</mfa>
+		<cam>0.14761904761904762</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>74.89655172413794</amc>
+		<cc>
+			<method name="public void _init_(int numInput, JFlex.LexScan scanner, JFlex.RegExps regExps, JFlex.Macros macros, JFlex.CharClasses classes)">1</method>
+			<method name="public void writeDot(java.io.File file)">1</method>
+			<method name="private boolean containsFinal(JFlex.StateSet set)">3</method>
+			<method name="public void addRegExp(int regExpNum)">6</method>
+			<method name="public void addTransition(int start, int input, int dest)">3</method>
+			<method name="private void insertLookAheadChoices(int baseEnd, JFlex.Action a, JFlex.RegExp lookAhead)">3</method>
+			<method name="public String toString()">9</method>
+			<method name="public String dotFormat()">9</method>
+			<method name="public void _init_(int numInput, int estSize)">1</method>
+			<method name="private void insertCCLNFA(JFlex.RegExp regExp, int start, int end)">2</method>
+			<method name="private void insertNotClassNFA(java.util.Vector intervalls, int start, int end)">2</method>
+			<method name="public void dumpTable()">1</method>
+			<method name="public void addStandaloneRule()">3</method>
+			<method name="private JFlex.Action getAction(JFlex.StateSet set)">3</method>
+			<method name="private void ensureCapacity(int newNumStates)">2</method>
+			<method name="private JFlex.StateSet DFAEdge(JFlex.StateSet start, char input)">3</method>
+			<method name="private void insertClassNFA(java.util.Vector intervalls, int start, int end)">3</method>
+			<method name="private JFlex.IntPair complement(JFlex.IntPair nfa)">13</method>
+			<method name="public JFlex.DFA getDFA()">10</method>
+			<method name="private JFlex.StateSet closure(JFlex.StateSet startStates)">3</method>
+			<method name="private void insertLetterNFA(boolean caseless, char letter, int start, int end)">2</method>
+			<method name="public JFlex.IntPair insertNFA(JFlex.RegExp regExp)">4</method>
+			<method name="private void removeDead(int start, int end)">8</method>
+			<method name="public int numEntryStates()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private JFlex.StateSet closure(int startState)">2</method>
+			<method name="private JFlex.IntPair insertStringNFA(boolean caseless, String letters)">3</method>
+			<method name="private void epsilonFill()">2</method>
+			<method name="public void addEpsilonTransition(int start, int dest)">3</method>
+		</cc>
+	</class>
+
+	<class>
+		<name>java_cup.symbol_set</name>
+		<wmc>16</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>33</rfc>
+		<lcom>78</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>15</npm>
+		<lcom3>0.06666666666666667</lcom3>
+		<loc>260</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.421875</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>15.1875</amc>
+		<cc>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public void remove(java_cup.symbol_set other)">1</method>
+			<method name="public boolean add(java_cup.symbol sym)">1</method>
+			<method name="public int size()">1</method>
+			<method name="public boolean is_subset_of(java_cup.symbol_set other)">1</method>
+			<method name="public String toString()">3</method>
+			<method name="public int hashCode()">3</method>
+			<method name="public java.util.Enumeration all()">1</method>
+			<method name="public boolean contains(java_cup.symbol sym)">1</method>
+			<method name="protected void not_null(Object obj)">1</method>
+			<method name="public boolean equals(java_cup.symbol_set other)">3</method>
+			<method name="public void _init_(java_cup.symbol_set other)">1</method>
+			<method name="public void remove(java_cup.symbol sym)">1</method>
+			<method name="public boolean add(java_cup.symbol_set other)">1</method>
+			<method name="public boolean is_superset_of(java_cup.symbol_set other)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.sym</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>3</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>94</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.production_part</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>14</cbo>
+		<rfc>13</rfc>
+		<lcom>19</lcom>
+		<ca>10</ca>
+		<ce>4</ce>
+		<npm>7</npm>
+		<lcom3>0.16666666666666666</lcom3>
+		<loc>71</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35714285714285715</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="public String toString()">2</method>
+			<method name="public int hashCode()">2</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public abstract boolean is_action()">1</method>
+			<method name="public void _init_(String lab)">1</method>
+			<method name="public boolean equals(java_cup.production_part other)">4</method>
+			<method name="public String label()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.terminal</name>
+		<wmc>14</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>30</rfc>
+		<lcom>45</lcom>
+		<ca>8</ca>
+		<ce>9</ce>
+		<npm>13</npm>
+		<lcom3>0.6703296703296704</lcom3>
+		<loc>174</loc>
+		<dam>0.7142857142857143</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.38461538461538464</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.928571428571429</amc>
+		<cc>
+			<method name="public void set_precedence(int p, int new_prec)">1</method>
+			<method name="public void _init_(String nm, String tp, int precedence_side, int precedence_num)">2</method>
+			<method name="public static java_cup.terminal find(int indx)">1</method>
+			<method name="public int precedence_num()">1</method>
+			<method name="public static java_cup.terminal find(String with_name)">2</method>
+			<method name="public void _init_(String nm)">1</method>
+			<method name="public static java.util.Enumeration all()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public boolean is_non_term()">1</method>
+			<method name="public void _init_(String nm, String tp)">1</method>
+			<method name="public static void clear()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static int number()">1</method>
+			<method name="public int precedence_side()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.internal_error</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>26</cbo>
+		<rfc>11</rfc>
+		<lcom>1</lcom>
+		<ca>19</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>22</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.9545454545454546</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.0</amc>
+		<cc>
+			<method name="public void crash()">1</method>
+			<method name="public void _init_(String msg)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.terminal_set</name>
+		<wmc>16</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>33</rfc>
+		<lcom>8</lcom>
+		<ca>5</ca>
+		<ce>7</ce>
+		<npm>14</npm>
+		<lcom3>0.5</lcom3>
+		<loc>236</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.36</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>13.625</amc>
+		<cc>
+			<method name="public boolean contains(int indx)">1</method>
+			<method name="public boolean empty()">1</method>
+			<method name="public boolean contains(java_cup.terminal sym)">1</method>
+			<method name="public boolean equals(java_cup.terminal_set other)">2</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public String toString()">4</method>
+			<method name="public boolean intersects(java_cup.terminal_set other)">1</method>
+			<method name="public void remove(java_cup.terminal sym)">1</method>
+			<method name="protected void not_null(Object obj)">1</method>
+			<method name="public boolean is_superset_of(java_cup.terminal_set other)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public boolean is_subset_of(java_cup.terminal_set other)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public boolean add(java_cup.terminal sym)">1</method>
+			<method name="public void _init_(java_cup.terminal_set other)">1</method>
+			<method name="public boolean add(java_cup.terminal_set other)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.parse_action_row</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>12</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>6</ce>
+		<npm>4</npm>
+		<lcom3>0.5625</lcom3>
+		<loc>110</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>20.2</amc>
+		<cc>
+			<method name="public static int size()">1</method>
+			<method name="public static void clear()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">3</method>
+			<method name="public void compute_default()">6</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.non_terminal</name>
+		<wmc>21</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>20</cbo>
+		<rfc>49</rfc>
+		<lcom>150</lcom>
+		<ca>9</ca>
+		<ce>12</ce>
+		<npm>16</npm>
+		<lcom3>0.7777777777777778</lcom3>
+		<loc>331</loc>
+		<dam>0.7777777777777778</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2125</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>14.333333333333334</amc>
+		<cc>
+			<method name="public boolean nullable()">1</method>
+			<method name="public void add_production(java_cup.production prod)">1</method>
+			<method name="public java_cup.terminal_set first_set()">1</method>
+			<method name="public static java_cup.non_terminal find(int indx)">1</method>
+			<method name="public void _init_(String nm)">1</method>
+			<method name="public static java.util.Enumeration all()">1</method>
+			<method name="public String toString()">2</method>
+			<method name="static java_cup.non_terminal create_new(String prefix, String type)">1</method>
+			<method name="public boolean is_non_term()">1</method>
+			<method name="public static void compute_first_sets()">1</method>
+			<method name="public void _init_(String nm, String tp)">2</method>
+			<method name="public static java_cup.non_terminal find(String with_name)">2</method>
+			<method name="static java_cup.non_terminal create_new(String prefix)">1</method>
+			<method name="public static void clear()">1</method>
+			<method name="protected boolean looks_nullable()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static int number()">1</method>
+			<method name="public java.util.Enumeration productions()">1</method>
+			<method name="public static void compute_nullability()">1</method>
+			<method name="public int num_productions()">1</method>
+			<method name="static java_cup.non_terminal create_new()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.symbol</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>15</cbo>
+		<rfc>10</rfc>
+		<lcom>26</lcom>
+		<ca>12</ca>
+		<ce>3</ce>
+		<npm>9</npm>
+		<lcom3>0.75</lcom3>
+		<loc>60</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6111111111111112</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.222222222222222</amc>
+		<cc>
+			<method name="public void _init_(String nm)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public void note_use()">1</method>
+			<method name="public void _init_(String nm, String tp)">3</method>
+			<method name="public int index()">1</method>
+			<method name="public String name()">1</method>
+			<method name="public int use_count()">1</method>
+			<method name="public abstract boolean is_non_term()">1</method>
+			<method name="public String stack_type()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.parse_action_table</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>23</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>13</ce>
+		<npm>4</npm>
+		<lcom3>0.16666666666666666</lcom3>
+		<loc>198</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>48.0</amc>
+		<cc>
+			<method name="public String toString()">6</method>
+			<method name="public void check_reductions()">1</method>
+			<method name="public int num_states()">1</method>
+			<method name="public void _init_()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.lalr_item_set</name>
+		<wmc>19</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>48</rfc>
+		<lcom>97</lcom>
+		<ca>1</ca>
+		<ce>12</ce>
+		<npm>18</npm>
+		<lcom3>0.3055555555555556</lcom3>
+		<loc>360</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.40789473684210525</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>17.842105263157894</amc>
+		<cc>
+			<method name="public boolean contains(java_cup.lalr_item itm)">1</method>
+			<method name="public boolean equals(java_cup.lalr_item_set other)">3</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public int size()">1</method>
+			<method name="public java_cup.lalr_item find(java_cup.lalr_item itm)">1</method>
+			<method name="public java_cup.lalr_item get_one()">1</method>
+			<method name="public void remove(java_cup.lalr_item itm)">1</method>
+			<method name="public boolean is_subset_of(java_cup.lalr_item_set other)">1</method>
+			<method name="public void add(java_cup.lalr_item_set other)">1</method>
+			<method name="public void remove(java_cup.lalr_item_set other)">1</method>
+			<method name="public String toString()">2</method>
+			<method name="public int hashCode()">3</method>
+			<method name="public java.util.Enumeration all()">1</method>
+			<method name="protected void not_null(Object obj)">1</method>
+			<method name="public boolean is_superset_of(java_cup.lalr_item_set other)">1</method>
+			<method name="public java_cup.lalr_item add(java_cup.lalr_item itm)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void _init_(java_cup.lalr_item_set other)">1</method>
+			<method name="public void compute_closure()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.action_production</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>7</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>24</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.333333333333333</amc>
+		<cc>
+			<method name="public java_cup.production base_production()">1</method>
+			<method name="public void _init_(java_cup.production base, java_cup.non_terminal lhs_sym, java_cup.production_part[] rhs_parts, int rhs_len, String action_str, int indexOfIntermediateResult)">1</method>
+			<method name="public int getIndexOfIntermediateResult()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.lalr_state</name>
+		<wmc>26</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>31</cbo>
+		<rfc>103</rfc>
+		<lcom>277</lcom>
+		<ca>7</ca>
+		<ce>30</ce>
+		<npm>15</npm>
+		<lcom3>0.7666666666666667</lcom3>
+		<loc>1133</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.12307692307692308</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>42.34615384615385</amc>
+		<cc>
+			<method name="public void build_table_entries(java_cup.parse_action_table act_table, java_cup.parse_reduce_table reduce_table)">1</method>
+			<method name="protected void report_conflicts(java_cup.terminal_set conflict_set)">1</method>
+			<method name="protected void propagate_lookaheads()">1</method>
+			<method name="protected void report_reduce_reduce(java_cup.lalr_item itm1, java_cup.lalr_item itm2)">1</method>
+			<method name="public static java_cup.lalr_state build_machine(java_cup.production start_prod)">1</method>
+			<method name="protected static void dump_state(java_cup.lalr_state st)">1</method>
+			<method name="public static java.util.Enumeration all()">1</method>
+			<method name="public String toString()">2</method>
+			<method name="public int hashCode()">1</method>
+			<method name="protected java_cup.parse_action insert_shift(java_cup.parse_action a1, java_cup.parse_action a2)">1</method>
+			<method name="protected boolean fix_with_precedence(java_cup.production p, int term_index, java_cup.parse_action_row table_row, java_cup.parse_action act)">1</method>
+			<method name="public java_cup.lalr_item_set items()">1</method>
+			<method name="protected java_cup.parse_action insert_action(java_cup.parse_action a1, java_cup.parse_action a2, int act_type)">1</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public void _init_(java_cup.lalr_item_set itms)">1</method>
+			<method name="public int index()">1</method>
+			<method name="protected java_cup.parse_action insert_reduce(java_cup.parse_action a1, java_cup.parse_action a2)">1</method>
+			<method name="public java_cup.lalr_transition transitions()">1</method>
+			<method name="public void add_transition(java_cup.symbol on_sym, java_cup.lalr_state to_st)">1</method>
+			<method name="public boolean equals(java_cup.lalr_state other)">3</method>
+			<method name="public static void clear()">1</method>
+			<method name="protected void report_shift_reduce(java_cup.lalr_item red_itm, int conflict_sym)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static int number()">1</method>
+			<method name="public static java_cup.lalr_state find_state(java_cup.lalr_item_set itms)">2</method>
+			<method name="protected static void propagate_all_lookaheads()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.lr_parser</name>
+		<wmc>42</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>16</cbo>
+		<rfc>72</rfc>
+		<lcom>735</lcom>
+		<ca>2</ca>
+		<ce>14</ce>
+		<npm>28</npm>
+		<lcom3>0.8638211382113821</lcom3>
+		<loc>1637</loc>
+		<dam>0.9166666666666666</dam>
+		<moa>4</moa>
+		<mfa>0.0</mfa>
+		<cam>0.13852813852813853</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>37.69047619047619</amc>
+		<cc>
+			<method name="protected void read_lookahead()">1</method>
+			<method name="public abstract int start_state()">1</method>
+			<method name="public void done_parsing()">1</method>
+			<method name="public void setScanner(java_cup.runtime.Scanner s)">1</method>
+			<method name="protected abstract void init_actions()">1</method>
+			<method name="public void debug_reduce(int prod_num, int nt_num, int rhs_size)">1</method>
+			<method name="protected static short[][] unpackFromStrings(String[] sa)">4</method>
+			<method name="public void _init_(java_cup.runtime.Scanner s)">1</method>
+			<method name="public java_cup.runtime.Scanner getScanner()">1</method>
+			<method name="protected final short get_action(int state, int sym)">8</method>
+			<method name="protected boolean shift_under_error()">2</method>
+			<method name="public java_cup.runtime.Symbol parse()">1</method>
+			<method name="public void debug_stack()">4</method>
+			<method name="protected boolean error_recovery(boolean debug)">1</method>
+			<method name="public abstract short[][] production_table()">1</method>
+			<method name="public abstract int EOF_sym()">1</method>
+			<method name="public java_cup.runtime.SymbolFactory getSymbolFactory()">1</method>
+			<method name="protected boolean advance_lookahead()">2</method>
+			<method name="public abstract int error_sym()">1</method>
+			<method name="public void report_fatal_error(String message, Object info)">1</method>
+			<method name="public void debug_shift(java_cup.runtime.Symbol shift_tkn)">1</method>
+			<method name="public abstract short[][] reduce_table()">1</method>
+			<method name="protected boolean find_recovery_config(boolean debug)">7</method>
+			<method name="public void user_init()">1</method>
+			<method name="public void unrecovered_syntax_error(java_cup.runtime.Symbol cur_token)">1</method>
+			<method name="protected void restart_lookahead()">1</method>
+			<method name="public void report_error(String message, Object info)">3</method>
+			<method name="public void debug_message(String mess)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol do_action(int, java_cup.runtime.lr_parser, java.util.Stack, int)">1</method>
+			<method name="protected int error_sync_size()">1</method>
+			<method name="public void dump_stack()">3</method>
+			<method name="public void _init_(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory symfac)">1</method>
+			<method name="public abstract short[][] action_table()">1</method>
+			<method name="public void syntax_error(java_cup.runtime.Symbol cur_token)">1</method>
+			<method name="protected boolean try_parse_ahead(boolean debug)">1</method>
+			<method name="public abstract int start_production()">1</method>
+			<method name="protected void parse_lookahead(boolean debug)">1</method>
+			<method name="protected final short get_reduce(int state, int sym)">5</method>
+			<method name="public java_cup.runtime.Symbol scan()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="protected java_cup.runtime.Symbol cur_err_token()">1</method>
+			<method name="public java_cup.runtime.Symbol debug_parse()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.action_part</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>17</rfc>
+		<lcom>22</lcom>
+		<ca>3</ca>
+		<ce>5</ce>
+		<npm>8</npm>
+		<lcom3>0.14285714285714285</lcom3>
+		<loc>78</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.375</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.625</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">2</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public boolean is_action()">1</method>
+			<method name="public String code_string()">1</method>
+			<method name="public boolean equals(java_cup.action_part other)">4</method>
+			<method name="public void _init_(String code_str)">1</method>
+			<method name="public void set_code_string(String new_str)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.virtual_parse_stack</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>17</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>5</npm>
+		<lcom3>0.4</lcom3>
+		<loc>116</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.833333333333332</amc>
+		<cc>
+			<method name="public boolean empty()">1</method>
+			<method name="public void pop()">1</method>
+			<method name="public int top()">1</method>
+			<method name="protected void get_from_real()">2</method>
+			<method name="public void push(int state_num)">1</method>
+			<method name="public void _init_(java.util.Stack shadowing_stack)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.CUP$parser$actions</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>23</cbo>
+		<rfc>44</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>23</ce>
+		<npm>1</npm>
+		<lcom3>0.75</lcom3>
+		<loc>3728</loc>
+		<dam>0.8333333333333334</dam>
+		<moa>4</moa>
+		<mfa>0.0</mfa>
+		<cam>0.32653061224489793</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>529.8571428571429</amc>
+		<cc>
+			<method name="protected void update_precedence(int p)">1</method>
+			<method name="void _init_(java_cup.parser parser)">1</method>
+			<method name="protected void new_rhs()">1</method>
+			<method name="protected java_cup.production_part add_lab(java_cup.production_part part, String lab)">1</method>
+			<method name="protected void add_rhs_part(java_cup.production_part part)">1</method>
+			<method name="protected void add_precedence(String term)">4</method>
+			<method name="public final java_cup.runtime.Symbol CUP$parser$do_action(int CUP$parser$act_num, java_cup.runtime.lr_parser CUP$parser$parser, java.util.Stack CUP$parser$stack, int CUP$parser$top)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.reduce_action</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>15</rfc>
+		<lcom>19</lcom>
+		<ca>4</ca>
+		<ce>7</ce>
+		<npm>7</npm>
+		<lcom3>0.16666666666666666</lcom3>
+		<loc>64</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35714285714285715</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public int kind()">1</method>
+			<method name="public boolean equals(java_cup.reduce_action other)">3</method>
+			<method name="public void _init_(java_cup.production prod)">1</method>
+			<method name="public java_cup.production reduce_with()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.version</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>3</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>11</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.parser</name>
+		<wmc>17</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>34</rfc>
+		<lcom>124</lcom>
+		<ca>2</ca>
+		<ce>15</ce>
+		<npm>15</npm>
+		<lcom3>0.9375</lcom3>
+		<loc>154</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.203125</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.764705882352941</amc>
+		<cc>
+			<method name="public void _init_(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf)">1</method>
+			<method name="public java_cup.runtime.Symbol do_action(int act_num, java_cup.runtime.lr_parser parser, java.util.Stack stack, int top)">1</method>
+			<method name="public void _init_(java_cup.runtime.Scanner s)">1</method>
+			<method name="public int start_state()">1</method>
+			<method name="public short[][] reduce_table()">1</method>
+			<method name="protected void init_actions()">1</method>
+			<method name="public int error_sym()">1</method>
+			<method name="public void report_fatal_error(String message, Object info)">2</method>
+			<method name="public int EOF_sym()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public java_cup.runtime.Symbol scan()">1</method>
+			<method name="public short[][] production_table()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public int start_production()">1</method>
+			<method name="public short[][] action_table()">1</method>
+			<method name="public void user_init()">1</method>
+			<method name="public void report_error(String message, Object info)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.ComplexSymbolFactory$Location</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>11</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>4</ce>
+		<npm>6</npm>
+		<lcom3>0.4</lcom3>
+		<loc>63</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="public void _init_(int line, int column)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public int getColumn()">1</method>
+			<method name="public int getLine()">1</method>
+			<method name="public String getUnit()">1</method>
+			<method name="public void _init_(String unit, int line, int column)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.parse_reduce_table</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>12</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>6</ce>
+		<npm>3</npm>
+		<lcom3>0.25</lcom3>
+		<loc>140</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>45.0</amc>
+		<cc>
+			<method name="public String toString()">6</method>
+			<method name="public int num_states()">1</method>
+			<method name="public void _init_()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.DefaultSymbolFactory</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>16</rfc>
+		<lcom>28</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>8</npm>
+		<lcom3>2.0</lcom3>
+		<loc>58</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.675</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.25</amc>
+		<cc>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, int left, int right, Object value)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, int left, int right)">1</method>
+			<method name="public java_cup.runtime.Symbol startSymbol(String name, int id, int state)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, Object value)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right, Object value)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.shift_action</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>15</rfc>
+		<lcom>19</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>7</npm>
+		<lcom3>0.16666666666666666</lcom3>
+		<loc>64</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35714285714285715</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public void _init_(java_cup.lalr_state shft_to)">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public java_cup.lalr_state shift_to()">1</method>
+			<method name="public int kind()">1</method>
+			<method name="public boolean equals(java_cup.shift_action other)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.lalr_transition</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>14</rfc>
+		<lcom>5</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>6</npm>
+		<lcom3>0.4666666666666667</lcom3>
+		<loc>85</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4583333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.666666666666666</amc>
+		<cc>
+			<method name="public java_cup.lalr_state to_state()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public void _init_(java_cup.symbol on_sym, java_cup.lalr_state to_st)">1</method>
+			<method name="public java_cup.symbol on_symbol()">1</method>
+			<method name="public void _init_(java_cup.symbol on_sym, java_cup.lalr_state to_st, java_cup.lalr_transition nxt)">1</method>
+			<method name="public java_cup.lalr_transition next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.Main</name>
+		<wmc>18</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>42</cbo>
+		<rfc>95</rfc>
+		<lcom>93</lcom>
+		<ca>1</ca>
+		<ce>41</ce>
+		<npm>4</npm>
+		<lcom3>0.8217468805704099</lcom3>
+		<loc>1751</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.06862745098039216</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>94.44444444444444</amc>
+		<cc>
+			<method name="public static void main(String[] argv)">1</method>
+			<method name="protected static void open_files()">1</method>
+			<method name="protected static String timestr(long time_val, long total_time)">7</method>
+			<method name="public static void dump_tables()">1</method>
+			<method name="protected static void check_unused()">9</method>
+			<method name="protected static void show_times()">22</method>
+			<method name="protected static void close_files()">1</method>
+			<method name="protected static void emit_parser()">1</method>
+			<method name="protected static void usage(String message)">1</method>
+			<method name="public static void dump_grammar()">1</method>
+			<method name="protected static String plural(int val)">2</method>
+			<method name="protected static void parse_args(String[] argv)">43</method>
+			<method name="protected static void parse_grammar_spec()">1</method>
+			<method name="protected static void emit_summary(boolean output_produced)">4</method>
+			<method name="private void _init_()">1</method>
+			<method name="public static void dump_machine()">4</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="protected static void build_parser()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.Scanner</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract java_cup.runtime.Symbol next_token()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.emit</name>
+		<wmc>17</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>29</cbo>
+		<rfc>69</rfc>
+		<lcom>94</lcom>
+		<ca>5</ca>
+		<ce>27</ce>
+		<npm>4</npm>
+		<lcom3>0.8722826086956521</lcom3>
+		<loc>1868</loc>
+		<dam>0.043478260869565216</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.1625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>107.52941176470588</amc>
+		<cc>
+			<method name="protected static void emit_production_table(java.io.PrintWriter out)">3</method>
+			<method name="protected static void emit_action_code(java.io.PrintWriter out, java_cup.production start_prod)">1</method>
+			<method name="protected static int do_escaped(java.io.PrintWriter out, char c)">9</method>
+			<method name="protected static int do_newline(java.io.PrintWriter out, int nchar, int nbytes)">3</method>
+			<method name="protected static void set_lr_values(boolean b)">1</method>
+			<method name="protected static String pre(String str)">1</method>
+			<method name="protected static String typeArgument()">2</method>
+			<method name="protected static void do_action_table(java.io.PrintWriter out, java_cup.parse_action_table act_tab, boolean compact_reduces)">1</method>
+			<method name="public static boolean lr_values()">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="public static void clear()">1</method>
+			<method name="protected static void do_reduce_table(java.io.PrintWriter out, java_cup.parse_reduce_table red_tab)">4</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static void symbols(java.io.PrintWriter out, boolean emit_non_terms, boolean sym_interface)">5</method>
+			<method name="protected static void emit_package(java.io.PrintWriter out)">2</method>
+			<method name="protected static void do_table_as_string(java.io.PrintWriter out, short[][] sa)">3</method>
+			<method name="public static void parser(java.io.PrintWriter out, java_cup.parse_action_table action_table, java_cup.parse_reduce_table reduce_table, int start_st, java_cup.production start_prod, boolean compact_reduces, boolean suppress_scanner)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.lr_item_core</name>
+		<wmc>16</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>11</cbo>
+		<rfc>32</rfc>
+		<lcom>72</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>15</npm>
+		<lcom3>0.5666666666666667</lcom3>
+		<loc>335</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.275</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>19.6875</amc>
+		<cc>
+			<method name="public java_cup.production the_production()">1</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public int core_hashCode()">1</method>
+			<method name="public java_cup.lr_item_core shift_core()">1</method>
+			<method name="public boolean dot_at_end()">2</method>
+			<method name="public String to_simple_string()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public java_cup.symbol symbol_after_dot()">1</method>
+			<method name="protected int obj_hash()">1</method>
+			<method name="public int dot_pos()">1</method>
+			<method name="public boolean core_equals(java_cup.lr_item_core other)">4</method>
+			<method name="public void _init_(java_cup.production prod, int pos)">1</method>
+			<method name="public void _init_(java_cup.production prod)">1</method>
+			<method name="public boolean equals(java_cup.lr_item_core other)">1</method>
+			<method name="public java_cup.non_terminal dot_before_nt()">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.Symbol</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>16</cbo>
+		<rfc>13</rfc>
+		<lcom>14</lcom>
+		<ca>12</ca>
+		<ce>4</ce>
+		<npm>7</npm>
+		<lcom3>0.5952380952380951</lcom3>
+		<loc>91</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.625</amc>
+		<cc>
+			<method name="void _init_(int sym_num, int state)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public void _init_(int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right)">1</method>
+			<method name="public void _init_(int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right, Object o)">1</method>
+			<method name="public void _init_(int sym_num)">1</method>
+			<method name="public void _init_(int id, Object o)">1</method>
+			<method name="public void _init_(int id, int l, int r, Object o)">1</method>
+			<method name="public void _init_(int id, int l, int r)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.lalr_item</name>
+		<wmc>14</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>45</rfc>
+		<lcom>79</lcom>
+		<ca>2</ca>
+		<ce>14</ce>
+		<npm>14</npm>
+		<lcom3>0.5641025641025641</lcom3>
+		<loc>358</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2976190476190476</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>24.357142857142858</amc>
+		<cc>
+			<method name="public void add_propagate(java_cup.lalr_item prop_to)">1</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public boolean lookahead_visible()">1</method>
+			<method name="public java_cup.lalr_item shift()">1</method>
+			<method name="public boolean equals(java_cup.lalr_item other)">2</method>
+			<method name="public void propagate_lookaheads(java_cup.terminal_set incoming)">1</method>
+			<method name="public void _init_(java_cup.production prod, java_cup.terminal_set look)">1</method>
+			<method name="public java.util.Stack propagate_items()">1</method>
+			<method name="public String toString()">4</method>
+			<method name="public java_cup.terminal_set calc_lookahead(java_cup.terminal_set lookahead_after)">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public void _init_(java_cup.production prod, int pos, java_cup.terminal_set look)">1</method>
+			<method name="public void _init_(java_cup.production prod)">1</method>
+			<method name="public java_cup.terminal_set lookahead()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.SymbolFactory</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>5</rfc>
+		<lcom>10</lcom>
+		<ca>6</ca>
+		<ce>4</ce>
+		<npm>5</npm>
+		<lcom3>2.0</lcom3>
+		<loc>5</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.76</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract java_cup.runtime.Symbol newSymbol(String, int)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol newSymbol(String, int, java_cup.runtime.Symbol, java_cup.runtime.Symbol, Object)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol newSymbol(String, int, java_cup.runtime.Symbol, java_cup.runtime.Symbol)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol startSymbol(String, int, int)">1</method>
+			<method name="public abstract java_cup.runtime.Symbol newSymbol(String, int, Object)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.ComplexSymbolFactory</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>16</rfc>
+		<lcom>28</lcom>
+		<ca>3</ca>
+		<ce>7</ce>
+		<npm>8</npm>
+		<lcom3>2.0</lcom3>
+		<loc>65</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6041666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.125</amc>
+		<cc>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.ComplexSymbolFactory$Location left, java_cup.runtime.ComplexSymbolFactory$Location right, Object value)">1</method>
+			<method name="public java_cup.runtime.Symbol startSymbol(String name, int id, int state)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, Object value)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.ComplexSymbolFactory$Location left, java_cup.runtime.ComplexSymbolFactory$Location right)">1</method>
+			<method name="public java_cup.runtime.Symbol newSymbol(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right, Object value)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.Lexer</name>
+		<wmc>23</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>19</cbo>
+		<rfc>43</rfc>
+		<lcom>137</lcom>
+		<ca>2</ca>
+		<ce>17</ce>
+		<npm>13</npm>
+		<lcom3>0.9184491978609626</lcom3>
+		<loc>2084</loc>
+		<dam>0.9117647058823529</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.24025974025974026</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>88.1304347826087</amc>
+		<cc>
+			<method name="public void _init_(java_cup.runtime.ComplexSymbolFactory sf)">1</method>
+			<method name="public final int yystate()">1</method>
+			<method name="public java_cup.runtime.Symbol symbol(String name, int code, String lexem)">1</method>
+			<method name="public final void yybegin(int newState)">1</method>
+			<method name="public void _init_(java.io.Reader in)">1</method>
+			<method name="public final int yylength()">1</method>
+			<method name="public void _init_(java.io.InputStream in)">1</method>
+			<method name="private static char[] yy_unpack_cmap(String packed)">3</method>
+			<method name="private static int[] yy_unpack()">1</method>
+			<method name="private void yy_ScanError(int errorCode)">1</method>
+			<method name="private void yypushback(int number)">2</method>
+			<method name="public java_cup.runtime.Symbol next_token()">1</method>
+			<method name="public final void yyreset(java.io.Reader reader)">1</method>
+			<method name="public final void yyclose()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="protected void emit_warning(String message)">1</method>
+			<method name="public final char yycharat(int pos)">1</method>
+			<method name="protected void emit_error(String message)">1</method>
+			<method name="private static int yy_unpack(String packed, int offset, int[] trans)">3</method>
+			<method name="private boolean yy_refill()">1</method>
+			<method name="public final String yytext()">1</method>
+			<method name="private void yy_do_eof()">1</method>
+			<method name="public java_cup.runtime.Symbol symbol(String name, int code)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.parse_action</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>3</noc>
+		<cbo>10</cbo>
+		<rfc>7</rfc>
+		<lcom>15</lcom>
+		<ca>7</ca>
+		<ce>3</ce>
+		<npm>6</npm>
+		<lcom3>1.2</lcom3>
+		<loc>38</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>4.666666666666667</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public int kind()">1</method>
+			<method name="public boolean equals(java_cup.parse_action other)">3</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.production</name>
+		<wmc>38</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>26</cbo>
+		<rfc>77</rfc>
+		<lcom>613</lcom>
+		<ca>12</ca>
+		<ce>17</ce>
+		<npm>29</npm>
+		<lcom3>0.8232848232848232</lcom3>
+		<loc>1077</loc>
+		<dam>1.0</dam>
+		<moa>4</moa>
+		<mfa>0.0</mfa>
+		<cam>0.1891891891891892</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>27.0</amc>
+		<cc>
+			<method name="public void set_precedence_side(int prec_side)">1</method>
+			<method name="public static java_cup.production find(int indx)">1</method>
+			<method name="public void _init_(java_cup.non_terminal lhs_sym, java_cup.production_part[] rhs_parts, int rhs_l, int prec_num, int prec_side)">1</method>
+			<method name="public void note_reduction_use()">1</method>
+			<method name="public java_cup.action_part action()">1</method>
+			<method name="public String to_simple_string()">1</method>
+			<method name="public static java.util.Enumeration all()">1</method>
+			<method name="public String toString()">6</method>
+			<method name="public void set_precedence_num(int prec_num)">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="protected static boolean is_id_start(char c)">6</method>
+			<method name="public java_cup.terminal_set check_first_set()">1</method>
+			<method name="public java_cup.symbol_part lhs()">1</method>
+			<method name="protected void remove_embedded_actions()">1</method>
+			<method name="boolean set_nullable(boolean v)">1</method>
+			<method name="public void _init_(java_cup.non_terminal lhs_sym, java_cup.production_part[] rhs_parts, int rhs_l)">1</method>
+			<method name="public boolean equals(java_cup.production other)">3</method>
+			<method name="public int num_reductions()">1</method>
+			<method name="public void _init_(java_cup.non_terminal lhs_sym, java_cup.production_part[] rhs_parts, int rhs_l, String action_str)">1</method>
+			<method name="public boolean nullable()">1</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public int index()">1</method>
+			<method name="protected int merge_adjacent_actions(java_cup.production_part[] rhs_parts, int len)">12</method>
+			<method name="protected String declare_labels(java_cup.production_part[] rhs, int rhs_len, String final_action)">4</method>
+			<method name="public int rhs_length()">1</method>
+			<method name="public java_cup.terminal_set first_set()">1</method>
+			<method name="public int precedence_num()">1</method>
+			<method name="public boolean nullable_known()">1</method>
+			<method name="protected static boolean is_id_char(char c)">4</method>
+			<method name="public java_cup.production_part rhs(int indx)">1</method>
+			<method name="protected java_cup.action_part strip_trailing_action(java_cup.production_part[] rhs_parts, int len)">4</method>
+			<method name="public void _init_(java_cup.non_terminal lhs_sym, java_cup.production_part[] rhs_parts, int rhs_l, String action_str, int prec_num, int prec_side)">1</method>
+			<method name="public static void clear()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static int number()">1</method>
+			<method name="public int precedence_side()">1</method>
+			<method name="protected String make_declaration(String labelname, String stack_type, int offset)">5</method>
+			<method name="public boolean check_nullable()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.assoc</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>2</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>2</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>8</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.runtime.ComplexSymbolFactory$ComplexSymbol</name>
+		<wmc>10</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>18</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>10</npm>
+		<lcom3>0.37037037037037035</lcom3>
+		<loc>152</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>13.9</amc>
+		<cc>
+			<method name="public void _init_(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right, Object value)">3</method>
+			<method name="public void _init_(String name, int id)">1</method>
+			<method name="public String toString()">3</method>
+			<method name="public java_cup.runtime.ComplexSymbolFactory$Location getRight()">1</method>
+			<method name="public void _init_(String name, int id, java_cup.runtime.Symbol left, java_cup.runtime.Symbol right)">3</method>
+			<method name="public java_cup.runtime.ComplexSymbolFactory$Location getLeft()">1</method>
+			<method name="public void _init_(String name, int id, int state)">1</method>
+			<method name="public void _init_(String name, int id, Object value)">1</method>
+			<method name="public void _init_(String name, int id, java_cup.runtime.ComplexSymbolFactory$Location left, java_cup.runtime.ComplexSymbolFactory$Location right)">1</method>
+			<method name="public void _init_(String name, int id, java_cup.runtime.ComplexSymbolFactory$Location left, java_cup.runtime.ComplexSymbolFactory$Location right, Object value)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.ErrorManager</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>20</cbo>
+		<rfc>30</rfc>
+		<lcom>53</lcom>
+		<ca>7</ca>
+		<ce>13</ce>
+		<npm>10</npm>
+		<lcom3>0.8</lcom3>
+		<loc>246</loc>
+		<dam>0.8</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5384615384615384</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.214285714285715</amc>
+		<cc>
+			<method name="public void emit_warning(String message)">1</method>
+			<method name="private static String convSymbol(java_cup.runtime.Symbol symbol)">5</method>
+			<method name="public void emit_fatal(String message)">1</method>
+			<method name="public void emit_error(String message, java_cup.runtime.Symbol sym)">1</method>
+			<method name="public void emit_fatal(String message, java_cup.runtime.Symbol sym)">1</method>
+			<method name="public int getFatalCount()">1</method>
+			<method name="public void emit_warning(String message, java_cup.runtime.Symbol sym)">1</method>
+			<method name="static Class class$(String x0)">1</method>
+			<method name="public static java_cup.ErrorManager getManager()">1</method>
+			<method name="public int getErrorCount()">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public int getWarningCount()">1</method>
+			<method name="public void emit_error(String message)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.symbol_part</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>19</rfc>
+		<lcom>26</lcom>
+		<ca>8</ca>
+		<ce>7</ce>
+		<npm>8</npm>
+		<lcom3>0.14285714285714285</lcom3>
+		<loc>95</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.325</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.75</amc>
+		<cc>
+			<method name="public String toString()">2</method>
+			<method name="public int hashCode()">2</method>
+			<method name="public java_cup.symbol the_symbol()">1</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public boolean is_action()">1</method>
+			<method name="public boolean equals(java_cup.symbol_part other)">4</method>
+			<method name="public void _init_(java_cup.symbol sym)">1</method>
+			<method name="public void _init_(java_cup.symbol sym, String lab)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.nonassoc_action</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>8</rfc>
+		<lcom>15</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>6</npm>
+		<lcom3>2.0</lcom3>
+		<loc>35</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.833333333333333</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public boolean equals(Object other)">2</method>
+			<method name="public int kind()">1</method>
+			<method name="public boolean equals(java_cup.parse_action other)">3</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.anttask.CUPTask</name>
+		<wmc>47</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>75</rfc>
+		<lcom>859</lcom>
+		<ca>0</ca>
+		<ce>16</ce>
+		<npm>46</npm>
+		<lcom3>0.9347826086956522</lcom3>
+		<loc>856</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.4457831325301205</mfa>
+		<cam>0.49645390070921985</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>16.74468085106383</amc>
+		<cc>
+			<method name="public void setInterface(boolean arg_interface)">1</method>
+			<method name="public void setExpect(String argExpect)">1</method>
+			<method name="public boolean getQuiet()">1</method>
+			<method name="public void setQuiet(boolean argquiet)">1</method>
+			<method name="public String getParser()">1</method>
+			<method name="public boolean isNowarn()">1</method>
+			<method name="public void setSrcfile(String newSrcfile)">1</method>
+			<method name="public void execute()">1</method>
+			<method name="public boolean isDebug()">1</method>
+			<method name="public void setNonterms(boolean argNonterms)">1</method>
+			<method name="public boolean isInterface()">1</method>
+			<method name="public boolean isCompact_red()">1</method>
+			<method name="public void setNowarn(boolean argNowarn)">1</method>
+			<method name="public void setDump_states(boolean argDump_states)">1</method>
+			<method name="public boolean isNosummary()">1</method>
+			<method name="public boolean isProgress()">1</method>
+			<method name="public void setNoscanner(boolean argNoscanner)">1</method>
+			<method name="public void setSymbols(String argSymbols)">1</method>
+			<method name="public void setCompact_red(boolean argCompact_red)">1</method>
+			<method name="public void setDump(boolean argDump)">1</method>
+			<method name="public void setDebug(boolean argDebug)">1</method>
+			<method name="public String getPackage()">1</method>
+			<method name="public boolean isDump_grammar()">1</method>
+			<method name="public void setNopositions(boolean argNopositions)">1</method>
+			<method name="public boolean isDump_states()">1</method>
+			<method name="public String getDestdir()">1</method>
+			<method name="public boolean isDump_tables()">1</method>
+			<method name="public boolean getForce()">1</method>
+			<method name="protected String inspect(String cupfile)">1</method>
+			<method name="public String getSrcfile()">1</method>
+			<method name="public boolean isNopositions()">1</method>
+			<method name="public boolean isDump()">1</method>
+			<method name="public boolean isTime()">1</method>
+			<method name="public void setPackage(String arg_package)">1</method>
+			<method name="public void setNosummary(boolean argNosummary)">1</method>
+			<method name="public void setForce(boolean argforce)">1</method>
+			<method name="public String getExpect()">1</method>
+			<method name="public boolean isNonterms()">1</method>
+			<method name="public void setProgress(boolean argProgress)">1</method>
+			<method name="public void setDestdir(String destdir)">1</method>
+			<method name="public String getSymbols()">1</method>
+			<method name="public void setParser(String argParser)">1</method>
+			<method name="public boolean isNoscanner()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void setDump_grammar(boolean argDump_grammar)">1</method>
+			<method name="public void setDump_tables(boolean argDump_tables)">1</method>
+			<method name="public void setTime(boolean argTime)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>java_cup.parse_reduce_row</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>4</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>25</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.75</amc>
+		<cc>
+			<method name="public static int size()">1</method>
+			<method name="public static void clear()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">2</method>
+		</cc>
+	</class>
+
+	<class>
+		<name>org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison</name>
+		<wmc>7</wmc>
+		<dit>2</dit>
+		<noc>5</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>17</lcom>
+		<ca>8</ca>
+		<ce>12</ce>
+		<npm>3</npm>
+		<lcom3>0.9285714285714285</lcom3>
+		<loc>99</loc>
+		<dam>0.2857142857142857</dam>
+		<moa>6</moa>
+		<mfa>0.7647058823529411</mfa>
+		<cam>0.36666666666666664</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>12.142857142857142</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public static org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison[] values()">1</method>
+			<method name="abstract boolean compatibleWith(org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison)">1</method>
+			<method name="private void _init_(String arg0, int arg1, String arg2)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="void _init_(String arg0, int arg1, String arg2, org.pentaho.packageManagement.VersionPackageConstraint$1 arg3)">1</method>
+			<method name="public static org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison valueOf(String arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.PackageConstraint</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>9</cbo>
+		<rfc>6</rfc>
+		<lcom>8</lcom>
+		<ca>5</ca>
+		<ce>4</ce>
+		<npm>5</npm>
+		<lcom3>0.75</lcom3>
+		<loc>16</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>2.0</amc>
+		<cc>
+			<method name="public abstract org.pentaho.packageManagement.PackageConstraint checkConstraint(org.pentaho.packageManagement.PackageConstraint)">1</method>
+			<method name="public abstract boolean checkConstraint(org.pentaho.packageManagement.Package)">1</method>
+			<method name="public org.pentaho.packageManagement.Package getPackage()">1</method>
+			<method name="public void setPackage(org.pentaho.packageManagement.Package arg0)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.Package</name>
+		<wmc>18</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>15</cbo>
+		<rfc>21</rfc>
+		<lcom>141</lcom>
+		<ca>7</ca>
+		<ce>8</ce>
+		<npm>18</npm>
+		<lcom3>0.8235294117647058</lcom3>
+		<loc>45</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.26666666666666666</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>1.4444444444444444</amc>
+		<cc>
+			<method name="public abstract void install()">1</method>
+			<method name="public abstract java.util.List getMissingDependencies()">1</method>
+			<method name="public abstract Object clone()">1</method>
+			<method name="public abstract String getName()">1</method>
+			<method name="public abstract java.net.URL getPackageURL()">1</method>
+			<method name="public java.util.Map getPackageMetaData()">1</method>
+			<method name="public abstract java.util.List getIncompatibleDependencies(java.util.List)">1</method>
+			<method name="public boolean equals(org.pentaho.packageManagement.Package arg0)">1</method>
+			<method name="public abstract java.util.List getDependencies()">1</method>
+			<method name="public abstract boolean isCompatibleBaseSystem()">1</method>
+			<method name="public abstract boolean isInstalled()">1</method>
+			<method name="public abstract java.util.List getIncompatibleDependencies()">1</method>
+			<method name="public abstract void setPackageMetaDataElement(Object, Object)">1</method>
+			<method name="public Object getPackageMetaDataElement(Object arg0)">2</method>
+			<method name="public void setPackageMetaData(java.util.Map arg0)">1</method>
+			<method name="public abstract java.util.List getBaseSystemDependency()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public abstract java.util.List getMissingDependencies(java.util.List)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.DefaultPackageManager</name>
+		<wmc>34</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>39</cbo>
+		<rfc>139</rfc>
+		<lcom>477</lcom>
+		<ca>1</ca>
+		<ce>39</ce>
+		<npm>20</npm>
+		<lcom3>0.8787878787878788</lcom3>
+		<loc>2145</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.12457912457912458</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>62.029411764705884</amc>
+		<cc>
+			<method name="public org.pentaho.packageManagement.Package getRepositoryPackageInfo(String arg0, Object arg1)">1</method>
+			<method name="public transient void installPackageFromRepository(String arg0, Object arg1, java.io.PrintStream[] arg2)">1</method>
+			<method name="public org.pentaho.packageManagement.Package getInstalledPackageInfo(String arg0)">1</method>
+			<method name="public org.pentaho.packageManagement.Package getRepositoryPackageInfo(String arg0)">1</method>
+			<method name="private org.pentaho.packageManagement.Package getPackageArchiveInfo(java.io.File arg0)">1</method>
+			<method name="protected static boolean checkDependencies(org.pentaho.packageManagement.PackageConstraint arg0, java.util.Map arg1, java.util.Map arg2)">1</method>
+			<method name="public transient void uninstallPackage(String arg0, java.io.PrintStream[] arg1)">1</method>
+			<method name="public transient String installPackageFromArchive(String arg0, java.io.PrintStream[] arg1)">1</method>
+			<method name="public java.util.List getAllDependenciesForPackage(org.pentaho.packageManagement.Package arg0, java.util.Map arg1)">1</method>
+			<method name="public java.util.List getAvailablePackages()">1</method>
+			<method name="private java.net.URLConnection getConnection(java.net.URL arg0)">1</method>
+			<method name="protected static String padLeft(String arg0, int arg1)">1</method>
+			<method name="public java.util.List getInstalledPackages()">1</method>
+			<method name="public org.pentaho.packageManagement.Package getPackageArchiveInfo(String arg0)">1</method>
+			<method name="private static void copyStreams(java.io.InputStream arg0, java.io.OutputStream arg1)">1</method>
+			<method name="protected boolean establishPackageHome()">4</method>
+			<method name="protected transient java.io.File downloadPackage(java.net.URL arg0, java.io.PrintStream[] arg1)">1</method>
+			<method name="public java.util.List getRepositoryPackageVersions(String arg0)">1</method>
+			<method name="private static String fixStringLength(String arg0, int arg1, boolean arg2)">5</method>
+			<method name="private java.net.URLConnection getConnection(String arg0)">1</method>
+			<method name="public static transient void deleteDir(java.io.File arg0, java.io.PrintStream[] arg1)">1</method>
+			<method name="private void writeZipEntryForPackage(String arg0, java.util.zip.ZipOutputStream arg1)">1</method>
+			<method name="public transient String installPackageFromURL(java.net.URL arg0, java.io.PrintStream[] arg1)">1</method>
+			<method name="public transient byte[] getRepositoryPackageMetaDataOnlyAsZipLegacy(java.io.PrintStream[] arg0)">1</method>
+			<method name="public org.pentaho.packageManagement.Package getURLPackageInfo(java.net.URL arg0)">1</method>
+			<method name="protected static String padRight(String arg0, int arg1)">1</method>
+			<method name="public transient void installPackages(java.util.List arg0, java.io.PrintStream[] arg1)">1</method>
+			<method name="public transient java.util.List getAllPackages(java.io.PrintStream[] arg0)">1</method>
+			<method name="protected transient void installPackage(String arg0, String arg1, java.io.PrintStream[] arg2)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public transient byte[] getRepositoryPackageMetaDataOnlyAsZip(java.io.PrintStream[] arg0)">1</method>
+			<method name="public static void main(String[] arg0)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="private void transToBAOS(java.io.BufferedInputStream arg0, java.io.ByteArrayOutputStream arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.bounce.net.DefaultAuthenticator</name>
+		<wmc>6</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>32</cbo>
+		<rfc>52</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>31</ce>
+		<npm>1</npm>
+		<lcom3>0.5875</lcom3>
+		<loc>386</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.7777777777777778</mfa>
+		<cam>0.35</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>60.666666666666664</amc>
+		<cc>
+			<method name="static javax.swing.JDialog access$100(org.bounce.net.DefaultAuthenticator arg0)">1</method>
+			<method name="private javax.swing.JDialog getDialog()">2</method>
+			<method name="public void _init_(javax.swing.JFrame arg0)">1</method>
+			<method name="static boolean access$002(org.bounce.net.DefaultAuthenticator arg0, boolean arg1)">1</method>
+			<method name="protected java.net.PasswordAuthentication getPasswordAuthentication()">2</method>
+			<method name="static void _clinit_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.VersionPackageConstraint</name>
+		<wmc>12</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>36</rfc>
+		<lcom>20</lcom>
+		<ca>2</ca>
+		<ce>11</ce>
+		<npm>7</npm>
+		<lcom3>0.6363636363636364</lcom3>
+		<loc>500</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3090909090909091</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>40.5</amc>
+		<cc>
+			<method name="protected static int[] parseVersion(String arg0)">6</method>
+			<method name="public org.pentaho.packageManagement.PackageConstraint checkConstraint(org.pentaho.packageManagement.PackageConstraint arg0)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison getVersionComparison()">1</method>
+			<method name="public void _init_(org.pentaho.packageManagement.Package arg0)">1</method>
+			<method name="public void setVersionConstraint(org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg0)">1</method>
+			<method name="protected static org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison getVersionComparison(String arg0)">3</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public boolean checkConstraint(org.pentaho.packageManagement.Package arg0)">1</method>
+			<method name="protected static boolean checkConstraint(String arg0, org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg1, String arg2)">1</method>
+			<method name="protected static org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison compare(String arg0, String arg1)">7</method>
+			<method name="public void setVersionConstraint(String arg0)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.VersionPackageConstraint$1</name>
+		<wmc>0</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>0</rfc>
+		<lcom>0</lcom>
+		<ca>6</ca>
+		<ce>1</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>0</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.PackageManager$1</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>0</npm>
+		<lcom3>0.0</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.9333333333333333</mfa>
+		<cam>0.75</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>8.5</amc>
+		<cc>
+			<method name="void _init_(org.pentaho.packageManagement.PackageManager arg0)">1</method>
+			<method name="protected java.net.PasswordAuthentication getPasswordAuthentication()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.DefaultPackage</name>
+		<wmc>19</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>24</cbo>
+		<rfc>78</rfc>
+		<lcom>91</lcom>
+		<ca>1</ca>
+		<ce>23</ce>
+		<npm>17</npm>
+		<lcom3>0.5555555555555556</lcom3>
+		<loc>1411</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.19078947368421054</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>73.15789473684211</amc>
+		<cc>
+			<method name="private boolean findPackage(String arg0, java.util.List arg1)">2</method>
+			<method name="public boolean isCompatibleBaseSystem()">1</method>
+			<method name="public void setPackageMetaDataElement(Object arg0, Object arg1)">1</method>
+			<method name="public java.net.URL getPackageURL()">1</method>
+			<method name="public java.util.List getIncompatibleDependencies()">1</method>
+			<method name="public java.util.List getBaseSystemDependency()">1</method>
+			<method name="public java.util.List getIncompatibleDependencies(java.util.List arg0)">1</method>
+			<method name="public String getName()">1</method>
+			<method name="public boolean isInstalled()">1</method>
+			<method name="public Object clone()">3</method>
+			<method name="public java.util.List getMissingDependencies(java.util.List arg0)">1</method>
+			<method name="public void _init_(java.io.File arg0, org.pentaho.packageManagement.PackageManager arg1, java.util.Map arg2)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public void install()">1</method>
+			<method name="public static void main(String[] arg0)">5</method>
+			<method name="protected static String[] splitNameVersion(String arg0)">18</method>
+			<method name="public java.util.List getDependencies()">1</method>
+			<method name="public void _init_(java.io.File arg0, org.pentaho.packageManagement.PackageManager arg1)">1</method>
+			<method name="public java.util.List getMissingDependencies()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.Dependency</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>11</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>6</ce>
+		<npm>6</npm>
+		<lcom3>0.4</lcom3>
+		<loc>46</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5555555555555556</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.333333333333333</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public org.pentaho.packageManagement.PackageConstraint getTarget()">1</method>
+			<method name="public void _init_(org.pentaho.packageManagement.Package arg0, org.pentaho.packageManagement.PackageConstraint arg1)">1</method>
+			<method name="public org.pentaho.packageManagement.Package getSource()">1</method>
+			<method name="public void setTarget(org.pentaho.packageManagement.PackageConstraint arg0)">1</method>
+			<method name="public void setSource(org.pentaho.packageManagement.Package arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>16</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.0</amc>
+		<cc>
+			<method name="boolean compatibleWith(org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg0)">2</method>
+			<method name="void _init_(String arg0, int arg1, String arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison$2</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>16</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.0</amc>
+		<cc>
+			<method name="boolean compatibleWith(org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg0)">2</method>
+			<method name="void _init_(String arg0, int arg1, String arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison$3</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>19</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.5</amc>
+		<cc>
+			<method name="boolean compatibleWith(org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg0)">3</method>
+			<method name="void _init_(String arg0, int arg1, String arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison$4</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>16</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.0</amc>
+		<cc>
+			<method name="boolean compatibleWith(org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg0)">2</method>
+			<method name="void _init_(String arg0, int arg1, String arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison$5</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>19</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.5</amc>
+		<cc>
+			<method name="boolean compatibleWith(org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg0)">3</method>
+			<method name="void _init_(String arg0, int arg1, String arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.PackageManager</name>
+		<wmc>32</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>33</cbo>
+		<rfc>62</rfc>
+		<lcom>476</lcom>
+		<ca>3</ca>
+		<ce>32</ce>
+		<npm>32</npm>
+		<lcom3>0.9516129032258065</lcom3>
+		<loc>295</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.190625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.96875</amc>
+		<cc>
+			<method name="public void establishProxy()">9</method>
+			<method name="public abstract org.pentaho.packageManagement.Package getRepositoryPackageInfo(String)">1</method>
+			<method name="public Object getBaseSystemVersion()">1</method>
+			<method name="public transient abstract String installPackageFromURL(java.net.URL, java.io.PrintStream[])">1</method>
+			<method name="public java.net.URL getPackageRepositoryURL()">1</method>
+			<method name="public java.net.Proxy getProxy()">1</method>
+			<method name="public java.io.File getPackageHome()">1</method>
+			<method name="public static org.pentaho.packageManagement.PackageManager create()">3</method>
+			<method name="public abstract org.pentaho.packageManagement.Package getURLPackageInfo(java.net.URL)">1</method>
+			<method name="public void setBaseSystemName(String arg0)">1</method>
+			<method name="public abstract org.pentaho.packageManagement.Package getPackageArchiveInfo(String)">1</method>
+			<method name="public abstract org.pentaho.packageManagement.Package getRepositoryPackageInfo(String, Object)">1</method>
+			<method name="public abstract java.util.List getAllDependenciesForPackage(org.pentaho.packageManagement.Package, java.util.Map)">1</method>
+			<method name="public abstract org.pentaho.packageManagement.Package getInstalledPackageInfo(String)">1</method>
+			<method name="public transient abstract void uninstallPackage(String, java.io.PrintStream[])">1</method>
+			<method name="public transient abstract void installPackages(java.util.List, java.io.PrintStream[])">1</method>
+			<method name="public void setProxy(java.net.Proxy arg0)">1</method>
+			<method name="public abstract java.util.List getAvailablePackages()">1</method>
+			<method name="public transient abstract void installPackageFromRepository(String, Object, java.io.PrintStream[])">1</method>
+			<method name="public transient abstract java.util.List getAllPackages(java.io.PrintStream[])">1</method>
+			<method name="public void setProxyUsername(String arg0)">1</method>
+			<method name="public synchronized boolean setProxyAuthentication(java.net.URL arg0)">9</method>
+			<method name="public void setPackageHome(java.io.File arg0)">1</method>
+			<method name="public void setPackageRepositoryURL(java.net.URL arg0)">1</method>
+			<method name="public String getBaseSystemName()">1</method>
+			<method name="public void setProxyPassword(String arg0)">1</method>
+			<method name="public abstract java.util.List getRepositoryPackageVersions(String)">1</method>
+			<method name="public transient abstract byte[] getRepositoryPackageMetaDataOnlyAsZip(java.io.PrintStream[])">1</method>
+			<method name="public void setBaseSystemVersion(Object arg0)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public transient abstract String installPackageFromArchive(String, java.io.PrintStream[])">1</method>
+			<method name="public abstract java.util.List getInstalledPackages()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.bounce.net.DefaultAuthenticator$3</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.9090909090909091</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.5</amc>
+		<cc>
+			<method name="public void windowClosing(java.awt.event.WindowEvent arg0)">1</method>
+			<method name="void _init_(org.bounce.net.DefaultAuthenticator arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.bounce.net.DefaultAuthenticator$2</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.5</amc>
+		<cc>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent arg0)">1</method>
+			<method name="void _init_(org.bounce.net.DefaultAuthenticator arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.bounce.net.DefaultAuthenticator$1</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.5</amc>
+		<cc>
+			<method name="public void actionPerformed(java.awt.event.ActionEvent arg0)">1</method>
+			<method name="void _init_(org.bounce.net.DefaultAuthenticator arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.bounce.FormLayout</name>
+		<wmc>23</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>48</rfc>
+		<lcom>191</lcom>
+		<ca>1</ca>
+		<ce>12</ce>
+		<npm>17</npm>
+		<lcom3>0.9256198347107438</lcom3>
+		<loc>715</loc>
+		<dam>0.5454545454545454</dam>
+		<moa>5</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2840909090909091</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>29.608695652173914</amc>
+		<cc>
+			<method name="public java.awt.Dimension maximumLayoutSize(java.awt.Container arg0)">1</method>
+			<method name="public float getLayoutAlignmentY(java.awt.Container arg0)">1</method>
+			<method name="public void _init_(int arg0, int arg1)">1</method>
+			<method name="private int getWidth(int arg0, int arg1, java.awt.Container arg2)">6</method>
+			<method name="public java.awt.Dimension minimumLayoutSize(java.awt.Container arg0)">1</method>
+			<method name="public float getLayoutAlignmentX(java.awt.Container arg0)">1</method>
+			<method name="public void setConstraints(java.awt.Component arg0, Object arg1)">3</method>
+			<method name="public void setHgap(int arg0)">1</method>
+			<method name="public int getVgap()">1</method>
+			<method name="public void layoutContainer(java.awt.Container arg0)">9</method>
+			<method name="private int getHeight(int arg0, java.awt.Container arg1)">12</method>
+			<method name="public void addLayoutComponent(java.awt.Component arg0, Object arg1)">1</method>
+			<method name="private java.awt.Dimension getSize(int arg0, java.awt.Container arg1)">2</method>
+			<method name="public java.awt.Dimension preferredLayoutSize(java.awt.Container arg0)">1</method>
+			<method name="public void setVgap(int arg0)">1</method>
+			<method name="public void addLayoutComponent(String arg0, java.awt.Component arg1)">1</method>
+			<method name="public void removeLayoutComponent(java.awt.Component arg0)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void invalidateLayout(java.awt.Container arg0)">1</method>
+			<method name="private void align(org.bounce.FormConstraints arg0, java.awt.Rectangle arg1, java.awt.Component arg2)">9</method>
+			<method name="public void _init_()">1</method>
+			<method name="public int getHgap()">1</method>
+			<method name="private java.awt.Dimension getSize(int arg0, java.awt.Component arg1)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.pentaho.packageManagement.VersionRangePackageConstraint</name>
+		<wmc>12</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>27</rfc>
+		<lcom>2</lcom>
+		<ca>2</ca>
+		<ce>8</ce>
+		<npm>9</npm>
+		<lcom3>0.5454545454545454</lcom3>
+		<loc>1111</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.21875</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>91.16666666666667</amc>
+		<cc>
+			<method name="protected org.pentaho.packageManagement.PackageConstraint checkTargetVersionPackageConstraint(org.pentaho.packageManagement.VersionPackageConstraint arg0)">1</method>
+			<method name="public org.pentaho.packageManagement.PackageConstraint checkConstraint(org.pentaho.packageManagement.PackageConstraint arg0)">1</method>
+			<method name="protected static boolean checkConstraint(String arg0, org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg1, String arg2, org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg3, String arg4, boolean arg5)">6</method>
+			<method name="protected org.pentaho.packageManagement.PackageConstraint checkTargetVersionRangePackageConstraint(org.pentaho.packageManagement.VersionRangePackageConstraint arg0)">1</method>
+			<method name="public void _init_(org.pentaho.packageManagement.Package arg0)">1</method>
+			<method name="public void setRangeConstraint(String arg0, org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg1, String arg2, org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison arg3)">1</method>
+			<method name="public org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison getLowerComparison()">1</method>
+			<method name="public boolean checkConstraint(org.pentaho.packageManagement.Package arg0)">1</method>
+			<method name="public org.pentaho.packageManagement.VersionPackageConstraint$VersionComparison getUpperComparison()">1</method>
+			<method name="public boolean isBoundOR()">1</method>
+			<method name="public String getLowerBound()">1</method>
+			<method name="public String getUpperBound()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.bounce.FormConstraints</name>
+		<wmc>15</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>16</rfc>
+		<lcom>33</lcom>
+		<ca>2</ca>
+		<ce>2</ce>
+		<npm>15</npm>
+		<lcom3>0.8142857142857143</lcom3>
+		<loc>161</loc>
+		<dam>0.4</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3466666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.066666666666666</amc>
+		<cc>
+			<method name="public void _init_(int arg0, int arg1)">1</method>
+			<method name="public void setHorizontalAlignment(int arg0)">1</method>
+			<method name="public void _init_(org.bounce.FormConstraints arg0)">1</method>
+			<method name="public void _init_(int arg0, int arg1, int arg2)">1</method>
+			<method name="public void setVerticalAlignment(int arg0)">1</method>
+			<method name="public void _init_(int arg0, boolean arg1)">1</method>
+			<method name="public boolean equals(Object arg0)">6</method>
+			<method name="public void setFilled(boolean arg0)">1</method>
+			<method name="public int getVerticalAlignment()">1</method>
+			<method name="public boolean isFilled()">1</method>
+			<method name="public int getHorizontalAlignment()">1</method>
+			<method name="public void _init_(int arg0)">1</method>
+			<method name="public int getPosition()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void setPosition(int arg0)">1</method>
+		</cc>
+	</class>
+
+
+
+</metrics>

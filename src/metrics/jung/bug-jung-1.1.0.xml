@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1489085792000" analysisTimestamp="1489174405161" release="">
+  <Project projectName="jung-1.1.0">
+    <Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jung/jung-1.1.0/bin/jung.jar</Jar>
+  </Project>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.algorithms.GraphMatrixOperations">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.GraphMatrixOperations" start="44" end="293" sourcefile="GraphMatrixOperations.java" sourcepath="edu/uci/ics/jung/algorithms/GraphMatrixOperations.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.algorithms.GraphMatrixOperations" name="mapTo1DMatrix" signature="(Ljava/util/Map;)Lcern/colt/matrix/DoubleMatrix1D;" isStatic="true">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.GraphMatrixOperations" start="208" end="221" startBytecode="0" endBytecode="283" sourcefile="GraphMatrixOperations.java" sourcepath="edu/uci/ics/jung/algorithms/GraphMatrixOperations.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.GraphMatrixOperations" start="219" end="219" startBytecode="113" endBytecode="113" sourcefile="GraphMatrixOperations.java" sourcepath="edu/uci/ics/jung/algorithms/GraphMatrixOperations.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.algorithms.cluster.BicomponentClusterer$DepthFirstSearch">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.cluster.BicomponentClusterer$DepthFirstSearch" start="175" end="203" sourcefile="BicomponentClusterer.java" sourcepath="edu/uci/ics/jung/algorithms/cluster/BicomponentClusterer.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="2" rank="16" abbrev="NP" category="STYLE">
+    <Class classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity" start="32" end="138" sourcefile="ExactFlowCommunity.java" sourcepath="edu/uci/ics/jung/algorithms/cluster/ExactFlowCommunity.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity" name="initializeFlowGraph" signature="(Ledu/uci/ics/jung/graph/DirectedGraph;Ledu/uci/ics/jung/graph/Vertex;Ledu/uci/ics/jung/graph/Vertex;Ljava/util/Set;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity" start="108" end="138" startBytecode="0" endBytecode="118" sourcefile="ExactFlowCommunity.java" sourcepath="edu/uci/ics/jung/algorithms/cluster/ExactFlowCommunity.java"/>
+    </Method>
+    <LocalVariable name="otherEdge" register="9" pc="139" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity" start="120" end="120" startBytecode="142" endBytecode="142" sourcefile="ExactFlowCommunity.java" sourcepath="edu/uci/ics/jung/algorithms/cluster/ExactFlowCommunity.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF_ALL_TARGETS_DANGEROUS" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity" start="32" end="138" sourcefile="ExactFlowCommunity.java" sourcepath="edu/uci/ics/jung/algorithms/cluster/ExactFlowCommunity.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity" name="initializeFlowGraph" signature="(Ledu/uci/ics/jung/graph/DirectedGraph;Ledu/uci/ics/jung/graph/Vertex;Ledu/uci/ics/jung/graph/Vertex;Ljava/util/Set;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity" start="108" end="138" startBytecode="0" endBytecode="581" sourcefile="ExactFlowCommunity.java" sourcepath="edu/uci/ics/jung/algorithms/cluster/ExactFlowCommunity.java"/>
+    </Method>
+    <Method classname="edu.uci.ics.jung.graph.decorators.NumericDecorator" name="setValue" signature="(Ljava/lang/Number;Ledu/uci/ics/jung/utils/UserDataContainer;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="edu.uci.ics.jung.graph.decorators.NumericDecorator" start="53" end="54" startBytecode="0" endBytecode="81" sourcefile="NumericDecorator.java" sourcepath="edu/uci/ics/jung/graph/decorators/NumericDecorator.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity" start="120" end="120" startBytecode="144" endBytecode="144" sourcefile="ExactFlowCommunity.java" sourcepath="edu/uci/ics/jung/algorithms/cluster/ExactFlowCommunity.java"/>
+    <LocalVariable name="otherEdge" register="9" pc="142" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Int value="2" role="INT_NULL_ARG"/>
+    <Method classname="edu.uci.ics.jung.graph.decorators.NumericDecorator" name="setValue" signature="(Ljava/lang/Number;Ledu/uci/ics/jung/utils/UserDataContainer;)V" isStatic="false" role="METHOD_DANGEROUS_TARGET_ACTUAL_GUARANTEED_NULL">
+      <SourceLine classname="edu.uci.ics.jung.graph.decorators.NumericDecorator" start="53" end="54" startBytecode="0" endBytecode="81" sourcefile="NumericDecorator.java" sourcepath="edu/uci/ics/jung/graph/decorators/NumericDecorator.java"/>
+    </Method>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.ACTUAL_PARAMETER_GUARANTEED_NULL" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.ALL_DANGEROUS_TARGETS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.ARG_DEFINITELY_NULL" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.MONOMORPHIC_CALL_SITE" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" start="84" end="169" sourcefile="KNeighborhoodExtractor.java" sourcepath="edu/uci/ics/jung/algorithms/connectivity/KNeighborhoodExtractor.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" name="filter" signature="(Ledu/uci/ics/jung/graph/Graph;)Ledu/uci/ics/jung/graph/filters/UnassembledGraph;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" start="97" end="169" startBytecode="0" endBytecode="691" sourcefile="KNeighborhoodExtractor.java" sourcepath="edu/uci/ics/jung/algorithms/connectivity/KNeighborhoodExtractor.java"/>
+    </Method>
+    <LocalVariable name="edges" register="10" pc="150" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" start="139" end="139" startBytecode="215" endBytecode="215" sourcefile="KNeighborhoodExtractor.java" sourcepath="edu/uci/ics/jung/algorithms/connectivity/KNeighborhoodExtractor.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" start="125" end="125" startBytecode="146" endBytecode="146" sourcefile="KNeighborhoodExtractor.java" sourcepath="edu/uci/ics/jung/algorithms/connectivity/KNeighborhoodExtractor.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" start="127" end="127" startBytecode="153" endBytecode="153" sourcefile="KNeighborhoodExtractor.java" sourcepath="edu/uci/ics/jung/algorithms/connectivity/KNeighborhoodExtractor.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" start="84" end="169" sourcefile="KNeighborhoodExtractor.java" sourcepath="edu/uci/ics/jung/algorithms/connectivity/KNeighborhoodExtractor.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" name="filter" signature="(Ledu/uci/ics/jung/graph/Graph;)Ledu/uci/ics/jung/graph/filters/UnassembledGraph;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" start="97" end="169" startBytecode="0" endBytecode="691" sourcefile="KNeighborhoodExtractor.java" sourcepath="edu/uci/ics/jung/algorithms/connectivity/KNeighborhoodExtractor.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" start="127" end="135" startBytecode="153" endBytecode="212" sourcefile="KNeighborhoodExtractor.java" sourcepath="edu/uci/ics/jung/algorithms/connectivity/KNeighborhoodExtractor.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE">
+    <Class classname="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality" start="47" end="160" sourcefile="BetweennessCentrality.java" sourcepath="edu/uci/ics/jung/algorithms/importance/BetweennessCentrality.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality" name="computeBetweenness" signature="(Ledu/uci/ics/jung/graph/Graph;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality" start="57" end="128" startBytecode="0" endBytecode="1101" sourcefile="BetweennessCentrality.java" sourcepath="edu/uci/ics/jung/algorithms/importance/BetweennessCentrality.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality" start="86" end="86" startBytecode="246" endBytecode="246" sourcefile="BetweennessCentrality.java" sourcepath="edu/uci/ics/jung/algorithms/importance/BetweennessCentrality.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality$BetweennessData">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality$BetweennessData" start="184" end="189" sourcefile="BetweennessCentrality.java" sourcepath="edu/uci/ics/jung/algorithms/importance/BetweennessCentrality.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality$BetweennessDataDecorator">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality$BetweennessDataDecorator" start="164" end="174" sourcefile="BetweennessCentrality.java" sourcepath="edu/uci/ics/jung/algorithms/importance/BetweennessCentrality.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="edu.uci.ics.jung.algorithms.importance.HITSWithPriors">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.importance.HITSWithPriors" start="59" end="373" sourcefile="HITSWithPriors.java" sourcepath="edu/uci/ics/jung/algorithms/importance/HITSWithPriors.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.algorithms.importance.HITSWithPriors" name="initialize" signature="(Ledu/uci/ics/jung/graph/Graph;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.importance.HITSWithPriors" start="82" end="136" startBytecode="0" endBytecode="175" sourcefile="HITSWithPriors.java" sourcepath="edu/uci/ics/jung/algorithms/importance/HITSWithPriors.java"/>
+    </Method>
+    <LocalVariable name="numVertices" register="3" pc="38" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.importance.HITSWithPriors" start="88" end="88" startBytecode="37" endBytecode="37" sourcefile="HITSWithPriors.java" sourcepath="edu/uci/ics/jung/algorithms/importance/HITSWithPriors.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="numVertices"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="edu.uci.ics.jung.algorithms.importance.PageRankWithPriors">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.importance.PageRankWithPriors" start="52" end="94" sourcefile="PageRankWithPriors.java" sourcepath="edu/uci/ics/jung/algorithms/importance/PageRankWithPriors.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.algorithms.importance.PageRankWithPriors" name="initializePriorWeights" signature="()V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.importance.PageRankWithPriors" start="59" end="78" startBytecode="0" endBytecode="58" sourcefile="PageRankWithPriors.java" sourcepath="edu/uci/ics/jung/algorithms/importance/PageRankWithPriors.java"/>
+    </Method>
+    <LocalVariable name="numVertices" register="2" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.importance.PageRankWithPriors" start="60" end="60" startBytecode="11" endBytecode="11" sourcefile="PageRankWithPriors.java" sourcepath="edu/uci/ics/jung/algorithms/importance/PageRankWithPriors.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="numVertices"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="UR_UNINIT_READ" priority="2" rank="3" abbrev="UR" category="CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.algorithms.optimization.SimulatedAnnealer">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.optimization.SimulatedAnnealer" start="42" end="119" sourcefile="SimulatedAnnealer.java" sourcepath="edu/uci/ics/jung/algorithms/optimization/SimulatedAnnealer.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.algorithms.optimization.SimulatedAnnealer" name="&lt;init&gt;" signature="(Ledu/uci/ics/jung/algorithms/optimization/Configuration;DDDDD)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.optimization.SimulatedAnnealer" start="42" end="53" startBytecode="0" endBytecode="225" sourcefile="SimulatedAnnealer.java" sourcepath="edu/uci/ics/jung/algorithms/optimization/SimulatedAnnealer.java"/>
+    </Method>
+    <Field classname="edu.uci.ics.jung.algorithms.optimization.SimulatedAnnealer" name="mSeed" signature="I" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.optimization.SimulatedAnnealer" sourcefile="SimulatedAnnealer.java" sourcepath="edu/uci/ics/jung/algorithms/optimization/SimulatedAnnealer.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.algorithms.optimization.SimulatedAnnealer" start="46" end="46" startBytecode="26" endBytecode="26" sourcefile="SimulatedAnnealer.java" sourcepath="edu/uci/ics/jung/algorithms/optimization/SimulatedAnnealer.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath$SourceData">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath$SourceData" start="281" end="281" sourcefile="DijkstraShortestPath.java" sourcepath="edu/uci/ics/jung/algorithms/shortestpath/DijkstraShortestPath.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath$VertexComparator">
+      <SourceLine classname="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath$VertexComparator" start="263" end="271" sourcefile="DijkstraShortestPath.java" sourcepath="edu/uci/ics/jung/algorithms/shortestpath/DijkstraShortestPath.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.graph.filters.SerialFilter">
+      <SourceLine classname="edu.uci.ics.jung.graph.filters.SerialFilter" start="46" end="130" sourcefile="SerialFilter.java" sourcepath="edu/uci/ics/jung/graph/filters/SerialFilter.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.graph.filters.SerialFilter" name="getName" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.graph.filters.SerialFilter" start="46" end="53" startBytecode="0" endBytecode="204" sourcefile="SerialFilter.java" sourcepath="edu/uci/ics/jung/graph/filters/SerialFilter.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.graph.filters.SerialFilter" start="50" end="50" startBytecode="35" endBytecode="35" sourcefile="SerialFilter.java" sourcepath="edu/uci/ics/jung/graph/filters/SerialFilter.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES_USING_POINTER_EQUALITY" priority="2" rank="3" abbrev="EC" category="CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.graph.impl.AbstractSparseEdge">
+      <SourceLine classname="edu.uci.ics.jung.graph.impl.AbstractSparseEdge" start="83" end="297" sourcefile="AbstractSparseEdge.java" sourcepath="edu/uci/ics/jung/graph/impl/AbstractSparseEdge.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.graph.impl.AbstractSparseEdge" name="copy" signature="(Ledu/uci/ics/jung/graph/ArchetypeGraph;)Ledu/uci/ics/jung/graph/ArchetypeEdge;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.graph.impl.AbstractSparseEdge" start="245" end="271" startBytecode="0" endBytecode="70" sourcefile="AbstractSparseEdge.java" sourcepath="edu/uci/ics/jung/graph/impl/AbstractSparseEdge.java"/>
+    </Method>
+    <Type descriptor="Ledu/uci/ics/jung/graph/impl/AbstractSparseEdge;" role="TYPE_FOUND">
+      <SourceLine classname="edu.uci.ics.jung.graph.impl.AbstractSparseEdge" start="83" end="297" sourcefile="AbstractSparseEdge.java" sourcepath="edu/uci/ics/jung/graph/impl/AbstractSparseEdge.java"/>
+    </Type>
+    <Type descriptor="Ledu/uci/ics/jung/graph/ArchetypeGraph;" role="TYPE_EXPECTED">
+      <SourceLine classname="edu.uci.ics.jung.graph.ArchetypeGraph" sourcefile="ArchetypeGraph.java" sourcepath="edu/uci/ics/jung/graph/ArchetypeGraph.java"/>
+    </Type>
+    <LocalVariable name="this" register="0" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <LocalVariable name="nGraph" register="1" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="edu.uci.ics.jung.graph.impl.AbstractSparseEdge" start="245" end="245" startBytecode="2" endBytecode="2" sourcefile="AbstractSparseEdge.java" sourcepath="edu/uci/ics/jung/graph/impl/AbstractSparseEdge.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES_USING_POINTER_EQUALITY" priority="2" rank="3" abbrev="EC" category="CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.graph.impl.AbstractSparseVertex">
+      <SourceLine classname="edu.uci.ics.jung.graph.impl.AbstractSparseVertex" start="52" end="320" sourcefile="AbstractSparseVertex.java" sourcepath="edu/uci/ics/jung/graph/impl/AbstractSparseVertex.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.graph.impl.AbstractSparseVertex" name="copy" signature="(Ledu/uci/ics/jung/graph/ArchetypeGraph;)Ledu/uci/ics/jung/graph/ArchetypeVertex;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.graph.impl.AbstractSparseVertex" start="244" end="255" startBytecode="0" endBytecode="29" sourcefile="AbstractSparseVertex.java" sourcepath="edu/uci/ics/jung/graph/impl/AbstractSparseVertex.java"/>
+    </Method>
+    <Type descriptor="Ledu/uci/ics/jung/graph/impl/AbstractSparseVertex;" role="TYPE_FOUND">
+      <SourceLine classname="edu.uci.ics.jung.graph.impl.AbstractSparseVertex" start="52" end="320" sourcefile="AbstractSparseVertex.java" sourcepath="edu/uci/ics/jung/graph/impl/AbstractSparseVertex.java"/>
+    </Type>
+    <Type descriptor="Ledu/uci/ics/jung/graph/ArchetypeGraph;" role="TYPE_EXPECTED">
+      <SourceLine classname="edu.uci.ics.jung.graph.ArchetypeGraph" sourcefile="ArchetypeGraph.java" sourcepath="edu/uci/ics/jung/graph/ArchetypeGraph.java"/>
+    </Type>
+    <LocalVariable name="this" register="0" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <LocalVariable name="newGraph" register="1" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="edu.uci.ics.jung.graph.impl.AbstractSparseVertex" start="244" end="244" startBytecode="2" endBytecode="2" sourcefile="AbstractSparseVertex.java" sourcepath="edu/uci/ics/jung/graph/impl/AbstractSparseVertex.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE">
+    <Class classname="edu.uci.ics.jung.io.GraphMLFile">
+      <SourceLine classname="edu.uci.ics.jung.io.GraphMLFile" start="64" end="152" sourcefile="GraphMLFile.java" sourcepath="edu/uci/ics/jung/io/GraphMLFile.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.GraphMLFile" name="loadGraphCollection" signature="(Ljava/lang/String;Ljava/io/FilenameFilter;)Ljava/util/List;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.GraphMLFile" start="126" end="142" startBytecode="0" endBytecode="299" sourcefile="GraphMLFile.java" sourcepath="edu/uci/ics/jung/io/GraphMLFile.java"/>
+    </Method>
+    <LocalVariable name="files" register="4" pc="47" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="edu.uci.ics.jung.io.GraphMLFile" start="134" end="134" startBytecode="49" endBytecode="49" sourcefile="GraphMLFile.java" sourcepath="edu/uci/ics/jung/io/GraphMLFile.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="edu.uci.ics.jung.io.GraphMLFile" start="131" end="131" startBytecode="28" endBytecode="28" sourcefile="GraphMLFile.java" sourcepath="edu/uci/ics/jung/io/GraphMLFile.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.io.GraphMLFileHandler">
+      <SourceLine classname="edu.uci.ics.jung.io.GraphMLFileHandler" start="41" end="151" sourcefile="GraphMLFileHandler.java" sourcepath="edu/uci/ics/jung/io/GraphMLFileHandler.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.GraphMLFileHandler" name="createEdge" signature="(Ljava/util/Map;)Ledu/uci/ics/jung/graph/Edge;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.GraphMLFileHandler" start="64" end="86" startBytecode="0" endBytecode="325" sourcefile="GraphMLFileHandler.java" sourcepath="edu/uci/ics/jung/io/GraphMLFileHandler.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.io.GraphMLFileHandler" start="82" end="82" startBytecode="119" endBytecode="119" sourcefile="GraphMLFileHandler.java" sourcepath="edu/uci/ics/jung/io/GraphMLFileHandler.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.io.GraphMLFileHandler">
+      <SourceLine classname="edu.uci.ics.jung.io.GraphMLFileHandler" start="41" end="151" sourcefile="GraphMLFileHandler.java" sourcepath="edu/uci/ics/jung/io/GraphMLFileHandler.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.GraphMLFileHandler" name="createGraph" signature="(Ljava/util/Map;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.GraphMLFileHandler" start="90" end="106" startBytecode="0" endBytecode="258" sourcefile="GraphMLFileHandler.java" sourcepath="edu/uci/ics/jung/io/GraphMLFileHandler.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.io.GraphMLFileHandler" start="102" end="102" startBytecode="100" endBytecode="100" sourcefile="GraphMLFileHandler.java" sourcepath="edu/uci/ics/jung/io/GraphMLFileHandler.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.io.GraphMLFileHandler">
+      <SourceLine classname="edu.uci.ics.jung.io.GraphMLFileHandler" start="41" end="151" sourcefile="GraphMLFileHandler.java" sourcepath="edu/uci/ics/jung/io/GraphMLFileHandler.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.GraphMLFileHandler" name="createVertex" signature="(Ljava/util/Map;)Ledu/uci/ics/jung/graph/ArchetypeVertex;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.GraphMLFileHandler" start="109" end="129" startBytecode="0" endBytecode="309" sourcefile="GraphMLFileHandler.java" sourcepath="edu/uci/ics/jung/io/GraphMLFileHandler.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.io.GraphMLFileHandler" start="126" end="126" startBytecode="125" endBytecode="125" sourcefile="GraphMLFileHandler.java" sourcepath="edu/uci/ics/jung/io/GraphMLFileHandler.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="edu.uci.ics.jung.io.PajekNetFile">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="79" end="332" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.PajekNetFile" name="load" signature="(Ljava/lang/String;)Ledu/uci/ics/jung/graph/Graph;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="116" end="122" startBytecode="0" endBytecode="148" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="116" end="116" startBytecode="9" endBytecode="9" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="edu.uci.ics.jung.io.PajekNetFile">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="79" end="332" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.PajekNetFile" name="save" signature="(Ledu/uci/ics/jung/graph/Graph;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="285" end="332" startBytecode="0" endBytecode="645" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="285" end="285" startBytecode="9" endBytecode="9" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="edu.uci.ics.jung.io.PajekNetFile">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="79" end="332" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.PajekNetFile" name="getEdgeKeys" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="97" end="97" startBytecode="0" endBytecode="46" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Method>
+    <Field classname="edu.uci.ics.jung.io.PajekNetFile" name="mEdgeKeys" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="97" end="97" startBytecode="4" endBytecode="4" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="edu.uci.ics.jung.io.PajekNetFile">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="79" end="332" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.PajekNetFile" name="&lt;init&gt;" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="87" end="90" startBytecode="0" endBytecode="78" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Method>
+    <Field classname="edu.uci.ics.jung.io.PajekNetFile" name="mEdgeKeys" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Field>
+    <LocalVariable name="edgeKeys" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="88" end="88" startBytecode="6" endBytecode="6" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="edu.uci.ics.jung.io.PajekNetFile">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="79" end="332" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.PajekNetFile" name="setEdgeKeys" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="105" end="106" startBytecode="0" endBytecode="61" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Method>
+    <Field classname="edu.uci.ics.jung.io.PajekNetFile" name="mEdgeKeys" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Field>
+    <LocalVariable name="edgeKeys" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="105" end="105" startBytecode="2" endBytecode="2" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE">
+    <Class classname="edu.uci.ics.jung.io.PajekNetFile">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="79" end="332" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.PajekNetFile" name="load" signature="(Ljava/io/BufferedReader;)Ledu/uci/ics/jung/graph/Graph;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="142" end="273" startBytecode="0" endBytecode="1396" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Method>
+    <LocalVariable name="currentLine" register="3" pc="16" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="147" end="147" startBytecode="17" endBytecode="17" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="173" end="173" startBytecode="151" endBytecode="151" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE">
+    <Class classname="edu.uci.ics.jung.io.PajekNetFile">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="79" end="332" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.io.PajekNetFile" name="load" signature="(Ljava/io/BufferedReader;)Ledu/uci/ics/jung/graph/Graph;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="142" end="273" startBytecode="0" endBytecode="1396" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.io.PajekNetFile" start="272" end="272" startBytecode="675" endBytecode="675" sourcefile="PajekNetFile.java" sourcepath="edu/uci/ics/jung/io/PajekNetFile.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.random.generators.EppsteinPowerLawGenerator">
+      <SourceLine classname="edu.uci.ics.jung.random.generators.EppsteinPowerLawGenerator" start="44" end="115" sourcefile="EppsteinPowerLawGenerator.java" sourcepath="edu/uci/ics/jung/random/generators/EppsteinPowerLawGenerator.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.random.generators.EppsteinPowerLawGenerator" name="generateGraph" signature="()Ledu/uci/ics/jung/graph/ArchetypeGraph;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.random.generators.EppsteinPowerLawGenerator" start="81" end="110" startBytecode="0" endBytecode="425" sourcefile="EppsteinPowerLawGenerator.java" sourcepath="edu/uci/ics/jung/random/generators/EppsteinPowerLawGenerator.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.random.generators.EppsteinPowerLawGenerator" start="95" end="95" startBytecode="92" endBytecode="92" sourcefile="EppsteinPowerLawGenerator.java" sourcepath="edu/uci/ics/jung/random/generators/EppsteinPowerLawGenerator.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="edu.uci.ics.jung.random.generators.KleinbergSmallWorldGenerator">
+      <SourceLine classname="edu.uci.ics.jung.random.generators.KleinbergSmallWorldGenerator" start="41" end="268" sourcefile="KleinbergSmallWorldGenerator.java" sourcepath="edu/uci/ics/jung/random/generators/KleinbergSmallWorldGenerator.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.random.generators.KleinbergSmallWorldGenerator" name="simulatePath" signature="(II)I" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.random.generators.KleinbergSmallWorldGenerator" start="174" end="220" startBytecode="0" endBytecode="389" sourcefile="KleinbergSmallWorldGenerator.java" sourcepath="edu/uci/ics/jung/random/generators/KleinbergSmallWorldGenerator.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.random.generators.KleinbergSmallWorldGenerator" start="188" end="210" startBytecode="48" endBytecode="144" sourcefile="KleinbergSmallWorldGenerator.java" sourcepath="edu/uci/ics/jung/random/generators/KleinbergSmallWorldGenerator.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="edu.uci.ics.jung.statistics.DegreeDistributions">
+      <SourceLine classname="edu.uci.ics.jung.statistics.DegreeDistributions" start="32" end="126" sourcefile="DegreeDistributions.java" sourcepath="edu/uci/ics/jung/statistics/DegreeDistributions.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.statistics.DegreeDistributions" name="saveDistribution" signature="(Ledu/uci/ics/jung/statistics/Histogram;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="edu.uci.ics.jung.statistics.DegreeDistributions" start="116" end="126" startBytecode="0" endBytecode="251" sourcefile="DegreeDistributions.java" sourcepath="edu/uci/ics/jung/statistics/DegreeDistributions.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.statistics.DegreeDistributions" start="116" end="116" startBytecode="9" endBytecode="9" sourcefile="DegreeDistributions.java" sourcepath="edu/uci/ics/jung/statistics/DegreeDistributions.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="edu.uci.ics.jung.utils.TestGraphs">
+      <SourceLine classname="edu.uci.ics.jung.utils.TestGraphs" start="32" end="186" sourcefile="TestGraphs.java" sourcepath="edu/uci/ics/jung/utils/TestGraphs.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.utils.TestGraphs" name="pairs" signature="[[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="edu.uci.ics.jung.utils.TestGraphs" sourcefile="TestGraphs.java" sourcepath="edu/uci/ics/jung/utils/TestGraphs.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.utils.TestGraphs" start="39" end="39" startBytecode="183" endBytecode="183" sourcefile="TestGraphs.java" sourcepath="edu/uci/ics/jung/utils/TestGraphs.java"/>
+  </BugInstance>
+  <BugInstance type="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD" priority="2" rank="6" abbrev="ML" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.AbstractLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.AbstractLayout" start="53" end="429" sourcefile="AbstractLayout.java" sourcepath="edu/uci/ics/jung/visualization/AbstractLayout.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.visualization.AbstractLayout" name="resize" signature="(Ljava/awt/Dimension;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.AbstractLayout" start="284" end="299" startBytecode="0" endBytecode="289" sourcefile="AbstractLayout.java" sourcepath="edu/uci/ics/jung/visualization/AbstractLayout.java"/>
+    </Method>
+    <Field classname="edu.uci.ics.jung.visualization.AbstractLayout" name="currentSize" signature="Ljava/awt/Dimension;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.AbstractLayout" sourcefile="AbstractLayout.java" sourcepath="edu/uci/ics/jung/visualization/AbstractLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.AbstractLayout" start="287" end="287" startBytecode="28" endBytecode="28" sourcefile="AbstractLayout.java" sourcepath="edu/uci/ics/jung/visualization/AbstractLayout.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="edu.uci.ics.jung.visualization.FadingVertexLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="71" end="398" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.visualization.FadingVertexLayout" name="moveOutward" signature="(Ledu/uci/ics/jung/graph/Vertex;DDD)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="275" end="282" startBytecode="0" endBytecode="188" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="275" end="275" startBytecode="10" endBytecode="10" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="276" end="276" startBytecode="24" endBytecode="24" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="279" end="279" startBytecode="50" endBytecode="50" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="280" end="280" startBytecode="64" endBytecode="64" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD" priority="1" rank="4" abbrev="ML" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.FadingVertexLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="71" end="398" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.visualization.FadingVertexLayout" name="resize" signature="(Ljava/awt/Dimension;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="288" end="296" startBytecode="0" endBytecode="136" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    </Method>
+    <Field classname="edu.uci.ics.jung.visualization.FadingVertexLayout" name="currentSize" signature="Ljava/awt/Dimension;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="293" end="293" startBytecode="31" endBytecode="31" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+  </BugInstance>
+  <BugInstance type="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD" priority="2" rank="6" abbrev="ML" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.FadingVertexLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="71" end="398" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.visualization.FadingVertexLayout" name="resize" signature="(Ljava/awt/Dimension;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="288" end="296" startBytecode="0" endBytecode="136" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    </Method>
+    <Field classname="edu.uci.ics.jung.visualization.FadingVertexLayout" name="currentSize" signature="Ljava/awt/Dimension;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout" start="290" end="290" startBytecode="16" endBytecode="16" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.visualization.FadingVertexLayout$FadingVertexLayoutData">
+      <SourceLine classname="edu.uci.ics.jung.visualization.FadingVertexLayout$FadingVertexLayoutData" start="178" end="180" sourcefile="FadingVertexLayout.java" sourcepath="edu/uci/ics/jung/visualization/FadingVertexLayout.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="edu.uci.ics.jung.visualization.GraphDraw">
+      <SourceLine classname="edu.uci.ics.jung.visualization.GraphDraw" start="53" end="284" sourcefile="GraphDraw.java" sourcepath="edu/uci/ics/jung/visualization/GraphDraw.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.GraphDraw" name="layout" signature="Ledu/uci/ics/jung/visualization/Layout;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.GraphDraw" sourcefile="GraphDraw.java" sourcepath="edu/uci/ics/jung/visualization/GraphDraw.java"/>
+    </Field>
+    <Type descriptor="Ledu/uci/ics/jung/visualization/SpringLayout;" role="TYPE_FOUND">
+      <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" start="31" end="364" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+    </Type>
+    <SourceLine classname="edu.uci.ics.jung.visualization.GraphDraw" start="70" end="70" startBytecode="45" endBytecode="45" sourcefile="GraphDraw.java" sourcepath="edu/uci/ics/jung/visualization/GraphDraw.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="edu.uci.ics.jung.visualization.GraphDraw">
+      <SourceLine classname="edu.uci.ics.jung.visualization.GraphDraw" start="53" end="284" sourcefile="GraphDraw.java" sourcepath="edu/uci/ics/jung/visualization/GraphDraw.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.GraphDraw" name="r" signature="Ledu/uci/ics/jung/visualization/Renderer;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.GraphDraw" sourcefile="GraphDraw.java" sourcepath="edu/uci/ics/jung/visualization/GraphDraw.java"/>
+    </Field>
+    <Type descriptor="Ledu/uci/ics/jung/visualization/graphdraw/SettableRenderer;" role="TYPE_FOUND">
+      <SourceLine classname="edu.uci.ics.jung.visualization.graphdraw.SettableRenderer" start="39" end="241" sourcefile="SettableRenderer.java" sourcepath="edu/uci/ics/jung/visualization/graphdraw/SettableRenderer.java"/>
+    </Type>
+    <SourceLine classname="edu.uci.ics.jung.visualization.GraphDraw" start="72" end="72" startBytecode="65" endBytecode="65" sourcefile="GraphDraw.java" sourcepath="edu/uci/ics/jung/visualization/GraphDraw.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.visualization.GraphDraw$SliderChangeListener">
+      <SourceLine classname="edu.uci.ics.jung.visualization.GraphDraw$SliderChangeListener" start="252" end="269" sourcefile="GraphDraw.java" sourcepath="edu/uci/ics/jung/visualization/GraphDraw.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="adaption" signature="D" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="92" end="92" startBytecode="45" endBytecode="45" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="129" end="129" startBytecode="100" endBytecode="100" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="188" end="188" startBytecode="99" endBytecode="99" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="165" end="165" startBytecode="50" endBytecode="50" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="coolingFactor" signature="D" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="96" end="96" startBytecode="57" endBytecode="57" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="164" end="164" startBytecode="14" endBytecode="14" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="epoch" signature="I" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <Int value="57" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="85" end="85" startBytecode="14" endBytecode="14" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="122" end="122" startBytecode="14" endBytecode="14" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="123" end="123" startBytecode="32" endBytecode="32" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="163" end="163" startBytecode="2" endBytecode="2" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="163" end="163" startBytecode="7" endBytecode="7" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="164" end="164" startBytecode="20" endBytecode="20" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="168" end="168" startBytecode="65" endBytecode="65" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="minAdaption" signature="D" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="93" end="93" startBytecode="50" endBytecode="50" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="165" end="165" startBytecode="38" endBytecode="38" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="minRadius" signature="I" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="89" end="89" startBytecode="30" endBytecode="30" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="168" end="168" startBytecode="58" endBytecode="58" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="radius" signature="I" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <Int value="80" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="88" end="88" startBytecode="25" endBytecode="25" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="193" end="193" startBytecode="143" endBytecode="143" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="168" end="168" startBytecode="54" endBytecode="54" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="169" end="169" startBytecode="78" endBytecode="78" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="169" end="169" startBytecode="83" endBytecode="83" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="radiusConstantTime" signature="I" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="87" end="87" startBytecode="20" endBytecode="20" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="168" end="168" startBytecode="69" endBytecode="69" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="done" signature="Z" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="82" end="82" startBytecode="2" endBytecode="2" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="tempISOM" signature="Ledu/uci/ics/jung/visualization/ISOMLayout$ISOMVertexData;" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="140" end="140" startBytecode="8" endBytecode="8" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="trace" signature="Z" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="78" end="78" startBytecode="28" endBytecode="28" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.visualization.ISOMLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" start="31" end="225" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.ISOMLayout" name="factor" signature="D" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.ISOMLayout" sourcefile="ISOMLayout.java" sourcepath="edu/uci/ics/jung/visualization/ISOMLayout.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="edu.uci.ics.jung.visualization.SpringLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" start="31" end="364" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.SpringLayout" name="RANGE" signature="I" isStatic="true">
+      <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" start="31" end="31" startBytecode="2" endBytecode="2" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="edu.uci.ics.jung.visualization.SpringLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" start="31" end="364" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.SpringLayout" name="STRETCH" signature="I" isStatic="true">
+      <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" start="109" end="109" startBytecode="12" endBytecode="12" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.visualization.SpringLayout">
+      <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" start="31" end="364" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.SpringLayout" name="relaxTime" signature="J" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" start="108" end="108" startBytecode="19" endBytecode="19" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE">
+    <Class classname="edu.uci.ics.jung.visualization.SpringLayout$SpringEdgeData">
+      <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout$SpringEdgeData" start="338" end="340" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+    </Class>
+    <Field classname="edu.uci.ics.jung.visualization.SpringLayout$SpringEdgeData" name="f" signature="D" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout$SpringEdgeData" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.SpringLayout" start="178" end="178" startBytecode="200" endBytecode="200" sourcefile="SpringLayout.java" sourcepath="edu/uci/ics/jung/visualization/SpringLayout.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.visualization.VisualizationViewer">
+      <SourceLine classname="edu.uci.ics.jung.visualization.VisualizationViewer" start="24" end="338" sourcefile="VisualizationViewer.java" sourcepath="edu/uci/ics/jung/visualization/VisualizationViewer.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.visualization.VisualizationViewer" name="&lt;init&gt;" signature="(Ledu/uci/ics/jung/visualization/Layout;Ledu/uci/ics/jung/visualization/Renderer;)V" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.VisualizationViewer" start="34" end="46" startBytecode="0" endBytecode="260" sourcefile="VisualizationViewer.java" sourcepath="edu/uci/ics/jung/visualization/VisualizationViewer.java"/>
+    </Method>
+    <SourceLine classname="edu.uci.ics.jung.visualization.VisualizationViewer" start="136" end="136" startBytecode="11" endBytecode="11" sourcefile="VisualizationViewer.java" sourcepath="edu/uci/ics/jung/visualization/VisualizationViewer.java"/>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN" priority="2" rank="16" abbrev="RC" category="BAD_PRACTICE">
+    <Class classname="edu.uci.ics.jung.visualization.VisualizationViewer">
+      <SourceLine classname="edu.uci.ics.jung.visualization.VisualizationViewer" start="24" end="338" sourcefile="VisualizationViewer.java" sourcepath="edu/uci/ics/jung/visualization/VisualizationViewer.java"/>
+    </Class>
+    <Method classname="edu.uci.ics.jung.visualization.VisualizationViewer" name="isPicked" signature="(Ledu/uci/ics/jung/graph/Vertex;)Z" isStatic="false">
+      <SourceLine classname="edu.uci.ics.jung.visualization.VisualizationViewer" start="139" end="140" startBytecode="0" endBytecode="14" sourcefile="VisualizationViewer.java" sourcepath="edu/uci/ics/jung/visualization/VisualizationViewer.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Boolean;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Boolean" start="43" end="333" sourcefile="Boolean.java" sourcepath="java/lang/Boolean.java"/>
+    </Type>
+    <Field classname="java.lang.Boolean" name="TRUE" signature="Ljava/lang/Boolean;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="java.lang.Boolean" sourcefile="Boolean.java" sourcepath="java/lang/Boolean.java"/>
+    </Field>
+    <SourceLine classname="edu.uci.ics.jung.visualization.VisualizationViewer" start="140" end="140" startBytecode="22" endBytecode="22" sourcefile="VisualizationViewer.java" sourcepath="edu/uci/ics/jung/visualization/VisualizationViewer.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="edu.uci.ics.jung.visualization.VisualizationViewer$VisualizationListener">
+      <SourceLine classname="edu.uci.ics.jung.visualization.VisualizationViewer$VisualizationListener" start="319" end="330" sourcefile="VisualizationViewer.java" sourcepath="edu/uci/ics/jung/visualization/VisualizationViewer.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="samples.graph.ClusteringDemo">
+      <SourceLine classname="samples.graph.ClusteringDemo" start="52" end="242" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+    </Class>
+    <Method classname="samples.graph.ClusteringDemo" name="setUpGraphDraw" signature="(Ljava/io/BufferedReader;)Ledu/uci/ics/jung/visualization/GraphDraw;" isStatic="true">
+      <SourceLine classname="samples.graph.ClusteringDemo" start="99" end="198" startBytecode="0" endBytecode="161" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+    </Method>
+    <LocalVariable name="labeler" register="3" pc="19" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="samples.graph.ClusteringDemo" start="103" end="103" startBytecode="18" endBytecode="18" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="labeler"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="samples.graph.ClusteringDemo">
+      <SourceLine classname="samples.graph.ClusteringDemo" start="52" end="242" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+    </Class>
+    <Method classname="samples.graph.ClusteringDemo" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="samples.graph.ClusteringDemo" start="73" end="88" startBytecode="0" endBytecode="239" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="samples.graph.ClusteringDemo" start="75" end="75" startBytecode="19" endBytecode="19" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="samples.graph.ClusteringDemo">
+      <SourceLine classname="samples.graph.ClusteringDemo" start="52" end="242" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+    </Class>
+    <Method classname="samples.graph.ClusteringDemo" name="start" signature="()V" isStatic="false">
+      <SourceLine classname="samples.graph.ClusteringDemo" start="91" end="96" startBytecode="0" endBytecode="140" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="samples.graph.ClusteringDemo" start="93" end="93" startBytecode="30" endBytecode="30" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="samples.graph.ClusteringDemo">
+      <SourceLine classname="samples.graph.ClusteringDemo" start="52" end="242" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+    </Class>
+    <Field classname="samples.graph.ClusteringDemo" name="similarColors" signature="[Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="samples.graph.ClusteringDemo" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+    </Field>
+    <SourceLine classname="samples.graph.ClusteringDemo" start="56" end="56" startBytecode="200" endBytecode="200" sourcefile="ClusteringDemo.java" sourcepath="samples/graph/ClusteringDemo.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="19">
+    <MissingClass>cern.colt.list.DoubleArrayList</MissingClass>
+    <MissingClass>cern.colt.matrix.DoubleMatrix1D</MissingClass>
+    <MissingClass>cern.colt.matrix.DoubleMatrix2D</MissingClass>
+    <MissingClass>cern.colt.matrix.impl.DenseDoubleMatrix1D</MissingClass>
+    <MissingClass>cern.colt.matrix.impl.SparseDoubleMatrix1D</MissingClass>
+    <MissingClass>cern.colt.matrix.impl.SparseDoubleMatrix2D</MissingClass>
+    <MissingClass>cern.colt.matrix.linalg.Algebra</MissingClass>
+    <MissingClass>cern.jet.random.Uniform</MissingClass>
+    <MissingClass>cern.jet.random.sampling.RandomSampler</MissingClass>
+    <MissingClass>cern.jet.stat.Descriptive</MissingClass>
+    <MissingClass>corejava.PrintfFormat</MissingClass>
+    <MissingClass>edu.cornell.lassp.houle.RngPack.RandomJava</MissingClass>
+    <MissingClass>edu.cornell.lassp.houle.RngPack.Ranlux</MissingClass>
+    <MissingClass>org.apache.commons.collections.BinaryHeap</MissingClass>
+    <MissingClass>org.apache.commons.collections.Buffer</MissingClass>
+    <MissingClass>org.apache.commons.collections.IteratorUtils</MissingClass>
+    <MissingClass>org.apache.commons.collections.MultiHashMap</MissingClass>
+    <MissingClass>org.apache.commons.collections.MultiMap</MissingClass>
+    <MissingClass>org.apache.commons.collections.UnboundedFifoBuffer</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 9 Mar 2017 13:56:32 -0500" total_classes="157" referenced_classes="570" total_bugs="62" total_size="6277" num_packages="21" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="39.16" clock_seconds="111.71" peak_mbytes="321.26" alloc_mbytes="683.00" gc_seconds="4.95" priority_2="53" priority_1="9">
+    <PackageStats package="edu.uci.ics.jung.algorithms" total_bugs="1" total_types="4" total_size="173" priority_2="1">
+      <ClassStats class="edu.uci.ics.jung.algorithms.GraphMatrixOperations" sourceFile="GraphMatrixOperations.java" interface="false" size="105" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.IterativeProcess" sourceFile="IterativeProcess.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.MatrixElementOperations" sourceFile="MatrixElementOperations.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.RealMatrixElementOperations" sourceFile="RealMatrixElementOperations.java" interface="false" size="17" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.algorithms.cluster" total_bugs="3" total_types="10" total_size="320" priority_2="3">
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.BicomponentClusterer" sourceFile="BicomponentClusterer.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.BicomponentClusterer$DepthFirstSearch" sourceFile="BicomponentClusterer.java" interface="false" size="24" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.ClusterSet" sourceFile="ClusterSet.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.ClusterSet$1" sourceFile="ClusterSet.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.EdgeBetweennessClusterer" sourceFile="EdgeBetweennessClusterer.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.EdgeClusterSet" sourceFile="EdgeClusterSet.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.ExactFlowCommunity" sourceFile="ExactFlowCommunity.java" interface="false" size="68" bugs="2" priority_2="2"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.GraphClusterer" sourceFile="GraphClusterer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.VertexClusterSet" sourceFile="VertexClusterSet.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.cluster.WeakComponentClusterer" sourceFile="WeakComponentClusterer.java" interface="false" size="26" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.algorithms.connectivity" total_bugs="2" total_types="3" total_size="142" priority_2="2">
+      <ClassStats class="edu.uci.ics.jung.algorithms.connectivity.BFSDistanceLabeler" sourceFile="BFSDistanceLabeler.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor" sourceFile="KNeighborhoodExtractor.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.connectivity.KNeighborhoodExtractor$NeighborhoodFilter" sourceFile="KNeighborhoodExtractor.java" interface="false" size="50" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.algorithms.flows" total_bugs="0" total_types="1" total_size="146">
+      <ClassStats class="edu.uci.ics.jung.algorithms.flows.EdmondsKarpMaxFlow" sourceFile="EdmondsKarpMaxFlow.java" interface="false" size="146" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.algorithms.importance" total_bugs="5" total_types="18" total_size="1062" priority_2="4" priority_1="1">
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.AbstractRanker" sourceFile="AbstractRanker.java" interface="false" size="163" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality" sourceFile="BetweennessCentrality.java" interface="false" size="73" bugs="1" priority_1="1"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality$BetweennessData" sourceFile="BetweennessCentrality.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality$BetweennessDataDecorator" sourceFile="BetweennessCentrality.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.DegreeDistributionRanker" sourceFile="DegreeDistributionRanker.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.EdgeRanking" sourceFile="EdgeRanking.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.HITS" sourceFile="HITS.java" interface="false" size="121" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.HITSWithPriors" sourceFile="HITSWithPriors.java" interface="false" size="191" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.KStepMarkov" sourceFile="KStepMarkov.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.MarkovCentrality" sourceFile="MarkovCentrality.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.NodeRanking" sourceFile="NodeRanking.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.PageRank" sourceFile="PageRank.java" interface="false" size="92" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.PageRankWithPriors" sourceFile="PageRankWithPriors.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.RandomWalkBetweenness" sourceFile="RandomWalkBetweenness.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.RandomWalkSTBetweenness" sourceFile="RandomWalkSTBetweenness.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.Ranking" sourceFile="Ranking.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.RelativeAuthorityRanker" sourceFile="RelativeAuthorityRanker.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.importance.WeightedNIPaths" sourceFile="WeightedNIPaths.java" interface="false" size="90" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.algorithms.optimization" total_bugs="1" total_types="2" total_size="59" priority_2="1">
+      <ClassStats class="edu.uci.ics.jung.algorithms.optimization.Configuration" sourceFile="Configuration.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.optimization.SimulatedAnnealer" sourceFile="SimulatedAnnealer.java" interface="false" size="56" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.algorithms.shortestpath" total_bugs="2" total_types="5" total_size="125" priority_2="2">
+      <ClassStats class="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath" sourceFile="DijkstraShortestPath.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath$1" sourceFile="DijkstraShortestPath.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath$SourceData" sourceFile="DijkstraShortestPath.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath$VertexComparator" sourceFile="DijkstraShortestPath.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.algorithms.shortestpath.UnweightedShortestPath" sourceFile="UnweightedShortestPath.java" interface="false" size="34" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.exceptions" total_bugs="0" total_types="1" total_size="7">
+      <ClassStats class="edu.uci.ics.jung.exceptions.FatalException" sourceFile="FatalException.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.graph" total_bugs="0" total_types="10" total_size="57">
+      <ClassStats class="edu.uci.ics.jung.graph.ArchetypeEdge" sourceFile="ArchetypeEdge.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.ArchetypeGraph" sourceFile="ArchetypeGraph.java" interface="true" size="15" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.ArchetypeVertex" sourceFile="ArchetypeVertex.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.DirectedEdge" sourceFile="DirectedEdge.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.DirectedGraph" sourceFile="DirectedGraph.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.Edge" sourceFile="Edge.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.Graph" sourceFile="Graph.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.UndirectedEdge" sourceFile="UndirectedEdge.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.UndirectedGraph" sourceFile="UndirectedGraph.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.Vertex" sourceFile="Vertex.java" interface="true" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.graph.decorators" total_bugs="0" total_types="6" total_size="181">
+      <ClassStats class="edu.uci.ics.jung.graph.decorators.Decorator" sourceFile="Decorator.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.decorators.EdgeWeightLabeller" sourceFile="EdgeWeightLabeller.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.decorators.Indexer" sourceFile="Indexer.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.decorators.NumericDecorator" sourceFile="NumericDecorator.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.decorators.StringLabeller" sourceFile="StringLabeller.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.decorators.StringLabeller$UniqueLabelException" sourceFile="StringLabeller.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.graph.filters" total_bugs="1" total_types="9" total_size="218" priority_2="1">
+      <ClassStats class="edu.uci.ics.jung.graph.filters.EfficientFilter" sourceFile="EfficientFilter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.Filter" sourceFile="Filter.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.GeneralEdgeAcceptFilter" sourceFile="GeneralEdgeAcceptFilter.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.GeneralVertexAcceptFilter" sourceFile="GeneralVertexAcceptFilter.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.GraphAssemblyRecord" sourceFile="GraphAssemblyRecord.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.LevelFilter" sourceFile="LevelFilter.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.SerialFilter" sourceFile="SerialFilter.java" interface="false" size="42" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.TrivialFilter" sourceFile="TrivialFilter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.UnassembledGraph" sourceFile="UnassembledGraph.java" interface="false" size="74" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.graph.filters.impl" total_bugs="0" total_types="4" total_size="96">
+      <ClassStats class="edu.uci.ics.jung.graph.filters.impl.AlphabeticVertexFilter" sourceFile="AlphabeticVertexFilter.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.impl.DropSoloNodesFilter" sourceFile="DropSoloNodesFilter.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.impl.NumericDecorationFilter" sourceFile="NumericDecorationFilter.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.filters.impl.WeightedEdgeGraphFilter" sourceFile="WeightedEdgeGraphFilter.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.graph.impl" total_bugs="2" total_types="12" total_size="535" priority_2="2">
+      <ClassStats class="edu.uci.ics.jung.graph.impl.AbstractSparseEdge" sourceFile="AbstractSparseEdge.java" interface="false" size="87" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.AbstractSparseGraph" sourceFile="AbstractSparseGraph.java" interface="false" size="119" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.AbstractSparseVertex" sourceFile="AbstractSparseVertex.java" interface="false" size="83" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.BipartiteEdge" sourceFile="BipartiteEdge.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.BipartiteGraph" sourceFile="BipartiteGraph.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.BipartiteGraph$Choice" sourceFile="BipartiteGraph.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.DirectedSparseEdge" sourceFile="DirectedSparseEdge.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.DirectedSparseGraph" sourceFile="DirectedSparseGraph.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.DirectedSparseVertex" sourceFile="DirectedSparseVertex.java" interface="false" size="91" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.UndirectedSparseEdge" sourceFile="UndirectedSparseEdge.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.UndirectedSparseGraph" sourceFile="UndirectedSparseGraph.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.graph.impl.UndirectedSparseVertex" sourceFile="UndirectedSparseVertex.java" interface="false" size="60" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.io" total_bugs="11" total_types="3" total_size="254" priority_2="9" priority_1="2">
+      <ClassStats class="edu.uci.ics.jung.io.GraphMLFile" sourceFile="GraphMLFile.java" interface="false" size="41" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.io.GraphMLFileHandler" sourceFile="GraphMLFileHandler.java" interface="false" size="66" bugs="3" priority_2="3"/>
+      <ClassStats class="edu.uci.ics.jung.io.PajekNetFile" sourceFile="PajekNetFile.java" interface="false" size="147" bugs="7" priority_2="5" priority_1="2"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.random.generators" total_bugs="2" total_types="4" total_size="243" priority_2="2">
+      <ClassStats class="edu.uci.ics.jung.random.generators.EppsteinPowerLawGenerator" sourceFile="EppsteinPowerLawGenerator.java" interface="false" size="51" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.random.generators.GraphGenerator" sourceFile="GraphGenerator.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.random.generators.KleinbergSmallWorldGenerator" sourceFile="KleinbergSmallWorldGenerator.java" interface="false" size="134" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.random.generators.WattsBetaSmallWorldGenerator" sourceFile="WattsBetaSmallWorldGenerator.java" interface="false" size="56" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.random.permuters" total_bugs="0" total_types="2" total_size="53">
+      <ClassStats class="edu.uci.ics.jung.random.permuters.BernoulliEdgePermuter" sourceFile="BernoulliEdgePermuter.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.random.permuters.EdgePermuter" sourceFile="EdgePermuter.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.statistics" total_bugs="1" total_types="4" total_size="375" priority_1="1">
+      <ClassStats class="edu.uci.ics.jung.statistics.DegreeDistributions" sourceFile="DegreeDistributions.java" interface="false" size="41" bugs="1" priority_1="1"/>
+      <ClassStats class="edu.uci.ics.jung.statistics.GraphStatistics" sourceFile="GraphStatistics.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.statistics.Histogram" sourceFile="Histogram.java" interface="false" size="231" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.statistics.StatisticalMoments" sourceFile="StatisticalMoments.java" interface="false" size="57" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.utils" total_bugs="1" total_types="16" total_size="575" priority_2="1">
+      <ClassStats class="edu.uci.ics.jung.utils.GeneralUtils" sourceFile="GeneralUtils.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.GraphUtils" sourceFile="GraphUtils.java" interface="false" size="101" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.MutableDouble" sourceFile="MutableDouble.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.MutableInteger" sourceFile="MutableInteger.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.NumberEdgeValue" sourceFile="NumberEdgeValue.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.NumericalPrecision" sourceFile="NumericalPrecision.java" interface="false" size="145" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.Pair" sourceFile="Pair.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.StringInputStream" sourceFile="StringInputStream.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.TestGraphs" sourceFile="TestGraphs.java" interface="false" size="73" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.utils.UserData" sourceFile="UserData.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.UserDataContainer" sourceFile="UserDataContainer.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.UserDataContainer$CopyAction" sourceFile="UserDataContainer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.UserDataContainer$CopyAction$Clone" sourceFile="UserDataContainer.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.UserDataContainer$CopyAction$Remove" sourceFile="UserDataContainer.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.UserDataContainer$CopyAction$Shared" sourceFile="UserDataContainer.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.utils.UserDataUtils" sourceFile="UserDataUtils.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.visualization" total_bugs="26" total_types="26" total_size="1186" priority_2="23" priority_1="3">
+      <ClassStats class="edu.uci.ics.jung.visualization.AbstractLayout" sourceFile="AbstractLayout.java" interface="false" size="122" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.AbstractRenderer" sourceFile="AbstractRenderer.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.Coordinates" sourceFile="Coordinates.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.FRLayout" sourceFile="FRLayout.java" interface="false" size="126" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.FRLayout$FRVertexData" sourceFile="FRLayout.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.FadingVertexLayout" sourceFile="FadingVertexLayout.java" interface="false" size="132" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.FadingVertexLayout$FadingVertexLayoutData" sourceFile="FadingVertexLayout.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.GraphDraw" sourceFile="GraphDraw.java" interface="false" size="102" bugs="2" priority_2="2"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.GraphDraw$SliderChangeListener" sourceFile="GraphDraw.java" interface="false" size="22" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.ISOMLayout" sourceFile="ISOMLayout.java" interface="false" size="115" bugs="11" priority_2="11"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.ISOMLayout$ISOMVertexData" sourceFile="ISOMLayout.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.Layout" sourceFile="Layout.java" interface="true" size="20" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.PickedInfo" sourceFile="PickedInfo.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.Renderer" sourceFile="Renderer.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.SpringLayout" sourceFile="SpringLayout.java" interface="false" size="157" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.SpringLayout$LengthFunction" sourceFile="SpringLayout.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.SpringLayout$SpringDimensionChecker" sourceFile="SpringLayout.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.SpringLayout$SpringEdgeData" sourceFile="SpringLayout.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.SpringLayout$SpringVertexData" sourceFile="SpringLayout.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.SpringLayout$UnitLengthFunction" sourceFile="SpringLayout.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.StatusCallback" sourceFile="StatusCallback.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.VisualizationViewer" sourceFile="VisualizationViewer.java" interface="false" size="137" bugs="2" priority_2="2"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.VisualizationViewer$1" sourceFile="VisualizationViewer.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" sourceFile="VisualizationViewer.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.VisualizationViewer$VisRunner" sourceFile="VisualizationViewer.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.VisualizationViewer$VisualizationListener" sourceFile="VisualizationViewer.java" interface="false" size="14" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="edu.uci.ics.jung.visualization.graphdraw" total_bugs="0" total_types="4" total_size="96">
+      <ClassStats class="edu.uci.ics.jung.visualization.graphdraw.EdgeColorFunction" sourceFile="EdgeColorFunction.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.graphdraw.EdgeThicknessFunction" sourceFile="EdgeThicknessFunction.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.graphdraw.SettableRenderer" sourceFile="SettableRenderer.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="edu.uci.ics.jung.visualization.graphdraw.VertexColorFunction" sourceFile="VertexColorFunction.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="samples.graph" total_bugs="4" total_types="13" total_size="374" priority_2="2" priority_1="2">
+      <ClassStats class="samples.graph.BasicRenderer" sourceFile="BasicRenderer.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="samples.graph.ClusteringDemo" sourceFile="ClusteringDemo.java" interface="false" size="88" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="samples.graph.ClusteringDemo$1" sourceFile="ClusteringDemo.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="samples.graph.ClusteringDemo$2" sourceFile="ClusteringDemo.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="samples.graph.ClusteringDemo$3" sourceFile="ClusteringDemo.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="samples.graph.ClusteringDemo$4" sourceFile="ClusteringDemo.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="samples.graph.ClusteringDemo$5" sourceFile="ClusteringDemo.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="samples.graph.RankingDemo" sourceFile="RankingDemo.java" interface="false" size="123" bugs="0"/>
+      <ClassStats class="samples.graph.RankingDemo$1" sourceFile="RankingDemo.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="samples.graph.RankingDemo$2" sourceFile="RankingDemo.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="samples.graph.RankingDemo$3" sourceFile="RankingDemo.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="samples.graph.RankingDemo$4" sourceFile="RankingDemo.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="samples.graph.SimpleGraphDraw" sourceFile="SimpleGraphDraw.java" interface="false" size="17" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="7819" invocations="1875" avgMicrosecondsPerInvocation="4170" maxMicrosecondsPerInvocation="296077" standardDeviationMircosecondsPerInvocation="15081"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="6514" invocations="570" avgMicrosecondsPerInvocation="11429" maxMicrosecondsPerInvocation="417141" standardDeviationMircosecondsPerInvocation="32759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="5408" invocations="957" avgMicrosecondsPerInvocation="5651" maxMicrosecondsPerInvocation="129127" standardDeviationMircosecondsPerInvocation="15868"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="4795" invocations="957" avgMicrosecondsPerInvocation="5011" maxMicrosecondsPerInvocation="257564" standardDeviationMircosecondsPerInvocation="16379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="4770" invocations="570" avgMicrosecondsPerInvocation="8368" maxMicrosecondsPerInvocation="205756" standardDeviationMircosecondsPerInvocation="24004"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="4708" invocations="1965" avgMicrosecondsPerInvocation="2396" maxMicrosecondsPerInvocation="103421" standardDeviationMircosecondsPerInvocation="9690"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="4575" invocations="964" avgMicrosecondsPerInvocation="4746" maxMicrosecondsPerInvocation="162820" standardDeviationMircosecondsPerInvocation="15598"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="4158" invocations="1012" avgMicrosecondsPerInvocation="4109" maxMicrosecondsPerInvocation="126750" standardDeviationMircosecondsPerInvocation="13860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="4117" invocations="957" avgMicrosecondsPerInvocation="4302" maxMicrosecondsPerInvocation="145239" standardDeviationMircosecondsPerInvocation="14377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="3372" invocations="738" avgMicrosecondsPerInvocation="4569" maxMicrosecondsPerInvocation="111990" standardDeviationMircosecondsPerInvocation="14446"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2986" invocations="957" avgMicrosecondsPerInvocation="3120" maxMicrosecondsPerInvocation="257242" standardDeviationMircosecondsPerInvocation="13588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ReturnPathTypeDataflowFactory" totalMilliseconds="2616" invocations="3" avgMicrosecondsPerInvocation="872285" maxMicrosecondsPerInvocation="2615915" standardDeviationMircosecondsPerInvocation="1232932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="1955" invocations="1071" avgMicrosecondsPerInvocation="1825" maxMicrosecondsPerInvocation="594028" standardDeviationMircosecondsPerInvocation="20107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1882" invocations="677" avgMicrosecondsPerInvocation="2780" maxMicrosecondsPerInvocation="263102" standardDeviationMircosecondsPerInvocation="13665"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="1642" invocations="1805" avgMicrosecondsPerInvocation="909" maxMicrosecondsPerInvocation="140904" standardDeviationMircosecondsPerInvocation="6298"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="1592" invocations="570" avgMicrosecondsPerInvocation="2794" maxMicrosecondsPerInvocation="84779" standardDeviationMircosecondsPerInvocation="11162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="1407" invocations="570" avgMicrosecondsPerInvocation="2469" maxMicrosecondsPerInvocation="482008" standardDeviationMircosecondsPerInvocation="21663"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="1345" invocations="570" avgMicrosecondsPerInvocation="2361" maxMicrosecondsPerInvocation="74150" standardDeviationMircosecondsPerInvocation="9377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="1266" invocations="570" avgMicrosecondsPerInvocation="2221" maxMicrosecondsPerInvocation="73989" standardDeviationMircosecondsPerInvocation="8746"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="1082" invocations="570" avgMicrosecondsPerInvocation="1899" maxMicrosecondsPerInvocation="222812" standardDeviationMircosecondsPerInvocation="14431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="1046" invocations="1961" avgMicrosecondsPerInvocation="533" maxMicrosecondsPerInvocation="842465" standardDeviationMircosecondsPerInvocation="19199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="927" invocations="157" avgMicrosecondsPerInvocation="5907" maxMicrosecondsPerInvocation="100481" standardDeviationMircosecondsPerInvocation="15137"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="907" invocations="23271" avgMicrosecondsPerInvocation="39" maxMicrosecondsPerInvocation="77763" standardDeviationMircosecondsPerInvocation="1287"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="884" invocations="957" avgMicrosecondsPerInvocation="924" maxMicrosecondsPerInvocation="73266" standardDeviationMircosecondsPerInvocation="6172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="870" invocations="157" avgMicrosecondsPerInvocation="5547" maxMicrosecondsPerInvocation="78956" standardDeviationMircosecondsPerInvocation="14286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="870" invocations="157" avgMicrosecondsPerInvocation="5545" maxMicrosecondsPerInvocation="79342" standardDeviationMircosecondsPerInvocation="15860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="853" invocations="570" avgMicrosecondsPerInvocation="1497" maxMicrosecondsPerInvocation="122324" standardDeviationMircosecondsPerInvocation="9323"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="823" invocations="957" avgMicrosecondsPerInvocation="859" maxMicrosecondsPerInvocation="106773" standardDeviationMircosecondsPerInvocation="6634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="808" invocations="570" avgMicrosecondsPerInvocation="1419" maxMicrosecondsPerInvocation="182462" standardDeviationMircosecondsPerInvocation="10480"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="789" invocations="570" avgMicrosecondsPerInvocation="1385" maxMicrosecondsPerInvocation="60473" standardDeviationMircosecondsPerInvocation="7125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="752" invocations="157" avgMicrosecondsPerInvocation="4792" maxMicrosecondsPerInvocation="85783" standardDeviationMircosecondsPerInvocation="14187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="745" invocations="157" avgMicrosecondsPerInvocation="4749" maxMicrosecondsPerInvocation="55794" standardDeviationMircosecondsPerInvocation="12368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="740" invocations="570" avgMicrosecondsPerInvocation="1298" maxMicrosecondsPerInvocation="60751" standardDeviationMircosecondsPerInvocation="6394"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+

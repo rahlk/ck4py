@@ -1,0 +1,4572 @@
+<metrics>
+	<class>
+		<name>org.apache.lucene.demo.DeleteFiles</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>16</rfc>
+		<lcom>1</lcom>
+		<ca>0</ca>
+		<ce>12</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>46</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>22.0</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="public static void main(String[] arg0)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.HTMLParser$JJCalls</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>8</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.HTMLDocument</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>28</rfc>
+		<lcom>4</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>100</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>18.8</amc>
+		<cc>
+			<method name="public static String uid(java.io.File arg0)">1</method>
+			<method name="public static String uid2url(String arg0)">1</method>
+			<method name="public static org.apache.lucene.document.Document Document(java.io.File arg0)">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="static void _clinit_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.FileDocument</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>14</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>42</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>20.0</amc>
+		<cc>
+			<method name="public static org.apache.lucene.document.Document Document(java.io.File arg0)">1</method>
+			<method name="private void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.HTMLParserConstants</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>147</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>112.0</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.ParseException</name>
+		<wmc>5</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>18</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>9</ce>
+		<npm>4</npm>
+		<lcom3>0.55</lcom3>
+		<loc>387</loc>
+		<dam>0.4</dam>
+		<moa>1</moa>
+		<mfa>0.9130434782608695</mfa>
+		<cam>0.4</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>75.4</amc>
+		<cc>
+			<method name="public void _init_(String arg0)">1</method>
+			<method name="public void _init_(org.apache.lucene.demo.html.Token arg0, int[][] arg1, String[] arg2)">1</method>
+			<method name="protected String add_escapes(String arg0)">14</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String getMessage()">10</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.Token</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>3</lcom>
+		<ca>4</ca>
+		<ce>3</ce>
+		<npm>3</npm>
+		<lcom3>1.4375</lcom3>
+		<loc>23</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public final String toString()">1</method>
+			<method name="public static final org.apache.lucene.demo.html.Token newToken(int arg0)">2</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.Test</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>20</rfc>
+		<lcom>3</lcom>
+		<ca>0</ca>
+		<ce>13</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>104</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>33.666666666666664</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="public static void parse(java.io.File arg0)">1</method>
+			<method name="public static void main(String[] arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.ParserThread</name>
+		<wmc>2</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>14</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>84</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.9846153846153847</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>40.5</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.demo.html.HTMLParser arg0)">1</method>
+			<method name="public void run()">5</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.TokenMgrError</name>
+		<wmc>6</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>19</rfc>
+		<lcom>15</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>1.1199999999999999</lcom3>
+		<loc>184</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.875</mfa>
+		<cam>0.5</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>28.833333333333332</amc>
+		<cc>
+			<method name="private static final String LexicalError(boolean arg0, int arg1, int arg2, int arg3, String arg4, char arg5)">2</method>
+			<method name="protected static final String addEscapes(String arg0)">14</method>
+			<method name="public void _init_(String arg0, int arg1)">1</method>
+			<method name="public void _init_(boolean arg0, int arg1, int arg2, int arg3, String arg4, char arg5, int arg6)">1</method>
+			<method name="public String getMessage()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.Entities</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>21</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>0.5</lcom3>
+		<loc>919</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>182.4</amc>
+		<cc>
+			<method name="static final String decode(String arg0)">6</method>
+			<method name="public static final String encode(String arg0)">5</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="static final void add(String arg0, int arg1)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.IndexHTML</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>20</cbo>
+		<rfc>44</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>20</ce>
+		<npm>1</npm>
+		<lcom3>0.4375</lcom3>
+		<loc>356</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>69.4</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="private static void indexDocs(java.io.File arg0, String arg1, boolean arg2)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static void main(String[] arg0)">7</method>
+			<method name="private static void indexDocs(java.io.File arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.SimpleCharStream</name>
+		<wmc>28</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>40</rfc>
+		<lcom>96</lcom>
+		<ca>2</ca>
+		<ce>11</ce>
+		<npm>25</npm>
+		<lcom3>0.4444444444444444</lcom3>
+		<loc>1019</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.31547619047619047</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>34.857142857142854</amc>
+		<cc>
+			<method name="public void ReInit(java.io.Reader arg0)">1</method>
+			<method name="public void _init_(java.io.Reader arg0, int arg1, int arg2, int arg3)">1</method>
+			<method name="public void _init_(java.io.InputStream arg0, int arg1, int arg2)">1</method>
+			<method name="public void _init_(java.io.InputStream arg0)">1</method>
+			<method name="public void _init_(java.io.Reader arg0, int arg1, int arg2)">1</method>
+			<method name="public void ReInit(java.io.Reader arg0, int arg1, int arg2)">1</method>
+			<method name="public void adjustBeginLineColumn(int arg0, int arg1)">7</method>
+			<method name="public final int getBeginLine()">1</method>
+			<method name="public final int getColumn()">1</method>
+			<method name="public final int getEndColumn()">1</method>
+			<method name="public final char[] GetSuffix(int arg0)">2</method>
+			<method name="public final void backup(int arg0)">2</method>
+			<method name="private final void FillBuff()">1</method>
+			<method name="public void _init_(java.io.InputStream arg0, int arg1, int arg2, int arg3)">1</method>
+			<method name="public final char BeginToken()">1</method>
+			<method name="public void _init_(java.io.Reader arg0)">1</method>
+			<method name="public void ReInit(java.io.InputStream arg0, int arg1, int arg2)">1</method>
+			<method name="public void ReInit(java.io.InputStream arg0, int arg1, int arg2, int arg3)">1</method>
+			<method name="public void Done()">1</method>
+			<method name="private final void ExpandBuff(boolean arg0)">2</method>
+			<method name="public final int getBeginColumn()">1</method>
+			<method name="public final String GetImage()">2</method>
+			<method name="public final int getLine()">1</method>
+			<method name="public final int getEndLine()">1</method>
+			<method name="public void ReInit(java.io.Reader arg0, int arg1, int arg2, int arg3)">3</method>
+			<method name="private final void UpdateLineColumn(char arg0)">5</method>
+			<method name="public final char readChar()">1</method>
+			<method name="public void ReInit(java.io.InputStream arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.HTMLParser</name>
+		<wmc>34</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>28</cbo>
+		<rfc>76</rfc>
+		<lcom>75</lcom>
+		<ca>3</ca>
+		<ce>26</ce>
+		<npm>20</npm>
+		<lcom3>0.7410468319559228</lcom3>
+		<loc>2218</loc>
+		<dam>0.48484848484848486</dam>
+		<moa>7</moa>
+		<mfa>0.0</mfa>
+		<cam>0.21212121212121213</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>63.26470588235294</amc>
+		<cc>
+			<method name="void addText(String arg0)">1</method>
+			<method name="private final boolean jj_scan_token(int arg0)">8</method>
+			<method name="public void ReInit(java.io.Reader arg0)">3</method>
+			<method name="private final org.apache.lucene.demo.html.Token jj_consume_token(int arg0)">1</method>
+			<method name="public void _init_(java.io.InputStream arg0)">3</method>
+			<method name="public final org.apache.lucene.demo.html.Token Decl()">1</method>
+			<method name="public final org.apache.lucene.demo.html.ParseException generateParseException()">10</method>
+			<method name="public final void Tag()">1</method>
+			<method name="public String getSummary()">1</method>
+			<method name="void addToSummary(String arg0)">3</method>
+			<method name="private final boolean jj_3_2()">7</method>
+			<method name="public String getTitle()">1</method>
+			<method name="private final boolean jj_2_2(int arg0)">2</method>
+			<method name="private final boolean jj_3_1()">7</method>
+			<method name="public final org.apache.lucene.demo.html.Token ArgValue()">2</method>
+			<method name="private final void jj_rescan_token()">7</method>
+			<method name="private final void jj_save(int arg0, int arg1)">3</method>
+			<method name="public void _init_(org.apache.lucene.demo.html.HTMLParserTokenManager arg0)">3</method>
+			<method name="public void _init_(java.io.Reader arg0)">3</method>
+			<method name="void addSpace()">1</method>
+			<method name="public final void enable_tracing()">1</method>
+			<method name="public final void disable_tracing()">1</method>
+			<method name="public final void HTMLDocument()">1</method>
+			<method name="public void _init_(java.io.File arg0)">1</method>
+			<method name="private final int jj_ntk()">2</method>
+			<method name="private void jj_add_error_token(int arg0, int arg1)">12</method>
+			<method name="public void ReInit(org.apache.lucene.demo.html.HTMLParserTokenManager arg0)">3</method>
+			<method name="public final void CommentTag()">2</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public final org.apache.lucene.demo.html.Token getToken(int arg0)">4</method>
+			<method name="public void ReInit(java.io.InputStream arg0)">3</method>
+			<method name="public java.io.Reader getReader()">1</method>
+			<method name="private final boolean jj_2_1(int arg0)">2</method>
+			<method name="public final org.apache.lucene.demo.html.Token getNextToken()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.IndexFiles</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>24</rfc>
+		<lcom>3</lcom>
+		<ca>0</ca>
+		<ce>16</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>103</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>33.333333333333336</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="public static void indexDocs(org.apache.lucene.index.IndexWriter arg0, java.io.File arg1)">1</method>
+			<method name="public static void main(String[] arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.SearchFiles</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>22</cbo>
+		<rfc>27</rfc>
+		<lcom>1</lcom>
+		<ca>0</ca>
+		<ce>22</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>195</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>96.5</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="public static void main(String[] arg0)">9</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.demo.html.HTMLParserTokenManager</name>
+		<wmc>50</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>66</rfc>
+		<lcom>445</lcom>
+		<ca>1</ca>
+		<ce>11</ce>
+		<npm>7</npm>
+		<lcom3>0.6609977324263038</lcom3>
+		<loc>3304</loc>
+		<dam>0.2222222222222222</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.40816326530612246</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>64.72</amc>
+		<cc>
+			<method name="private final int jjMoveNfa_2(int arg0, int arg1)">26</method>
+			<method name="private final org.apache.lucene.demo.html.Token jjFillToken()">2</method>
+			<method name="private final int jjStopStringLiteralDfa_2(int arg0, long arg1)">2</method>
+			<method name="private final int jjStartNfaWithStates_2(int arg0, int arg1, int arg2)">1</method>
+			<method name="private final int jjMoveStringLiteralDfa1_0(long arg0)">4</method>
+			<method name="private final void jjCheckNAdd(int arg0)">2</method>
+			<method name="private final int jjMoveStringLiteralDfa2_0(long arg0, long arg1)">4</method>
+			<method name="private final int jjStartNfaWithStates_0(int arg0, int arg1, int arg2)">1</method>
+			<method name="private final int jjMoveNfa_3(int arg0, int arg1)">25</method>
+			<method name="public void SwitchTo(int arg0)">3</method>
+			<method name="private final int jjStartNfa_2(int arg0, long arg1)">1</method>
+			<method name="private final int jjStartNfa_1(int arg0, long arg1)">1</method>
+			<method name="public void ReInit(org.apache.lucene.demo.html.SimpleCharStream arg0)">1</method>
+			<method name="private final void jjCheckNAddTwoStates(int arg0, int arg1)">1</method>
+			<method name="private final int jjStartNfaWithStates_6(int arg0, int arg1, int arg2)">1</method>
+			<method name="private final int jjMoveStringLiteralDfa0_0()">3</method>
+			<method name="private final int jjStartNfa_5(int arg0, long arg1)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private final int jjStopStringLiteralDfa_0(int arg0, long arg1)">6</method>
+			<method name="private final int jjMoveStringLiteralDfa0_2()">4</method>
+			<method name="private final void ReInitRounds()">2</method>
+			<method name="private final void jjAddStates(int arg0, int arg1)">2</method>
+			<method name="private final int jjMoveStringLiteralDfa0_4()">1</method>
+			<method name="private final int jjMoveStringLiteralDfa0_6()">3</method>
+			<method name="private final void jjCheckNAddStates(int arg0)">1</method>
+			<method name="private final int jjStartNfa_0(int arg0, long arg1)">1</method>
+			<method name="private final int jjMoveNfa_4(int arg0, int arg1)">25</method>
+			<method name="private final int jjMoveStringLiteralDfa3_0(long arg0, long arg1)">5</method>
+			<method name="private final int jjStartNfa_6(int arg0, long arg1)">1</method>
+			<method name="private final int jjStopAtPos(int arg0, int arg1)">1</method>
+			<method name="public void _init_(org.apache.lucene.demo.html.SimpleCharStream arg0)">1</method>
+			<method name="public void _init_(org.apache.lucene.demo.html.SimpleCharStream arg0, int arg1)">1</method>
+			<method name="private final int jjMoveNfa_5(int arg0, int arg1)">25</method>
+			<method name="private final int jjStartNfaWithStates_1(int arg0, int arg1, int arg2)">1</method>
+			<method name="private final int jjMoveNfa_0(int arg0, int arg1)">67</method>
+			<method name="private final int jjMoveStringLiteralDfa2_5(long arg0, long arg1)">5</method>
+			<method name="private final int jjStopStringLiteralDfa_6(int arg0, long arg1)">2</method>
+			<method name="public void setDebugStream(java.io.PrintStream arg0)">1</method>
+			<method name="private final int jjStopStringLiteralDfa_1(int arg0, long arg1)">2</method>
+			<method name="private final int jjStartNfaWithStates_5(int arg0, int arg1, int arg2)">1</method>
+			<method name="private final void jjCheckNAddStates(int arg0, int arg1)">2</method>
+			<method name="private final int jjMoveStringLiteralDfa1_5(long arg0)">3</method>
+			<method name="private final int jjMoveStringLiteralDfa0_1()">5</method>
+			<method name="public void ReInit(org.apache.lucene.demo.html.SimpleCharStream arg0, int arg1)">1</method>
+			<method name="private final int jjMoveStringLiteralDfa0_3()">1</method>
+			<method name="private final int jjStopStringLiteralDfa_5(int arg0, long arg1)">7</method>
+			<method name="private final int jjMoveStringLiteralDfa0_5()">3</method>
+			<method name="private final int jjMoveNfa_6(int arg0, int arg1)">18</method>
+			<method name="private final int jjMoveNfa_1(int arg0, int arg1)">32</method>
+			<method name="public final org.apache.lucene.demo.html.Token getNextToken()">14</method>
+		</cc>
+	</class>
+
+	<class>
+		<name>org.apache.lucene.search.Query</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>6</noc>
+		<cbo>21</cbo>
+		<rfc>11</rfc>
+		<lcom>30</lcom>
+		<ca>13</ca>
+		<ce>9</ce>
+		<npm>4</npm>
+		<lcom3>0.75</lcom3>
+		<loc>45</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3148148148148148</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.888888888888889</amc>
+		<cc>
+			<method name="abstract org.apache.lucene.search.Scorer scorer(org.apache.lucene.index.IndexReader)">1</method>
+			<method name="abstract void normalize(float)">1</method>
+			<method name="public abstract String toString(String)">1</method>
+			<method name="void prepare(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="public void setBoost(float arg0)">1</method>
+			<method name="static org.apache.lucene.search.Scorer scorer(org.apache.lucene.search.Query arg0, org.apache.lucene.search.Searcher arg1, org.apache.lucene.index.IndexReader arg2)">1</method>
+			<method name="public float getBoost()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="abstract float sumOfSquaredWeights(org.apache.lucene.search.Searcher)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.TermEnum</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>3</noc>
+		<cbo>16</cbo>
+		<rfc>6</rfc>
+		<lcom>10</lcom>
+		<ca>12</ca>
+		<ce>4</ce>
+		<npm>5</npm>
+		<lcom3>2.0</lcom3>
+		<loc>8</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.6</amc>
+		<cc>
+			<method name="public abstract org.apache.lucene.index.Term term()">1</method>
+			<method name="public abstract boolean next()">1</method>
+			<method name="public abstract void close()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public abstract int docFreq()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.ScoreDoc</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>6</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>12</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="void _init_(int arg0, float arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.BooleanScorer</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>16</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>11</ce>
+		<npm>0</npm>
+		<lcom3>0.6875</lcom3>
+		<loc>178</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2619047619047619</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>23.285714285714285</amc>
+		<cc>
+			<method name="static int access$000(org.apache.lucene.search.BooleanScorer arg0)">1</method>
+			<method name="void _init_()">1</method>
+			<method name="private final void computeCoordFactors()">1</method>
+			<method name="static float[] access$200(org.apache.lucene.search.BooleanScorer arg0)">1</method>
+			<method name="final void add(org.apache.lucene.search.Scorer arg0, boolean arg1, boolean arg2)">7</method>
+			<method name="static int access$100(org.apache.lucene.search.BooleanScorer arg0)">1</method>
+			<method name="final void score(org.apache.lucene.search.HitCollector arg0, int arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.Term</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>40</cbo>
+		<rfc>19</rfc>
+		<lcom>0</lcom>
+		<ca>32</ca>
+		<ce>8</ce>
+		<npm>7</npm>
+		<lcom3>0.16666666666666666</lcom3>
+		<loc>117</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2833333333333333</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>10.5</amc>
+		<cc>
+			<method name="public final boolean equals(Object arg0)">4</method>
+			<method name="final void set(String arg0, String arg1)">1</method>
+			<method name="public final String toString()">1</method>
+			<method name="public final int hashCode()">1</method>
+			<method name="public final String field()">1</method>
+			<method name="void _init_(String arg0, String arg1, boolean arg2)">2</method>
+			<method name="private void readObject(java.io.ObjectInputStream arg0)">1</method>
+			<method name="public final String text()">1</method>
+			<method name="public void _init_(String arg0, String arg1)">1</method>
+			<method name="public final int compareTo(org.apache.lucene.index.Term arg0)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.TermInfosReader</name>
+		<wmc>13</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>26</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>11</ce>
+		<npm>0</npm>
+		<lcom3>0.59375</lcom3>
+		<loc>402</loc>
+		<dam>0.625</dam>
+		<moa>5</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3076923076923077</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>29.307692307692307</amc>
+		<cc>
+			<method name="final synchronized int getPosition(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="void _init_(org.apache.lucene.store.Directory arg0, String arg1, org.apache.lucene.index.FieldInfos arg2)">1</method>
+			<method name="final synchronized org.apache.lucene.index.TermInfo get(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="final synchronized org.apache.lucene.index.Term get(int arg0)">1</method>
+			<method name="private final org.apache.lucene.index.Term scanEnum(int arg0)">1</method>
+			<method name="private final int getIndexOffset(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="final int size()">1</method>
+			<method name="final void close()">1</method>
+			<method name="final synchronized org.apache.lucene.index.SegmentTermEnum terms()">1</method>
+			<method name="final synchronized org.apache.lucene.index.SegmentTermEnum terms(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="private final void readIndex()">1</method>
+			<method name="private final void seekEnum(int arg0)">1</method>
+			<method name="private final org.apache.lucene.index.TermInfo scanEnum(org.apache.lucene.index.Term arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.PhraseQuery</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>20</cbo>
+		<rfc>30</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>19</ce>
+		<npm>5</npm>
+		<lcom3>0.5714285714285714</lcom3>
+		<loc>294</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.25</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>35.125</amc>
+		<cc>
+			<method name="public final int getSlop()">1</method>
+			<method name="final float sumOfSquaredWeights(org.apache.lucene.search.Searcher arg0)">1</method>
+			<method name="public final void add(org.apache.lucene.index.Term arg0)">3</method>
+			<method name="public final void setSlop(int arg0)">1</method>
+			<method name="final void normalize(float arg0)">1</method>
+			<method name="public final String toString(String arg0)">6</method>
+			<method name="public void _init_()">1</method>
+			<method name="final org.apache.lucene.search.Scorer scorer(org.apache.lucene.index.IndexReader arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.FastCharStream</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>25</rfc>
+		<lcom>3</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>13</npm>
+		<lcom3>0.6025641025641025</lcom3>
+		<loc>237</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.40476190476190477</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.5</amc>
+		<cc>
+			<method name="private final void refill()">1</method>
+			<method name="public final void Done()">1</method>
+			<method name="public final char BeginToken()">1</method>
+			<method name="public void _init_(java.io.Reader arg0)">1</method>
+			<method name="public final int getBeginColumn()">1</method>
+			<method name="public final String GetImage()">1</method>
+			<method name="public final int getLine()">1</method>
+			<method name="public final int getEndLine()">1</method>
+			<method name="public final int getBeginLine()">1</method>
+			<method name="public final char readChar()">1</method>
+			<method name="public final char[] GetSuffix(int arg0)">1</method>
+			<method name="public final int getColumn()">1</method>
+			<method name="public final int getEndColumn()">1</method>
+			<method name="public final void backup(int arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.HitCollector</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>4</noc>
+		<cbo>15</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>13</ca>
+		<ce>2</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>5</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>1.5</amc>
+		<cc>
+			<method name="public abstract void collect(int, float)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.document.Document</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>22</cbo>
+		<rfc>16</rfc>
+		<lcom>3</lcom>
+		<ca>15</ca>
+		<ce>8</ce>
+		<npm>6</npm>
+		<lcom3>0.2</lcom3>
+		<loc>95</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>14.666666666666666</amc>
+		<cc>
+			<method name="public final void add(org.apache.lucene.document.Field arg0)">1</method>
+			<method name="public final org.apache.lucene.document.Field getField(String arg0)">3</method>
+			<method name="public final String toString()">3</method>
+			<method name="public final java.util.Enumeration fields()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public final String get(String arg0)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.Hits</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>21</rfc>
+		<lcom>4</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>3</npm>
+		<lcom3>0.6190476190476192</lcom3>
+		<loc>272</loc>
+		<dam>1.0</dam>
+		<moa>5</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3541666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>31.875</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.search.Searcher arg0, org.apache.lucene.search.Query arg1, org.apache.lucene.search.Filter arg2)">1</method>
+			<method name="public final float score(int arg0)">1</method>
+			<method name="public final int length()">1</method>
+			<method name="private final void remove(org.apache.lucene.search.HitDoc arg0)">4</method>
+			<method name="private final void getMoreDocs(int arg0)">1</method>
+			<method name="private final org.apache.lucene.search.HitDoc hitDoc(int arg0)">1</method>
+			<method name="public final org.apache.lucene.document.Document doc(int arg0)">1</method>
+			<method name="private final void addToFront(org.apache.lucene.search.HitDoc arg0)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.PorterStemmer</name>
+		<wmc>27</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>43</rfc>
+		<lcom>13</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>13</npm>
+		<lcom3>0.6009615384615384</lcom3>
+		<loc>1179</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.25308641975308643</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>42.370370370370374</amc>
+		<cc>
+			<method name="private final boolean ends(String arg0)">4</method>
+			<method name="public boolean stem(char[] arg0, int arg1)">1</method>
+			<method name="public int getResultLength()">1</method>
+			<method name="void r(String arg0)">2</method>
+			<method name="public void reset()">1</method>
+			<method name="private final boolean doublec(int arg0)">3</method>
+			<method name="void setto(String arg0)">2</method>
+			<method name="public String toString()">1</method>
+			<method name="public void add(char arg0)">3</method>
+			<method name="private final int m()">7</method>
+			<method name="public boolean stem(char[] arg0)">1</method>
+			<method name="private final boolean cons(int arg0)">10</method>
+			<method name="public String stem(String arg0)">2</method>
+			<method name="private final boolean vowelinstem()">3</method>
+			<method name="private final boolean cvc(int arg0)">8</method>
+			<method name="public boolean stem(int arg0)">3</method>
+			<method name="public char[] getResultBuffer()">1</method>
+			<method name="private final void step4()">13</method>
+			<method name="private final void step5()">26</method>
+			<method name="private final void step6()">8</method>
+			<method name="private final void step1()">19</method>
+			<method name="private final void step2()">3</method>
+			<method name="private final void step3()">24</method>
+			<method name="public boolean stem(char[] arg0, int arg1, int arg2)">3</method>
+			<method name="public static void main(String[] arg0)">6</method>
+			<method name="public boolean stem()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.QueryParser</name>
+		<wmc>31</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>35</cbo>
+		<rfc>77</rfc>
+		<lcom>153</lcom>
+		<ca>1</ca>
+		<ce>34</ce>
+		<npm>20</npm>
+		<lcom3>0.7908045977011494</lcom3>
+		<loc>1980</loc>
+		<dam>0.7586206896551724</dam>
+		<moa>7</moa>
+		<mfa>0.0</mfa>
+		<cam>0.18387096774193548</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>61.935483870967744</amc>
+		<cc>
+			<method name="private final boolean jj_scan_token(int arg0)">8</method>
+			<method name="private final org.apache.lucene.queryParser.Token jj_consume_token(int arg0)">1</method>
+			<method name="public final org.apache.lucene.queryParser.Token getNextToken()">2</method>
+			<method name="public void setPhraseSlop(int arg0)">1</method>
+			<method name="public int getPhraseSlop()">1</method>
+			<method name="private void addClause(java.util.Vector arg0, int arg1, int arg2, org.apache.lucene.search.Query arg3)">8</method>
+			<method name="public void _init_(org.apache.lucene.queryParser.CharStream arg0)">3</method>
+			<method name="private final boolean jj_3_1()">7</method>
+			<method name="public static org.apache.lucene.search.Query parse(String arg0, String arg1, org.apache.lucene.analysis.Analyzer arg2)">1</method>
+			<method name="private final void jj_rescan_token()">6</method>
+			<method name="private final void jj_save(int arg0, int arg1)">3</method>
+			<method name="private org.apache.lucene.search.Query getFieldQuery(String arg0, org.apache.lucene.analysis.Analyzer arg1, String arg2)">5</method>
+			<method name="public void _init_(String arg0, org.apache.lucene.analysis.Analyzer arg1)">1</method>
+			<method name="public final int Modifiers()">1</method>
+			<method name="public final org.apache.lucene.search.Query Term(String arg0)">1</method>
+			<method name="private org.apache.lucene.search.Query getRangeQuery(String arg0, org.apache.lucene.analysis.Analyzer arg1, String arg2, boolean arg3)">4</method>
+			<method name="public final org.apache.lucene.search.Query Clause(String arg0)">1</method>
+			<method name="public void ReInit(org.apache.lucene.queryParser.QueryParserTokenManager arg0)">3</method>
+			<method name="public final void enable_tracing()">1</method>
+			<method name="public final void disable_tracing()">1</method>
+			<method name="public final org.apache.lucene.queryParser.ParseException generateParseException()">10</method>
+			<method name="public void ReInit(org.apache.lucene.queryParser.CharStream arg0)">3</method>
+			<method name="public final int Conjunction()">3</method>
+			<method name="public final org.apache.lucene.queryParser.Token getToken(int arg0)">4</method>
+			<method name="public org.apache.lucene.search.Query parse(String arg0)">1</method>
+			<method name="public final org.apache.lucene.search.Query Query(String arg0)">1</method>
+			<method name="private final int jj_ntk()">2</method>
+			<method name="private void jj_add_error_token(int arg0, int arg1)">12</method>
+			<method name="public void _init_(org.apache.lucene.queryParser.QueryParserTokenManager arg0)">3</method>
+			<method name="public static void main(String[] arg0)">1</method>
+			<method name="private final boolean jj_2_1(int arg0)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.FieldInfos</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>21</cbo>
+		<rfc>39</rfc>
+		<lcom>65</lcom>
+		<ca>8</ca>
+		<ce>13</ce>
+		<npm>0</npm>
+		<lcom3>0.4230769230769231</lcom3>
+		<loc>240</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.23809523809523808</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.0</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="final String fieldName(int arg0)">1</method>
+			<method name="final void write(org.apache.lucene.store.OutputStream arg0)">1</method>
+			<method name="private final void addInternal(String arg0, boolean arg1)">1</method>
+			<method name="final org.apache.lucene.index.FieldInfo fieldInfo(int arg0)">1</method>
+			<method name="void _init_(org.apache.lucene.store.Directory arg0, String arg1)">1</method>
+			<method name="final int fieldNumber(String arg0)">2</method>
+			<method name="final void add(org.apache.lucene.document.Document arg0)">2</method>
+			<method name="private final void read(org.apache.lucene.store.InputStream arg0)">1</method>
+			<method name="final void write(org.apache.lucene.store.Directory arg0, String arg1)">1</method>
+			<method name="final int size()">1</method>
+			<method name="final void add(String arg0, boolean arg1)">3</method>
+			<method name="final org.apache.lucene.index.FieldInfo fieldInfo(String arg0)">1</method>
+			<method name="final void add(org.apache.lucene.index.FieldInfos arg0)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.Lock$With</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>4</noc>
+		<cbo>16</cbo>
+		<rfc>13</rfc>
+		<lcom>1</lcom>
+		<ca>7</ca>
+		<ce>9</ce>
+		<npm>2</npm>
+		<lcom3>0.5</lcom3>
+		<loc>80</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>24.666666666666668</amc>
+		<cc>
+			<method name="public Object run()">1</method>
+			<method name="protected abstract Object doBody()">1</method>
+			<method name="public void _init_(org.apache.lucene.store.Lock arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.Token</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>3</lcom>
+		<ca>4</ca>
+		<ce>3</ce>
+		<npm>3</npm>
+		<lcom3>1.4375</lcom3>
+		<loc>23</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public static final org.apache.lucene.queryParser.Token newToken(int arg0)">2</method>
+			<method name="public final String toString()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentInfo</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>4</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>16</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="public void _init_(String arg0, int arg1, org.apache.lucene.store.Directory arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentsReader</name>
+		<wmc>14</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>29</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>16</ce>
+		<npm>10</npm>
+		<lcom3>0.6</lcom3>
+		<loc>317</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.27380952380952384</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.285714285714285</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.store.Directory arg0, org.apache.lucene.index.SegmentReader[] arg1)">1</method>
+			<method name="public final org.apache.lucene.index.TermEnum terms()">1</method>
+			<method name="public final org.apache.lucene.document.Document document(int arg0)">1</method>
+			<method name="final synchronized void doDelete(int arg0)">1</method>
+			<method name="public final org.apache.lucene.index.TermPositions termPositions()">1</method>
+			<method name="public final int maxDoc()">1</method>
+			<method name="public final org.apache.lucene.index.TermDocs termDocs()">1</method>
+			<method name="public final boolean isDeleted(int arg0)">1</method>
+			<method name="public final org.apache.lucene.index.TermEnum terms(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="public final synchronized int numDocs()">3</method>
+			<method name="final synchronized void doClose()">1</method>
+			<method name="public final synchronized byte[] norms(String arg0)">1</method>
+			<method name="private final int readerIndex(int arg0)">4</method>
+			<method name="public final int docFreq(org.apache.lucene.index.Term arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.FuzzyQuery</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>11</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>2</npm>
+		<lcom3>0.5</lcom3>
+		<loc>33</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.666666666666666</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="final void prepare(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="public String toString(String arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.WildcardQuery</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>21</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="final void prepare(org.apache.lucene.index.IndexReader arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.BooleanScorer$Bucket</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>12</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.ParseException</name>
+		<wmc>5</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>18</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>4</npm>
+		<lcom3>0.55</lcom3>
+		<loc>380</loc>
+		<dam>0.4</dam>
+		<moa>1</moa>
+		<mfa>0.9130434782608695</mfa>
+		<cam>0.4</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>74.0</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.analysis.standard.Token arg0, int[][] arg1, String[] arg2)">1</method>
+			<method name="public void _init_(String arg0)">1</method>
+			<method name="protected String add_escapes(String arg0)">14</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String getMessage()">10</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.StandardAnalyzer</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>10</rfc>
+		<lcom>2</lcom>
+		<ca>0</ca>
+		<ce>11</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>181</loc>
+		<dam>0.5</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>43.75</amc>
+		<cc>
+			<method name="public void _init_(String[] arg0)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public final org.apache.lucene.analysis.TokenStream tokenStream(String arg0, java.io.Reader arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.StandardTokenizerConstants</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>77</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>60.0</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentMergeInfo</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>11</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>8</ce>
+		<npm>0</npm>
+		<lcom3>0.6666666666666666</lcom3>
+		<loc>98</loc>
+		<dam>0.0</dam>
+		<moa>4</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>29.666666666666668</amc>
+		<cc>
+			<method name="void _init_(int arg0, org.apache.lucene.index.SegmentTermEnum arg1, org.apache.lucene.index.SegmentReader arg2)">1</method>
+			<method name="final boolean next()">1</method>
+			<method name="final void close()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentsTermPositions</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>6</rfc>
+		<lcom>3</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>17</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.666666666666667</amc>
+		<cc>
+			<method name="protected final org.apache.lucene.index.SegmentTermDocs termDocs(org.apache.lucene.index.SegmentReader arg0)">1</method>
+			<method name="void _init_(org.apache.lucene.index.SegmentReader[] arg0, int[] arg1)">1</method>
+			<method name="public final int nextPosition()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.DocumentWriter</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>25</cbo>
+		<rfc>57</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>24</ce>
+		<npm>0</npm>
+		<lcom3>0.6326530612244898</lcom3>
+		<loc>646</loc>
+		<dam>1.0</dam>
+		<moa>4</moa>
+		<mfa>0.0</mfa>
+		<cam>0.375</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>78.875</amc>
+		<cc>
+			<method name="private static final void quickSort(org.apache.lucene.index.Posting[] arg0, int arg1, int arg2)">10</method>
+			<method name="private final org.apache.lucene.index.Posting[] sortPostingTable()">2</method>
+			<method name="private final void writePostings(org.apache.lucene.index.Posting[] arg0, String arg1)">1</method>
+			<method name="void _init_(org.apache.lucene.store.Directory arg0, org.apache.lucene.analysis.Analyzer arg1, int arg2)">1</method>
+			<method name="final void addDocument(String arg0, org.apache.lucene.document.Document arg1)">1</method>
+			<method name="private final void invertDocument(org.apache.lucene.document.Document arg0)">1</method>
+			<method name="private final void addPosition(String arg0, String arg1, int arg2)">4</method>
+			<method name="private final void writeNorms(org.apache.lucene.document.Document arg0, String arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.FSOutputStream</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>14</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>5</npm>
+		<lcom3>0.0</lcom3>
+		<loc>49</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.0</amc>
+		<cc>
+			<method name="public void _init_(java.io.File arg0)">1</method>
+			<method name="public final void close()">1</method>
+			<method name="protected final void finalize()">1</method>
+			<method name="public final void flushBuffer(byte[] arg0, int arg1)">1</method>
+			<method name="public final void seek(long arg0)">1</method>
+			<method name="public final long length()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.document.DateField</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>20</rfc>
+		<lcom>22</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>6</npm>
+		<lcom3>0.42857142857142855</lcom3>
+		<loc>95</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.17857142857142858</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.75</amc>
+		<cc>
+			<method name="public static String MIN_DATE_STRING()">1</method>
+			<method name="public static String MAX_DATE_STRING()">2</method>
+			<method name="public static java.util.Date stringToDate(String arg0)">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public static String dateToString(java.util.Date arg0)">1</method>
+			<method name="public static long stringToTime(String arg0)">1</method>
+			<method name="public static String timeToString(long arg0)">4</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.TermDocs</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>7</rfc>
+		<lcom>21</lcom>
+		<ca>11</ca>
+		<ce>4</ce>
+		<npm>7</npm>
+		<lcom3>2.0</lcom3>
+		<loc>7</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35714285714285715</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract int freq()">1</method>
+			<method name="public abstract int read(int[], int[])">1</method>
+			<method name="public abstract boolean skipTo(int)">1</method>
+			<method name="public abstract void seek(org.apache.lucene.index.Term)">1</method>
+			<method name="public abstract boolean next()">1</method>
+			<method name="public abstract void close()">1</method>
+			<method name="public abstract int doc()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.RangeQuery</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>18</cbo>
+		<rfc>33</rfc>
+		<lcom>14</lcom>
+		<ca>1</ca>
+		<ce>17</ce>
+		<npm>2</npm>
+		<lcom3>0.2857142857142857</lcom3>
+		<loc>292</loc>
+		<dam>1.0</dam>
+		<moa>4</moa>
+		<mfa>0.0</mfa>
+		<cam>0.26785714285714285</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>34.875</amc>
+		<cc>
+			<method name="private org.apache.lucene.search.BooleanQuery getQuery()">1</method>
+			<method name="final float sumOfSquaredWeights(org.apache.lucene.search.Searcher arg0)">1</method>
+			<method name="final void prepare(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="org.apache.lucene.search.Scorer scorer(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="void normalize(float arg0)">1</method>
+			<method name="public String toString(String arg0)">7</method>
+			<method name="private String getField()">2</method>
+			<method name="public void _init_(org.apache.lucene.index.Term arg0, org.apache.lucene.index.Term arg1, boolean arg2)">6</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.StandardTokenizer</name>
+		<wmc>13</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>27</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>14</ce>
+		<npm>11</npm>
+		<lcom3>0.525</lcom3>
+		<loc>523</loc>
+		<dam>0.7</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3076923076923077</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>38.46153846153846</amc>
+		<cc>
+			<method name="private final org.apache.lucene.analysis.standard.Token jj_consume_token(int arg0)">1</method>
+			<method name="public void _init_(java.io.Reader arg0)">1</method>
+			<method name="public final org.apache.lucene.analysis.standard.Token getNextToken()">2</method>
+			<method name="public final void enable_tracing()">1</method>
+			<method name="public final void disable_tracing()">1</method>
+			<method name="public void _init_(org.apache.lucene.analysis.standard.CharStream arg0)">2</method>
+			<method name="public final org.apache.lucene.analysis.Token next()">1</method>
+			<method name="public void _init_(org.apache.lucene.analysis.standard.StandardTokenizerTokenManager arg0)">2</method>
+			<method name="private final int jj_ntk()">2</method>
+			<method name="public void ReInit(org.apache.lucene.analysis.standard.StandardTokenizerTokenManager arg0)">2</method>
+			<method name="public final org.apache.lucene.analysis.standard.Token getToken(int arg0)">3</method>
+			<method name="public void ReInit(org.apache.lucene.analysis.standard.CharStream arg0)">2</method>
+			<method name="public final org.apache.lucene.analysis.standard.ParseException generateParseException()">10</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.OutputStream</name>
+		<wmc>15</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>18</cbo>
+		<rfc>18</rfc>
+		<lcom>87</lcom>
+		<ca>14</ca>
+		<ce>4</ce>
+		<npm>13</npm>
+		<lcom3>0.39285714285714285</lcom3>
+		<loc>269</loc>
+		<dam>0.75</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3111111111111111</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.666666666666668</amc>
+		<cc>
+			<method name="protected final void flush()">1</method>
+			<method name="public final long getFilePointer()">1</method>
+			<method name="public final void writeVInt(int arg0)">1</method>
+			<method name="public final void writeLong(long arg0)">1</method>
+			<method name="public abstract long length()">1</method>
+			<method name="public final void writeInt(int arg0)">1</method>
+			<method name="public void seek(long arg0)">1</method>
+			<method name="public final void writeBytes(byte[] arg0, int arg1)">1</method>
+			<method name="public final void writeVLong(long arg0)">1</method>
+			<method name="public final void writeByte(byte arg0)">1</method>
+			<method name="public final void writeChars(String arg0, int arg1, int arg2)">1</method>
+			<method name="public void close()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public final void writeString(String arg0)">1</method>
+			<method name="protected abstract void flushBuffer(byte[], int)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.RAMDirectory</name>
+		<wmc>11</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>24</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>14</ce>
+		<npm>11</npm>
+		<lcom3>0.2</lcom3>
+		<loc>131</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.8636363636363636</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.818181818181818</amc>
+		<cc>
+			<method name="public final String[] list()">2</method>
+			<method name="public final long fileLength(String arg0)">1</method>
+			<method name="public final void deleteFile(String arg0)">1</method>
+			<method name="public final void close()">1</method>
+			<method name="public final void renameFile(String arg0, String arg1)">1</method>
+			<method name="public final long fileModified(String arg0)">1</method>
+			<method name="public final org.apache.lucene.store.InputStream openFile(String arg0)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public final org.apache.lucene.store.Lock makeLock(String arg0)">1</method>
+			<method name="public final boolean fileExists(String arg0)">2</method>
+			<method name="public final org.apache.lucene.store.OutputStream createFile(String arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.util.PriorityQueue</name>
+		<wmc>11</wmc>
+		<dit>1</dit>
+		<noc>3</noc>
+		<cbo>13</cbo>
+		<rfc>12</rfc>
+		<lcom>0</lcom>
+		<ca>11</ca>
+		<ce>2</ce>
+		<npm>7</npm>
+		<lcom3>0.25</lcom3>
+		<loc>242</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.42424242424242425</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>20.818181818181817</amc>
+		<cc>
+			<method name="public final Object pop()">2</method>
+			<method name="public final void adjustTop()">1</method>
+			<method name="public final void clear()">2</method>
+			<method name="public final Object top()">2</method>
+			<method name="private final void upHeap()">3</method>
+			<method name="public void _init_()">1</method>
+			<method name="protected abstract boolean lessThan(Object, Object)">1</method>
+			<method name="public final void put(Object arg0)">1</method>
+			<method name="public final int size()">1</method>
+			<method name="protected final void initialize(int arg0)">1</method>
+			<method name="private final void downHeap()">7</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentMergeQueue</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>9</rfc>
+		<lcom>3</lcom>
+		<ca>2</ca>
+		<ce>6</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>47</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5555555555555556</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>14.666666666666666</amc>
+		<cc>
+			<method name="final void close()">1</method>
+			<method name="void _init_(int arg0)">1</method>
+			<method name="protected final boolean lessThan(Object arg0, Object arg1)">4</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.BooleanScorer$Collector</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>81</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>38.5</amc>
+		<cc>
+			<method name="public void _init_(int arg0, org.apache.lucene.search.BooleanScorer$BucketTable arg1)">1</method>
+			<method name="public final void collect(int arg0, float arg1)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.ParseException</name>
+		<wmc>5</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>18</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>9</ce>
+		<npm>4</npm>
+		<lcom3>0.55</lcom3>
+		<loc>387</loc>
+		<dam>0.4</dam>
+		<moa>1</moa>
+		<mfa>0.9130434782608695</mfa>
+		<cam>0.4</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>75.4</amc>
+		<cc>
+			<method name="public void _init_(String arg0)">1</method>
+			<method name="protected String add_escapes(String arg0)">14</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String getMessage()">10</method>
+			<method name="public void _init_(org.apache.lucene.queryParser.Token arg0, int[][] arg1, String[] arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.Posting</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>22</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>18.0</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.index.Term arg0, int arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentsTermEnum</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>20</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>4</npm>
+		<lcom3>0.5</lcom3>
+		<loc>158</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>30.0</amc>
+		<cc>
+			<method name="public final int docFreq()">1</method>
+			<method name="public final void close()">1</method>
+			<method name="public final org.apache.lucene.index.Term term()">1</method>
+			<method name="void _init_(org.apache.lucene.index.SegmentReader[] arg0, int[] arg1, org.apache.lucene.index.Term arg2)">1</method>
+			<method name="public final boolean next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.Lock</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>16</cbo>
+		<rfc>4</rfc>
+		<lcom>3</lcom>
+		<ca>13</ca>
+		<ce>3</ce>
+		<npm>3</npm>
+		<lcom3>2.0</lcom3>
+		<loc>6</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>1.0</amc>
+		<cc>
+			<method name="public abstract void release()">1</method>
+			<method name="public abstract boolean obtain()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.ExactPhraseScorer</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>8</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>59</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>28.5</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.index.TermPositions[] arg0, byte[] arg1, float arg2)">1</method>
+			<method name="protected final float phraseFreq()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.WhitespaceTokenizer</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>13</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.5</amc>
+		<cc>
+			<method name="public void _init_(java.io.Reader arg0)">1</method>
+			<method name="protected boolean isTokenChar(char arg0)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.CharTokenizer</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>2</noc>
+		<cbo>9</cbo>
+		<rfc>8</rfc>
+		<lcom>4</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>0.8571428571428571</lcom3>
+		<loc>124</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>28.25</amc>
+		<cc>
+			<method name="public void _init_(java.io.Reader arg0)">1</method>
+			<method name="protected char normalize(char arg0)">1</method>
+			<method name="protected abstract boolean isTokenChar(char)">1</method>
+			<method name="public final org.apache.lucene.analysis.Token next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.FSDirectory</name>
+		<wmc>17</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>41</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>14</ce>
+		<npm>14</npm>
+		<lcom3>0.625</lcom3>
+		<loc>370</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.453125</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>20.58823529411765</amc>
+		<cc>
+			<method name="public final String[] list()">1</method>
+			<method name="public static final long fileModified(java.io.File arg0, String arg1)">1</method>
+			<method name="public final void deleteFile(String arg0)">1</method>
+			<method name="public final synchronized void renameFile(String arg0, String arg1)">1</method>
+			<method name="public static org.apache.lucene.store.FSDirectory getDirectory(String arg0, boolean arg1)">1</method>
+			<method name="public final long fileModified(String arg0)">1</method>
+			<method name="public final org.apache.lucene.store.InputStream openFile(String arg0)">1</method>
+			<method name="public final org.apache.lucene.store.Lock makeLock(String arg0)">1</method>
+			<method name="public final long fileLength(String arg0)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public static org.apache.lucene.store.FSDirectory getDirectory(java.io.File arg0, boolean arg1)">1</method>
+			<method name="private void _init_(java.io.File arg0, boolean arg1)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public final synchronized void close()">1</method>
+			<method name="private synchronized void create()">1</method>
+			<method name="public final boolean fileExists(String arg0)">1</method>
+			<method name="public final org.apache.lucene.store.OutputStream createFile(String arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.Searcher</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>19</cbo>
+		<rfc>12</rfc>
+		<lcom>45</lcom>
+		<ca>11</ca>
+		<ce>10</ce>
+		<npm>7</npm>
+		<lcom3>2.0</lcom3>
+		<loc>33</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.38333333333333336</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>2.3</amc>
+		<cc>
+			<method name="public final org.apache.lucene.search.Hits search(org.apache.lucene.search.Query arg0)">1</method>
+			<method name="public void search(org.apache.lucene.search.Query arg0, org.apache.lucene.search.HitCollector arg1)">1</method>
+			<method name="public abstract org.apache.lucene.document.Document doc(int)">1</method>
+			<method name="abstract int maxDoc()">1</method>
+			<method name="public org.apache.lucene.search.Hits search(org.apache.lucene.search.Query arg0, org.apache.lucene.search.Filter arg1)">1</method>
+			<method name="abstract int docFreq(org.apache.lucene.index.Term)">1</method>
+			<method name="public abstract void close()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public abstract void search(org.apache.lucene.search.Query, org.apache.lucene.search.Filter, org.apache.lucene.search.HitCollector)">1</method>
+			<method name="abstract org.apache.lucene.search.TopDocs search(org.apache.lucene.search.Query, org.apache.lucene.search.Filter, int)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.LowerCaseFilter</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>5</rfc>
+		<lcom>1</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>23</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.5</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.analysis.TokenStream arg0)">1</method>
+			<method name="public final org.apache.lucene.analysis.Token next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentTermEnum</name>
+		<wmc>13</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>31</rfc>
+		<lcom>0</lcom>
+		<ca>5</ca>
+		<ce>11</ce>
+		<npm>4</npm>
+		<lcom3>0.7333333333333334</lcom3>
+		<loc>282</loc>
+		<dam>0.5</dam>
+		<moa>5</moa>
+		<mfa>0.0</mfa>
+		<cam>0.21153846153846154</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>19.923076923076923</amc>
+		<cc>
+			<method name="public final int docFreq()">1</method>
+			<method name="public final org.apache.lucene.index.Term term()">1</method>
+			<method name="void _init_(org.apache.lucene.store.InputStream arg0, org.apache.lucene.index.FieldInfos arg1, boolean arg2)">1</method>
+			<method name="final void seek(long arg0, int arg1, org.apache.lucene.index.Term arg2, org.apache.lucene.index.TermInfo arg3)">1</method>
+			<method name="protected Object clone()">2</method>
+			<method name="final void termInfo(org.apache.lucene.index.TermInfo arg0)">1</method>
+			<method name="public final boolean next()">1</method>
+			<method name="final long freqPointer()">1</method>
+			<method name="final long proxPointer()">1</method>
+			<method name="private final org.apache.lucene.index.Term readTerm()">1</method>
+			<method name="final org.apache.lucene.index.TermInfo termInfo()">1</method>
+			<method name="public final void close()">1</method>
+			<method name="private final void growBuffer(int arg0)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.TopDocs</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>12</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="void _init_(int arg0, org.apache.lucene.search.ScoreDoc[] arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.TokenStream</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>19</cbo>
+		<rfc>4</rfc>
+		<lcom>3</lcom>
+		<ca>15</ca>
+		<ce>4</ce>
+		<npm>3</npm>
+		<lcom3>2.0</lcom3>
+		<loc>7</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>1.3333333333333333</amc>
+		<cc>
+			<method name="public abstract org.apache.lucene.analysis.Token next()">1</method>
+			<method name="public void close()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.FSInputStream</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>15</rfc>
+		<lcom>7</lcom>
+		<ca>2</ca>
+		<ce>8</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>114</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.666666666666668</amc>
+		<cc>
+			<method name="public void _init_(java.io.File arg0)">1</method>
+			<method name="public final void close()">1</method>
+			<method name="protected final void finalize()">1</method>
+			<method name="protected final void seekInternal(long arg0)">1</method>
+			<method name="public Object clone()">1</method>
+			<method name="protected final void readInternal(byte[] arg0, int arg1, int arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.TermPositions</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>10</ca>
+		<ce>4</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract int nextPosition()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.Analyzer</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>5</noc>
+		<cbo>14</cbo>
+		<rfc>4</rfc>
+		<lcom>3</lcom>
+		<ca>9</ca>
+		<ce>5</ce>
+		<npm>3</npm>
+		<lcom3>2.0</lcom3>
+		<loc>15</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public org.apache.lucene.analysis.TokenStream tokenStream(java.io.Reader arg0)">1</method>
+			<method name="public org.apache.lucene.analysis.TokenStream tokenStream(String arg0, java.io.Reader arg1)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.document.DocumentFieldList</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>12</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.0</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.document.Field arg0, org.apache.lucene.document.DocumentFieldList arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.BooleanClause</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>22</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>18.0</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.search.Query arg0, boolean arg1, boolean arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.RAMOutputStream</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>13</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>5</npm>
+		<lcom3>0.5</lcom3>
+		<loc>137</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.36</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>26.0</amc>
+		<cc>
+			<method name="public final void close()">1</method>
+			<method name="public void _init_(org.apache.lucene.store.RAMFile arg0)">1</method>
+			<method name="public final void flushBuffer(byte[] arg0, int arg1)">6</method>
+			<method name="public final void seek(long arg0)">1</method>
+			<method name="public final long length()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.QueryParser$JJCalls</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>8</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.0</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.IndexReader$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>9</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>11</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>67</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>32.0</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.store.Directory arg0, org.apache.lucene.store.Lock arg1)">1</method>
+			<method name="public Object doBody()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.PorterStemFilter</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>8</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>37</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.0</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.analysis.TokenStream arg0)">1</method>
+			<method name="public final org.apache.lucene.analysis.Token next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.FieldInfo</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>16</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="void _init_(String arg0, boolean arg1, int arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.FuzzyTermEnum</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>18</rfc>
+		<lcom>7</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>3</npm>
+		<lcom3>0.85</lcom3>
+		<loc>318</loc>
+		<dam>0.1</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.34285714285714286</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>43.0</amc>
+		<cc>
+			<method name="protected final boolean termCompare(org.apache.lucene.index.Term arg0)">3</method>
+			<method name="public final boolean endEnum()">1</method>
+			<method name="private static final int min(int arg0, int arg1, int arg2)">3</method>
+			<method name="private final int editDistance(String arg0, String arg1, int arg2, int arg3)">10</method>
+			<method name="public void _init_(org.apache.lucene.index.IndexReader arg0, org.apache.lucene.index.Term arg1)">1</method>
+			<method name="public void close()">1</method>
+			<method name="protected final float difference()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.SloppyPhraseScorer</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>9</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>0</npm>
+		<lcom3>0.0</lcom3>
+		<loc>108</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>52.5</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.index.TermPositions[] arg0, int arg1, byte[] arg2, float arg3)">1</method>
+			<method name="protected final float phraseFreq()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.de.GermanStemmer</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>24</rfc>
+		<lcom>5</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.6666666666666667</lcom3>
+		<loc>988</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6111111111111112</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>163.16666666666666</amc>
+		<cc>
+			<method name="private StringBuffer substitute(StringBuffer arg0)">23</method>
+			<method name="private StringBuffer resubstitute(StringBuffer arg0)">9</method>
+			<method name="protected String stem(String arg0)">28</method>
+			<method name="private StringBuffer removeParticleDenotion(StringBuffer arg0)">5</method>
+			<method name="public void _init_()">1</method>
+			<method name="private boolean isStemmable(String arg0)">6</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.PhraseQueue</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>3</ca>
+		<ce>4</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>37</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.5</amc>
+		<cc>
+			<method name="void _init_(int arg0)">1</method>
+			<method name="protected final boolean lessThan(Object arg0, Object arg1)">4</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.StandardFilter</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>17</rfc>
+		<lcom>1</lcom>
+		<ca>2</ca>
+		<ce>9</ce>
+		<npm>2</npm>
+		<lcom3>0.5</lcom3>
+		<loc>100</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>31.666666666666668</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_(org.apache.lucene.analysis.TokenStream arg0)">1</method>
+			<method name="public final org.apache.lucene.analysis.Token next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.Token</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>3</lcom>
+		<ca>3</ca>
+		<ce>3</ce>
+		<npm>3</npm>
+		<lcom3>1.4375</lcom3>
+		<loc>23</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public final String toString()">1</method>
+			<method name="public static final org.apache.lucene.analysis.standard.Token newToken(int arg0)">2</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.HitQueue</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>3</ca>
+		<ce>4</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>39</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>18.5</amc>
+		<cc>
+			<method name="void _init_(int arg0)">1</method>
+			<method name="protected final boolean lessThan(Object arg0, Object arg1)">4</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.StopAnalyzer</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>8</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>9</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>170</loc>
+		<dam>0.5</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>41.0</amc>
+		<cc>
+			<method name="public void _init_(String[] arg0)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public final org.apache.lucene.analysis.TokenStream tokenStream(String arg0, java.io.Reader arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.TokenMgrError</name>
+		<wmc>6</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>19</rfc>
+		<lcom>15</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>1.1199999999999999</lcom3>
+		<loc>184</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.875</mfa>
+		<cam>0.5</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>28.833333333333332</amc>
+		<cc>
+			<method name="private static final String LexicalError(boolean arg0, int arg1, int arg2, int arg3, String arg4, char arg5)">2</method>
+			<method name="protected static final String addEscapes(String arg0)">14</method>
+			<method name="public void _init_(String arg0, int arg1)">1</method>
+			<method name="public void _init_(boolean arg0, int arg1, int arg2, int arg3, String arg4, char arg5, int arg6)">1</method>
+			<method name="public String getMessage()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.CharStream</name>
+		<wmc>12</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>12</rfc>
+		<lcom>66</lcom>
+		<ca>3</ca>
+		<ce>4</ce>
+		<npm>12</npm>
+		<lcom3>2.0</lcom3>
+		<loc>12</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract int getLine()">1</method>
+			<method name="public abstract int getEndColumn()">1</method>
+			<method name="public abstract int getEndLine()">1</method>
+			<method name="public abstract int getBeginLine()">1</method>
+			<method name="public abstract void backup(int)">1</method>
+			<method name="public abstract char BeginToken()">1</method>
+			<method name="public abstract int getColumn()">1</method>
+			<method name="public abstract char[] GetSuffix(int)">1</method>
+			<method name="public abstract String GetImage()">1</method>
+			<method name="public abstract char readChar()">1</method>
+			<method name="public abstract int getBeginColumn()">1</method>
+			<method name="public abstract void Done()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.FastCharStream</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>25</rfc>
+		<lcom>3</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>13</npm>
+		<lcom3>0.6025641025641025</lcom3>
+		<loc>237</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.40476190476190477</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.5</amc>
+		<cc>
+			<method name="private final void refill()">1</method>
+			<method name="public final void Done()">1</method>
+			<method name="public final char BeginToken()">1</method>
+			<method name="public void _init_(java.io.Reader arg0)">1</method>
+			<method name="public final int getBeginColumn()">1</method>
+			<method name="public final String GetImage()">1</method>
+			<method name="public final int getLine()">1</method>
+			<method name="public final int getEndLine()">1</method>
+			<method name="public final int getBeginLine()">1</method>
+			<method name="public final char readChar()">1</method>
+			<method name="public final char[] GetSuffix(int arg0)">1</method>
+			<method name="public final int getColumn()">1</method>
+			<method name="public final int getEndColumn()">1</method>
+			<method name="public final void backup(int arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.de.GermanAnalyzer</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>17</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>14</ce>
+		<npm>8</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>908</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>112.125</amc>
+		<cc>
+			<method name="public void _init_(java.io.File arg0)">1</method>
+			<method name="public void _init_(String[] arg0)">1</method>
+			<method name="public void setStemExclusionTable(java.util.Hashtable arg0)">1</method>
+			<method name="public void setStemExclusionTable(java.io.File arg0)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void setStemExclusionTable(String[] arg0)">1</method>
+			<method name="public final org.apache.lucene.analysis.TokenStream tokenStream(String arg0, java.io.Reader arg1)">1</method>
+			<method name="public void _init_(java.util.Hashtable arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.FilteredTermEnum</name>
+		<wmc>9</wmc>
+		<dit>0</dit>
+		<noc>2</noc>
+		<cbo>11</cbo>
+		<rfc>14</rfc>
+		<lcom>8</lcom>
+		<ca>5</ca>
+		<ce>6</ce>
+		<npm>5</npm>
+		<lcom3>0.5</lcom3>
+		<loc>101</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3611111111111111</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.0</amc>
+		<cc>
+			<method name="protected void setEnum(org.apache.lucene.index.TermEnum arg0)">1</method>
+			<method name="protected abstract boolean termCompare(org.apache.lucene.index.Term)">1</method>
+			<method name="protected abstract float difference()">1</method>
+			<method name="protected abstract boolean endEnum()">1</method>
+			<method name="public void _init_(org.apache.lucene.index.IndexReader arg0, org.apache.lucene.index.Term arg1)">1</method>
+			<method name="public void close()">1</method>
+			<method name="public boolean next()">1</method>
+			<method name="public org.apache.lucene.index.Term term()">1</method>
+			<method name="public int docFreq()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.MultiTermQuery</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>2</noc>
+		<cbo>19</cbo>
+		<rfc>30</rfc>
+		<lcom>20</lcom>
+		<ca>2</ca>
+		<ce>17</ce>
+		<npm>2</npm>
+		<lcom3>0.6857142857142857</lcom3>
+		<loc>173</loc>
+		<dam>1.0</dam>
+		<moa>4</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>20.0</amc>
+		<cc>
+			<method name="final float sumOfSquaredWeights(org.apache.lucene.search.Searcher arg0)">1</method>
+			<method name="public void _init_(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="final void normalize(float arg0)">1</method>
+			<method name="private final org.apache.lucene.search.BooleanQuery getQuery()">1</method>
+			<method name="protected void setEnum(org.apache.lucene.search.FilteredTermEnum arg0)">1</method>
+			<method name="final org.apache.lucene.search.Scorer scorer(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="public String toString(String arg0)">5</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentsTermDocs</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>9</cbo>
+		<rfc>16</rfc>
+		<lcom>5</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>7</npm>
+		<lcom3>0.5238095238095238</lcom3>
+		<loc>227</loc>
+		<dam>1.0</dam>
+		<moa>4</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2833333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.0</amc>
+		<cc>
+			<method name="public final void seek(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="public final void close()">1</method>
+			<method name="public boolean skipTo(int arg0)">1</method>
+			<method name="private org.apache.lucene.index.SegmentTermDocs termDocs(int arg0)">1</method>
+			<method name="public final int read(int[] arg0, int[] arg1)">1</method>
+			<method name="public final int doc()">1</method>
+			<method name="protected org.apache.lucene.index.SegmentTermDocs termDocs(org.apache.lucene.index.SegmentReader arg0)">1</method>
+			<method name="public final boolean next()">1</method>
+			<method name="void _init_(org.apache.lucene.index.SegmentReader[] arg0, int[] arg1)">1</method>
+			<method name="public final int freq()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.BooleanScorer$BucketTable</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>10</rfc>
+		<lcom>4</lcom>
+		<ca>2</ca>
+		<ce>6</ce>
+		<npm>4</npm>
+		<lcom3>1.0</lcom3>
+		<loc>77</loc>
+		<dam>0.2</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4375</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.0</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.search.BooleanScorer arg0)">1</method>
+			<method name="public final void collectHits(org.apache.lucene.search.HitCollector arg0)">4</method>
+			<method name="public final int size()">1</method>
+			<method name="public org.apache.lucene.search.HitCollector newCollector(int arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.TermScorer</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>8</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>0</npm>
+		<lcom3>0.30000000000000004</lcom3>
+		<loc>159</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>73.5</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.index.TermDocs arg0, byte[] arg1, float arg2)">1</method>
+			<method name="final void score(org.apache.lucene.search.HitCollector arg0, int arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.Directory</name>
+		<wmc>11</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>29</cbo>
+		<rfc>12</rfc>
+		<lcom>55</lcom>
+		<ca>21</ca>
+		<ce>8</ce>
+		<npm>11</npm>
+		<lcom3>2.0</lcom3>
+		<loc>14</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.8636363636363636</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.2727272727272727</amc>
+		<cc>
+			<method name="public abstract long fileLength(String)">1</method>
+			<method name="public abstract long fileModified(String)">1</method>
+			<method name="public abstract org.apache.lucene.store.Lock makeLock(String)">1</method>
+			<method name="public abstract boolean fileExists(String)">1</method>
+			<method name="public abstract void deleteFile(String)">1</method>
+			<method name="public abstract void renameFile(String, String)">1</method>
+			<method name="public abstract void close()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public abstract String[] list()">1</method>
+			<method name="public abstract org.apache.lucene.store.InputStream openFile(String)">1</method>
+			<method name="public abstract org.apache.lucene.store.OutputStream createFile(String)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.MultiSearcher$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>1</npm>
+		<lcom3>0.33333333333333326</lcom3>
+		<loc>26</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.7</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.5</amc>
+		<cc>
+			<method name="public void collect(int arg0, float arg1)">1</method>
+			<method name="void _init_(org.apache.lucene.search.MultiSearcher arg0, org.apache.lucene.search.HitCollector arg1, int arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.IndexSearcher$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>9</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>1</npm>
+		<lcom3>0.16666666666666674</lcom3>
+		<loc>80</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6428571428571429</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>36.0</amc>
+		<cc>
+			<method name="public final void collect(int arg0, float arg1)">6</method>
+			<method name="void _init_(org.apache.lucene.search.IndexSearcher arg0, java.util.BitSet arg1, int[] arg2, org.apache.lucene.search.HitQueue arg3, int arg4)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.IndexSearcher$2</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>5</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>0.33333333333333326</lcom3>
+		<loc>28</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>11.5</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.search.IndexSearcher arg0, java.util.BitSet arg1, org.apache.lucene.search.HitCollector arg2)">1</method>
+			<method name="public final void collect(int arg0, float arg1)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.PhraseScorer</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>2</noc>
+		<cbo>12</cbo>
+		<rfc>15</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>10</ce>
+		<npm>0</npm>
+		<lcom3>0.55</lcom3>
+		<loc>165</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>31.0</amc>
+		<cc>
+			<method name="protected final void pqToList()">3</method>
+			<method name="protected abstract float phraseFreq()">1</method>
+			<method name="void _init_(org.apache.lucene.index.TermPositions[] arg0, byte[] arg1, float arg2)">1</method>
+			<method name="final void score(org.apache.lucene.search.HitCollector arg0, int arg1)">1</method>
+			<method name="protected final void firstToLast()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.DateFilter</name>
+		<wmc>9</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>33</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>13</ce>
+		<npm>8</npm>
+		<lcom3>0.0</lcom3>
+		<loc>218</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4222222222222222</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>22.88888888888889</amc>
+		<cc>
+			<method name="public final String toString()">1</method>
+			<method name="public static org.apache.lucene.search.DateFilter Before(String arg0, long arg1)">1</method>
+			<method name="public static org.apache.lucene.search.DateFilter After(String arg0, long arg1)">1</method>
+			<method name="public static org.apache.lucene.search.DateFilter After(String arg0, java.util.Date arg1)">1</method>
+			<method name="public void _init_(String arg0, long arg1, long arg2)">1</method>
+			<method name="private void _init_(String arg0)">1</method>
+			<method name="public void _init_(String arg0, java.util.Date arg1, java.util.Date arg2)">1</method>
+			<method name="public static org.apache.lucene.search.DateFilter Before(String arg0, java.util.Date arg1)">1</method>
+			<method name="public final java.util.BitSet bits(org.apache.lucene.index.IndexReader arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.util.Arrays</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>8</rfc>
+		<lcom>6</lcom>
+		<ca>0</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>145</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>35.25</amc>
+		<cc>
+			<method name="private static void mergeSort(String[] arg0, String[] arg1, int arg2, int arg3)">10</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static void sort(String[] arg0)">1</method>
+			<method name="private static void swap(String[] arg0, int arg1, int arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.Scorer</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>3</noc>
+		<cbo>16</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>12</ca>
+		<ce>4</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>5</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>1.5</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="abstract void score(org.apache.lucene.search.HitCollector, int)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentTermDocs</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>14</cbo>
+		<rfc>17</rfc>
+		<lcom>1</lcom>
+		<ca>5</ca>
+		<ce>10</ce>
+		<npm>7</npm>
+		<lcom3>0.5740740740740741</lcom3>
+		<loc>203</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.25</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>18.7</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.index.SegmentReader arg0)">1</method>
+			<method name="public boolean skipTo(int arg0)">1</method>
+			<method name="protected void skippingDoc()">1</method>
+			<method name="public final int doc()">1</method>
+			<method name="public void seek(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="void seek(org.apache.lucene.index.TermInfo arg0)">1</method>
+			<method name="public void close()">1</method>
+			<method name="public final int freq()">1</method>
+			<method name="public int read(int[] arg0, int[] arg1)">1</method>
+			<method name="public boolean next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.FSDirectory$1</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>11</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>41</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.75</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public boolean obtain()">1</method>
+			<method name="void _init_(org.apache.lucene.store.FSDirectory arg0, java.io.File arg1)">1</method>
+			<method name="public void release()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentReader$Norm</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.0</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.store.InputStream arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.PrefixQuery</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>30</rfc>
+		<lcom>11</lcom>
+		<ca>1</ca>
+		<ce>16</ce>
+		<npm>2</npm>
+		<lcom3>0.22222222222222218</lcom3>
+		<loc>166</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.30952380952380953</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>22.285714285714285</amc>
+		<cc>
+			<method name="private org.apache.lucene.search.BooleanQuery getQuery()">1</method>
+			<method name="final float sumOfSquaredWeights(org.apache.lucene.search.Searcher arg0)">1</method>
+			<method name="public void _init_(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="final void prepare(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="org.apache.lucene.search.Scorer scorer(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="void normalize(float arg0)">1</method>
+			<method name="public String toString(String arg0)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentReader$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>9</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>11</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>53</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>25.0</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.index.SegmentReader arg0, org.apache.lucene.store.Lock arg1)">1</method>
+			<method name="public Object doBody()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.WhitespaceAnalyzer</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>10</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+			<method name="public final org.apache.lucene.analysis.TokenStream tokenStream(String arg0, java.io.Reader arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentInfos</name>
+		<wmc>4</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>18</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>9</ce>
+		<npm>3</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>101</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.967391304347826</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>24.0</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+			<method name="public final void write(org.apache.lucene.store.Directory arg0)">1</method>
+			<method name="public final void read(org.apache.lucene.store.Directory arg0)">1</method>
+			<method name="public final org.apache.lucene.index.SegmentInfo info(int arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.FieldsReader</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>20</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>11</ce>
+		<npm>0</npm>
+		<lcom3>0.5</lcom3>
+		<loc>121</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>28.25</amc>
+		<cc>
+			<method name="final org.apache.lucene.document.Document doc(int arg0)">1</method>
+			<method name="final int size()">1</method>
+			<method name="final void close()">1</method>
+			<method name="void _init_(org.apache.lucene.store.Directory arg0, String arg1, org.apache.lucene.index.FieldInfos arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.Filter</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>10</cbo>
+		<rfc>3</rfc>
+		<lcom>1</lcom>
+		<ca>5</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>5</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>1.5</amc>
+		<cc>
+			<method name="public abstract java.util.BitSet bits(org.apache.lucene.index.IndexReader)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.Similarity</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>16</rfc>
+		<lcom>43</lcom>
+		<ca>6</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>0.8888888888888888</lcom3>
+		<loc>86</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.16666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.5</amc>
+		<cc>
+			<method name="static final float tf(float arg0)">1</method>
+			<method name="static final float idf(int arg0, int arg1)">1</method>
+			<method name="static final float coord(int arg0, int arg1)">1</method>
+			<method name="public static final byte norm(int arg0)">1</method>
+			<method name="static final float norm(byte arg0)">1</method>
+			<method name="private static final float[] makeNormTable()">2</method>
+			<method name="static final float idf(org.apache.lucene.index.Term arg0, org.apache.lucene.search.Searcher arg1)">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="static final float tf(int arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.IndexWriter</name>
+		<wmc>21</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>27</cbo>
+		<rfc>71</rfc>
+		<lcom>46</lcom>
+		<ca>2</ca>
+		<ce>27</ce>
+		<npm>8</npm>
+		<lcom3>0.6277777777777778</lcom3>
+		<loc>766</loc>
+		<dam>0.5555555555555556</dam>
+		<moa>5</moa>
+		<mfa>0.0</mfa>
+		<cam>0.16883116883116883</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>35.04761904761905</amc>
+		<cc>
+			<method name="public final synchronized int docCount()">2</method>
+			<method name="protected final void finalize()">1</method>
+			<method name="private final void writeDeleteableFiles(java.util.Vector arg0)">1</method>
+			<method name="public void _init_(java.io.File arg0, org.apache.lucene.analysis.Analyzer arg1, boolean arg2)">1</method>
+			<method name="private final void flushRamSegments()">1</method>
+			<method name="private final void deleteFiles(java.util.Vector arg0, java.util.Vector arg1)">1</method>
+			<method name="public final synchronized void optimize()">1</method>
+			<method name="static org.apache.lucene.index.SegmentInfos access$100(org.apache.lucene.index.IndexWriter arg0)">1</method>
+			<method name="private final void mergeSegments(int arg0)">1</method>
+			<method name="private final void deleteSegments(java.util.Vector arg0)">1</method>
+			<method name="private final void deleteFiles(java.util.Vector arg0, org.apache.lucene.store.Directory arg1)">1</method>
+			<method name="private final java.util.Vector readDeleteableFiles()">1</method>
+			<method name="public void _init_(org.apache.lucene.store.Directory arg0, org.apache.lucene.analysis.Analyzer arg1, boolean arg2)">1</method>
+			<method name="private final synchronized String newSegmentName()">1</method>
+			<method name="static org.apache.lucene.store.Directory access$000(org.apache.lucene.index.IndexWriter arg0)">1</method>
+			<method name="private final void maybeMergeSegments()">1</method>
+			<method name="public final synchronized void close()">1</method>
+			<method name="static void access$200(org.apache.lucene.index.IndexWriter arg0, java.util.Vector arg1)">1</method>
+			<method name="public void _init_(String arg0, org.apache.lucene.analysis.Analyzer arg1, boolean arg2)">1</method>
+			<method name="public final void addDocument(org.apache.lucene.document.Document arg0)">1</method>
+			<method name="public final synchronized void addIndexes(org.apache.lucene.store.Directory[] arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.TokenFilter</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>5</noc>
+		<cbo>9</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>5</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>1.0</lcom3>
+		<loc>10</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void close()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.WildcardTermEnum</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>20</rfc>
+		<lcom>5</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>5</npm>
+		<lcom3>0.8444444444444444</lcom3>
+		<loc>250</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>39.166666666666664</amc>
+		<cc>
+			<method name="protected final boolean termCompare(org.apache.lucene.index.Term arg0)">3</method>
+			<method name="public final boolean endEnum()">1</method>
+			<method name="public static final boolean wildcardEquals(String arg0, int arg1, String arg2, int arg3)">16</method>
+			<method name="public void _init_(org.apache.lucene.index.IndexReader arg0, org.apache.lucene.index.Term arg1)">1</method>
+			<method name="public void close()">1</method>
+			<method name="public final float difference()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.RAMDirectory$1</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>8</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>55</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5555555555555556</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.666666666666668</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.store.RAMDirectory arg0, String arg1)">1</method>
+			<method name="public boolean obtain()">1</method>
+			<method name="public void release()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.document.DocumentFieldEnumeration</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>6</ce>
+		<npm>2</npm>
+		<lcom3>0.0</lcom3>
+		<loc>29</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.333333333333334</amc>
+		<cc>
+			<method name="public final boolean hasMoreElements()">2</method>
+			<method name="void _init_(org.apache.lucene.document.Document arg0)">1</method>
+			<method name="public final Object nextElement()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.IndexReader</name>
+		<wmc>31</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>36</cbo>
+		<rfc>56</rfc>
+		<lcom>457</lcom>
+		<ca>20</ca>
+		<ce>16</ce>
+		<npm>27</npm>
+		<lcom3>0.9166666666666666</lcom3>
+		<loc>221</loc>
+		<dam>0.5</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.22580645161290322</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.064516129032258</amc>
+		<cc>
+			<method name="protected final void finalize()">1</method>
+			<method name="public static boolean indexExists(org.apache.lucene.store.Directory arg0)">1</method>
+			<method name="public static org.apache.lucene.index.IndexReader open(String arg0)">1</method>
+			<method name="public static org.apache.lucene.index.IndexReader open(java.io.File arg0)">1</method>
+			<method name="public final synchronized void delete(int arg0)">1</method>
+			<method name="public static boolean indexExists(String arg0)">1</method>
+			<method name="public final int delete(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="public abstract org.apache.lucene.index.TermEnum terms(org.apache.lucene.index.Term)">1</method>
+			<method name="public abstract org.apache.lucene.index.TermDocs termDocs()">1</method>
+			<method name="public abstract int maxDoc()">1</method>
+			<method name="public abstract org.apache.lucene.index.TermEnum terms()">1</method>
+			<method name="public abstract int docFreq(org.apache.lucene.index.Term)">1</method>
+			<method name="public static boolean indexExists(java.io.File arg0)">1</method>
+			<method name="public org.apache.lucene.index.TermPositions termPositions(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="protected void _init_(org.apache.lucene.store.Directory arg0)">1</method>
+			<method name="public static long lastModified(String arg0)">1</method>
+			<method name="abstract void doDelete(int)">1</method>
+			<method name="public abstract int numDocs()">1</method>
+			<method name="public abstract org.apache.lucene.document.Document document(int)">1</method>
+			<method name="public org.apache.lucene.index.TermDocs termDocs(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="abstract void doClose()">1</method>
+			<method name="public abstract boolean isDeleted(int)">1</method>
+			<method name="public static boolean isLocked(String arg0)">1</method>
+			<method name="public static long lastModified(java.io.File arg0)">1</method>
+			<method name="public static org.apache.lucene.index.IndexReader open(org.apache.lucene.store.Directory arg0)">1</method>
+			<method name="public static long lastModified(org.apache.lucene.store.Directory arg0)">1</method>
+			<method name="public static boolean isLocked(org.apache.lucene.store.Directory arg0)">1</method>
+			<method name="public final synchronized void close()">1</method>
+			<method name="public static void unlock(org.apache.lucene.store.Directory arg0)">1</method>
+			<method name="public abstract org.apache.lucene.index.TermPositions termPositions()">1</method>
+			<method name="public abstract byte[] norms(String)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.CharStream</name>
+		<wmc>12</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>12</rfc>
+		<lcom>66</lcom>
+		<ca>4</ca>
+		<ce>4</ce>
+		<npm>12</npm>
+		<lcom3>2.0</lcom3>
+		<loc>12</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5833333333333334</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract int getLine()">1</method>
+			<method name="public abstract int getEndColumn()">1</method>
+			<method name="public abstract int getEndLine()">1</method>
+			<method name="public abstract int getBeginLine()">1</method>
+			<method name="public abstract void backup(int)">1</method>
+			<method name="public abstract char BeginToken()">1</method>
+			<method name="public abstract int getColumn()">1</method>
+			<method name="public abstract char[] GetSuffix(int)">1</method>
+			<method name="public abstract String GetImage()">1</method>
+			<method name="public abstract char readChar()">1</method>
+			<method name="public abstract int getBeginColumn()">1</method>
+			<method name="public abstract void Done()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.FieldsWriter</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>22</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>11</ce>
+		<npm>0</npm>
+		<lcom3>0.16666666666666674</lcom3>
+		<loc>112</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4666666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>35.333333333333336</amc>
+		<cc>
+			<method name="final void close()">1</method>
+			<method name="void _init_(org.apache.lucene.store.Directory arg0, String arg1, org.apache.lucene.index.FieldInfos arg2)">1</method>
+			<method name="final void addDocument(org.apache.lucene.document.Document arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.TermInfosWriter</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>27</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>11</ce>
+		<npm>0</npm>
+		<lcom3>0.5370370370370371</lcom3>
+		<loc>321</loc>
+		<dam>0.8888888888888888</dam>
+		<moa>5</moa>
+		<mfa>0.0</mfa>
+		<cam>0.42857142857142855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>43.57142857142857</amc>
+		<cc>
+			<method name="final void add(org.apache.lucene.index.Term arg0, org.apache.lucene.index.TermInfo arg1)">1</method>
+			<method name="private final void writeTerm(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="final void close()">1</method>
+			<method name="void _init_(org.apache.lucene.store.Directory arg0, String arg1, org.apache.lucene.index.FieldInfos arg2)">1</method>
+			<method name="private static final int stringDifference(String arg0, String arg1)">4</method>
+			<method name="private void _init_(org.apache.lucene.store.Directory arg0, String arg1, org.apache.lucene.index.FieldInfos arg2, boolean arg3)">1</method>
+			<method name="private void initialize(org.apache.lucene.store.Directory arg0, String arg1, org.apache.lucene.index.FieldInfos arg2, boolean arg3)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.IndexSearcher</name>
+		<wmc>9</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>20</cbo>
+		<rfc>25</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>20</ce>
+		<npm>6</npm>
+		<lcom3>0.0</lcom3>
+		<loc>148</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.24691358024691357</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.333333333333334</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.store.Directory arg0)">1</method>
+			<method name="public final void close()">1</method>
+			<method name="public void _init_(String arg0)">1</method>
+			<method name="public final void search(org.apache.lucene.search.Query arg0, org.apache.lucene.search.Filter arg1, org.apache.lucene.search.HitCollector arg2)">1</method>
+			<method name="final int maxDoc()">1</method>
+			<method name="public void _init_(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="final int docFreq(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="final org.apache.lucene.search.TopDocs search(org.apache.lucene.search.Query arg0, org.apache.lucene.search.Filter arg1, int arg2)">1</method>
+			<method name="public final org.apache.lucene.document.Document doc(int arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.Tokenizer</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>2</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>2</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>1.0</lcom3>
+		<loc>10</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void close()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.TokenMgrError</name>
+		<wmc>6</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>19</rfc>
+		<lcom>15</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>1.1199999999999999</lcom3>
+		<loc>184</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.875</mfa>
+		<cam>0.5</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>28.833333333333332</amc>
+		<cc>
+			<method name="private static final String LexicalError(boolean arg0, int arg1, int arg2, int arg3, String arg4, char arg5)">2</method>
+			<method name="protected static final String addEscapes(String arg0)">14</method>
+			<method name="public void _init_(String arg0, int arg1)">1</method>
+			<method name="public void _init_(boolean arg0, int arg1, int arg2, int arg3, String arg4, char arg5, int arg6)">1</method>
+			<method name="public String getMessage()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.InputStream</name>
+		<wmc>17</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>24</cbo>
+		<rfc>22</rfc>
+		<lcom>92</lcom>
+		<ca>17</ca>
+		<ce>7</ce>
+		<npm>14</npm>
+		<lcom3>0.5446428571428571</lcom3>
+		<loc>417</loc>
+		<dam>0.8571428571428571</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.29411764705882354</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>23.11764705882353</amc>
+		<cc>
+			<method name="public final void readBytes(byte[] arg0, int arg1, int arg2)">1</method>
+			<method name="public final int readVInt()">1</method>
+			<method name="protected abstract void readInternal(byte[], int, int)">1</method>
+			<method name="public final long getFilePointer()">1</method>
+			<method name="public Object clone()">2</method>
+			<method name="public final long readLong()">1</method>
+			<method name="public abstract void close()">1</method>
+			<method name="public final void seek(long arg0)">1</method>
+			<method name="protected final void refill()">1</method>
+			<method name="public final long length()">1</method>
+			<method name="public final int readInt()">1</method>
+			<method name="public final long readVLong()">1</method>
+			<method name="public final byte readByte()">1</method>
+			<method name="public final String readString()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="protected abstract void seekInternal(long)">1</method>
+			<method name="public final void readChars(char[] arg0, int arg1, int arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.IndexWriter$2</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>28</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.index.IndexWriter arg0, java.util.Vector arg1, org.apache.lucene.store.Lock arg2)">1</method>
+			<method name="public Object doBody()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.IndexWriter$1</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>1</npm>
+		<lcom3>0.0</lcom3>
+		<loc>34</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.625</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.0</amc>
+		<cc>
+			<method name="public Object doBody()">1</method>
+			<method name="void _init_(org.apache.lucene.index.IndexWriter arg0, boolean arg1, org.apache.lucene.store.Lock arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.MultiFieldQueryParser</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>11</rfc>
+		<lcom>10</lcom>
+		<ca>0</ca>
+		<ce>10</ce>
+		<npm>5</npm>
+		<lcom3>1.25</lcom3>
+		<loc>91</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.6</amc>
+		<cc>
+			<method name="public static org.apache.lucene.search.Query parse(String arg0, String[] arg1, org.apache.lucene.analysis.Analyzer arg2)">1</method>
+			<method name="public void _init_(org.apache.lucene.queryParser.QueryParserTokenManager arg0)">1</method>
+			<method name="public void _init_(String arg0, org.apache.lucene.analysis.Analyzer arg1)">1</method>
+			<method name="public void _init_(org.apache.lucene.queryParser.CharStream arg0)">1</method>
+			<method name="public static org.apache.lucene.search.Query parse(String arg0, String[] arg1, int[] arg2, org.apache.lucene.analysis.Analyzer arg3)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.de.GermanStemFilter</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>16</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>5</npm>
+		<lcom3>0.33333333333333337</lcom3>
+		<loc>97</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.8</amc>
+		<cc>
+			<method name="public void setExclusionTable(java.util.Hashtable arg0)">1</method>
+			<method name="public void _init_(org.apache.lucene.analysis.TokenStream arg0)">1</method>
+			<method name="public void setStemmer(org.apache.lucene.analysis.de.GermanStemmer arg0)">2</method>
+			<method name="public void _init_(org.apache.lucene.analysis.TokenStream arg0, java.util.Hashtable arg1)">1</method>
+			<method name="public final org.apache.lucene.analysis.Token next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.util.BitVector</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>18</rfc>
+		<lcom>0</lcom>
+		<ca>5</ca>
+		<ce>7</ce>
+		<npm>8</npm>
+		<lcom3>0.5</lcom3>
+		<loc>1228</loc>
+		<dam>0.75</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>135.0</amc>
+		<cc>
+			<method name="public final int count()">3</method>
+			<method name="public final void write(org.apache.lucene.store.Directory arg0, String arg1)">1</method>
+			<method name="public final boolean get(int arg0)">2</method>
+			<method name="public void _init_(int arg0)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public final void set(int arg0)">1</method>
+			<method name="public final int size()">1</method>
+			<method name="public void _init_(org.apache.lucene.store.Directory arg0, String arg1)">1</method>
+			<method name="public final void clear(int arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.FSInputStream$Descriptor</name>
+		<wmc>1</wmc>
+		<dit>2</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>11</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>1.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.store.FSInputStream arg0, java.io.File arg1, String arg2)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.Token</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>10</ca>
+		<ce>3</ce>
+		<npm>6</npm>
+		<lcom3>0.6</lcom3>
+		<loc>55</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5555555555555556</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.5</amc>
+		<cc>
+			<method name="public final int endOffset()">1</method>
+			<method name="public final int startOffset()">1</method>
+			<method name="public void _init_(String arg0, int arg1, int arg2)">1</method>
+			<method name="public void _init_(String arg0, int arg1, int arg2, String arg3)">1</method>
+			<method name="public final String termText()">1</method>
+			<method name="public final String type()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.TermInfo</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>6</rfc>
+		<lcom>0</lcom>
+		<ca>8</ca>
+		<ce>2</ce>
+		<npm>0</npm>
+		<lcom3>0.0</lcom3>
+		<loc>88</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.55</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.0</amc>
+		<cc>
+			<method name="final void set(int arg0, long arg1, long arg2)">1</method>
+			<method name="void _init_()">1</method>
+			<method name="void _init_(int arg0, long arg1, long arg2)">1</method>
+			<method name="void _init_(org.apache.lucene.index.TermInfo arg0)">1</method>
+			<method name="final void set(org.apache.lucene.index.TermInfo arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.HitDoc</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>18</loc>
+		<dam>0.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="void _init_(float arg0, int arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.RAMFile</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>4</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>15</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>11.0</amc>
+		<cc>
+			<method name="void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.de.WordlistLoader</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>15</rfc>
+		<lcom>10</lcom>
+		<ca>1</ca>
+		<ce>10</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>124</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.24</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>23.8</amc>
+		<cc>
+			<method name="public static java.util.Hashtable getWordtable(String arg0, String arg1)">3</method>
+			<method name="private static java.util.Hashtable makeWordTable(String[] arg0, int arg1)">2</method>
+			<method name="public static java.util.Hashtable getWordtable(String arg0)">2</method>
+			<method name="public static java.util.Hashtable getWordtable(java.io.File arg0)">4</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.store.RAMInputStream</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>7</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>0.5</lcom3>
+		<loc>85</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>19.75</amc>
+		<cc>
+			<method name="public final void readInternal(byte[] arg0, int arg1, int arg2)">3</method>
+			<method name="public final void close()">1</method>
+			<method name="public void _init_(org.apache.lucene.store.RAMFile arg0)">1</method>
+			<method name="public final void seekInternal(long arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentReader</name>
+		<wmc>21</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>39</cbo>
+		<rfc>65</rfc>
+		<lcom>132</lcom>
+		<ca>11</ca>
+		<ce>31</ce>
+		<npm>10</npm>
+		<lcom3>0.795</lcom3>
+		<loc>594</loc>
+		<dam>0.5</dam>
+		<moa>6</moa>
+		<mfa>0.0</mfa>
+		<cam>0.20238095238095238</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>26.80952380952381</amc>
+		<cc>
+			<method name="public final org.apache.lucene.index.TermEnum terms()">1</method>
+			<method name="final org.apache.lucene.store.InputStream normStream(String arg0)">1</method>
+			<method name="final synchronized void doDelete(int arg0)">1</method>
+			<method name="private final void closeNorms()">1</method>
+			<method name="public final synchronized boolean isDeleted(int arg0)">3</method>
+			<method name="public final int numDocs()">2</method>
+			<method name="static String access$000(org.apache.lucene.index.SegmentReader arg0)">1</method>
+			<method name="public final org.apache.lucene.index.TermPositions termPositions()">1</method>
+			<method name="public final synchronized org.apache.lucene.document.Document document(int arg0)">1</method>
+			<method name="public final int maxDoc()">1</method>
+			<method name="private final void openNorms()">1</method>
+			<method name="void _init_(org.apache.lucene.index.SegmentInfo arg0, boolean arg1)">1</method>
+			<method name="final java.util.Vector files()">1</method>
+			<method name="static final boolean hasDeletions(org.apache.lucene.index.SegmentInfo arg0)">1</method>
+			<method name="public final org.apache.lucene.index.TermDocs termDocs()">1</method>
+			<method name="public final org.apache.lucene.index.TermEnum terms(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="final synchronized void doClose()">1</method>
+			<method name="final void norms(String arg0, byte[] arg1, int arg2)">1</method>
+			<method name="void _init_(org.apache.lucene.index.SegmentInfo arg0)">1</method>
+			<method name="public final int docFreq(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="public final byte[] norms(String arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.PhrasePositions</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>10</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>5</ce>
+		<npm>0</npm>
+		<lcom3>0.5</lcom3>
+		<loc>70</loc>
+		<dam>0.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.0</amc>
+		<cc>
+			<method name="void _init_(org.apache.lucene.index.TermPositions arg0, int arg1)">1</method>
+			<method name="final void firstPosition()">1</method>
+			<method name="final void next()">1</method>
+			<method name="final boolean nextPosition()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentTermPositions</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>16</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>9</ce>
+		<npm>4</npm>
+		<lcom3>0.5555555555555556</lcom3>
+		<loc>99</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35714285714285715</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.714285714285714</amc>
+		<cc>
+			<method name="public final void close()">1</method>
+			<method name="void _init_(org.apache.lucene.index.SegmentReader arg0)">1</method>
+			<method name="protected final void skippingDoc()">1</method>
+			<method name="final void seek(org.apache.lucene.index.TermInfo arg0)">1</method>
+			<method name="public final int read(int[] arg0, int[] arg1)">1</method>
+			<method name="public final boolean next()">1</method>
+			<method name="public final int nextPosition()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.QueryParserTokenManager</name>
+		<wmc>24</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>40</rfc>
+		<lcom>162</lcom>
+		<ca>2</ca>
+		<ce>11</ce>
+		<npm>7</npm>
+		<lcom3>0.7574370709382151</lcom3>
+		<loc>2098</loc>
+		<dam>0.21052631578947367</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.391304347826087</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>85.625</amc>
+		<cc>
+			<method name="private static final boolean jjCanMove_0(int arg0, int arg1, int arg2, long arg3, long arg4)">5</method>
+			<method name="private final int jjStopStringLiteralDfa_1(int arg0, long arg1)">2</method>
+			<method name="public final org.apache.lucene.queryParser.Token getNextToken()">14</method>
+			<method name="private final void jjCheckNAddStates(int arg0)">1</method>
+			<method name="public void SwitchTo(int arg0)">3</method>
+			<method name="private final org.apache.lucene.queryParser.Token jjFillToken()">2</method>
+			<method name="public void ReInit(org.apache.lucene.queryParser.CharStream arg0)">1</method>
+			<method name="private final int jjStartNfa_1(int arg0, long arg1)">1</method>
+			<method name="private final void jjCheckNAddStates(int arg0, int arg1)">2</method>
+			<method name="public void _init_(org.apache.lucene.queryParser.CharStream arg0)">1</method>
+			<method name="public void _init_(org.apache.lucene.queryParser.CharStream arg0, int arg1)">1</method>
+			<method name="private final int jjStopAtPos(int arg0, int arg1)">1</method>
+			<method name="private final int jjStartNfaWithStates_1(int arg0, int arg1, int arg2)">1</method>
+			<method name="private final void jjCheckNAddTwoStates(int arg0, int arg1)">1</method>
+			<method name="private final void jjCheckNAdd(int arg0)">2</method>
+			<method name="private final int jjMoveStringLiteralDfa0_0()">1</method>
+			<method name="private final int jjMoveStringLiteralDfa0_1()">9</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private final int jjMoveNfa_0(int arg0, int arg1)">17</method>
+			<method name="private final void ReInitRounds()">2</method>
+			<method name="private final void jjAddStates(int arg0, int arg1)">2</method>
+			<method name="public void ReInit(org.apache.lucene.queryParser.CharStream arg0, int arg1)">1</method>
+			<method name="private final int jjMoveNfa_1(int arg0, int arg1)">111</method>
+			<method name="public void setDebugStream(java.io.PrintStream arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.StopFilter</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>9</rfc>
+		<lcom>0</lcom>
+		<ca>3</ca>
+		<ce>8</ce>
+		<npm>4</npm>
+		<lcom3>0.3333333333333333</lcom3>
+		<loc>70</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>16.25</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.analysis.TokenStream arg0, String[] arg1)">1</method>
+			<method name="public static final java.util.Hashtable makeStopTable(String[] arg0)">2</method>
+			<method name="public void _init_(org.apache.lucene.analysis.TokenStream arg0, java.util.Hashtable arg1)">1</method>
+			<method name="public final org.apache.lucene.analysis.Token next()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.index.SegmentMerger</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>28</cbo>
+		<rfc>61</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>27</ce>
+		<npm>0</npm>
+		<lcom3>0.5308641975308642</lcom3>
+		<loc>638</loc>
+		<dam>1.0</dam>
+		<moa>7</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>61.9</amc>
+		<cc>
+			<method name="private final void mergeFields()">1</method>
+			<method name="private final void mergeTermInfos()">1</method>
+			<method name="private final void mergeTermInfo(org.apache.lucene.index.SegmentMergeInfo[] arg0, int arg1)">1</method>
+			<method name="final void add(org.apache.lucene.index.SegmentReader arg0)">1</method>
+			<method name="final org.apache.lucene.index.SegmentReader segmentReader(int arg0)">1</method>
+			<method name="final void merge()">1</method>
+			<method name="private final void mergeTerms()">1</method>
+			<method name="private final int appendPostings(org.apache.lucene.index.SegmentMergeInfo[] arg0, int arg1)">1</method>
+			<method name="void _init_(org.apache.lucene.store.Directory arg0, String arg1)">1</method>
+			<method name="private final void mergeNorms()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.LetterTokenizer</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>6</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(java.io.Reader arg0)">1</method>
+			<method name="protected boolean isTokenChar(char arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.LowerCaseTokenizer</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>2</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(java.io.Reader arg0)">1</method>
+			<method name="protected char normalize(char arg0)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.BooleanScorer$SubScorer</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>2</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>30</loc>
+		<dam>0.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>24.0</amc>
+		<cc>
+			<method name="public void _init_(org.apache.lucene.search.Scorer arg0, boolean arg1, boolean arg2, org.apache.lucene.search.HitCollector arg3, org.apache.lucene.search.BooleanScorer$SubScorer arg4)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.SimpleAnalyzer</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>10</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public void _init_()">1</method>
+			<method name="public final org.apache.lucene.analysis.TokenStream tokenStream(String arg0, java.io.Reader arg1)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.queryParser.QueryParserConstants</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>3</ce>
+		<npm>0</npm>
+		<lcom3>2.0</lcom3>
+		<loc>132</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>104.0</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.TermQuery</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>18</cbo>
+		<rfc>17</rfc>
+		<lcom>0</lcom>
+		<ca>4</ca>
+		<ce>14</ce>
+		<npm>2</npm>
+		<lcom3>0.33333333333333337</lcom3>
+		<loc>118</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>22.0</amc>
+		<cc>
+			<method name="final float sumOfSquaredWeights(org.apache.lucene.search.Searcher arg0)">1</method>
+			<method name="public void _init_(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="org.apache.lucene.search.Scorer scorer(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="final void normalize(float arg0)">1</method>
+			<method name="public String toString(String arg0)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.util.Constants</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>5</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>0</npm>
+		<lcom3>1.0</lcom3>
+		<loc>44</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.0</amc>
+		<cc>
+			<method name="private void _init_()">1</method>
+			<method name="static void _clinit_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.BooleanQuery</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>24</rfc>
+		<lcom>0</lcom>
+		<ca>5</ca>
+		<ce>12</ce>
+		<npm>4</npm>
+		<lcom3>0.0</lcom3>
+		<loc>244</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.25</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>29.375</amc>
+		<cc>
+			<method name="public final void add(org.apache.lucene.search.Query arg0, boolean arg1, boolean arg2)">1</method>
+			<method name="void prepare(org.apache.lucene.index.IndexReader arg0)">2</method>
+			<method name="final float sumOfSquaredWeights(org.apache.lucene.search.Searcher arg0)">1</method>
+			<method name="final void normalize(float arg0)">3</method>
+			<method name="public void _init_()">1</method>
+			<method name="public final void add(org.apache.lucene.search.BooleanClause arg0)">1</method>
+			<method name="final org.apache.lucene.search.Scorer scorer(org.apache.lucene.index.IndexReader arg0)">1</method>
+			<method name="public String toString(String arg0)">6</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.document.Field</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>22</rfc>
+		<lcom>49</lcom>
+		<ca>7</ca>
+		<ce>6</ce>
+		<npm>13</npm>
+		<lcom3>0.38461538461538464</lcom3>
+		<loc>286</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3392857142857143</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>19.0</amc>
+		<cc>
+			<method name="void _init_(String arg0, java.io.Reader arg1)">3</method>
+			<method name="public static final org.apache.lucene.document.Field UnStored(String arg0, String arg1)">1</method>
+			<method name="public static final org.apache.lucene.document.Field Text(String arg0, java.io.Reader arg1)">1</method>
+			<method name="public final boolean isStored()">1</method>
+			<method name="public final boolean isTokenized()">1</method>
+			<method name="public String name()">1</method>
+			<method name="public static final org.apache.lucene.document.Field UnIndexed(String arg0, String arg1)">1</method>
+			<method name="public static final org.apache.lucene.document.Field Keyword(String arg0, String arg1)">1</method>
+			<method name="public void _init_(String arg0, String arg1, boolean arg2, boolean arg3, boolean arg4)">3</method>
+			<method name="public final String toString()">15</method>
+			<method name="public final boolean isIndexed()">1</method>
+			<method name="public static final org.apache.lucene.document.Field Text(String arg0, String arg1)">1</method>
+			<method name="public String stringValue()">1</method>
+			<method name="public java.io.Reader readerValue()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.analysis.standard.StandardTokenizerTokenManager</name>
+		<wmc>17</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>12</cbo>
+		<rfc>33</rfc>
+		<lcom>70</lcom>
+		<ca>1</ca>
+		<ce>11</ce>
+		<npm>7</npm>
+		<lcom3>0.8383620689655172</lcom3>
+		<loc>3213</loc>
+		<dam>0.13793103448275862</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.46875</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>186.2941176470588</amc>
+		<cc>
+			<method name="private final void jjCheckNAddStates(int arg0)">1</method>
+			<method name="public void SwitchTo(int arg0)">3</method>
+			<method name="public final org.apache.lucene.analysis.standard.Token getNextToken()">11</method>
+			<method name="public void _init_(org.apache.lucene.analysis.standard.CharStream arg0)">1</method>
+			<method name="public void ReInit(org.apache.lucene.analysis.standard.CharStream arg0, int arg1)">1</method>
+			<method name="private final void jjCheckNAddStates(int arg0, int arg1)">2</method>
+			<method name="private final void jjCheckNAddTwoStates(int arg0, int arg1)">1</method>
+			<method name="private final int jjMoveStringLiteralDfa0_0()">1</method>
+			<method name="private final void jjCheckNAdd(int arg0)">2</method>
+			<method name="public void _init_(org.apache.lucene.analysis.standard.CharStream arg0, int arg1)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private final int jjMoveNfa_0(int arg0, int arg1)">217</method>
+			<method name="private final void ReInitRounds()">2</method>
+			<method name="private final void jjAddStates(int arg0, int arg1)">2</method>
+			<method name="public void ReInit(org.apache.lucene.analysis.standard.CharStream arg0)">1</method>
+			<method name="public void setDebugStream(java.io.PrintStream arg0)">1</method>
+			<method name="private final org.apache.lucene.analysis.standard.Token jjFillToken()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>org.apache.lucene.search.MultiSearcher</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>22</rfc>
+		<lcom>0</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>5</npm>
+		<lcom3>0.47619047619047616</lcom3>
+		<loc>285</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.32142857142857145</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>34.25</amc>
+		<cc>
+			<method name="public final void close()">1</method>
+			<method name="public final void search(org.apache.lucene.search.Query arg0, org.apache.lucene.search.Filter arg1, org.apache.lucene.search.HitCollector arg2)">1</method>
+			<method name="final int maxDoc()">1</method>
+			<method name="public void _init_(org.apache.lucene.search.Searcher[] arg0)">1</method>
+			<method name="public final int searcherIndex(int arg0)">4</method>
+			<method name="final int docFreq(org.apache.lucene.index.Term arg0)">1</method>
+			<method name="final org.apache.lucene.search.TopDocs search(org.apache.lucene.search.Query arg0, org.apache.lucene.search.Filter arg1, int arg2)">1</method>
+			<method name="public final org.apache.lucene.document.Document doc(int arg0)">1</method>
+		</cc>
+	</class>
+
+
+
+
+</metrics>
