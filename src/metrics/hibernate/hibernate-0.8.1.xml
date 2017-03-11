@@ -1,0 +1,4562 @@
+<metrics>
+	<class>
+		<name>cirrus.hibernate.helpers.ArrayHelper</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>9</rfc>
+		<lcom>6</lcom>
+		<ca>3</ca>
+		<ce>5</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>38</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.5</amc>
+		<cc>
+			<method name="public static String[] toStringArray(Object[] objects)">2</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static String[] toStringArray(java.util.List list)">1</method>
+			<method name="public static Object[] typecast(Object[] array, Object[] to)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.ArrayType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>19</rfc>
+		<lcom>13</lcom>
+		<ca>2</ca>
+		<ce>16</ce>
+		<npm>6</npm>
+		<lcom3>0.8</lcom3>
+		<loc>59</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2962962962962963</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.666666666666666</amc>
+		<cc>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public boolean isPrimitiveArray()">1</method>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type elementType, boolean primitive)">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Class returnedClass()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.PersistenceException</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>28</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>24</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.OneToMany</name>
+		<wmc>5</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>18</rfc>
+		<lcom>4</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>5</npm>
+		<lcom3>0.0</lcom3>
+		<loc>90</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.8823529411764706</mfa>
+		<cam>0.37142857142857144</cam>
+		<ic>3</ic>
+		<cbm>3</cbm>
+		<amc>16.8</amc>
+		<cc>
+			<method name="public boolean removeAll(java.util.Collection c)">4</method>
+			<method name="public void _init_(Class theClass, String property, cirrus.hibernate.Persistent owner, cirrus.hibernate.Session db)">1</method>
+			<method name="public boolean add(Object o)">1</method>
+			<method name="public boolean remove(Object o)">2</method>
+			<method name="public boolean retainAll(java.util.Collection c)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.DomesticCat</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>5</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>16</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public void setName(String newName)">1</method>
+			<method name="public String getName()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.PersistableCollection</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>4</rfc>
+		<lcom>6</lcom>
+		<ca>6</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>4</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void setCollectionType(cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract void replaceElements(java.util.Map)">1</method>
+			<method name="public abstract java.util.Iterator elements()">1</method>
+			<method name="public abstract cirrus.hibernate.type.Type getElementType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.IDGenerator</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>9</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract java.io.Serializable generate(java.sql.Connection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.DoubleType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.Map</name>
+		<wmc>12</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>29</cbo>
+		<rfc>51</rfc>
+		<lcom>16</lcom>
+		<ca>2</ca>
+		<ce>28</ce>
+		<npm>10</npm>
+		<lcom3>0.7818181818181817</lcom3>
+		<loc>285</loc>
+		<dam>1.0</dam>
+		<moa>5</moa>
+		<mfa>0.8783783783783784</mfa>
+		<cam>0.21212121212121213</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>22.333333333333332</amc>
+		<cc>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public Object remove(Object index)">1</method>
+			<method name="void _init_(cirrus.hibernate.Session session)">1</method>
+			<method name="public void _init_(cirrus.hibernate.Session session, long id, cirrus.hibernate.type.MapType type)">1</method>
+			<method name="public void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public void write(cirrus.hibernate.impl.Action action)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public java.util.Iterator elements()">1</method>
+			<method name="public Object put(Object index, Object value)">1</method>
+			<method name="public void setCollectionType(cirrus.hibernate.type.Type type)">1</method>
+			<method name="public cirrus.hibernate.Key getKey()">1</method>
+			<method name="public void replaceElements(java.util.Map replacements)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.ClassMapSQLCache</name>
+		<wmc>13</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>36</rfc>
+		<lcom>38</lcom>
+		<ca>2</ca>
+		<ce>15</ce>
+		<npm>11</npm>
+		<lcom3>0.8717948717948718</lcom3>
+		<loc>328</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.24358974358974358</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>23.23076923076923</amc>
+		<cc>
+			<method name="public String sqlSelectByKey()">1</method>
+			<method name="public int sqlInsertUpdateKeyIndex()">1</method>
+			<method name="public String sqlUpdate()">1</method>
+			<method name="public String sqlDelete()">1</method>
+			<method name="public String sqlInsert()">1</method>
+			<method name="private java.lang.reflect.Method[] getSetters()">1</method>
+			<method name="public String sqlSelect(String query)">2</method>
+			<method name="public cirrus.hibernate.map.PropertyMap getProperty(int i)">1</method>
+			<method name="public void _init_(cirrus.hibernate.map.ClassMap map)">1</method>
+			<method name="private java.lang.reflect.Method[] getGetters()">1</method>
+			<method name="public cirrus.hibernate.map.PropertyMap[] getProperties()">1</method>
+			<method name="public Object[] getPropertyValues(cirrus.hibernate.Persistent object)">1</method>
+			<method name="public void setPropertyValues(cirrus.hibernate.Persistent object, Object[] values)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.Action</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>6</rfc>
+		<lcom>4</lcom>
+		<ca>7</ca>
+		<ce>3</ce>
+		<npm>3</npm>
+		<lcom3>0.8928571428571428</lcom3>
+		<loc>77</loc>
+		<dam>0.42857142857142855</dam>
+		<moa>6</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>13.0</amc>
+		<cc>
+			<method name="public final cirrus.hibernate.impl.Action next()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="public final cirrus.hibernate.impl.Action delete()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.OneToOne</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>10</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>10</ce>
+		<npm>3</npm>
+		<lcom3>0.0</lcom3>
+		<loc>51</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.666666666666666</amc>
+		<cc>
+			<method name="public void _init_(Class theClass, String property, cirrus.hibernate.Persistent owner, cirrus.hibernate.Session db)">1</method>
+			<method name="public void set(Object o)">3</method>
+			<method name="public Object get()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.DateType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>14</rfc>
+		<lcom>15</lcom>
+		<ca>1</ca>
+		<ce>15</ce>
+		<npm>6</npm>
+		<lcom3>1.0</lcom3>
+		<loc>44</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2857142857142857</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.166666666666667</amc>
+		<cc>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.Set</name>
+		<wmc>14</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>31</cbo>
+		<rfc>50</rfc>
+		<lcom>11</lcom>
+		<ca>2</ca>
+		<ce>30</ce>
+		<npm>12</npm>
+		<lcom3>0.7692307692307693</lcom3>
+		<loc>277</loc>
+		<dam>1.0</dam>
+		<moa>5</moa>
+		<mfa>0.7317073170731707</mfa>
+		<cam>0.19230769230769232</cam>
+		<ic>2</ic>
+		<cbm>2</cbm>
+		<amc>18.428571428571427</amc>
+		<cc>
+			<method name="void _init_(cirrus.hibernate.Session session)">1</method>
+			<method name="public boolean removeAll(java.util.Collection c)">1</method>
+			<method name="public void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public boolean retainAll(java.util.Collection c)">1</method>
+			<method name="public java.util.Iterator elements()">1</method>
+			<method name="public void setCollectionType(cirrus.hibernate.type.Type type)">1</method>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public void _init_(cirrus.hibernate.Session session, long id, cirrus.hibernate.type.SetType type)">1</method>
+			<method name="public void write(cirrus.hibernate.impl.Action action)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public boolean remove(Object index)">1</method>
+			<method name="public boolean add(Object value)">1</method>
+			<method name="public cirrus.hibernate.Key getKey()">1</method>
+			<method name="public void replaceElements(java.util.Map replacements)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.SetType</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>10</rfc>
+		<lcom>3</lcom>
+		<ca>3</ca>
+		<ce>15</ce>
+		<npm>3</npm>
+		<lcom3>1.3333333333333333</lcom3>
+		<loc>42</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public Class returnedClass()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.Assigned</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>3</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>1.0</lcom3>
+		<loc>17</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.333333333333333</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java.io.Serializable generate(java.sql.Connection dbConnection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.BuggyTooth</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>12</rfc>
+		<lcom>4</lcom>
+		<ca>0</ca>
+		<ce>13</ce>
+		<npm>4</npm>
+		<lcom3>0.8333333333333334</lcom3>
+		<loc>43</loc>
+		<dam>0.5</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.25</amc>
+		<cc>
+			<method name="public void setBug(String newBug)">1</method>
+			<method name="public String getBug()">1</method>
+			<method name="public static void main(String[] args)">2</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.CollectionTypeProxy</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>13</rfc>
+		<lcom>8</lcom>
+		<ca>1</ca>
+		<ce>12</ce>
+		<npm>5</npm>
+		<lcom3>0.75</lcom3>
+		<loc>58</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.4</amc>
+		<cc>
+			<method name="public void _init_(String role, Class type)">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public void _init_(String role)">1</method>
+			<method name="public cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.IDGenerationException</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>4</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.LongType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.RelationalDatabaseSession$Entry</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>8</rfc>
+		<lcom>11</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>0</npm>
+		<lcom3>0.7083333333333334</lcom3>
+		<loc>46</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.38095238095238093</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="static cirrus.hibernate.impl.Action access$0(cirrus.hibernate.impl.RelationalDatabaseSession$Entry)">1</method>
+			<method name="private void _init_(cirrus.hibernate.impl.RelationalDatabaseSession, cirrus.hibernate.Persistent object, cirrus.hibernate.impl.Action action)">1</method>
+			<method name="static void access$4(cirrus.hibernate.impl.RelationalDatabaseSession$Entry, boolean)">1</method>
+			<method name="static cirrus.hibernate.Persistent access$3(cirrus.hibernate.impl.RelationalDatabaseSession$Entry)">1</method>
+			<method name="static boolean access$2(cirrus.hibernate.impl.RelationalDatabaseSession$Entry)">1</method>
+			<method name="void _init_(cirrus.hibernate.impl.RelationalDatabaseSession, cirrus.hibernate.Persistent, cirrus.hibernate.impl.Action, cirrus.hibernate.impl.RelationalDatabaseSession$Entry)">1</method>
+			<method name="static void access$1(cirrus.hibernate.impl.RelationalDatabaseSession$Entry, cirrus.hibernate.impl.Action)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.MappingException</name>
+		<wmc>6</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>13</rfc>
+		<lcom>3</lcom>
+		<ca>11</ca>
+		<ce>6</ce>
+		<npm>6</npm>
+		<lcom3>0.4</lcom3>
+		<loc>55</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.875</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>1</ic>
+		<cbm>2</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="public String toString()">2</method>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_(Exception root)">1</method>
+			<method name="public Exception getRoot()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String getMessage()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.ByteType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.FloatType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Foo</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>15</cbo>
+		<rfc>12</rfc>
+		<lcom>4</lcom>
+		<ca>2</ca>
+		<ce>13</ce>
+		<npm>4</npm>
+		<lcom3>0.8333333333333334</lcom3>
+		<loc>41</loc>
+		<dam>0.5</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.75</amc>
+		<cc>
+			<method name="public java.util.List getListOfArrays()">1</method>
+			<method name="public static cirrus.hibernate.map.ClassMap getMap()">2</method>
+			<method name="public void setListOfArrays(java.util.List newListOfArrays)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.StringGenerator</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>23</rfc>
+		<lcom>4</lcom>
+		<ca>0</ca>
+		<ce>14</ce>
+		<npm>3</npm>
+		<lcom3>0.7777777777777777</lcom3>
+		<loc>101</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>23.5</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static String toString(String key)">1</method>
+			<method name="public java.io.Serializable generate(java.sql.Connection dbConnection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.HiLoGenerator</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>18</rfc>
+		<lcom>1</lcom>
+		<ca>5</ca>
+		<ce>12</ce>
+		<npm>2</npm>
+		<lcom3>0.6</lcom3>
+		<loc>112</loc>
+		<dam>0.8</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>34.666666666666664</amc>
+		<cc>
+			<method name="public void _init_(String tableName, String columnName)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public synchronized java.io.Serializable generate(java.sql.Connection dbConnection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.PersistentEnum</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>2</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract int toInt()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Cat</name>
+		<wmc>18</wmc>
+		<dit>0</dit>
+		<noc>2</noc>
+		<cbo>23</cbo>
+		<rfc>26</rfc>
+		<lcom>127</lcom>
+		<ca>3</ca>
+		<ce>20</ce>
+		<npm>17</npm>
+		<lcom3>0.907563025210084</lcom3>
+		<loc>144</loc>
+		<dam>0.8571428571428571</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2222222222222222</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.611111111111111</amc>
+		<cc>
+			<method name="public java.util.Set getKittens()">1</method>
+			<method name="public java.util.Map getBiometrics()">1</method>
+			<method name="public cirrus.hibernate.eg.Cat getMate()">1</method>
+			<method name="public java.util.Date getBirthdate()">1</method>
+			<method name="public void create(cirrus.hibernate.Session db)">1</method>
+			<method name="public cirrus.hibernate.eg.Tooth[] getTeeth()">1</method>
+			<method name="public void setKittens(java.util.Set newKittens)">1</method>
+			<method name="protected void bitten()">1</method>
+			<method name="public void setMother(cirrus.hibernate.eg.Cat newMother)">1</method>
+			<method name="public void bite(cirrus.hibernate.eg.Cat cat)">3</method>
+			<method name="public void load(cirrus.hibernate.Session db)">1</method>
+			<method name="public void setBiometrics(java.util.Map newBiometrics)">1</method>
+			<method name="public void setBirthdate(java.util.Date newBirthdate)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public cirrus.hibernate.eg.Cat getMother()">1</method>
+			<method name="public void setMate(cirrus.hibernate.eg.Cat newMate)">1</method>
+			<method name="public void delete(cirrus.hibernate.Session db)">1</method>
+			<method name="public void setTeeth(cirrus.hibernate.eg.Tooth[] newTeeth)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.StringType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>12</rfc>
+		<lcom>15</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>6</npm>
+		<lcom3>1.0</lcom3>
+		<loc>40</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2857142857142857</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.5</amc>
+		<cc>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PrimitiveType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>12</noc>
+		<cbo>22</cbo>
+		<rfc>8</rfc>
+		<lcom>15</lcom>
+		<ca>13</ca>
+		<ce>9</ce>
+		<npm>6</npm>
+		<lcom3>2.0</lcom3>
+		<loc>23</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.42857142857142855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>2.8333333333333335</amc>
+		<cc>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public abstract Object get(java.sql.ResultSet, String)">1</method>
+			<method name="public abstract void set(java.sql.PreparedStatement, Object, int)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public final Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.SubclassMap</name>
+		<wmc>14</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>28</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>12</ce>
+		<npm>13</npm>
+		<lcom3>0.5769230769230769</lcom3>
+		<loc>88</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.30357142857142855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.142857142857143</amc>
+		<cc>
+			<method name="public cirrus.hibernate.type.Type getKeyType()">1</method>
+			<method name="public cirrus.hibernate.type.Type[] allColumnTypes()">1</method>
+			<method name="public boolean isInherited()">1</method>
+			<method name="public String[] allColumnNames()">1</method>
+			<method name="public boolean isPolymorphic()">1</method>
+			<method name="public java.util.ArrayList getProperties()">1</method>
+			<method name="public String getTableName()">1</method>
+			<method name="public void setPolymorphic()">1</method>
+			<method name="public cirrus.hibernate.id.IDGenerator getIDGenerator()">1</method>
+			<method name="public void _init_(Class mappedClass, Class superClass)">1</method>
+			<method name="public String getKeyColumnName()">1</method>
+			<method name="protected void addColumn(cirrus.hibernate.map.PropertyMap property)">1</method>
+			<method name="public void build(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public String getDiscriminatorColumnName()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.ChildOfFoo</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>13</rfc>
+		<lcom>4</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>5</npm>
+		<lcom3>0.8333333333333333</lcom3>
+		<loc>85</loc>
+		<dam>0.3333333333333333</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.4</amc>
+		<cc>
+			<method name="public char[] getChars()">1</method>
+			<method name="public static cirrus.hibernate.map.ClassMap getMap()">3</method>
+			<method name="public void setChars(char[] newChars)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void create(cirrus.hibernate.Session session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.ShortType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PersistentType</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>16</cbo>
+		<rfc>19</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>15</ce>
+		<npm>7</npm>
+		<lcom3>0.6666666666666666</lcom3>
+		<loc>86</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2571428571428571</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>11.0</amc>
+		<cc>
+			<method name="public void nullSafeSet(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public void _init_(Class persistentClass, cirrus.hibernate.map.ClassMap schemaMap)">1</method>
+			<method name="public cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Object nullSafeGet(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public Class returnedClass()">1</method>
+			<method name="public boolean isCollectionType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.MapType</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>21</cbo>
+		<rfc>16</rfc>
+		<lcom>4</lcom>
+		<ca>3</ca>
+		<ce>19</ce>
+		<npm>5</npm>
+		<lcom3>0.75</lcom3>
+		<loc>68</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.36666666666666664</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.2</amc>
+		<cc>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public cirrus.hibernate.type.Type getIndexType()">1</method>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type indexType, cirrus.hibernate.type.Type elementType)">2</method>
+			<method name="public void build(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.CharacterType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>16</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>50</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.857142857142857</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.helpers.StringHelper</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>23</rfc>
+		<lcom>15</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>6</npm>
+		<lcom3>2.0</lcom3>
+		<loc>135</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.5</amc>
+		<cc>
+			<method name="public static String replaceOnce(String template, String placeholder, String replacement)">1</method>
+			<method name="public static String repeat(String string, int times)">2</method>
+			<method name="public static String replace(String template, String placeholder, String replacement)">2</method>
+			<method name="public static String join(String seperator, String[] strings)">3</method>
+			<method name="public static String[] split(String seperators, String list)">2</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.ListType</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>10</rfc>
+		<lcom>3</lcom>
+		<ca>2</ca>
+		<ce>15</ce>
+		<npm>3</npm>
+		<lcom3>1.0</lcom3>
+		<loc>40</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public Class returnedClass()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.ArrayHolder</name>
+		<wmc>12</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>31</cbo>
+		<rfc>56</rfc>
+		<lcom>14</lcom>
+		<ca>2</ca>
+		<ce>30</ce>
+		<npm>10</npm>
+		<lcom3>0.7727272727272727</lcom3>
+		<loc>325</loc>
+		<dam>1.0</dam>
+		<moa>5</moa>
+		<mfa>0.0</mfa>
+		<cam>0.20202020202020202</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>25.583333333333332</amc>
+		<cc>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public void setArray(Object newArray)">1</method>
+			<method name="void _init_(cirrus.hibernate.Session session)">1</method>
+			<method name="public void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public void write(cirrus.hibernate.impl.Action action)">1</method>
+			<method name="public void _init_(cirrus.hibernate.Session session, long id, cirrus.hibernate.type.ArrayType type)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public Object getArray()">1</method>
+			<method name="public java.util.Iterator elements()">2</method>
+			<method name="public void setCollectionType(cirrus.hibernate.type.Type type)">1</method>
+			<method name="public cirrus.hibernate.Key getKey()">1</method>
+			<method name="public void replaceElements(java.util.Map replacements)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.DeletionException</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>5</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.ToothType</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>6</rfc>
+		<lcom>4</lcom>
+		<ca>2</ca>
+		<ce>5</ce>
+		<npm>3</npm>
+		<lcom3>0.625</lcom3>
+		<loc>45</loc>
+		<dam>0.5</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.2</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public int toInt()">1</method>
+			<method name="public static cirrus.hibernate.eg.ToothType fromInt(int i)">2</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void _init_(int i, String name)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.LongGenerator</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>9</rfc>
+		<lcom>1</lcom>
+		<ca>0</ca>
+		<ce>8</ce>
+		<npm>2</npm>
+		<lcom3>0.75</lcom3>
+		<loc>35</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.0</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java.io.Serializable generate(java.sql.Connection dbConnection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.PersistentLifecycle</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>4</rfc>
+		<lcom>6</lcom>
+		<ca>2</ca>
+		<ce>8</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>4</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void delete(cirrus.hibernate.Session)">1</method>
+			<method name="public abstract void store(cirrus.hibernate.Session)">1</method>
+			<method name="public abstract void create(cirrus.hibernate.Session)">1</method>
+			<method name="public abstract void load(cirrus.hibernate.Session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.SelfPersistable</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void write(cirrus.hibernate.impl.Action)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Persistent</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>21</cbo>
+		<rfc>2</rfc>
+		<lcom>1</lcom>
+		<ca>17</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>2</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract cirrus.hibernate.Key getKey()">1</method>
+			<method name="public abstract void setKey(cirrus.hibernate.Key)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Bar</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>5</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>16</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public String getBaz()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void setBaz(String newBaz)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.IntegerType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PersistentTypeProxy</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>17</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.5</amc>
+		<cc>
+			<method name="public void _init_(Class persistentClass)">1</method>
+			<method name="public cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore datastore)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Key</name>
+		<wmc>11</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>18</cbo>
+		<rfc>16</rfc>
+		<lcom>19</lcom>
+		<ca>14</ca>
+		<ce>4</ce>
+		<npm>11</npm>
+		<lcom3>0.75</lcom3>
+		<loc>83</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3181818181818182</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>6.181818181818182</amc>
+		<cc>
+			<method name="public void _init_(java.io.Serializable id, String idSpace)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public void setAlwaysDirty()">1</method>
+			<method name="public boolean equals(Object other)">4</method>
+			<method name="public String getIDSPace()">1</method>
+			<method name="public void clearDirty()">1</method>
+			<method name="public boolean isAlwaysDirty()">1</method>
+			<method name="public boolean isDirty()">1</method>
+			<method name="public void setDirty()">1</method>
+			<method name="public java.io.Serializable getID()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.InvalidState</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>4</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PersistableCollectionType</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>5</noc>
+		<cbo>26</cbo>
+		<rfc>13</rfc>
+		<lcom>20</lcom>
+		<ca>11</ca>
+		<ce>15</ce>
+		<npm>8</npm>
+		<lcom3>0.7857142857142857</lcom3>
+		<loc>50</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.25</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public String getRole()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public void build(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public boolean isCollectionType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Datastore</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>32</cbo>
+		<rfc>14</rfc>
+		<lcom>91</lcom>
+		<ca>26</ca>
+		<ce>9</ce>
+		<npm>14</npm>
+		<lcom3>2.0</lcom3>
+		<loc>14</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35714285714285715</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract cirrus.hibernate.type.Type collectionTypeForRole(String)">1</method>
+			<method name="public abstract java.util.Iterator getCollectionTypes()">1</method>
+			<method name="public abstract cirrus.hibernate.map.ClassMap mapForClass(Class)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeMap(String, cirrus.hibernate.type.Type, cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeList(String, cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract java.util.Iterator getClassMaps()">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storePrimitiveArray(String, cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore store(cirrus.hibernate.map.ClassMap)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeXML(String)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeSet(String, cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeFile(String)">1</method>
+			<method name="public abstract cirrus.hibernate.Session createSession(java.sql.Connection)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore build()">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeArray(String, cirrus.hibernate.type.Type)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.sql.ScriptGenerator</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>20</cbo>
+		<rfc>33</rfc>
+		<lcom>9</lcom>
+		<ca>1</ca>
+		<ce>19</ce>
+		<npm>5</npm>
+		<lcom3>0.2</lcom3>
+		<loc>323</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4583333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>52.666666666666664</amc>
+		<cc>
+			<method name="public java.sql.Connection executeTableCreationScript(java.sql.Connection conn)">1</method>
+			<method name="public java.sql.Connection executeDropTablesScript(java.sql.Connection conn)">1</method>
+			<method name="public String[] dropTablesScript()">4</method>
+			<method name="public void _init_(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="private void executeScript(java.sql.Connection conn, String[] script)">1</method>
+			<method name="public String[] tableCreationScript()">9</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.Type</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>38</cbo>
+		<rfc>6</rfc>
+		<lcom>15</lcom>
+		<ca>30</ca>
+		<ce>10</ce>
+		<npm>6</npm>
+		<lcom3>2.0</lcom3>
+		<loc>6</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3125</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore)">1</method>
+			<method name="public abstract Object nullSafeGet(java.sql.ResultSet, String, cirrus.hibernate.Session)">1</method>
+			<method name="public abstract String columnType(cirrus.hibernate.Datastore)">1</method>
+			<method name="public abstract Class returnedClass()">1</method>
+			<method name="public abstract boolean isCollectionType()">1</method>
+			<method name="public abstract void nullSafeSet(java.sql.PreparedStatement, Object, int, cirrus.hibernate.Session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Hibernate</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>37</cbo>
+		<rfc>31</rfc>
+		<lcom>34</lcom>
+		<ca>14</ca>
+		<ce>23</ce>
+		<npm>7</npm>
+		<lcom3>0.9916666666666667</lcom3>
+		<loc>271</loc>
+		<dam>0.06666666666666667</dam>
+		<moa>11</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>27.444444444444443</amc>
+		<cc>
+			<method name="public static final cirrus.hibernate.type.Type enum(Class enumClass)">1</method>
+			<method name="public static final cirrus.hibernate.type.Type set(String role)">2</method>
+			<method name="public static final cirrus.hibernate.type.Type object(Class persistentClass)">1</method>
+			<method name="public static final cirrus.hibernate.type.Type basic(String name)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="public static final cirrus.hibernate.type.Type map(String role)">2</method>
+			<method name="public static final cirrus.hibernate.type.Type array(String role)">1</method>
+			<method name="public static final cirrus.hibernate.type.Type list(String role)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.helpers.XMLHelper</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>17</rfc>
+		<lcom>8</lcom>
+		<ca>1</ca>
+		<ce>16</ce>
+		<npm>4</npm>
+		<lcom3>0.75</lcom3>
+		<loc>43</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.2</amc>
+		<cc>
+			<method name="public static org.w3c.dom.Document parseString(String xml)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static org.w3c.dom.Document parseInputSource(org.xml.sax.InputSource source)">1</method>
+			<method name="public static org.w3c.dom.Document parseFile(String fileName)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.ClassMap</name>
+		<wmc>29</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>35</cbo>
+		<rfc>69</rfc>
+		<lcom>344</lcom>
+		<ca>14</ca>
+		<ce>23</ce>
+		<npm>26</npm>
+		<lcom3>0.869047619047619</lcom3>
+		<loc>579</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.18719211822660098</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>18.862068965517242</amc>
+		<cc>
+			<method name="public abstract String[] allColumnNames()">1</method>
+			<method name="public abstract String getDiscriminatorColumnName()">1</method>
+			<method name="public abstract cirrus.hibernate.type.Type getKeyType()">1</method>
+			<method name="public abstract String getTableName()">1</method>
+			<method name="public cirrus.hibernate.map.ClassMap addProperty(cirrus.hibernate.map.PropertyMap property)">1</method>
+			<method name="private String[] getColumnNames()">2</method>
+			<method name="public String generateDeleteString()">1</method>
+			<method name="public void _init_(Class mappedClass)">1</method>
+			<method name="public abstract boolean isPolymorphic()">1</method>
+			<method name="abstract java.util.ArrayList getProperties()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public String generateSelectByKeyString()">1</method>
+			<method name="public String printFields(cirrus.hibernate.Persistent object)">1</method>
+			<method name="public String generateInsertString()">3</method>
+			<method name="public void build(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class getMappedClass()">1</method>
+			<method name="public final cirrus.hibernate.map.ClassMapSQLCache getCache()">1</method>
+			<method name="public void validateSetters()">1</method>
+			<method name="protected abstract void addColumn(cirrus.hibernate.map.PropertyMap)">1</method>
+			<method name="public abstract String getKeyColumnName()">1</method>
+			<method name="public String generateUpdateString()">3</method>
+			<method name="public abstract void setPolymorphic()">1</method>
+			<method name="public abstract boolean isInherited()">1</method>
+			<method name="public cirrus.hibernate.map.ClassMap addProperty(String name, cirrus.hibernate.type.Type type)">1</method>
+			<method name="public abstract cirrus.hibernate.id.IDGenerator getIDGenerator()">1</method>
+			<method name="public abstract cirrus.hibernate.type.Type[] allColumnTypes()">1</method>
+			<method name="public java.lang.reflect.Method getGetter(String name)">1</method>
+			<method name="public java.lang.reflect.Method getSetter(String name)">1</method>
+			<method name="public String generateSelectString()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.helpers.XMLHelper$ErrorLogger</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>12</rfc>
+		<lcom>6</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>43</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.875</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.75</amc>
+		<cc>
+			<method name="public void fatalError(org.xml.sax.SAXParseException error)">1</method>
+			<method name="public void warning(org.xml.sax.SAXParseException error)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void error(org.xml.sax.SAXParseException error)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Tiger</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>10</rfc>
+		<lcom>4</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>4</npm>
+		<lcom3>0.25</lcom3>
+		<loc>40</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.8</amc>
+		<cc>
+			<method name="protected void bitten()">1</method>
+			<method name="public Boolean isAngry()">1</method>
+			<method name="public void setAngry(Boolean isAngry)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void roar()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.BooleanType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.PersistentObject</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>4</noc>
+		<cbo>19</cbo>
+		<rfc>19</rfc>
+		<lcom>30</lcom>
+		<ca>7</ca>
+		<ce>12</ce>
+		<npm>8</npm>
+		<lcom3>0.625</lcom3>
+		<loc>50</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5185185185185185</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.444444444444445</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="protected void setDirty()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void store(cirrus.hibernate.Session session)">1</method>
+			<method name="public void delete(cirrus.hibernate.Session session)">1</method>
+			<method name="public void load(cirrus.hibernate.Session session)">1</method>
+			<method name="public final cirrus.hibernate.Key getKey()">1</method>
+			<method name="public final void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public void create(cirrus.hibernate.Session session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.TimestampType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>14</rfc>
+		<lcom>15</lcom>
+		<ca>1</ca>
+		<ce>15</ce>
+		<npm>6</npm>
+		<lcom3>1.0</lcom3>
+		<loc>44</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2857142857142857</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.166666666666667</amc>
+		<cc>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.List</name>
+		<wmc>18</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>30</cbo>
+		<rfc>60</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>29</ce>
+		<npm>16</npm>
+		<lcom3>0.776470588235294</lcom3>
+		<loc>324</loc>
+		<dam>1.0</dam>
+		<moa>5</moa>
+		<mfa>0.8404255319148937</mfa>
+		<cam>0.1925133689839572</cam>
+		<ic>2</ic>
+		<cbm>2</cbm>
+		<amc>16.72222222222222</amc>
+		<cc>
+			<method name="public Object set(int index, Object value)">1</method>
+			<method name="void _init_(cirrus.hibernate.Session session)">1</method>
+			<method name="public boolean removeAll(java.util.Collection c)">1</method>
+			<method name="public void _init_(cirrus.hibernate.Session session, long id, cirrus.hibernate.type.ListType type)">1</method>
+			<method name="public void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public boolean addAll(int index, java.util.Collection c)">1</method>
+			<method name="public boolean retainAll(java.util.Collection c)">1</method>
+			<method name="public java.util.Iterator elements()">1</method>
+			<method name="public void setCollectionType(cirrus.hibernate.type.Type type)">1</method>
+			<method name="public boolean addAll(java.util.Collection c)">1</method>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public Object remove(int index)">1</method>
+			<method name="public void write(cirrus.hibernate.impl.Action action)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public boolean add(Object value)">1</method>
+			<method name="public void add(int index, Object value)">1</method>
+			<method name="public cirrus.hibernate.Key getKey()">1</method>
+			<method name="public void replaceElements(java.util.Map replacements)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.helpers.ReflectHelper</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>7</rfc>
+		<lcom>1</lcom>
+		<ca>2</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>36</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.0</amc>
+		<cc>
+			<method name="public static java.lang.reflect.Method getSetterMethod(Class theClass, String name)">4</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.RelationalDatastore</name>
+		<wmc>21</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>38</cbo>
+		<rfc>86</rfc>
+		<lcom>92</lcom>
+		<ca>2</ca>
+		<ce>37</ce>
+		<npm>15</npm>
+		<lcom3>0.7166666666666666</lcom3>
+		<loc>651</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.25595238095238093</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>29.857142857142858</amc>
+		<cc>
+			<method name="public cirrus.hibernate.Datastore storeList(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="private void storeCollectionFromXML(org.w3c.dom.Node collectionNode)">1</method>
+			<method name="public cirrus.hibernate.Session createSession(java.sql.Connection connection)">1</method>
+			<method name="public cirrus.hibernate.Datastore build()">1</method>
+			<method name="public cirrus.hibernate.type.Type collectionTypeForRole(String name)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeXML(String xml)">1</method>
+			<method name="private void store(org.w3c.dom.Document doc)">1</method>
+			<method name="private cirrus.hibernate.id.IDGenerator createIDGenerator(String idgenName)">1</method>
+			<method name="private cirrus.hibernate.map.PropertyMap propertyFromXML(org.w3c.dom.Node node)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeSet(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeMap(String role, cirrus.hibernate.type.Type indexType, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="private cirrus.hibernate.type.Type typeFromXML(String typeName)">1</method>
+			<method name="public cirrus.hibernate.map.ClassMap mapForClass(Class persistentClass)">1</method>
+			<method name="public java.util.Iterator getClassMaps()">1</method>
+			<method name="private void storeClassFromXML(org.w3c.dom.Node classNode)">1</method>
+			<method name="public cirrus.hibernate.Datastore storePrimitiveArray(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeFile(String xmlFile)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java.util.Iterator getCollectionTypes()">1</method>
+			<method name="public cirrus.hibernate.Datastore store(cirrus.hibernate.map.ClassMap classMap)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeArray(String role, cirrus.hibernate.type.Type elementType)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PersistentEnumType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>14</rfc>
+		<lcom>13</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>6</npm>
+		<lcom3>0.8888888888888888</lcom3>
+		<loc>57</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2708333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.714285714285714</amc>
+		<cc>
+			<method name="public void _init_(Class enumClass)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">1</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Association</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>21</cbo>
+		<rfc>18</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>19</ce>
+		<npm>1</npm>
+		<lcom3>0.5</lcom3>
+		<loc>107</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>24.75</amc>
+		<cc>
+			<method name="protected java.util.List retrieveValues(cirrus.hibernate.Session db)">1</method>
+			<method name="protected void unsetBackReference(Object o)">1</method>
+			<method name="public void _init_(Class theClass, String property, cirrus.hibernate.Persistent owner)">1</method>
+			<method name="protected void setBackReference(Object o)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.NullableType</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>14</cbo>
+		<rfc>13</rfc>
+		<lcom>45</lcom>
+		<ca>3</ca>
+		<ce>11</ce>
+		<npm>10</npm>
+		<lcom3>2.0</lcom3>
+		<loc>44</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.325</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.4</amc>
+		<cc>
+			<method name="public abstract Object get(java.sql.ResultSet, String, cirrus.hibernate.Session)">1</method>
+			<method name="public void nullSafeSet(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public abstract int getJDBCType()">1</method>
+			<method name="public abstract void set(java.sql.PreparedStatement, Object, int, cirrus.hibernate.Session)">1</method>
+			<method name="public abstract String columnType(cirrus.hibernate.Datastore)">1</method>
+			<method name="public abstract Class returnedClass()">1</method>
+			<method name="public cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Object nullSafeGet(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public boolean isCollectionType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.RelationalDatabaseSession</name>
+		<wmc>42</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>54</cbo>
+		<rfc>145</rfc>
+		<lcom>561</lcom>
+		<ca>6</ca>
+		<ce>50</ce>
+		<npm>24</npm>
+		<lcom3>0.7262872628726288</lcom3>
+		<loc>1438</loc>
+		<dam>0.8888888888888888</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.10997732426303855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>33.023809523809526</amc>
+		<cc>
+			<method name="public java.util.List find(String query, Object[] values, cirrus.hibernate.type.Type[] types)">1</method>
+			<method name="public java.sql.Connection getConnection()">1</method>
+			<method name="public java.util.List createList()">1</method>
+			<method name="protected void flush()">1</method>
+			<method name="private cirrus.hibernate.impl.RelationalDatabaseSession$Entry getEntry(cirrus.hibernate.Key key)">1</method>
+			<method name="public cirrus.hibernate.Persistent create(Class theClass, java.io.Serializable id)">1</method>
+			<method name="public java.util.List find(String query)">1</method>
+			<method name="public cirrus.hibernate.impl.ArrayHolder getArrayHolder(Object array)">1</method>
+			<method name="public void postLoadArray(cirrus.hibernate.impl.ArrayHolder holder)">1</method>
+			<method name="void _init_(java.sql.Connection dbConnection, cirrus.hibernate.impl.RelationalDatastore datastore)">1</method>
+			<method name="private Object processReachable(Object obj, cirrus.hibernate.type.Type type)">1</method>
+			<method name="private void cleanup()">1</method>
+			<method name="public Object createArray(Class elementClass, int size)">1</method>
+			<method name="public void postCreate(cirrus.hibernate.Persistent object)">1</method>
+			<method name="private java.util.List find(String sql, cirrus.hibernate.map.ClassMap map, Object[] values, cirrus.hibernate.type.Type[] types, cirrus.hibernate.Persistent optionalObject)">1</method>
+			<method name="private void flushEntries(java.util.Iterator keys, cirrus.hibernate.impl.Action action)">1</method>
+			<method name="private void processRootReachables()">1</method>
+			<method name="private void addArrayHolder(Object array, cirrus.hibernate.impl.ArrayHolder holder)">1</method>
+			<method name="private void deleteUnreachables()">1</method>
+			<method name="public java.util.Map createMap()">1</method>
+			<method name="private cirrus.hibernate.Persistent load(cirrus.hibernate.map.ClassMap map, cirrus.hibernate.Key key, cirrus.hibernate.Persistent optionalObject)">1</method>
+			<method name="public cirrus.hibernate.Persistent loadByID(Class theClass, java.io.Serializable id)">1</method>
+			<method name="public void delete(Object object)">1</method>
+			<method name="public void loadByID(cirrus.hibernate.Persistent object, java.io.Serializable id)">1</method>
+			<method name="public cirrus.hibernate.Persistent loadByKey(Class theClass, cirrus.hibernate.Key key)">1</method>
+			<method name="private void dehydrate(cirrus.hibernate.Persistent object, java.sql.PreparedStatement st)">1</method>
+			<method name="public void save(cirrus.hibernate.Persistent object, java.io.Serializable id)">1</method>
+			<method name="public java.sql.Connection commit()">1</method>
+			<method name="private void processReachableCollection(cirrus.hibernate.impl.PersistableCollection coll, cirrus.hibernate.type.Type type)">1</method>
+			<method name="public void postLoad(cirrus.hibernate.Persistent object)">1</method>
+			<method name="private Class getClassFromQuery(String query)">1</method>
+			<method name="public void loadByKey(cirrus.hibernate.Persistent object, cirrus.hibernate.Key key)">1</method>
+			<method name="private void addEntry(cirrus.hibernate.Key key, cirrus.hibernate.impl.RelationalDatabaseSession$Entry e)">1</method>
+			<method name="public java.sql.Connection cancel()">1</method>
+			<method name="private cirrus.hibernate.Persistent instantiate(Class theClass)">1</method>
+			<method name="public cirrus.hibernate.Datastore getDatastore()">1</method>
+			<method name="public java.util.Set createSet()">1</method>
+			<method name="private void hydrate(java.sql.ResultSet rs, cirrus.hibernate.Persistent object)">1</method>
+			<method name="public void saveArray(Object array)">1</method>
+			<method name="public cirrus.hibernate.Persistent create(Class theClass)">1</method>
+			<method name="public void save(cirrus.hibernate.Persistent object)">1</method>
+			<method name="private void writeObject(cirrus.hibernate.impl.Action action, cirrus.hibernate.Persistent object)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Demo</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>42</cbo>
+		<rfc>74</rfc>
+		<lcom>1</lcom>
+		<ca>0</ca>
+		<ce>42</ce>
+		<npm>2</npm>
+		<lcom3>1.0</lcom3>
+		<loc>994</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>492.5</amc>
+		<cc>
+			<method name="public static void main(String[] args)">37</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Session</name>
+		<wmc>20</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>41</cbo>
+		<rfc>20</rfc>
+		<lcom>190</lcom>
+		<ca>26</ca>
+		<ce>17</ce>
+		<npm>20</npm>
+		<lcom3>2.0</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.21</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract Object createArray(Class, int)">1</method>
+			<method name="public abstract java.util.Set createSet()">1</method>
+			<method name="public abstract void loadByKey(cirrus.hibernate.Persistent, cirrus.hibernate.Key)">1</method>
+			<method name="public abstract java.sql.Connection cancel()">1</method>
+			<method name="public abstract cirrus.hibernate.Persistent create(Class)">1</method>
+			<method name="public abstract java.util.List find(String, Object[], cirrus.hibernate.type.Type[])">1</method>
+			<method name="public abstract void loadByID(cirrus.hibernate.Persistent, java.io.Serializable)">1</method>
+			<method name="public abstract cirrus.hibernate.Persistent create(Class, java.io.Serializable)">1</method>
+			<method name="public abstract cirrus.hibernate.Persistent loadByKey(Class, cirrus.hibernate.Key)">1</method>
+			<method name="public abstract java.util.List find(String)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore getDatastore()">1</method>
+			<method name="public abstract java.util.Map createMap()">1</method>
+			<method name="public abstract void delete(Object)">1</method>
+			<method name="public abstract cirrus.hibernate.Persistent loadByID(Class, java.io.Serializable)">1</method>
+			<method name="public abstract void save(cirrus.hibernate.Persistent, java.io.Serializable)">1</method>
+			<method name="public abstract java.sql.Connection commit()">1</method>
+			<method name="public abstract void saveArray(Object)">1</method>
+			<method name="public abstract java.util.List createList()">1</method>
+			<method name="public abstract java.sql.Connection getConnection()">1</method>
+			<method name="public abstract void save(cirrus.hibernate.Persistent)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Tooth</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>19</cbo>
+		<rfc>19</rfc>
+		<lcom>10</lcom>
+		<ca>3</ca>
+		<ce>16</ce>
+		<npm>8</npm>
+		<lcom3>0.8214285714285714</lcom3>
+		<loc>89</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3125</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.625</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public float getLength()">1</method>
+			<method name="public void setType(cirrus.hibernate.eg.ToothType newType)">1</method>
+			<method name="public void setLength(float newLength)">1</method>
+			<method name="public static cirrus.hibernate.map.ClassMap getMap()">3</method>
+			<method name="public void create(cirrus.hibernate.Session db)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public cirrus.hibernate.eg.ToothType getType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.PropertyMap</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>14</rfc>
+		<lcom>14</lcom>
+		<ca>6</ca>
+		<ce>5</ce>
+		<npm>8</npm>
+		<lcom3>0.761904761904762</lcom3>
+		<loc>48</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4583333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.625</amc>
+		<cc>
+			<method name="public cirrus.hibernate.type.Type getType()">1</method>
+			<method name="public void setType(cirrus.hibernate.type.Type newType)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public String getColumnName()">1</method>
+			<method name="public void setName(String newName)">1</method>
+			<method name="public String getName()">1</method>
+			<method name="public void setColumnName(String newColumnName)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.RootClassMap</name>
+		<wmc>18</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>18</cbo>
+		<rfc>29</rfc>
+		<lcom>99</lcom>
+		<ca>4</ca>
+		<ce>14</ce>
+		<npm>17</npm>
+		<lcom3>0.865546218487395</lcom3>
+		<loc>154</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.23148148148148148</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.166666666666667</amc>
+		<cc>
+			<method name="public cirrus.hibernate.map.RootClassMap setKeyType(cirrus.hibernate.type.Type keyType)">1</method>
+			<method name="public cirrus.hibernate.type.Type getKeyType()">1</method>
+			<method name="public cirrus.hibernate.type.Type[] allColumnTypes()">1</method>
+			<method name="public boolean isInherited()">1</method>
+			<method name="public String[] allColumnNames()">1</method>
+			<method name="public cirrus.hibernate.map.RootClassMap setTableName(String tableName)">1</method>
+			<method name="public boolean isPolymorphic()">2</method>
+			<method name="public cirrus.hibernate.map.RootClassMap setDiscriminatorColumnName(String columnName)">1</method>
+			<method name="public void _init_(Class mappedClass)">1</method>
+			<method name="public String getTableName()">1</method>
+			<method name="public cirrus.hibernate.map.RootClassMap setKeyColumnName(String columnName)">1</method>
+			<method name="public java.util.ArrayList getProperties()">1</method>
+			<method name="public void setPolymorphic()">2</method>
+			<method name="public cirrus.hibernate.id.IDGenerator getIDGenerator()">1</method>
+			<method name="public String getKeyColumnName()">1</method>
+			<method name="protected void addColumn(cirrus.hibernate.map.PropertyMap property)">1</method>
+			<method name="public cirrus.hibernate.map.RootClassMap setIDGenerator(cirrus.hibernate.id.IDGenerator idgen)">1</method>
+			<method name="public String getDiscriminatorColumnName()">1</method>
+		</cc>
+	</class>
+
+	<class>
+		<name>cirrus.hibernate.helpers.ArrayHelper</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>9</rfc>
+		<lcom>6</lcom>
+		<ca>3</ca>
+		<ce>5</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>38</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.5</amc>
+		<cc>
+			<method name="public static String[] toStringArray(Object[] objects)">2</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static String[] toStringArray(java.util.List list)">1</method>
+			<method name="public static Object[] typecast(Object[] array, Object[] to)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.ArrayType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>19</rfc>
+		<lcom>13</lcom>
+		<ca>2</ca>
+		<ce>16</ce>
+		<npm>6</npm>
+		<lcom3>0.8</lcom3>
+		<loc>59</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2962962962962963</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.666666666666666</amc>
+		<cc>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public boolean isPrimitiveArray()">1</method>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type elementType, boolean primitive)">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Class returnedClass()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.PersistenceException</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>28</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>24</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.OneToMany</name>
+		<wmc>5</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>18</rfc>
+		<lcom>4</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>5</npm>
+		<lcom3>0.0</lcom3>
+		<loc>90</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.8823529411764706</mfa>
+		<cam>0.37142857142857144</cam>
+		<ic>3</ic>
+		<cbm>3</cbm>
+		<amc>16.8</amc>
+		<cc>
+			<method name="public boolean removeAll(java.util.Collection c)">4</method>
+			<method name="public void _init_(Class theClass, String property, cirrus.hibernate.Persistent owner, cirrus.hibernate.Session db)">1</method>
+			<method name="public boolean add(Object o)">1</method>
+			<method name="public boolean remove(Object o)">2</method>
+			<method name="public boolean retainAll(java.util.Collection c)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.DomesticCat</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>6</cbo>
+		<rfc>5</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>16</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public void setName(String newName)">1</method>
+			<method name="public String getName()">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.PersistableCollection</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>4</rfc>
+		<lcom>6</lcom>
+		<ca>6</ca>
+		<ce>7</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>4</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void setCollectionType(cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract void replaceElements(java.util.Map)">1</method>
+			<method name="public abstract java.util.Iterator elements()">1</method>
+			<method name="public abstract cirrus.hibernate.type.Type getElementType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.IDGenerator</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>9</ca>
+		<ce>5</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract java.io.Serializable generate(java.sql.Connection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.DoubleType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.Map</name>
+		<wmc>12</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>29</cbo>
+		<rfc>51</rfc>
+		<lcom>16</lcom>
+		<ca>2</ca>
+		<ce>28</ce>
+		<npm>10</npm>
+		<lcom3>0.7818181818181817</lcom3>
+		<loc>285</loc>
+		<dam>1.0</dam>
+		<moa>5</moa>
+		<mfa>0.8783783783783784</mfa>
+		<cam>0.21212121212121213</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>22.333333333333332</amc>
+		<cc>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public Object remove(Object index)">1</method>
+			<method name="void _init_(cirrus.hibernate.Session session)">1</method>
+			<method name="public void _init_(cirrus.hibernate.Session session, long id, cirrus.hibernate.type.MapType type)">1</method>
+			<method name="public void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public void write(cirrus.hibernate.impl.Action action)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public java.util.Iterator elements()">1</method>
+			<method name="public Object put(Object index, Object value)">1</method>
+			<method name="public void setCollectionType(cirrus.hibernate.type.Type type)">1</method>
+			<method name="public cirrus.hibernate.Key getKey()">1</method>
+			<method name="public void replaceElements(java.util.Map replacements)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.ClassMapSQLCache</name>
+		<wmc>13</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>36</rfc>
+		<lcom>38</lcom>
+		<ca>2</ca>
+		<ce>15</ce>
+		<npm>11</npm>
+		<lcom3>0.8717948717948718</lcom3>
+		<loc>328</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.24358974358974358</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>23.23076923076923</amc>
+		<cc>
+			<method name="public String sqlSelectByKey()">1</method>
+			<method name="public int sqlInsertUpdateKeyIndex()">1</method>
+			<method name="public String sqlUpdate()">1</method>
+			<method name="public String sqlDelete()">1</method>
+			<method name="public String sqlInsert()">1</method>
+			<method name="private java.lang.reflect.Method[] getSetters()">1</method>
+			<method name="public String sqlSelect(String query)">2</method>
+			<method name="public cirrus.hibernate.map.PropertyMap getProperty(int i)">1</method>
+			<method name="public void _init_(cirrus.hibernate.map.ClassMap map)">1</method>
+			<method name="private java.lang.reflect.Method[] getGetters()">1</method>
+			<method name="public cirrus.hibernate.map.PropertyMap[] getProperties()">1</method>
+			<method name="public Object[] getPropertyValues(cirrus.hibernate.Persistent object)">1</method>
+			<method name="public void setPropertyValues(cirrus.hibernate.Persistent object, Object[] values)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.Action</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>6</rfc>
+		<lcom>4</lcom>
+		<ca>7</ca>
+		<ce>3</ce>
+		<npm>3</npm>
+		<lcom3>0.8928571428571428</lcom3>
+		<loc>77</loc>
+		<dam>0.42857142857142855</dam>
+		<moa>6</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>13.0</amc>
+		<cc>
+			<method name="public final cirrus.hibernate.impl.Action next()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="public final cirrus.hibernate.impl.Action delete()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.OneToOne</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>10</rfc>
+		<lcom>0</lcom>
+		<ca>0</ca>
+		<ce>10</ce>
+		<npm>3</npm>
+		<lcom3>0.0</lcom3>
+		<loc>51</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.666666666666666</amc>
+		<cc>
+			<method name="public void _init_(Class theClass, String property, cirrus.hibernate.Persistent owner, cirrus.hibernate.Session db)">1</method>
+			<method name="public void set(Object o)">3</method>
+			<method name="public Object get()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.DateType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>14</rfc>
+		<lcom>15</lcom>
+		<ca>1</ca>
+		<ce>15</ce>
+		<npm>6</npm>
+		<lcom3>1.0</lcom3>
+		<loc>44</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2857142857142857</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.166666666666667</amc>
+		<cc>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.Set</name>
+		<wmc>14</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>31</cbo>
+		<rfc>50</rfc>
+		<lcom>11</lcom>
+		<ca>2</ca>
+		<ce>30</ce>
+		<npm>12</npm>
+		<lcom3>0.7692307692307693</lcom3>
+		<loc>277</loc>
+		<dam>1.0</dam>
+		<moa>5</moa>
+		<mfa>0.7317073170731707</mfa>
+		<cam>0.19230769230769232</cam>
+		<ic>2</ic>
+		<cbm>2</cbm>
+		<amc>18.428571428571427</amc>
+		<cc>
+			<method name="void _init_(cirrus.hibernate.Session session)">1</method>
+			<method name="public boolean removeAll(java.util.Collection c)">1</method>
+			<method name="public void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public boolean retainAll(java.util.Collection c)">1</method>
+			<method name="public java.util.Iterator elements()">1</method>
+			<method name="public void setCollectionType(cirrus.hibernate.type.Type type)">1</method>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public void _init_(cirrus.hibernate.Session session, long id, cirrus.hibernate.type.SetType type)">1</method>
+			<method name="public void write(cirrus.hibernate.impl.Action action)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public boolean remove(Object index)">1</method>
+			<method name="public boolean add(Object value)">1</method>
+			<method name="public cirrus.hibernate.Key getKey()">1</method>
+			<method name="public void replaceElements(java.util.Map replacements)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.SetType</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>10</rfc>
+		<lcom>3</lcom>
+		<ca>3</ca>
+		<ce>15</ce>
+		<npm>3</npm>
+		<lcom3>1.3333333333333333</lcom3>
+		<loc>42</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public Class returnedClass()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.Assigned</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>5</rfc>
+		<lcom>3</lcom>
+		<ca>0</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>1.0</lcom3>
+		<loc>17</loc>
+		<dam>0.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.333333333333333</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java.io.Serializable generate(java.sql.Connection dbConnection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.BuggyTooth</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>12</rfc>
+		<lcom>4</lcom>
+		<ca>0</ca>
+		<ce>13</ce>
+		<npm>4</npm>
+		<lcom3>0.8333333333333334</lcom3>
+		<loc>43</loc>
+		<dam>0.5</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.25</amc>
+		<cc>
+			<method name="public void setBug(String newBug)">1</method>
+			<method name="public String getBug()">1</method>
+			<method name="public static void main(String[] args)">2</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.CollectionTypeProxy</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>13</cbo>
+		<rfc>13</rfc>
+		<lcom>8</lcom>
+		<ca>1</ca>
+		<ce>12</ce>
+		<npm>5</npm>
+		<lcom3>0.75</lcom3>
+		<loc>58</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.4</amc>
+		<cc>
+			<method name="public void _init_(String role, Class type)">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public void _init_(String role)">1</method>
+			<method name="public cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.IDGenerationException</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>4</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.LongType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.RelationalDatabaseSession$Entry</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>8</rfc>
+		<lcom>11</lcom>
+		<ca>1</ca>
+		<ce>5</ce>
+		<npm>0</npm>
+		<lcom3>0.7083333333333334</lcom3>
+		<loc>46</loc>
+		<dam>1.0</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.38095238095238093</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="static cirrus.hibernate.impl.Action access$0(cirrus.hibernate.impl.RelationalDatabaseSession$Entry)">1</method>
+			<method name="private void _init_(cirrus.hibernate.impl.RelationalDatabaseSession, cirrus.hibernate.Persistent object, cirrus.hibernate.impl.Action action)">1</method>
+			<method name="static void access$4(cirrus.hibernate.impl.RelationalDatabaseSession$Entry, boolean)">1</method>
+			<method name="static cirrus.hibernate.Persistent access$3(cirrus.hibernate.impl.RelationalDatabaseSession$Entry)">1</method>
+			<method name="static boolean access$2(cirrus.hibernate.impl.RelationalDatabaseSession$Entry)">1</method>
+			<method name="void _init_(cirrus.hibernate.impl.RelationalDatabaseSession, cirrus.hibernate.Persistent, cirrus.hibernate.impl.Action, cirrus.hibernate.impl.RelationalDatabaseSession$Entry)">1</method>
+			<method name="static void access$1(cirrus.hibernate.impl.RelationalDatabaseSession$Entry, cirrus.hibernate.impl.Action)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.MappingException</name>
+		<wmc>6</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>13</rfc>
+		<lcom>3</lcom>
+		<ca>11</ca>
+		<ce>6</ce>
+		<npm>6</npm>
+		<lcom3>0.4</lcom3>
+		<loc>55</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.875</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>1</ic>
+		<cbm>2</cbm>
+		<amc>8.0</amc>
+		<cc>
+			<method name="public String toString()">2</method>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_(Exception root)">1</method>
+			<method name="public Exception getRoot()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String getMessage()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.ByteType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.FloatType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Foo</name>
+		<wmc>4</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>15</cbo>
+		<rfc>12</rfc>
+		<lcom>4</lcom>
+		<ca>2</ca>
+		<ce>13</ce>
+		<npm>4</npm>
+		<lcom3>0.8333333333333334</lcom3>
+		<loc>41</loc>
+		<dam>0.5</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>8.75</amc>
+		<cc>
+			<method name="public java.util.List getListOfArrays()">1</method>
+			<method name="public static cirrus.hibernate.map.ClassMap getMap()">2</method>
+			<method name="public void setListOfArrays(java.util.List newListOfArrays)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.StringGenerator</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>23</rfc>
+		<lcom>4</lcom>
+		<ca>0</ca>
+		<ce>14</ce>
+		<npm>3</npm>
+		<lcom3>0.7777777777777777</lcom3>
+		<loc>101</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4444444444444444</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>23.5</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static String toString(String key)">1</method>
+			<method name="public java.io.Serializable generate(java.sql.Connection dbConnection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.HiLoGenerator</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>18</rfc>
+		<lcom>1</lcom>
+		<ca>5</ca>
+		<ce>12</ce>
+		<npm>2</npm>
+		<lcom3>0.6</lcom3>
+		<loc>112</loc>
+		<dam>0.8</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>34.666666666666664</amc>
+		<cc>
+			<method name="public void _init_(String tableName, String columnName)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public synchronized java.io.Serializable generate(java.sql.Connection dbConnection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.PersistentEnum</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>4</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>2</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract int toInt()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Cat</name>
+		<wmc>18</wmc>
+		<dit>0</dit>
+		<noc>2</noc>
+		<cbo>23</cbo>
+		<rfc>26</rfc>
+		<lcom>127</lcom>
+		<ca>3</ca>
+		<ce>20</ce>
+		<npm>17</npm>
+		<lcom3>0.907563025210084</lcom3>
+		<loc>144</loc>
+		<dam>0.8571428571428571</dam>
+		<moa>3</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2222222222222222</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.611111111111111</amc>
+		<cc>
+			<method name="public java.util.Set getKittens()">1</method>
+			<method name="public java.util.Map getBiometrics()">1</method>
+			<method name="public cirrus.hibernate.eg.Cat getMate()">1</method>
+			<method name="public java.util.Date getBirthdate()">1</method>
+			<method name="public void create(cirrus.hibernate.Session db)">1</method>
+			<method name="public cirrus.hibernate.eg.Tooth[] getTeeth()">1</method>
+			<method name="public void setKittens(java.util.Set newKittens)">1</method>
+			<method name="protected void bitten()">1</method>
+			<method name="public void setMother(cirrus.hibernate.eg.Cat newMother)">1</method>
+			<method name="public void bite(cirrus.hibernate.eg.Cat cat)">3</method>
+			<method name="public void load(cirrus.hibernate.Session db)">1</method>
+			<method name="public void setBiometrics(java.util.Map newBiometrics)">1</method>
+			<method name="public void setBirthdate(java.util.Date newBirthdate)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public cirrus.hibernate.eg.Cat getMother()">1</method>
+			<method name="public void setMate(cirrus.hibernate.eg.Cat newMate)">1</method>
+			<method name="public void delete(cirrus.hibernate.Session db)">1</method>
+			<method name="public void setTeeth(cirrus.hibernate.eg.Tooth[] newTeeth)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.StringType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>12</rfc>
+		<lcom>15</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>6</npm>
+		<lcom3>1.0</lcom3>
+		<loc>40</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2857142857142857</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.5</amc>
+		<cc>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PrimitiveType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>12</noc>
+		<cbo>22</cbo>
+		<rfc>8</rfc>
+		<lcom>15</lcom>
+		<ca>13</ca>
+		<ce>9</ce>
+		<npm>6</npm>
+		<lcom3>2.0</lcom3>
+		<loc>23</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.42857142857142855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>2.8333333333333335</amc>
+		<cc>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public abstract Object get(java.sql.ResultSet, String)">1</method>
+			<method name="public abstract void set(java.sql.PreparedStatement, Object, int)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public final Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.SubclassMap</name>
+		<wmc>14</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>28</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>12</ce>
+		<npm>13</npm>
+		<lcom3>0.5769230769230769</lcom3>
+		<loc>88</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.30357142857142855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.142857142857143</amc>
+		<cc>
+			<method name="public cirrus.hibernate.type.Type getKeyType()">1</method>
+			<method name="public cirrus.hibernate.type.Type[] allColumnTypes()">1</method>
+			<method name="public boolean isInherited()">1</method>
+			<method name="public String[] allColumnNames()">1</method>
+			<method name="public boolean isPolymorphic()">1</method>
+			<method name="public java.util.ArrayList getProperties()">1</method>
+			<method name="public String getTableName()">1</method>
+			<method name="public void setPolymorphic()">1</method>
+			<method name="public cirrus.hibernate.id.IDGenerator getIDGenerator()">1</method>
+			<method name="public void _init_(Class mappedClass, Class superClass)">1</method>
+			<method name="public String getKeyColumnName()">1</method>
+			<method name="protected void addColumn(cirrus.hibernate.map.PropertyMap property)">1</method>
+			<method name="public void build(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public String getDiscriminatorColumnName()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.ChildOfFoo</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>13</rfc>
+		<lcom>4</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>5</npm>
+		<lcom3>0.8333333333333333</lcom3>
+		<loc>85</loc>
+		<dam>0.3333333333333333</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>15.4</amc>
+		<cc>
+			<method name="public char[] getChars()">1</method>
+			<method name="public static cirrus.hibernate.map.ClassMap getMap()">3</method>
+			<method name="public void setChars(char[] newChars)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void create(cirrus.hibernate.Session session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.ShortType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PersistentType</name>
+		<wmc>7</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>16</cbo>
+		<rfc>19</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>15</ce>
+		<npm>7</npm>
+		<lcom3>0.6666666666666666</lcom3>
+		<loc>86</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2571428571428571</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>11.0</amc>
+		<cc>
+			<method name="public void nullSafeSet(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public void _init_(Class persistentClass, cirrus.hibernate.map.ClassMap schemaMap)">1</method>
+			<method name="public cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Object nullSafeGet(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public Class returnedClass()">1</method>
+			<method name="public boolean isCollectionType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.MapType</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>21</cbo>
+		<rfc>16</rfc>
+		<lcom>4</lcom>
+		<ca>3</ca>
+		<ce>19</ce>
+		<npm>5</npm>
+		<lcom3>0.75</lcom3>
+		<loc>68</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.36666666666666664</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.2</amc>
+		<cc>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public cirrus.hibernate.type.Type getIndexType()">1</method>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type indexType, cirrus.hibernate.type.Type elementType)">2</method>
+			<method name="public void build(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.CharacterType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>16</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>50</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.857142857142857</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.helpers.StringHelper</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>23</rfc>
+		<lcom>15</lcom>
+		<ca>2</ca>
+		<ce>7</ce>
+		<npm>6</npm>
+		<lcom3>2.0</lcom3>
+		<loc>135</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>21.5</amc>
+		<cc>
+			<method name="public static String replaceOnce(String template, String placeholder, String replacement)">1</method>
+			<method name="public static String repeat(String string, int times)">2</method>
+			<method name="public static String replace(String template, String placeholder, String replacement)">2</method>
+			<method name="public static String join(String seperator, String[] strings)">3</method>
+			<method name="public static String[] split(String seperators, String list)">2</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.ListType</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>10</rfc>
+		<lcom>3</lcom>
+		<ca>2</ca>
+		<ce>15</ce>
+		<npm>3</npm>
+		<lcom3>1.0</lcom3>
+		<loc>40</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>12.0</amc>
+		<cc>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public Class returnedClass()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.ArrayHolder</name>
+		<wmc>12</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>31</cbo>
+		<rfc>56</rfc>
+		<lcom>14</lcom>
+		<ca>2</ca>
+		<ce>30</ce>
+		<npm>10</npm>
+		<lcom3>0.7727272727272727</lcom3>
+		<loc>325</loc>
+		<dam>1.0</dam>
+		<moa>5</moa>
+		<mfa>0.0</mfa>
+		<cam>0.20202020202020202</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>25.583333333333332</amc>
+		<cc>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public void setArray(Object newArray)">1</method>
+			<method name="void _init_(cirrus.hibernate.Session session)">1</method>
+			<method name="public void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public void write(cirrus.hibernate.impl.Action action)">1</method>
+			<method name="public void _init_(cirrus.hibernate.Session session, long id, cirrus.hibernate.type.ArrayType type)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public Object getArray()">1</method>
+			<method name="public java.util.Iterator elements()">2</method>
+			<method name="public void setCollectionType(cirrus.hibernate.type.Type type)">1</method>
+			<method name="public cirrus.hibernate.Key getKey()">1</method>
+			<method name="public void replaceElements(java.util.Map replacements)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.DeletionException</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>5</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.ToothType</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>6</rfc>
+		<lcom>4</lcom>
+		<ca>2</ca>
+		<ce>5</ce>
+		<npm>3</npm>
+		<lcom3>0.625</lcom3>
+		<loc>45</loc>
+		<dam>0.5</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.2</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public int toInt()">1</method>
+			<method name="public static cirrus.hibernate.eg.ToothType fromInt(int i)">2</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void _init_(int i, String name)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.id.LongGenerator</name>
+		<wmc>3</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>9</rfc>
+		<lcom>1</lcom>
+		<ca>0</ca>
+		<ce>8</ce>
+		<npm>2</npm>
+		<lcom3>0.75</lcom3>
+		<loc>35</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>10.0</amc>
+		<cc>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java.io.Serializable generate(java.sql.Connection dbConnection)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.PersistentLifecycle</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>4</rfc>
+		<lcom>6</lcom>
+		<ca>2</ca>
+		<ce>8</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>4</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void delete(cirrus.hibernate.Session)">1</method>
+			<method name="public abstract void store(cirrus.hibernate.Session)">1</method>
+			<method name="public abstract void create(cirrus.hibernate.Session)">1</method>
+			<method name="public abstract void load(cirrus.hibernate.Session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.SelfPersistable</name>
+		<wmc>1</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>1</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>6</ce>
+		<npm>1</npm>
+		<lcom3>2.0</lcom3>
+		<loc>1</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>1.0</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract void write(cirrus.hibernate.impl.Action)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Persistent</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>21</cbo>
+		<rfc>2</rfc>
+		<lcom>1</lcom>
+		<ca>17</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>2</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract cirrus.hibernate.Key getKey()">1</method>
+			<method name="public abstract void setKey(cirrus.hibernate.Key)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Bar</name>
+		<wmc>3</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>5</cbo>
+		<rfc>5</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>4</ce>
+		<npm>3</npm>
+		<lcom3>0.5</lcom3>
+		<loc>16</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.0</amc>
+		<cc>
+			<method name="public String getBaz()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void setBaz(String newBaz)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.IntegerType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>15</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>14</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PersistentTypeProxy</name>
+		<wmc>2</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>1</ca>
+		<ce>7</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>17</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6666666666666666</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.5</amc>
+		<cc>
+			<method name="public void _init_(Class persistentClass)">1</method>
+			<method name="public cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore datastore)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Key</name>
+		<wmc>11</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>18</cbo>
+		<rfc>16</rfc>
+		<lcom>19</lcom>
+		<ca>14</ca>
+		<ce>4</ce>
+		<npm>11</npm>
+		<lcom3>0.75</lcom3>
+		<loc>83</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3181818181818182</cam>
+		<ic>1</ic>
+		<cbm>1</cbm>
+		<amc>6.181818181818182</amc>
+		<cc>
+			<method name="public void _init_(java.io.Serializable id, String idSpace)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public int hashCode()">1</method>
+			<method name="public void setAlwaysDirty()">1</method>
+			<method name="public boolean equals(Object other)">4</method>
+			<method name="public String getIDSPace()">1</method>
+			<method name="public void clearDirty()">1</method>
+			<method name="public boolean isAlwaysDirty()">1</method>
+			<method name="public boolean isDirty()">1</method>
+			<method name="public void setDirty()">1</method>
+			<method name="public java.io.Serializable getID()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.InvalidState</name>
+		<wmc>2</wmc>
+		<dit>3</dit>
+		<noc>0</noc>
+		<cbo>8</cbo>
+		<rfc>4</rfc>
+		<lcom>1</lcom>
+		<ca>4</ca>
+		<ce>4</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>9</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>1.0</mfa>
+		<cam>0.75</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.5</amc>
+		<cc>
+			<method name="public void _init_(String s)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PersistableCollectionType</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>5</noc>
+		<cbo>26</cbo>
+		<rfc>13</rfc>
+		<lcom>20</lcom>
+		<ca>11</ca>
+		<ce>15</ce>
+		<npm>8</npm>
+		<lcom3>0.7857142857142857</lcom3>
+		<loc>50</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.25</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.0</amc>
+		<cc>
+			<method name="public void _init_(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public String getRole()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public void build(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public boolean isCollectionType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Datastore</name>
+		<wmc>14</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>32</cbo>
+		<rfc>14</rfc>
+		<lcom>91</lcom>
+		<ca>26</ca>
+		<ce>9</ce>
+		<npm>14</npm>
+		<lcom3>2.0</lcom3>
+		<loc>14</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.35714285714285715</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract cirrus.hibernate.type.Type collectionTypeForRole(String)">1</method>
+			<method name="public abstract java.util.Iterator getCollectionTypes()">1</method>
+			<method name="public abstract cirrus.hibernate.map.ClassMap mapForClass(Class)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeMap(String, cirrus.hibernate.type.Type, cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeList(String, cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract java.util.Iterator getClassMaps()">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storePrimitiveArray(String, cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore store(cirrus.hibernate.map.ClassMap)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeXML(String)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeSet(String, cirrus.hibernate.type.Type)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeFile(String)">1</method>
+			<method name="public abstract cirrus.hibernate.Session createSession(java.sql.Connection)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore build()">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore storeArray(String, cirrus.hibernate.type.Type)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.sql.ScriptGenerator</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>20</cbo>
+		<rfc>33</rfc>
+		<lcom>9</lcom>
+		<ca>1</ca>
+		<ce>19</ce>
+		<npm>5</npm>
+		<lcom3>0.2</lcom3>
+		<loc>323</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4583333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>52.666666666666664</amc>
+		<cc>
+			<method name="public java.sql.Connection executeTableCreationScript(java.sql.Connection conn)">1</method>
+			<method name="public java.sql.Connection executeDropTablesScript(java.sql.Connection conn)">1</method>
+			<method name="public String[] dropTablesScript()">4</method>
+			<method name="public void _init_(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="private void executeScript(java.sql.Connection conn, String[] script)">1</method>
+			<method name="public String[] tableCreationScript()">9</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.Type</name>
+		<wmc>6</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>38</cbo>
+		<rfc>6</rfc>
+		<lcom>15</lcom>
+		<ca>30</ca>
+		<ce>10</ce>
+		<npm>6</npm>
+		<lcom3>2.0</lcom3>
+		<loc>6</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3125</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore)">1</method>
+			<method name="public abstract Object nullSafeGet(java.sql.ResultSet, String, cirrus.hibernate.Session)">1</method>
+			<method name="public abstract String columnType(cirrus.hibernate.Datastore)">1</method>
+			<method name="public abstract Class returnedClass()">1</method>
+			<method name="public abstract boolean isCollectionType()">1</method>
+			<method name="public abstract void nullSafeSet(java.sql.PreparedStatement, Object, int, cirrus.hibernate.Session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Hibernate</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>37</cbo>
+		<rfc>31</rfc>
+		<lcom>34</lcom>
+		<ca>14</ca>
+		<ce>23</ce>
+		<npm>7</npm>
+		<lcom3>0.9916666666666667</lcom3>
+		<loc>271</loc>
+		<dam>0.06666666666666667</dam>
+		<moa>11</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>27.444444444444443</amc>
+		<cc>
+			<method name="public static final cirrus.hibernate.type.Type enum(Class enumClass)">1</method>
+			<method name="public static final cirrus.hibernate.type.Type set(String role)">2</method>
+			<method name="public static final cirrus.hibernate.type.Type object(Class persistentClass)">1</method>
+			<method name="public static final cirrus.hibernate.type.Type basic(String name)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="private void _init_()">1</method>
+			<method name="public static final cirrus.hibernate.type.Type map(String role)">2</method>
+			<method name="public static final cirrus.hibernate.type.Type array(String role)">1</method>
+			<method name="public static final cirrus.hibernate.type.Type list(String role)">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.helpers.XMLHelper</name>
+		<wmc>5</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>17</cbo>
+		<rfc>17</rfc>
+		<lcom>8</lcom>
+		<ca>1</ca>
+		<ce>16</ce>
+		<npm>4</npm>
+		<lcom3>0.75</lcom3>
+		<loc>43</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3333333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.2</amc>
+		<cc>
+			<method name="public static org.w3c.dom.Document parseString(String xml)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public static org.w3c.dom.Document parseInputSource(org.xml.sax.InputSource source)">1</method>
+			<method name="public static org.w3c.dom.Document parseFile(String fileName)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.ClassMap</name>
+		<wmc>29</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>35</cbo>
+		<rfc>69</rfc>
+		<lcom>344</lcom>
+		<ca>14</ca>
+		<ce>23</ce>
+		<npm>26</npm>
+		<lcom3>0.869047619047619</lcom3>
+		<loc>579</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.18719211822660098</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>18.862068965517242</amc>
+		<cc>
+			<method name="public abstract String[] allColumnNames()">1</method>
+			<method name="public abstract String getDiscriminatorColumnName()">1</method>
+			<method name="public abstract cirrus.hibernate.type.Type getKeyType()">1</method>
+			<method name="public abstract String getTableName()">1</method>
+			<method name="public cirrus.hibernate.map.ClassMap addProperty(cirrus.hibernate.map.PropertyMap property)">1</method>
+			<method name="private String[] getColumnNames()">2</method>
+			<method name="public String generateDeleteString()">1</method>
+			<method name="public void _init_(Class mappedClass)">1</method>
+			<method name="public abstract boolean isPolymorphic()">1</method>
+			<method name="abstract java.util.ArrayList getProperties()">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public String generateSelectByKeyString()">1</method>
+			<method name="public String printFields(cirrus.hibernate.Persistent object)">1</method>
+			<method name="public String generateInsertString()">3</method>
+			<method name="public void build(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class getMappedClass()">1</method>
+			<method name="public final cirrus.hibernate.map.ClassMapSQLCache getCache()">1</method>
+			<method name="public void validateSetters()">1</method>
+			<method name="protected abstract void addColumn(cirrus.hibernate.map.PropertyMap)">1</method>
+			<method name="public abstract String getKeyColumnName()">1</method>
+			<method name="public String generateUpdateString()">3</method>
+			<method name="public abstract void setPolymorphic()">1</method>
+			<method name="public abstract boolean isInherited()">1</method>
+			<method name="public cirrus.hibernate.map.ClassMap addProperty(String name, cirrus.hibernate.type.Type type)">1</method>
+			<method name="public abstract cirrus.hibernate.id.IDGenerator getIDGenerator()">1</method>
+			<method name="public abstract cirrus.hibernate.type.Type[] allColumnTypes()">1</method>
+			<method name="public java.lang.reflect.Method getGetter(String name)">1</method>
+			<method name="public java.lang.reflect.Method getSetter(String name)">1</method>
+			<method name="public String generateSelectString()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.helpers.XMLHelper$ErrorLogger</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>10</cbo>
+		<rfc>12</rfc>
+		<lcom>6</lcom>
+		<ca>1</ca>
+		<ce>9</ce>
+		<npm>4</npm>
+		<lcom3>2.0</lcom3>
+		<loc>43</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.875</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.75</amc>
+		<cc>
+			<method name="public void fatalError(org.xml.sax.SAXParseException error)">1</method>
+			<method name="public void warning(org.xml.sax.SAXParseException error)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void error(org.xml.sax.SAXParseException error)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Tiger</name>
+		<wmc>5</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>9</cbo>
+		<rfc>10</rfc>
+		<lcom>4</lcom>
+		<ca>1</ca>
+		<ce>8</ce>
+		<npm>4</npm>
+		<lcom3>0.25</lcom3>
+		<loc>40</loc>
+		<dam>1.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.6</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.8</amc>
+		<cc>
+			<method name="protected void bitten()">1</method>
+			<method name="public Boolean isAngry()">1</method>
+			<method name="public void setAngry(Boolean isAngry)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void roar()">2</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.BooleanType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>15</rfc>
+		<lcom>21</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>7</npm>
+		<lcom3>1.0833333333333333</lcom3>
+		<loc>48</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2653061224489796</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>5.571428571428571</amc>
+		<cc>
+			<method name="public Class primitiveClass()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datstore)">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.PersistentObject</name>
+		<wmc>9</wmc>
+		<dit>1</dit>
+		<noc>4</noc>
+		<cbo>19</cbo>
+		<rfc>19</rfc>
+		<lcom>30</lcom>
+		<ca>7</ca>
+		<ce>12</ce>
+		<npm>8</npm>
+		<lcom3>0.625</lcom3>
+		<loc>50</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5185185185185185</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.444444444444445</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="protected void setDirty()">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public void store(cirrus.hibernate.Session session)">1</method>
+			<method name="public void delete(cirrus.hibernate.Session session)">1</method>
+			<method name="public void load(cirrus.hibernate.Session session)">1</method>
+			<method name="public final cirrus.hibernate.Key getKey()">1</method>
+			<method name="public final void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public void create(cirrus.hibernate.Session session)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.TimestampType</name>
+		<wmc>6</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>16</cbo>
+		<rfc>14</rfc>
+		<lcom>15</lcom>
+		<ca>1</ca>
+		<ce>15</ce>
+		<npm>6</npm>
+		<lcom3>1.0</lcom3>
+		<loc>44</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2857142857142857</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.166666666666667</amc>
+		<cc>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">2</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.List</name>
+		<wmc>18</wmc>
+		<dit>4</dit>
+		<noc>0</noc>
+		<cbo>30</cbo>
+		<rfc>60</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>29</ce>
+		<npm>16</npm>
+		<lcom3>0.776470588235294</lcom3>
+		<loc>324</loc>
+		<dam>1.0</dam>
+		<moa>5</moa>
+		<mfa>0.8404255319148937</mfa>
+		<cam>0.1925133689839572</cam>
+		<ic>2</ic>
+		<cbm>2</cbm>
+		<amc>16.72222222222222</amc>
+		<cc>
+			<method name="public Object set(int index, Object value)">1</method>
+			<method name="void _init_(cirrus.hibernate.Session session)">1</method>
+			<method name="public boolean removeAll(java.util.Collection c)">1</method>
+			<method name="public void _init_(cirrus.hibernate.Session session, long id, cirrus.hibernate.type.ListType type)">1</method>
+			<method name="public void setKey(cirrus.hibernate.Key key)">1</method>
+			<method name="public boolean addAll(int index, java.util.Collection c)">1</method>
+			<method name="public boolean retainAll(java.util.Collection c)">1</method>
+			<method name="public java.util.Iterator elements()">1</method>
+			<method name="public void setCollectionType(cirrus.hibernate.type.Type type)">1</method>
+			<method name="public boolean addAll(java.util.Collection c)">1</method>
+			<method name="public cirrus.hibernate.type.Type getElementType()">1</method>
+			<method name="public Object remove(int index)">1</method>
+			<method name="public void write(cirrus.hibernate.impl.Action action)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public boolean add(Object value)">1</method>
+			<method name="public void add(int index, Object value)">1</method>
+			<method name="public cirrus.hibernate.Key getKey()">1</method>
+			<method name="public void replaceElements(java.util.Map replacements)">3</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.helpers.ReflectHelper</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>7</cbo>
+		<rfc>7</rfc>
+		<lcom>1</lcom>
+		<ca>2</ca>
+		<ce>5</ce>
+		<npm>2</npm>
+		<lcom3>2.0</lcom3>
+		<loc>36</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>17.0</amc>
+		<cc>
+			<method name="public static java.lang.reflect.Method getSetterMethod(Class theClass, String name)">4</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.RelationalDatastore</name>
+		<wmc>21</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>38</cbo>
+		<rfc>86</rfc>
+		<lcom>92</lcom>
+		<ca>2</ca>
+		<ce>37</ce>
+		<npm>15</npm>
+		<lcom3>0.7166666666666666</lcom3>
+		<loc>651</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.25595238095238093</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>29.857142857142858</amc>
+		<cc>
+			<method name="public cirrus.hibernate.Datastore storeList(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="private void storeCollectionFromXML(org.w3c.dom.Node collectionNode)">1</method>
+			<method name="public cirrus.hibernate.Session createSession(java.sql.Connection connection)">1</method>
+			<method name="public cirrus.hibernate.Datastore build()">1</method>
+			<method name="public cirrus.hibernate.type.Type collectionTypeForRole(String name)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeXML(String xml)">1</method>
+			<method name="private void store(org.w3c.dom.Document doc)">1</method>
+			<method name="private cirrus.hibernate.id.IDGenerator createIDGenerator(String idgenName)">1</method>
+			<method name="private cirrus.hibernate.map.PropertyMap propertyFromXML(org.w3c.dom.Node node)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeSet(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeMap(String role, cirrus.hibernate.type.Type indexType, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="private cirrus.hibernate.type.Type typeFromXML(String typeName)">1</method>
+			<method name="public cirrus.hibernate.map.ClassMap mapForClass(Class persistentClass)">1</method>
+			<method name="public java.util.Iterator getClassMaps()">1</method>
+			<method name="private void storeClassFromXML(org.w3c.dom.Node classNode)">1</method>
+			<method name="public cirrus.hibernate.Datastore storePrimitiveArray(String role, cirrus.hibernate.type.Type elementType)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeFile(String xmlFile)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public java.util.Iterator getCollectionTypes()">1</method>
+			<method name="public cirrus.hibernate.Datastore store(cirrus.hibernate.map.ClassMap classMap)">1</method>
+			<method name="public cirrus.hibernate.Datastore storeArray(String role, cirrus.hibernate.type.Type elementType)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.PersistentEnumType</name>
+		<wmc>7</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>14</cbo>
+		<rfc>14</rfc>
+		<lcom>13</lcom>
+		<ca>1</ca>
+		<ce>13</ce>
+		<npm>6</npm>
+		<lcom3>0.8888888888888888</lcom3>
+		<loc>57</loc>
+		<dam>0.6666666666666666</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.2708333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>6.714285714285714</amc>
+		<cc>
+			<method name="public void _init_(Class enumClass)">1</method>
+			<method name="static void _clinit_()">1</method>
+			<method name="public int getJDBCType()">1</method>
+			<method name="public Object get(java.sql.ResultSet rs, String name)">1</method>
+			<method name="public String columnType(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public Class returnedClass()">1</method>
+			<method name="public void set(java.sql.PreparedStatement st, Object value, int index)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Association</name>
+		<wmc>4</wmc>
+		<dit>1</dit>
+		<noc>1</noc>
+		<cbo>21</cbo>
+		<rfc>18</rfc>
+		<lcom>0</lcom>
+		<ca>2</ca>
+		<ce>19</ce>
+		<npm>1</npm>
+		<lcom3>0.5</lcom3>
+		<loc>107</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4166666666666667</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>24.75</amc>
+		<cc>
+			<method name="protected java.util.List retrieveValues(cirrus.hibernate.Session db)">1</method>
+			<method name="protected void unsetBackReference(Object o)">1</method>
+			<method name="public void _init_(Class theClass, String property, cirrus.hibernate.Persistent owner)">1</method>
+			<method name="protected void setBackReference(Object o)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.type.NullableType</name>
+		<wmc>10</wmc>
+		<dit>1</dit>
+		<noc>2</noc>
+		<cbo>14</cbo>
+		<rfc>13</rfc>
+		<lcom>45</lcom>
+		<ca>3</ca>
+		<ce>11</ce>
+		<npm>10</npm>
+		<lcom3>2.0</lcom3>
+		<loc>44</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.325</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>3.4</amc>
+		<cc>
+			<method name="public abstract Object get(java.sql.ResultSet, String, cirrus.hibernate.Session)">1</method>
+			<method name="public void nullSafeSet(java.sql.PreparedStatement st, Object value, int index, cirrus.hibernate.Session session)">1</method>
+			<method name="public abstract int getJDBCType()">1</method>
+			<method name="public abstract void set(java.sql.PreparedStatement, Object, int, cirrus.hibernate.Session)">1</method>
+			<method name="public abstract String columnType(cirrus.hibernate.Datastore)">1</method>
+			<method name="public abstract Class returnedClass()">1</method>
+			<method name="public cirrus.hibernate.type.Type flesh(cirrus.hibernate.Datastore datastore)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public Object nullSafeGet(java.sql.ResultSet rs, String name, cirrus.hibernate.Session session)">1</method>
+			<method name="public boolean isCollectionType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.impl.RelationalDatabaseSession</name>
+		<wmc>42</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>54</cbo>
+		<rfc>145</rfc>
+		<lcom>561</lcom>
+		<ca>6</ca>
+		<ce>50</ce>
+		<npm>24</npm>
+		<lcom3>0.7262872628726288</lcom3>
+		<loc>1438</loc>
+		<dam>0.8888888888888888</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.10997732426303855</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>33.023809523809526</amc>
+		<cc>
+			<method name="public java.util.List find(String query, Object[] values, cirrus.hibernate.type.Type[] types)">1</method>
+			<method name="public java.sql.Connection getConnection()">1</method>
+			<method name="public java.util.List createList()">1</method>
+			<method name="protected void flush()">1</method>
+			<method name="private cirrus.hibernate.impl.RelationalDatabaseSession$Entry getEntry(cirrus.hibernate.Key key)">1</method>
+			<method name="public cirrus.hibernate.Persistent create(Class theClass, java.io.Serializable id)">1</method>
+			<method name="public java.util.List find(String query)">1</method>
+			<method name="public cirrus.hibernate.impl.ArrayHolder getArrayHolder(Object array)">1</method>
+			<method name="public void postLoadArray(cirrus.hibernate.impl.ArrayHolder holder)">1</method>
+			<method name="void _init_(java.sql.Connection dbConnection, cirrus.hibernate.impl.RelationalDatastore datastore)">1</method>
+			<method name="private Object processReachable(Object obj, cirrus.hibernate.type.Type type)">1</method>
+			<method name="private void cleanup()">1</method>
+			<method name="public Object createArray(Class elementClass, int size)">1</method>
+			<method name="public void postCreate(cirrus.hibernate.Persistent object)">1</method>
+			<method name="private java.util.List find(String sql, cirrus.hibernate.map.ClassMap map, Object[] values, cirrus.hibernate.type.Type[] types, cirrus.hibernate.Persistent optionalObject)">1</method>
+			<method name="private void flushEntries(java.util.Iterator keys, cirrus.hibernate.impl.Action action)">1</method>
+			<method name="private void processRootReachables()">1</method>
+			<method name="private void addArrayHolder(Object array, cirrus.hibernate.impl.ArrayHolder holder)">1</method>
+			<method name="private void deleteUnreachables()">1</method>
+			<method name="public java.util.Map createMap()">1</method>
+			<method name="private cirrus.hibernate.Persistent load(cirrus.hibernate.map.ClassMap map, cirrus.hibernate.Key key, cirrus.hibernate.Persistent optionalObject)">1</method>
+			<method name="public cirrus.hibernate.Persistent loadByID(Class theClass, java.io.Serializable id)">1</method>
+			<method name="public void delete(Object object)">1</method>
+			<method name="public void loadByID(cirrus.hibernate.Persistent object, java.io.Serializable id)">1</method>
+			<method name="public cirrus.hibernate.Persistent loadByKey(Class theClass, cirrus.hibernate.Key key)">1</method>
+			<method name="private void dehydrate(cirrus.hibernate.Persistent object, java.sql.PreparedStatement st)">1</method>
+			<method name="public void save(cirrus.hibernate.Persistent object, java.io.Serializable id)">1</method>
+			<method name="public java.sql.Connection commit()">1</method>
+			<method name="private void processReachableCollection(cirrus.hibernate.impl.PersistableCollection coll, cirrus.hibernate.type.Type type)">1</method>
+			<method name="public void postLoad(cirrus.hibernate.Persistent object)">1</method>
+			<method name="private Class getClassFromQuery(String query)">1</method>
+			<method name="public void loadByKey(cirrus.hibernate.Persistent object, cirrus.hibernate.Key key)">1</method>
+			<method name="private void addEntry(cirrus.hibernate.Key key, cirrus.hibernate.impl.RelationalDatabaseSession$Entry e)">1</method>
+			<method name="public java.sql.Connection cancel()">1</method>
+			<method name="private cirrus.hibernate.Persistent instantiate(Class theClass)">1</method>
+			<method name="public cirrus.hibernate.Datastore getDatastore()">1</method>
+			<method name="public java.util.Set createSet()">1</method>
+			<method name="private void hydrate(java.sql.ResultSet rs, cirrus.hibernate.Persistent object)">1</method>
+			<method name="public void saveArray(Object array)">1</method>
+			<method name="public cirrus.hibernate.Persistent create(Class theClass)">1</method>
+			<method name="public void save(cirrus.hibernate.Persistent object)">1</method>
+			<method name="private void writeObject(cirrus.hibernate.impl.Action action, cirrus.hibernate.Persistent object)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Demo</name>
+		<wmc>2</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>42</cbo>
+		<rfc>74</rfc>
+		<lcom>1</lcom>
+		<ca>0</ca>
+		<ce>42</ce>
+		<npm>2</npm>
+		<lcom3>1.0</lcom3>
+		<loc>994</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.5</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>492.5</amc>
+		<cc>
+			<method name="public static void main(String[] args)">37</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.Session</name>
+		<wmc>20</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>41</cbo>
+		<rfc>20</rfc>
+		<lcom>190</lcom>
+		<ca>26</ca>
+		<ce>17</ce>
+		<npm>20</npm>
+		<lcom3>2.0</lcom3>
+		<loc>20</loc>
+		<dam>0.0</dam>
+		<moa>0</moa>
+		<mfa>0.0</mfa>
+		<cam>0.21</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>0.0</amc>
+		<cc>
+			<method name="public abstract Object createArray(Class, int)">1</method>
+			<method name="public abstract java.util.Set createSet()">1</method>
+			<method name="public abstract void loadByKey(cirrus.hibernate.Persistent, cirrus.hibernate.Key)">1</method>
+			<method name="public abstract java.sql.Connection cancel()">1</method>
+			<method name="public abstract cirrus.hibernate.Persistent create(Class)">1</method>
+			<method name="public abstract java.util.List find(String, Object[], cirrus.hibernate.type.Type[])">1</method>
+			<method name="public abstract void loadByID(cirrus.hibernate.Persistent, java.io.Serializable)">1</method>
+			<method name="public abstract cirrus.hibernate.Persistent create(Class, java.io.Serializable)">1</method>
+			<method name="public abstract cirrus.hibernate.Persistent loadByKey(Class, cirrus.hibernate.Key)">1</method>
+			<method name="public abstract java.util.List find(String)">1</method>
+			<method name="public abstract cirrus.hibernate.Datastore getDatastore()">1</method>
+			<method name="public abstract java.util.Map createMap()">1</method>
+			<method name="public abstract void delete(Object)">1</method>
+			<method name="public abstract cirrus.hibernate.Persistent loadByID(Class, java.io.Serializable)">1</method>
+			<method name="public abstract void save(cirrus.hibernate.Persistent, java.io.Serializable)">1</method>
+			<method name="public abstract java.sql.Connection commit()">1</method>
+			<method name="public abstract void saveArray(Object)">1</method>
+			<method name="public abstract java.util.List createList()">1</method>
+			<method name="public abstract java.sql.Connection getConnection()">1</method>
+			<method name="public abstract void save(cirrus.hibernate.Persistent)">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.eg.Tooth</name>
+		<wmc>8</wmc>
+		<dit>0</dit>
+		<noc>1</noc>
+		<cbo>19</cbo>
+		<rfc>19</rfc>
+		<lcom>10</lcom>
+		<ca>3</ca>
+		<ce>16</ce>
+		<npm>8</npm>
+		<lcom3>0.8214285714285714</lcom3>
+		<loc>89</loc>
+		<dam>0.5</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.3125</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>9.625</amc>
+		<cc>
+			<method name="public String toString()">1</method>
+			<method name="public float getLength()">1</method>
+			<method name="public void setType(cirrus.hibernate.eg.ToothType newType)">1</method>
+			<method name="public void setLength(float newLength)">1</method>
+			<method name="public static cirrus.hibernate.map.ClassMap getMap()">3</method>
+			<method name="public void create(cirrus.hibernate.Session db)">1</method>
+			<method name="public void _init_()">1</method>
+			<method name="public cirrus.hibernate.eg.ToothType getType()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.PropertyMap</name>
+		<wmc>8</wmc>
+		<dit>1</dit>
+		<noc>0</noc>
+		<cbo>11</cbo>
+		<rfc>14</rfc>
+		<lcom>14</lcom>
+		<ca>6</ca>
+		<ce>5</ce>
+		<npm>8</npm>
+		<lcom3>0.761904761904762</lcom3>
+		<loc>48</loc>
+		<dam>1.0</dam>
+		<moa>1</moa>
+		<mfa>0.0</mfa>
+		<cam>0.4583333333333333</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>4.625</amc>
+		<cc>
+			<method name="public cirrus.hibernate.type.Type getType()">1</method>
+			<method name="public void setType(cirrus.hibernate.type.Type newType)">1</method>
+			<method name="public String toString()">1</method>
+			<method name="public String getColumnName()">1</method>
+			<method name="public void setName(String newName)">1</method>
+			<method name="public String getName()">1</method>
+			<method name="public void setColumnName(String newColumnName)">1</method>
+			<method name="public void _init_()">1</method>
+		</cc>
+	</class>
+	<class>
+		<name>cirrus.hibernate.map.RootClassMap</name>
+		<wmc>18</wmc>
+		<dit>0</dit>
+		<noc>0</noc>
+		<cbo>18</cbo>
+		<rfc>29</rfc>
+		<lcom>99</lcom>
+		<ca>4</ca>
+		<ce>14</ce>
+		<npm>17</npm>
+		<lcom3>0.865546218487395</lcom3>
+		<loc>154</loc>
+		<dam>1.0</dam>
+		<moa>2</moa>
+		<mfa>0.0</mfa>
+		<cam>0.23148148148148148</cam>
+		<ic>0</ic>
+		<cbm>0</cbm>
+		<amc>7.166666666666667</amc>
+		<cc>
+			<method name="public cirrus.hibernate.map.RootClassMap setKeyType(cirrus.hibernate.type.Type keyType)">1</method>
+			<method name="public cirrus.hibernate.type.Type getKeyType()">1</method>
+			<method name="public cirrus.hibernate.type.Type[] allColumnTypes()">1</method>
+			<method name="public boolean isInherited()">1</method>
+			<method name="public String[] allColumnNames()">1</method>
+			<method name="public cirrus.hibernate.map.RootClassMap setTableName(String tableName)">1</method>
+			<method name="public boolean isPolymorphic()">2</method>
+			<method name="public cirrus.hibernate.map.RootClassMap setDiscriminatorColumnName(String columnName)">1</method>
+			<method name="public void _init_(Class mappedClass)">1</method>
+			<method name="public String getTableName()">1</method>
+			<method name="public cirrus.hibernate.map.RootClassMap setKeyColumnName(String columnName)">1</method>
+			<method name="public java.util.ArrayList getProperties()">1</method>
+			<method name="public void setPolymorphic()">2</method>
+			<method name="public cirrus.hibernate.id.IDGenerator getIDGenerator()">1</method>
+			<method name="public String getKeyColumnName()">1</method>
+			<method name="protected void addColumn(cirrus.hibernate.map.PropertyMap property)">1</method>
+			<method name="public cirrus.hibernate.map.RootClassMap setIDGenerator(cirrus.hibernate.id.IDGenerator idgen)">1</method>
+			<method name="public String getDiscriminatorColumnName()">1</method>
+		</cc>
+	</class>
+
+</metrics>
