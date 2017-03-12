@@ -22,7 +22,6 @@ def par_deploy(dict_elem):
 
     if not os.path.isdir(save_path):
         os.mkdir(save_path)
-
         m.save_metrics()
 
 
