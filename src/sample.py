@@ -37,7 +37,7 @@ def jar_sample_case():
     # deployed = pool.map(par_deploy, par_args)
     # set_trace()
 
-    for metric_file in glob("mertics/**/*.xml"):
+    for metric_file in glob(os.path.abspath("./mertics/**/*.xml")):
         set_trace()
         xml = XMLUtil(metrics_name=metric_file)
         xml.save_as_csv()
