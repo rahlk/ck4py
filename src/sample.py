@@ -31,12 +31,14 @@ def jar_sample_case():
 
     par_args = [(p,v) for p,v in files.iteritems()]
 
-    "Set up Parallel Environment"
-    N = len(par_args)  # Number of parallel processes to run
-    pool = mp.Pool(processes=N)  # Pool of processes
-    deployed = pool.map(par_deploy, par_args)
-    set_trace()
-    for metric_file in glob("mertics/**/*.xml".format(project)):
+    # "Set up Parallel Environment"
+    # N = len(par_args)  # Number of parallel processes to run
+    # pool = mp.Pool(processes=N)  # Pool of processes
+    # deployed = pool.map(par_deploy, par_args)
+    # set_trace()
+
+    for metric_file in glob("mertics/**/*.xml"):
+        set_trace()
         xml = XMLUtil(metrics_name=metric_file)
         xml.save_as_csv()
 
