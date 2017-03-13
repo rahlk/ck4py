@@ -83,13 +83,12 @@ class JSONUtil:
 
 
 class XMLUtil:
-    def __init__(self, metrics_name, xml_path="metrics"
-                 , findbugs_output_path=""):
-        self.xml_path = os.path.abspath(xml_path)
-        self.findbugs_output_path = os.path.abspath(findbugs_output_path)
-        self.bugfile_name = "bugs-{}".format(metrics_name.split(".xml")[
+    def __init__(self, metrics_name):
+        self.xml_path = os.path.abspath("/".join(metrics_name.split("/")[:-1]))
+        # self.findbugs_output_path = os.path.abspath(findbugs_output_path)
+        self.bugfile_name = "bug-{}".format(metrics_name.split("/")[-1].split(".xml")[
                                                  0] if ".xml" in metrics_name else metrics_name)
-        self.metrics_name = metrics_name.split(".xml")[
+        self.metrics_name = metrics_name.split("/")[-1].split(".xml")[
             0] if ".xml" in metrics_name else metrics_name
 
     def get_bugs(self):
