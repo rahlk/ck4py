@@ -142,6 +142,7 @@ class XMLUtil:
 
     def get_metrics(self):
         metrics = self.metrics_as_list()
+        set_trace()
         return pd.DataFrame(metrics[1:], columns=metrics[0]).set_index("name")
 
     def save_as_csv(self):
