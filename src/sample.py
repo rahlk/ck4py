@@ -35,9 +35,9 @@ def jar_sample_case():
     # N = len(par_args)  # Number of parallel processes to run
     # pool = mp.Pool(processes=N)  # Pool of processes
     # deployed = pool.map(par_deploy, par_args)
-    # set_trace()
+    set_trace()
 
-    for metric_file in glob(os.path.abspath("./mertics/**/*.xml")):
+    for metric_file in glob(os.path.abspath("./metrics/**/*.xml")):
         set_trace()
         xml = XMLUtil(metrics_name=metric_file)
         xml.save_as_csv()
