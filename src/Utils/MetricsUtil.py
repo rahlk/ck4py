@@ -3,7 +3,7 @@ from __future__ import print_function
 
 import os
 import subprocess
-from pdb import set_trace
+from ipdb import set_trace
 
 from FileUtils import XMLUtil
 

@@ -5,7 +5,7 @@ import json
 import os
 import sys
 import xml.etree.ElementTree as ET
-from pdb import set_trace
+from ipdb import set_trace
 
 import numpy as np
 import pandas as pd
@@ -142,14 +142,15 @@ class XMLUtil:
 
     def get_metrics(self):
         metrics = self.metrics_as_list()
-        try:
-            return pd.DataFrame(metrics[1:], columns=metrics[0]).set_index("name")
-        except:
-            set_trace()
+        return pd.DataFrame(metrics[1:], columns=metrics[0]).set_index("name")
+
 
     def save_as_csv(self):
-        metrics = self.get_metrics()
-        bugs = self.get_bugs()
-        metrics_df = self.stitch_bugs(metrics, bugs)
-        metrics_df.to_csv(
-            os.path.join(self.xml_path, self.metrics_name + ".csv"))
+        try:
+            metrics = self.get_metrics()
+            bugs = self.get_bugs()
+            metrics_df = self.stitch_bugs(metrics, bugs)
+            metrics_df.to_csv(
+                os.path.join(self.xml_path, self.metrics_name + ".csv"))
+        except KeyError:
+            pass
