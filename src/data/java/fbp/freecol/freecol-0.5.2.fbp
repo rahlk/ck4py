@@ -1,7 +1,0 @@
-<Project projectName="freecol-0.5.2">
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freecol/freecol-0.5.2/bin/freecol/FreeCol.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freecol/freecol-0.5.2/src/freecol/FreeCol.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freecol/freecol-0.5.2/src/freecol/jars/wstx-lgpl-3.0.2.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freecol/freecol-0.5.2/src/freecol/jars/jsr173_1.0_api.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/freecol/freecol-0.5.2/src/freecol/jars/higlayout.jar</Jar>
-</Project>

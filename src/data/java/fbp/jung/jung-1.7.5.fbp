@@ -1,6 +1,0 @@
-<Project projectName="jung-1.7.5">
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jung/jung-1.7.5/bin/lib/jung-1.7.5.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jung/jung-1.7.5/src/lib/jung-1.7.5.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jung/jung-1.7.5/src/src/samples/images/flags.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/jung/jung-1.7.5/src/src/samples/images/slashdoticons.jar</Jar>
-</Project>

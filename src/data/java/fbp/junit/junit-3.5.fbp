@@ -1,4 +1,0 @@
-<Project projectName="junit-3.5">
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-3.5/bin/junit.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-3.5/src/junit3.5/junit/tests/test.jar</Jar>
-</Project>

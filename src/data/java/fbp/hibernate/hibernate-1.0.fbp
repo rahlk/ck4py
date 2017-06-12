@@ -1,9 +1,0 @@
-<Project projectName="hibernate-1.0">
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.0/bin/hibernate-1.0/lib/hibernate.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.0/src/hibernate-1.0/lib/c3p0.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.0/src/hibernate-1.0/lib/hibernate.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.0/src/hibernate-1.0/lib/crimson.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.0/src/hibernate-1.0/lib/xalan.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.0/src/hibernate-1.0/lib/commons-logging.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/hibernate/hibernate-1.0/src/hibernate-1.0/lib/jdom.jar</Jar>
-</Project>

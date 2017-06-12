@@ -1,6 +1,0 @@
-<Project projectName="junit-4.11">
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-4.11/bin/junit-4.11.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-4.11/compressed/junit-4.11.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-4.11/compressed/junit-4.11-sources.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/junit/junit-4.11/compressed/junit-4.11-javadoc.jar</Jar>
-</Project>

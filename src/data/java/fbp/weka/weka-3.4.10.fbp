@@ -1,4 +1,0 @@
-<Project projectName="weka-3.4.10">
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/weka/weka-3.4.10/bin/weka-3-4-10/remoteExperimentServer.jar</Jar>
-	<Jar>/home/rkrsn/git/rahlk/ck4py/src/data/java/raw/weka/weka-3.4.10/bin/weka-3-4-10/weka.jar</Jar>
-</Project>
