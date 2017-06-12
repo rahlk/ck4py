@@ -3,9 +3,10 @@ from __future__ import print_function
 
 import os
 import subprocess
-from ipdb import set_trace
-
 from FileUtils import XMLUtil
+from git_core import Git
+from pdb import set_trace
+
 
 root = os.getcwd()
 
@@ -41,7 +42,7 @@ class JavaUtil:
 
         for version, jarfiles in self.jar_path.iteritems():
             metrics = []
-            fbp_file = os.path.join(self.fbp_path, version+".fbp")
+            fbp_file = os.path.join(self.fbp_path, version + ".fbp")
             print("\t+ Version: {}".format(version))
             print("\t+ -- Computing CK Metrics")
             for jar in jarfiles:
@@ -51,28 +52,29 @@ class JavaUtil:
             foundbugs = self._run_findbugs(fbp_file).communicate()[0]
 
             print(foundbugs,
-                file=open(os.path.join(self.save_path, "bug-"+version+".xml"), "w+"))
+                  file=open(os.path.join(self.save_path, "bug-" + version + ".xml"), "w+"))
             print("<metrics>", "\n".join(metrics), "</metrics>", sep="\n",
-                file=open(os.path.join(self.save_path, version+".xml"), "w+"))
+                  file=open(os.path.join(self.save_path, version + ".xml"), "w+"))
 
 
 class JSUtil:
-    def __init__(self, js_path, save_path="metrics", file_name="metrics"):
-        self.file_name = file_name if ".json" in file_name else file_name + ".json"
-        self.js_path = os.path.abspath(js_path)
-        self.save_path = os.path.abspath(os.path.join(root, save_path))
+    def __init__(self, git_url, clone_path=None, project=None):
+        self.project = project if project else git_url.split("/")[-1].split(".git")[0]
+        self.clone_path = clone_path if clone_path is not None else os.path.abspath(os.path.join("./", self.project))
+        self.git = Git(project=self.project, url=git_url, clone_path=self.clone_path)
 
-    def run_escomplex(self):
-        cmd = ["cr", "--ignoreerrors", "--output"
-            , os.path.join(self.save_path, self.file_name),
-               "--format", "json",
-               self.js_path]
+    def fetch_project(self, hash=None):
+        self.git.fetch_commit_hash(hash)
+
+    def _run_escomplex(self):
+        cmd = ["cr", "--ignoreerrors", "--format", "json", self.clone_path]
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w"))
 
-    def save_metrics(self):
-        metrics = self.run_escomplex().communicate()[0]
-        return
+    def get_metrics(self):
+        # set_trace()
+        metrics = self._run_escomplex().communicate()[0]
+        return metrics
 
 
 def __test_util():

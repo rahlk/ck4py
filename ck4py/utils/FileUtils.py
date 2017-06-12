@@ -5,8 +5,6 @@ import json
 import os
 import sys
 import xml.etree.ElementTree as ET
-from ipdb import set_trace
-
 import numpy as np
 import pandas as pd
 
@@ -87,7 +85,7 @@ class XMLUtil:
         self.xml_path = os.path.abspath("/".join(metrics_name.split("/")[:-1]))
         # self.findbugs_output_path = os.path.abspath(findbugs_output_path)
         self.bugfile_name = "bug-{}".format(metrics_name.split("/")[-1].split(".xml")[
-                                                 0] if ".xml" in metrics_name else metrics_name)
+                                                0] if ".xml" in metrics_name else metrics_name)
         self.metrics_name = metrics_name.split("/")[-1].split(".xml")[
             0] if ".xml" in metrics_name else metrics_name
 
@@ -143,7 +141,6 @@ class XMLUtil:
     def get_metrics(self):
         metrics = self.metrics_as_list()
         return pd.DataFrame(metrics[1:], columns=metrics[0]).set_index("name")
-
 
     def save_as_csv(self):
         try:
