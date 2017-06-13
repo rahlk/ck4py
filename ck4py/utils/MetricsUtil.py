@@ -3,9 +3,8 @@ from __future__ import print_function
 
 import os
 import subprocess
-import sys
-from FileUtils import XMLUtil
-from git_core import Git
+from .FileUtils import XMLUtil
+from .git_core import Git
 from pdb import set_trace
 
 
