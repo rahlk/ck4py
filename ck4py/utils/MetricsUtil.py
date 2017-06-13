@@ -3,6 +3,7 @@ from __future__ import print_function
 
 import os
 import subprocess
+import sys
 from FileUtils import XMLUtil
 from git_core import Git
 from pdb import set_trace
@@ -79,6 +80,7 @@ class JSUtil:
 
 def __test_util():
     """
+    Commented this out to test JSUtil + Java isn't working at the moment.
     Run a test case
     :return:
     """
@@ -88,7 +90,12 @@ def __test_util():
     xml = XMLUtil(metrics_name="ant.xml")
     xml.save_as_csv()
 
+def __test_JSUtil():
+    m = JSUtil(git_url="https://github.com/facebook/react.git")
+    m.fetch_project("30e6c6c9c9f8e52776981a0e91ccfbabb95f7974")
+    metrics = m.get_metrics()
+    return metrics
 
 if __name__ == "__main__":
-    __test_util()
+    metrics = __test_JSUtil()
     set_trace()

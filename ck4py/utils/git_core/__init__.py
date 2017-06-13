@@ -15,7 +15,7 @@ class Git:
         self.clone_path = os.path.abspath(clone_path)
 
     def _local_clone(self):
-        cmd = ["git", "clone", self.url, self.clone_path]
+        cmd = ["git", "clone", "--depth=1", self.url, self.clone_path]
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w")).communicate()[0]
 

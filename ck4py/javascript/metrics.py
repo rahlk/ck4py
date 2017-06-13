@@ -1,14 +1,8 @@
 from __future__ import division
 from __future__ import print_function
 
-import os
-import sys
-import json
-from glob2 import glob
 from pdb import set_trace
-from utils.FileUtils import JSONUtil
-from utils.MetricsUtil import JSUtil
-from utils.git_core import Git
+from ..utils.MetricsUtil import JSUtil
 
 
 def compute_metrics(hash):
