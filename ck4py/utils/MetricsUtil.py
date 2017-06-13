@@ -6,6 +6,7 @@ import subprocess
 from .FileUtils import XMLUtil
 from .git_core import Git
 from pdb import set_trace
+import shutil
 
 
 root = os.getcwd()
@@ -63,6 +64,7 @@ class JSUtil:
         self.clone_path = clone_path if clone_path is not None else os.path.abspath(os.path.join("./", self.project))
         self.git = Git(project=self.project, url=git_url, clone_path=self.clone_path)
 
+
     def fetch_project(self, hash=None):
         self.git.fetch_commit_hash(hash)
 
@@ -75,6 +77,9 @@ class JSUtil:
         # set_trace()
         metrics = self._run_escomplex().communicate()[0]
         return metrics
+
+    def clean_up(self):
+        shutil.rmtree(self.clone_path)
 
 
 def __test_util():
