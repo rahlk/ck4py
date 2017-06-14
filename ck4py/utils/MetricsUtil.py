@@ -61,7 +61,7 @@ class JavaUtil:
 class JSUtil:
     def __init__(self, git_url, clone_path=None, project=None):
         self.project = project if project else git_url.split("/")[-1].split(".git")[0]
-        self.clone_path = clone_path if clone_path is not None else os.path.abspath(os.path.join("./", self.project))
+        self.clone_path = clone_path if clone_path is not None else os.path.abspath(os.path.join("/dev/shm/", self.project))
         self.git = Git(project=self.project, url=git_url, clone_path=self.clone_path)
 
 
