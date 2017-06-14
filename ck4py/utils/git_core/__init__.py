@@ -15,7 +15,7 @@ class Git:
         self.clone_path = os.path.abspath(clone_path)
 
     def _local_clone(self):
-        cmd = ["git", "clone", "--depth=1", self.url, self.clone_path]
+        cmd = ["git", "clone", self.url, self.clone_path]
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w")).communicate()[0]
 
@@ -28,6 +28,18 @@ class Git:
             os.chdir(self.current)
             return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                     , stderr=open(os.devnull, "w")).communicate()[0]
+    def isolate_changes(self, git_hash):
+        os.chdir(os.path.abspath(self.clone_path))
+        result = subprocess.run(['git', 'diff-tree', '--no-commit-id',
+                                 '--name-only', '-r', git_hash], stdout=subprocess.PIPE)
+        files = result.stdout.decode('utf-8').split("\n")
+        count = 1
+        for root, subdir, subfiles in os.walk("./"):
+            for file in subfiles:
+                file_path = os.path.join(root,file)[2:].strip() ## Cuts off ./
+                if file_path not in files:
+                    os.remove(file_path)
+        os.chdir(self.current)
 
     def get_commit_log(self):
         print("Clonning into: {}".format(self.url))

@@ -72,9 +72,10 @@ class JSUtil:
         cmd = ["cr", "--ignoreerrors", "--format", "json", self.clone_path]
         return subprocess.Popen(cmd, stdout=subprocess.PIPE
                                 , stderr=open(os.devnull, "w"))
+    def isolate_changes(self, git_hash):
+        self.git.isolate_changes(git_hash)
 
     def get_metrics(self):
-        # set_trace()
         metrics = self._run_escomplex().communicate()[0]
         return metrics
 
